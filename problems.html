@@ -69,8 +69,23 @@
   <script src="js/problems.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Wait for KaTeX to load
-      setTimeout(() => Problems.init(), 150);
+      // Poll for KaTeX availability (deferred scripts may not be ready)
+      function initWhenReady() {
+        if (typeof renderMathInElement === 'function' || typeof katex !== 'undefined') {
+          Problems.init();
+        } else {
+          // Check every 50ms, up to 3 seconds
+          let attempts = 0;
+          const poll = setInterval(() => {
+            attempts++;
+            if (typeof renderMathInElement === 'function' || typeof katex !== 'undefined' || attempts > 60) {
+              clearInterval(poll);
+              Problems.init();
+            }
+          }, 50);
+        }
+      }
+      initWhenReady();
     });
   </script>
 

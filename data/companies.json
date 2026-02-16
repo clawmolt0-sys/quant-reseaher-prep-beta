@@ -1,19 +1,145 @@
 [
-  { "id": "citadel", "name": "Citadel / Citadel Securities", "type": "Multi-Strategy Hedge Fund & Market Maker", "roles": ["Quant Researcher", "Quant Developer"] },
-  { "id": "two-sigma", "name": "Two Sigma", "type": "Systematic Hedge Fund", "roles": ["Quant Researcher", "Quant Developer", "Modeling Associate"] },
-  { "id": "de-shaw", "name": "D.E. Shaw", "type": "Systematic Hedge Fund", "roles": ["Quant Researcher", "Quant Analyst"] },
-  { "id": "jump-trading", "name": "Jump Trading", "type": "Proprietary Trading Firm", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "drw", "name": "DRW", "type": "Proprietary Trading Firm", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "hrt", "name": "Hudson River Trading", "type": "Algorithmic Market Maker", "roles": ["Quant Researcher", "Algorithm Developer"] },
-  { "id": "jane-street", "name": "Jane Street", "type": "Proprietary Trading Firm", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "optiver", "name": "Optiver", "type": "Options Market Maker", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "sig", "name": "Susquehanna (SIG)", "type": "Options Trading & Market Making", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "squarepoint", "name": "Squarepoint Capital", "type": "Systematic Hedge Fund", "roles": ["Quant Researcher"] },
-  { "id": "tower-research", "name": "Tower Research Capital", "type": "Proprietary Trading Firm", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "millennium", "name": "Millennium Management", "type": "Multi-Strategy Hedge Fund", "roles": ["Quant Researcher", "Portfolio Manager"] },
-  { "id": "point72", "name": "Point72 / Cubist", "type": "Multi-Strategy Hedge Fund", "roles": ["Quant Researcher", "Data Scientist"] },
-  { "id": "aqr", "name": "AQR Capital", "type": "Systematic Hedge Fund", "roles": ["Quant Researcher", "Associate"] },
-  { "id": "renaissance", "name": "Renaissance Technologies", "type": "Systematic Hedge Fund", "roles": ["Research Scientist"] },
-  { "id": "five-rings", "name": "Five Rings Capital", "type": "Proprietary Trading Firm", "roles": ["Quant Researcher", "Quant Trader"] },
-  { "id": "hft", "name": "HFT Firm (Undisclosed)", "type": "High-Frequency Trading", "roles": ["Quant Developer", "Systems Engineer"] }
+    {
+        "id":  "citadel",
+        "name":  "Citadel / Citadel Securities",
+        "type":  "Multi-Strategy Hedge Fund \u0026 Market Maker",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Developer"
+                  ]
+    },
+    {
+        "id":  "two-sigma",
+        "name":  "Two Sigma",
+        "type":  "Systematic Hedge Fund",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Developer",
+                      "Modeling Associate"
+                  ]
+    },
+    {
+        "id":  "de-shaw",
+        "name":  "D.E. Shaw",
+        "type":  "Systematic Hedge Fund",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Analyst"
+                  ]
+    },
+    {
+        "id":  "jump-trading",
+        "name":  "Jump Trading",
+        "type":  "Proprietary Trading Firm",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "drw",
+        "name":  "DRW",
+        "type":  "Proprietary Trading Firm",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "hrt",
+        "name":  "Hudson River Trading",
+        "type":  "Algorithmic Market Maker",
+        "roles":  [
+                      "Quant Researcher",
+                      "Algorithm Developer"
+                  ]
+    },
+    {
+        "id":  "jane-street",
+        "name":  "Jane Street",
+        "type":  "Proprietary Trading Firm",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "optiver",
+        "name":  "Optiver",
+        "type":  "Options Market Maker",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "sig",
+        "name":  "Susquehanna (SIG)",
+        "type":  "Options Trading \u0026 Market Making",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "squarepoint",
+        "name":  "Squarepoint Capital",
+        "type":  "Systematic Hedge Fund",
+        "roles":  [
+                      "Quant Researcher"
+                  ]
+    },
+    {
+        "id":  "tower-research",
+        "name":  "Tower Research Capital",
+        "type":  "Proprietary Trading Firm",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    },
+    {
+        "id":  "millennium",
+        "name":  "Millennium Management",
+        "type":  "Multi-Strategy Hedge Fund",
+        "roles":  [
+                      "Quant Researcher",
+                      "Portfolio Manager"
+                  ]
+    },
+    {
+        "id":  "point72",
+        "name":  "Point72 / Cubist",
+        "type":  "Multi-Strategy Hedge Fund",
+        "roles":  [
+                      "Quant Researcher",
+                      "Data Scientist"
+                  ]
+    },
+    {
+        "id":  "aqr",
+        "name":  "AQR Capital",
+        "type":  "Systematic Hedge Fund",
+        "roles":  [
+                      "Quant Researcher",
+                      "Associate"
+                  ]
+    },
+    {
+        "id":  "renaissance",
+        "name":  "Renaissance Technologies",
+        "type":  "Systematic Hedge Fund",
+        "roles":  [
+                      "Research Scientist"
+                  ]
+    },
+    {
+        "id":  "five-rings",
+        "name":  "Five Rings Capital",
+        "type":  "Proprietary Trading Firm",
+        "roles":  [
+                      "Quant Researcher",
+                      "Quant Trader"
+                  ]
+    }
 ]

@@ -79,12 +79,58 @@ const MarkdownRender = (() => {
   }
 
   /**
+   * Protect math blocks from paragraph wrapping.
+   * Extracts display math ($$...$$) and LaTeX environments
+   * (\begin{...}...\end{...}) spanning multiple lines,
+   * replacing them with placeholders. After markdown processing,
+   * the placeholders are restored.
+   */
+  function protectMathBlocks(md) {
+    const placeholders = [];
+    let counter = 0;
+
+    // Protect multi-line display math: $$...$$ spanning multiple lines
+    md = md.replace(/\$\$([\s\S]*?)\$\$/g, (match) => {
+      const key = `\x00MATH${counter++}\x00`;
+      placeholders.push({ key, value: match });
+      return key;
+    });
+
+    // Protect LaTeX environments: \begin{...}...\end{...}
+    md = md.replace(/\\begin\{([^}]+)\}([\s\S]*?)\\end\{\1\}/g, (match) => {
+      const key = `\x00MATH${counter++}\x00`;
+      placeholders.push({ key, value: match });
+      return key;
+    });
+
+    return { md, placeholders };
+  }
+
+  function restoreMathBlocks(html, placeholders) {
+    for (const { key, value } of placeholders) {
+      // The placeholder might be wrapped in a <p> tag — unwrap it
+      const escaped = key.replace(/\x00/g, '\\x00');
+      // Try wrapped in paragraph first
+      const pWrapped = `<p class="md-p">${key}</p>`;
+      if (html.includes(pWrapped)) {
+        html = html.replace(pWrapped, value);
+      } else {
+        html = html.replace(key, value);
+      }
+    }
+    return html;
+  }
+
+  /**
    * Convert markdown string to HTML
    */
   function render(md) {
     if (!md) return '';
 
-    const lines = md.split('\n');
+    // Protect math blocks before processing
+    const { md: safeMd, placeholders } = protectMathBlocks(md);
+
+    const lines = safeMd.split('\n');
     let result = [];
     let inList = false;
     let listType = 'ul'; // 'ul' or 'ol'
@@ -221,7 +267,12 @@ const MarkdownRender = (() => {
     if (inTable) result.push(renderTable(tableRows));
     if (inBlockquote) result.push(renderBlockquote(blockquoteLines));
 
-    return result.join('\n');
+    let html = result.join('\n');
+
+    // Restore math blocks
+    html = restoreMathBlocks(html, placeholders);
+
+    return html;
   }
 
   return { render, inlineFormat, escapeHtml };
