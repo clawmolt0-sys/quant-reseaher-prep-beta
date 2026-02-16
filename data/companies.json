@@ -1,0 +1,12 @@
+[
+  { "id": "citadel", "name": "Citadel", "roles": ["Quant Researcher", "Quant Developer"] },
+  { "id": "two-sigma", "name": "Two Sigma", "roles": ["Quant Researcher", "Quant Developer"] },
+  { "id": "jump-trading", "name": "Jump Trading", "roles": ["Quant Researcher", "Quant Trader"] },
+  { "id": "drw", "name": "DRW", "roles": ["Quant Researcher", "Quant Trader"] },
+  { "id": "hrt", "name": "Hudson River Trading", "roles": ["Quant Researcher", "Algorithm Developer"] },
+  { "id": "optiver", "name": "Optiver", "roles": ["Quant Researcher", "Quant Trader"] },
+  { "id": "sig", "name": "SIG (Susquehanna)", "roles": ["Quant Researcher", "Quant Trader"] },
+  { "id": "squarepoint", "name": "Squarepoint Capital", "roles": ["Quant Researcher"] },
+  { "id": "tower", "name": "Tower Research", "roles": ["Quant Researcher", "Quant Trader"] },
+  { "id": "hft", "name": "HFT Firms", "roles": ["Quant Researcher", "Quant Developer"] }
+]

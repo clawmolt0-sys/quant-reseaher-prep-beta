@@ -1,0 +1,150 @@
+/* ============================================
+   RESPONSIVE — Mobile breakpoints
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .page-with-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--space-4);
+  }
+
+  .sidebar__section {
+    margin-bottom: 0;
+  }
+
+  .sidebar__section-title {
+    display: none;
+  }
+
+  .topic-list {
+    display: flex;
+    gap: var(--space-1);
+    flex-wrap: wrap;
+  }
+
+  .topic-list__item {
+    margin-bottom: 0;
+  }
+
+  .track-topics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-8: 1.5rem;
+    --space-12: 2rem;
+    --space-16: 3rem;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    padding: var(--space-4);
+    gap: var(--space-1);
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+
+  .nav__mobile-toggle {
+    display: block;
+  }
+
+  .hero__title {
+    font-size: var(--text-2xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-bar {
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .stat-item__number {
+    font-size: var(--text-2xl);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .track-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .filter-bar__search {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .filter-bar__select {
+    width: 100%;
+  }
+
+  .problem-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .problem-card__tags {
+    width: 100%;
+  }
+
+  .problem-detail__statement {
+    padding: var(--space-4);
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .section-header__title {
+    font-size: var(--text-2xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__brand span:not(.nav__brand-icon) {
+    display: none;
+  }
+
+  .lecture-viewer__content iframe {
+    height: 50vh;
+  }
+}

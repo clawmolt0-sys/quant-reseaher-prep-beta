@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Labs — Quant Researcher Prep</title>
+  <meta name="description" content="Hands-on coding exercises with real financial data for quant researcher preparation.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-icon">⚡</span>
+        <span>QuantResearch Prep</span>
+      </a>
+      <button class="nav__mobile-toggle" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="learn.html">Learn</a></li>
+        <li><a class="nav__link" href="problems.html">Problems</a></li>
+        <li><a class="nav__link" href="labs.html">Code Labs</a></li>
+        <li><a class="nav__link" href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div id="content">
+      <div class="container">
+        <div class="empty-state">
+          <div class="empty-state__icon">⏳</div>
+          <div class="empty-state__title">Loading labs...</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__text">QuantResearch Prep — Interview preparation for quant researchers</span>
+      <ul class="footer__links">
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/data-loader.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/labs.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => Labs.init());
+  </script>
+
+</body>
+</html>

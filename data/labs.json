@@ -1,0 +1,68 @@
+[
+  {
+    "id": "lab-bs-realized-vol",
+    "title": "Computing Realized Volatility",
+    "description": "Use AAPL historical price data to estimate realized volatility, compare to implied volatility, and explore the volatility risk premium.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "difficulty": "medium",
+    "concepts": ["realized-vol", "implied-vol", "log-returns"],
+    "estimated_minutes": 30,
+    "status": "coming-soon"
+  },
+  {
+    "id": "lab-var-calculation",
+    "title": "Value-at-Risk from Scratch",
+    "description": "Implement parametric, historical, and Monte Carlo VaR for a multi-asset portfolio using real ETF data.",
+    "track": "finance",
+    "topic": "risk-modeling",
+    "difficulty": "medium",
+    "concepts": ["var", "expected-shortfall", "monte-carlo"],
+    "estimated_minutes": 45,
+    "status": "coming-soon"
+  },
+  {
+    "id": "lab-portfolio-optimization",
+    "title": "Mean-Variance Optimization",
+    "description": "Build an efficient frontier, implement Markowitz optimization with constraints, and explore the impact of estimation error.",
+    "track": "quant",
+    "topic": "portfolio-optimization",
+    "difficulty": "hard",
+    "concepts": ["markowitz", "efficient-frontier", "constraints"],
+    "estimated_minutes": 60,
+    "status": "coming-soon"
+  },
+  {
+    "id": "lab-binomial-pricing",
+    "title": "Option Pricing with Binomial Trees",
+    "description": "Implement a binomial tree pricer for European and American options. Compare to Black-Scholes as the number of steps increases.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "difficulty": "medium",
+    "concepts": ["binomial-model", "risk-neutral-pricing", "american-options"],
+    "estimated_minutes": 45,
+    "status": "coming-soon"
+  },
+  {
+    "id": "lab-skew-fitting",
+    "title": "Volatility Skew Fitting",
+    "description": "Fit volatility smiles to real JPM option data using polynomial and SABR parameterizations.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "difficulty": "hard",
+    "concepts": ["vol-surface", "sabr", "curve-fitting"],
+    "estimated_minutes": 60,
+    "status": "coming-soon"
+  },
+  {
+    "id": "lab-order-flow",
+    "title": "Order Flow Analysis",
+    "description": "Analyze trade and quote data to identify informed vs noise trading, compute VWAP, and detect iceberg orders.",
+    "track": "finance",
+    "topic": "market-microstructure",
+    "difficulty": "hard",
+    "concepts": ["order-flow", "vwap", "iceberg-orders"],
+    "estimated_minutes": 60,
+    "status": "coming-soon"
+  }
+]

@@ -1,0 +1,166 @@
+/* ============================================
+   LEARN — Learning path styles
+   ============================================ */
+
+/* ---- Track Cards ---- */
+.track-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-12);
+}
+
+.track-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+}
+
+.track-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.track-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-3);
+}
+
+.track-card__title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-2);
+}
+
+.track-card__description {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+  line-height: 1.5;
+}
+
+.track-card__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* ---- Topic Overview ---- */
+.topic-header {
+  margin-bottom: var(--space-6);
+}
+
+.topic-header__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-2);
+}
+
+.topic-header__description {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.topic-header__meta {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.lecture-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ---- Sidebar Track Section ---- */
+.sidebar__section {
+  margin-bottom: var(--space-6);
+}
+
+.sidebar__section-title {
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+/* ---- Topic Page Content ---- */
+.topic-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Track Overview ---- */
+.track-overview {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.track-overview__title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-2);
+}
+
+.track-overview__description {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+}
+
+.track-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.track-topic-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+}
+
+.track-topic-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
+}
+
+.track-topic-card__order {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.track-topic-card__title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-2);
+}
+
+.track-topic-card__description {
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.track-topic-card__stat {
+  font-size: var(--text-xs);
+  color: var(--accent);
+  margin-top: var(--space-3);
+  font-weight: var(--font-medium);
+}

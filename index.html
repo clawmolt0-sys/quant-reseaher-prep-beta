@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quant Researcher Prep</title>
+  <meta name="description" content="Comprehensive preparation for Quant Researcher interviews. Problems, lectures, and coding labs covering probability, statistics, finance, and more.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-icon">⚡</span>
+        <span>QuantResearch Prep</span>
+      </a>
+      <button class="nav__mobile-toggle" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="learn.html">Learn</a></li>
+        <li><a class="nav__link" href="problems.html">Problems</a></li>
+        <li><a class="nav__link" href="labs.html">Code Labs</a></li>
+        <li><a class="nav__link" href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero__title">
+          Prepare for <span class="hero__title-accent">Quant Researcher</span> Interviews
+        </h1>
+        <p class="hero__subtitle">
+          Master probability, statistics, finance, and coding with structured lectures,
+          200+ interview problems, and hands-on coding labs from top quant firms.
+        </p>
+        <div class="hero__actions">
+          <a href="problems.html" class="btn btn--primary btn--lg">Practice Problems</a>
+          <a href="learn.html" class="btn btn--secondary btn--lg">Start Learning</a>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats-bar" id="stats-bar">
+        <div class="stat-item">
+          <div class="stat-item__number" id="stat-problems">—</div>
+          <div class="stat-item__label">Problems</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" id="stat-lectures">—</div>
+          <div class="stat-item__label">Lectures</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" id="stat-topics">—</div>
+          <div class="stat-item__label">Topics</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-item__number" id="stat-companies">—</div>
+          <div class="stat-item__label">Companies</div>
+        </div>
+      </section>
+
+      <!-- Section Cards -->
+      <section class="grid-2 mb-8" style="max-width:900px; margin-left:auto; margin-right:auto;">
+        <a class="section-card" href="learn.html">
+          <div class="section-card__icon">📚</div>
+          <h2 class="section-card__title">Learning Path</h2>
+          <p class="section-card__desc">
+            Structured lectures covering quantitative foundations and finance.
+            Follow the curriculum or jump to any topic.
+          </p>
+          <div class="section-card__stat">2 tracks · 18 topics →</div>
+        </a>
+
+        <a class="section-card" href="problems.html">
+          <div class="section-card__icon">🧩</div>
+          <h2 class="section-card__title">Interview Problems</h2>
+          <p class="section-card__desc">
+            Practice problems from Citadel, Two Sigma, Jump, Optiver, and more.
+            Filter by topic, company, or difficulty.
+          </p>
+          <div class="section-card__stat">Filter by 10+ firms →</div>
+        </a>
+
+        <a class="section-card" href="labs.html">
+          <div class="section-card__icon">💻</div>
+          <h2 class="section-card__title">Code Labs</h2>
+          <p class="section-card__desc">
+            Hands-on coding exercises with real financial data.
+            Build quant models, analyze markets, and practice data science.
+          </p>
+          <div class="section-card__stat">Coming soon →</div>
+        </a>
+
+        <a class="section-card" href="resources.html">
+          <div class="section-card__icon">📖</div>
+          <h2 class="section-card__title">Resources</h2>
+          <p class="section-card__desc">
+            Reading lists, formula cheat sheets, and interview guides
+            curated for quant researcher roles.
+          </p>
+          <div class="section-card__stat">Books, papers, guides →</div>
+        </a>
+      </section>
+
+      <!-- Featured Problems -->
+      <section style="max-width:900px; margin:0 auto;">
+        <h2 style="font-size:var(--text-xl); font-weight:var(--font-bold); margin-bottom:var(--space-4);">
+          Featured Problems
+        </h2>
+        <div id="featured-problems" class="problem-list"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__text">QuantResearch Prep — Interview preparation for quant researchers</span>
+      <ul class="footer__links">
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data-loader.js"></script>
+  <script src="js/katex-render.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Home page initialization
+    document.addEventListener('DOMContentLoaded', async () => {
+      const problems = (await DataLoader.problems()) || [];
+      const lectures = (await DataLoader.lectures()) || [];
+      const topics = (await DataLoader.topics()) || { tracks: [] };
+      const companies = (await DataLoader.companies()) || [];
+
+      // Stats
+      document.getElementById('stat-problems').textContent = problems.length + '+';
+      document.getElementById('stat-lectures').textContent = lectures.length + '+';
+      const topicCount = topics.tracks.reduce((sum, t) => sum + t.topics.length, 0);
+      document.getElementById('stat-topics').textContent = topicCount;
+      document.getElementById('stat-companies').textContent = companies.length;
+
+      // Featured problems (random 5)
+      const shuffled = [...problems].sort(() => 0.5 - Math.random());
+      const featured = shuffled.slice(0, 5);
+      const featuredEl = document.getElementById('featured-problems');
+      if (featuredEl) {
+        featuredEl.innerHTML = featured.map((p, i) => {
+          const topicTags = p.topics.slice(0, 1).map(t =>
+            `<span class="tag tag--topic">${t.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')}</span>`
+          ).join('');
+          const companyTags = p.company.slice(0, 1).map(c => {
+            const names = {'citadel':'Citadel','two-sigma':'Two Sigma','jump-trading':'Jump','drw':'DRW','hrt':'HRT','optiver':'Optiver','sig':'SIG','squarepoint':'Squarepoint','tower':'Tower','hft':'HFT'};
+            return `<span class="tag tag--company">${names[c]||c}</span>`;
+          }).join('');
+          return `
+            <a class="problem-card" href="problems.html?id=${p.id}">
+              <span class="problem-card__number">${i + 1}</span>
+              <span class="problem-card__title">${p.title}</span>
+              <span class="problem-card__tags">
+                ${App.difficultyBadge(p.difficulty)}
+                ${topicTags}
+                ${companyTags}
+              </span>
+            </a>
+          `;
+        }).join('');
+      }
+    });
+  </script>
+
+</body>
+</html>

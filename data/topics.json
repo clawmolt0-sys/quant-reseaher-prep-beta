@@ -1,0 +1,146 @@
+{
+  "tracks": [
+    {
+      "id": "quant",
+      "title": "Quantitative Foundations",
+      "description": "Core mathematical and statistical tools every quant researcher needs.",
+      "icon": "📐",
+      "topics": [
+        {
+          "id": "probability",
+          "title": "Probability",
+          "order": 1,
+          "description": "Combinatorics, conditional probability, Bayes' theorem, distributions, expectation, limit theorems.",
+          "subtopics": ["combinatorics", "conditional-probability", "bayes-theorem", "distributions", "expectation", "variance", "limit-theorems"]
+        },
+        {
+          "id": "statistics",
+          "title": "Statistics",
+          "order": 2,
+          "description": "Estimation, hypothesis testing, confidence intervals, Bayesian inference.",
+          "subtopics": ["estimation", "mle", "hypothesis-testing", "confidence-intervals", "bayesian-inference"]
+        },
+        {
+          "id": "linear-algebra",
+          "title": "Linear Algebra",
+          "order": 3,
+          "description": "Vector spaces, eigenvalues, SVD, PCA, matrix decompositions.",
+          "subtopics": ["vector-spaces", "eigenvalues", "svd", "pca", "matrix-decompositions"]
+        },
+        {
+          "id": "linear-regression",
+          "title": "Linear Regression",
+          "order": 4,
+          "description": "OLS, regularization, model selection, practical applications in alpha research.",
+          "subtopics": ["ols", "multicollinearity", "regularization", "ridge-lasso", "model-selection"]
+        },
+        {
+          "id": "time-series",
+          "title": "Time Series",
+          "order": 5,
+          "description": "Stationarity, AR/MA/ARIMA, GARCH, cointegration, Kalman filtering.",
+          "subtopics": ["stationarity", "arma", "arima", "garch", "cointegration", "kalman-filter"]
+        },
+        {
+          "id": "stochastic-calculus",
+          "title": "Stochastic Calculus",
+          "order": 6,
+          "description": "Brownian motion, Ito's lemma, SDEs, martingales, Girsanov's theorem.",
+          "subtopics": ["brownian-motion", "itos-lemma", "sde", "martingales", "girsanov"]
+        },
+        {
+          "id": "optimization",
+          "title": "Optimization",
+          "order": 7,
+          "description": "Convex optimization, Lagrange multipliers, KKT conditions, gradient descent.",
+          "subtopics": ["convex-optimization", "lagrange-multipliers", "kkt", "gradient-descent", "quadratic-programming"]
+        },
+        {
+          "id": "portfolio-construction",
+          "title": "Portfolio Construction",
+          "order": 8,
+          "description": "Mean-variance framework, factor models, risk budgeting, rebalancing.",
+          "subtopics": ["mean-variance", "factor-models", "risk-budgeting", "rebalancing"]
+        },
+        {
+          "id": "portfolio-optimization",
+          "title": "Portfolio Optimization",
+          "order": 9,
+          "description": "Markowitz, Black-Litterman, robust optimization, transaction costs.",
+          "subtopics": ["markowitz", "black-litterman", "robust-optimization", "transaction-costs"]
+        },
+        {
+          "id": "numerical-methods",
+          "title": "Numerical Methods",
+          "order": 10,
+          "description": "Monte Carlo, finite differences, numerical integration, root finding.",
+          "subtopics": ["monte-carlo", "finite-differences", "numerical-integration", "root-finding"]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Finance & Markets",
+      "description": "Financial instruments, pricing models, risk, and trading.",
+      "icon": "📈",
+      "topics": [
+        {
+          "id": "fixed-income",
+          "title": "Fixed Income & Bonds",
+          "order": 1,
+          "description": "Bond pricing, yields, duration, convexity, term structure, credit risk.",
+          "subtopics": ["bond-pricing", "yields", "duration", "convexity", "term-structure", "credit-risk"]
+        },
+        {
+          "id": "options-derivatives",
+          "title": "Options & Derivatives",
+          "order": 2,
+          "description": "Payoff diagrams, put-call parity, binomial model, exotic options.",
+          "subtopics": ["payoffs", "put-call-parity", "binomial-model", "european-american", "exotic-options"]
+        },
+        {
+          "id": "volatility-modeling",
+          "title": "Volatility Modeling",
+          "order": 3,
+          "description": "Implied vs realized vol, vol surface, local vol, stochastic vol, SABR.",
+          "subtopics": ["implied-vol", "realized-vol", "vol-surface", "local-vol", "stochastic-vol", "sabr"]
+        },
+        {
+          "id": "black-scholes-greeks",
+          "title": "Black-Scholes & Greeks",
+          "order": 4,
+          "description": "BS derivation, delta, gamma, vega, theta, hedging strategies.",
+          "subtopics": ["black-scholes", "delta", "gamma", "vega", "theta", "rho", "hedging"]
+        },
+        {
+          "id": "risk-modeling",
+          "title": "Risk Modeling",
+          "order": 5,
+          "description": "VaR, Expected Shortfall, stress testing, factor-based risk models.",
+          "subtopics": ["var", "expected-shortfall", "stress-testing", "factor-risk-models"]
+        },
+        {
+          "id": "risk-management",
+          "title": "Risk Management",
+          "order": 6,
+          "description": "Position sizing, stop-loss, correlation, tail risk, liquidity risk.",
+          "subtopics": ["position-sizing", "stop-loss", "correlation", "tail-risk", "liquidity-risk"]
+        },
+        {
+          "id": "market-microstructure",
+          "title": "Market Microstructure",
+          "order": 7,
+          "description": "Order books, bid-ask spread, market making, price impact models.",
+          "subtopics": ["order-books", "bid-ask-spread", "market-making", "price-impact"]
+        },
+        {
+          "id": "trading-strategies",
+          "title": "Trading Strategies",
+          "order": 8,
+          "description": "Statistical arbitrage, momentum, mean reversion, pairs trading, backtesting.",
+          "subtopics": ["stat-arb", "momentum", "mean-reversion", "pairs-trading", "backtesting"]
+        }
+      ]
+    }
+  ]
+}

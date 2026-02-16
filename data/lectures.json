@@ -1,0 +1,222 @@
+[
+  {
+    "id": "lec-q-prob-01",
+    "title": "Probability Foundations",
+    "description": "Combinatorics, counting principles, conditional probability, and Bayes' theorem.",
+    "track": "quant",
+    "topic": "probability",
+    "order": 1,
+    "type": "slides",
+    "slides": "slides/sagaark-quant-training-05.pdf",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-q-stats-01",
+    "title": "Statistical Inference",
+    "description": "Estimation, hypothesis testing, MLE, and confidence intervals.",
+    "track": "quant",
+    "topic": "statistics",
+    "order": 1,
+    "type": "slides",
+    "slides": "slides/sageark-quant-training-06.pdf",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-q-la-01",
+    "title": "Linear Algebra for Quant Finance",
+    "description": "Eigenvalues, SVD, PCA, and covariance matrix applications.",
+    "track": "quant",
+    "topic": "linear-algebra",
+    "order": 1,
+    "type": "slides",
+    "slides": "slides/sageark-quant-training-12.pdf",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-q-opt-01",
+    "title": "Optimizing Risk and Return",
+    "description": "Mean-variance optimization, efficient frontier, and constrained portfolio optimization.",
+    "track": "quant",
+    "topic": "optimization",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/risk/d3-optimizing-risk-and-return.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-q-opt-02",
+    "title": "Constrained Optimization",
+    "description": "Lagrange multipliers, KKT conditions, and quadratic programming for portfolio problems.",
+    "track": "quant",
+    "topic": "optimization",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/risk/d3x-constrained-optimization.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-fi-01",
+    "title": "Overview: Markets and Instruments",
+    "description": "Introduction to fixed income, equities, currencies, commodities, and derivatives.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a1-overview.html",
+    "duration_minutes": 30
+  },
+  {
+    "id": "lec-f-fi-02",
+    "title": "Treasury Debt",
+    "description": "Bond pricing fundamentals, treasury quotes, bills vs notes vs bonds.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a2-treasury-debt.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-fi-03",
+    "title": "Yield Curve and Discount Rates",
+    "description": "Term structure, yield curve construction, discount factors, and forward rates.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 3,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a2-yield-curve.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-fi-04",
+    "title": "Interest Rate Risk",
+    "description": "Duration, convexity, DV01, and hedging interest rate exposure.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 4,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a3-interest-rate-risk.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-od-01",
+    "title": "Equity Options",
+    "description": "Option payoffs, put-call parity, intrinsic vs time value, and basic strategies.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b4-equity-options.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-od-02",
+    "title": "Binomial Trees",
+    "description": "One-period and multi-period binomial models for option pricing.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c1-binomial-trees.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-bsg-01",
+    "title": "Black-Scholes and the Greeks",
+    "description": "Black-Scholes formula derivation, delta, gamma, vega, theta, and hedging.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b5-black-scholes-greeks.html",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-f-bsg-02",
+    "title": "Black's Formulas",
+    "description": "Black's model for caps, floors, swaptions, and interest rate options.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c2-blacks-formulas.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-vm-01",
+    "title": "Volatility Modeling",
+    "description": "Implied vs realized vol, volatility surface, local vol, and stochastic vol.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c3-volatility-modeling.html",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-f-vm-02",
+    "title": "Volatility Skew Fitting",
+    "description": "Practical techniques for fitting volatility skews to market data.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 2,
+    "type": "slides",
+    "slides": "slides/sageark-quant-training-40-vol-skew.pdf",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-rm-01",
+    "title": "Measuring Risk",
+    "description": "Risk metrics, volatility, drawdown, and tail risk measurement.",
+    "track": "finance",
+    "topic": "risk-modeling",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/risk/d1-measuring-risk.html",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-rm-02",
+    "title": "Value-at-Risk",
+    "description": "Parametric, historical, and Monte Carlo VaR. Expected Shortfall.",
+    "track": "finance",
+    "topic": "risk-modeling",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/risk/d2-value-at-risk.html",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-f-mm-01",
+    "title": "Market Microstructure Lab",
+    "description": "Order books, CLOB mechanics, order flow analysis, and iceberg orders.",
+    "track": "finance",
+    "topic": "market-microstructure",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/trading/market-microstructure-lab.html",
+    "duration_minutes": 60
+  },
+  {
+    "id": "lec-f-ts-01",
+    "title": "The Art of Risk Taking",
+    "description": "Frameworks for thinking about risk, position sizing, and decision making under uncertainty.",
+    "track": "finance",
+    "topic": "risk-management",
+    "order": 1,
+    "type": "slides",
+    "slides": "slides/art-of-risk-taking.pdf",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-ts-02",
+    "title": "Market Impact",
+    "description": "Almgren-Chriss model, optimal execution, and price impact estimation.",
+    "track": "finance",
+    "topic": "trading-strategies",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/trading/market-impact.html",
+    "duration_minutes": 45
+  }
+]
