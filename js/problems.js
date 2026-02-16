@@ -44,6 +44,16 @@ const Problems = (() => {
 
   function diffToRating(d) { return d === 'easy' ? 3 : d === 'hard' ? 8 : 5; }
 
+  // ---- Tier gating ----
+  const FREE_PROBLEM_LIMIT = 200;
+
+  function isProblemLocked(problem) {
+    // Pro users get everything
+    if (typeof Auth !== 'undefined' && Auth.getTier() === 'pro') return false;
+    // Free users: only problems with id <= FREE_PROBLEM_LIMIT
+    return problem.id > FREE_PROBLEM_LIMIT;
+  }
+
   function getCatMeta(catId) {
     if (!tagsData || !tagsData.categories) return { name: catId, icon: '\u{1F4C4}', color: '#6366f1' };
     return tagsData.categories.find(c => c.id === catId) || { name: catId, icon: '\u{1F4C4}', color: '#6366f1' };
@@ -75,17 +85,26 @@ const Problems = (() => {
     return map[t] || t;
   }
 
-  // ---- Status tracking (localStorage) ----
+  // ---- Status tracking (Auth + localStorage) ----
   function getStatus(id) {
+    // Use Auth module if available and user is logged in
+    if (typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
+      return Auth.getStatus(id);
+    }
     try { return localStorage.getItem('qr-prep-status-' + id) || ''; }
     catch (e) { return ''; }
   }
 
   function markStatus(id, status) {
-    try {
-      if (status) localStorage.setItem('qr-prep-status-' + id, status);
-      else localStorage.removeItem('qr-prep-status-' + id);
-    } catch (e) { /* ignore */ }
+    // Use Auth module if available (saves to both Firestore + localStorage)
+    if (typeof Auth !== 'undefined') {
+      Auth.saveStatus(id, status);
+    } else {
+      try {
+        if (status) localStorage.setItem('qr-prep-status-' + id, status);
+        else localStorage.removeItem('qr-prep-status-' + id);
+      } catch (e) { /* ignore */ }
+    }
     // Refresh current view
     const params = App.getParams();
     if (params.id) renderDetail(id);
@@ -315,6 +334,7 @@ const Problems = (() => {
             <div id="load-more-container"></div>
             <div id="empty-state-container"></div>
           </div>
+          <aside class="problems-sidebar-right" id="sidebar-right"></aside>
         </div>
       </div>
     `;
@@ -554,6 +574,30 @@ const Problems = (() => {
         ` : '';
       }
 
+      // ---- Update right sidebar (companies) ----
+      const rightSidebar = document.getElementById('sidebar-right');
+      if (rightSidebar) {
+        rightSidebar.innerHTML = counts.sortedCompanies.length > 0 ? `
+          <div class="sidebar__title">Companies</div>
+          <input type="text" class="sidebar-right__search" placeholder="Search firms..."
+            oninput="Problems.filterCompanySearch(this.value)">
+          <div class="sidebar-right__companies">
+            <button class="sidebar__cat-btn ${!activeCompany ? 'sidebar__cat-btn--active' : ''}"
+              onclick="Problems.filterCompany(null)">
+              <span>All Companies</span>
+              <span class="sidebar__cat-count">${base.length}</span>
+            </button>
+            ${counts.sortedCompanies.map(([cId, cnt]) => `
+              <button class="sidebar__cat-btn ${activeCompany === cId ? 'sidebar__cat-btn--active' : ''}"
+                onclick="Problems.filterCompany('${cId}')">
+                <span>${companyShort(cId)}</span>
+                <span class="sidebar__cat-count">${cnt}</span>
+              </button>
+            `).join('')}
+          </div>
+        ` : '';
+      }
+
       // ---- Update filter bar right side ----
       const pfRight = document.getElementById('pf-bar-right');
       if (pfRight) {
@@ -648,13 +692,14 @@ const Problems = (() => {
     const status = getStatus(p.id);
     const statusIcon = status === 'solved' ? '\u2705' : status === 'attempted' ? '\u{1F7E1}' : '';
     const isStub = p.status === 'incomplete';
+    const locked = isProblemLocked(p);
     const tagHtml = p.tags.slice(0, 3).map(t =>
       `<span class="td-tag">${formatTag(t)}</span>`
     ).join('');
 
     return `
-      <tr class="${isStub ? 'problem-row--stub' : ''}">
-        <td class="td-status">${statusIcon}</td>
+      <tr class="${isStub ? 'problem-row--stub' : ''} ${locked ? 'problem-row--locked' : ''}">
+        <td class="td-status">${locked ? '<span class="lock-icon">\u{1F512}</span>' : statusIcon}</td>
         <td class="td-num">${p.id}</td>
         <td>
           <a class="td-title-link" href="problems.html?id=${p.id}">${App.escapeHtml(p.title)}</a>
@@ -753,29 +798,51 @@ const Problems = (() => {
       `<a class="detail-tag" href="problems.html?tag=${encodeURIComponent(t)}">${formatTag(t)}</a>`
     ).join('');
 
+    // Tier gating
+    const locked = isProblemLocked(problem);
+    const lockedOverlayHtml = `
+      <div class="locked-overlay">
+        <div class="locked-overlay__icon">\u{1F512}</div>
+        <div class="locked-overlay__title">Pro Content</div>
+        <div class="locked-overlay__desc">
+          Upgrade to Pro to unlock hints, solutions, and intuition for all 1,090+ problems.
+        </div>
+        <button class="btn btn--primary btn--sm" onclick="Auth.showAccount()">Learn More</button>
+      </div>
+    `;
+
     // Hints
     const hintsHtml = problem.hints && problem.hints.length > 0
-      ? `<div class="detail-section">
-          <div class="detail-section__label">Hints</div>
-          ${problem.hints.map((h, i) => `
-            <div class="hint-item">
-              <button class="collapsible-toggle" onclick="Problems.toggleHint(this)">
-                <span class="collapsible-toggle__arrow">\u25B6</span> Hint ${i + 1}
-              </button>
-              <div class="collapsible-content hint-content math-content">${MarkdownRender.render(h)}</div>
-            </div>
-          `).join('')}
-        </div>`
+      ? (locked
+        ? `<div class="detail-section">
+            <div class="detail-section__label">Hints</div>
+            ${lockedOverlayHtml}
+          </div>`
+        : `<div class="detail-section">
+            <div class="detail-section__label">Hints</div>
+            ${problem.hints.map((h, i) => `
+              <div class="hint-item">
+                <button class="collapsible-toggle" onclick="Problems.toggleHint(this)">
+                  <span class="collapsible-toggle__arrow">\u25B6</span> Hint ${i + 1}
+                </button>
+                <div class="collapsible-content hint-content math-content">${MarkdownRender.render(h)}</div>
+              </div>
+            `).join('')}
+          </div>`)
       : '';
 
     // Intuition
     const intuitionHtml = problem.intuition
-      ? `<div class="detail-section detail-section--intuition">
-          <button class="collapsible-toggle collapsible-toggle--intuition" onclick="Problems.toggleIntuition(this)">
-            <span class="collapsible-toggle__arrow">\u25B6</span> Intuition
-          </button>
-          <div class="collapsible-content intuition-content math-content">${MarkdownRender.render(problem.intuition)}</div>
-        </div>`
+      ? (locked
+        ? `<div class="detail-section detail-section--intuition">
+            ${lockedOverlayHtml}
+          </div>`
+        : `<div class="detail-section detail-section--intuition">
+            <button class="collapsible-toggle collapsible-toggle--intuition" onclick="Problems.toggleIntuition(this)">
+              <span class="collapsible-toggle__arrow">\u25B6</span> Intuition
+            </button>
+            <div class="collapsible-content intuition-content math-content">${MarkdownRender.render(problem.intuition)}</div>
+          </div>`)
       : '';
 
     // Similar problems
@@ -890,14 +957,17 @@ const Problems = (() => {
                 oninput="Problems.onNotesInput(${problem.id})">${App.escapeHtml(savedNotes)}</textarea>
             </div>
 
-            <div class="detail-section">
-              <button class="collapsible-toggle collapsible-toggle--solution" onclick="Problems.toggleSolution(this)">
-                <span class="collapsible-toggle__arrow">\u25B6</span> Solution
-              </button>
-              <div class="collapsible-content solution-content math-content">
-                ${problem.solution ? MarkdownRender.render(problem.solution) : '<p class="no-solution">Solution not yet available for this problem.</p>'}
-              </div>
-            </div>
+            ${locked
+              ? `<div class="detail-section">${lockedOverlayHtml}</div>`
+              : `<div class="detail-section">
+                  <button class="collapsible-toggle collapsible-toggle--solution" onclick="Problems.toggleSolution(this)">
+                    <span class="collapsible-toggle__arrow">\u25B6</span> Solution
+                  </button>
+                  <div class="collapsible-content solution-content math-content">
+                    ${problem.solution ? MarkdownRender.render(problem.solution) : '<p class="no-solution">Solution not yet available for this problem.</p>'}
+                  </div>
+                </div>`
+            }
           </div>
         </div>
       </div>
@@ -968,10 +1038,10 @@ const Problems = (() => {
   }
 
   function filterCompanySearch(query) {
-    const pills = document.querySelectorAll('.company-bar__pill');
     const q = query.toLowerCase();
-    pills.forEach(pill => {
-      pill.style.display = pill.textContent.toLowerCase().includes(q) ? '' : 'none';
+    // Search both inline pills and right sidebar buttons
+    document.querySelectorAll('.company-bar__pill, .sidebar-right__companies .sidebar__cat-btn').forEach(btn => {
+      btn.style.display = btn.textContent.toLowerCase().includes(q) ? '' : 'none';
     });
   }
 

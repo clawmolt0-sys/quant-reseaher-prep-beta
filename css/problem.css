@@ -1,14 +1,14 @@
 /* ============================================
    PROBLEMS — LeetCode-style layout
-   Two-column: left sidebar | main content
-   Tag cloud, company bar, detail two-panel,
+   Three-column: left sidebar | main | right sidebar
+   Tag cloud, company sidebar, detail two-panel,
    markdown solutions, status tracking, discussion
    ============================================ */
 
-/* --- Two-Column Layout --- */
+/* --- Three-Column Layout --- */
 .problems-layout {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px 1fr 220px;
   gap: var(--space-5);
   align-items: start;
 }
@@ -88,6 +88,53 @@
   height: 1px;
   background: var(--border-color);
   margin: var(--space-3) var(--space-2);
+}
+
+/* --- Right Sidebar (Companies) --- */
+.problems-sidebar-right {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-4));
+  max-height: calc(100vh - var(--nav-height) - var(--space-8));
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.sidebar-right__search {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-family: var(--font-sans);
+  margin-bottom: var(--space-2);
+  transition: border-color var(--transition-fast);
+}
+
+.sidebar-right__search::placeholder {
+  color: var(--text-muted);
+}
+
+.sidebar-right__search:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.1);
+}
+
+.sidebar-right__companies {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* Hide inline company bar on desktop (right sidebar visible) */
+@media (min-width: 1101px) {
+  #company-bar-container {
+    display: none;
+  }
 }
 
 /* --- Header --- */
@@ -1440,11 +1487,27 @@
    RESPONSIVE
    ============================================ */
 
+@media (max-width: 1100px) {
+  .problems-layout {
+    grid-template-columns: 240px 1fr;
+  }
+  .problems-sidebar-right {
+    display: none;
+  }
+  /* Show inline company bar as fallback */
+  #company-bar-container {
+    display: block !important;
+  }
+}
+
 @media (max-width: 900px) {
   .problems-layout {
     grid-template-columns: 1fr;
   }
   .problems-sidebar {
+    display: none;
+  }
+  .problems-sidebar-right {
     display: none;
   }
   .mobile-cat-filter {

@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
   <link rel="stylesheet" href="css/responsive.css">
 
   <style>
@@ -232,13 +233,14 @@
       font-weight: var(--font-semibold);
     }
 
-    /* Companies strip */
-    .companies-strip {
+    /* Logo Carousel */
+    .logo-carousel-section {
       max-width: 900px;
       margin: 0 auto var(--space-16);
       text-align: center;
+      overflow: hidden;
     }
-    .companies-strip__title {
+    .logo-carousel-section__title {
       font-size: var(--text-xs);
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -246,20 +248,50 @@
       margin-bottom: var(--space-4);
       font-weight: var(--font-medium);
     }
-    .companies-strip__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-2);
+    .logo-carousel {
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     }
-    .companies-strip__item {
-      padding: var(--space-1) var(--space-3);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border-color);
-      font-size: var(--text-xs);
-      color: var(--text-secondary);
-      font-weight: var(--font-medium);
-      background: var(--bg-card);
+    .logo-carousel__track {
+      display: flex;
+      gap: var(--space-10);
+      animation: logo-scroll 35s linear infinite;
+      width: max-content;
+    }
+    .logo-carousel__track:hover {
+      animation-play-state: paused;
+    }
+    .logo-carousel__item {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      opacity: 0.4;
+      transition: opacity var(--transition-base);
+      filter: grayscale(100%) brightness(1.5);
+    }
+    .logo-carousel__item:hover {
+      opacity: 0.9;
+      filter: grayscale(0%) brightness(1);
+    }
+    .logo-carousel__item img {
+      max-height: 32px;
+      max-width: 140px;
+      object-fit: contain;
+    }
+    .logo-carousel__fallback {
+      color: var(--text-muted);
+      font-size: var(--text-sm);
+      white-space: nowrap;
+      font-weight: var(--font-semibold);
+      letter-spacing: 0.05em;
+    }
+    @keyframes logo-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     /* Featured */
@@ -356,6 +388,7 @@
         <li><a class="nav__link" href="labs.html">Code Labs</a></li>
         <li><a class="nav__link" href="resources.html">Resources</a></li>
       </ul>
+      <div id="auth-container"></div>
     </div>
   </nav>
 
@@ -366,19 +399,21 @@
       <section class="hero">
         <div class="hero__label">
           <span class="hero__label-dot"></span>
-          Built for QR, QT, and quant SWE interviews
+          1,090+ problems from 16 top quant firms
         </div>
         <h1 class="hero__title">
-          Go beyond brain teasers.<br>
-          Prepare like a <span class="hero__title-accent">Quant</span>.
+          The most comprehensive<br>
+          <span class="hero__title-accent">quant interview</span> prep platform.
         </h1>
         <p class="hero__subtitle">
-          The only prep platform that combines structured lectures, real interview problems
-          from 16 top firms, finance curriculum, and hands-on coding labs &mdash; built for
-          aspiring Quant Researchers, Quant Traders, and SWEs breaking into quant finance.
+          Go beyond probability puzzles. QR Prep covers stochastic calculus,
+          portfolio optimization, market microstructure, options pricing,
+          and real coding challenges &mdash; everything you need for QR, QT,
+          and quant SWE interviews at the world's top firms.
         </p>
         <div class="hero__actions">
           <a href="problems.html" class="btn btn--primary">Start Practicing</a>
+          <a href="learn.html" class="btn btn--secondary">Explore Curriculum</a>
         </div>
       </section>
 
@@ -405,11 +440,12 @@
       <!-- Why this is different -->
       <section class="diff-section">
         <div class="diff-section__title">Why QR Prep</div>
-        <h2 class="diff-section__heading">Most prep sites stop at probability puzzles. We don't.</h2>
+        <h2 class="diff-section__heading">Other sites stop at probability puzzles. We cover everything.</h2>
         <p class="diff-section__desc">
-          Quant interviews &mdash; whether for QR, QT, or SWE roles &mdash; test far more than
-          expected value calculations. We cover the full stack from stochastic calculus and
-          portfolio optimization to market microstructure and real coding with financial data.
+          Quant interviews test far more than expected value and coin flips. We cover
+          the full stack &mdash; stochastic calculus, portfolio optimization, market
+          microstructure, options pricing, statistical modeling, and real coding with
+          financial data &mdash; with 1,090+ problems across 18 topic categories.
         </p>
         <div class="diff-grid">
           <div class="diff-card">
@@ -457,7 +493,7 @@
           <div class="section-card__icon">&#x1F9E9;</div>
           <h2 class="section-card__title">Interview Problems</h2>
           <p class="section-card__desc">Math, probability, finance, and logic problems from real quant interviews. Filter by firm, topic, and difficulty.</p>
-          <div class="section-card__stat" id="section-stat-problems">150+ problems &middot; 18 firms &rarr;</div>
+          <div class="section-card__stat" id="section-stat-problems">1,090+ problems &middot; 16 firms &rarr;</div>
         </a>
         <a class="section-card" href="labs.html">
           <div class="section-card__icon">&#x1F4BB;</div>
@@ -473,10 +509,12 @@
         </a>
       </section>
 
-      <!-- Company strip -->
-      <section class="companies-strip">
-        <div class="companies-strip__title">Problems from interviews at</div>
-        <div class="companies-strip__list" id="companies-list"></div>
+      <!-- Company Logo Carousel -->
+      <section class="logo-carousel-section">
+        <div class="logo-carousel-section__title">Covering interviews at</div>
+        <div class="logo-carousel" aria-label="Companies covered">
+          <div class="logo-carousel__track" id="logo-track"></div>
+        </div>
       </section>
 
       <!-- Featured Problems -->
@@ -497,10 +535,10 @@
             <div class="roadmap-card__phase">Now</div>
             <div class="roadmap-card__title">Foundation</div>
             <ul class="roadmap-card__items">
-              <li>150+ interview problems with solutions</li>
+              <li>1,090+ interview problems with solutions</li>
               <li>57 lectures with interactive notebooks</li>
               <li>18 topics across 2 tracks</li>
-              <li>18 firms with company-specific filtering</li>
+              <li>16 firms with company-specific filtering</li>
             </ul>
           </div>
           <div class="roadmap-card">
@@ -541,8 +579,13 @@
     </div>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
   <script src="js/data-loader.js"></script>
   <script src="js/katex-render.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
   <script src="js/app.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
@@ -558,12 +601,35 @@
       document.getElementById('stat-topics').textContent = topicCount;
       document.getElementById('stat-companies').textContent = companies.length;
 
-      // Companies strip
-      const companiesEl = document.getElementById('companies-list');
-      if (companiesEl) {
-        companiesEl.innerHTML = companies.map(c =>
-          `<span class="companies-strip__item">${c.name}</span>`
-        ).join('');
+      // Logo carousel
+      const logoTrack = document.getElementById('logo-track');
+      if (logoTrack) {
+        const logoCompanies = [
+          { id: 'citadel', name: 'Citadel' },
+          { id: 'two-sigma', name: 'Two Sigma' },
+          { id: 'de-shaw', name: 'D.E. Shaw' },
+          { id: 'jump-trading', name: 'Jump Trading' },
+          { id: 'drw', name: 'DRW' },
+          { id: 'hrt', name: 'HRT' },
+          { id: 'jane-street', name: 'Jane Street' },
+          { id: 'optiver', name: 'Optiver' },
+          { id: 'sig', name: 'SIG' },
+          { id: 'squarepoint', name: 'Squarepoint' },
+          { id: 'tower-research', name: 'Tower Research' },
+          { id: 'millennium', name: 'Millennium' },
+          { id: 'point72', name: 'Point72' },
+          { id: 'aqr', name: 'AQR' },
+          { id: 'renaissance', name: 'RenTech' },
+          { id: 'five-rings', name: 'Five Rings' },
+        ];
+        // Double items for seamless infinite loop
+        const items = [...logoCompanies, ...logoCompanies];
+        logoTrack.innerHTML = items.map(c => `
+          <div class="logo-carousel__item">
+            <img src="assets/logos/${c.id}.svg" alt="${c.name}"
+                 onerror="this.parentElement.innerHTML='<span class=\\'logo-carousel__fallback\\'>${c.name}</span>'">
+          </div>
+        `).join('');
       }
 
       // Featured problems (Fisher-Yates shuffle for proper randomization)

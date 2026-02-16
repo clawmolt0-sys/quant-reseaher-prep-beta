@@ -91,7 +91,13 @@ const App = (() => {
   }
 
   // Init
-  document.addEventListener('DOMContentLoaded', initNav);
+  document.addEventListener('DOMContentLoaded', () => {
+    initNav();
+    // Initialize Auth if available
+    if (typeof Auth !== 'undefined') {
+      Auth.init();
+    }
+  });
 
   return {
     getCurrentPage,
