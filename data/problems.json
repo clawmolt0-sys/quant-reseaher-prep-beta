@@ -12297,7 +12297,7 @@
     },
     {
         "id":  395,
-        "title":  "Python: `\\_\\_new\\_\\_` vs",
+        "title":  "Python: \u0027\\_\\_new\\_\\_\u0027 vs",
         "statement":  "Python: `\\_\\_new\\_\\_` vs. `\\_\\_init\\_\\_`. What is the difference between the `\\_\\_new\\_\\_` and `\\_\\_init\\_\\_` methods in Python classes?",
         "solution":  "",
         "difficulty":  "easy",

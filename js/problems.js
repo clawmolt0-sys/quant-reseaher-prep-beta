@@ -9,6 +9,9 @@ const Problems = (() => {
   let tagsData = null;
   let companiesData = null;
   let currentSort = { key: 'id', dir: 'asc' };
+  const PAGE_SIZE = 50;
+  let currentFiltered = [];
+  let currentPage = 1;
 
   // ---- Normalize: handle both old and new schema ----
   function ensureArray(val) {
@@ -41,16 +44,33 @@ const Problems = (() => {
 
   // ---- Init ----
   async function init() {
-    const raw = (await DataLoader.problems()) || [];
-    allProblems = raw.map(normalize);
-    tagsData = (await DataLoader.tags()) || { categories: [], types: [] };
-    companiesData = (await DataLoader.companies()) || [];
+    try {
+      const raw = (await DataLoader.problems()) || [];
+      console.log('[Problems] Loaded', raw.length, 'problems');
+      allProblems = raw.map(normalize);
+      tagsData = (await DataLoader.tags()) || { categories: [], types: [] };
+      companiesData = (await DataLoader.companies()) || [];
 
-    const params = App.getParams();
-    if (params.id) {
-      renderDetail(parseInt(params.id, 10) || params.id);
-    } else {
-      renderList(params);
+      const params = App.getParams();
+      if (params.id) {
+        renderDetail(parseInt(params.id, 10) || params.id);
+      } else {
+        renderList(params);
+      }
+    } catch (err) {
+      console.error('[Problems] Init error:', err);
+      const container = document.getElementById('content');
+      if (container) {
+        container.innerHTML = `
+          <div class="container">
+            <div class="empty-state">
+              <div class="empty-state__icon">\u26A0\uFE0F</div>
+              <div class="empty-state__title">Error loading problems</div>
+              <p style="color:var(--text-muted);max-width:600px;margin:0 auto">${err.message}</p>
+            </div>
+          </div>
+        `;
+      }
     }
   }
 
@@ -138,6 +158,8 @@ const Problems = (() => {
 
     // Sort
     sortProblems(filtered, currentSort.key, currentSort.dir);
+    currentFiltered = filtered;
+    currentPage = 1;
 
     // Header
     let headerText = 'All Problems';
@@ -268,9 +290,16 @@ const Problems = (() => {
                 </tr>
               </thead>
               <tbody>
-                ${filtered.map(p => tableRow(p)).join('')}
+                ${filtered.slice(0, PAGE_SIZE).map(p => tableRow(p)).join('')}
               </tbody>
             </table>
+            ${filtered.length > PAGE_SIZE ? `
+              <div class="load-more-bar">
+                <button class="load-more-btn" onclick="Problems.loadMore()">
+                  Show more (${filtered.length - PAGE_SIZE} remaining)
+                </button>
+              </div>
+            ` : ''}
 
             ${filtered.length === 0 ? `
               <div class="empty-state">
@@ -551,6 +580,28 @@ const Problems = (() => {
     KatexRender.render(container);
   }
 
+  // ---- Pagination ----
+  function loadMore() {
+    currentPage++;
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = currentPage * PAGE_SIZE;
+    const batch = currentFiltered.slice(start, end);
+    const tbody = document.querySelector('.problem-table tbody');
+    if (tbody && batch.length > 0) {
+      tbody.insertAdjacentHTML('beforeend', batch.map(p => tableRow(p)).join(''));
+    }
+    // Update or hide the "load more" button
+    const remaining = currentFiltered.length - end;
+    const bar = document.querySelector('.load-more-bar');
+    if (bar) {
+      if (remaining <= 0) {
+        bar.remove();
+      } else {
+        bar.querySelector('.load-more-btn').textContent = `Show more (${remaining} remaining)`;
+      }
+    }
+  }
+
   // ---- Filter helpers ----
   function filterCat(cat) {
     const p = App.getParams();
@@ -662,6 +713,6 @@ const Problems = (() => {
   return {
     init, toggleSolution, toggleHint, toggleIntuition,
     filterCat, filterDiff, filterType, filterTag, filterCompany,
-    toggleTagCloud, sort, onNotesInput
+    toggleTagCloud, sort, onNotesInput, loadMore
   };
 })();
