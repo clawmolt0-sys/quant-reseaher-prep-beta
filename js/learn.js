@@ -47,7 +47,7 @@ const Learn = (() => {
                   ${track.topics.map(t => `<span class="tag">${t.title}</span>`).join('')}
                 </div>
                 <div style="margin-top: var(--space-4); font-size: var(--text-sm); color: var(--accent); font-weight: 600;">
-                  ${track.topics.length} topics · ${lectureCount} lectures
+                  ${track.topics.length} topics &middot; ${lectureCount} lectures
                 </div>
               </a>
             `;
@@ -90,7 +90,7 @@ const Learn = (() => {
                   <p class="track-topic-card__description">${topic.description}</p>
                   <div class="track-topic-card__stat">
                     ${lectures.length} lecture${lectures.length !== 1 ? 's' : ''}
-                    ${lectures.length === 0 ? ' · Coming soon' : ''}
+                    ${lectures.length === 0 ? ' &middot; Coming soon' : ''}
                   </div>
                 </a>
               `;
@@ -145,8 +145,8 @@ const Learn = (() => {
                     <div class="lecture-card__title">${lec.title}</div>
                     <div class="lecture-card__description">${lec.description}</div>
                     <div class="lecture-card__meta">
-                      <span>${lec.type === 'slides' ? '📄 Slides' : lec.type === 'notebook' ? '📓 Notebook' : '📄 Content'}</span>
-                      ${lec.duration_minutes ? `<span>· ${lec.duration_minutes} min</span>` : ''}
+                      <span>${getLecTypeLabel(lec)}</span>
+                      ${lec.duration_minutes ? `<span>&middot; ${lec.duration_minutes} min</span>` : ''}
                     </div>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const Learn = (() => {
             </div>
           ` : `
             <div class="empty-state">
-              <div class="empty-state__icon">📚</div>
+              <div class="empty-state__icon">&#128218;</div>
               <div class="empty-state__title">Content coming soon</div>
               <p>Lectures for this topic are being prepared.</p>
             </div>
@@ -162,6 +162,12 @@ const Learn = (() => {
         </div>
       </div>
     `;
+  }
+
+  function getLecTypeLabel(lec) {
+    if (lec.type === 'notebook') return '&#128211; Interactive Notebook';
+    if (lec.type === 'slides') return '&#128196; Slides';
+    return '&#128218; Content';
   }
 
   // ---- Lecture Viewer ----
@@ -185,34 +191,6 @@ const Learn = (() => {
     const prev = currentIdx > 0 ? trackLectures[currentIdx - 1] : null;
     const next = currentIdx < trackLectures.length - 1 ? trackLectures[currentIdx + 1] : null;
 
-    let contentHtml = '';
-    if (lecture.type === 'slides' && lecture.slides) {
-      contentHtml = `
-        <iframe src="assets/${lecture.slides}" title="${lecture.title}"></iframe>
-        <div style="padding: var(--space-4); text-align: center;">
-          <a class="btn btn--secondary btn--sm" href="assets/${lecture.slides}" target="_blank">
-            Open in new tab ↗
-          </a>
-        </div>
-      `;
-    } else if (lecture.type === 'notebook' && lecture.source) {
-      contentHtml = `
-        <div class="notebook-html" id="notebook-content">
-          <div class="empty-state">
-            <div class="empty-state__icon">📓</div>
-            <div class="empty-state__title">Loading notebook...</div>
-          </div>
-        </div>
-      `;
-    } else {
-      contentHtml = `
-        <div class="empty-state" style="min-height:300px">
-          <div class="empty-state__icon">📚</div>
-          <div class="empty-state__title">Content will be available soon</div>
-        </div>
-      `;
-    }
-
     container.innerHTML = `
       <div class="page-with-sidebar">
         ${buildSidebar(lecture.track, lecture.topic)}
@@ -232,22 +210,25 @@ const Learn = (() => {
             <div class="lecture-viewer__header">
               <h1 class="lecture-viewer__title">${lecture.title}</h1>
               <div style="display:flex; gap:var(--space-2); align-items:center;">
-                <span class="tag">${lecture.type === 'slides' ? '📄 Slides' : '📓 Notebook'}</span>
+                <span class="tag">${getLecTypeLabel(lecture)}</span>
                 ${lecture.duration_minutes ? `<span style="font-size:var(--text-xs); color:var(--text-muted)">${lecture.duration_minutes} min</span>` : ''}
               </div>
             </div>
-            <div class="lecture-viewer__content">
-              ${contentHtml}
+            <div class="lecture-viewer__content" id="lecture-content">
+              <div class="nb-loading">
+                <div style="font-size:2rem">&#9881;</div>
+                <div style="color:var(--text-muted);font-size:var(--text-sm)">Loading lecture...</div>
+              </div>
             </div>
           </div>
 
           <div style="display:flex; justify-content:space-between; margin-top:var(--space-4)">
             ${prev
-              ? `<a class="btn btn--ghost" href="learn.html?track=${lecture.track}&topic=${lecture.topic}&lecture=${prev.id}">← ${prev.title}</a>`
+              ? `<a class="btn btn--ghost" href="learn.html?track=${lecture.track}&topic=${lecture.topic}&lecture=${prev.id}">&larr; ${prev.title}</a>`
               : '<span></span>'
             }
             ${next
-              ? `<a class="btn btn--ghost" href="learn.html?track=${lecture.track}&topic=${lecture.topic}&lecture=${next.id}">${next.title} →</a>`
+              ? `<a class="btn btn--ghost" href="learn.html?track=${lecture.track}&topic=${lecture.topic}&lecture=${next.id}">${next.title} &rarr;</a>`
               : '<span></span>'
             }
           </div>
@@ -255,31 +236,34 @@ const Learn = (() => {
       </div>
     `;
 
-    // Load notebook content if needed
-    if (lecture.type === 'notebook' && lecture.source) {
-      loadNotebookContent(lecture.source);
-    }
+    // Load content based on type
+    loadLectureContent(lecture);
   }
 
-  async function loadNotebookContent(source) {
-    const el = document.getElementById('notebook-content');
+  async function loadLectureContent(lecture) {
+    const el = document.getElementById('lecture-content');
     if (!el) return;
-    try {
-      const resp = await fetch(`assets/${source}`);
-      if (resp.ok) {
-        el.innerHTML = await resp.text();
-        KatexRender.render(el);
-      } else {
-        el.innerHTML = `
-          <div class="empty-state">
-            <div class="empty-state__icon">📓</div>
-            <div class="empty-state__title">Notebook content not yet converted</div>
-            <p>This lecture will be available after notebook processing.</p>
-          </div>
-        `;
-      }
-    } catch {
-      el.innerHTML = `<p style="padding:var(--space-4);color:var(--text-muted)">Could not load notebook.</p>`;
+
+    if (lecture.type === 'notebook' && lecture.source) {
+      // Use the notebook renderer to render .ipynb directly
+      await NotebookRenderer.render(lecture.source, el);
+    } else if (lecture.type === 'slides' && lecture.slides) {
+      // Embed PDF slides
+      el.innerHTML = `
+        <iframe src="${lecture.slides}" title="${lecture.title}" style="width:100%;height:75vh;border:none;"></iframe>
+        <div style="padding: var(--space-3); text-align: center; border-top: 1px solid var(--border-color);">
+          <a class="btn btn--secondary btn--sm" href="${lecture.slides}" target="_blank">
+            Open slides in new tab &nearr;
+          </a>
+        </div>
+      `;
+    } else {
+      el.innerHTML = `
+        <div class="empty-state" style="min-height:300px">
+          <div class="empty-state__icon">&#128218;</div>
+          <div class="empty-state__title">Content will be available soon</div>
+        </div>
+      `;
     }
   }
 

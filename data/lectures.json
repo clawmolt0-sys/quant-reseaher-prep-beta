@@ -7,7 +7,7 @@
     "topic": "probability",
     "order": 1,
     "type": "slides",
-    "slides": "slides/sagaark-quant-training-05.pdf",
+    "slides": "slides/sageark-quant-training-05.pdf",
     "duration_minutes": 60
   },
   {
@@ -35,12 +35,12 @@
   {
     "id": "lec-q-opt-01",
     "title": "Optimizing Risk and Return",
-    "description": "Mean-variance optimization, efficient frontier, and constrained portfolio optimization.",
+    "description": "Mean-variance optimization, efficient frontier, and risk-return tradeoff.",
     "track": "quant",
     "topic": "optimization",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/risk/d3-optimizing-risk-and-return.html",
+    "source": "notebooks/risk/d3-optimizing-risk-and-return.ipynb",
     "duration_minutes": 45
   },
   {
@@ -51,8 +51,41 @@
     "topic": "optimization",
     "order": 2,
     "type": "notebook",
-    "source": "notebooks/risk/d3x-constrained-optimization.html",
+    "source": "notebooks/risk/d3x-constrained-optimization.ipynb",
     "duration_minutes": 45
+  },
+  {
+    "id": "lec-q-opt-03",
+    "title": "Optimization via Regression",
+    "description": "Connecting regression and portfolio optimization. Regularization and shrinkage estimators.",
+    "track": "quant",
+    "topic": "optimization",
+    "order": 3,
+    "type": "notebook",
+    "source": "notebooks/risk/d3x-optimization-via-regression.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-q-pc-01",
+    "title": "Equity Indexes and ETFs",
+    "description": "Portfolio construction with indexes, ETFs, sector exposure, and diversification.",
+    "track": "quant",
+    "topic": "portfolio-construction",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b3-equity-indexes-etfs.ipynb",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-q-pc-02",
+    "title": "Levered ETFs",
+    "description": "Mechanics and risks of leveraged ETFs, volatility drag, and rebalancing effects.",
+    "track": "quant",
+    "topic": "portfolio-construction",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b3x-levered-etfs.ipynb",
+    "duration_minutes": 30
   },
   {
     "id": "lec-f-fi-01",
@@ -62,18 +95,18 @@
     "topic": "fixed-income",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/market-foundations/a1-overview.html",
+    "source": "notebooks/market-foundations/a1-overview.ipynb",
     "duration_minutes": 30
   },
   {
     "id": "lec-f-fi-02",
     "title": "Treasury Debt",
-    "description": "Bond pricing fundamentals, treasury quotes, bills vs notes vs bonds.",
+    "description": "Bond pricing, treasury quotes, bills vs notes vs bonds, accrued interest, and day-count conventions.",
     "track": "finance",
     "topic": "fixed-income",
     "order": 2,
     "type": "notebook",
-    "source": "notebooks/market-foundations/a2-treasury-debt.html",
+    "source": "notebooks/market-foundations/a2-treasury-debt.ipynb",
     "duration_minutes": 45
   },
   {
@@ -84,19 +117,107 @@
     "topic": "fixed-income",
     "order": 3,
     "type": "notebook",
-    "source": "notebooks/market-foundations/a2-yield-curve.html",
+    "source": "notebooks/market-foundations/a2-yield-curve.ipynb",
     "duration_minutes": 45
   },
   {
     "id": "lec-f-fi-04",
-    "title": "Interest Rate Risk",
-    "description": "Duration, convexity, DV01, and hedging interest rate exposure.",
+    "title": "Debt Markets",
+    "description": "Government debt markets, primary dealers, Treasury auctions, and market structure.",
     "track": "finance",
     "topic": "fixed-income",
     "order": 4,
     "type": "notebook",
-    "source": "notebooks/market-foundations/a3-interest-rate-risk.html",
+    "source": "notebooks/market-foundations/a2x-debt-markets.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-fi-05",
+    "title": "Interest Rate Risk",
+    "description": "Duration, convexity, DV01, and hedging interest rate exposure.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 5,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a3-interest-rate-risk.ipynb",
     "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-fi-06",
+    "title": "Treasury Arbitrage",
+    "description": "On-the-run vs off-the-run, basis trades, and relative value in treasuries.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 6,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a3-treasury-arbitrage.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-fi-07",
+    "title": "Floating-Rate Notes",
+    "description": "FRN mechanics, pricing, SOFR, and floating vs fixed rate comparison.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 7,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a4-floating-rate-notes.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-fi-08",
+    "title": "Money Markets",
+    "description": "Overnight rates, repo, fed funds, SOFR, and money market instruments.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 8,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a4-money-markets.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-fi-09",
+    "title": "Swaps",
+    "description": "Interest rate swaps, swap pricing, swap spreads, and applications.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 9,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a4-swaps.ipynb",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-fi-10",
+    "title": "Forwards and Futures",
+    "description": "Forward pricing, cost of carry, forward vs futures, and applications.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 10,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a5-forwards.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-fi-11",
+    "title": "Inflation and TIPS",
+    "description": "Inflation expectations, breakeven rates, TIPS pricing, and real vs nominal rates.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 11,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a5-inflation.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-fi-12",
+    "title": "Economics of the Term Structure",
+    "description": "Expectations hypothesis, term premium, yield curve shapes, and macroeconomic factors.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 12,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a5x-economics-term-structure.ipynb",
+    "duration_minutes": 40
   },
   {
     "id": "lec-f-od-01",
@@ -106,7 +227,7 @@
     "topic": "options-derivatives",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/market-foundations/b4-equity-options.html",
+    "source": "notebooks/market-foundations/b4-equity-options.ipynb",
     "duration_minutes": 45
   },
   {
@@ -117,18 +238,62 @@
     "topic": "options-derivatives",
     "order": 2,
     "type": "notebook",
-    "source": "notebooks/derivatives/c1-binomial-trees.html",
+    "source": "notebooks/derivatives/c1-binomial-trees.ipynb",
     "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-od-03",
+    "title": "Multi-Period Binomial Trees",
+    "description": "Extending binomial models: early exercise, American options, and convergence to BS.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 3,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c1x-multiperiod-trees.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-od-04",
+    "title": "Bond and Rate Futures",
+    "description": "Treasury futures, cheapest-to-deliver, conversion factors, and hedging with futures.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 4,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c5-bond-rate-futures.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-od-05",
+    "title": "STIR Futures",
+    "description": "Short-term interest rate futures, Eurodollars, SOFR futures, and hedging applications.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 5,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c5-stir-futures.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-od-06",
+    "title": "Commodity Futures",
+    "description": "Commodity futures pricing, contango, backwardation, and carry strategies.",
+    "track": "finance",
+    "topic": "options-derivatives",
+    "order": 6,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b2-commodity-futures.ipynb",
+    "duration_minutes": 40
   },
   {
     "id": "lec-f-bsg-01",
     "title": "Black-Scholes and the Greeks",
-    "description": "Black-Scholes formula derivation, delta, gamma, vega, theta, and hedging.",
+    "description": "Black-Scholes formula, delta, gamma, vega, theta, hedging, and the theta-gamma tradeoff.",
     "track": "finance",
     "topic": "black-scholes-greeks",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/market-foundations/b5-black-scholes-greeks.html",
+    "source": "notebooks/market-foundations/b5-black-scholes-greeks.ipynb",
     "duration_minutes": 60
   },
   {
@@ -139,8 +304,30 @@
     "topic": "black-scholes-greeks",
     "order": 2,
     "type": "notebook",
-    "source": "notebooks/derivatives/c2-blacks-formulas.html",
+    "source": "notebooks/derivatives/c2-blacks-formulas.ipynb",
     "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-bsg-03",
+    "title": "Swaptions",
+    "description": "Swaption pricing, Black's model for swaptions, and interest rate volatility.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 3,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c2x-swaptions.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-bsg-04",
+    "title": "Realized Volatility Example",
+    "description": "Computing and analyzing realized volatility from market data.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 4,
+    "type": "notebook",
+    "source": "notebooks/derivatives/bs-example-realized-vol.ipynb",
+    "duration_minutes": 30
   },
   {
     "id": "lec-f-vm-01",
@@ -150,55 +337,132 @@
     "topic": "volatility-modeling",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/derivatives/c3-volatility-modeling.html",
+    "source": "notebooks/derivatives/c3-volatility-modeling.ipynb",
     "duration_minutes": 60
   },
   {
     "id": "lec-f-vm-02",
+    "title": "SABR Model Illustrations",
+    "description": "SABR stochastic volatility model: calibration, dynamics, and smile generation.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c3-sabr-illustrations.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-vm-03",
+    "title": "Flat and Forward Volatility",
+    "description": "Volatility term structure, flat vol vs forward vol, and cap/floor stripping.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 3,
+    "type": "notebook",
+    "source": "notebooks/derivatives/c4-flat-forward-vol.ipynb",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-vm-04",
     "title": "Volatility Skew Fitting",
     "description": "Practical techniques for fitting volatility skews to market data.",
     "track": "finance",
     "topic": "volatility-modeling",
-    "order": 2,
+    "order": 4,
     "type": "slides",
     "slides": "slides/sageark-quant-training-40-vol-skew.pdf",
     "duration_minutes": 45
   },
   {
+    "id": "lec-f-vm-05",
+    "title": "Normal Volatility",
+    "description": "Normal vol vs lognormal vol, Bachelier model, and when to use each.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 5,
+    "type": "notebook",
+    "source": "notebooks/derivatives/normal-vol.ipynb",
+    "duration_minutes": 30
+  },
+  {
+    "id": "lec-f-vm-06",
+    "title": "Skew Fitting: Introduction",
+    "description": "Introduction to volatility skew fitting, market conventions, and practical approaches.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 6,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew2-intro.ipynb",
+    "duration_minutes": 30
+  },
+  {
+    "id": "lec-f-vm-07",
+    "title": "Skew Fitting: Skews",
+    "description": "Fitting volatility skews: parametric models, interpolation, and arbitrage constraints.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 7,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew2-skews.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-vm-08",
+    "title": "Skew Fitting: Vol Path",
+    "description": "Forward volatility paths, variance budgets, and time interpolation.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 8,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew2-vol-path.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-vm-09",
+    "title": "Skew Fitting: Quadratic Variation",
+    "description": "Quadratic variation, variance swaps, and model-free implied volatility.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 9,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew2-quad-var.ipynb",
+    "duration_minutes": 40
+  },
+  {
     "id": "lec-f-rm-01",
     "title": "Measuring Risk",
-    "description": "Risk metrics, volatility, drawdown, and tail risk measurement.",
+    "description": "Risk metrics, volatility, drawdown, Sharpe ratio, and tail risk measurement.",
     "track": "finance",
     "topic": "risk-modeling",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/risk/d1-measuring-risk.html",
+    "source": "notebooks/risk/d1-measuring-risk.ipynb",
     "duration_minutes": 45
   },
   {
     "id": "lec-f-rm-02",
     "title": "Value-at-Risk",
-    "description": "Parametric, historical, and Monte Carlo VaR. Expected Shortfall.",
+    "description": "Parametric, historical, and Monte Carlo VaR. Expected Shortfall and backtesting.",
     "track": "finance",
     "topic": "risk-modeling",
     "order": 2,
     "type": "notebook",
-    "source": "notebooks/risk/d2-value-at-risk.html",
+    "source": "notebooks/risk/d2-value-at-risk.ipynb",
     "duration_minutes": 60
   },
   {
-    "id": "lec-f-mm-01",
-    "title": "Market Microstructure Lab",
-    "description": "Order books, CLOB mechanics, order flow analysis, and iceberg orders.",
+    "id": "lec-f-rm-03",
+    "title": "Short-Term Capital Management Case Study",
+    "description": "Lessons from LTCM: leverage, liquidity risk, and systemic risk.",
     "track": "finance",
-    "topic": "market-microstructure",
-    "order": 1,
+    "topic": "risk-modeling",
+    "order": 3,
     "type": "notebook",
-    "source": "notebooks/trading/market-microstructure-lab.html",
-    "duration_minutes": 60
+    "source": "notebooks/risk/d2x-short-term-capital-mgmt.ipynb",
+    "duration_minutes": 35
   },
   {
-    "id": "lec-f-ts-01",
+    "id": "lec-f-rk-01",
     "title": "The Art of Risk Taking",
     "description": "Frameworks for thinking about risk, position sizing, and decision making under uncertainty.",
     "track": "finance",
@@ -209,14 +473,47 @@
     "duration_minutes": 45
   },
   {
-    "id": "lec-f-ts-02",
-    "title": "Market Impact",
-    "description": "Almgren-Chriss model, optimal execution, and price impact estimation.",
+    "id": "lec-f-mm-01",
+    "title": "Market Microstructure: Trade Analysis",
+    "description": "Order books, trade flow analysis, GC trades, and empirical microstructure.",
+    "track": "finance",
+    "topic": "market-microstructure",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/trading/market-microstructure-gc-trades.ipynb",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-f-mm-02",
+    "title": "Iceberg Orders and Hidden Liquidity",
+    "description": "Detecting iceberg orders, hidden liquidity, and order flow analysis techniques.",
+    "track": "finance",
+    "topic": "market-microstructure",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/trading/market-microstructure-icebergs.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-ts-01",
+    "title": "FX and Currency Markets",
+    "description": "FX quoting conventions, cross rates, triangular arbitrage, and currency trading.",
     "track": "finance",
     "topic": "trading-strategies",
     "order": 1,
     "type": "notebook",
-    "source": "notebooks/trading/market-impact.html",
-    "duration_minutes": 45
+    "source": "notebooks/market-foundations/b1-currency.ipynb",
+    "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-ts-02",
+    "title": "FX Carry Trade",
+    "description": "The carry trade strategy, UIP, interest rate differentials, and risk factors.",
+    "track": "finance",
+    "topic": "trading-strategies",
+    "order": 2,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/b1x-fx-carry-trade.ipynb",
+    "duration_minutes": 35
   }
 ]
