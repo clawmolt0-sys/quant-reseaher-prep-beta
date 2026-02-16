@@ -13,14 +13,14 @@
    ============================================ */
 
 const FirebaseConfig = (() => {
-  // ---- REPLACE WITH YOUR FIREBASE CONFIG ----
   const config = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
+    authDomain: "qrprep.firebaseapp.com",
+    projectId: "qrprep",
+    storageBucket: "qrprep.firebasestorage.app",
+    messagingSenderId: "269729809695",
+    appId: "1:269729809695:web:4379017f0e6bec69e7dc2a",
+    measurementId: "G-7BG34QV7TV"
   };
 
   let initialized = false;
