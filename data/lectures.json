@@ -36,6 +36,50 @@
     "duration_minutes": 90
   },
   {
+    "id": "lec-q-lr-01",
+    "title": "Linear Regression for Quant Finance",
+    "description": "OLS derivation, assumptions, diagnostics, regularization (Ridge, Lasso, Elastic Net), and applications in factor models and alpha research.",
+    "track": "quant",
+    "topic": "linear-regression",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/linear-regression.ipynb",
+    "duration_minutes": 90
+  },
+  {
+    "id": "lec-q-ts-01",
+    "title": "Time Series Analysis",
+    "description": "Stationarity, AR/MA/ARMA, ADF testing, Ornstein-Uhlenbeck, GARCH, cointegration, and Kalman filtering — with quant finance applications.",
+    "track": "quant",
+    "topic": "time-series",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/time-series.ipynb",
+    "duration_minutes": 90
+  },
+  {
+    "id": "lec-q-sc-01",
+    "title": "Stochastic Calculus",
+    "description": "Brownian motion, Itô's lemma, SDEs, martingales, Girsanov's theorem, Feynman-Kac — the mathematical backbone of derivatives pricing.",
+    "track": "quant",
+    "topic": "stochastic-calculus",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/stochastic-calculus.ipynb",
+    "duration_minutes": 90
+  },
+  {
+    "id": "lec-q-nm-01",
+    "title": "Numerical Methods for Finance",
+    "description": "Root finding, Monte Carlo, finite differences, variance reduction, and PDE solvers for option pricing and risk computation.",
+    "track": "quant",
+    "topic": "numerical-methods",
+    "order": 1,
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/numerical-methods.ipynb",
+    "duration_minutes": 90
+  },
+  {
     "id": "lec-q-opt-01",
     "title": "Optimizing Risk and Return",
     "description": "Mean-variance optimization, efficient frontier, and risk-return tradeoff.",
@@ -212,6 +256,17 @@
     "duration_minutes": 35
   },
   {
+    "id": "lec-f-fi-13",
+    "title": "The Federal Reserve",
+    "description": "Fed structure, monetary policy tools, FOMC meetings, and impact on fixed income markets.",
+    "track": "finance",
+    "topic": "fixed-income",
+    "order": 13,
+    "type": "notebook",
+    "source": "notebooks/market-foundations/a5x-the-fed.ipynb",
+    "duration_minutes": 35
+  },
+  {
     "id": "lec-f-fi-12",
     "title": "Economics of the Term Structure",
     "description": "Expectations hypothesis, term premium, yield curve shapes, and macroeconomic factors.",
@@ -333,6 +388,28 @@
     "duration_minutes": 30
   },
   {
+    "id": "lec-f-bsg-05",
+    "title": "Box Spreads",
+    "description": "Box spread arbitrage, put-call parity verification, and no-arbitrage pricing.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 5,
+    "type": "notebook",
+    "source": "notebooks/derivatives/bs-example-box-spread.ipynb",
+    "duration_minutes": 25
+  },
+  {
+    "id": "lec-f-bsg-06",
+    "title": "VX Futures and Volatility Time",
+    "description": "VIX futures, volatility time, term structure of volatility futures.",
+    "track": "finance",
+    "topic": "black-scholes-greeks",
+    "order": 6,
+    "type": "notebook",
+    "source": "notebooks/derivatives/vx-futures-voltime.ipynb",
+    "duration_minutes": 30
+  },
+  {
     "id": "lec-f-vm-01",
     "title": "Volatility Modeling",
     "description": "Implied vs realized vol, volatility surface, local vol, and stochastic vol.",
@@ -430,6 +507,39 @@
     "type": "notebook",
     "source": "notebooks/derivatives/skew2-quad-var.ipynb",
     "duration_minutes": 40
+  },
+  {
+    "id": "lec-f-vm-10",
+    "title": "JPM Skew Fitting Example",
+    "description": "Case study: fitting the JPM equity volatility skew to market data.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 10,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew-fit-jpm-example.ipynb",
+    "duration_minutes": 35
+  },
+  {
+    "id": "lec-f-vm-11",
+    "title": "Skew Fitting Exercise",
+    "description": "Hands-on exercise: calibrate a volatility model to market skew data.",
+    "track": "finance",
+    "topic": "volatility-modeling",
+    "order": 11,
+    "type": "notebook",
+    "source": "notebooks/derivatives/skew-fitting-exercise.ipynb",
+    "duration_minutes": 45
+  },
+  {
+    "id": "lec-q-opt-04",
+    "title": "Portfolio Optimization: Worked Solutions",
+    "description": "Complete worked solutions for portfolio optimization problems with Python implementation.",
+    "track": "quant",
+    "topic": "optimization",
+    "order": 4,
+    "type": "notebook",
+    "source": "notebooks/risk/optimization-solution.ipynb",
+    "duration_minutes": 45
   },
   {
     "id": "lec-f-rm-01",

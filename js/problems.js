@@ -295,12 +295,13 @@ const Problems = (() => {
       'optiver': 'Optiver',
       'sig': 'SIG',
       'squarepoint': 'Squarepoint',
-      'tower': 'Tower',
+      'tower-research': 'Tower Research',
       'millennium': 'Millennium',
       'point72': 'Point72',
       'aqr': 'AQR',
       'renaissance': 'Renaissance',
       'five-rings': 'Five Rings',
+      'hft': 'HFT Firm',
     };
     return nameMap[id] || id;
   }
