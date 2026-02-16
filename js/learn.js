@@ -209,9 +209,10 @@ const Learn = (() => {
           <div class="lecture-viewer">
             <div class="lecture-viewer__header">
               <h1 class="lecture-viewer__title">${lecture.title}</h1>
-              <div style="display:flex; gap:var(--space-2); align-items:center;">
+              <div style="display:flex; gap:var(--space-2); align-items:center; flex-wrap:wrap;">
                 <span class="tag">${getLecTypeLabel(lecture)}</span>
                 ${lecture.duration_minutes ? `<span style="font-size:var(--text-xs); color:var(--text-muted)">${lecture.duration_minutes} min</span>` : ''}
+                ${lecture.type === 'notebook' && lecture.slides ? `<a class="btn btn--ghost btn--sm" href="${lecture.slides}" target="_blank" style="margin-left:auto;font-size:var(--text-xs);">&#128196; View Original Slides</a>` : ''}
               </div>
             </div>
             <div class="lecture-viewer__content" id="lecture-content">

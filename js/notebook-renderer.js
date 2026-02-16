@@ -35,9 +35,23 @@ const NotebookRenderer = (() => {
             { left: '\\(', right: '\\)', display: false },
             { left: '\\begin{align}', right: '\\end{align}', display: true },
             { left: '\\begin{align*}', right: '\\end{align*}', display: true },
+            { left: '\\begin{equation}', right: '\\end{equation}', display: true },
+            { left: '\\begin{equation*}', right: '\\end{equation*}', display: true },
+            { left: '\\begin{gather}', right: '\\end{gather}', display: true },
+            { left: '\\begin{gather*}', right: '\\end{gather*}', display: true },
           ],
           throwOnError: false,
           trust: true,
+          macros: {
+            '\\R': '\\mathbb{R}',
+            '\\E': '\\mathbb{E}',
+            '\\P': '\\mathbb{P}',
+            '\\Var': '\\text{Var}',
+            '\\Cov': '\\text{Cov}',
+            '\\Corr': '\\text{Corr}',
+            '\\N': '\\mathcal{N}',
+            '\\iid': '\\stackrel{\\text{iid}}{\\sim}',
+          },
         });
       }
     } catch (err) {
@@ -121,10 +135,25 @@ const NotebookRenderer = (() => {
     let result = [];
     let inList = false;
     let inTable = false;
+    let inBlockquote = false;
+    let blockquoteLines = [];
     let tableRows = [];
 
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i];
+
+      // Blockquotes (> prefix)
+      if (/^>\s?(.*)$/.test(line.trim())) {
+        if (inList) { result.push('</ul>'); inList = false; }
+        if (inTable) { result.push(renderTable(tableRows)); inTable = false; tableRows = []; }
+        if (!inBlockquote) { inBlockquote = true; blockquoteLines = []; }
+        blockquoteLines.push(RegExp.$1);
+        continue;
+      } else if (inBlockquote) {
+        result.push(renderBlockquote(blockquoteLines));
+        inBlockquote = false;
+        blockquoteLines = [];
+      }
 
       // Headers
       if (/^######\s+(.+)$/.test(line)) {
@@ -197,8 +226,36 @@ const NotebookRenderer = (() => {
         continue;
       }
 
+      // Fenced code blocks (``` ... ```)
+      if (/^```/.test(line.trim())) {
+        if (inList) { result.push('</ul>'); inList = false; }
+        // Gather lines until closing ```
+        const lang = line.trim().replace(/^```/, '').trim() || '';
+        let codeLines = [];
+        i++;
+        while (i < lines.length && !/^```\s*$/.test(lines[i].trim())) {
+          codeLines.push(lines[i]);
+          i++;
+        }
+        result.push(`<div class="nb-code-container"><pre class="nb-code"><code>${escapeHtml(codeLines.join('\n'))}</code></pre></div>`);
+        continue;
+      }
+
       // Image (skip — we don't have the assets)
       if (/^<img\s/.test(line.trim())) {
+        continue;
+      }
+
+      // Horizontal rule
+      if (/^(-{3,}|\*{3,}|_{3,})\s*$/.test(line.trim())) {
+        if (inList) { result.push('</ul>'); inList = false; }
+        result.push('<hr class="nb-hr">');
+        continue;
+      }
+
+      // Lines that are only newcommand definitions — render them (KaTeX will process) but hide
+      if (/^\$\\newcommand/.test(line.trim()) && /\}\$\s*$/.test(line.trim())) {
+        result.push(`<span style="display:none">${line.trim()}</span>`);
         continue;
       }
 
@@ -215,8 +272,34 @@ const NotebookRenderer = (() => {
 
     if (inList) result.push('</ul>');
     if (inTable) result.push(renderTable(tableRows));
+    if (inBlockquote) result.push(renderBlockquote(blockquoteLines));
 
     return result.join('\n');
+  }
+
+  /**
+   * Render a blockquote with optional callout type detection
+   */
+  function renderBlockquote(lines) {
+    const text = lines.join('\n');
+    let extraClass = '';
+
+    // Detect callout type from first line
+    if (/💡|Interview\s+Tip|Key\s+Insight/i.test(text)) {
+      extraClass = ' nb-blockquote--tip';
+    } else if (/📝|Example|Worked\s+Problem/i.test(text)) {
+      extraClass = ' nb-blockquote--example';
+    } else if (/⚠|Warning|Caution|Common\s+Mistake/i.test(text)) {
+      extraClass = ' nb-blockquote--warning';
+    } else if (/📖|Definition|Theorem|Lemma/i.test(text)) {
+      extraClass = ' nb-blockquote--definition';
+    }
+
+    const htmlContent = lines
+      .map(l => l.trim() === '' ? '</p><p>' : inlineFormat(l))
+      .join(' ');
+
+    return `<blockquote class="nb-blockquote${extraClass}"><p>${htmlContent}</p></blockquote>`;
   }
 
   /**

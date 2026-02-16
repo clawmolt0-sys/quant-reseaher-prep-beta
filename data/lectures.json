@@ -2,35 +2,38 @@
   {
     "id": "lec-q-prob-01",
     "title": "Probability Foundations",
-    "description": "Combinatorics, counting principles, conditional probability, and Bayes' theorem.",
+    "description": "Combinatorics, conditional probability, Bayes' theorem, distributions, expectation, limit theorems, and classic interview problems.",
     "track": "quant",
     "topic": "probability",
     "order": 1,
-    "type": "slides",
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/probability-foundations.ipynb",
     "slides": "slides/sageark-quant-training-05.pdf",
-    "duration_minutes": 60
+    "duration_minutes": 90
   },
   {
     "id": "lec-q-stats-01",
     "title": "Statistical Inference",
-    "description": "Estimation, hypothesis testing, MLE, and confidence intervals.",
+    "description": "MLE, hypothesis testing, confidence intervals, regression, Bayesian methods, time series, and Monte Carlo — all with a finance lens.",
     "track": "quant",
     "topic": "statistics",
     "order": 1,
-    "type": "slides",
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/statistical-inference.ipynb",
     "slides": "slides/sageark-quant-training-06.pdf",
-    "duration_minutes": 60
+    "duration_minutes": 90
   },
   {
     "id": "lec-q-la-01",
     "title": "Linear Algebra for Quant Finance",
-    "description": "Eigenvalues, SVD, PCA, and covariance matrix applications.",
+    "description": "Vector spaces, eigenvalues, SVD, PCA, matrix calculus, and direct applications to portfolio optimization and factor models.",
     "track": "quant",
     "topic": "linear-algebra",
     "order": 1,
-    "type": "slides",
+    "type": "notebook",
+    "source": "notebooks/quant-foundations/linear-algebra.ipynb",
     "slides": "slides/sageark-quant-training-12.pdf",
-    "duration_minutes": 60
+    "duration_minutes": 90
   },
   {
     "id": "lec-q-opt-01",
