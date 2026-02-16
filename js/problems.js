@@ -9,15 +9,21 @@ const Problems = (() => {
   let currentSort = { key: 'id', dir: 'asc' };
 
   // ---- Normalize: handle both old and new schema ----
+  function ensureArray(val) {
+    if (!val) return [];
+    if (Array.isArray(val)) return val;
+    return [val]; // PowerShell flattens single-element arrays to strings
+  }
+
   function normalize(p) {
     return {
       id:        typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10),
       title:     p.title,
       statement: p.statement || p.question || '',
       solution:  p.solution || '',
-      hints:     p.hints || [],
-      companies: p.companies || p.company || [],
-      tags:      p.tags || p.subtopics || [],
+      hints:     ensureArray(p.hints),
+      companies: ensureArray(p.companies || p.company),
+      tags:      ensureArray(p.tags || p.subtopics),
       category:  p.category || (p.topics && p.topics[0]) || 'probability',
       difficulty:p.difficulty || 'medium',
       rating:    p.rating || diffToRating(p.difficulty),

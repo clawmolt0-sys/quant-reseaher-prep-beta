@@ -582,7 +582,8 @@
           // Support both old schema (topics/company) and new schema (category/companies)
           const cat = p.category || (p.topics && p.topics[0]) || '';
           const catLabel = cat.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
-          const comps = p.companies || p.company || [];
+          const rawComps = p.companies || p.company || [];
+          const comps = Array.isArray(rawComps) ? rawComps : [rawComps];
           const compLabel = comps.slice(0, 1).map(c => nameMap[c] || c).join('');
           const pid = typeof p.id === 'number' ? p.id : p.id;
           return `
