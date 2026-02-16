@@ -1,7 +1,7 @@
 /* ============================================
    PROBLEMS — LeetCode-style problem list + detail
-   with tag cloud, company sidebar, and markdown
-   rendered solutions.
+   with tag cloud, company sidebar, similar problems,
+   notes, and markdown rendered solutions.
    ============================================ */
 
 const Problems = (() => {
@@ -73,6 +73,7 @@ const Problems = (() => {
       'optiver': 'Optiver', 'sig': 'SIG', 'squarepoint': 'Squarepoint',
       'tower-research': 'Tower', 'millennium': 'Millennium', 'point72': 'Point72',
       'aqr': 'AQR', 'renaissance': 'RenTech', 'five-rings': 'Five Rings', 'hft': 'HFT',
+      'tower': 'Tower',
     };
     return map[id] || id;
   }
@@ -152,6 +153,9 @@ const Problems = (() => {
     const TOP_TAGS = 30;
     const topTags = sortedTags.slice(0, TOP_TAGS);
     const remainingTags = sortedTags.slice(TOP_TAGS);
+
+    // Company list sorted by count
+    const sortedCompanies = Object.entries(companyCounts).sort((a, b) => b[1] - a[1]);
 
     container.innerHTML = `
       <div class="container">
@@ -261,7 +265,6 @@ const Problems = (() => {
                   <th class="th-cat" onclick="Problems.sort('category')">Category${sortArrow('category')}</th>
                   <th class="th-diff" onclick="Problems.sort('difficulty')">Difficulty${sortArrow('difficulty')}</th>
                   <th class="th-type" onclick="Problems.sort('type')">Type${sortArrow('type')}</th>
-                  <th class="th-rating" onclick="Problems.sort('rating')">Rating${sortArrow('rating')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -282,11 +285,11 @@ const Problems = (() => {
           <aside class="problems-right-sidebar">
             <div class="sidebar__title">Companies</div>
             <div class="sidebar__categories">
-              ${companiesData.filter(c => companyCounts[c.id]).sort((a,b) => (companyCounts[b.id]||0) - (companyCounts[a.id]||0)).map(c => `
-                <button class="sidebar__cat-btn ${activeCompany === c.id ? 'sidebar__cat-btn--active' : ''}"
-                  onclick="Problems.filterCompany('${c.id}')">
-                  <span>${companyShort(c.id)}</span>
-                  <span class="sidebar__cat-count">${companyCounts[c.id] || 0}</span>
+              ${sortedCompanies.map(([cId, cnt]) => `
+                <button class="sidebar__cat-btn ${activeCompany === cId ? 'sidebar__cat-btn--active' : ''}"
+                  onclick="Problems.filterCompany('${cId}')">
+                  <span>${companyShort(cId)}</span>
+                  <span class="sidebar__cat-count">${cnt}</span>
                 </button>
               `).join('')}
             </div>
@@ -325,7 +328,6 @@ const Problems = (() => {
         <td><span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span></td>
         <td class="td-diff"><span class="diff-dot diff-${p.difficulty}"></span><span class="diff-label">${p.difficulty}</span></td>
         <td class="td-type">${formatType(p.type)}</td>
-        <td class="td-rating">${p.rating}/10</td>
       </tr>
     `;
   }
@@ -350,6 +352,53 @@ const Problems = (() => {
     return currentSort.dir === 'asc'
       ? '<span class="sort-arrow sort-arrow--active">\u2191</span>'
       : '<span class="sort-arrow sort-arrow--active">\u2193</span>';
+  }
+
+  // ---- Similar Problems Engine ----
+  function findSimilar(problem, count) {
+    count = count || 5;
+    const myTags = new Set(problem.tags);
+    const myCat = problem.category;
+
+    if (myTags.size === 0) {
+      return allProblems
+        .filter(p => p.id !== problem.id && p.category === myCat)
+        .slice(0, count)
+        .map(p => ({ problem: p, score: 1, shared: [] }));
+    }
+
+    const scored = [];
+    for (const p of allProblems) {
+      if (p.id === problem.id) continue;
+      const shared = p.tags.filter(t => myTags.has(t));
+      let score = shared.length;
+      if (p.category === myCat) score += 0.5;
+      if (p.difficulty === problem.difficulty) score += 0.3;
+      if (p.companies.some(c => problem.companies.includes(c))) score += 0.2;
+      if (score > 0) scored.push({ problem: p, score, shared });
+    }
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.slice(0, count);
+  }
+
+  // ---- Notes (localStorage) ----
+  function loadNotes(id) {
+    try { return localStorage.getItem('qr-prep-notes-' + id) || ''; }
+    catch (e) { return ''; }
+  }
+
+  function saveNotes(id) {
+    const el = document.getElementById('problem-notes');
+    if (!el) return;
+    try { localStorage.setItem('qr-prep-notes-' + id, el.value); }
+    catch (e) { /* ignore */ }
+  }
+
+  let notesSaveTimeout;
+  function onNotesInput(id) {
+    clearTimeout(notesSaveTimeout);
+    notesSaveTimeout = setTimeout(() => saveNotes(id), 500);
   }
 
   // ---- Detail View ----
@@ -384,6 +433,7 @@ const Problems = (() => {
       `<a class="detail-tag" href="problems.html?tag=${encodeURIComponent(t)}">${formatTag(t)}</a>`
     ).join('');
 
+    // Hints (left panel, below statement)
     const hintsHtml = problem.hints && problem.hints.length > 0
       ? `<div class="detail-section">
           <div class="detail-section__label">Hints</div>
@@ -398,6 +448,7 @@ const Problems = (() => {
         </div>`
       : '';
 
+    // Intuition (left panel)
     const intuitionHtml = problem.intuition
       ? `<div class="detail-section detail-section--intuition">
           <button class="collapsible-toggle collapsible-toggle--intuition" onclick="Problems.toggleIntuition(this)">
@@ -407,18 +458,47 @@ const Problems = (() => {
         </div>`
       : '';
 
+    // Similar problems
+    const similar = findSimilar(problem, 5);
+    const similarHtml = similar.length > 0
+      ? `<div class="detail-section detail-section--similar">
+          <div class="detail-section__label">Similar Problems</div>
+          <div class="similar-problems">
+            ${similar.map(s => `
+              <a class="similar-problem-card" href="problems.html?id=${s.problem.id}">
+                <div class="similar-problem-card__top">
+                  <span class="similar-problem-card__id">#${s.problem.id}</span>
+                  <span class="badge badge--${s.problem.difficulty} badge--sm">${s.problem.difficulty}</span>
+                </div>
+                <div class="similar-problem-card__title">${App.escapeHtml(s.problem.title.length > 60 ? s.problem.title.substring(0, 57) + '...' : s.problem.title)}</div>
+                <div class="similar-problem-card__tags">${s.shared.slice(0, 3).map(t => formatTag(t)).join(', ')}</div>
+              </a>
+            `).join('')}
+          </div>
+        </div>`
+      : '';
+
+    // Saved notes
+    const savedNotes = loadNotes(problem.id);
+
     container.innerHTML = `
       <div class="container">
-        <div class="breadcrumbs">
-          <a href="problems.html">Problems</a>
-          <span class="breadcrumbs__sep">\u203A</span>
-          <a href="problems.html?category=${problem.category}">${catMeta.icon} ${catMeta.name}</a>
-          <span class="breadcrumbs__sep">\u203A</span>
-          <span>#${problem.id}</span>
+        <div class="problem-detail__nav-bar">
+          <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
+          <div class="problem-detail__nav-arrows">
+            ${prev
+              ? `<a class="problem-nav-arrow" href="problems.html?id=${prev.id}" title="#${prev.id} ${App.escapeHtml(prev.title)}">\u2190 Prev</a>`
+              : '<span class="problem-nav-arrow problem-nav-arrow--disabled">\u2190 Prev</span>'
+            }
+            ${next
+              ? `<a class="problem-nav-arrow" href="problems.html?id=${next.id}" title="#${next.id} ${App.escapeHtml(next.title)}">Next \u2192</a>`
+              : '<span class="problem-nav-arrow problem-nav-arrow--disabled">Next \u2192</span>'
+            }
+          </div>
         </div>
 
         <div class="problem-detail-layout">
-          <!-- Left: Statement -->
+          <!-- Left: Statement + Hints + Similar -->
           <div class="problem-detail-left">
             <div class="problem-detail__header">
               <div class="problem-detail__meta-row">
@@ -426,7 +506,6 @@ const Problems = (() => {
                 <span class="badge badge--${problem.difficulty}">${problem.difficulty}</span>
                 <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
                 <span class="problem-detail__type-badge">${formatType(problem.type)}</span>
-                <span class="problem-detail__rating">${problem.rating}/10</span>
               </div>
               <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
               <div class="problem-detail__tags-row">${tagHtml}</div>
@@ -439,38 +518,30 @@ const Problems = (() => {
                 ${MarkdownRender.render(problem.statement)}
               </div>
             </div>
-          </div>
 
-          <!-- Right: Solution -->
-          <div class="problem-detail-right">
             ${hintsHtml}
 
             ${intuitionHtml}
+
+            ${similarHtml}
+          </div>
+
+          <!-- Right: Notes + Solution -->
+          <div class="problem-detail-right">
+            <div class="detail-section detail-section--notes">
+              <div class="detail-section__label">\u{1F4DD} Your Notes</div>
+              <textarea id="problem-notes" class="problem-notes__textarea"
+                placeholder="Type your thoughts, approach, or scratch work here..."
+                oninput="Problems.onNotesInput(${problem.id})">${App.escapeHtml(savedNotes)}</textarea>
+            </div>
 
             <div class="detail-section">
               <button class="collapsible-toggle collapsible-toggle--solution" onclick="Problems.toggleSolution(this)">
                 <span class="collapsible-toggle__arrow">\u25B6</span> Solution
               </button>
               <div class="collapsible-content solution-content math-content">
-                ${MarkdownRender.render(problem.solution)}
+                ${problem.solution ? MarkdownRender.render(problem.solution) : '<p class="no-solution">Solution not yet available for this problem.</p>'}
               </div>
-            </div>
-
-            <!-- Related Info -->
-            <div class="detail-related">
-              <div class="detail-related__title">Related Topics</div>
-              <div class="detail-related__tags">${tagHtml}</div>
-            </div>
-
-            <div class="problem-detail__nav">
-              ${prev
-                ? `<a class="problem-nav-btn" href="problems.html?id=${prev.id}">\u2190 #${prev.id} ${App.escapeHtml(prev.title)}</a>`
-                : '<span></span>'
-              }
-              ${next
-                ? `<a class="problem-nav-btn" href="problems.html?id=${next.id}">#${next.id} ${App.escapeHtml(next.title)} \u2192</a>`
-                : '<span></span>'
-              }
             </div>
           </div>
         </div>
@@ -581,7 +652,6 @@ const Problems = (() => {
       'open-ended': 'Open-Ended',
       'brain-teaser': 'Brain Teaser',
       'estimation': 'Estimation',
-      // Legacy fallbacks
       'closed-form': 'Calculation',
       'math': 'Calculation',
       'logic': 'Brain Teaser',
@@ -592,6 +662,6 @@ const Problems = (() => {
   return {
     init, toggleSolution, toggleHint, toggleIntuition,
     filterCat, filterDiff, filterType, filterTag, filterCompany,
-    toggleTagCloud, sort
+    toggleTagCloud, sort, onNotesInput
   };
 })();
