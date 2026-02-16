@@ -20,7 +20,7 @@
                           "linear-combination",
                           "mgf"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  3,
         "companies":  "citadel",
@@ -50,7 +50,7 @@
                           "symmetry"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  3,
         "companies":  "optiver",
@@ -83,7 +83,7 @@
                           "bond-pricing"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "probability",
         "rating":  3,
         "companies":  [
@@ -120,7 +120,7 @@
                           "von-neumann",
                           "debiasing"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  3,
         "companies":  "tower-research",
@@ -151,7 +151,7 @@
                           "bayes-theorem",
                           "conditional-probability"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  3,
         "companies":  "sig",
@@ -182,7 +182,7 @@
                           "markov-chains"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  3,
         "companies":  [
@@ -218,7 +218,7 @@
                           "euler-number",
                           "stopping-time"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -252,7 +252,7 @@
                           "conditional-probability",
                           "law-of-total-probability"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -285,7 +285,7 @@
                           "binomial",
                           "discrete-probability"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -317,7 +317,7 @@
                           "regression"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -350,7 +350,7 @@
                           "stationary-distribution",
                           "hitting-times"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "optiver",
@@ -383,7 +383,7 @@
                           "linear-combination",
                           "standardization"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -416,7 +416,7 @@
                           "generating-functions",
                           "binomial"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -447,7 +447,7 @@
                           "meeting-problem"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -479,7 +479,7 @@
                           "binomial",
                           "coin-flip"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -510,7 +510,7 @@
                           "conditional-probability"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -542,7 +542,7 @@
                           "utility-theory",
                           "st-petersburg-paradox"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "sig",
@@ -575,7 +575,7 @@
                           "recurrence-relations",
                           "lucas-numbers"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "sig",
@@ -607,7 +607,7 @@
                           "counting",
                           "arrangements"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "sig",
@@ -639,7 +639,7 @@
                           "integration",
                           "expected-value"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "sig",
@@ -671,7 +671,7 @@
                           "decision-theory",
                           "value-of-information"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "sig",
@@ -703,7 +703,7 @@
                           "stationary-distribution",
                           "linear-algebra"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "tower-research",
@@ -736,7 +736,7 @@
                           "rejection-sampling",
                           "binary-expansion"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "tower-research",
@@ -768,7 +768,7 @@
                           "fair-coin"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -801,7 +801,7 @@
                           "generating-functions",
                           "likelihood-ratio"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -834,7 +834,7 @@
                           "circular-permutation",
                           "indicator-variables"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "squarepoint",
@@ -866,7 +866,7 @@
                           "conditional-probability",
                           "game-theory"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "tower-research",
@@ -899,7 +899,7 @@
                           "recurrence",
                           "combinatorics"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "citadel",
@@ -932,7 +932,7 @@
                           "normal-approximation"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "probability",
         "rating":  5,
         "companies":  [
@@ -966,7 +966,7 @@
                           "arcsin-formula"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -998,7 +998,7 @@
                           "integration"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "jump-trading",
@@ -1030,7 +1030,7 @@
                           "normal-distribution"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "hrt",
@@ -1061,7 +1061,7 @@
                           "arrivals"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -1094,7 +1094,7 @@
                           "geometric-probability",
                           "polar-coordinates"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "citadel",
@@ -1126,7 +1126,7 @@
                           "geometric-probability"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "two-sigma",
@@ -1158,7 +1158,7 @@
                           "simulation",
                           "fair-coin"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "citadel",
@@ -1191,7 +1191,7 @@
                           "inverse-cdf",
                           "polar-coordinates"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "citadel",
@@ -1224,7 +1224,7 @@
                           "triangle-inequality",
                           "uniform-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  "citadel",
@@ -1256,7 +1256,7 @@
                           "random-walks"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  5,
         "companies":  [
@@ -1290,7 +1290,7 @@
                           "conditional-probability"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "jump-trading",
@@ -1323,7 +1323,7 @@
                           "martingales"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "probability",
         "rating":  8,
         "companies":  [
@@ -1358,7 +1358,7 @@
                           "combinatorics",
                           "spatial-reasoning"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "sig",
@@ -1390,7 +1390,7 @@
                           "uniform"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "jump-trading",
@@ -1423,7 +1423,7 @@
                           "conditional-probability",
                           "paradox"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "sig",
@@ -1456,7 +1456,7 @@
                           "conditional-expectation",
                           "uniform-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1488,7 +1488,7 @@
                           "inscribed-angle-theorem",
                           "circular-statistics"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "sig",
@@ -1521,7 +1521,7 @@
                           "stationary-distribution",
                           "modeling"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1553,7 +1553,7 @@
                           "expectation"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "two-sigma",
@@ -1585,7 +1585,7 @@
                           "order-statistics"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "two-sigma",
@@ -1617,7 +1617,7 @@
                           "random-walk"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "two-sigma",
@@ -1650,7 +1650,7 @@
                           "order-statistics",
                           "expectation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1683,7 +1683,7 @@
                           "dynamic-programming"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  [
@@ -1719,7 +1719,7 @@
                           "sphere",
                           "simulation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1753,7 +1753,7 @@
                           "generating-functions",
                           "extinction"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "tower-research",
@@ -1786,7 +1786,7 @@
                           "combinatorics",
                           "symmetry"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1819,7 +1819,7 @@
                           "circle",
                           "inclusion-exclusion"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "citadel",
@@ -1851,7 +1851,7 @@
                           "dependence"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "probability",
         "rating":  8,
         "companies":  "two-sigma",
@@ -1888,7 +1888,7 @@
                           "implied-vol"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "probability",
         "rating":  8,
         "companies":  [
@@ -1924,7 +1924,7 @@
                           "order-statistics"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  3,
         "companies":  "citadel",
@@ -1956,7 +1956,7 @@
                           "runs",
                           "indicator-variables"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "hrt",
@@ -1988,7 +1988,7 @@
                           "uniform"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "two-sigma",
@@ -2021,7 +2021,7 @@
                           "indicator-variables",
                           "cards"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "citadel",
@@ -2055,7 +2055,7 @@
                           "circle",
                           "combinatorics"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "hrt",
@@ -2090,7 +2090,7 @@
                           "symmetry",
                           "cards"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "hrt",
@@ -2124,7 +2124,7 @@
                           "conditional-expectation",
                           "walds-identity"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "hrt",
@@ -2157,7 +2157,7 @@
                           "optimal-stopping",
                           "optionality"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "squarepoint",
@@ -2189,7 +2189,7 @@
                           "geometric-distribution"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  [
@@ -2224,7 +2224,7 @@
                           "harmonic-numbers",
                           "order-statistics"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  "hrt",
@@ -2257,7 +2257,7 @@
                           "combinatorics"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  [
@@ -2294,7 +2294,7 @@
                           "expectation"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  5,
         "companies":  [
@@ -2331,7 +2331,7 @@
                           "geometric-probability",
                           "integration"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "tower-research",
@@ -2364,7 +2364,7 @@
                           "geometric-probability",
                           "expected-value"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "hrt",
@@ -2396,7 +2396,7 @@
                           "absorption"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "two-sigma",
@@ -2429,7 +2429,7 @@
                           "gamblers-ruin",
                           "stopping-time"
                       ],
-        "type":  "open-ended",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "citadel",
@@ -2462,7 +2462,7 @@
                           "graph-theory",
                           "recurrence-transience"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "tower-research",
@@ -2494,7 +2494,7 @@
                           "bertrand-paradox",
                           "integration"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "sig",
@@ -2527,7 +2527,7 @@
                           "geometric-probability",
                           "linearity-of-expectation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "expectation",
         "rating":  8,
         "companies":  "hrt",
@@ -2558,7 +2558,7 @@
                           "combinatorics"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "combinatorics",
         "rating":  3,
         "companies":  "two-sigma",
@@ -2589,7 +2589,7 @@
                           "approximation"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "combinatorics",
         "rating":  3,
         "companies":  [
@@ -2623,7 +2623,7 @@
                           "combinatorics"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "combinatorics",
         "rating":  5,
         "companies":  "two-sigma",
@@ -2655,7 +2655,7 @@
                           "independence",
                           "counterexample"
                       ],
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "statistics",
         "rating":  3,
         "companies":  "tower-research",
@@ -2688,7 +2688,7 @@
                           "hypothesis-testing",
                           "posterior"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "squarepoint",
@@ -2721,7 +2721,7 @@
                           "z-test",
                           "proportions"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "hrt",
@@ -2754,7 +2754,7 @@
                           "variance-minimization",
                           "optimal-weighting"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "citadel",
@@ -2787,7 +2787,7 @@
                           "iid",
                           "bilinearity"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "citadel",
@@ -2822,7 +2822,7 @@
                           "gauss-markov"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  [
@@ -2858,7 +2858,7 @@
                           "standard-errors",
                           "statistical-inference"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "tower-research",
@@ -2890,7 +2890,7 @@
                           "binomial-likelihood",
                           "posterior-probability"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "tower-research",
@@ -2923,7 +2923,7 @@
                           "order-statistics"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  [
@@ -2960,7 +2960,7 @@
                           "nested-models",
                           "regression"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "squarepoint",
@@ -2995,7 +2995,7 @@
                           "lasso",
                           "bayesian-statistics"
                       ],
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "statistics",
         "rating":  5,
         "companies":  "drw",
@@ -3029,7 +3029,7 @@
                           "correlation",
                           "linear-regression"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "tower-research",
@@ -3061,7 +3061,7 @@
                           "correlated-normals"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3094,7 +3094,7 @@
                           "posterior",
                           "likelihood-ratio"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "hrt",
@@ -3125,7 +3125,7 @@
                           "law-of-total-variance"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3157,7 +3157,7 @@
                           "regression-assumptions",
                           "diagnostics"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  5,
         "companies":  "squarepoint",
@@ -3190,7 +3190,7 @@
                           "positive-semidefinite",
                           "matrix-constraints"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  8,
         "companies":  "squarepoint",
@@ -3222,7 +3222,7 @@
                           "regression"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  8,
         "companies":  "two-sigma",
@@ -3256,7 +3256,7 @@
                           "conjugate-prior",
                           "shrinkage"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  8,
         "companies":  "citadel",
@@ -3291,7 +3291,7 @@
                           "estimation",
                           "minimum-variance"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "statistics",
         "rating":  8,
         "companies":  "citadel",
@@ -3324,7 +3324,7 @@
                           "rank"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  3,
         "companies":  [
@@ -3358,7 +3358,7 @@
                           "variance"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "linear-algebra",
         "rating":  3,
         "companies":  [
@@ -3391,7 +3391,7 @@
                           "determinant"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  3,
         "companies":  "hrt",
@@ -3425,7 +3425,7 @@
                           "market-factor",
                           "equicorrelation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "squarepoint",
@@ -3460,7 +3460,7 @@
                           "orthogonalization",
                           "qr-decomposition"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "citadel",
@@ -3493,7 +3493,7 @@
                           "variance"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3527,7 +3527,7 @@
                           "trace",
                           "characteristic-polynomial"
                       ],
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "squarepoint",
@@ -3560,7 +3560,7 @@
                           "equicorrelation"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "jump-trading",
@@ -3592,7 +3592,7 @@
                           "variance-explained"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3624,7 +3624,7 @@
                           "positive-definite"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3658,7 +3658,7 @@
                           "matrix-decompositions"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  [
@@ -3695,7 +3695,7 @@
                           "rank-one-matrix",
                           "spectral-shift"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "citadel",
@@ -3727,7 +3727,7 @@
                           "eigenvalues"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  5,
         "companies":  "jump-trading",
@@ -3760,7 +3760,7 @@
                           "positive-definite",
                           "correlation-matrix"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  8,
         "companies":  "citadel",
@@ -3792,7 +3792,7 @@
                           "combinatorics"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  8,
         "companies":  "two-sigma",
@@ -3825,7 +3825,7 @@
                           "rank",
                           "structured-matrix"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "linear-algebra",
         "rating":  8,
         "companies":  "hrt",
@@ -3897,7 +3897,7 @@
                           "brownian-motion"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "stochastic-calculus",
         "rating":  5,
         "companies":  [
@@ -3933,7 +3933,7 @@
                           "brownian-bridge"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "stochastic-calculus",
         "rating":  5,
         "companies":  "two-sigma",
@@ -3965,7 +3965,7 @@
                           "brownian-motion"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "stochastic-calculus",
         "rating":  5,
         "companies":  [
@@ -3999,7 +3999,7 @@
                           "optional-stopping",
                           "martingale"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "stochastic-calculus",
         "rating":  8,
         "companies":  "tower-research",
@@ -4033,7 +4033,7 @@
                           "sde"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "stochastic-calculus",
         "rating":  8,
         "companies":  [
@@ -4071,7 +4071,7 @@
                           "no-arbitrage"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  3,
         "companies":  [
@@ -4144,7 +4144,7 @@
                           "risk-neutral-pricing",
                           "no-arbitrage"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  5,
         "companies":  "sig",
@@ -4179,7 +4179,7 @@
                           "payoffs"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  5,
         "companies":  [
@@ -4257,7 +4257,7 @@
                           "hedging"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  5,
         "companies":  [
@@ -4294,7 +4294,7 @@
                           "model-assumptions"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  5,
         "companies":  [
@@ -4330,7 +4330,7 @@
                           "options",
                           "enumeration"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  5,
         "companies":  "citadel",
@@ -4364,7 +4364,7 @@
                           "hedging"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  8,
         "companies":  [
@@ -4402,7 +4402,7 @@
                           "hedging"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  8,
         "companies":  [
@@ -4438,7 +4438,7 @@
                           "option-pricing"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  8,
         "companies":  "two-sigma",
@@ -4471,7 +4471,7 @@
                           "characteristic-function",
                           "option-pricing"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "options-pricing",
         "rating":  8,
         "companies":  "citadel",
@@ -4505,7 +4505,7 @@
                           "factor-risk-models"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  [
@@ -4540,7 +4540,7 @@
                           "expectation",
                           "uniform-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  "citadel",
@@ -4574,7 +4574,7 @@
                           "mean-variance"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  [
@@ -4609,7 +4609,7 @@
                           "counterexample"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  "two-sigma",
@@ -4643,7 +4643,7 @@
                           "convex-optimization"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  [
@@ -4679,7 +4679,7 @@
                           "portfolio-variance"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  3,
         "companies":  [
@@ -4716,7 +4716,7 @@
                           "growth-rate",
                           "optimal-betting"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "hrt",
@@ -4750,7 +4750,7 @@
                           "position-sizing",
                           "log-utility"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "optiver",
@@ -4783,7 +4783,7 @@
                           "degrees-of-freedom"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  [
@@ -4818,7 +4818,7 @@
                           "expected-value",
                           "uniform-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "tower-research",
@@ -4852,7 +4852,7 @@
                           "model-selection"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  [
@@ -4889,7 +4889,7 @@
                           "interest-rate-risk"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  [
@@ -4926,7 +4926,7 @@
                           "risk-measures"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  [
@@ -4963,7 +4963,7 @@
                           "nim",
                           "combinatorial-games"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "optiver",
@@ -4995,7 +4995,7 @@
                           "covariance",
                           "normal-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5027,7 +5027,7 @@
                           "log-utility",
                           "optimal-betting"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5060,7 +5060,7 @@
                           "convex-optimization",
                           "gradient"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5093,7 +5093,7 @@
                           "risk-measure",
                           "running-maximum"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5126,7 +5126,7 @@
                           "exponential-distribution",
                           "market-data"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "drw",
@@ -5158,7 +5158,7 @@
                           "regression",
                           "optimization"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5191,7 +5191,7 @@
                           "tangency-portfolio",
                           "mean-variance"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  5,
         "companies":  "citadel",
@@ -5224,7 +5224,7 @@
                           "positive-semidefinite",
                           "matrix-constraints"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "citadel",
@@ -5256,7 +5256,7 @@
                           "factor-neutralization"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "two-sigma",
@@ -5291,7 +5291,7 @@
                           "quadratic-programming"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  [
@@ -5329,7 +5329,7 @@
                           "market-making"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  [
@@ -5367,7 +5367,7 @@
                           "model-selection"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "proof",
         "category":  "risk-management",
         "rating":  8,
         "companies":  [
@@ -5403,7 +5403,7 @@
                           "ols"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "two-sigma",
@@ -5467,7 +5467,7 @@
                           "min-max"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "two-sigma",
@@ -5503,7 +5503,7 @@
                           "gbm"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  [
@@ -5542,7 +5542,7 @@
                           "glosten-milgrom"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  [
@@ -5579,7 +5579,7 @@
                           "adverse-selection",
                           "bid-ask-spread"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "optiver",
@@ -5612,7 +5612,7 @@
                           "hypothesis-testing",
                           "statistical-significance"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "tower-research",
@@ -5645,7 +5645,7 @@
                           "coupon-collector",
                           "expectation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "risk-management",
         "rating":  8,
         "companies":  "hrt",
@@ -5679,7 +5679,7 @@
                           "arma"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "time-series",
         "rating":  5,
         "companies":  [
@@ -5717,7 +5717,7 @@
                           "mean-reversion"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "time-series",
         "rating":  5,
         "companies":  [
@@ -5754,7 +5754,7 @@
                           "information-theory",
                           "strategy"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "coding",
         "rating":  3,
         "companies":  "hrt",
@@ -6519,7 +6519,7 @@
                           "counting",
                           "uniform-distribution"
                       ],
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  3,
         "companies":  "hrt",
@@ -6614,7 +6614,7 @@
                           "dice"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  5,
         "companies":  "two-sigma",
@@ -6647,7 +6647,7 @@
                           "optimal-stopping",
                           "conditional-probability"
                       ],
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  5,
         "companies":  "hrt",
@@ -6680,7 +6680,7 @@
                           "reflecting-barrier",
                           "recurrence-relations"
                       ],
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  5,
         "companies":  "optiver",
@@ -6713,7 +6713,7 @@
                           "inspection-paradox",
                           "memoryless-property"
                       ],
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  5,
         "companies":  "optiver",
@@ -6779,7 +6779,7 @@
                           "divisors",
                           "perfect-squares"
                       ],
-        "type":  "closed-form",
+        "type":  "brain-teaser",
         "category":  "brain-teaser",
         "rating":  8,
         "companies":  "citadel",
@@ -6811,7 +6811,7 @@
                           "nim"
                       ],
         "difficulty":  "medium",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  5,
         "companies":  "two-sigma",
@@ -6844,7 +6844,7 @@
                           "nash-equilibrium",
                           "iterated-dominance"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  5,
         "companies":  "citadel",
@@ -6943,7 +6943,7 @@
                           "expectation",
                           "tail-sum-formula"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  5,
         "companies":  "citadel",
@@ -6976,7 +6976,7 @@
                           "no-arbitrage",
                           "betting-markets"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  5,
         "companies":  "tower-research",
@@ -7009,7 +7009,7 @@
                           "inclusion-exclusion",
                           "expected-value"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  8,
         "companies":  "optiver",
@@ -7042,7 +7042,7 @@
                           "backward-induction",
                           "rational-agents"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "game-theory",
         "rating":  8,
         "companies":  "citadel",
@@ -7109,7 +7109,7 @@
                           "realized-vol"
                       ],
         "difficulty":  "easy",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  3,
         "companies":  [
@@ -7147,7 +7147,7 @@
                           "optimization",
                           "deep-learning"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  5,
         "companies":  "hrt",
@@ -7181,7 +7181,7 @@
                           "sherman-morrison",
                           "online-learning"
                       ],
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "citadel",
@@ -7215,7 +7215,7 @@
                           "sigmoid",
                           "perturbation"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "hrt",
@@ -7250,7 +7250,7 @@
                           "bayesian-update",
                           "gaussian"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "squarepoint",
@@ -7285,7 +7285,7 @@
                           "robustness",
                           "m-estimation"
                       ],
-        "type":  "closed-form",
+        "type":  "estimation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "squarepoint",
@@ -7320,7 +7320,7 @@
                           "lagrange-multipliers",
                           "dimensionality-reduction"
                       ],
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "squarepoint",
@@ -7354,7 +7354,7 @@
                           "forecasting"
                       ],
         "difficulty":  "hard",
-        "type":  "closed-form",
+        "type":  "calculation",
         "category":  "machine-learning",
         "rating":  8,
         "companies":  "two-sigma",

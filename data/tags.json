@@ -15,7 +15,7 @@
     { "id": "machine-learning", "name": "Machine Learning", "icon": "🤖", "color": "#06b6d4" }
   ],
   "types": [
-    { "id": "closed-form", "name": "Closed-Form", "desc": "Specific numerical or formula answer" },
+    { "id": "calculation", "name": "Calculation", "desc": "Specific numerical or formula answer" },
     { "id": "proof", "name": "Proof", "desc": "Prove a mathematical statement" },
     { "id": "coding", "name": "Coding", "desc": "Algorithm or data structure implementation" },
     { "id": "open-ended", "name": "Open-Ended", "desc": "Discussion or design question" },

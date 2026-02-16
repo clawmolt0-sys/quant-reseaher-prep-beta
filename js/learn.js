@@ -112,7 +112,7 @@ const Learn = (() => {
     if (!topic) return;
 
     const lectures = lecturesData
-      .filter(l => l.track === trackId && l.topic === topicId)
+      .filter(l => l.track === trackId && l.topic === topicId && l.type !== 'slides')
       .sort((a, b) => a.order - b.order);
 
     container.innerHTML = `
@@ -212,7 +212,6 @@ const Learn = (() => {
               <div style="display:flex; gap:var(--space-2); align-items:center; flex-wrap:wrap;">
                 <span class="tag">${getLecTypeLabel(lecture)}</span>
                 ${lecture.duration_minutes ? `<span style="font-size:var(--text-xs); color:var(--text-muted)">${lecture.duration_minutes} min</span>` : ''}
-                ${lecture.type === 'notebook' && lecture.slides ? `<a class="btn btn--ghost btn--sm" href="${lecture.slides}" target="_blank" style="margin-left:auto;font-size:var(--text-xs);">&#128196; View Original Slides</a>` : ''}
               </div>
             </div>
             <div class="lecture-viewer__content" id="lecture-content">
@@ -248,14 +247,13 @@ const Learn = (() => {
     if (lecture.type === 'notebook' && lecture.source) {
       // Use the notebook renderer to render .ipynb directly
       await NotebookRenderer.render(lecture.source, el);
-    } else if (lecture.type === 'slides' && lecture.slides) {
-      // Embed PDF slides
+    } else if (lecture.type === 'slides') {
+      // Slides content placeholder
       el.innerHTML = `
-        <iframe src="${lecture.slides}" title="${lecture.title}" style="width:100%;height:75vh;border:none;"></iframe>
-        <div style="padding: var(--space-3); text-align: center; border-top: 1px solid var(--border-color);">
-          <a class="btn btn--secondary btn--sm" href="${lecture.slides}" target="_blank">
-            Open slides in new tab &nearr;
-          </a>
+        <div class="empty-state" style="min-height:300px">
+          <div class="empty-state__icon">&#128196;</div>
+          <div class="empty-state__title">Content coming soon</div>
+          <p>Slide-based content for this lecture is being prepared.</p>
         </div>
       `;
     } else {

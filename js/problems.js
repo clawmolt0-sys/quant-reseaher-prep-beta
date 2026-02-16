@@ -1,5 +1,7 @@
 /* ============================================
    PROBLEMS — LeetCode-style problem list + detail
+   with tag cloud, company sidebar, and markdown
+   rendered solutions.
    ============================================ */
 
 const Problems = (() => {
@@ -12,7 +14,7 @@ const Problems = (() => {
   function ensureArray(val) {
     if (!val) return [];
     if (Array.isArray(val)) return val;
-    return [val]; // PowerShell flattens single-element arrays to strings
+    return [val];
   }
 
   function normalize(p) {
@@ -21,13 +23,14 @@ const Problems = (() => {
       title:     p.title,
       statement: p.statement || p.question || '',
       solution:  p.solution || '',
+      intuition: p.intuition || null,
       hints:     ensureArray(p.hints),
       companies: ensureArray(p.companies || p.company),
       tags:      ensureArray(p.tags || p.subtopics),
       category:  p.category || (p.topics && p.topics[0]) || 'probability',
       difficulty:p.difficulty || 'medium',
       rating:    p.rating || diffToRating(p.difficulty),
-      type:      p.type || 'closed-form',
+      type:      p.type || 'calculation',
       source:    p.source || 'interview',
     };
   }
@@ -53,11 +56,11 @@ const Problems = (() => {
 
   // ---- Category metadata ----
   function getCatMeta(catId) {
-    if (!tagsData || !tagsData.categories) return { name: catId, icon: '📄', color: '#6366f1' };
-    return tagsData.categories.find(c => c.id === catId) || { name: catId, icon: '📄', color: '#6366f1' };
+    if (!tagsData || !tagsData.categories) return { name: catId, icon: '\u{1F4C4}', color: '#6366f1' };
+    return tagsData.categories.find(c => c.id === catId) || { name: catId, icon: '\u{1F4C4}', color: '#6366f1' };
   }
 
-  // ---- Company name lookup ----
+  // ---- Company helpers ----
   function companyName(id) {
     const c = companiesData.find(co => co.id === id);
     return c ? c.name : id;
@@ -74,32 +77,55 @@ const Problems = (() => {
     return map[id] || id;
   }
 
+  // ---- Tag + type counts (computed once) ----
+  let tagCounts = {};
+  let sortedTags = [];
+
+  function computeTagCounts() {
+    tagCounts = {};
+    allProblems.forEach(p => {
+      p.tags.forEach(t => { tagCounts[t] = (tagCounts[t] || 0) + 1; });
+    });
+    sortedTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+  }
+
   // ---- List View ----
   function renderList(params) {
     const container = document.getElementById('content');
     if (!container) return;
 
-    // Count per category
+    // Recompute tag counts
+    computeTagCounts();
+
+    // Category counts
     const catCounts = {};
     allProblems.forEach(p => {
       catCounts[p.category] = (catCounts[p.category] || 0) + 1;
     });
 
-    // Build category list from tags.json
+    // Company counts
+    const companyCounts = {};
+    allProblems.forEach(p => {
+      p.companies.forEach(c => { companyCounts[c] = (companyCounts[c] || 0) + 1; });
+    });
+
     const categories = (tagsData.categories || []).filter(c => catCounts[c.id]);
 
-    // Filter
-    let filtered = [...allProblems];
+    // Active filters
     const activeCat = params.category || params.topic || null;
     const activeCompany = params.company || null;
     const activeDiff = params.difficulty || null;
     const activeType = params.type || null;
+    const activeTag = params.tag || null;
     const searchQ = params.q || '';
 
+    // Filter
+    let filtered = [...allProblems];
     if (activeCat) filtered = filtered.filter(p => p.category === activeCat);
     if (activeCompany) filtered = filtered.filter(p => p.companies.includes(activeCompany));
     if (activeDiff) filtered = filtered.filter(p => p.difficulty === activeDiff);
     if (activeType) filtered = filtered.filter(p => p.type === activeType);
+    if (activeTag) filtered = filtered.filter(p => p.tags.includes(activeTag));
     if (searchQ) {
       const q = searchQ.toLowerCase();
       filtered = filtered.filter(p =>
@@ -112,18 +138,26 @@ const Problems = (() => {
     // Sort
     sortProblems(filtered, currentSort.key, currentSort.dir);
 
-    // Build header text
+    // Header
     let headerText = 'All Problems';
     if (activeCat) {
       const cm = getCatMeta(activeCat);
       headerText = `${cm.icon} ${cm.name}`;
     }
+    if (activeTag) {
+      headerText = `Tag: ${formatTag(activeTag)}`;
+    }
+
+    // Tag cloud
+    const TOP_TAGS = 30;
+    const topTags = sortedTags.slice(0, TOP_TAGS);
+    const remainingTags = sortedTags.slice(TOP_TAGS);
 
     container.innerHTML = `
       <div class="container">
         <div class="problems-layout">
 
-          <!-- Sidebar -->
+          <!-- Left Sidebar -->
           <aside class="problems-sidebar">
             <div class="sidebar__title">Categories</div>
             <div class="sidebar__categories">
@@ -166,11 +200,11 @@ const Problems = (() => {
             </div>
           </aside>
 
-          <!-- Main -->
+          <!-- Main Content -->
           <div class="problems-main">
             <div class="problems-header">
               <h1 class="problems-header__title">${headerText}</h1>
-              <p class="problems-header__subtitle">Practice problems from real quant interviews. Click a problem to see the solution.</p>
+              <p class="problems-header__subtitle">${filtered.length} of ${allProblems.length} problems</p>
             </div>
 
             <!-- Mobile category selector -->
@@ -181,18 +215,44 @@ const Problems = (() => {
               </select>
             </div>
 
+            <!-- Tag Cloud -->
+            <div class="tag-cloud">
+              <div class="tag-cloud__header">
+                <span class="tag-cloud__title">Topics</span>
+                ${activeTag ? `<button class="tag-cloud__clear" onclick="Problems.filterTag(null)">Clear filter &times;</button>` : ''}
+              </div>
+              <div class="tag-cloud__pills" id="tag-pills">
+                ${topTags.map(([tag, count]) => `
+                  <button class="tag-cloud__pill ${activeTag === tag ? 'tag-cloud__pill--active' : ''}"
+                    onclick="Problems.filterTag('${tag}')">
+                    ${formatTag(tag)} <span class="tag-cloud__count">${count}</span>
+                  </button>
+                `).join('')}
+                ${remainingTags.length > 0 ? `
+                  <button class="tag-cloud__expand" id="tag-expand"
+                    onclick="Problems.toggleTagCloud()">
+                    +${remainingTags.length} more
+                  </button>
+                ` : ''}
+              </div>
+              <div class="tag-cloud__expanded" id="tag-expanded" style="display:none">
+                ${remainingTags.map(([tag, count]) => `
+                  <button class="tag-cloud__pill ${activeTag === tag ? 'tag-cloud__pill--active' : ''}"
+                    onclick="Problems.filterTag('${tag}')">
+                    ${formatTag(tag)} <span class="tag-cloud__count">${count}</span>
+                  </button>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Search bar -->
             <div class="pf-bar">
               <input type="text" class="pf-bar__search" id="search"
                 placeholder="Search problems..." value="${App.escapeHtml(searchQ)}">
-              <select class="pf-bar__select" id="filter-company">
-                <option value="">All Companies</option>
-                ${companiesData.map(c =>
-                  `<option value="${c.id}" ${activeCompany===c.id?'selected':''}>${c.name}</option>`
-                ).join('')}
-              </select>
               <span class="pf-bar__count">${filtered.length} of ${allProblems.length}</span>
             </div>
 
+            <!-- Problem Table -->
             <table class="problem-table">
               <thead>
                 <tr>
@@ -211,25 +271,32 @@ const Problems = (() => {
 
             ${filtered.length === 0 ? `
               <div class="empty-state">
-                <div class="empty-state__icon">🔍</div>
+                <div class="empty-state__icon">\u{1F50D}</div>
                 <div class="empty-state__title">No problems found</div>
                 <p>Try adjusting your filters.</p>
               </div>
             ` : ''}
           </div>
 
+          <!-- Right Sidebar: Companies -->
+          <aside class="problems-right-sidebar">
+            <div class="sidebar__title">Companies</div>
+            <div class="sidebar__categories">
+              ${companiesData.filter(c => companyCounts[c.id]).sort((a,b) => (companyCounts[b.id]||0) - (companyCounts[a.id]||0)).map(c => `
+                <button class="sidebar__cat-btn ${activeCompany === c.id ? 'sidebar__cat-btn--active' : ''}"
+                  onclick="Problems.filterCompany('${c.id}')">
+                  <span>${companyShort(c.id)}</span>
+                  <span class="sidebar__cat-count">${companyCounts[c.id] || 0}</span>
+                </button>
+              `).join('')}
+            </div>
+          </aside>
+
         </div>
       </div>
     `;
 
-    // Bind events
-    document.getElementById('filter-company').addEventListener('change', (e) => {
-      const p = App.getParams();
-      p.company = e.target.value || null;
-      App.setParams(p);
-      renderList(p);
-    });
-
+    // Bind search
     let searchTimeout;
     document.getElementById('search').addEventListener('input', (e) => {
       clearTimeout(searchTimeout);
@@ -279,10 +346,10 @@ const Problems = (() => {
   }
 
   function sortArrow(key) {
-    if (currentSort.key !== key) return '<span class="sort-arrow">↕</span>';
+    if (currentSort.key !== key) return '<span class="sort-arrow">\u21D5</span>';
     return currentSort.dir === 'asc'
-      ? '<span class="sort-arrow sort-arrow--active">↑</span>'
-      : '<span class="sort-arrow sort-arrow--active">↓</span>';
+      ? '<span class="sort-arrow sort-arrow--active">\u2191</span>'
+      : '<span class="sort-arrow sort-arrow--active">\u2193</span>';
   }
 
   // ---- Detail View ----
@@ -295,7 +362,7 @@ const Problems = (() => {
       container.innerHTML = `
         <div class="container">
           <div class="empty-state">
-            <div class="empty-state__icon">❓</div>
+            <div class="empty-state__icon">\u2753</div>
             <div class="empty-state__title">Problem not found</div>
             <a href="problems.html" class="btn btn--primary mt-4">Back to Problems</a>
           </div>
@@ -314,19 +381,29 @@ const Problems = (() => {
     ).join('');
 
     const tagHtml = problem.tags.map(t =>
-      `<a class="detail-tag" href="problems.html?q=${encodeURIComponent(t)}">${formatTag(t)}</a>`
+      `<a class="detail-tag" href="problems.html?tag=${encodeURIComponent(t)}">${formatTag(t)}</a>`
     ).join('');
 
     const hintsHtml = problem.hints && problem.hints.length > 0
-      ? `<div class="problem-detail__hints">
+      ? `<div class="detail-section">
+          <div class="detail-section__label">Hints</div>
           ${problem.hints.map((h, i) => `
             <div class="hint-item">
-              <button class="hint-toggle" onclick="Problems.toggleHint(this)">
-                <span class="solution-toggle__arrow">▶</span> Hint ${i + 1}
+              <button class="collapsible-toggle" onclick="Problems.toggleHint(this)">
+                <span class="collapsible-toggle__arrow">\u25B6</span> Hint ${i + 1}
               </button>
-              <div class="hint-content math-content">${h}</div>
+              <div class="collapsible-content hint-content math-content">${MarkdownRender.render(h)}</div>
             </div>
           `).join('')}
+        </div>`
+      : '';
+
+    const intuitionHtml = problem.intuition
+      ? `<div class="detail-section detail-section--intuition">
+          <button class="collapsible-toggle collapsible-toggle--intuition" onclick="Problems.toggleIntuition(this)">
+            <span class="collapsible-toggle__arrow">\u25B6</span> Intuition
+          </button>
+          <div class="collapsible-content intuition-content math-content">${MarkdownRender.render(problem.intuition)}</div>
         </div>`
       : '';
 
@@ -334,49 +411,67 @@ const Problems = (() => {
       <div class="container">
         <div class="breadcrumbs">
           <a href="problems.html">Problems</a>
-          <span class="breadcrumbs__sep"></span>
+          <span class="breadcrumbs__sep">\u203A</span>
           <a href="problems.html?category=${problem.category}">${catMeta.icon} ${catMeta.name}</a>
-          <span class="breadcrumbs__sep"></span>
+          <span class="breadcrumbs__sep">\u203A</span>
           <span>#${problem.id}</span>
         </div>
 
-        <div class="problem-detail">
-          <div class="problem-detail__header">
-            <div class="problem-detail__num">#${problem.id} · ${formatType(problem.type)} · Rating ${problem.rating}/10</div>
-            <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
-            <div class="problem-detail__meta">
-              <span class="diff-dot diff-${problem.difficulty}"></span>
-              <span class="diff-label">${problem.difficulty}</span>
-              <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
-              <div class="company-tags">${companyHtml}</div>
+        <div class="problem-detail-layout">
+          <!-- Left: Statement -->
+          <div class="problem-detail-left">
+            <div class="problem-detail__header">
+              <div class="problem-detail__meta-row">
+                <span class="problem-detail__id-badge">#${problem.id}</span>
+                <span class="badge badge--${problem.difficulty}">${problem.difficulty}</span>
+                <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
+                <span class="problem-detail__type-badge">${formatType(problem.type)}</span>
+                <span class="problem-detail__rating">${problem.rating}/10</span>
+              </div>
+              <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
+              <div class="problem-detail__tags-row">${tagHtml}</div>
+              ${companyHtml ? `<div class="problem-detail__companies">${companyHtml}</div>` : ''}
             </div>
-            <div class="problem-detail__tags-row">${tagHtml}</div>
-          </div>
 
-          <div class="problem-detail__statement math-content">
-            ${problem.statement}
-          </div>
-
-          ${hintsHtml}
-
-          <div class="problem-detail__solution">
-            <button class="solution-toggle" onclick="Problems.toggleSolution(this)">
-              <span class="solution-toggle__arrow">▶</span> Show Solution
-            </button>
-            <div class="solution-content math-content">
-              ${problem.solution}
+            <div class="problem-detail__statement-card">
+              <div class="problem-detail__statement-label">Problem Statement</div>
+              <div class="problem-detail__statement math-content">
+                ${MarkdownRender.render(problem.statement)}
+              </div>
             </div>
           </div>
 
-          <div class="problem-detail__nav">
-            ${prev
-              ? `<a class="problem-nav-btn" href="problems.html?id=${prev.id}">← #${prev.id} ${App.escapeHtml(prev.title)}</a>`
-              : '<span></span>'
-            }
-            ${next
-              ? `<a class="problem-nav-btn" href="problems.html?id=${next.id}">#${next.id} ${App.escapeHtml(next.title)} →</a>`
-              : '<span></span>'
-            }
+          <!-- Right: Solution -->
+          <div class="problem-detail-right">
+            ${hintsHtml}
+
+            ${intuitionHtml}
+
+            <div class="detail-section">
+              <button class="collapsible-toggle collapsible-toggle--solution" onclick="Problems.toggleSolution(this)">
+                <span class="collapsible-toggle__arrow">\u25B6</span> Solution
+              </button>
+              <div class="collapsible-content solution-content math-content">
+                ${MarkdownRender.render(problem.solution)}
+              </div>
+            </div>
+
+            <!-- Related Info -->
+            <div class="detail-related">
+              <div class="detail-related__title">Related Topics</div>
+              <div class="detail-related__tags">${tagHtml}</div>
+            </div>
+
+            <div class="problem-detail__nav">
+              ${prev
+                ? `<a class="problem-nav-btn" href="problems.html?id=${prev.id}">\u2190 #${prev.id} ${App.escapeHtml(prev.title)}</a>`
+                : '<span></span>'
+              }
+              ${next
+                ? `<a class="problem-nav-btn" href="problems.html?id=${next.id}">#${next.id} ${App.escapeHtml(next.title)} \u2192</a>`
+                : '<span></span>'
+              }
+            </div>
           </div>
         </div>
       </div>
@@ -389,7 +484,7 @@ const Problems = (() => {
   function filterCat(cat) {
     const p = App.getParams();
     p.category = cat;
-    p.topic = null; // clear old param
+    p.topic = null;
     App.setParams(p);
     renderList(p);
   }
@@ -408,21 +503,58 @@ const Problems = (() => {
     renderList(p);
   }
 
+  function filterTag(tag) {
+    const p = App.getParams();
+    p.tag = p.tag === tag ? null : tag;
+    App.setParams(p);
+    renderList(p);
+  }
+
+  function filterCompany(id) {
+    const p = App.getParams();
+    p.company = p.company === id ? null : id;
+    App.setParams(p);
+    renderList(p);
+  }
+
+  function toggleTagCloud() {
+    const el = document.getElementById('tag-expanded');
+    const btn = document.getElementById('tag-expand');
+    if (!el || !btn) return;
+    if (el.style.display === 'none') {
+      el.style.display = 'flex';
+      btn.textContent = 'Show less';
+    } else {
+      el.style.display = 'none';
+      btn.textContent = `+${sortedTags.length - 30} more`;
+    }
+  }
+
   // ---- Toggle helpers ----
   function toggleSolution(btn) {
-    btn.classList.toggle('solution-toggle--open');
+    btn.classList.toggle('collapsible-toggle--open');
     const content = btn.nextElementSibling;
-    content.classList.toggle('solution-content--visible');
-    btn.innerHTML = content.classList.contains('solution-content--visible')
-      ? '<span class="solution-toggle__arrow">▶</span> Hide Solution'
-      : '<span class="solution-toggle__arrow">▶</span> Show Solution';
+    content.classList.toggle('collapsible-content--visible');
+    btn.querySelector('.collapsible-toggle__arrow').textContent =
+      content.classList.contains('collapsible-content--visible') ? '\u25BC' : '\u25B6';
     KatexRender.render(content);
   }
 
   function toggleHint(btn) {
-    btn.classList.toggle('solution-toggle--open');
+    btn.classList.toggle('collapsible-toggle--open');
     const content = btn.nextElementSibling;
-    content.classList.toggle('hint-content--visible');
+    content.classList.toggle('collapsible-content--visible');
+    btn.querySelector('.collapsible-toggle__arrow').textContent =
+      content.classList.contains('collapsible-content--visible') ? '\u25BC' : '\u25B6';
+    KatexRender.render(content);
+  }
+
+  function toggleIntuition(btn) {
+    btn.classList.toggle('collapsible-toggle--open');
+    const content = btn.nextElementSibling;
+    content.classList.toggle('collapsible-content--visible');
+    btn.querySelector('.collapsible-toggle__arrow').textContent =
+      content.classList.contains('collapsible-content--visible') ? '\u25BC' : '\u25B6';
     KatexRender.render(content);
   }
 
@@ -443,17 +575,23 @@ const Problems = (() => {
 
   function formatType(t) {
     const map = {
-      'closed-form': 'Closed-Form',
+      'calculation': 'Calculation',
       'proof': 'Proof',
       'coding': 'Coding',
       'open-ended': 'Open-Ended',
       'brain-teaser': 'Brain Teaser',
       'estimation': 'Estimation',
-      'math': 'Closed-Form',
+      // Legacy fallbacks
+      'closed-form': 'Calculation',
+      'math': 'Calculation',
       'logic': 'Brain Teaser',
     };
     return map[t] || t;
   }
 
-  return { init, toggleSolution, toggleHint, filterCat, filterDiff, filterType, sort };
+  return {
+    init, toggleSolution, toggleHint, toggleIntuition,
+    filterCat, filterDiff, filterType, filterTag, filterCompany,
+    toggleTagCloud, sort
+  };
 })();
