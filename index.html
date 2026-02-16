@@ -579,20 +579,20 @@
         const nameMap = {};
         companies.forEach(c => nameMap[c.id] = c.name);
         featuredEl.innerHTML = featured.map((p, i) => {
-          const topicTag = p.topics.slice(0, 1).map(t =>
-            `<span class="tag tag--topic">${t.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')}</span>`
-          ).join('');
-          const companyTag = p.company.slice(0, 1).map(c =>
-            `<span class="tag tag--company">${nameMap[c] || c}</span>`
-          ).join('');
+          // Support both old schema (topics/company) and new schema (category/companies)
+          const cat = p.category || (p.topics && p.topics[0]) || '';
+          const catLabel = cat.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+          const comps = p.companies || p.company || [];
+          const compLabel = comps.slice(0, 1).map(c => nameMap[c] || c).join('');
+          const pid = typeof p.id === 'number' ? p.id : p.id;
           return `
-            <a class="problem-card" href="problems.html?id=${p.id}">
+            <a class="problem-card" href="problems.html?id=${pid}">
               <span class="problem-card__number">${i + 1}</span>
               <span class="problem-card__title">${p.title}</span>
               <span class="problem-card__tags">
                 ${App.difficultyBadge(p.difficulty)}
-                ${topicTag}
-                ${companyTag}
+                <span class="tag tag--topic">${catLabel}</span>
+                ${compLabel ? `<span class="tag tag--company">${compLabel}</span>` : ''}
               </span>
             </a>
           `;

@@ -1,24 +1,71 @@
 /* ============================================
-   PROBLEMS — Problem list + detail rendering
+   PROBLEMS — LeetCode-style problem list + detail
    ============================================ */
 
 const Problems = (() => {
   let allProblems = [];
-  let topicsData = null;
+  let tagsData = null;
   let companiesData = null;
+  let currentSort = { key: 'id', dir: 'asc' };
 
+  // ---- Normalize: handle both old and new schema ----
+  function normalize(p) {
+    return {
+      id:        typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10),
+      title:     p.title,
+      statement: p.statement || p.question || '',
+      solution:  p.solution || '',
+      hints:     p.hints || [],
+      companies: p.companies || p.company || [],
+      tags:      p.tags || p.subtopics || [],
+      category:  p.category || (p.topics && p.topics[0]) || 'probability',
+      difficulty:p.difficulty || 'medium',
+      rating:    p.rating || diffToRating(p.difficulty),
+      type:      p.type || 'closed-form',
+      source:    p.source || 'interview',
+    };
+  }
+
+  function diffToRating(d) {
+    return d === 'easy' ? 3 : d === 'hard' ? 8 : 5;
+  }
+
+  // ---- Init ----
   async function init() {
-    allProblems = (await DataLoader.problems()) || [];
-    topicsData = (await DataLoader.topics()) || { tracks: [] };
+    const raw = (await DataLoader.problems()) || [];
+    allProblems = raw.map(normalize);
+    tagsData = (await DataLoader.tags()) || { categories: [], types: [] };
     companiesData = (await DataLoader.companies()) || [];
 
     const params = App.getParams();
-
     if (params.id) {
-      renderDetail(params.id);
+      renderDetail(parseInt(params.id, 10) || params.id);
     } else {
       renderList(params);
     }
+  }
+
+  // ---- Category metadata ----
+  function getCatMeta(catId) {
+    if (!tagsData || !tagsData.categories) return { name: catId, icon: '📄', color: '#6366f1' };
+    return tagsData.categories.find(c => c.id === catId) || { name: catId, icon: '📄', color: '#6366f1' };
+  }
+
+  // ---- Company name lookup ----
+  function companyName(id) {
+    const c = companiesData.find(co => co.id === id);
+    return c ? c.name : id;
+  }
+
+  function companyShort(id) {
+    const map = {
+      'citadel': 'Citadel', 'two-sigma': 'Two Sigma', 'de-shaw': 'D.E. Shaw',
+      'jump-trading': 'Jump', 'drw': 'DRW', 'hrt': 'HRT', 'jane-street': 'Jane St',
+      'optiver': 'Optiver', 'sig': 'SIG', 'squarepoint': 'Squarepoint',
+      'tower-research': 'Tower', 'millennium': 'Millennium', 'point72': 'Point72',
+      'aqr': 'AQR', 'renaissance': 'RenTech', 'five-rings': 'Five Rings', 'hft': 'HFT',
+    };
+    return map[id] || id;
   }
 
   // ---- List View ----
@@ -26,143 +73,210 @@ const Problems = (() => {
     const container = document.getElementById('content');
     if (!container) return;
 
-    // Build filter options
-    const allTopics = [];
-    topicsData.tracks.forEach(track => {
-      track.topics.forEach(t => allTopics.push(t));
+    // Count per category
+    const catCounts = {};
+    allProblems.forEach(p => {
+      catCounts[p.category] = (catCounts[p.category] || 0) + 1;
     });
-    const allCompanies = companiesData;
 
-    // Filter problems
+    // Build category list from tags.json
+    const categories = (tagsData.categories || []).filter(c => catCounts[c.id]);
+
+    // Filter
     let filtered = [...allProblems];
-    if (params.topic) {
-      filtered = filtered.filter(p => p.topics.includes(params.topic));
-    }
-    if (params.company) {
-      filtered = filtered.filter(p => p.company.includes(params.company));
-    }
-    if (params.difficulty) {
-      filtered = filtered.filter(p => p.difficulty === params.difficulty);
-    }
-    if (params.q) {
-      const q = params.q.toLowerCase();
+    const activeCat = params.category || params.topic || null;
+    const activeCompany = params.company || null;
+    const activeDiff = params.difficulty || null;
+    const activeType = params.type || null;
+    const searchQ = params.q || '';
+
+    if (activeCat) filtered = filtered.filter(p => p.category === activeCat);
+    if (activeCompany) filtered = filtered.filter(p => p.companies.includes(activeCompany));
+    if (activeDiff) filtered = filtered.filter(p => p.difficulty === activeDiff);
+    if (activeType) filtered = filtered.filter(p => p.type === activeType);
+    if (searchQ) {
+      const q = searchQ.toLowerCase();
       filtered = filtered.filter(p =>
         p.title.toLowerCase().includes(q) ||
-        p.statement.toLowerCase().includes(q)
+        p.statement.toLowerCase().includes(q) ||
+        p.tags.some(t => t.toLowerCase().includes(q))
       );
     }
 
-    const activeTopicTitle = params.topic
-      ? allTopics.find(t => t.id === params.topic)?.title || params.topic
-      : null;
-    const activeCompanyName = params.company
-      ? allCompanies.find(c => c.id === params.company)?.name || params.company
-      : null;
+    // Sort
+    sortProblems(filtered, currentSort.key, currentSort.dir);
 
+    // Build header text
     let headerText = 'All Problems';
-    if (activeTopicTitle && activeCompanyName) {
-      headerText = `${activeCompanyName} — ${activeTopicTitle}`;
-    } else if (activeTopicTitle) {
-      headerText = activeTopicTitle;
-    } else if (activeCompanyName) {
-      headerText = activeCompanyName;
+    if (activeCat) {
+      const cm = getCatMeta(activeCat);
+      headerText = `${cm.icon} ${cm.name}`;
     }
 
     container.innerHTML = `
       <div class="container">
-        <div class="section-header">
-          <h1 class="section-header__title">${headerText}</h1>
-          <p class="section-header__subtitle">Practice problems from top quant firms. Click to reveal solutions.</p>
-        </div>
+        <div class="problems-layout">
 
-        <div class="filter-bar">
-          <input type="text" class="filter-bar__search" id="search"
-            placeholder="Search problems..." value="${params.q || ''}">
+          <!-- Sidebar -->
+          <aside class="problems-sidebar">
+            <div class="sidebar__title">Categories</div>
+            <div class="sidebar__categories">
+              <button class="sidebar__cat-btn ${!activeCat ? 'sidebar__cat-btn--active' : ''}"
+                onclick="Problems.filterCat(null)">
+                <span>All Problems</span>
+                <span class="sidebar__cat-count">${allProblems.length}</span>
+              </button>
+              ${categories.map(c => `
+                <button class="sidebar__cat-btn ${activeCat === c.id ? 'sidebar__cat-btn--active' : ''}"
+                  onclick="Problems.filterCat('${c.id}')">
+                  <span><span class="sidebar__cat-icon">${c.icon}</span>${c.name}</span>
+                  <span class="sidebar__cat-count">${catCounts[c.id] || 0}</span>
+                </button>
+              `).join('')}
+            </div>
 
-          <select class="filter-bar__select" id="filter-topic">
-            <option value="">All Topics</option>
-            ${allTopics.map(t =>
-              `<option value="${t.id}" ${params.topic === t.id ? 'selected' : ''}>${t.title}</option>`
-            ).join('')}
-          </select>
+            <div class="sidebar__divider"></div>
+            <div class="sidebar__title">Difficulty</div>
+            <div class="sidebar__categories">
+              ${['easy','medium','hard'].map(d => `
+                <button class="sidebar__cat-btn ${activeDiff === d ? 'sidebar__cat-btn--active' : ''}"
+                  onclick="Problems.filterDiff('${d}')">
+                  <span><span class="diff-dot diff-${d}"></span>${d.charAt(0).toUpperCase()+d.slice(1)}</span>
+                  <span class="sidebar__cat-count">${allProblems.filter(p=>p.difficulty===d).length}</span>
+                </button>
+              `).join('')}
+            </div>
 
-          <select class="filter-bar__select" id="filter-company">
-            <option value="">All Companies</option>
-            ${allCompanies.map(c =>
-              `<option value="${c.id}" ${params.company === c.id ? 'selected' : ''}>${c.name}</option>`
-            ).join('')}
-          </select>
+            <div class="sidebar__divider"></div>
+            <div class="sidebar__title">Type</div>
+            <div class="sidebar__categories">
+              ${(tagsData.types || []).filter(t => allProblems.some(p=>p.type===t.id)).map(t => `
+                <button class="sidebar__cat-btn ${activeType === t.id ? 'sidebar__cat-btn--active' : ''}"
+                  onclick="Problems.filterType('${t.id}')">
+                  <span>${t.name}</span>
+                  <span class="sidebar__cat-count">${allProblems.filter(p=>p.type===t.id).length}</span>
+                </button>
+              `).join('')}
+            </div>
+          </aside>
 
-          <select class="filter-bar__select" id="filter-difficulty">
-            <option value="">All Difficulties</option>
-            <option value="easy" ${params.difficulty === 'easy' ? 'selected' : ''}>Easy</option>
-            <option value="medium" ${params.difficulty === 'medium' ? 'selected' : ''}>Medium</option>
-            <option value="hard" ${params.difficulty === 'hard' ? 'selected' : ''}>Hard</option>
-          </select>
-        </div>
+          <!-- Main -->
+          <div class="problems-main">
+            <div class="problems-header">
+              <h1 class="problems-header__title">${headerText}</h1>
+              <p class="problems-header__subtitle">Practice problems from real quant interviews. Click a problem to see the solution.</p>
+            </div>
 
-        <p class="problem-count">${filtered.length} problem${filtered.length !== 1 ? 's' : ''}</p>
+            <!-- Mobile category selector -->
+            <div class="mobile-cat-filter">
+              <select onchange="Problems.filterCat(this.value || null)">
+                <option value="">All Categories</option>
+                ${categories.map(c => `<option value="${c.id}" ${activeCat===c.id?'selected':''}>${c.icon} ${c.name} (${catCounts[c.id]})</option>`).join('')}
+              </select>
+            </div>
 
-        <div class="problem-list" id="problem-list">
-          ${filtered.map((p, i) => problemCard(p, i + 1)).join('')}
-        </div>
+            <div class="pf-bar">
+              <input type="text" class="pf-bar__search" id="search"
+                placeholder="Search problems..." value="${App.escapeHtml(searchQ)}">
+              <select class="pf-bar__select" id="filter-company">
+                <option value="">All Companies</option>
+                ${companiesData.map(c =>
+                  `<option value="${c.id}" ${activeCompany===c.id?'selected':''}>${c.name}</option>`
+                ).join('')}
+              </select>
+              <span class="pf-bar__count">${filtered.length} of ${allProblems.length}</span>
+            </div>
 
-        ${filtered.length === 0 ? `
-          <div class="empty-state">
-            <div class="empty-state__icon">🔍</div>
-            <div class="empty-state__title">No problems found</div>
-            <p>Try adjusting your filters.</p>
+            <table class="problem-table">
+              <thead>
+                <tr>
+                  <th class="th-num" onclick="Problems.sort('id')">#${sortArrow('id')}</th>
+                  <th class="th-title" onclick="Problems.sort('title')">Title${sortArrow('title')}</th>
+                  <th class="th-cat" onclick="Problems.sort('category')">Category${sortArrow('category')}</th>
+                  <th class="th-diff" onclick="Problems.sort('difficulty')">Difficulty${sortArrow('difficulty')}</th>
+                  <th class="th-type" onclick="Problems.sort('type')">Type${sortArrow('type')}</th>
+                  <th class="th-rating" onclick="Problems.sort('rating')">Rating${sortArrow('rating')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${filtered.map(p => tableRow(p)).join('')}
+              </tbody>
+            </table>
+
+            ${filtered.length === 0 ? `
+              <div class="empty-state">
+                <div class="empty-state__icon">🔍</div>
+                <div class="empty-state__title">No problems found</div>
+                <p>Try adjusting your filters.</p>
+              </div>
+            ` : ''}
           </div>
-        ` : ''}
+
+        </div>
       </div>
     `;
 
-    // Bind filter events
-    const applyFilters = () => {
-      const newParams = {
-        q: document.getElementById('search').value || null,
-        topic: document.getElementById('filter-topic').value || null,
-        company: document.getElementById('filter-company').value || null,
-        difficulty: document.getElementById('filter-difficulty').value || null,
-      };
-      App.setParams(newParams);
-      renderList(newParams);
-      KatexRender.render(container);
-    };
-
-    document.getElementById('filter-topic').addEventListener('change', applyFilters);
-    document.getElementById('filter-company').addEventListener('change', applyFilters);
-    document.getElementById('filter-difficulty').addEventListener('change', applyFilters);
-
-    let searchTimeout;
-    document.getElementById('search').addEventListener('input', () => {
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(applyFilters, 300);
+    // Bind events
+    document.getElementById('filter-company').addEventListener('change', (e) => {
+      const p = App.getParams();
+      p.company = e.target.value || null;
+      App.setParams(p);
+      renderList(p);
     });
 
-    KatexRender.render(container);
+    let searchTimeout;
+    document.getElementById('search').addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const p = App.getParams();
+        p.q = e.target.value || null;
+        App.setParams(p);
+        renderList(p);
+      }, 300);
+    });
   }
 
-  function problemCard(problem, index) {
-    const topicTags = problem.topics.slice(0, 2).map(t =>
-      `<span class="tag tag--topic">${formatTopicName(t)}</span>`
-    ).join('');
-
-    const companyTags = problem.company.slice(0, 2).map(c =>
-      `<span class="tag tag--company">${formatCompanyName(c)}</span>`
+  function tableRow(p) {
+    const catMeta = getCatMeta(p.category);
+    const tagHtml = p.tags.slice(0, 3).map(t =>
+      `<span class="td-tag">${formatTag(t)}</span>`
     ).join('');
 
     return `
-      <a class="problem-card" href="problems.html?id=${problem.id}">
-        <span class="problem-card__number">${index}</span>
-        <span class="problem-card__title">${App.escapeHtml(problem.title)}</span>
-        <span class="problem-card__tags">
-          ${App.difficultyBadge(problem.difficulty)}
-          ${topicTags}
-          ${companyTags}
-        </span>
-      </a>
+      <tr>
+        <td class="td-num">${p.id}</td>
+        <td>
+          <a class="td-title-link" href="problems.html?id=${p.id}">${App.escapeHtml(p.title)}</a>
+          <div class="td-tags">${tagHtml}</div>
+        </td>
+        <td><span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span></td>
+        <td class="td-diff"><span class="diff-dot diff-${p.difficulty}"></span><span class="diff-label">${p.difficulty}</span></td>
+        <td class="td-type">${formatType(p.type)}</td>
+        <td class="td-rating">${p.rating}/10</td>
+      </tr>
     `;
+  }
+
+  // ---- Sorting ----
+  function sortProblems(arr, key, dir) {
+    const mult = dir === 'asc' ? 1 : -1;
+    arr.sort((a, b) => {
+      let va = a[key], vb = b[key];
+      if (key === 'difficulty') {
+        const order = { easy: 1, medium: 2, hard: 3 };
+        va = order[va] || 2;
+        vb = order[vb] || 2;
+      }
+      if (typeof va === 'string') return va.localeCompare(vb) * mult;
+      return (va - vb) * mult;
+    });
+  }
+
+  function sortArrow(key) {
+    if (currentSort.key !== key) return '<span class="sort-arrow">↕</span>';
+    return currentSort.dir === 'asc'
+      ? '<span class="sort-arrow sort-arrow--active">↑</span>'
+      : '<span class="sort-arrow sort-arrow--active">↓</span>';
   }
 
   // ---- Detail View ----
@@ -170,7 +284,7 @@ const Problems = (() => {
     const container = document.getElementById('content');
     if (!container) return;
 
-    const problem = allProblems.find(p => p.id === id);
+    const problem = allProblems.find(p => p.id === id || p.id === parseInt(id, 10));
     if (!problem) {
       container.innerHTML = `
         <div class="container">
@@ -187,13 +301,14 @@ const Problems = (() => {
     const idx = allProblems.indexOf(problem);
     const prev = idx > 0 ? allProblems[idx - 1] : null;
     const next = idx < allProblems.length - 1 ? allProblems[idx + 1] : null;
+    const catMeta = getCatMeta(problem.category);
 
-    const topicTags = problem.topics.map(t =>
-      `<a class="tag tag--topic" href="problems.html?topic=${t}">${formatTopicName(t)}</a>`
+    const companyHtml = problem.companies.map(c =>
+      `<a class="company-tag" href="problems.html?company=${c}">${companyShort(c)}</a>`
     ).join('');
 
-    const companyTags = problem.company.map(c =>
-      `<a class="tag tag--company" href="problems.html?company=${c}">${formatCompanyName(c)}</a>`
+    const tagHtml = problem.tags.map(t =>
+      `<a class="detail-tag" href="problems.html?q=${encodeURIComponent(t)}">${formatTag(t)}</a>`
     ).join('');
 
     const hintsHtml = problem.hints && problem.hints.length > 0
@@ -214,18 +329,22 @@ const Problems = (() => {
         <div class="breadcrumbs">
           <a href="problems.html">Problems</a>
           <span class="breadcrumbs__sep"></span>
-          <span>${App.escapeHtml(problem.title)}</span>
+          <a href="problems.html?category=${problem.category}">${catMeta.icon} ${catMeta.name}</a>
+          <span class="breadcrumbs__sep"></span>
+          <span>#${problem.id}</span>
         </div>
 
         <div class="problem-detail">
           <div class="problem-detail__header">
+            <div class="problem-detail__num">#${problem.id} · ${formatType(problem.type)} · Rating ${problem.rating}/10</div>
             <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
             <div class="problem-detail__meta">
-              ${App.difficultyBadge(problem.difficulty)}
-              ${topicTags}
-              ${companyTags}
-              <span class="tag">${problem.type}</span>
+              <span class="diff-dot diff-${problem.difficulty}"></span>
+              <span class="diff-label">${problem.difficulty}</span>
+              <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
+              <div class="company-tags">${companyHtml}</div>
             </div>
+            <div class="problem-detail__tags-row">${tagHtml}</div>
           </div>
 
           <div class="problem-detail__statement math-content">
@@ -245,11 +364,11 @@ const Problems = (() => {
 
           <div class="problem-detail__nav">
             ${prev
-              ? `<a class="problem-nav-btn" href="problems.html?id=${prev.id}">← ${App.escapeHtml(prev.title)}</a>`
+              ? `<a class="problem-nav-btn" href="problems.html?id=${prev.id}">← #${prev.id} ${App.escapeHtml(prev.title)}</a>`
               : '<span></span>'
             }
             ${next
-              ? `<a class="problem-nav-btn" href="problems.html?id=${next.id}">${App.escapeHtml(next.title)} →</a>`
+              ? `<a class="problem-nav-btn" href="problems.html?id=${next.id}">#${next.id} ${App.escapeHtml(next.title)} →</a>`
               : '<span></span>'
             }
           </div>
@@ -258,6 +377,29 @@ const Problems = (() => {
     `;
 
     KatexRender.render(container);
+  }
+
+  // ---- Filter helpers ----
+  function filterCat(cat) {
+    const p = App.getParams();
+    p.category = cat;
+    p.topic = null; // clear old param
+    App.setParams(p);
+    renderList(p);
+  }
+
+  function filterDiff(d) {
+    const p = App.getParams();
+    p.difficulty = p.difficulty === d ? null : d;
+    App.setParams(p);
+    renderList(p);
+  }
+
+  function filterType(t) {
+    const p = App.getParams();
+    p.type = p.type === t ? null : t;
+    App.setParams(p);
+    renderList(p);
   }
 
   // ---- Toggle helpers ----
@@ -278,33 +420,34 @@ const Problems = (() => {
     KatexRender.render(content);
   }
 
-  // ---- Helpers ----
-  function formatTopicName(id) {
+  // ---- Sort handler ----
+  function sort(key) {
+    if (currentSort.key === key) {
+      currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+    } else {
+      currentSort = { key, dir: 'asc' };
+    }
+    renderList(App.getParams());
+  }
+
+  // ---- Format helpers ----
+  function formatTag(id) {
     return id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   }
 
-  function formatCompanyName(id) {
-    const nameMap = {
-      'citadel': 'Citadel',
-      'two-sigma': 'Two Sigma',
-      'de-shaw': 'D.E. Shaw',
-      'jump-trading': 'Jump Trading',
-      'drw': 'DRW',
-      'hrt': 'HRT',
-      'jane-street': 'Jane Street',
-      'optiver': 'Optiver',
-      'sig': 'SIG',
-      'squarepoint': 'Squarepoint',
-      'tower-research': 'Tower Research',
-      'millennium': 'Millennium',
-      'point72': 'Point72',
-      'aqr': 'AQR',
-      'renaissance': 'Renaissance',
-      'five-rings': 'Five Rings',
-      'hft': 'HFT Firm',
+  function formatType(t) {
+    const map = {
+      'closed-form': 'Closed-Form',
+      'proof': 'Proof',
+      'coding': 'Coding',
+      'open-ended': 'Open-Ended',
+      'brain-teaser': 'Brain Teaser',
+      'estimation': 'Estimation',
+      'math': 'Closed-Form',
+      'logic': 'Brain Teaser',
     };
-    return nameMap[id] || id;
+    return map[t] || t;
   }
 
-  return { init, toggleSolution, toggleHint };
+  return { init, toggleSolution, toggleHint, filterCat, filterDiff, filterType, sort };
 })();

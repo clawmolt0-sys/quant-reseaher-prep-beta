@@ -25,5 +25,6 @@ const DataLoader = (() => {
     labs:      () => load('labs.json'),
     topics:    () => load('topics.json'),
     companies: () => load('companies.json'),
+    tags:      () => load('tags.json'),
   };
 })();
