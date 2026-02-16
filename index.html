@@ -3,34 +3,352 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quant Researcher Prep</title>
-  <meta name="description" content="Comprehensive preparation for Quant Researcher interviews. Problems, lectures, and coding labs covering probability, statistics, finance, and more.">
+  <title>QR Prep — Quant Researcher Interview Preparation</title>
+  <meta name="description" content="The most comprehensive preparation platform for Quant Researcher interviews. Go beyond brain teasers: full lectures, 50+ problems from 16 top firms, coding labs, and finance curriculum.">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- KaTeX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
-  <!-- Styles -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    /* --- Home page specific --- */
+    .hero { text-align: center; padding: var(--space-20) 0 var(--space-12); position: relative; }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(76,139,245,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero__label {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-1) var(--space-4);
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      background: var(--bg-card);
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      font-weight: var(--font-medium);
+      letter-spacing: 0.02em;
+      margin-bottom: var(--space-6);
+    }
+    .hero__label-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-green);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero__title {
+      font-size: var(--text-5xl);
+      font-weight: var(--font-extrabold);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-6);
+      color: var(--text-bright);
+    }
+    .hero__title-accent {
+      background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero__subtitle {
+      font-size: var(--text-lg);
+      color: var(--text-secondary);
+      max-width: 640px;
+      margin: 0 auto var(--space-8);
+      line-height: 1.7;
+      font-weight: var(--font-normal);
+    }
+    .hero__actions {
+      display: flex;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+    .hero__actions .btn--primary {
+      padding: var(--space-3) var(--space-8);
+      font-size: var(--text-base);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 0 20px rgba(76,139,245,0.25);
+    }
+    .hero__actions .btn--secondary {
+      padding: var(--space-3) var(--space-8);
+      font-size: var(--text-base);
+      border-radius: var(--radius-lg);
+    }
+
+    /* Stats */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-4);
+      max-width: 700px;
+      margin: 0 auto var(--space-16);
+      padding: var(--space-6);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+    }
+    .stat-item { text-align: center; }
+    .stat-item__number {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      color: var(--text-bright);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-item__label {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: var(--font-medium);
+    }
+
+    /* Differentiators */
+    .diff-section {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+    }
+    .diff-section__title {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      font-weight: var(--font-semibold);
+      margin-bottom: var(--space-3);
+    }
+    .diff-section__heading {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-2);
+      letter-spacing: -0.01em;
+    }
+    .diff-section__desc {
+      font-size: var(--text-base);
+      color: var(--text-secondary);
+      margin-bottom: var(--space-8);
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .diff-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+      transition: all var(--transition-base);
+    }
+    .diff-card:hover {
+      border-color: var(--border-light);
+      background: var(--bg-card-hover);
+    }
+    .diff-card__icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: var(--space-3);
+      background: var(--accent-light);
+    }
+    .diff-card__title {
+      font-size: var(--text-sm);
+      font-weight: var(--font-semibold);
+      margin-bottom: var(--space-1);
+    }
+    .diff-card__text {
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Section cards */
+    .sections-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+    }
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: var(--space-6);
+      text-decoration: none;
+      color: inherit;
+      transition: all var(--transition-base);
+      display: flex;
+      flex-direction: column;
+    }
+    .section-card:hover {
+      border-color: var(--accent-border);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-2px);
+    }
+    .section-card__icon {
+      font-size: 1.5rem;
+      margin-bottom: var(--space-3);
+    }
+    .section-card__title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      margin-bottom: var(--space-1);
+    }
+    .section-card__desc {
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .section-card__stat {
+      margin-top: var(--space-3);
+      font-size: var(--text-xs);
+      color: var(--accent);
+      font-weight: var(--font-semibold);
+    }
+
+    /* Companies strip */
+    .companies-strip {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+      text-align: center;
+    }
+    .companies-strip__title {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-4);
+      font-weight: var(--font-medium);
+    }
+    .companies-strip__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-2);
+    }
+    .companies-strip__item {
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      font-weight: var(--font-medium);
+      background: var(--bg-card);
+    }
+
+    /* Featured */
+    .featured-section {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+    }
+    .featured-section__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--space-4);
+    }
+    .featured-section__title {
+      font-size: var(--text-lg);
+      font-weight: var(--font-semibold);
+    }
+    .featured-section__link {
+      font-size: var(--text-xs);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: var(--font-medium);
+    }
+    .featured-section__link:hover { text-decoration: underline; }
+
+    /* Roadmap */
+    .roadmap-section {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+    }
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .roadmap-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5);
+    }
+    .roadmap-card__phase {
+      font-size: var(--text-xs);
+      font-weight: var(--font-semibold);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-2);
+    }
+    .roadmap-card__title {
+      font-size: var(--text-sm);
+      font-weight: var(--font-semibold);
+      margin-bottom: var(--space-2);
+    }
+    .roadmap-card__items {
+      list-style: none;
+      font-size: var(--text-xs);
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .roadmap-card__items li::before {
+      content: ''; display: inline-block;
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      margin-right: var(--space-2);
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .hero__title { font-size: var(--text-3xl); }
+      .hero__subtitle { font-size: var(--text-base); }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+      .diff-grid { grid-template-columns: 1fr; }
+      .sections-grid { grid-template-columns: 1fr; }
+      .roadmap-grid { grid-template-columns: 1fr; }
+      .hero__actions { flex-direction: column; align-items: center; }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav">
     <div class="nav__inner">
       <a class="nav__brand" href="index.html">
-        <span class="nav__brand-icon">⚡</span>
-        <span>QuantResearch Prep</span>
+        <span style="font-size:1.1rem">&#9889;</span>
+        <span style="font-weight:700;letter-spacing:-0.02em">QR Prep</span>
       </a>
-      <button class="nav__mobile-toggle" aria-label="Menu">☰</button>
+      <button class="nav__mobile-toggle" aria-label="Menu">&#9776;</button>
       <ul class="nav__links">
         <li><a class="nav__link" href="index.html">Home</a></li>
         <li><a class="nav__link" href="learn.html">Learn</a></li>
@@ -41,103 +359,180 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
   <main class="main">
     <div class="container">
 
       <!-- Hero -->
       <section class="hero">
+        <div class="hero__label">
+          <span class="hero__label-dot"></span>
+          Built for PhD-level Quant Researcher interviews
+        </div>
         <h1 class="hero__title">
-          Prepare for <span class="hero__title-accent">Quant Researcher</span> Interviews
+          Go beyond brain teasers.<br>
+          Prepare like a <span class="hero__title-accent">Quant Researcher</span>.
         </h1>
         <p class="hero__subtitle">
-          Master probability, statistics, finance, and coding with structured lectures,
-          200+ interview problems, and hands-on coding labs from top quant firms.
+          The only prep platform that combines structured lectures, real interview problems
+          from 16 top firms, finance curriculum, and hands-on coding labs &mdash; everything
+          PhD students need for QR roles at hedge funds and prop shops.
         </p>
         <div class="hero__actions">
-          <a href="problems.html" class="btn btn--primary btn--lg">Practice Problems</a>
-          <a href="learn.html" class="btn btn--secondary btn--lg">Start Learning</a>
+          <a href="problems.html" class="btn btn--primary">Start Practicing</a>
+          <a href="learn.html" class="btn btn--secondary">Explore Curriculum</a>
         </div>
       </section>
 
       <!-- Stats -->
       <section class="stats-bar" id="stats-bar">
         <div class="stat-item">
-          <div class="stat-item__number" id="stat-problems">—</div>
+          <div class="stat-item__number" id="stat-problems">&mdash;</div>
           <div class="stat-item__label">Problems</div>
         </div>
         <div class="stat-item">
-          <div class="stat-item__number" id="stat-lectures">—</div>
+          <div class="stat-item__number" id="stat-lectures">&mdash;</div>
           <div class="stat-item__label">Lectures</div>
         </div>
         <div class="stat-item">
-          <div class="stat-item__number" id="stat-topics">—</div>
+          <div class="stat-item__number" id="stat-topics">&mdash;</div>
           <div class="stat-item__label">Topics</div>
         </div>
         <div class="stat-item">
-          <div class="stat-item__number" id="stat-companies">—</div>
-          <div class="stat-item__label">Companies</div>
+          <div class="stat-item__number" id="stat-companies">&mdash;</div>
+          <div class="stat-item__label">Firms</div>
+        </div>
+      </section>
+
+      <!-- Why this is different -->
+      <section class="diff-section">
+        <div class="diff-section__title">Why QR Prep</div>
+        <h2 class="diff-section__heading">Most prep sites stop at probability puzzles. We don't.</h2>
+        <p class="diff-section__desc">
+          Quant Researcher interviews test far more than expected value calculations.
+          We cover the full stack &mdash; from stochastic calculus to portfolio optimization to
+          real coding with financial data.
+        </p>
+        <div class="diff-grid">
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x1D6BA;</div>
+            <div class="diff-card__title">Full Curriculum</div>
+            <div class="diff-card__text">18 topics across two tracks: Quantitative Foundations and Finance &amp; Markets. Structured lectures with slides and interactive notebooks.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x1F3E2;</div>
+            <div class="diff-card__title">Real Firm Questions</div>
+            <div class="diff-card__text">Problems sourced from actual interviews at Citadel, Two Sigma, Jane Street, D.E. Shaw, Jump, and 11 more firms. Tagged by company and topic.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x1F4C8;</div>
+            <div class="diff-card__title">Finance Depth</div>
+            <div class="diff-card__text">Options pricing, volatility surfaces, risk modeling, market microstructure, and trading strategies &mdash; not just brain teasers.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x1F4BB;</div>
+            <div class="diff-card__title">Coding Labs</div>
+            <div class="diff-card__text">Hands-on Python exercises with real financial data: compute VaR, fit vol surfaces, build binomial trees, analyze order flow.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x1F393;</div>
+            <div class="diff-card__title">PhD-Level Rigor</div>
+            <div class="diff-card__text">Solutions include full derivations, proofs, and intuition. Built for math/physics/CS PhDs transitioning to quant finance.</div>
+          </div>
+          <div class="diff-card">
+            <div class="diff-card__icon">&#x26A1;</div>
+            <div class="diff-card__title">AI-Assisted Learning</div>
+            <div class="diff-card__text">Coming soon: an AI tutor that helps you work through problems step-by-step, explains concepts, and reviews your code.</div>
+          </div>
         </div>
       </section>
 
       <!-- Section Cards -->
-      <section class="grid-2 mb-8" style="max-width:900px; margin-left:auto; margin-right:auto;">
+      <section class="sections-grid">
         <a class="section-card" href="learn.html">
-          <div class="section-card__icon">📚</div>
+          <div class="section-card__icon">&#x1F4DA;</div>
           <h2 class="section-card__title">Learning Path</h2>
-          <p class="section-card__desc">
-            Structured lectures covering quantitative foundations and finance.
-            Follow the curriculum or jump to any topic.
-          </p>
-          <div class="section-card__stat">2 tracks · 18 topics →</div>
+          <p class="section-card__desc">Systematic lectures from probability to portfolio optimization. Two tracks, 18 modules, slides and notebooks.</p>
+          <div class="section-card__stat">2 tracks &middot; 18 topics &middot; 20+ lectures &rarr;</div>
         </a>
-
         <a class="section-card" href="problems.html">
-          <div class="section-card__icon">🧩</div>
+          <div class="section-card__icon">&#x1F9E9;</div>
           <h2 class="section-card__title">Interview Problems</h2>
-          <p class="section-card__desc">
-            Practice problems from Citadel, Two Sigma, Jump, Optiver, and more.
-            Filter by topic, company, or difficulty.
-          </p>
-          <div class="section-card__stat">Filter by 10+ firms →</div>
+          <p class="section-card__desc">Math, probability, finance, and logic problems from real QR interviews. Filter by firm, topic, and difficulty.</p>
+          <div class="section-card__stat" id="section-stat-problems">50+ problems &middot; 16 firms &rarr;</div>
         </a>
-
         <a class="section-card" href="labs.html">
-          <div class="section-card__icon">💻</div>
+          <div class="section-card__icon">&#x1F4BB;</div>
           <h2 class="section-card__title">Code Labs</h2>
-          <p class="section-card__desc">
-            Hands-on coding exercises with real financial data.
-            Build quant models, analyze markets, and practice data science.
-          </p>
-          <div class="section-card__stat">Coming soon →</div>
+          <p class="section-card__desc">Write Python to solve real quant problems: VaR calculation, option pricing, skew fitting, order flow analysis.</p>
+          <div class="section-card__stat">6 labs &middot; Coming soon &rarr;</div>
         </a>
-
         <a class="section-card" href="resources.html">
-          <div class="section-card__icon">📖</div>
+          <div class="section-card__icon">&#x1F4D6;</div>
           <h2 class="section-card__title">Resources</h2>
-          <p class="section-card__desc">
-            Reading lists, formula cheat sheets, and interview guides
-            curated for quant researcher roles.
-          </p>
-          <div class="section-card__stat">Books, papers, guides →</div>
+          <p class="section-card__desc">Curated reading lists, formula reference sheets, and interview strategy guides for quant researcher roles.</p>
+          <div class="section-card__stat">Books, formulas, tips &rarr;</div>
         </a>
       </section>
 
+      <!-- Company strip -->
+      <section class="companies-strip">
+        <div class="companies-strip__title">Problems from interviews at</div>
+        <div class="companies-strip__list" id="companies-list"></div>
+      </section>
+
       <!-- Featured Problems -->
-      <section style="max-width:900px; margin:0 auto;">
-        <h2 style="font-size:var(--text-xl); font-weight:var(--font-bold); margin-bottom:var(--space-4);">
-          Featured Problems
-        </h2>
+      <section class="featured-section">
+        <div class="featured-section__header">
+          <h2 class="featured-section__title">Featured Problems</h2>
+          <a class="featured-section__link" href="problems.html">View all &rarr;</a>
+        </div>
         <div id="featured-problems" class="problem-list"></div>
+      </section>
+
+      <!-- Roadmap -->
+      <section class="roadmap-section">
+        <div class="diff-section__title">Roadmap</div>
+        <h2 class="diff-section__heading" style="margin-bottom:var(--space-6)">What's coming next</h2>
+        <div class="roadmap-grid">
+          <div class="roadmap-card">
+            <div class="roadmap-card__phase">Now</div>
+            <div class="roadmap-card__title">Foundation</div>
+            <ul class="roadmap-card__items">
+              <li>50+ interview problems with solutions</li>
+              <li>Lecture slides and notebook content</li>
+              <li>Full topic curriculum</li>
+              <li>Company-specific filtering</li>
+            </ul>
+          </div>
+          <div class="roadmap-card">
+            <div class="roadmap-card__phase">Next</div>
+            <div class="roadmap-card__title">Interactive</div>
+            <ul class="roadmap-card__items">
+              <li>In-browser Python code editor</li>
+              <li>Real financial datasets</li>
+              <li>Progress tracking</li>
+              <li>200+ problems</li>
+            </ul>
+          </div>
+          <div class="roadmap-card">
+            <div class="roadmap-card__phase">Future</div>
+            <div class="roadmap-card__title">AI-Powered</div>
+            <ul class="roadmap-card__items">
+              <li>AI tutor for step-by-step help</li>
+              <li>Code review and feedback</li>
+              <li>Adaptive difficulty</li>
+              <li>Mock interview mode</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
-      <span class="footer__text">QuantResearch Prep — Interview preparation for quant researchers</span>
+      <span class="footer__text">&copy; 2025 QR Prep &mdash; Built for quant researchers, by quant researchers.</span>
       <ul class="footer__links">
         <li><a href="learn.html">Learn</a></li>
         <li><a href="problems.html">Problems</a></li>
@@ -147,12 +542,10 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="js/data-loader.js"></script>
   <script src="js/katex-render.js"></script>
   <script src="js/app.js"></script>
   <script>
-    // Home page initialization
     document.addEventListener('DOMContentLoaded', async () => {
       const problems = (await DataLoader.problems()) || [];
       const lectures = (await DataLoader.lectures()) || [];
@@ -166,27 +559,40 @@
       document.getElementById('stat-topics').textContent = topicCount;
       document.getElementById('stat-companies').textContent = companies.length;
 
-      // Featured problems (random 5)
-      const shuffled = [...problems].sort(() => 0.5 - Math.random());
-      const featured = shuffled.slice(0, 5);
+      // Companies strip
+      const companiesEl = document.getElementById('companies-list');
+      if (companiesEl) {
+        companiesEl.innerHTML = companies.map(c =>
+          `<span class="companies-strip__item">${c.name}</span>`
+        ).join('');
+      }
+
+      // Featured problems (Fisher-Yates shuffle for proper randomization)
+      const shuffled = [...problems];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      const featured = shuffled.slice(0, 6);
       const featuredEl = document.getElementById('featured-problems');
       if (featuredEl) {
+        const nameMap = {};
+        companies.forEach(c => nameMap[c.id] = c.name);
         featuredEl.innerHTML = featured.map((p, i) => {
-          const topicTags = p.topics.slice(0, 1).map(t =>
+          const topicTag = p.topics.slice(0, 1).map(t =>
             `<span class="tag tag--topic">${t.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')}</span>`
           ).join('');
-          const companyTags = p.company.slice(0, 1).map(c => {
-            const names = {'citadel':'Citadel','two-sigma':'Two Sigma','jump-trading':'Jump','drw':'DRW','hrt':'HRT','optiver':'Optiver','sig':'SIG','squarepoint':'Squarepoint','tower':'Tower','hft':'HFT'};
-            return `<span class="tag tag--company">${names[c]||c}</span>`;
-          }).join('');
+          const companyTag = p.company.slice(0, 1).map(c =>
+            `<span class="tag tag--company">${nameMap[c] || c}</span>`
+          ).join('');
           return `
             <a class="problem-card" href="problems.html?id=${p.id}">
               <span class="problem-card__number">${i + 1}</span>
               <span class="problem-card__title">${p.title}</span>
               <span class="problem-card__tags">
                 ${App.difficultyBadge(p.difficulty)}
-                ${topicTags}
-                ${companyTags}
+                ${topicTag}
+                ${companyTag}
               </span>
             </a>
           `;

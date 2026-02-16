@@ -287,14 +287,20 @@ const Problems = (() => {
     const nameMap = {
       'citadel': 'Citadel',
       'two-sigma': 'Two Sigma',
+      'de-shaw': 'D.E. Shaw',
       'jump-trading': 'Jump Trading',
       'drw': 'DRW',
       'hrt': 'HRT',
+      'jane-street': 'Jane Street',
       'optiver': 'Optiver',
       'sig': 'SIG',
       'squarepoint': 'Squarepoint',
       'tower': 'Tower',
-      'hft': 'HFT',
+      'millennium': 'Millennium',
+      'point72': 'Point72',
+      'aqr': 'AQR',
+      'renaissance': 'Renaissance',
+      'five-rings': 'Five Rings',
     };
     return nameMap[id] || id;
   }
