@@ -4346,5 +4346,899 @@
              "m-estimation"
            ],
     "type": "math"
+  },
+  {
+    "id": "prob-181",
+    "title": "Portfolio Optimization with Alpha Signals",
+    "statement": "Given alpha signals for $N$ stocks, how do you transform raw alpha signals into portfolio weights while maintaining cross-sectional neutrality (weights sum to zero) and controlling risk?",
+    "solution": "**Solution:**\n\n**Step 1 -- Z-score normalization.** Compute $\\bar{\\alpha} = \\frac{1}{N}\\sum_i \\alpha_i$ and $\\sigma_\\alpha$. Set $\\tilde{\\alpha}_i = (\\alpha_i - \\bar{\\alpha})/\\sigma_\\alpha$. These are zero-mean, giving dollar-neutrality.\n\n**Step 2 -- Factor neutralization.** Regress $\\tilde{\\alpha}_i = \\sum_k \\beta_k F_{k,i} + \\epsilon_i$. Use residuals $\\hat{\\epsilon}_i$ as the neutralized signal. Since $M_F = I - F(F^TF)^{-1}F^T$ projects onto the orthogonal complement of $\\text{Col}(F)$, we get $F^T \\hat{\\epsilon} = 0$.\n\n**Step 3 -- Weight construction.** Set $w_i = \\hat{\\epsilon}_i / \\sum_j |\\hat{\\epsilon}_j|$ so $\\sum_i w_i = 0$ and $\\sum_i |w_i| = 1$.\n\n**Step 4 -- Risk-adjusted optimization.** Solve: $$\\max_w \\; w^T \\hat{\\epsilon} - \\frac{\\lambda}{2} w^T \\Sigma w \\quad \\text{s.t.} \\; \\mathbf{1}^T w = 0,\\; \\|w\\|_1 \\le L$$",
+    "hints": [
+           "Think about z-score normalization across the cross-section.",
+           "Consider factor-risk neutralization via regression residuals."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "portfolio-construction"
+         ],
+    "subtopics": [
+             "portfolio-optimization",
+             "alpha-signals",
+             "factor-neutralization"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-182",
+    "title": "Biased Coin to Fair Coin (Von Neumann)",
+    "statement": "You have a biased coin with $P(H) = p$ where $0 \u003c p \u003c 1$ and $p \\neq 1/2$. How can you use it to simulate a fair coin?",
+    "solution": "**Solution (Von Neumann\u0027s trick):**\n\nFlip twice:\n- $P(HT) = p(1-p)$\n- $P(TH) = (1-p)p$\n\nThese are equal. So: if HT, output Heads; if TH, output Tails; if HH or TT, discard and repeat.\n\n**Proof:** $$P(\\text{output H} \\mid \\text{not discarded}) = \\frac{p(1-p)}{2p(1-p)} = \\frac{1}{2}$$\n\n**Expected flips:** Probability of not discarding is $2p(1-p)$. Expected pairs until success: $\\frac{1}{2p(1-p)}$. Total expected flips: $\\frac{1}{p(1-p)}$.",
+    "hints": [
+           "Flip the coin twice. Consider the outcomes HT and TH.",
+           "What are the probabilities of HT vs TH?"
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "von-neumann",
+             "simulation",
+             "fair-coin"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-183",
+    "title": "Merge Intervals",
+    "statement": "Given a collection of intervals $[a_i, b_i]$, merge all overlapping intervals. For example, $[[1,3],[2,6],[8,10],[15,18]] \\to [[1,6],[8,10],[15,18]]$.",
+    "solution": "**Solution:**\n\n```python\ndef merge(intervals):\n    intervals.sort(key=lambda x: x[0])\n    merged = [intervals[0]]\n    for cur in intervals[1:]:\n        if cur[0] \u003c= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], cur[1])\n        else:\n            merged.append(cur)\n    return merged\n```\n\n**Time:** $O(n \\log n)$ for sorting. **Space:** $O(n)$ for output.\n\n**Correctness:** After sorting by start, if interval $i$ does not overlap the current merged interval, no later interval can either since $a_j \\ge a_i \u003e b_{\\text{merged}}$.",
+    "hints": [
+           "Sort intervals by start time.",
+           "Iterate and merge when overlap detected."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "coding"
+         ],
+    "subtopics": [
+             "intervals",
+             "sorting",
+             "greedy"
+           ],
+    "difficulty": "medium",
+    "type": "coding"
+  },
+  {
+    "id": "prob-184",
+    "title": "Joint Normal Conditional Expectation",
+    "statement": "Let $(X,Y)$ be jointly normal with means $\\mu_X, \\mu_Y$, variances $\\sigma_X^2, \\sigma_Y^2$, and correlation $\\rho$. Derive $E[Y|X=x]$ and $\\text{Var}(Y|X=x)$.",
+    "solution": "**Solution:**\n\nWrite $Y = \\mu_Y + \\rho\\frac{\\sigma_Y}{\\sigma_X}(X - \\mu_X) + \\epsilon$ where $\\epsilon \\sim N(0, \\sigma_Y^2(1-\\rho^2))$ and $\\epsilon \\perp X$.\n\nVerify: $\\text{Cov}(X,Y) = \\rho\\frac{\\sigma_Y}{\\sigma_X}\\text{Var}(X) = \\rho\\sigma_X\\sigma_Y$. $\\checkmark$\n\nConditioning on $X=x$:\n$$E[Y|X=x] = \\mu_Y + \\rho\\frac{\\sigma_Y}{\\sigma_X}(x - \\mu_X)$$\n$$\\text{Var}(Y|X=x) = \\sigma_Y^2(1 - \\rho^2)$$\n\nThe conditional variance does not depend on $x$ -- a special property of Gaussians.",
+    "hints": [
+           "Write $Y = aX + Z$ where $Z \\perp X$.",
+           "Use the bivariate normal conditional formula."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "bivariate-normal",
+             "conditional-expectation",
+             "regression"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-185",
+    "title": "Simulating Correlated Normals via Cholesky",
+    "statement": "Given a correlation matrix $\\Sigma$ for $n$ assets, how do you generate $n$ correlated standard normal random variables? Why does the Cholesky decomposition work?",
+    "solution": "**Solution:**\n\n1. Compute $\\Sigma = LL^T$ (Cholesky, $L$ lower triangular).\n2. Generate $Z \\sim N(0, I_n)$.\n3. Set $X = LZ$.\n\n**Proof:** $\\text{Cov}(X) = E[XX^T] = LE[ZZ^T]L^T = LIL^T = LL^T = \\Sigma$. $\\checkmark$\n\n**Why Cholesky?**\n- Exists iff $\\Sigma$ is SPD, exactly the requirement for a valid covariance.\n- Unique with positive diagonal.\n- Cost $O(n^3/3)$, half of general LU.\n- Numerically stable for SPD matrices.\n\n**Alternative:** Eigendecomposition $\\Sigma = Q\\Lambda Q^T$, then $X = Q\\Lambda^{1/2}Z$. Works even for PSD.",
+    "hints": [
+           "Start with independent standard normals $Z$.",
+           "If $\\Sigma = LL^T$, then $X = LZ$ has covariance $\\Sigma$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "statistics"
+         ],
+    "subtopics": [
+             "simulation",
+             "cholesky",
+             "correlated-normals"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-186",
+    "title": "Secretary Problem (I.I.D. Ranking Game)",
+    "statement": "You observe $n$ i.i.d. draws one at a time from a continuous distribution. After seeing each, you must irrevocably accept or reject it. You select exactly one and want to maximize the probability of choosing the overall maximum. What is the optimal strategy?",
+    "solution": "**Solution:**\n\nReject the first $r-1$ draws (observation phase), then select the first draw exceeding all previous.\n\n$$P(\\text{win}) = \\frac{r-1}{n}\\sum_{i=r}^{n}\\frac{1}{i-1}$$\n\nFor large $n$, set $t = r/n$: $P \\approx -t\\ln t$.\n\nMaximize: $\\frac{d}{dt}(-t\\ln t) = -\\ln t - 1 = 0 \\implies t^* = 1/e$.\n\n$$P^* = \\frac{1}{e} \\approx 0.3679$$\n\nSo reject the first $\\lfloor n/e \\rfloor$ candidates, then pick the next record-setter. Success probability $\\to 1/e \\approx 36.8\\%$.",
+    "hints": [
+           "Reject the first $r-1$ draws, then pick the next that exceeds all seen so far.",
+           "Optimize $r$ for large $n$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "secretary-problem",
+             "optimal-stopping",
+             "order-statistics"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-187",
+    "title": "0-1 Matrix with A squared = 0",
+    "statement": "Let $A$ be an $n \\times n$ matrix with entries in $\\{0,1\\}$ satisfying $A^2 = 0$. What is the maximum number of 1s that $A$ can have?",
+    "solution": "**Solution:**\n\n$A^2 = 0 \\implies \\text{Col}(A) \\subseteq \\text{Null}(A) \\implies \\text{rank}(A) \\le n - \\text{rank}(A) \\implies \\text{rank}(A) \\le \\lfloor n/2 \\rfloor$.\n\nFor $n=2m$, place 1s in the top-right $m \\times m$ block: $$A = \\begin{pmatrix} 0 \u0026 J \\\\ 0 \u0026 0 \\end{pmatrix}$$\nwhere $J$ is all-ones. Then $A^2 = 0$ and number of 1s $= m^2$.\n\nMaximum number of 1s: $\\boxed{\\lfloor n^2/4 \\rfloor}$.",
+    "hints": [
+           "$A^2=0$ means $\\text{Col}(A) \\subseteq \\text{Null}(A)$.",
+           "This constrains $\\text{rank}(A) \\le \\lfloor n/2 \\rfloor$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "linear-algebra"
+         ],
+    "subtopics": [
+             "nilpotent-matrix",
+             "rank",
+             "combinatorics"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-188",
+    "title": "Positive Integer Triple Counting",
+    "statement": "How many ordered triples $(a,b,c)$ of positive integers satisfy $a + b + c = 20$?",
+    "solution": "**Solution:**\n\nSubstitute $a\u0027=a-1, b\u0027=b-1, c\u0027=c-1 \\ge 0$. Then $a\u0027+b\u0027+c\u0027=17$.\n\nBy stars and bars: $$\\binom{17+2}{2} = \\binom{19}{2} = \\frac{19 \\cdot 18}{2} = \\boxed{171}$$",
+    "hints": [
+           "Stars and bars after substituting $a\u0027=a-1$.",
+           "Convert to non-negative integers summing to 17."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "brain-teasers"
+         ],
+    "subtopics": [
+             "stars-and-bars",
+             "combinatorics"
+           ],
+    "difficulty": "easy",
+    "type": "math"
+  },
+  {
+    "id": "prob-189",
+    "title": "Breeden-Litzenberger Formula",
+    "statement": "How can you extract the risk-neutral density of the underlying price from European call option prices across strikes?",
+    "solution": "**Solution:**\n\n$$C(K) = e^{-rT}\\int_K^\\infty (S_T - K)f_{\\mathbb{Q}}(S_T)\\,dS_T$$\n\nFirst derivative: $\\frac{\\partial C}{\\partial K} = -e^{-rT}[1 - F_{\\mathbb{Q}}(K)]$.\n\nSecond derivative: $$\\frac{\\partial^2 C}{\\partial K^2} = e^{-rT}f_{\\mathbb{Q}}(K)$$\n\nSo $f_{\\mathbb{Q}}(K) = e^{rT}\\frac{\\partial^2 C}{\\partial K^2}$.\n\n**Practical approximation** via butterfly spread:\n$$f_{\\mathbb{Q}}(K) \\approx e^{rT}\\frac{C(K+\\Delta K) - 2C(K) + C(K-\\Delta K)}{(\\Delta K)^2}$$",
+    "hints": [
+           "Take the second derivative of $C(K)$ w.r.t. strike $K$.",
+           "Relate to the payoff of a butterfly spread as width $\\to 0$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "options-derivatives"
+         ],
+    "subtopics": [
+             "risk-neutral-density",
+             "butterfly-spread",
+             "option-pricing"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-190",
+    "title": "Five Points on a Hemisphere",
+    "statement": "Five points are placed uniformly at random on a sphere. What is the probability that all five lie on some closed hemisphere?",
+    "solution": "**Solution:**\n\nFor $n$ uniformly random points on a sphere, the probability all lie in some closed hemisphere is $P = n / 2^{n-1}$.\n\nFor $n=5$: $$P = \\frac{5}{2^4} = \\boxed{\\frac{5}{16}}$$\n\n**Proof sketch:** For each of the $n$ points, consider the hemisphere centered at that point. The events that all points lie in hemisphere $i$ have probability $(1/2)^{n-1}$ each. By an inclusion-exclusion argument (these events are almost surely disjoint for continuous distributions), the total probability is $n \\cdot (1/2)^{n-1}$.",
+    "hints": [
+           "For $n$ points on a sphere, the answer is $n/2^{n-1}$.",
+           "Fix one point and consider the hemisphere it defines."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "geometric-probability",
+             "sphere",
+             "combinatorics"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-191",
+    "title": "Two People Meeting in a Time Window",
+    "statement": "Two people agree to meet between 12:00 and 1:00 PM. Each arrives uniformly at random and waits 15 minutes. What is the probability they meet?",
+    "solution": "**Solution:**\n\nLet $X,Y \\sim U(0,60)$. They meet iff $|X-Y| \\le 15$.\n\nSample space area: $60^2 = 3600$. Unfavorable region: two corner triangles each with legs $45$, area $45^2/2$.\n\n$$P = 1 - \\frac{2 \\cdot 45^2/2}{60^2} = 1 - \\frac{2025}{3600} = 1 - \\left(\\frac{3}{4}\\right)^2 = 1 - \\frac{9}{16} = \\boxed{\\frac{7}{16}}$$\n\nGeneral formula for window $T$, wait $w$: $P = 1 - (1 - w/T)^2$.",
+    "hints": [
+           "Let $X,Y \\sim U(0,60)$. They meet iff $|X-Y| \\le 15$.",
+           "Compute the area of the favorable region in the unit square."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "geometric-probability",
+             "meeting-problem"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-192",
+    "title": "Three Frogs on an Equilateral Triangle",
+    "statement": "Three frogs sit at the three vertices of an equilateral triangle. Each minute, each frog independently jumps to one of the two adjacent vertices with equal probability. What is the expected time until all three are at the same vertex?",
+    "solution": "**Solution:**\n\nStates: A = all same (absorbing), B = two at one vertex, C = all at distinct vertices. Start at C.\n\nFrom C ($2^3=8$ outcomes): P(C)=2/8, P(B)=6/8, P(A)=0.\nFrom B ($2^3=8$ outcomes): P(A)=1/8, P(B)=5/8, P(C)=2/8.\n\nLet $b,c$ = expected hitting time from B, C.\n\n$$c = 1 + \\frac{6}{8}b + \\frac{2}{8}c \\implies \\frac{3}{4}c = 1 + \\frac{3}{4}b \\implies c = \\frac{4}{3}+b$$\n\n$$b = 1 + \\frac{5}{8}b + \\frac{2}{8}c \\implies \\frac{3}{8}b = 1 + \\frac{1}{4}c \\implies b = \\frac{8+2c}{3}$$\n\nSubstitute: $b = \\frac{8+2(4/3+b)}{3} = \\frac{32/3+2b}{3}$, so $b/3 = 32/9$, giving $b = 32/3$.\n\nThen $c = 4/3 + 32/3 = 36/3 = \\boxed{12}$.",
+    "hints": [
+           "Classify states: all-distinct (C), two-together (B), all-same (A).",
+           "Set up Markov chain transitions by enumerating $2^3=8$ outcomes."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "markov-chain",
+             "expected-value",
+             "random-walk"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-193",
+    "title": "Var(det A) for Random Sign Matrix",
+    "statement": "Let $A$ be $2\\times 2$ with each entry i.i.d. $\\pm 1$ with equal probability. Compute $\\text{Var}(\\det A)$.",
+    "solution": "**Solution:**\n\nLet $A = \\begin{pmatrix}a\u0026b\\\\c\u0026d\\end{pmatrix}$, entries i.i.d. with $E[x]=0$, $E[x^2]=1$.\n\n$\\det A = ad - bc$.\n\n$E[\\det A] = E[a]E[d] - E[b]E[c] = 0$.\n\n$$\\text{Var}(\\det A) = E[(ad-bc)^2] = E[a^2d^2] - 2E[abcd] + E[b^2c^2]$$\n$$= E[a^2]E[d^2] - 2E[a]E[b]E[c]E[d] + E[b^2]E[c^2] = 1 - 0 + 1 = \\boxed{2}$$",
+    "hints": [
+           "$\\det A = a_{11}a_{22} - a_{12}a_{21}$.",
+           "Each entry has mean 0 and variance 1."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "linear-algebra"
+         ],
+    "subtopics": [
+             "random-matrix",
+             "determinant",
+             "variance"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-194",
+    "title": "Balls in Two Boxes Optimization",
+    "statement": "You have 100 red and 100 blue balls and two boxes. Distribute all 200 balls (each box $\\ge 1$). A box is chosen uniformly, then a ball drawn uniformly from it. Maximize $P(\\text{red})$.",
+    "solution": "**Solution:**\n\n$$P(\\text{red}) = \\frac{1}{2}\\cdot\\frac{r_1}{r_1+b_1} + \\frac{1}{2}\\cdot\\frac{r_2}{r_2+b_2}$$\n\nPut 1 red, 0 blue in Box 1. Put 99 red, 100 blue in Box 2.\n\n$$P = \\frac{1}{2}\\cdot 1 + \\frac{1}{2}\\cdot\\frac{99}{199} = \\frac{1}{2}+\\frac{99}{398} = \\frac{199+99}{398} = \\frac{298}{398} = \\boxed{\\frac{149}{199} \\approx 0.749}$$\n\nIntuition: isolating one red ball guarantees 100% from that box, while the other box still has $\\approx 50\\%$.",
+    "hints": [
+           "Put a single red ball alone in one box.",
+           "The probability is the average of per-box red fractions."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "optimization",
+             "conditional-probability"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-195",
+    "title": "Asymmetric Random Walk Absorption Probability",
+    "statement": "A particle at position $k$ moves right with probability $p$ and left with $q=1-p$ ($p\\ne q$). Find the probability of absorption at 0 before reaching $N$.",
+    "solution": "**Solution:**\n\nBoundary: $f(0)=1$, $f(N)=0$. Recurrence: $f(k) = pf(k+1)+qf(k-1)$.\n\nCharacteristic equation $pr^2 - r + q = 0$ has roots $r=1$ and $r=q/p$.\n\nGeneral solution: $f(k) = A + B(q/p)^k$.\n\nFrom $f(0)=1$: $A+B=1$. From $f(N)=0$: $A+B(q/p)^N=0$.\n\nSolving: $$f(k) = \\frac{(q/p)^k - (q/p)^N}{1 - (q/p)^N}$$\n\nAs $N\\to\\infty$: if $p\u003eq$, $f(k) \\to (q/p)^k \u003c 1$; if $p\u003cq$, $f(k)\\to 1$.",
+    "hints": [
+           "Recurrence: $f(k) = pf(k+1)+qf(k-1)$.",
+           "Try $f(k) = r^k$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "random-walk",
+             "gambler-ruin",
+             "absorption"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-196",
+    "title": "Second Largest with Minimum Comparisons",
+    "statement": "Find the second largest element among $n$ distinct elements using the minimum number of comparisons. What is the optimal count?",
+    "solution": "**Solution:**\n\nOptimal: $n + \\lceil\\log_2 n\\rceil - 2$ comparisons.\n\n**Algorithm:**\n1. Run a tournament (knockout) to find the max: $n-1$ comparisons. The max was compared to $\\lceil\\log_2 n\\rceil$ elements.\n2. The second largest must have lost to the max at some round. Find the max among those $\\lceil\\log_2 n\\rceil$ losers: $\\lceil\\log_2 n\\rceil - 1$ comparisons.\n\n**Total:** $(n-1)+(\\lceil\\log_2 n\\rceil - 1) = n + \\lceil\\log_2 n\\rceil - 2$.\n\nThis is provably optimal by an adversary argument.",
+    "hints": [
+           "Tournament bracket finds the max in $n-1$ comparisons.",
+           "The 2nd largest must have lost directly to the max."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "coding"
+         ],
+    "subtopics": [
+             "tournament",
+             "comparisons",
+             "algorithm"
+           ],
+    "difficulty": "hard",
+    "type": "coding"
+  },
+  {
+    "id": "prob-197",
+    "title": "Nim-Style Counting Game",
+    "statement": "Two players alternately pick numbers from $\\{1,\\dots,10\\}$. Numbers are summed. The player reaching or exceeding 100 wins. Player 1 goes first. What is the winning strategy?",
+    "solution": "**Solution:**\n\nLeaving the total at 89 is winning: opponent picks $x \\in [1,10]$, total becomes $[90,99]$, you pick $11-x$ to reach 100.\n\nWinning positions: $89, 78, 67, 56, 45, 34, 23, 12, 1$ (i.e., $89 - 11k$).\n\n**Player 1\u0027s strategy:** Pick 1 (total = 1). After opponent picks $x$, pick $11-x$. The total advances by 11 each full turn.\n\nSequence: $1, 12, 23, \\dots, 89, 100$. **Player 1 always wins.**",
+    "hints": [
+           "Work backwards from 100.",
+           "If you leave total at 89, you win no matter what."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "brain-teasers"
+         ],
+    "subtopics": [
+             "game-theory",
+             "backward-induction",
+             "nim"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-198",
+    "title": "E[B(t) | B(1)] for Brownian Motion",
+    "statement": "Let $B(t)$ be a standard Brownian motion. Compute $E[B(t) | B(1)]$ for $0 \\le t \\le 1$.",
+    "solution": "**Solution:**\n\n$(B(t), B(1))$ is jointly normal with $E[B(t)] = 0$, $E[B(1)] = 0$, $\\text{Var}(B(t)) = t$, $\\text{Var}(B(1)) = 1$, and $\\text{Cov}(B(t), B(1)) = \\min(t,1) = t$.\n\nBy the Gaussian conditional expectation formula:\n$$E[B(t)|B(1)] = \\frac{\\text{Cov}(B(t),B(1))}{\\text{Var}(B(1))} B(1) = \\frac{t}{1} \\cdot B(1) = \\boxed{tB(1)}$$\n\nThis is the **Brownian bridge** result: $E[B(t)|B(1)=b] = tb$. The process $B(t) - tB(1)$ is a Brownian bridge, independent of $B(1)$.",
+    "hints": [
+           "$(B(t), B(1))$ is jointly normal.",
+           "Use the conditional expectation formula for joint normals."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "stochastic-calculus"
+         ],
+    "subtopics": [
+             "brownian-motion",
+             "conditional-expectation",
+             "brownian-bridge"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-199",
+    "title": "Linear MMSE Estimation",
+    "statement": "Let $X$ and $Y$ be random variables (not necessarily Gaussian) with known means, variances, and correlation $\\rho$. Find the linear function $\\hat{Y} = a + bX$ that minimizes $E[(Y - \\hat{Y})^2]$.",
+    "solution": "**Solution:**\n\nMinimize $\\text{MSE} = E[(Y - a - bX)^2]$.\n\n$\\frac{\\partial}{\\partial a}: -2E[Y - a - bX] = 0 \\implies a = E[Y] - bE[X] = \\mu_Y - b\\mu_X$.\n\n$\\frac{\\partial}{\\partial b}: -2E[X(Y-a-bX)] = 0 \\implies E[XY] - aE[X] - bE[X^2] = 0$.\n\nSubstituting $a$:\n$$\\text{Cov}(X,Y) - b\\text{Var}(X) = 0 \\implies b = \\frac{\\text{Cov}(X,Y)}{\\text{Var}(X)} = \\rho\\frac{\\sigma_Y}{\\sigma_X}$$\n\nSo $\\hat{Y} = \\mu_Y + \\rho\\frac{\\sigma_Y}{\\sigma_X}(X - \\mu_X)$.\n\nMinimum MSE: $$\\text{MMSE} = \\sigma_Y^2(1-\\rho^2)$$\n\nThis equals the conditional variance for Gaussians but in general is only an upper bound on the true MMSE (which may use nonlinear estimators).",
+    "hints": [
+           "Take derivatives of the MSE w.r.t. $a$ and $b$.",
+           "The optimal $b$ involves the covariance."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "statistics"
+         ],
+    "subtopics": [
+             "mmse",
+             "linear-estimation",
+             "regression"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-200",
+    "title": "Mixture of Normals: Moments",
+    "statement": "Let $X$ follow a mixture distribution: with probability $w$, $X \\sim N(\\mu_1, \\sigma_1^2)$; with probability $1-w$, $X \\sim N(\\mu_2, \\sigma_2^2)$. Compute $E[X]$ and $\\text{Var}(X)$.",
+    "solution": "**Solution:**\n\nLet $C$ be the component indicator.\n\n$$E[X] = wE[X|C=1] + (1-w)E[X|C=2] = w\\mu_1 + (1-w)\\mu_2$$\n\nBy the law of total variance:\n$$\\text{Var}(X) = E[\\text{Var}(X|C)] + \\text{Var}(E[X|C])$$\n$$= [w\\sigma_1^2 + (1-w)\\sigma_2^2] + [w\\mu_1^2 + (1-w)\\mu_2^2 - (w\\mu_1+(1-w)\\mu_2)^2]$$\n$$= w\\sigma_1^2 + (1-w)\\sigma_2^2 + w(1-w)(\\mu_1-\\mu_2)^2$$\n\nThe last term shows that separation between component means inflates variance.",
+    "hints": [
+           "Use the law of total expectation and total variance.",
+           "$\\text{Var}(X) = E[\\text{Var}(X|C)] + \\text{Var}(E[X|C])$ where $C$ is the component."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "statistics"
+         ],
+    "subtopics": [
+             "mixture-model",
+             "law-of-total-variance"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-201",
+    "title": "Nested Uniforms: E[U1 * U2]",
+    "statement": "Let $U_1 \\sim \\text{Uniform}(0,1)$ and $U_2 | U_1 \\sim \\text{Uniform}(0, U_1)$. Compute $E[U_2]$ and $\\text{Var}(U_2)$.",
+    "solution": "**Solution:**\n\n$E[U_2|U_1] = U_1/2$ and $\\text{Var}(U_2|U_1) = U_1^2/12$.\n\n$$E[U_2] = E[U_1/2] = \\frac{1}{2}E[U_1] = \\frac{1}{4}$$\n\nFor variance:\n$$E[\\text{Var}(U_2|U_1)] = E[U_1^2/12] = \\frac{E[U_1^2]}{12} = \\frac{1/3}{12} = \\frac{1}{36}$$\n$$\\text{Var}(E[U_2|U_1]) = \\text{Var}(U_1/2) = \\frac{1}{4}\\text{Var}(U_1) = \\frac{1}{4}\\cdot\\frac{1}{12} = \\frac{1}{48}$$\n$$\\text{Var}(U_2) = \\frac{1}{36}+\\frac{1}{48} = \\frac{4+3}{144} = \\boxed{\\frac{7}{144}}$$",
+    "hints": [
+           "Use iterated expectation: $E[U_2] = E[E[U_2|U_1]]$.",
+           "For variance, use $\\text{Var}(U_2) = E[\\text{Var}(U_2|U_1)] + \\text{Var}(E[U_2|U_1])$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "iterated-expectation",
+             "law-of-total-variance",
+             "uniform"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-202",
+    "title": "E[max(X, 3Y)] for Independent Normals",
+    "statement": "Let $X, Y$ be independent standard normals. Compute $E[\\max(X, 3Y)]$.",
+    "solution": "**Solution:**\n\n$$E[\\max(X,3Y)] = E\\left[\\frac{X+3Y+|X-3Y|}{2}\\right] = \\frac{E[X]+3E[Y]}{2}+\\frac{E[|X-3Y|]}{2}$$\n\n$E[X]=E[Y]=0$, so the first part is 0.\n\n$X-3Y \\sim N(0, 1+9) = N(0,10)$.\n\nFor $Z \\sim N(0,\\sigma^2)$: $E[|Z|] = \\sigma\\sqrt{2/\\pi}$.\n\nSo $E[|X-3Y|] = \\sqrt{10}\\cdot\\sqrt{2/\\pi} = \\sqrt{20/\\pi}$.\n\n$$E[\\max(X,3Y)] = \\frac{\\sqrt{20/\\pi}}{2} = \\frac{\\sqrt{20}}{2\\sqrt{\\pi}} = \\frac{2\\sqrt{5}}{2\\sqrt{\\pi}} = \\boxed{\\sqrt{\\frac{5}{\\pi}}}$$",
+    "hints": [
+           "Write $\\max(a,b) = \\frac{a+b+|a-b|}{2}$.",
+           "The difference of independent normals is normal."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "order-statistics",
+             "normal-distribution",
+             "expectation"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-203",
+    "title": "P(X + 3Y \u003e 0 | X \u003e 0)",
+    "statement": "Let $X, Y$ be i.i.d. $N(0,1)$. Compute $P(X + 3Y \u003e 0 \\mid X \u003e 0)$.",
+    "solution": "**Solution:**\n\nLet $W = X + 3Y$. Then $W \\sim N(0, 1+9) = N(0,10)$ and $\\text{Cov}(X,W) = \\text{Cov}(X,X+3Y) = 1$.\n\nSo $\\rho = \\frac{1}{\\sqrt{1\\cdot 10}} = \\frac{1}{\\sqrt{10}}$.\n\nFor jointly normal $(X,W)$ with zero means:\n$$P(X\u003e0, W\u003e0) = \\frac{1}{4} + \\frac{\\arcsin(\\rho)}{2\\pi} = \\frac{1}{4}+\\frac{\\arcsin(1/\\sqrt{10})}{2\\pi}$$\n\nSince $P(X\u003e0) = 1/2$:\n$$P(W\u003e0|X\u003e0) = \\frac{P(X\u003e0,W\u003e0)}{P(X\u003e0)} = \\frac{1}{2}+\\frac{\\arcsin(1/\\sqrt{10})}{\\pi}$$\n\nNumerically: $\\arcsin(1/\\sqrt{10}) \\approx 0.3217$ radians.\n$$P \\approx 0.5 + 0.1024 \\approx \\boxed{0.6024}$$",
+    "hints": [
+           "Use symmetry and joint density of $(X, X+3Y)$.",
+           "Both $(X, X+3Y)$ are jointly normal."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "bivariate-normal",
+             "conditional-probability",
+             "arcsin-formula"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-204",
+    "title": "Cov(min, max) of Two Random Variables",
+    "statement": "Let $X, Y$ be i.i.d. with variance $\\sigma^2$. Compute $\\text{Cov}(\\min(X,Y), \\max(X,Y))$.",
+    "solution": "**Solution:**\n\nLet $S = X+Y$, $D = |X-Y|$. Then $\\max = (S+D)/2$, $\\min = (S-D)/2$.\n\n$$\\text{Cov}(\\min,\\max) = \\text{Cov}\\left(\\frac{S-D}{2},\\frac{S+D}{2}\\right) = \\frac{1}{4}[\\text{Var}(S) - \\text{Var}(D)]$$\n\nusing $\\text{Cov}(S-D,S+D) = \\text{Var}(S) - \\text{Var}(D)$ (when $\\text{Cov}(S,D)=0$ by symmetry, as $S$ is symmetric about its mean while $D\\ge 0$).\n\nWe have $\\text{Var}(S) = 2\\sigma^2$.\n\n$\\text{Var}(D) = E[D^2] - (E[D])^2 = E[(X-Y)^2] - (E|X-Y|)^2 = 2\\sigma^2 - (E|X-Y|)^2$.\n\nSo $\\text{Cov}(\\min,\\max) = \\frac{1}{4}[2\\sigma^2 - 2\\sigma^2 + (E|X-Y|)^2] = \\frac{(E|X-Y|)^2}{4}$.\n\nFor i.i.d. standard normals: $E|X-Y| = 2/\\sqrt{\\pi}$ so $\\text{Cov} = 1/\\pi$.\n\nIn general: $\\boxed{\\text{Cov}(\\min,\\max) = \\frac{(E|X-Y|)^2}{4}}$.",
+    "hints": [
+           "Note $\\min + \\max = X + Y$ and $\\max - \\min = |X - Y|$.",
+           "Express min and max in terms of $X+Y$ and $|X-Y|$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "order-statistics",
+             "covariance",
+             "min-max"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-205",
+    "title": "Dependent but Uncorrelated Random Variables",
+    "statement": "Give an example of two random variables that are uncorrelated ($\\text{Cov}(X,Y)=0$) but not independent.",
+    "solution": "**Solution:**\n\nLet $X \\sim N(0,1)$ and $Y = X^2$.\n\n$\\text{Cov}(X,Y) = E[XY] - E[X]E[Y] = E[X^3] - 0 = 0$\n\nsince $E[X^3] = 0$ by the symmetry of the standard normal (all odd moments vanish).\n\nBut $X$ and $Y$ are clearly dependent: knowing $X=2$ tells you $Y=4$ with certainty.\n\n**Key takeaway:** Uncorrelated means no *linear* relationship. Independence means no relationship of any kind. For jointly normal variables, uncorrelated $\\iff$ independent, but this fails in general.",
+    "hints": [
+           "Consider $X \\sim N(0,1)$ and $Y = X^2$.",
+           "Compute $\\text{Cov}(X, X^2)$ using symmetry."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "correlation",
+             "independence",
+             "counterexample"
+           ],
+    "difficulty": "easy",
+    "type": "math"
+  },
+  {
+    "id": "prob-206",
+    "title": "Equicorrelation Matrix: Valid Range of rho",
+    "statement": "An $n \\times n$ correlation matrix has 1 on the diagonal and $\\rho$ everywhere off-diagonal. For what values of $\\rho$ is this a valid (positive semi-definite) correlation matrix?",
+    "solution": "**Solution:**\n\nThe matrix is $\\Sigma = (1-\\rho)I + \\rho \\mathbf{1}\\mathbf{1}^T$.\n\nEigenvalues: $\\mathbf{1}\\mathbf{1}^T$ has eigenvalue $n$ (eigenvector $\\mathbf{1}$) and eigenvalue $0$ (multiplicity $n-1$).\n\nSo $\\Sigma$ has eigenvalues:\n- $\\lambda_1 = (1-\\rho) + n\\rho = 1 + (n-1)\\rho$ (once)\n- $\\lambda_2 = 1 - \\rho$ (multiplicity $n-1$)\n\nFor PSD: both must be $\\ge 0$:\n$$1-\\rho \\ge 0 \\implies \\rho \\le 1$$\n$$1+(n-1)\\rho \\ge 0 \\implies \\rho \\ge -\\frac{1}{n-1}$$\n\n$$\\boxed{-\\frac{1}{n-1} \\le \\rho \\le 1}$$\n\nFor $n=2$: $-1 \\le \\rho \\le 1$. For $n=3$: $-1/2 \\le \\rho \\le 1$. As $n\\to\\infty$: $\\rho \\ge 0$.",
+    "hints": [
+           "Compute the eigenvalues of this matrix.",
+           "Write the matrix as $(1-\\rho)I + \\rho \\mathbf{1}\\mathbf{1}^T$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "linear-algebra"
+         ],
+    "subtopics": [
+             "eigenvalues",
+             "correlation-matrix",
+             "positive-definite"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-207",
+    "title": "Government Office Exponential Arrivals",
+    "statement": "Customers arrive at a government office as a Poisson process with rate $\\lambda = 2$ per hour. The office opens at 9 AM. What is the expected time of the 5th arrival? What is $P(\\text{more than 3 arrivals by 10 AM})$?",
+    "solution": "**Solution:**\n\nThe $k$-th arrival time $T_k \\sim \\text{Gamma}(k, \\lambda)$ with $E[T_k] = k/\\lambda$.\n\n$$E[T_5] = 5/2 = 2.5 \\text{ hours} \\implies \\boxed{11{:}30 \\text{ AM}}$$\n\nFor arrivals by 10 AM ($t=1$ hour): $N(1) \\sim \\text{Poisson}(\\lambda \\cdot 1) = \\text{Poisson}(2)$.\n\n$$P(N\u003e3) = 1 - P(N \\le 3) = 1 - e^{-2}\\sum_{k=0}^{3}\\frac{2^k}{k!}$$\n$$= 1 - e^{-2}(1+2+2+4/3) = 1 - e^{-2}\\cdot\\frac{19}{3}$$\n$$\\approx 1 - 0.1353 \\cdot 6.333 \\approx 1 - 0.857 = \\boxed{0.143}$$",
+    "hints": [
+           "The $k$-th arrival in a Poisson process has Gamma distribution.",
+           "The number of arrivals in $[0,t]$ is Poisson$(\\lambda t)$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "poisson-process",
+             "gamma-distribution",
+             "arrivals"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-208",
+    "title": "GARCH vs HAR-RV for Volatility Forecasting",
+    "statement": "Compare GARCH(1,1) and HAR-RV models for volatility forecasting. When would you prefer one over the other?",
+    "solution": "**Solution:**\n\n**GARCH(1,1):** $\\sigma_t^2 = \\omega + \\alpha \\epsilon_{t-1}^2 + \\beta \\sigma_{t-1}^2$, where $\\epsilon_t = r_t - \\mu$.\n- Uses only daily returns.\n- Captures volatility clustering via $\\alpha + \\beta$ close to 1.\n- Pros: simple, well-understood MLE estimation, no HF data needed.\n- Cons: uses only squared daily returns as volatility proxy.\n\n**HAR-RV:** $\\text{RV}_{t+1} = \\beta_0 + \\beta_d \\text{RV}_t^{(d)} + \\beta_w \\text{RV}_t^{(w)} + \\beta_m \\text{RV}_t^{(m)} + \\epsilon_t$\n\nwhere $\\text{RV}_t^{(d)}$ is daily realized variance from HF data, $\\text{RV}^{(w)}$ is weekly average, $\\text{RV}^{(m)}$ is monthly.\n- Uses intraday (high-frequency) data for realized variance.\n- Captures long memory through multi-horizon components.\n\n**When to prefer:**\n- **GARCH**: only daily data available, short history, parametric inference needed.\n- **HAR-RV**: high-frequency data available, need to capture long memory, better out-of-sample forecasting (empirically superior for liquid assets).\n- HAR-RV typically outperforms GARCH when tick data is available because realized variance is a more efficient estimator of integrated variance than squared daily returns.",
+    "hints": [
+           "GARCH models conditional variance of returns; HAR-RV uses realized variance at multiple horizons.",
+           "Think about data frequency and information sets."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "statistics"
+         ],
+    "subtopics": [
+             "volatility",
+             "garch",
+             "har-rv",
+             "forecasting"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-209",
+    "title": "Errors-in-Variables Regression Bias",
+    "statement": "In simple linear regression $Y = \\beta X^* + \\epsilon$, you observe $X = X^* + u$ instead of the true regressor $X^*$, where $u$ is measurement error independent of $X^*$ and $\\epsilon$. What is the bias of the OLS estimator $\\hat{\\beta}$?",
+    "solution": "**Solution:**\n\nTrue model: $Y = \\beta X^* + \\epsilon$. We observe $X = X^* + u$, so $X^* = X - u$.\n\n$$Y = \\beta(X - u) + \\epsilon = \\beta X + (\\epsilon - \\beta u)$$\n\nOLS of $Y$ on $X$: $$\\hat{\\beta}_{OLS} \\xrightarrow{p} \\frac{\\text{Cov}(X, Y)}{\\text{Var}(X)}$$\n\n$\\text{Cov}(X,Y) = \\text{Cov}(X^*+u, \\beta X^*+\\epsilon) = \\beta\\text{Var}(X^*) = \\beta\\sigma_{X^*}^2$.\n\n$\\text{Var}(X) = \\sigma_{X^*}^2 + \\sigma_u^2$.\n\n$$\\hat{\\beta}_{OLS} \\xrightarrow{p} \\beta \\cdot \\frac{\\sigma_{X^*}^2}{\\sigma_{X^*}^2 + \\sigma_u^2} = \\beta \\cdot \\lambda$$\n\nwhere $\\lambda = \\sigma_{X^*}^2/(\\sigma_{X^*}^2+\\sigma_u^2) \u003c 1$ is the reliability ratio.\n\nThis is **attenuation bias**: $|\\hat{\\beta}| \u003c |\\beta|$. The estimate is always biased toward zero. The bias worsens as measurement error $\\sigma_u^2$ increases.",
+    "hints": [
+           "Substitute $X^* = X - u$ into the model.",
+           "The attenuation bias depends on the noise-to-signal ratio."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "statistics"
+         ],
+    "subtopics": [
+             "errors-in-variables",
+             "attenuation-bias",
+             "ols"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-210",
+    "title": "Frechet-Hoeffding Bounds for Joint CDF",
+    "statement": "For two random variables $X$ and $Y$ with marginal CDFs $F_X$ and $F_Y$, what are the tightest possible bounds on the joint CDF $P(X \\le x, Y \\le y)$?",
+    "solution": "**Solution (Frechet-Hoeffding bounds):**\n\nFor any joint distribution with marginals $F_X, F_Y$:\n$$\\max(F_X(x) + F_Y(y) - 1, 0) \\le P(X \\le x, Y \\le y) \\le \\min(F_X(x), F_Y(y))$$\n\n**Upper bound:** $P(X \\le x, Y \\le y) \\le P(X \\le x) = F_X(x)$ and similarly $\\le F_Y(y)$. Achieved when $X$ and $Y$ are comonotonic ($Y = T(X)$ for increasing $T$).\n\n**Lower bound:** By inclusion-exclusion, $P(X \\le x, Y \\le y) \\ge P(X \\le x) + P(Y \\le y) - 1$, and trivially $\\ge 0$. Achieved when $X$ and $Y$ are countermonotonic.\n\nIn copula notation with $C(u,v) = P(U \\le u, V \\le v)$ for uniform marginals:\n$$\\max(u+v-1, 0) \\le C(u,v) \\le \\min(u,v)$$\n\nThese bounds are sharp and are achieved by the comonotonic and countermonotonic copulas.",
+    "hints": [
+           "Think about the copula bounds.",
+           "The joint CDF cannot exceed either marginal, and cannot be too small."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "copula",
+             "frechet-bounds",
+             "dependence"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-211",
+    "title": "Divisibility Puzzle with Dice",
+    "statement": "You roll a fair die repeatedly and record the sequence of outcomes as digits of an integer (e.g., rolls 3,1,4 give 314). What is the expected number of rolls until the resulting integer is divisible by 6?",
+    "solution": "**Solution:**\n\nDivisible by 6 iff divisible by 2 AND by 3. Divisible by 2 iff last digit is even (2, 4, or 6). Divisible by 3 iff digit sum is divisible by 3.\n\nState: $(\\text{digit sum mod } 3)$. We need to reach a state where digit sum $\\equiv 0 \\pmod{3}$ AND last die is even.\n\nDie outcomes mod 3: $\\{1:1, 2:2, 3:0, 4:1, 5:2, 6:0\\}$, so each residue class mod 3 has probability 2/6 = 1/3.\n\nState $s \\in \\{0,1,2\\}$ = running digit sum mod 3. We need to land on state 0 with an even last digit.\n\nFrom any state $s$, the probability of finishing (rolling an even number that makes sum $\\equiv 0$) vs continuing:\n- In state 0: need to roll a number $\\equiv 0 \\pmod{3}$ that is even. That\u0027s 6. Prob = 1/6. Or roll 3 (odd, $\\equiv 0$): stay in 0 but don\u0027t finish.\n- Actually, let me reconsider. Each roll changes the sum mod 3 by the die value mod 3.\n\nFrom state $s$, rolling die $d$: new state $(s+d) \\bmod 3$. We stop if new state is 0 AND $d$ is even.\n\nFrom state $s$: the die values that lead to new state 0 are those with $d \\equiv -s \\pmod{3}$. Among those, the even ones cause termination.\n\nState 0: need $d \\equiv 0$: dice 3,6. Even: 6 (prob 1/6). Odd: 3 (prob 1/6, stay at 0).\nState 1: need $d \\equiv 2$: dice 2,5. Even: 2 (prob 1/6). Odd: 5 (prob 1/6, go to 0).\nState 2: need $d \\equiv 1$: dice 1,4. Even: 4 (prob 1/6). Odd: 1 (prob 1/6, go to 0).\n\nBy symmetry of the transitions, expected time from any state is the same. Let $E$ be expected rolls from any state.\n\nFrom any state: prob 1/6 we finish; prob 1/6 we go to state 0 without finishing; prob 2/3 we go to state 1 or 2. By symmetry all states have the same expected time.\n\n$E = 1 + \\frac{1}{6}(0) + \\frac{5}{6}E$? No, let me be more careful.\n\n$E = 1 \\cdot P(\\text{done}) \\cdot 1 + ...$. Actually: $E = 1 + (1 - 1/6)E\u0027$, but by symmetry $E\u0027 = E$:\n\n$E = 1 + \\frac{5}{6}E \\implies \\frac{1}{6}E = 1 \\implies E = \\boxed{6}$.",
+    "hints": [
+           "Divisible by 6 means divisible by both 2 and 3.",
+           "Track the state as (value mod 2, running digit-sum mod 3)."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "brain-teasers"
+         ],
+    "subtopics": [
+             "markov-chain",
+             "divisibility",
+             "dice"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-212",
+    "title": "Merging K Sorted Lists",
+    "statement": "Given $k$ sorted lists with a total of $n$ elements, merge them into one sorted list. What is the optimal time complexity?",
+    "solution": "**Solution:**\n\n```python\nimport heapq\n\ndef merge_k_sorted(lists):\n    heap = []\n    for i, lst in enumerate(lists):\n        if lst:\n            heapq.heappush(heap, (lst[0], i, 0))\n    result = []\n    while heap:\n        val, list_idx, elem_idx = heapq.heappop(heap)\n        result.append(val)\n        if elem_idx + 1 \u003c len(lists[list_idx]):\n            next_val = lists[list_idx][elem_idx + 1]\n            heapq.heappush(heap, (next_val, list_idx, elem_idx + 1))\n    return result\n```\n\n**Time:** $O(n \\log k)$ -- each of $n$ elements is pushed/popped from a heap of size $\\le k$.\n\n**Space:** $O(k)$ for the heap (plus $O(n)$ for output).\n\nThis is optimal: any comparison-based algorithm needs $\\Omega(n \\log k)$.",
+    "hints": [
+           "Use a min-heap of size $k$.",
+           "Each insertion/extraction is $O(\\log k)$."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "coding"
+         ],
+    "subtopics": [
+             "heap",
+             "merge",
+             "sorted-lists"
+           ],
+    "difficulty": "medium",
+    "type": "coding"
+  },
+  {
+    "id": "prob-213",
+    "title": "Eigenvalue Interpretation in PCA",
+    "statement": "In PCA, what do the eigenvalues of the covariance matrix represent? If the first 3 eigenvalues of a 100-dimensional dataset are 50, 30, 10 and the rest sum to 10, how much variance is captured by the first 3 components?",
+    "solution": "**Solution:**\n\nThe covariance matrix $\\Sigma = \\frac{1}{n-1}X^TX$ has eigendecomposition $\\Sigma = Q\\Lambda Q^T$. The $j$-th eigenvalue $\\lambda_j$ equals the variance of the data projected onto the $j$-th principal component $q_j$:\n$$\\lambda_j = \\text{Var}(Xq_j)$$\n\nTotal variance = $\\text{tr}(\\Sigma) = \\sum_j \\lambda_j = 50 + 30 + 10 + 10 = 100$.\n\nVariance captured by first 3 PCs: $(50+30+10)/100 = 90/100 = \\boxed{90\\%}$.\n\nThe eigenvalues are ordered $\\lambda_1 \\ge \\lambda_2 \\ge \\cdots \\ge 0$ and give the variance explained by each successive direction of maximum variance. The scree plot (eigenvalue vs. index) helps choose the number of components.",
+    "hints": [
+           "Each eigenvalue is the variance along its principal component.",
+           "Fraction of variance = sum of selected eigenvalues / total."
+         ],
+    "company": [
+            "two-sigma"
+          ],
+    "topics": [
+           "machine-learning"
+         ],
+    "subtopics": [
+             "pca",
+             "eigenvalues",
+             "variance-explained"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-214",
+    "title": "Equicorrelation Matrix with Equal Off-Diagonal",
+    "statement": "Consider an $n \\times n$ correlation matrix $R$ with 1 on the diagonal and constant $\\rho$ off-diagonal. Find its inverse $R^{-1}$ in closed form.",
+    "solution": "**Solution:**\n\n$R = (1-\\rho)I + \\rho\\mathbf{1}\\mathbf{1}^T$. By Sherman-Morrison:\n$$(A + uv^T)^{-1} = A^{-1} - \\frac{A^{-1}uv^T A^{-1}}{1 + v^T A^{-1} u}$$\n\nWith $A = (1-\\rho)I$, $u = v = \\sqrt{\\rho}\\,\\mathbf{1}$:\n\n$A^{-1} = \\frac{1}{1-\\rho}I$.\n\n$v^TA^{-1}u = \\frac{n\\rho}{1-\\rho}$.\n\n$$R^{-1} = \\frac{1}{1-\\rho}I - \\frac{\\rho/(1-\\rho)^2}{1+n\\rho/(1-\\rho)}\\mathbf{1}\\mathbf{1}^T = \\frac{1}{1-\\rho}\\left(I - \\frac{\\rho}{1+(n-1)\\rho}\\mathbf{1}\\mathbf{1}^T\\right)$$\n\nSo $(R^{-1})_{ii} = \\frac{1+(n-2)\\rho}{(1-\\rho)(1+(n-1)\\rho)}$ and $(R^{-1})_{ij} = \\frac{-\\rho}{(1-\\rho)(1+(n-1)\\rho)}$ for $i \\neq j$.",
+    "hints": [
+           "Write $R = (1-\\rho)I + \\rho \\mathbf{1}\\mathbf{1}^T$.",
+           "Use the Sherman-Morrison formula for the inverse."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "linear-algebra"
+         ],
+    "subtopics": [
+             "sherman-morrison",
+             "matrix-inverse",
+             "equicorrelation"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-215",
+    "title": "Geometric Probability: Random Point in Parabola",
+    "statement": "A point $(X, Y)$ is chosen uniformly at random from the region $\\{(x,y) : 0 \\le y \\le 1 - x^2,\\; -1 \\le x \\le 1\\}$. Find $E[X]$ and $E[Y]$.",
+    "solution": "**Solution:**\n\nThe region is under the parabola $y = 1 - x^2$ for $x \\in [-1,1]$.\n\n**Area:** $A = \\int_{-1}^{1}(1-x^2)dx = [x - x^3/3]_{-1}^{1} = (1-1/3)-(-1+1/3) = 2/3+2/3 = 4/3$.\n\n**$E[X]$:** By symmetry of the region about $x=0$, $E[X] = 0$.\n\n**$E[Y]$:** $E[Y] = \\frac{1}{A}\\int_{-1}^{1}\\int_0^{1-x^2} y\\,dy\\,dx = \\frac{1}{A}\\int_{-1}^{1}\\frac{(1-x^2)^2}{2}dx$\n\n$$= \\frac{1}{A}\\cdot\\frac{1}{2}\\int_{-1}^{1}(1-2x^2+x^4)dx = \\frac{1}{A}\\cdot\\frac{1}{2}\\left[x-\\frac{2x^3}{3}+\\frac{x^5}{5}\\right]_{-1}^{1}$$\n\n$$= \\frac{1}{4/3}\\cdot\\frac{1}{2}\\cdot 2\\left(1-\\frac{2}{3}+\\frac{1}{5}\\right) = \\frac{3}{4}\\cdot\\frac{8}{15} = \\boxed{\\frac{2}{5}}$$",
+    "hints": [
+           "First compute the area of the region.",
+           "Use symmetry for $E[X]$."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "geometric-probability",
+             "expected-value",
+             "integration"
+           ],
+    "difficulty": "medium",
+    "type": "math"
+  },
+  {
+    "id": "prob-216",
+    "title": "Array Partition to Minimize Variance",
+    "statement": "Given an array of $n$ positive integers and a number $k$, partition the array into $k$ contiguous subarrays to minimize the maximum variance among all subarrays. Describe an efficient algorithm.",
+    "solution": "**Solution:**\n\n**DP approach:**\n\nLet $dp[i][j]$ = minimum possible maximum-variance when partitioning the first $i$ elements into $j$ contiguous groups.\n\nBase: $dp[i][1] = \\text{Var}(a_1, \\dots, a_i)$.\n\nTransition: $$dp[i][j] = \\min_{j-1 \\le m \u003c i} \\max(dp[m][j-1], \\text{Var}(a_{m+1},\\dots,a_i))$$\n\nAnswer: $dp[n][k]$.\n\n**Efficient variance computation:** Use prefix sums $S_i = \\sum_{t=1}^i a_t$ and $Q_i = \\sum_{t=1}^i a_t^2$. Then:\n$$\\text{Var}(a_{m+1},\\dots,a_i) = \\frac{Q_i-Q_m}{i-m} - \\left(\\frac{S_i-S_m}{i-m}\\right)^2$$\n\n**Time:** $O(n^2 k)$ with $O(1)$ variance queries via prefix sums.\n\n**Binary search alternative:** Binary search on target max-variance $V$. Greedily extend each partition as long as variance $\\le V$. Check if $\\le k$ partitions suffice. Time: $O(n \\log(V_{\\max}/\\epsilon))$.",
+    "hints": [
+           "Binary search on the answer (the maximum variance).",
+           "Or use dynamic programming: $dp[i][j]$ = min-max-variance for first $i$ elements in $j$ groups."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "coding"
+         ],
+    "subtopics": [
+             "dynamic-programming",
+             "binary-search",
+             "partition"
+           ],
+    "difficulty": "hard",
+    "type": "coding"
+  },
+  {
+    "id": "prob-217",
+    "title": "Poker Hand Probability via DP",
+    "statement": "In Texas Hold\u0027em, you are dealt two cards. The flop (3 community cards) is then revealed. What is the probability that your final 5-card hand (best of 7 cards after turn and river) contains a flush, given you have two hearts and the flop has exactly one heart?",
+    "solution": "**Solution:**\n\nYou have 2 hearts, flop has 1 heart. Total hearts seen: 3. Remaining hearts: $13 - 3 = 10$. Remaining cards: $52 - 5 = 47$.\n\nYou need at least 2 more hearts from the turn and river (2 cards from 47) to make a flush (5+ hearts).\n\n$P(\\text{exactly 2 hearts in turn+river}) = \\frac{\\binom{10}{2}\\binom{37}{0}}{\\binom{47}{2}} = \\frac{45}{1081}$\n\n$P(\\text{exactly 1 heart}) = \\frac{\\binom{10}{1}\\binom{37}{1}}{\\binom{47}{2}} = \\frac{370}{1081}$\n\nWe need exactly 2 more hearts for the flush (since we have 3 hearts out of 5 seen, we need the total to reach $\\ge 5$ out of 7).\n\nWith 2 more hearts: total = 5 hearts. Yes, flush.\nWith 1 more heart: total = 4 hearts from 7 cards. Not enough for a 5-card flush.\nWith 0: total = 3 hearts. Not enough.\n\n$$P(\\text{flush}) = \\frac{\\binom{10}{2}}{\\binom{47}{2}} = \\frac{45}{1081} \\approx \\boxed{4.16\\%}$$",
+    "hints": [
+           "You need 2 more hearts from the remaining 47 cards (10 hearts left).",
+           "Turn and river: count favorable combinations."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "poker",
+             "combinatorics",
+             "conditional-probability"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-218",
+    "title": "Optimal Stopping for U[0,1] Draws",
+    "statement": "You draw $n$ values i.i.d. from $U[0,1]$ sequentially. After each draw you can stop and keep that value, or discard it and continue. If you reach the last draw, you must keep it. What strategy maximizes your expected payoff?",
+    "solution": "**Solution:**\n\nLet $V_k$ = expected payoff with $k$ draws remaining using optimal strategy.\n\n**Base:** $V_1 = E[U] = 1/2$.\n\n**Recursion:** With $k$ draws left, draw $X \\sim U[0,1]$. Keep if $X \\ge V_{k-1}$, else discard.\n\n$$V_k = E[\\max(X, V_{k-1})] = \\int_0^{V_{k-1}} V_{k-1}\\,dx + \\int_{V_{k-1}}^1 x\\,dx$$\n$$= V_{k-1}^2 + \\frac{1-V_{k-1}^2}{2} = \\frac{1+V_{k-1}^2}{2}$$\n\nSo: $V_1 = 1/2$, $V_2 = (1+1/4)/2 = 5/8$, $V_3 = (1+25/64)/2 = 89/128 \\approx 0.6953$.\n\n**Strategy:** At step $k$ (with $k$ remaining), keep the draw if $X \\ge V_{k-1}$. The thresholds increase as more draws remain.\n\nAs $n \\to \\infty$, $V_n \\to 1$ (you can wait for a value arbitrarily close to 1).",
+    "hints": [
+           "Work backwards: at the last draw, expected value is $1/2$.",
+           "At step $k$, keep the value if it exceeds the expected payoff of continuing."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "probability"
+         ],
+    "subtopics": [
+             "optimal-stopping",
+             "dynamic-programming",
+             "uniform"
+           ],
+    "difficulty": "hard",
+    "type": "math"
+  },
+  {
+    "id": "prob-219",
+    "title": "Rotation Operator as Orthogonal Matrix",
+    "statement": "Write the matrix that rotates vectors in $\\mathbb{R}^2$ by angle $\\theta$ counterclockwise. Verify it is orthogonal. What are its eigenvalues?",
+    "solution": "**Solution:**\n\n$$R(\\theta) = \\begin{pmatrix}\\cos\\theta \u0026 -\\sin\\theta \\\\ \\sin\\theta \u0026 \\cos\\theta\\end{pmatrix}$$\n\n**Orthogonality:** $R^T R = \\begin{pmatrix}\\cos\\theta \u0026 \\sin\\theta \\\\ -\\sin\\theta \u0026 \\cos\\theta\\end{pmatrix}\\begin{pmatrix}\\cos\\theta \u0026 -\\sin\\theta \\\\ \\sin\\theta \u0026 \\cos\\theta\\end{pmatrix} = I$. $\\checkmark$\n\nAlso $\\det(R) = \\cos^2\\theta + \\sin^2\\theta = 1$. $\\checkmark$ (proper rotation).\n\n**Eigenvalues:** $\\det(R - \\lambda I) = (\\cos\\theta - \\lambda)^2 + \\sin^2\\theta = \\lambda^2 - 2\\cos\\theta \\cdot \\lambda + 1 = 0$.\n\n$$\\lambda = \\frac{2\\cos\\theta \\pm \\sqrt{4\\cos^2\\theta - 4}}{2} = \\cos\\theta \\pm i\\sin\\theta = e^{\\pm i\\theta}$$\n\nThe eigenvalues are $\\boxed{e^{\\pm i\\theta}}$, reflecting that rotation does not scale any vector (eigenvalues have modulus 1) but does rotate the complex eigenvectors.",
+    "hints": [
+           "Apply the rotation to $e_1 = (1,0)$ and $e_2 = (0,1)$.",
+           "For eigenvalues, solve $\\det(R-\\lambda I) = 0$."
+         ],
+    "company": [
+            "jump-trading"
+          ],
+    "topics": [
+           "linear-algebra"
+         ],
+    "subtopics": [
+             "rotation",
+             "orthogonal-matrix",
+             "eigenvalues"
+           ],
+    "difficulty": "medium",
+    "type": "math"
   }
 ]
