@@ -269,25 +269,25 @@
       align-items: center;
       justify-content: center;
       height: 40px;
-      opacity: 0.4;
+      min-width: 120px;
+      opacity: 0.35;
       transition: opacity var(--transition-base);
-      filter: grayscale(100%) brightness(1.5);
     }
     .logo-carousel__item:hover {
-      opacity: 0.9;
-      filter: grayscale(0%) brightness(1);
+      opacity: 0.85;
     }
     .logo-carousel__item img {
       max-height: 32px;
       max-width: 140px;
       object-fit: contain;
     }
-    .logo-carousel__fallback {
-      color: var(--text-muted);
+    .logo-carousel__name {
+      color: var(--text-secondary);
       font-size: var(--text-sm);
       white-space: nowrap;
-      font-weight: var(--font-semibold);
-      letter-spacing: 0.05em;
+      font-weight: var(--font-bold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
     @keyframes logo-scroll {
       0% { transform: translateX(0); }
@@ -626,8 +626,7 @@
         const items = [...logoCompanies, ...logoCompanies];
         logoTrack.innerHTML = items.map(c => `
           <div class="logo-carousel__item">
-            <img src="assets/logos/${c.id}.svg" alt="${c.name}"
-                 onerror="this.parentElement.innerHTML='<span class=\\'logo-carousel__fallback\\'>${c.name}</span>'">
+            <span class="logo-carousel__name">${c.name}</span>
           </div>
         `).join('');
       }
