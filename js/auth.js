@@ -683,6 +683,10 @@ const Auth = (() => {
     const tier = getTier();
     const initial = name.charAt(0).toUpperCase();
     const levelInfo = calculateLevel(userDoc ? userDoc.xp : 0);
+    const stats = userDoc?.stats || { easy: { solved: 0 }, medium: { solved: 0 }, hard: { solved: 0 } };
+    const totalSolved = (stats.easy?.solved || 0) + (stats.medium?.solved || 0) + (stats.hard?.solved || 0);
+    const streak = userDoc?.streak?.current || 0;
+    const xp = userDoc?.xp || 0;
 
     container.innerHTML = `
       <div class="nav__user-menu">
@@ -695,17 +699,52 @@ const Auth = (() => {
           <span class="nav__user-level-badge">Lv.${levelInfo.level}</span>
         </button>
         <div class="nav__user-dropdown" id="user-dropdown">
-          <div class="nav__dropdown-header">
-            <span class="nav__dropdown-name">${name}</span>
-            <span class="nav__dropdown-email">${currentUser.email}</span>
-            <span class="tier-badge tier-badge--${tier}" style="margin-top:4px">${tier}</span>
+          <div class="nav__dd-profile-card">
+            <div class="nav__dd-profile-top">
+              ${photoURL
+                ? `<img class="nav__dd-avatar" src="${photoURL}" alt="" referrerpolicy="no-referrer">`
+                : `<span class="nav__dd-avatar nav__dd-avatar--initials">${initial}</span>`
+              }
+              <div class="nav__dd-info">
+                <div class="nav__dd-name">${name}</div>
+                <div class="nav__dd-email">${currentUser.email}</div>
+              </div>
+            </div>
+            <div class="nav__dd-stats-row">
+              <div class="nav__dd-stat">
+                <span class="nav__dd-stat-val">${totalSolved}</span>
+                <span class="nav__dd-stat-lbl">Solved</span>
+              </div>
+              <div class="nav__dd-stat">
+                <span class="nav__dd-stat-val">${streak}</span>
+                <span class="nav__dd-stat-lbl">Streak</span>
+              </div>
+              <div class="nav__dd-stat">
+                <span class="nav__dd-stat-val">${xp}</span>
+                <span class="nav__dd-stat-lbl">XP</span>
+              </div>
+            </div>
+            <div class="nav__dd-xp-bar">
+              <div class="nav__dd-xp-fill" style="width:${levelInfo.percent}%"></div>
+            </div>
+            <div class="nav__dd-xp-text">Level ${levelInfo.level} \u2022 ${levelInfo.currentXP}/${levelInfo.nextLevelXP} XP</div>
           </div>
           <div class="nav__dropdown-divider"></div>
-          <button class="nav__dropdown-item" onclick="Auth.showAccount()">
-            <span>\uD83D\uDCCA Profile & Stats</span>
-          </button>
+          <a class="nav__dd-menu-item" href="profile.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>My Profile</span>
+          </a>
+          <a class="nav__dd-menu-item" href="problems.html?filter=favorites">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span>My Favorites</span>
+          </a>
+          <a class="nav__dd-menu-item" href="problems.html?status=solved">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Solved Problems</span>
+          </a>
           <div class="nav__dropdown-divider"></div>
-          <button class="nav__dropdown-item nav__dropdown-item--danger" onclick="Auth.signOut()">
+          <button class="nav__dd-menu-item nav__dd-menu-item--danger" onclick="Auth.signOut()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
             <span>Sign Out</span>
           </button>
         </div>

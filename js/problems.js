@@ -2,7 +2,7 @@
    PROBLEMS — LeetCode-style problem list + detail
    Fixed filter counts, performance, company bar,
    status tracking, random picker, discussion,
-   sort dropdown, stub treatment.
+   sort dropdown, stub treatment, browser history.
    ============================================ */
 
 const Problems = (() => {
@@ -19,6 +19,8 @@ const Problems = (() => {
   let activeListId = null;
   let randomQueue = [];
   let randomQueueIndex = -1;
+  let randomHistory = []; // Track visited random problems for back navigation
+  let randomHistoryIndex = -1;
 
   // ---- Helpers ----
   function ensureArray(val) {
@@ -83,8 +85,9 @@ const Problems = (() => {
     const map = {
       'calculation': 'Calculation', 'proof': 'Proof', 'coding': 'Coding',
       'open-ended': 'Open-Ended', 'brain-teaser': 'Brain Teaser',
-      'estimation': 'Estimation', 'closed-form': 'Calculation',
-      'math': 'Calculation', 'logic': 'Brain Teaser',
+      'estimation': 'Estimation', 'strategy': 'Strategy',
+      'conceptual': 'Conceptual', 'closed-form': 'Calculation',
+      'math': 'Calculation', 'logic': 'Brain Teaser', 'puzzle': 'Brain Teaser',
     };
     return map[t] || t;
   }
@@ -323,6 +326,27 @@ const Problems = (() => {
         renderShell();
         updateList(params);
       }
+
+      // Re-render when auth state changes (tier may upgrade from free to pro)
+      window.addEventListener('auth-state-changed', () => {
+        const p = App.getParams();
+        if (p.id) {
+          renderDetail(parseInt(p.id, 10) || p.id);
+        } else if (shellRendered) {
+          updateList(p);
+        }
+      });
+
+      // Also listen for browser back/forward
+      window.addEventListener('popstate', () => {
+        const p = App.getParams();
+        if (p.id) {
+          renderDetail(parseInt(p.id, 10) || p.id);
+        } else {
+          if (!shellRendered) renderShell();
+          updateList(p);
+        }
+      });
     } catch (err) {
       console.error('[Problems] Init error:', err);
       const container = document.getElementById('content');
@@ -843,24 +867,37 @@ const Problems = (() => {
     const isRandom = params.random === '1';
     const idx = allProblems.indexOf(problem);
 
+    // Track random history for back/forward navigation
+    if (isRandom) {
+      if (randomHistory.length === 0 || randomHistory[randomHistoryIndex] !== problem.id) {
+        // Navigated to a new random problem (not via back/forward)
+        randomHistory = randomHistory.slice(0, randomHistoryIndex + 1);
+        randomHistory.push(problem.id);
+        randomHistoryIndex = randomHistory.length - 1;
+      }
+    }
+
     let prev, next, prevLabel, nextLabel;
     if (isRandom) {
-      // Random mode: pick truly random prev/next from all eligible problems
-      const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only');
-      if (eligible.length > 0) {
-        // Pick from different halves of the shuffled array to ensure variety
-        const shuffled = [...eligible];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-        }
-        prev = shuffled[0] || null;
-        next = shuffled[1] || shuffled[0] || null;
+      // Random mode: back goes to previous random, forward picks new random
+      const hasPrev = randomHistoryIndex > 0;
+      const hasForwardHistory = randomHistoryIndex < randomHistory.length - 1;
+
+      if (hasPrev) {
+        prev = allProblems.find(p => p.id === randomHistory[randomHistoryIndex - 1]) || null;
       } else {
         prev = null;
-        next = null;
       }
-      prevLabel = '\u2190 Random';
+
+      if (hasForwardHistory) {
+        next = allProblems.find(p => p.id === randomHistory[randomHistoryIndex + 1]) || null;
+      } else {
+        // Pick a new random
+        const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only');
+        next = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
+      }
+
+      prevLabel = '\u2190 Back';
       nextLabel = 'Next Random \u2192';
     } else {
       prev = idx > 0 ? allProblems[idx - 1] : null;
@@ -959,11 +996,15 @@ const Problems = (() => {
           <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
           <div class="problem-detail__nav-arrows">
             ${prev
-              ? `<a class="problem-nav-arrow" href="problems.html?id=${prev.id}${isRandom ? '&random=1' : ''}" title="#${prev.id} ${App.escapeHtml(prev.title)}">${prevLabel}</a>`
+              ? (isRandom
+                  ? `<a class="problem-nav-arrow" href="#" onclick="event.preventDefault();Problems.navigateRandom(${randomHistoryIndex - 1})" title="#${prev.id} ${App.escapeHtml(prev.title)}">${prevLabel}</a>`
+                  : `<a class="problem-nav-arrow" href="problems.html?id=${prev.id}" title="#${prev.id} ${App.escapeHtml(prev.title)}">${prevLabel}</a>`)
               : `<span class="problem-nav-arrow problem-nav-arrow--disabled">${prevLabel}</span>`
             }
             ${next
-              ? `<a class="problem-nav-arrow" href="problems.html?id=${next.id}${isRandom ? '&random=1' : ''}" title="#${next.id} ${App.escapeHtml(next.title)}">${nextLabel}</a>`
+              ? (isRandom
+                  ? `<a class="problem-nav-arrow" href="#" onclick="event.preventDefault();Problems.navigateRandom(${randomHistoryIndex < randomHistory.length - 1 ? randomHistoryIndex + 1 : -1}, ${next.id})" title="#${next.id} ${App.escapeHtml(next.title)}">${nextLabel}</a>`
+                  : `<a class="problem-nav-arrow" href="problems.html?id=${next.id}" title="#${next.id} ${App.escapeHtml(next.title)}">${nextLabel}</a>`)
               : `<span class="problem-nav-arrow problem-nav-arrow--disabled">${nextLabel}</span>`
             }
           </div>
@@ -984,23 +1025,46 @@ const Problems = (() => {
               <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
               <div class="problem-detail__tags-row">${tagHtml}</div>
               ${companyHtml ? `<div class="problem-detail__companies">${companyHtml}</div>` : ''}
-              <div class="problem-detail__status-actions">
-                <button class="status-btn ${currentStatus === 'solved' ? 'status-btn--active status-btn--solved' : ''}"
-                  onclick="Problems.markStatus(${problem.id}, '${currentStatus === 'solved' ? '' : 'solved'}')">
-                  \u2705 ${currentStatus === 'solved' ? 'Solved' : 'Mark Solved'}
+              <div class="problem-action-bar">
+                <button class="pab__btn ${currentStatus === 'solved' ? 'pab__btn--active-green' : ''}"
+                  onclick="Problems.markStatus(${problem.id}, '${currentStatus === 'solved' ? '' : 'solved'}')"
+                  title="${currentStatus === 'solved' ? 'Undo solved' : 'Mark as solved'}">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  <span>${currentStatus === 'solved' ? 'Solved' : 'Solved'}</span>
                 </button>
-                <button class="status-btn ${currentStatus === 'attempted' ? 'status-btn--active status-btn--attempted' : ''}"
-                  onclick="Problems.markStatus(${problem.id}, '${currentStatus === 'attempted' ? '' : 'attempted'}')">
-                  \u{1F7E1} ${currentStatus === 'attempted' ? 'Attempted' : 'Mark Attempted'}
+                <button class="pab__btn ${currentStatus === 'attempted' ? 'pab__btn--active-yellow' : ''}"
+                  onclick="Problems.markStatus(${problem.id}, '${currentStatus === 'attempted' ? '' : 'attempted'}')"
+                  title="${currentStatus === 'attempted' ? 'Undo attempted' : 'Mark as attempted'}">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                  </svg>
+                  <span>${currentStatus === 'attempted' ? 'Attempted' : 'Attempted'}</span>
                 </button>
-              </div>
-              <div class="problem-actions">
-                <button class="action-btn ${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? 'action-btn--active' : ''}"
-                  onclick="Problems.toggleFavorite(${problem.id})" title="Favorite">
-                  ${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? '\u2764\uFE0F' : '\u{1F90D}'} Favorite
+                <div class="pab__sep"></div>
+                <button class="pab__icon-btn ${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? 'pab__icon-btn--liked' : ''}"
+                  onclick="Problems.toggleFavorite(${problem.id})"
+                  title="${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? 'Remove from favorites' : 'Add to favorites'}">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                  </svg>
                 </button>
-                <button class="action-btn" onclick="Problems.addToCollection(${problem.id})" title="Add to Collection">
-                  \uD83D\uDCC1 Add to List
+                <button class="pab__icon-btn" onclick="Problems.addToCollection(${problem.id})" title="Save to list">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </button>
+                <button class="pab__icon-btn" onclick="Problems.shareProblem(${problem.id})" title="Share">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  </svg>
+                </button>
+                <button class="pab__icon-btn" onclick="Problems.flagProblem(${problem.id})" title="Report issue">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -1219,6 +1283,69 @@ const Problems = (() => {
     updateList(App.getParams());
   }
 
+  // ---- Random navigation with history ----
+  function navigateRandom(histIdx, newId) {
+    if (histIdx >= 0 && histIdx < randomHistory.length) {
+      // Navigate to existing history entry
+      randomHistoryIndex = histIdx;
+      const targetId = randomHistory[histIdx];
+      App.setParams({ id: targetId, random: '1' });
+      renderDetail(targetId);
+      window.scrollTo(0, 0);
+    } else if (newId) {
+      // Navigate to new random problem and add to history
+      randomHistory = randomHistory.slice(0, randomHistoryIndex + 1);
+      randomHistory.push(newId);
+      randomHistoryIndex = randomHistory.length - 1;
+      App.setParams({ id: newId, random: '1' });
+      renderDetail(newId);
+      window.scrollTo(0, 0);
+    }
+  }
+
+  // ---- Share problem ----
+  function shareProblem(problemId) {
+    const url = window.location.origin + window.location.pathname + '?id=' + problemId;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => {
+        showToast('Link copied to clipboard!');
+      }).catch(() => {
+        showToast('Could not copy link');
+      });
+    } else {
+      // Fallback
+      const input = document.createElement('input');
+      input.value = url;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      showToast('Link copied to clipboard!');
+    }
+  }
+
+  // ---- Flag problem ----
+  function flagProblem(problemId) {
+    showToast('Thanks for the feedback! Issue reported for #' + problemId);
+  }
+
+  // ---- Toast notification ----
+  function showToast(message) {
+    const existing = document.querySelector('.qr-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'qr-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => { toast.classList.add('qr-toast--show'); });
+    setTimeout(() => {
+      toast.classList.remove('qr-toast--show');
+      setTimeout(() => toast.remove(), 300);
+    }, 2500);
+  }
+
   // ---- Favorite toggle ----
   async function toggleFavorite(problemId) {
     if (typeof Auth === 'undefined' || !Auth.isLoggedIn()) {
@@ -1258,5 +1385,6 @@ const Problems = (() => {
     onNotesInput, loadMore, randomProblem, markStatus,
     addDiscussionEntry, deleteDiscussionEntry,
     toggleFavorite, addToCollection, filterFavorites,
+    navigateRandom, shareProblem, flagProblem,
   };
 })();

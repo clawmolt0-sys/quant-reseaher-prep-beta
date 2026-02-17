@@ -99,12 +99,15 @@ const Collections = (() => {
     }
   }
 
+  let currentModalProblemId = null;
+
   function showModal(problemId) {
     const existing = document.querySelector('.collections-modal-overlay');
     if (existing) existing.remove();
 
+    currentModalProblemId = parseInt(problemId);
     const collections = getAll();
-    const id = parseInt(problemId);
+    const id = currentModalProblemId;
 
     const overlay = document.createElement('div');
     overlay.className = 'collections-modal-overlay';
@@ -116,7 +119,7 @@ const Collections = (() => {
         <label class="collection-item">
           <input type="checkbox" ${checked} data-col-id="${col.id}" onchange="Collections._toggleProblem(this, ${id})">
           <span class="collection-item__name">${col.name}</span>
-          <span class="collection-item__count">${col.problemIds.length}</span>
+          <span class="collection-item__count">${col.problemIds.length} problems</span>
         </label>
       `;
     }).join('');
@@ -124,20 +127,27 @@ const Collections = (() => {
     overlay.innerHTML = `
       <div class="collections-modal">
         <div class="collections-modal__header">
-          <h3>Add to Collection</h3>
+          <h3>Save to List</h3>
           <button class="account-modal__close" onclick="this.closest('.collections-modal-overlay').remove()">&times;</button>
         </div>
         <div class="collections-modal__body">
-          ${items || '<div style="color:var(--text-muted);font-size:var(--text-sm);padding:var(--space-4);text-align:center">No collections yet. Create one below!</div>'}
+          ${items || '<div style="color:var(--text-muted);font-size:var(--text-sm);padding:var(--space-4);text-align:center">No lists yet. Create one below!</div>'}
         </div>
         <div class="collections-modal__create">
-          <input type="text" id="new-collection-name" class="collection-create__input" placeholder="New collection name..." maxlength="40">
+          <input type="text" id="new-collection-name" class="collection-create__input" placeholder="New list name..." maxlength="40"
+            onkeydown="if(event.key==='Enter'){Collections._createFromModal();event.preventDefault();}">
           <button class="btn btn--primary btn--sm" onclick="Collections._createFromModal()">Create</button>
         </div>
       </div>
     `;
 
     document.body.appendChild(overlay);
+
+    // Auto-focus the input
+    setTimeout(() => {
+      const input = document.getElementById('new-collection-name');
+      if (input) input.focus();
+    }, 100);
   }
 
   // Internal handlers (exposed for onclick)
@@ -148,20 +158,29 @@ const Collections = (() => {
     } else {
       await removeProblem(colId, problemId);
     }
+    // Update count display
+    const label = checkbox.closest('.collection-item');
+    if (label) {
+      const col = getAll().find(c => c.id === colId);
+      const countEl = label.querySelector('.collection-item__count');
+      if (col && countEl) countEl.textContent = col.problemIds.length + ' problems';
+    }
   }
 
   async function _createFromModal() {
     const input = document.getElementById('new-collection-name');
     if (!input || !input.value.trim()) return;
 
-    const col = await create(input.value);
-    if (col) {
-      // Re-render modal
-      const overlay = document.querySelector('.collections-modal-overlay');
-      if (overlay) {
-        // Get the problemId from the modal context
-        overlay.remove();
-      }
+    const name = input.value.trim();
+    input.value = '';
+    input.disabled = true;
+
+    const col = await create(name);
+    input.disabled = false;
+
+    if (col && currentModalProblemId) {
+      // Re-render the modal with the new collection
+      showModal(currentModalProblemId);
     }
   }
 

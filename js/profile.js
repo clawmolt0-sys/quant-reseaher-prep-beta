@@ -9,19 +9,23 @@ const Profile = (() => {
     const container = document.getElementById('profile-content');
     if (!container) return;
 
-    // Show loading state
+    // Show loading state immediately
     container.innerHTML = `
       <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
         <div class="nav__auth-loading" style="width:48px;height:48px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite;margin:0 auto var(--space-4)"></div>
         <p style="color:var(--text-secondary)">Loading profile...</p>
       </div>`;
 
-    // Wait for auth to fully settle (user doc loaded from Firestore, or no user)
-    // This uses Auth.waitForAuth() which resolves AFTER handleAuthStateChanged completes
-    // including all Firestore loads. No more race conditions.
+    // Start loading problems data immediately (don't wait for auth)
+    const dataPromise = Promise.all([
+      DataLoader.problems(),
+      DataLoader.companies(),
+    ]);
+
+    // Wait for auth to settle — 5s max timeout to keep things fast
     await Promise.race([
       Auth.waitForAuth(),
-      new Promise(resolve => setTimeout(resolve, 10000)) // 10s absolute max
+      new Promise(resolve => setTimeout(resolve, 5000))
     ]);
 
     if (!Auth.isLoggedIn()) {
@@ -35,10 +39,8 @@ const Profile = (() => {
       return;
     }
 
-    const [problems, companies] = await Promise.all([
-      DataLoader.problems(),
-      DataLoader.companies(),
-    ]);
+    // Data should already be loaded (started in parallel with auth wait)
+    const [problems, companies] = await dataPromise;
 
     const user = Auth.getUser();
     const userDoc = Auth.getUserDoc();
@@ -162,7 +164,7 @@ const Profile = (() => {
         <!-- Activity Heatmap -->
         <div class="profile-card profile-card--wide">
           <div class="profile-card__header">
-            <span>${totalSolved} submissions in the past year</span>
+            <span>${totalSolved} problems solved in the past year</span>
           </div>
           <div class="heatmap-container">
             ${renderHeatmap(heatmapData)}
@@ -229,10 +231,11 @@ const Profile = (() => {
           ${renderSkills(skills)}
         </div>
 
-        <!-- Tabs: Recent AC, Favorites -->
+        <!-- Tabs: Solved, Attempted, Favorites -->
         <div class="profile-card profile-card--wide">
           <div class="profile-tabs">
-            <button class="profile-tab profile-tab--active" onclick="Profile.switchTab('recent')">Recent AC</button>
+            <button class="profile-tab profile-tab--active" onclick="Profile.switchTab('recent')">Solved (${totalSolved})</button>
+            <button class="profile-tab" onclick="Profile.switchTab('attempted')">Attempted (${totalAttempted})</button>
             <button class="profile-tab" onclick="Profile.switchTab('favorites')">Favorites (${favorites.length})</button>
           </div>
           <div id="profile-tab-content">
@@ -469,6 +472,32 @@ const Profile = (() => {
     `;
   }
 
+  // ---- Render: Attempted Tab ----
+  function renderAttemptedTab(problems) {
+    const userDoc = Auth.getUserDoc();
+    const progress = userDoc?.progress || {};
+    const attemptedProblems = Object.entries(progress)
+      .filter(([, v]) => v === 'attempted')
+      .map(([id]) => {
+        const p = problems.find(pr => pr.id === parseInt(id));
+        return p || { id: parseInt(id), title: 'Problem #' + id, difficulty: 'medium' };
+      });
+
+    if (attemptedProblems.length === 0) {
+      return '<div style="color:var(--text-muted);padding:var(--space-4);text-align:center">No attempted problems yet. Start practicing!</div>';
+    }
+    return `
+      <div class="recent-list">
+        ${attemptedProblems.map(p => `
+          <a class="recent-item" href="problems.html?id=${p.id}">
+            <span class="badge badge--${p.difficulty}" style="font-size:10px">${p.difficulty}</span>
+            <span class="recent-item__title">${p.title}</span>
+          </a>
+        `).join('')}
+      </div>
+    `;
+  }
+
   // ---- Render: Favorites Tab ----
   function renderFavoritesTab(problems) {
     const userDoc = Auth.getUserDoc();
@@ -494,18 +523,20 @@ const Profile = (() => {
   async function switchTab(tab) {
     // Toggle active tab
     document.querySelectorAll('.profile-tab').forEach(t => t.classList.remove('profile-tab--active'));
-    event.target.classList.add('profile-tab--active');
+    if (event && event.target) event.target.classList.add('profile-tab--active');
 
     const content = document.getElementById('profile-tab-content');
     if (!content) return;
 
+    if (!cachedProblems) cachedProblems = await DataLoader.problems();
+    const userDoc = Auth.getUserDoc();
+
     if (tab === 'recent') {
-      if (!cachedProblems) cachedProblems = await DataLoader.problems();
-      const userDoc = Auth.getUserDoc();
       const recent = getRecentSolved(userDoc, cachedProblems || []);
       content.innerHTML = renderRecentTab(recent);
+    } else if (tab === 'attempted') {
+      content.innerHTML = renderAttemptedTab(cachedProblems || []);
     } else if (tab === 'favorites') {
-      if (!cachedProblems) cachedProblems = await DataLoader.problems();
       content.innerHTML = renderFavoritesTab(cachedProblems || []);
     }
   }

@@ -115,6 +115,16 @@
                       "id":  "estimation",
                       "name":  "Estimation",
                       "desc":  "Fermi estimation or approximation"
+                  },
+                  {
+                      "id":  "strategy",
+                      "name":  "Strategy",
+                      "desc":  "Optimal strategy or game theory"
+                  },
+                  {
+                      "id":  "conceptual",
+                      "name":  "Conceptual",
+                      "desc":  "Understanding concepts and definitions"
                   }
               ]
 }
