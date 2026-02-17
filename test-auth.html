@@ -37,8 +37,21 @@
       logEl.scrollTop = logEl.scrollHeight;
     }
 
-    // ---- Minimal Firebase init (NO firebase-config.js dependency) ----
-    log('Initializing Firebase directly...');
+    // ---- Step 0: Nuke ALL corrupted IndexedDB BEFORE Firebase init ----
+    log('Cleaning corrupted IndexedDB databases...');
+    try {
+      indexedDB.deleteDatabase('firebaseLocalStorageDb');
+      indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep/main');
+      indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep');
+      indexedDB.deleteDatabase('firebase-heartbeat-database');
+      indexedDB.deleteDatabase('firebase-installations-database');
+      log('IndexedDB cleanup done', 'pass');
+    } catch(e) {
+      log('IndexedDB cleanup error: ' + e.message, 'warn');
+    }
+
+    // ---- Step 1: Firebase init ----
+    log('Initializing Firebase...');
 
     if (firebase.apps.length === 0) {
       firebase.initializeApp({
@@ -58,9 +71,13 @@
 
     log('Got auth and db objects');
 
-    // Try settings (may fail if already set)
+    // Firestore settings
     try {
-      db.settings({ experimentalForceLongPolling: true, merge: true });
+      db.settings({
+        experimentalForceLongPolling: true,
+        experimentalAutoDetectLongPolling: false,
+        merge: true
+      });
       log('Firestore long-polling enabled');
     } catch(e) {
       log('Firestore settings: ' + e.message, 'warn');

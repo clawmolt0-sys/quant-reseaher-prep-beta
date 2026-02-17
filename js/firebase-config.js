@@ -38,36 +38,39 @@ const FirebaseConfig = (() => {
         return;
       }
 
+      // ONE-TIME FIX: Delete corrupted IndexedDB databases BEFORE Firebase init.
+      // The old enablePersistence() created IndexedDB caches that corrupted auth.
+      // Firebase Auth reads from 'firebaseLocalStorageDb' during initializeApp() —
+      // if this DB is corrupted, onAuthStateChanged hangs forever.
+      if (!sessionStorage.getItem('qr-idb-fix-v2')) {
+        try {
+          // Delete known problematic databases
+          indexedDB.deleteDatabase('firebaseLocalStorageDb');
+          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep/main');
+          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep');
+          indexedDB.deleteDatabase('firebase-heartbeat-database');
+          indexedDB.deleteDatabase('firebase-installations-database');
+          console.log('[FirebaseConfig] Cleaned corrupted IndexedDB databases');
+        } catch (e) { /* ignore */ }
+        sessionStorage.setItem('qr-idb-fix-v2', '1');
+      }
+
       // Initialize or get existing app
       if (!firebase.apps.length) {
         firebase.initializeApp(config);
       }
 
-      // Apply Firestore settings (must be before first firestore() usage)
-      // Use try/catch because settings() throws if Firestore was already accessed
+      // Apply Firestore settings — disable autoDetect when forcing long polling
       try {
         firebase.firestore().settings({
           experimentalForceLongPolling: true,
+          experimentalAutoDetectLongPolling: false,
           merge: true
         });
       } catch (settingsErr) {
-        // Settings already applied or Firestore already in use — that's fine
-        console.log('[FirebaseConfig] Firestore settings already applied');
+        // Already applied or Firestore already accessed
+        console.log('[FirebaseConfig] Firestore settings:', settingsErr.message);
       }
-
-      // Fire-and-forget cleanup of stale IndexedDB from old persistence
-      try {
-        if (typeof indexedDB !== 'undefined' && indexedDB.databases) {
-          indexedDB.databases().then(dbs => {
-            for (const db of dbs) {
-              if (db.name && (db.name.startsWith('firestore') || db.name.startsWith('firebase-'))) {
-                indexedDB.deleteDatabase(db.name);
-                console.log('[FirebaseConfig] Cleaned stale IndexedDB:', db.name);
-              }
-            }
-          }).catch(() => {});
-        }
-      } catch (e) { /* ignore */ }
 
       initialized = true;
       console.log('[FirebaseConfig] Initialized');
