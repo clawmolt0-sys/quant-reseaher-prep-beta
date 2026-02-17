@@ -71,13 +71,21 @@
 
       // TEST 1: FirebaseConfig.init() is synchronous and works
       try {
+        // Capture any console.error during init
+        const origError = console.error;
+        let initError = null;
+        console.error = (...args) => { initError = args.join(' '); origError.apply(console, args); };
+
         const t0 = performance.now();
         FirebaseConfig.init();
         const elapsed = Math.round(performance.now() - t0);
+
+        console.error = origError;
+
         if (FirebaseConfig.isInitialized()) {
           addResult('FirebaseConfig.init()', 'pass', `Synchronous init completed in ${elapsed}ms`);
         } else {
-          addResult('FirebaseConfig.init()', 'fail', 'init() returned but isInitialized() is false');
+          addResult('FirebaseConfig.init()', 'fail', 'isInitialized()=false. Error: ' + (initError || 'unknown — check browser console'));
         }
       } catch (e) {
         addResult('FirebaseConfig.init()', 'fail', e.message);

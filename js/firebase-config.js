@@ -38,18 +38,22 @@ const FirebaseConfig = (() => {
         return;
       }
 
-      firebase.initializeApp(config);
+      // Initialize or get existing app
+      if (!firebase.apps.length) {
+        firebase.initializeApp(config);
+      }
 
-      // Force long polling — WebSocket connections can silently fail on
-      // GitHub Pages / some corporate networks, causing writes to hang.
-      firebase.firestore().settings({
-        experimentalForceLongPolling: true,
-        merge: true
-      });
-
-      // NOTE: We intentionally do NOT enable Firestore offline persistence.
-      // enablePersistence() creates IndexedDB caches that on GitHub Pages
-      // frequently enter a broken "offline" state.
+      // Apply Firestore settings (must be before first firestore() usage)
+      // Use try/catch because settings() throws if Firestore was already accessed
+      try {
+        firebase.firestore().settings({
+          experimentalForceLongPolling: true,
+          merge: true
+        });
+      } catch (settingsErr) {
+        // Settings already applied or Firestore already in use — that's fine
+        console.log('[FirebaseConfig] Firestore settings already applied');
+      }
 
       // Fire-and-forget cleanup of stale IndexedDB from old persistence
       try {
@@ -66,7 +70,7 @@ const FirebaseConfig = (() => {
       } catch (e) { /* ignore */ }
 
       initialized = true;
-      console.log('[FirebaseConfig] Initialized (long-polling mode)');
+      console.log('[FirebaseConfig] Initialized');
     } catch (err) {
       console.error('[FirebaseConfig] Init error:', err);
     }
