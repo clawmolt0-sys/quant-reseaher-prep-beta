@@ -174,7 +174,27 @@ const Auth = (() => {
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
-    auth.onAuthStateChanged(handleAuthStateChanged);
+    // Track whether onAuthStateChanged has fired
+    let authCallbackFired = false;
+
+    auth.onAuthStateChanged((user) => {
+      authCallbackFired = true;
+      handleAuthStateChanged(user);
+    });
+
+    // CRITICAL FALLBACK: If onAuthStateChanged doesn't fire within 5s,
+    // the Firebase Auth SDK is likely hanging (network issue, blocked iframe,
+    // corrupted IndexedDB). Show the login button anyway so the site is usable.
+    setTimeout(() => {
+      if (!authCallbackFired) {
+        console.warn('[Auth] onAuthStateChanged did not fire within 5s — falling back to logged-out state');
+        console.warn('[Auth] This usually means Firebase Auth cannot reach qrprep.firebaseapp.com');
+        authSettled = true;
+        authSettledCallbacks.forEach(fn => fn());
+        authSettledCallbacks = [];
+        renderLoginButton();
+      }
+    }, 5000);
 
     // Handle redirect-based auth (e.g. on GitHub Pages where popups are blocked)
     auth.getRedirectResult().then((result) => {
@@ -261,7 +281,12 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
-      await auth.signInWithPopup(provider);
+      const result = await auth.signInWithPopup(provider);
+      // Explicitly handle the result in case onAuthStateChanged is stuck
+      if (result && result.user) {
+        console.log('[Auth] Popup sign-in success, explicitly handling user');
+        handleAuthStateChanged(result.user);
+      }
     } catch (err) {
       if (err.code === 'auth/unauthorized-domain') {
         console.warn('[Auth] Popup blocked (unauthorized domain), trying redirect...');
@@ -296,7 +321,11 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GithubAuthProvider();
-      await auth.signInWithPopup(provider);
+      const result = await auth.signInWithPopup(provider);
+      if (result && result.user) {
+        console.log('[Auth] GitHub popup sign-in success, explicitly handling user');
+        handleAuthStateChanged(result.user);
+      }
     } catch (err) {
       if (err.code === 'auth/unauthorized-domain') {
         try {
