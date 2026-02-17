@@ -105,17 +105,28 @@
       log('Try: (1) Clear all site data, (2) Disable ad blockers, (3) Check browser console', 'fail');
     }, 10000);
 
-    // Sign in
+    // Also check for redirect result (user may be coming back from sign-in)
+    auth.getRedirectResult().then(function(result) {
+      if (result && result.user) {
+        log('REDIRECT RESULT: Signed in as ' + result.user.displayName + ' (' + result.user.email + ')', 'pass');
+      }
+    }).catch(function(e) {
+      if (e.code !== 'auth/credential-already-in-use') {
+        log('getRedirectResult error: ' + e.code + ' — ' + e.message, 'warn');
+      }
+    });
+
+    // Sign in via REDIRECT (not popup — popup is broken on GitHub Pages)
     async function doSignIn() {
       try {
-        log('Opening Google sign-in popup...');
+        log('Redirecting to Google sign-in...');
         var provider = new firebase.auth.GoogleAuthProvider();
-        var result = await auth.signInWithPopup(provider);
-        log('Sign-in SUCCESS: ' + result.user.displayName, 'pass');
+        await auth.signInWithRedirect(provider);
       } catch(e) {
         log('Sign-in error: ' + e.code + ' — ' + e.message, 'fail');
         if (e.code === 'auth/unauthorized-domain') {
           log('Domain ' + window.location.hostname + ' is not authorized in Firebase Console', 'fail');
+          log('Go to Firebase Console > Authentication > Settings > Authorized domains and add: ' + window.location.hostname, 'fail');
         }
       }
     }

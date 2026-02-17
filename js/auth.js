@@ -141,62 +141,34 @@ const Auth = (() => {
 
   // ---- Init ----
   function init() {
-    // Immediately show a placeholder to prevent empty container flash
-    const container = document.getElementById('auth-container');
-    if (container && !container.innerHTML.trim()) {
-      container.innerHTML = '<div class="nav__auth-loading" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite"></div>';
-    }
-
     // Init Firebase (synchronous — no async blocking)
     FirebaseConfig.init();
 
-    if (!FirebaseConfig.isConfigured()) {
-      console.log('[Auth] Firebase not configured, running in local-only mode');
+    if (!FirebaseConfig.isConfigured() || !FirebaseConfig.isInitialized()) {
+      console.log('[Auth] Firebase not configured/initialized, running in local-only mode');
       renderLoginButton();
       return;
     }
 
-    if (!FirebaseConfig.isInitialized()) {
-      console.warn('[Auth] Firebase not initialized yet, retrying in 1s...');
-      setTimeout(() => {
-        FirebaseConfig.init();
-        if (FirebaseConfig.isInitialized()) {
-          const auth = FirebaseConfig.getAuth();
-          if (auth) auth.onAuthStateChanged(handleAuthStateChanged);
-        } else {
-          console.warn('[Auth] Firebase failed to initialize after retry');
-          renderLoginButton();
-        }
-      }, 1000);
-      return;
-    }
-
     const auth = FirebaseConfig.getAuth();
-    if (!auth) return;
+    if (!auth) { renderLoginButton(); return; }
 
-    // Track whether onAuthStateChanged has fired
-    let authCallbackFired = false;
+    // Show login button IMMEDIATELY — don't wait for onAuthStateChanged.
+    // The auth SDK's onAuthStateChanged can hang forever on some networks.
+    // If the user IS signed in, onAuthStateChanged or getRedirectResult
+    // will fire and upgrade the UI to the signed-in state.
+    renderLoginButton();
+    authSettled = true;
+    authSettledCallbacks.forEach(fn => fn());
+    authSettledCallbacks = [];
 
+    // Register auth state listener — if it fires, update UI
     auth.onAuthStateChanged((user) => {
-      authCallbackFired = true;
+      console.log('[Auth] onAuthStateChanged fired:', user ? user.displayName : 'null');
       handleAuthStateChanged(user);
     });
 
-    // CRITICAL FALLBACK: If onAuthStateChanged doesn't fire within 5s,
-    // the Firebase Auth SDK is likely hanging (network issue, blocked iframe,
-    // corrupted IndexedDB). Show the login button anyway so the site is usable.
-    setTimeout(() => {
-      if (!authCallbackFired) {
-        console.warn('[Auth] onAuthStateChanged did not fire within 5s — falling back to logged-out state');
-        console.warn('[Auth] This usually means Firebase Auth cannot reach qrprep.firebaseapp.com');
-        authSettled = true;
-        authSettledCallbacks.forEach(fn => fn());
-        authSettledCallbacks = [];
-        renderLoginButton();
-      }
-    }, 5000);
-
-    // Handle redirect-based auth (e.g. on GitHub Pages where popups are blocked)
+    // Handle redirect-based sign-in (page was redirected to Firebase, now coming back)
     auth.getRedirectResult().then((result) => {
       if (result && result.user) {
         console.log('[Auth] Redirect sign-in completed for', result.user.displayName);
@@ -279,29 +251,16 @@ const Auth = (() => {
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
+    // Use redirect-based sign-in. Popup-based sign-in fails on GitHub Pages
+    // because the popup at qrprep.firebaseapp.com cannot postMessage back
+    // to alacrity2001.github.io due to cross-origin restrictions.
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
-      const result = await auth.signInWithPopup(provider);
-      // Explicitly handle the result in case onAuthStateChanged is stuck
-      if (result && result.user) {
-        console.log('[Auth] Popup sign-in success, explicitly handling user');
-        handleAuthStateChanged(result.user);
-      }
+      await auth.signInWithRedirect(provider);
     } catch (err) {
+      console.error('[Auth] Google sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
-        console.warn('[Auth] Popup blocked (unauthorized domain), trying redirect...');
-        try {
-          const provider = new firebase.auth.GoogleAuthProvider();
-          await auth.signInWithRedirect(provider);
-        } catch (redirectErr) {
-          console.error('[Auth] Redirect sign in also failed:', redirectErr);
-          showDomainError();
-        }
-      } else if (err.code === 'auth/popup-blocked') {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        await auth.signInWithRedirect(provider);
-      } else if (err.code !== 'auth/popup-closed-by-user') {
-        console.error('[Auth] Sign in error:', err);
+        showDomainError();
       }
     }
   }
@@ -321,25 +280,11 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GithubAuthProvider();
-      const result = await auth.signInWithPopup(provider);
-      if (result && result.user) {
-        console.log('[Auth] GitHub popup sign-in success, explicitly handling user');
-        handleAuthStateChanged(result.user);
-      }
+      await auth.signInWithRedirect(provider);
     } catch (err) {
+      console.error('[Auth] GitHub sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
-        try {
-          const provider = new firebase.auth.GithubAuthProvider();
-          await auth.signInWithRedirect(provider);
-        } catch (redirectErr) {
-          console.error('[Auth] GitHub redirect failed:', redirectErr);
-          showDomainError();
-        }
-      } else if (err.code === 'auth/popup-blocked') {
-        const provider = new firebase.auth.GithubAuthProvider();
-        await auth.signInWithRedirect(provider);
-      } else if (err.code !== 'auth/popup-closed-by-user') {
-        console.error('[Auth] GitHub sign in error:', err);
+        showDomainError();
       }
     }
   }
