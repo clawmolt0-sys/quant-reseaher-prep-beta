@@ -55,7 +55,10 @@ const Problems = (() => {
 
   function isProblemLocked(problem) {
     // Pro users get everything
-    if (typeof Auth !== 'undefined' && Auth.getTier() === 'pro') return false;
+    if (typeof Auth !== 'undefined') {
+      const tier = Auth.getTier();
+      if (tier === 'pro') return false;
+    }
     // Free users: only problems with id <= FREE_PROBLEM_LIMIT
     return problem.id > FREE_PROBLEM_LIMIT;
   }
@@ -102,10 +105,10 @@ const Problems = (() => {
     catch (e) { return ''; }
   }
 
-  function markStatus(id, status) {
+  async function markStatus(id, status) {
     // Use Auth module if available (saves to both Firestore + localStorage)
     if (typeof Auth !== 'undefined') {
-      Auth.saveStatus(id, status);
+      await Auth.saveStatus(id, status);
     } else {
       try {
         if (status) localStorage.setItem('qr-prep-status-' + id, status);
@@ -114,9 +117,14 @@ const Problems = (() => {
     }
 
     // Show toast feedback
-    if (status === 'solved') showToast('Marked as solved!');
-    else if (status === 'attempted') showToast('Marked as attempted');
-    else showToast('Status cleared');
+    if (status === 'solved') {
+      const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
+      showToast('\u2705 Solved! +' + xpGain + ' XP');
+    } else if (status === 'attempted') {
+      showToast('\uD83D\uDFE1 Marked as attempted');
+    } else {
+      showToast('Status cleared');
+    }
 
     // Refresh current view
     const params = App.getParams();
@@ -291,20 +299,39 @@ const Problems = (() => {
   // ---- Init ----
   async function init() {
     try {
-      const raw = (await DataLoader.problems()) || [];
+      // Start loading data and auth in parallel
+      const dataPromise = Promise.all([
+        DataLoader.problems(),
+        DataLoader.tags(),
+        DataLoader.companies(),
+      ]);
+
+      // Wait for auth to settle (max 3s) so Pro status is known before first render
+      if (typeof Auth !== 'undefined' && Auth.waitForAuth) {
+        await Promise.race([
+          Auth.waitForAuth(),
+          new Promise(resolve => setTimeout(resolve, 3000)),
+        ]);
+      }
+
+      const [rawProblems, rawTags, rawCompanies] = await dataPromise;
+      const raw = rawProblems || [];
       console.log('[Problems] Loaded', raw.length, 'problems');
       allProblems = raw.map(normalize);
-      tagsData = (await DataLoader.tags()) || { categories: [], types: [] };
-      companiesData = (await DataLoader.companies()) || [];
+      tagsData = rawTags || { categories: [], types: [] };
+      companiesData = rawCompanies || [];
 
       // Pass problem data to Auth for XP/difficulty lookups
       if (typeof Auth !== 'undefined' && Auth.setProblemData) {
         Auth.setProblemData(allProblems);
       }
 
-      // Load hide-stubs preference
-      try { hideStubs = localStorage.getItem('qr-prep-hide-stubs') === 'true'; }
-      catch (e) { hideStubs = false; }
+      // Load hide-stubs preference (default to true so incomplete problems are hidden)
+      try {
+        const stored = localStorage.getItem('qr-prep-hide-stubs');
+        hideStubs = stored === null ? true : stored === 'true';
+      }
+      catch (e) { hideStubs = true; }
 
       const params = App.getParams();
 
@@ -706,6 +733,8 @@ const Problems = (() => {
       }
 
       // ---- Update table ----
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const end = currentPage * PAGE_SIZE;
       const tableEl = document.getElementById('problems-table-container');
       if (tableEl) {
         tableEl.innerHTML = filtered.length > 0 ? `
@@ -721,22 +750,17 @@ const Problems = (() => {
               </tr>
             </thead>
             <tbody>
-              ${filtered.slice(0, PAGE_SIZE).map(p => tableRow(p)).join('')}
+              ${filtered.slice(start, end).map(p => tableRow(p)).join('')}
             </tbody>
           </table>
         ` : '';
       }
 
-      // ---- Load more ----
+      // ---- Pagination ----
+      const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
       const loadMoreEl = document.getElementById('load-more-container');
       if (loadMoreEl) {
-        loadMoreEl.innerHTML = filtered.length > PAGE_SIZE ? `
-          <div class="load-more-bar">
-            <button class="load-more-btn" onclick="Problems.loadMore()">
-              Show more (${filtered.length - PAGE_SIZE} remaining)
-            </button>
-          </div>
-        ` : '';
+        loadMoreEl.innerHTML = totalPages > 1 ? renderPagination(currentPage, totalPages) : '';
       }
 
       // ---- Empty state ----
@@ -800,27 +824,90 @@ const Problems = (() => {
   }
 
   // ---- Pagination ----
-  function loadMore() {
-    currentPage++;
+  function goToPage(page) {
+    const totalPages = Math.ceil(currentFiltered.length / PAGE_SIZE);
+    if (page < 1 || page > totalPages) return;
+    currentPage = page;
+
+    // Re-render table with current page
     const start = (currentPage - 1) * PAGE_SIZE;
     const end = currentPage * PAGE_SIZE;
-    const batch = currentFiltered.slice(start, end);
-    const tbody = document.querySelector('.problem-table tbody');
-    if (tbody && batch.length > 0) {
-      tbody.insertAdjacentHTML('beforeend', batch.map(p => tableRow(p)).join(''));
-    }
-    const remaining = currentFiltered.length - end;
-    const loadMoreEl = document.getElementById('load-more-container');
-    if (loadMoreEl) {
-      loadMoreEl.innerHTML = remaining > 0 ? `
-        <div class="load-more-bar">
-          <button class="load-more-btn" onclick="Problems.loadMore()">
-            Show more (${remaining} remaining)
-          </button>
-        </div>
+    const tableEl = document.getElementById('problems-table-container');
+    if (tableEl) {
+      tableEl.innerHTML = currentFiltered.length > 0 ? `
+        <table class="problem-table">
+          <thead>
+            <tr>
+              <th class="th-status">Status</th>
+              <th class="th-num" onclick="Problems.sort('id')">#${sortArrow('id')}</th>
+              <th class="th-title" onclick="Problems.sort('title')">Title${sortArrow('title')}</th>
+              <th class="th-cat" onclick="Problems.sort('category')">Category${sortArrow('category')}</th>
+              <th class="th-diff" onclick="Problems.sort('difficulty')">Difficulty${sortArrow('difficulty')}</th>
+              <th class="th-type" onclick="Problems.sort('type')">Type${sortArrow('type')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${currentFiltered.slice(start, end).map(p => tableRow(p)).join('')}
+          </tbody>
+        </table>
       ` : '';
     }
+
+    // Re-render pagination
+    const loadMoreEl = document.getElementById('load-more-container');
+    if (loadMoreEl) {
+      loadMoreEl.innerHTML = totalPages > 1 ? renderPagination(currentPage, totalPages) : '';
+    }
+
+    // Scroll to top of table
+    const main = document.getElementById('problems-main');
+    if (main) main.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  function renderPagination(current, total) {
+    if (total <= 1) return '';
+
+    const pages = [];
+    const range = 2; // Show 2 pages on each side of current
+
+    // Always show page 1
+    pages.push(1);
+
+    // Show ellipsis if needed
+    if (current - range > 2) pages.push('...');
+
+    // Show pages around current
+    for (let i = Math.max(2, current - range); i <= Math.min(total - 1, current + range); i++) {
+      pages.push(i);
+    }
+
+    // Show ellipsis if needed
+    if (current + range < total - 1) pages.push('...');
+
+    // Always show last page
+    if (total > 1) pages.push(total);
+
+    return `
+      <div class="pagination">
+        <button class="pagination__btn pagination__btn--arrow ${current <= 1 ? 'pagination__btn--disabled' : ''}"
+          onclick="Problems.goToPage(${current - 1})" ${current <= 1 ? 'disabled' : ''}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        ${pages.map(p => {
+          if (p === '...') return '<span class="pagination__ellipsis">\u2026</span>';
+          return `<button class="pagination__btn ${p === current ? 'pagination__btn--active' : ''}"
+            onclick="Problems.goToPage(${p})">${p}</button>`;
+        }).join('')}
+        <button class="pagination__btn pagination__btn--arrow ${current >= total ? 'pagination__btn--disabled' : ''}"
+          onclick="Problems.goToPage(${current + 1})" ${current >= total ? 'disabled' : ''}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    `;
+  }
+
+  // Keep loadMore for backwards compat but redirect to goToPage
+  function loadMore() { goToPage(currentPage + 1); }
 
   // ---- Similar Problems Engine ----
   function findSimilar(problem, count) {
@@ -1430,7 +1517,7 @@ const Problems = (() => {
     filterCat, filterDiff, filterType, filterTag, filterCompany,
     filterStatus, clearAllFilters, filterCompanySearch, scrollCompanies,
     toggleTagCloud, toggleStubs, sort, changeSort,
-    onNotesInput, loadMore, randomProblem, markStatus,
+    onNotesInput, loadMore, goToPage, randomProblem, markStatus,
     addDiscussionEntry, deleteDiscussionEntry,
     toggleFavorite, addToCollection, filterFavorites,
     navigateRandom, shareProblem, flagProblem, revealSolution, showToast,

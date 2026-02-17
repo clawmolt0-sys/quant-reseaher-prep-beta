@@ -9,12 +9,8 @@ const Profile = (() => {
     const container = document.getElementById('profile-content');
     if (!container) return;
 
-    // Show loading state immediately
-    container.innerHTML = `
-      <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
-        <div class="nav__auth-loading" style="width:48px;height:48px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite;margin:0 auto var(--space-4)"></div>
-        <p style="color:var(--text-secondary)">Loading profile...</p>
-      </div>`;
+    // Show skeleton loading state immediately
+    container.innerHTML = renderSkeleton();
 
     // Start loading problems data immediately (don't wait for auth)
     const dataPromise = Promise.all([
@@ -22,10 +18,10 @@ const Profile = (() => {
       DataLoader.companies(),
     ]);
 
-    // Wait for auth to settle — 5s max timeout to keep things fast
+    // Wait for auth to settle — 2s max timeout, then render what we have
     await Promise.race([
       Auth.waitForAuth(),
-      new Promise(resolve => setTimeout(resolve, 5000))
+      new Promise(resolve => setTimeout(resolve, 2000))
     ]);
 
     if (!Auth.isLoggedIn()) {
@@ -63,6 +59,37 @@ const Profile = (() => {
     };
 
     render(user, doc, problems, companies || []);
+
+    // Re-render if auth data finishes loading after initial render
+    window.addEventListener('auth-state-changed', () => {
+      if (!Auth.isLoggedIn()) return;
+      const latestUser = Auth.getUser();
+      const latestDoc = Auth.getUserDoc();
+      if (latestUser && latestDoc) {
+        render(latestUser, latestDoc, problems, companies || []);
+      }
+    }, { once: true });
+  }
+
+  // ---- Skeleton Loading State ----
+  function renderSkeleton() {
+    return `
+      <div class="container" style="max-width:1000px">
+        <div class="profile-header" style="opacity:0.5">
+          <div class="profile-header__left">
+            <div style="width:80px;height:80px;border-radius:50%;background:var(--bg-card);animation:pulse 1.5s ease-in-out infinite"></div>
+            <div class="profile-header__info">
+              <div style="width:200px;height:24px;background:var(--bg-card);border-radius:6px;margin-bottom:8px;animation:pulse 1.5s ease-in-out infinite"></div>
+              <div style="width:120px;height:16px;background:var(--bg-card);border-radius:6px;animation:pulse 1.5s ease-in-out infinite"></div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-stats-grid" style="opacity:0.4">
+          <div class="profile-card" style="min-height:200px;animation:pulse 1.5s ease-in-out infinite"></div>
+          <div class="profile-card" style="min-height:200px;animation:pulse 1.5s ease-in-out infinite"></div>
+        </div>
+      </div>
+    `;
   }
 
   function render(user, userDoc, problems, companies) {

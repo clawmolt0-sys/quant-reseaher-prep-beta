@@ -477,12 +477,22 @@ const Auth = (() => {
 
     try {
       const docRef = db.collection('users').doc(currentUser.uid);
+
+      // Update local state IMMEDIATELY so UI reads the new status instantly
+      if (userDoc) {
+        if (!userDoc.progress) userDoc.progress = {};
+        if (status) {
+          userDoc.progress[id] = status;
+        } else {
+          delete userDoc.progress[id];
+        }
+      }
+
+      // Then persist to Firestore
       if (status) {
         await docRef.update({ ['progress.' + id]: status });
-        if (userDoc) userDoc.progress[id] = status;
       } else {
         await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
-        if (userDoc) delete userDoc.progress[id];
       }
 
       // XP + stats tracking
@@ -490,37 +500,49 @@ const Auth = (() => {
         const diff = getProblemDifficulty(id);
         const xpGain = XP_TABLE[diff] || 0;
 
-        // Update stats
+        // Update stats locally first (instant UI update)
         if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-        if (userDoc.stats[diff]) userDoc.stats[diff].solved++;
+        if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
+        userDoc.stats[diff].solved++;
 
-        // Update XP + level
+        // If previously attempted, decrement attempted count
+        if (previousStatus === 'attempted' && userDoc.stats[diff].attempted > 0) {
+          userDoc.stats[diff].attempted--;
+        }
+
+        // Update XP + level locally
         userDoc.xp = (userDoc.xp || 0) + xpGain;
         userDoc.level = calculateLevel(userDoc.xp).level;
 
-        // Update streak
+        // Update streak locally
         updateStreak();
 
-        // Save all updates
-        await docRef.update({
+        // Dispatch event so dropdown XP updates immediately
+        forceAuthUIUpdate();
+
+        // Persist to Firestore (background)
+        docRef.update({
           stats: userDoc.stats,
           xp: userDoc.xp,
           level: userDoc.level,
           streak: userDoc.streak,
-        });
+        }).catch(err => console.error('[Auth] XP update error:', err));
 
         // Check achievements
         if (typeof Achievements !== 'undefined') {
-          const newBadges = Achievements.check(userDoc);
-          for (const badge of newBadges) {
-            await Achievements.award(badge);
-          }
+          try {
+            const newBadges = Achievements.check(userDoc);
+            for (const badge of newBadges) {
+              await Achievements.award(badge);
+            }
+          } catch (e) { console.warn('[Auth] Achievement check error:', e); }
         }
       } else if (status === 'attempted' && !previousStatus) {
         const diff = getProblemDifficulty(id);
         if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-        if (userDoc.stats[diff]) userDoc.stats[diff].attempted++;
-        await docRef.update({ stats: userDoc.stats });
+        if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
+        userDoc.stats[diff].attempted++;
+        docRef.update({ stats: userDoc.stats }).catch(err => console.error('[Auth] Stats update error:', err));
       }
     } catch (err) {
       console.error('[Auth] Error saving status:', err);
@@ -806,6 +828,12 @@ const Auth = (() => {
     document.body.appendChild(overlay);
   }
 
+  // Expose XP lookup for toast messages
+  function getProblemDifficultyXP(id) {
+    const diff = getProblemDifficulty(id);
+    return XP_TABLE[diff] || 0;
+  }
+
   return {
     init, showAuthModal, signInWithGoogle, signInWithGitHub, signOut,
     saveStatus, getStatus, getTier,
@@ -814,5 +842,6 @@ const Auth = (() => {
     toggleFavorite, isFavorited, getFavorites,
     renderLoginButton, renderUserUI,
     toggleDropdown, closeDropdown, showAccount,
+    getProblemDifficultyXP,
   };
 })();

@@ -985,6 +985,64 @@
   position: relative;
 }
 
+/* ============================================
+   PAGINATION (LeetCode-style)
+   ============================================ */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: var(--space-5) 0 var(--space-3);
+}
+.pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.pagination__btn:hover:not(.pagination__btn--disabled):not(.pagination__btn--active) {
+  border-color: var(--border-light);
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+.pagination__btn--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: var(--font-semibold);
+}
+.pagination__btn--arrow {
+  padding: 0;
+  min-width: 36px;
+}
+.pagination__btn--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.pagination__ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 36px;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .nav__user-name {
@@ -1010,5 +1068,10 @@
     right: var(--space-3);
     bottom: var(--space-3);
     left: var(--space-3);
+  }
+  .pagination__btn {
+    min-width: 32px;
+    height: 32px;
+    font-size: var(--text-xs);
   }
 }
