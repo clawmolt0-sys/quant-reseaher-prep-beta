@@ -473,19 +473,35 @@ const Auth = (() => {
     const db = FirebaseConfig.getDb();
     if (!db) return;
 
-    const previousStatus = (userDoc && userDoc.progress) ? userDoc.progress[id] : '';
+    // Wait for userDoc to be loaded if it's still pending
+    if (!userDoc) {
+      console.log('[Auth] userDoc not ready, waiting for auth...');
+      try {
+        await waitForAuth();
+      } catch (e) { /* timeout, continue anyway */ }
+    }
+
+    // If still no userDoc after waiting, create a minimal one in memory
+    if (!userDoc) {
+      console.warn('[Auth] userDoc still null after wait, creating fallback');
+      userDoc = {
+        progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
+        xp: 0, level: 1, streak: { current: 0, longest: 0, lastActivityDate: null },
+        favorites: [], collections: [], achievements: [],
+      };
+    }
+
+    const previousStatus = userDoc.progress ? (userDoc.progress[id] || '') : '';
 
     try {
       const docRef = db.collection('users').doc(currentUser.uid);
 
       // Update local state IMMEDIATELY so UI reads the new status instantly
-      if (userDoc) {
-        if (!userDoc.progress) userDoc.progress = {};
-        if (status) {
-          userDoc.progress[id] = status;
-        } else {
-          delete userDoc.progress[id];
-        }
+      if (!userDoc.progress) userDoc.progress = {};
+      if (status) {
+        userDoc.progress[id] = status;
+      } else {
+        delete userDoc.progress[id];
       }
 
       // Then persist to Firestore
@@ -557,7 +573,12 @@ const Auth = (() => {
     catch (e) { return ''; }
   }
 
+  let problemDiffMap = null; // Map<id, difficulty> for O(1) lookup
+
   function getProblemDifficulty(id) {
+    if (problemDiffMap) {
+      return problemDiffMap.get(parseInt(id)) || 'medium';
+    }
     if (!allProblems) return 'medium';
     const p = allProblems.find(prob => prob.id === parseInt(id));
     return p ? p.difficulty : 'medium';
@@ -565,6 +586,11 @@ const Auth = (() => {
 
   function setProblemData(problems) {
     allProblems = problems;
+    // Build O(1) lookup map
+    problemDiffMap = new Map();
+    for (const p of problems) {
+      problemDiffMap.set(p.id, p.difficulty);
+    }
   }
 
   // ---- Streak Logic ----
@@ -622,9 +648,15 @@ const Auth = (() => {
   // ============================================================
 
   async function toggleFavorite(problemId) {
-    if (!currentUser || !userDoc) return false;
+    if (!currentUser) return false;
     const db = FirebaseConfig.getDb();
     if (!db) return false;
+
+    // Wait for userDoc if not ready yet
+    if (!userDoc) {
+      try { await waitForAuth(); } catch (e) { /* timeout */ }
+    }
+    if (!userDoc) return false;
 
     const docRef = db.collection('users').doc(currentUser.uid);
     const id = parseInt(problemId);
@@ -633,17 +665,25 @@ const Auth = (() => {
       if (!userDoc.favorites) userDoc.favorites = [];
 
       if (userDoc.favorites.includes(id)) {
-        await docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) });
+        // Update local state first for instant UI feedback
         userDoc.favorites = userDoc.favorites.filter(f => f !== id);
+        // Then persist
+        docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) })
+          .catch(err => console.error('[Auth] Unfavorite persist error:', err));
         return false; // unfavorited
       } else {
-        await docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) });
+        // Update local state first
         userDoc.favorites.push(id);
+        // Then persist
+        docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) })
+          .catch(err => console.error('[Auth] Favorite persist error:', err));
 
         // Check bookworm achievement
         if (typeof Achievements !== 'undefined') {
-          const newBadges = Achievements.check(userDoc);
-          for (const badge of newBadges) await Achievements.award(badge);
+          try {
+            const newBadges = Achievements.check(userDoc);
+            for (const badge of newBadges) Achievements.award(badge);
+          } catch (e) { /* ignore */ }
         }
         return true; // favorited
       }

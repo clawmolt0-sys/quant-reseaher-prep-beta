@@ -116,10 +116,10 @@ const Problems = (() => {
       } catch (e) { /* ignore */ }
     }
 
-    // Show toast feedback
+    // Show toast feedback with XP highlight
     if (status === 'solved') {
       const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
-      showToast('\u2705 Solved! +' + xpGain + ' XP');
+      showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
     } else if (status === 'attempted') {
       showToast('\uD83D\uDFE1 Marked as attempted');
     } else {
@@ -135,10 +135,35 @@ const Problems = (() => {
       if (solvedBtn) {
         solvedBtn.className = 'pab__btn ' + (status === 'solved' ? 'pab__btn--active-green' : '');
         solvedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'solved' ? '' : 'solved') + "')");
+        // Trigger pop animation
+        if (status === 'solved') {
+          solvedBtn.classList.add('pab__btn--anim-green');
+          // Show floating +XP text
+          const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
+          const floater = document.createElement('span');
+          floater.className = 'pab__xp-float';
+          floater.textContent = '+' + xpGain + ' XP';
+          solvedBtn.style.position = 'relative';
+          solvedBtn.appendChild(floater);
+          setTimeout(() => { floater.remove(); solvedBtn.classList.remove('pab__btn--anim-green'); }, 1000);
+        }
       }
       if (attemptedBtn) {
         attemptedBtn.className = 'pab__btn ' + (status === 'attempted' ? 'pab__btn--active-yellow' : '');
         attemptedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'attempted' ? '' : 'attempted') + "')");
+        if (status === 'attempted') {
+          attemptedBtn.classList.add('pab__btn--anim-yellow');
+          setTimeout(() => attemptedBtn.classList.remove('pab__btn--anim-yellow'), 500);
+        }
+      }
+
+      // Update level badge in nav bar immediately
+      if (typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
+        const levelBadge = document.querySelector('.nav__user-level-badge');
+        if (levelBadge && Auth.getUserDoc()) {
+          const lvl = Auth.calculateLevel(Auth.getUserDoc().xp || 0);
+          levelBadge.textContent = 'Lv.' + lvl.level;
+        }
       }
     } else {
       updateList(params);
@@ -310,6 +335,25 @@ const Problems = (() => {
       : '<span class="sort-arrow sort-arrow--active">\u2193</span>';
   }
 
+  // ---- Back to list URL (preserves filters) ----
+  function saveListUrl() {
+    try {
+      const params = App.getParams();
+      // Don't save if we're on a detail view
+      if (params.id) return;
+      const url = window.location.search || '';
+      sessionStorage.setItem('qr-list-url', url);
+    } catch (e) { /* ignore */ }
+  }
+
+  function getBackToListUrl() {
+    try {
+      const saved = sessionStorage.getItem('qr-list-url');
+      if (saved) return 'problems.html' + saved;
+    } catch (e) { /* ignore */ }
+    return 'problems.html';
+  }
+
   // ---- O(1) lookup map ----
   let problemMap = new Map(); // id -> problem (built from allProblems)
 
@@ -357,22 +401,14 @@ const Problems = (() => {
         hideStubs = stored === null ? true : stored === 'true';
       } catch (e) { hideStubs = true; }
 
-      // FAST PATH: For list view, load lightweight index (260KB vs 2.7MB)
-      // For detail view, we need full data — but load index first for instant nav
+      // FAST PATH: Load only the index first (245KB, cached in sessionStorage)
+      // Tags and companies load in background — not needed for first render
       const t0 = performance.now();
 
-      // Load index + tags + companies in parallel (all small, all cacheable)
-      const [rawIndex, rawTags, rawCompanies] = await Promise.all([
-        DataLoader.problemsIndex(),
-        DataLoader.tags(),
-        DataLoader.companies(),
-      ]);
-
+      const rawIndex = await DataLoader.problemsIndex();
       const indexData = rawIndex || [];
       console.log('[Problems] Index loaded:', indexData.length, 'problems in', Math.round(performance.now() - t0), 'ms');
       allProblems = indexData.map(normalizeIndex);
-      tagsData = rawTags || { categories: [], types: [] };
-      companiesData = rawCompanies || [];
       buildLookupMap();
 
       // Pass problem data to Auth for XP/difficulty lookups
@@ -401,11 +437,29 @@ const Problems = (() => {
         // Then load full data for statement + solution
         await renderDetailLazy(parseInt(params.id, 10) || params.id);
       } else {
-        // List view: render instantly from index (no full data needed!)
+        // Save list URL so back-navigation from detail preserves filters
+        saveListUrl();
+        // List view: render shell + first page INSTANTLY from index
+        // Use default empty tags/companies — sidebar will update when they load
+        tagsData = tagsData || { categories: [], types: [] };
+        companiesData = companiesData || [];
         renderShell();
         updateList(params);
+
         // Preload full data in background for fast detail navigation
         DataLoader.preloadFullProblems();
+      }
+
+      // Load tags + companies in background, then re-render sidebar
+      if (!tagsData || !tagsData.categories || tagsData.categories.length === 0) {
+        Promise.all([DataLoader.tags(), DataLoader.companies()]).then(([rawTags, rawCompanies]) => {
+          tagsData = rawTags || { categories: [], types: [] };
+          companiesData = rawCompanies || [];
+          // Re-render sidebar with proper category names/icons
+          if (shellRendered && !App.getParams().id) {
+            updateList(App.getParams());
+          }
+        });
       }
 
       // Re-render when auth state changes (tier may upgrade from free to pro)
@@ -418,7 +472,7 @@ const Problems = (() => {
         }
       });
 
-      // Browser back/forward
+      // Browser back/forward — restore filters from URL
       window.addEventListener('popstate', () => {
         const p = App.getParams();
         if (p.id) {
@@ -454,6 +508,13 @@ const Problems = (() => {
         container.innerHTML = '<div class="container"><div class="empty-state"><div class="empty-state__icon">\u2753</div><div class="empty-state__title">Problem not found</div><a href="problems.html" class="btn btn--primary mt-4">Back to Problems</a></div></div>';
       }
       return;
+    }
+
+    // Ensure tags data is loaded for detail view (needed for category meta)
+    if (!tagsData || !tagsData.categories || tagsData.categories.length === 0) {
+      const [rawTags, rawCompanies] = await Promise.all([DataLoader.tags(), DataLoader.companies()]);
+      tagsData = rawTags || { categories: [], types: [] };
+      companiesData = rawCompanies || [];
     }
 
     // If we already have full data (statement/solution), render immediately
@@ -498,7 +559,7 @@ const Problems = (() => {
     container.innerHTML = `
       <div class="container">
         <div class="problem-detail__nav-bar">
-          <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
+          <a href="${getBackToListUrl()}" class="problem-nav-back">\u2190 All Problems</a>
         </div>
         <div class="problem-detail-layout">
           <div class="problem-detail-left">
@@ -572,6 +633,8 @@ const Problems = (() => {
 
   // ---- Update List (called on every filter/sort change) ----
   function updateList(params) {
+    // Save current list URL so back-navigation from detail preserves filters
+    saveListUrl();
     const main = document.getElementById('problems-main');
     if (main) { main.classList.add('problems-main--updating'); }
 
@@ -1229,7 +1292,7 @@ const Problems = (() => {
     container.innerHTML = `
       <div class="container">
         <div class="problem-detail__nav-bar">
-          <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
+          <a href="${getBackToListUrl()}" class="problem-nav-back">\u2190 All Problems</a>
           <div class="problem-detail__nav-arrows">
             ${prev
               ? (isRandom
@@ -1589,12 +1652,12 @@ const Problems = (() => {
   }
 
   // ---- Toast notification ----
-  function showToast(message) {
+  function showToast(message, type) {
     const existing = document.querySelector('.qr-toast');
     if (existing) existing.remove();
 
     const toast = document.createElement('div');
-    toast.className = 'qr-toast';
+    toast.className = 'qr-toast' + (type === 'xp' ? ' qr-toast--xp' : '');
     toast.textContent = message;
     document.body.appendChild(toast);
 
@@ -1627,9 +1690,12 @@ const Problems = (() => {
         heartBtn.title = 'Add to favorites';
         heartBtn.querySelector('svg').setAttribute('fill', 'none');
       }
+      // Trigger heart pop animation
+      heartBtn.classList.add('pab__icon-btn--anim-heart');
+      setTimeout(() => heartBtn.classList.remove('pab__icon-btn--anim-heart'), 500);
     }
 
-    showToast(isFav ? 'Added to favorites' : 'Removed from favorites');
+    showToast(isFav ? '\u2764\uFE0F Added to favorites' : 'Removed from favorites');
   }
 
   // ---- Add to collection ----
@@ -1638,6 +1704,12 @@ const Problems = (() => {
       if (typeof Auth !== 'undefined') Auth.showAuthModal();
       return;
     }
+    // Animate bookmark button
+    const bookmarkBtns = document.querySelectorAll('.pab__icon-btn[title="Save to list"]');
+    bookmarkBtns.forEach(btn => {
+      btn.classList.add('pab__icon-btn--anim-bookmark');
+      setTimeout(() => btn.classList.remove('pab__icon-btn--anim-bookmark'), 500);
+    });
     if (typeof Collections !== 'undefined') {
       Collections.showModal(problemId);
     }

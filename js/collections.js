@@ -13,8 +13,16 @@ const Collections = (() => {
     const db = FirebaseConfig.getDb();
     if (!db) return null;
 
-    const doc = Auth.getUserDoc();
-    if (!doc) return null;
+    // Wait for user doc if it's not ready yet
+    let doc = Auth.getUserDoc();
+    if (!doc) {
+      try { await Auth.waitForAuth(); } catch (e) { /* timeout */ }
+      doc = Auth.getUserDoc();
+    }
+    if (!doc) {
+      console.error('[Collections] Cannot create — user doc not available');
+      return null;
+    }
 
     const newCollection = {
       id: 'col-' + Date.now(),
@@ -30,8 +38,10 @@ const Collections = (() => {
 
       // Check organizer achievement
       if (typeof Achievements !== 'undefined') {
-        const newBadges = Achievements.check(doc);
-        for (const badge of newBadges) await Achievements.award(badge);
+        try {
+          const newBadges = Achievements.check(doc);
+          for (const badge of newBadges) Achievements.award(badge);
+        } catch (e) { /* ignore */ }
       }
 
       return newCollection;
@@ -62,7 +72,8 @@ const Collections = (() => {
     const db = FirebaseConfig.getDb();
     if (!db) return;
 
-    const doc = Auth.getUserDoc();
+    let doc = Auth.getUserDoc();
+    if (!doc) { try { await Auth.waitForAuth(); } catch (e) {} doc = Auth.getUserDoc(); }
     if (!doc || !doc.collections) return;
 
     const col = doc.collections.find(c => c.id === collectionId);
@@ -84,7 +95,8 @@ const Collections = (() => {
     const db = FirebaseConfig.getDb();
     if (!db) return;
 
-    const doc = Auth.getUserDoc();
+    let doc = Auth.getUserDoc();
+    if (!doc) { try { await Auth.waitForAuth(); } catch (e) {} doc = Auth.getUserDoc(); }
     if (!doc || !doc.collections) return;
 
     const col = doc.collections.find(c => c.id === collectionId);
@@ -101,9 +113,14 @@ const Collections = (() => {
 
   let currentModalProblemId = null;
 
-  function showModal(problemId) {
+  async function showModal(problemId) {
     const existing = document.querySelector('.collections-modal-overlay');
     if (existing) existing.remove();
+
+    // Wait for userDoc if not ready
+    if (!Auth.getUserDoc()) {
+      try { await Auth.waitForAuth(); } catch (e) { /* timeout */ }
+    }
 
     currentModalProblemId = parseInt(problemId);
     const collections = getAll();

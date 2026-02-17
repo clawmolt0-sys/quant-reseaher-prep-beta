@@ -12,9 +12,9 @@ const Profile = (() => {
     // Show skeleton loading state immediately
     container.innerHTML = renderSkeleton();
 
-    // Start loading problems data immediately (don't wait for auth)
+    // Start loading problems INDEX (245KB, fast) instead of full data (2.7MB)
     const dataPromise = Promise.all([
-      DataLoader.problems(),
+      DataLoader.problemsIndex(),
       DataLoader.companies(),
     ]);
 
@@ -36,7 +36,19 @@ const Profile = (() => {
     }
 
     // Data should already be loaded (started in parallel with auth wait)
-    const [problems, companies] = await dataPromise;
+    const [rawProblems, companies] = await dataPromise;
+
+    // Normalize index data (short keys → full keys)
+    const problems = (rawProblems || []).map(p => ({
+      id: p.id,
+      title: p.t || p.title || '',
+      category: p.c || p.category || 'probability',
+      difficulty: p.d || p.difficulty || 'medium',
+      type: p.y || p.type || 'calculation',
+      status: p.s || p.status || 'complete',
+      companies: p.co || p.companies || [],
+      tags: p.tg || p.tags || [],
+    }));
 
     const user = Auth.getUser();
     const userDoc = Auth.getUserDoc();
@@ -62,7 +74,10 @@ const Profile = (() => {
 
     // Re-render if auth data finishes loading after initial render
     window.addEventListener('auth-state-changed', () => {
-      if (!Auth.isLoggedIn()) return;
+      if (!Auth.isLoggedIn()) {
+        init(); // re-run to show sign-in screen
+        return;
+      }
       const latestUser = Auth.getUser();
       const latestDoc = Auth.getUserDoc();
       if (latestUser && latestDoc) {
@@ -258,12 +273,13 @@ const Profile = (() => {
           ${renderSkills(skills)}
         </div>
 
-        <!-- Tabs: Solved, Attempted, Favorites -->
+        <!-- Tabs: Solved, Attempted, Favorites, Collections -->
         <div class="profile-card profile-card--wide">
           <div class="profile-tabs">
             <button class="profile-tab profile-tab--active" onclick="Profile.switchTab('recent')">Solved (${totalSolved})</button>
             <button class="profile-tab" onclick="Profile.switchTab('attempted')">Attempted (${totalAttempted})</button>
             <button class="profile-tab" onclick="Profile.switchTab('favorites')">Favorites (${favorites.length})</button>
+            <button class="profile-tab" onclick="Profile.switchTab('collections')">Saved Lists (${(userDoc.collections || []).length})</button>
           </div>
           <div id="profile-tab-content">
             ${renderRecentTab(recentSolved)}
@@ -545,6 +561,41 @@ const Profile = (() => {
     `;
   }
 
+  // ---- Render: Collections Tab ----
+  function renderCollectionsTab(problems) {
+    const userDoc = Auth.getUserDoc();
+    const collections = userDoc?.collections || [];
+    if (collections.length === 0) {
+      return '<div style="color:var(--text-muted);padding:var(--space-4);text-align:center">No saved lists yet. Use the bookmark icon on problems to create lists!</div>';
+    }
+    return `
+      <div class="collections-list">
+        ${collections.map(col => {
+          const colProblems = col.problemIds.map(id => problems.find(p => p.id === id)).filter(Boolean);
+          return `
+            <div class="collection-card">
+              <div class="collection-card__header">
+                <span class="collection-card__name">${col.name}</span>
+                <span class="collection-card__count">${col.problemIds.length} problems</span>
+              </div>
+              ${colProblems.length > 0 ? `
+                <div class="recent-list">
+                  ${colProblems.slice(0, 5).map(p => `
+                    <a class="recent-item" href="problems.html?id=${p.id}">
+                      <span class="badge badge--${p.difficulty}" style="font-size:10px">${p.difficulty}</span>
+                      <span class="recent-item__title">${p.title}</span>
+                    </a>
+                  `).join('')}
+                  ${colProblems.length > 5 ? `<div style="padding:var(--space-2);font-size:var(--text-xs);color:var(--text-muted);text-align:center">+${colProblems.length - 5} more</div>` : ''}
+                </div>
+              ` : '<div style="padding:var(--space-3);color:var(--text-muted);font-size:var(--text-sm)">Empty list</div>'}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
   // ---- Tab Switching ----
   let cachedProblems = null;
   async function switchTab(tab) {
@@ -555,7 +606,17 @@ const Profile = (() => {
     const content = document.getElementById('profile-tab-content');
     if (!content) return;
 
-    if (!cachedProblems) cachedProblems = await DataLoader.problems();
+    // Use index data (fast) instead of full data
+    if (!cachedProblems) {
+      const raw = await DataLoader.problemsIndex();
+      cachedProblems = (raw || []).map(p => ({
+        id: p.id,
+        title: p.t || p.title || '',
+        category: p.c || p.category || 'probability',
+        difficulty: p.d || p.difficulty || 'medium',
+        type: p.y || p.type || 'calculation',
+      }));
+    }
     const userDoc = Auth.getUserDoc();
 
     if (tab === 'recent') {
@@ -565,6 +626,8 @@ const Profile = (() => {
       content.innerHTML = renderAttemptedTab(cachedProblems || []);
     } else if (tab === 'favorites') {
       content.innerHTML = renderFavoritesTab(cachedProblems || []);
+    } else if (tab === 'collections') {
+      content.innerHTML = renderCollectionsTab(cachedProblems || []);
     }
   }
 
