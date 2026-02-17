@@ -24,7 +24,8 @@ const DataLoader = (() => {
     lectures:  () => load('lectures.json'),
     labs:      () => load('labs.json'),
     topics:    () => load('topics.json'),
-    companies: () => load('companies.json'),
-    tags:      () => load('tags.json'),
+    companies:     () => load('companies.json'),
+    tags:          () => load('tags.json'),
+    featuredLists: () => load('featured-lists.json'),
   };
 })();

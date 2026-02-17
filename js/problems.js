@@ -15,6 +15,8 @@ const Problems = (() => {
   let currentPage = 1;
   let shellRendered = false;
   let hideStubs = false;
+  let featuredListData = null; // For ?list= param
+  let activeListId = null;
 
   // ---- Helpers ----
   function ensureArray(val) {
@@ -284,11 +286,35 @@ const Problems = (() => {
       tagsData = (await DataLoader.tags()) || { categories: [], types: [] };
       companiesData = (await DataLoader.companies()) || [];
 
+      // Pass problem data to Auth for XP/difficulty lookups
+      if (typeof Auth !== 'undefined' && Auth.setProblemData) {
+        Auth.setProblemData(allProblems);
+      }
+
       // Load hide-stubs preference
       try { hideStubs = localStorage.getItem('qr-prep-hide-stubs') === 'true'; }
       catch (e) { hideStubs = false; }
 
       const params = App.getParams();
+
+      // Support ?list=<id> for featured lists (from Explore page)
+      if (params.list) {
+        activeListId = params.list;
+        try {
+          featuredListData = await DataLoader.featuredLists();
+          if (featuredListData) {
+            const list = featuredListData.featured.find(l => l.id === params.list);
+            if (list && list.problemIds) {
+              const idSet = new Set(list.problemIds);
+              allProblems = allProblems.filter(p => idSet.has(p.id));
+              console.log('[Problems] Filtered to featured list:', params.list, '—', allProblems.length, 'problems');
+            }
+          }
+        } catch (e) {
+          console.warn('[Problems] Could not load featured list:', e);
+        }
+      }
+
       if (params.id) {
         renderDetail(parseInt(params.id, 10) || params.id);
       } else {
@@ -366,11 +392,18 @@ const Problems = (() => {
       const activeType = params.type || null;
       const activeTag = params.tag || null;
       const activeStatus = params.status || null;
+      const activeFilter = params.filter || null;
       const searchQ = params.q || '';
-      const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || searchQ;
+      const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeFilter || searchQ;
 
       // Base set (optionally hide stubs)
       let base = hideStubs ? allProblems.filter(p => p.status !== 'incomplete') : allProblems;
+
+      // Favorites filter
+      if (activeFilter === 'favorites' && typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
+        const favs = Auth.getFavorites();
+        base = base.filter(p => favs.includes(p.id));
+      }
 
       // Compute cross-filter counts from base
       const counts = computeFilterCounts(base, params);
@@ -468,18 +501,36 @@ const Problems = (() => {
               <span class="sidebar__cat-count">${counts.statusCounts.unsolved}</span>
             </button>
           </div>
+
+          ${typeof Auth !== 'undefined' && Auth.isLoggedIn() ? `
+            <div class="sidebar__divider"></div>
+            <div class="sidebar__title">My Lists</div>
+            <div class="sidebar__categories">
+              <button class="sidebar__cat-btn ${activeFilter === 'favorites' ? 'sidebar__cat-btn--active' : ''}"
+                onclick="Problems.filterFavorites()">
+                <span>\u2764\uFE0F Favorites</span>
+                <span class="sidebar__cat-count">${Auth.getFavorites().length}</span>
+              </button>
+            </div>
+          ` : ''}
         `;
       }
 
       // ---- Update header ----
       let headerText = 'All Problems';
+      if (activeListId && featuredListData) {
+        const list = featuredListData.featured.find(l => l.id === activeListId);
+        if (list) headerText = list.title;
+      }
       if (activeCat) { const cm = getCatMeta(activeCat); headerText = cm.icon + ' ' + cm.name; }
       if (activeTag) { headerText = 'Tag: ' + formatTag(activeTag); }
 
       const headerEl = document.getElementById('problems-header');
       if (headerEl) {
+        const listBreadcrumb = activeListId ? `<a href="explore.html" style="font-size:var(--text-xs);color:var(--accent);text-decoration:none;margin-bottom:var(--space-1);display:inline-block">\u2190 Back to Explore</a>` : '';
         headerEl.innerHTML = `
           <div class="problems-header">
+            ${listBreadcrumb}
             <div class="problems-header__top">
               <h1 class="problems-header__title">${headerText}</h1>
               <div class="problems-header__actions">
@@ -911,6 +962,15 @@ const Problems = (() => {
                   \u{1F7E1} ${currentStatus === 'attempted' ? 'Attempted' : 'Mark Attempted'}
                 </button>
               </div>
+              <div class="problem-actions">
+                <button class="action-btn ${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? 'action-btn--active' : ''}"
+                  onclick="Problems.toggleFavorite(${problem.id})" title="Favorite">
+                  ${typeof Auth !== 'undefined' && Auth.isFavorited(problem.id) ? '\u2764\uFE0F' : '\u{1F90D}'} Favorite
+                </button>
+                <button class="action-btn" onclick="Problems.addToCollection(${problem.id})" title="Add to Collection">
+                  \uD83D\uDCC1 Add to List
+                </button>
+              </div>
             </div>
 
             <div class="problem-detail__statement-card">
@@ -1026,9 +1086,11 @@ const Problems = (() => {
   }
 
   function clearAllFilters() {
-    App.setParams({});
+    // Preserve list param if active (from Explore page)
+    const newParams = activeListId ? { list: activeListId } : {};
+    App.setParams(newParams);
     if (!shellRendered) { renderShell(); }
-    updateList({});
+    updateList(newParams);
   }
 
   // ---- Company bar helpers ----
@@ -1110,6 +1172,37 @@ const Problems = (() => {
     updateList(App.getParams());
   }
 
+  // ---- Favorite toggle ----
+  async function toggleFavorite(problemId) {
+    if (typeof Auth === 'undefined' || !Auth.isLoggedIn()) {
+      if (typeof Auth !== 'undefined') Auth.showAuthModal();
+      return;
+    }
+    await Auth.toggleFavorite(problemId);
+    // Re-render detail to update button state
+    renderDetail(problemId);
+  }
+
+  // ---- Add to collection ----
+  function addToCollection(problemId) {
+    if (typeof Auth === 'undefined' || !Auth.isLoggedIn()) {
+      if (typeof Auth !== 'undefined') Auth.showAuthModal();
+      return;
+    }
+    if (typeof Collections !== 'undefined') {
+      Collections.showModal(problemId);
+    }
+  }
+
+  // ---- Favorites filter ----
+  function filterFavorites() {
+    const p = App.getParams();
+    p.filter = p.filter === 'favorites' ? null : 'favorites';
+    App.setParams(p);
+    if (!shellRendered) renderShell();
+    updateList(p);
+  }
+
   return {
     init, toggleSolution, toggleHint, toggleIntuition,
     filterCat, filterDiff, filterType, filterTag, filterCompany,
@@ -1117,5 +1210,6 @@ const Problems = (() => {
     toggleTagCloud, toggleStubs, sort, changeSort,
     onNotesInput, loadMore, randomProblem, markStatus,
     addDiscussionEntry, deleteDiscussionEntry,
+    toggleFavorite, addToCollection, filterFavorites,
   };
 })();

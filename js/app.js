@@ -93,6 +93,10 @@ const App = (() => {
   // Init
   document.addEventListener('DOMContentLoaded', () => {
     initNav();
+    // Initialize Theme if available
+    if (typeof Theme !== 'undefined') {
+      Theme.init();
+    }
     // Initialize Auth if available
     if (typeof Auth !== 'undefined') {
       Auth.init();
