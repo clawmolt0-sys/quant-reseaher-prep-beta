@@ -1,145 +1,1374 @@
 [
     {
-        "id":  "citadel",
-        "name":  "Citadel / Citadel Securities",
-        "type":  "Multi-Strategy Hedge Fund \u0026 Market Maker",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Developer"
-                  ]
+        "id": "citadel",
+        "name": "Citadel / Citadel Securities",
+        "type": "Multi-Strategy Hedge Fund & Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
     },
     {
-        "id":  "two-sigma",
-        "name":  "Two Sigma",
-        "type":  "Systematic Hedge Fund",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Developer",
-                      "Modeling Associate"
-                  ]
+        "id": "two-sigma",
+        "name": "Two Sigma",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer",
+            "Modeling Associate"
+        ]
     },
     {
-        "id":  "de-shaw",
-        "name":  "D.E. Shaw",
-        "type":  "Systematic Hedge Fund",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Analyst"
-                  ]
+        "id": "de-shaw",
+        "name": "D.E. Shaw",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
     },
     {
-        "id":  "jump-trading",
-        "name":  "Jump Trading",
-        "type":  "Proprietary Trading Firm",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "jump-trading",
+        "name": "Jump Trading",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "drw",
-        "name":  "DRW",
-        "type":  "Proprietary Trading Firm",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "drw",
+        "name": "DRW",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "hrt",
-        "name":  "Hudson River Trading",
-        "type":  "Algorithmic Market Maker",
-        "roles":  [
-                      "Quant Researcher",
-                      "Algorithm Developer"
-                  ]
+        "id": "hrt",
+        "name": "Hudson River Trading",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Algorithm Developer"
+        ]
     },
     {
-        "id":  "jane-street",
-        "name":  "Jane Street",
-        "type":  "Proprietary Trading Firm",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "jane-street",
+        "name": "Jane Street",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "optiver",
-        "name":  "Optiver",
-        "type":  "Options Market Maker",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "optiver",
+        "name": "Optiver",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "sig",
-        "name":  "Susquehanna (SIG)",
-        "type":  "Options Trading \u0026 Market Making",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "sig",
+        "name": "Susquehanna (SIG)",
+        "type": "Options Trading & Market Making",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "squarepoint",
-        "name":  "Squarepoint Capital",
-        "type":  "Systematic Hedge Fund",
-        "roles":  [
-                      "Quant Researcher"
-                  ]
+        "id": "squarepoint",
+        "name": "Squarepoint Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher"
+        ]
     },
     {
-        "id":  "tower-research",
-        "name":  "Tower Research Capital",
-        "type":  "Proprietary Trading Firm",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "tower-research",
+        "name": "Tower Research Capital",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
     },
     {
-        "id":  "millennium",
-        "name":  "Millennium Management",
-        "type":  "Multi-Strategy Hedge Fund",
-        "roles":  [
-                      "Quant Researcher",
-                      "Portfolio Manager"
-                  ]
+        "id": "millennium",
+        "name": "Millennium Management",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
     },
     {
-        "id":  "point72",
-        "name":  "Point72 / Cubist",
-        "type":  "Multi-Strategy Hedge Fund",
-        "roles":  [
-                      "Quant Researcher",
-                      "Data Scientist"
-                  ]
+        "id": "point72",
+        "name": "Point72 / Cubist",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist"
+        ]
     },
     {
-        "id":  "aqr",
-        "name":  "AQR Capital",
-        "type":  "Systematic Hedge Fund",
-        "roles":  [
-                      "Quant Researcher",
-                      "Associate"
-                  ]
+        "id": "aqr",
+        "name": "AQR Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Associate"
+        ]
     },
     {
-        "id":  "renaissance",
-        "name":  "Renaissance Technologies",
-        "type":  "Systematic Hedge Fund",
-        "roles":  [
-                      "Research Scientist"
-                  ]
+        "id": "renaissance",
+        "name": "Renaissance Technologies",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Research Scientist"
+        ]
     },
     {
-        "id":  "five-rings",
-        "name":  "Five Rings Capital",
-        "type":  "Proprietary Trading Firm",
-        "roles":  [
-                      "Quant Researcher",
-                      "Quant Trader"
-                  ]
+        "id": "five-rings",
+        "name": "Five Rings Capital",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "3red-partners",
+        "name": "3Red Partners",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "akuna-capital",
+        "name": "Akuna Capital",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "allston-trading",
+        "name": "Allston Trading",
+        "type": "High-Frequency Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "ansatz-capital",
+        "name": "Ansatz Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "aquatic-capital",
+        "name": "Aquatic Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "arrowstreet-capital",
+        "name": "Arrowstreet Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "aspect-capital",
+        "name": "Aspect Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "balyasny",
+        "name": "Balyasny Asset Management",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "belvedere-trading",
+        "name": "Belvedere Trading",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "beryl-capital",
+        "name": "Beryl Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "bluecrest-capital",
+        "name": "BlueCrest Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "bracebridge-capital",
+        "name": "Bracebridge Capital",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "bridgewater",
+        "name": "Bridgewater Associates",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Investment Engineer"
+        ]
+    },
+    {
+        "id": "capula",
+        "name": "Capula Investment",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "castleton-commodities",
+        "name": "Castleton Commodities",
+        "type": "Commodities Trading",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "cfm",
+        "name": "CFM (Capital Fund Management)",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Research Scientist"
+        ]
+    },
+    {
+        "id": "chatham-financial",
+        "name": "Chatham Financial",
+        "type": "Fixed Income Hedge Fund",
+        "roles": [
+            "Quant Analyst",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "ctc",
+        "name": "Chicago Trading Company (CTC)",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "cqs",
+        "name": "CQS",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "eladian-partners",
+        "name": "Eladian Partners",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "epoch-capital",
+        "name": "Epoch Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "ergoteles",
+        "name": "Ergoteles",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "exoduspoint",
+        "name": "ExodusPoint Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "falconx",
+        "name": "FalconX",
+        "type": "Crypto Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "flow-traders",
+        "name": "Flow Traders",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "garda-capital",
+        "name": "Garda Capital Partners",
+        "type": "Fixed Income Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "gelber-group",
+        "name": "Gelber Group",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "geneva-trading",
+        "name": "Geneva Trading",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "g-research",
+        "name": "G-Research",
+        "type": "Quantitative Research Firm",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist",
+            "Research Scientist"
+        ]
+    },
+    {
+        "id": "graham-capital",
+        "name": "Graham Capital Management",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "group-one-trading",
+        "name": "Group One Trading",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "gsa-capital",
+        "name": "GSA Capital",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "gts",
+        "name": "GTS",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "headlands-technologies",
+        "name": "Headlands Technologies",
+        "type": "High-Frequency Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "heidmar",
+        "name": "Heidmar",
+        "type": "Commodities Trading",
+        "roles": [
+            "Quant Analyst",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "holocene-advisors",
+        "name": "Holocene Advisors",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "hudson-bay-capital",
+        "name": "Hudson Bay Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "hull-trading",
+        "name": "Hull Trading (Historical)",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "imc-trading",
+        "name": "IMC Trading",
+        "type": "Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "istra-capital",
+        "name": "Istra Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "kershner-trading",
+        "name": "Kershner Trading Group",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "keyrock",
+        "name": "Keyrock",
+        "type": "Crypto Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "king-street-capital",
+        "name": "King Street Capital Management",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "laidlaw",
+        "name": "Laidlaw & Company",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "lmr-partners",
+        "name": "LMR Partners",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "mako-global",
+        "name": "Mako Global Investments",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "man-group",
+        "name": "Man Group / AHL",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager",
+            "Data Scientist"
+        ]
+    },
+    {
+        "id": "maple-leaf-capital",
+        "name": "Maple Leaf Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "maq-capital",
+        "name": "Maq Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "marshall-wace",
+        "name": "Marshall Wace",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "maven-securities",
+        "name": "Maven Securities",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "merrill-lynch-quant",
+        "name": "Merrill Lynch (Quant Division)",
+        "type": "Quantitative Research Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "mint-capital",
+        "name": "Mint Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "moore-capital",
+        "name": "Moore Capital Management",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "nomura-quant",
+        "name": "Nomura (Quant Division)",
+        "type": "Quantitative Research Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "numeric-investors",
+        "name": "Numeric Investors",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "old-mission-capital",
+        "name": "Old Mission Capital",
+        "type": "Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "orbis",
+        "name": "Orbis Investment Management",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "paloma-partners",
+        "name": "Paloma Partners",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "pdt-partners",
+        "name": "PDT Partners",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "peak6",
+        "name": "Peak6 Investments",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "pimco-quant",
+        "name": "Pimco (Quant)",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "pinpoint",
+        "name": "Pinpoint Asset Management",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "prelude-capital",
+        "name": "Prelude Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "qrt",
+        "name": "Qube Research & Technologies (QRT)",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "quantlab",
+        "name": "Quantlab Financial",
+        "type": "High-Frequency Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "quantres",
+        "name": "QuantRes",
+        "type": "Quantitative Research Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "radix-trading",
+        "name": "Radix Trading",
+        "type": "High-Frequency Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "rokos-capital",
+        "name": "Rokos Capital",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "rotella-capital",
+        "name": "Rotella Capital Management",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "schonfeld",
+        "name": "Schonfeld Strategic Advisors",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "segantii",
+        "name": "Segantii Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "seven-eight-capital",
+        "name": "Seven Eight Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "simplex-trading",
+        "name": "Simplex Trading",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "smead-capital",
+        "name": "Smead Capital",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "snow-lake-capital",
+        "name": "Snow Lake Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "spring-capital",
+        "name": "Spring Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "srs-investment",
+        "name": "SRS Investment Management",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "tgs-management",
+        "name": "TGS Management",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "tibra-capital",
+        "name": "Tibra Capital",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "tivon-capital",
+        "name": "Tivon Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "tourbillon-capital",
+        "name": "Tourbillon Capital Partners",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "tradebot",
+        "name": "Tradebot Systems",
+        "type": "High-Frequency Trading Firm",
+        "roles": [
+            "Quant Developer",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "transmarket",
+        "name": "TransMarket Group",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "tudor",
+        "name": "Tudor Investment Corp",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "vatic-investments",
+        "name": "Vatic Investments",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "verition",
+        "name": "Verition Fund Management",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "virtu-financial",
+        "name": "Virtu Financial",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "vise-technology",
+        "name": "Vise Technology",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist"
+        ]
+    },
+    {
+        "id": "voleon",
+        "name": "Voleon Group",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Research Scientist"
+        ]
+    },
+    {
+        "id": "voloridge",
+        "name": "Voloridge Investment Management",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "walleye-capital",
+        "name": "Walleye Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "weiss-multi-strategy",
+        "name": "Weiss Multi-Strategy",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "winton",
+        "name": "Winton Group",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Research Scientist",
+            "Data Scientist"
+        ]
+    },
+    {
+        "id": "wolverine-trading",
+        "name": "Wolverine Trading",
+        "type": "Options Market Maker",
+        "roles": [
+            "Quant Trader",
+            "Quant Researcher"
+        ]
+    },
+    {
+        "id": "worldquant",
+        "name": "WorldQuant",
+        "type": "Systematic Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "xr-trading",
+        "name": "XR Trading",
+        "type": "Proprietary Trading Firm",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "xtx-markets",
+        "name": "XTX Markets",
+        "type": "Algorithmic Market Maker",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "z-capital",
+        "name": "Z Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "brevan-howard",
+        "name": "Brevan Howard",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "coatue",
+        "name": "Coatue Management",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist"
+        ]
+    },
+    {
+        "id": "davidson-kempner",
+        "name": "Davidson Kempner",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "elliott-management",
+        "name": "Elliott Management",
+        "type": "Activist Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "farallon-capital",
+        "name": "Farallon Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "fortress",
+        "name": "Fortress Investment Group",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "harbour-capital",
+        "name": "Harbour Capital",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "hbk-capital",
+        "name": "HBK Capital Management",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "magnetar",
+        "name": "Magnetar Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "mkp-capital",
+        "name": "MKP Capital",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "sculptor-capital",
+        "name": "Sculptor Capital (formerly Och-Ziff)",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "pacific-alternative",
+        "name": "Pacific Alternative",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "pharo-management",
+        "name": "Pharo Management",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "platinum-asset",
+        "name": "Platinum Asset Management",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "qvt-financial",
+        "name": "QVT Financial",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "saba-capital",
+        "name": "Saba Capital",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "third-point",
+        "name": "Third Point",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "tiger-global",
+        "name": "Tiger Global Management",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Data Scientist"
+        ]
+    },
+    {
+        "id": "valueact",
+        "name": "ValueAct Capital",
+        "type": "Activist Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "viking-global",
+        "name": "Viking Global Investors",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "advent-capital",
+        "name": "Advent Capital Management",
+        "type": "Fixed Income Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "alphaville-capital",
+        "name": "AlphaVille Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "baupost",
+        "name": "Baupost Group",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "capital-group",
+        "name": "Capital Group",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "capstone",
+        "name": "Capstone Investment Advisors",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Trader"
+        ]
+    },
+    {
+        "id": "cerberus",
+        "name": "Cerberus Capital",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "clayton-dubilier",
+        "name": "Clayton Dubilier & Rice",
+        "type": "Asset Management",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "goldentree",
+        "name": "GoldenTree Asset Management",
+        "type": "Fixed Income Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "gotham-capital",
+        "name": "Gotham Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "greenlight-capital",
+        "name": "Greenlight Capital",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "icahn-enterprises",
+        "name": "Icahn Enterprises",
+        "type": "Activist Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "lone-pine-capital",
+        "name": "Lone Pine Capital",
+        "type": "Quantitative Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "pershing-square",
+        "name": "Pershing Square Capital",
+        "type": "Activist Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "sac-capital",
+        "name": "SAC Capital (now Point72)",
+        "type": "Multi-Strategy Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "soros-fund",
+        "name": "Soros Fund Management",
+        "type": "Global Macro Fund",
+        "roles": [
+            "Quant Researcher",
+            "Portfolio Manager"
+        ]
+    },
+    {
+        "id": "starboard-value",
+        "name": "Starboard Value",
+        "type": "Activist Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
+    },
+    {
+        "id": "york-capital",
+        "name": "York Capital Management",
+        "type": "Event-Driven Hedge Fund",
+        "roles": [
+            "Quant Researcher",
+            "Quant Analyst"
+        ]
     }
 ]

@@ -22,8 +22,35 @@ const Auth = (() => {
     return ADMIN_EMAILS.includes((email || '').toLowerCase());
   }
 
+  // ---- Auth state change handler (extracted to avoid duplication) ----
+  async function handleAuthStateChanged(user) {
+    if (user) {
+      currentUser = user;
+      console.log('[Auth] Signed in as', user.displayName);
+      await loadUserDoc(user);
+      if (!migrated) {
+        await migrateLocalStorage(user.uid);
+        migrated = true;
+      }
+      // Sync stats for existing users who don't have the new fields
+      await syncStatsOnLogin();
+      renderUserUI();
+    } else {
+      currentUser = null;
+      userDoc = null;
+      migrated = false;
+      renderLoginButton();
+    }
+  }
+
   // ---- Init ----
   function init() {
+    // Immediately show a placeholder to prevent empty container flash
+    const container = document.getElementById('auth-container');
+    if (container && !container.innerHTML.trim()) {
+      container.innerHTML = '<div class="nav__auth-loading" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite"></div>';
+    }
+
     FirebaseConfig.init();
 
     if (!FirebaseConfig.isConfigured()) {
@@ -33,33 +60,27 @@ const Auth = (() => {
     }
 
     if (!FirebaseConfig.isInitialized()) {
-      console.warn('[Auth] Firebase failed to initialize');
-      renderLoginButton();
+      console.warn('[Auth] Firebase not initialized yet, retrying...');
+      // Retry after a short delay in case scripts are still loading
+      setTimeout(() => {
+        FirebaseConfig.init();
+        if (FirebaseConfig.isInitialized()) {
+          const auth = FirebaseConfig.getAuth();
+          if (auth) {
+            auth.onAuthStateChanged(handleAuthStateChanged);
+          }
+        } else {
+          console.warn('[Auth] Firebase failed to initialize after retry');
+          renderLoginButton();
+        }
+      }, 1000);
       return;
     }
 
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
-    auth.onAuthStateChanged(async (user) => {
-      if (user) {
-        currentUser = user;
-        console.log('[Auth] Signed in as', user.displayName);
-        await loadUserDoc(user);
-        if (!migrated) {
-          await migrateLocalStorage(user.uid);
-          migrated = true;
-        }
-        // Sync stats for existing users who don't have the new fields
-        await syncStatsOnLogin();
-        renderUserUI();
-      } else {
-        currentUser = null;
-        userDoc = null;
-        migrated = false;
-        renderLoginButton();
-      }
-    });
+    auth.onAuthStateChanged(handleAuthStateChanged);
   }
 
   // ============================================================
@@ -646,171 +667,7 @@ const Auth = (() => {
 
   async function showAccount() {
     closeDropdown();
-    if (!currentUser || !userDoc) return;
-
-    const problems = allProblems || (await DataLoader.problems()) || [];
-    const progress = userDoc.progress || {};
-    const stats = userDoc.stats || { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-    const xp = userDoc.xp || 0;
-    const levelInfo = calculateLevel(xp);
-    const streak = userDoc.streak || { current: 0, longest: 0 };
-    const tier = getTier();
-    const joinDate = userDoc.joinDate
-      ? (userDoc.joinDate.toDate ? userDoc.joinDate.toDate().toLocaleDateString() : new Date(userDoc.joinDate).toLocaleDateString())
-      : 'Recently';
-
-    // Count totals per difficulty
-    const totalEasy = problems.filter(p => p.difficulty === 'easy').length;
-    const totalMedium = problems.filter(p => p.difficulty === 'medium').length;
-    const totalHard = problems.filter(p => p.difficulty === 'hard').length;
-
-    const totalSolved = (stats.easy?.solved || 0) + (stats.medium?.solved || 0) + (stats.hard?.solved || 0);
-    const totalAttempted = (stats.easy?.attempted || 0) + (stats.medium?.attempted || 0) + (stats.hard?.attempted || 0);
-
-    // Progress ring helper
-    function ring(solved, total, color, label) {
-      const r = 32, c = 2 * Math.PI * r;
-      const pct = total > 0 ? solved / total : 0;
-      const offset = c * (1 - pct);
-      return `
-        <div class="difficulty-stat">
-          <svg class="progress-ring" viewBox="0 0 80 80">
-            <circle class="progress-ring__bg" cx="40" cy="40" r="${r}" fill="none" stroke="var(--border-color)" stroke-width="6"/>
-            <circle class="progress-ring__fill" cx="40" cy="40" r="${r}" fill="none" stroke="${color}" stroke-width="6"
-              stroke-dasharray="${c}" stroke-dashoffset="${offset}" stroke-linecap="round"
-              transform="rotate(-90 40 40)" style="transition:stroke-dashoffset 0.8s ease"/>
-            <text x="40" y="38" text-anchor="middle" fill="var(--text-bright)" font-size="14" font-weight="700">${solved}</text>
-            <text x="40" y="52" text-anchor="middle" fill="var(--text-muted)" font-size="9">/ ${total}</text>
-          </svg>
-          <div class="difficulty-stat__label" style="color:${color}">${label}</div>
-        </div>
-      `;
-    }
-
-    // Recent activity (last 5 solved)
-    const recentKeys = Object.entries(progress)
-      .filter(([, v]) => v === 'solved')
-      .slice(-5)
-      .reverse();
-    const recentHTML = recentKeys.length > 0
-      ? recentKeys.map(([id]) => {
-          const p = problems.find(pr => pr.id === parseInt(id));
-          return `<div class="profile-activity__item">
-            <span class="profile-activity__dot" style="background:var(--color-${p ? p.difficulty : 'medium'})"></span>
-            <span class="profile-activity__title">${p ? p.title : 'Problem #' + id}</span>
-          </div>`;
-        }).join('')
-      : '<div style="color:var(--text-muted);font-size:var(--text-xs)">No problems solved yet. Start practicing!</div>';
-
-    // Achievements preview
-    const achievementsHTML = typeof Achievements !== 'undefined'
-      ? (() => {
-          const all = Achievements.getAll(userDoc);
-          const unlocked = all.filter(a => a.unlocked);
-          const preview = unlocked.slice(0, 6);
-          return preview.length > 0
-            ? `<div class="profile-achievements-preview">
-                <div class="profile-achievements-preview__label">Achievements (${unlocked.length}/${all.length})</div>
-                <div class="profile-achievements-preview__grid">
-                  ${preview.map(a => `<span class="achievement-mini" title="${a.name}">${a.icon}</span>`).join('')}
-                  ${unlocked.length > 6 ? `<span class="achievement-mini achievement-mini--more">+${unlocked.length - 6}</span>` : ''}
-                </div>
-              </div>`
-            : '';
-        })()
-      : '';
-
-    const overlay = document.createElement('div');
-    overlay.className = 'account-modal-overlay';
-    overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
-
-    overlay.innerHTML = `
-      <div class="account-modal" style="max-width:520px">
-        <button class="account-modal__close" onclick="this.closest('.account-modal-overlay').remove()">&times;</button>
-
-        <!-- Header -->
-        <div class="account-modal__header">
-          ${currentUser.photoURL
-            ? `<img class="account-modal__avatar" src="${currentUser.photoURL}" alt="" referrerpolicy="no-referrer">`
-            : `<span class="account-modal__avatar account-modal__avatar--initials">${(currentUser.displayName || 'U').charAt(0)}</span>`
-          }
-          <div class="account-modal__info">
-            <div class="account-modal__name">${currentUser.displayName || 'User'}</div>
-            <div class="account-modal__email">${currentUser.email}</div>
-            <div style="display:flex;gap:var(--space-2);margin-top:4px;align-items:center">
-              <span class="tier-badge tier-badge--${tier}">${tier === 'pro' ? 'Pro' : 'Free'}</span>
-              <span style="font-size:10px;color:var(--text-muted)">Member since ${joinDate}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Level & XP Bar -->
-        <div class="profile-level">
-          <div class="profile-level__header">
-            <span class="profile-level__badge">Level ${levelInfo.level}</span>
-            <span class="profile-level__text">${levelInfo.currentXP} / ${levelInfo.nextLevelXP} XP</span>
-          </div>
-          <div class="profile-level__bar">
-            <div class="profile-level__fill" style="width:${levelInfo.percent}%"></div>
-          </div>
-        </div>
-
-        <!-- Difficulty Breakdown -->
-        <div class="difficulty-stats">
-          ${ring(stats.easy?.solved || 0, totalEasy, 'var(--color-easy)', 'Easy')}
-          ${ring(stats.medium?.solved || 0, totalMedium, 'var(--color-medium)', 'Medium')}
-          ${ring(stats.hard?.solved || 0, totalHard, 'var(--color-hard)', 'Hard')}
-        </div>
-
-        <!-- Streak + Stats Row -->
-        <div class="profile-stats-row">
-          <div class="profile-stat-card">
-            <div class="profile-stat-card__icon">\uD83D\uDD25</div>
-            <div class="profile-stat-card__value">${streak.current || 0}</div>
-            <div class="profile-stat-card__label">Day Streak</div>
-          </div>
-          <div class="profile-stat-card">
-            <div class="profile-stat-card__icon">\u2705</div>
-            <div class="profile-stat-card__value">${totalSolved}</div>
-            <div class="profile-stat-card__label">Solved</div>
-          </div>
-          <div class="profile-stat-card">
-            <div class="profile-stat-card__icon">\uD83D\uDCDD</div>
-            <div class="profile-stat-card__value">${totalAttempted}</div>
-            <div class="profile-stat-card__label">Attempted</div>
-          </div>
-          <div class="profile-stat-card">
-            <div class="profile-stat-card__icon">\uD83C\uDFC6</div>
-            <div class="profile-stat-card__value">${streak.longest || 0}</div>
-            <div class="profile-stat-card__label">Best Streak</div>
-          </div>
-        </div>
-
-        <!-- Recent Activity -->
-        <div class="profile-activity">
-          <div class="profile-activity__label">Recent Activity</div>
-          ${recentHTML}
-        </div>
-
-        <!-- Achievements Preview -->
-        ${achievementsHTML}
-
-        <!-- Upgrade CTA -->
-        ${tier === 'free' ? `
-          <div class="account-modal__upgrade">
-            <div class="account-modal__upgrade-title">Upgrade to Pro</div>
-            <div class="account-modal__upgrade-desc">
-              Get access to all 1,090+ problems, detailed solutions, and advanced filters.
-            </div>
-            <button class="btn btn--primary btn--sm" style="width:100%;margin-top:var(--space-3)">
-              Coming Soon
-            </button>
-          </div>
-        ` : ''}
-      </div>
-    `;
-
-    document.body.appendChild(overlay);
+    window.location.href = 'profile.html';
   }
 
   // ---- Firebase not configured dialog ----

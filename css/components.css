@@ -651,6 +651,27 @@
   font-weight: var(--font-semibold);
 }
 
+/* ---- Auth loading placeholder ---- */
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.nav__auth-loading {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-card, #1e1e2e);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+#auth-container {
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+
 /* ---- Animated gradient line ---- */
 @keyframes shimmer {
   0% { background-position: -200% 0; }
