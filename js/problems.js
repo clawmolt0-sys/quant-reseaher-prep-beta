@@ -126,10 +126,23 @@ const Problems = (() => {
       showToast('Status cleared');
     }
 
-    // Refresh current view
+    // Refresh current view — update buttons inline without full re-render
     const params = App.getParams();
-    if (params.id) renderDetail(id);
-    else updateList(params);
+    if (params.id) {
+      // Update action bar buttons inline for instant feedback
+      const solvedBtn = document.querySelector('.pab__btn:first-child');
+      const attemptedBtn = document.querySelector('.pab__btn:nth-child(2)');
+      if (solvedBtn) {
+        solvedBtn.className = 'pab__btn ' + (status === 'solved' ? 'pab__btn--active-green' : '');
+        solvedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'solved' ? '' : 'solved') + "')");
+      }
+      if (attemptedBtn) {
+        attemptedBtn.className = 'pab__btn ' + (status === 'attempted' ? 'pab__btn--active-yellow' : '');
+        attemptedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'attempted' ? '' : 'attempted') + "')");
+      }
+    } else {
+      updateList(params);
+    }
   }
 
   // ---- Notes (localStorage) ----
@@ -225,8 +238,9 @@ const Problems = (() => {
       if (q) {
         set = set.filter(p =>
           p.title.toLowerCase().includes(q) ||
-          p.statement.toLowerCase().includes(q) ||
-          p.tags.some(t => t.toLowerCase().includes(q))
+          p.category.toLowerCase().includes(q) ||
+          p.tags.some(t => t.toLowerCase().includes(q)) ||
+          p.companies.some(c => c.toLowerCase().includes(q))
         );
       }
       return set;
@@ -296,44 +310,75 @@ const Problems = (() => {
       : '<span class="sort-arrow sort-arrow--active">\u2193</span>';
   }
 
+  // ---- O(1) lookup map ----
+  let problemMap = new Map(); // id -> problem (built from allProblems)
+
+  function buildLookupMap() {
+    problemMap = new Map();
+    for (const p of allProblems) {
+      problemMap.set(p.id, p);
+    }
+  }
+
+  function getById(id) {
+    id = typeof id === 'number' ? id : parseInt(id, 10);
+    return problemMap.get(id) || null;
+  }
+
+  // ---- Normalize from index format (short keys) ----
+  function normalizeIndex(p) {
+    return {
+      id:        typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10),
+      title:     p.t || p.title || '',
+      statement: p.statement || p.question || '',
+      solution:  p.solution || '',
+      intuition: p.intuition || null,
+      hints:     ensureArray(p.hints),
+      companies: ensureArray(p.co || p.companies || p.company),
+      tags:      ensureArray(p.tg || p.tags || p.subtopics),
+      category:  p.c || p.category || (p.topics && p.topics[0]) || 'probability',
+      difficulty: p.d || p.difficulty || 'medium',
+      rating:    p.r || p.rating || diffToRating(p.d || p.difficulty),
+      type:      p.y || p.type || 'calculation',
+      source:    p.source || 'interview',
+      status:    p.s || p.status || 'complete',
+    };
+  }
+
   // ---- Init ----
   async function init() {
     try {
-      // Start loading data and auth in parallel
-      const dataPromise = Promise.all([
-        DataLoader.problems(),
+      const params = App.getParams();
+      const isDetailView = !!params.id;
+
+      // Load hide-stubs preference (default to true)
+      try {
+        const stored = localStorage.getItem('qr-prep-hide-stubs');
+        hideStubs = stored === null ? true : stored === 'true';
+      } catch (e) { hideStubs = true; }
+
+      // FAST PATH: For list view, load lightweight index (260KB vs 2.7MB)
+      // For detail view, we need full data — but load index first for instant nav
+      const t0 = performance.now();
+
+      // Load index + tags + companies in parallel (all small, all cacheable)
+      const [rawIndex, rawTags, rawCompanies] = await Promise.all([
+        DataLoader.problemsIndex(),
         DataLoader.tags(),
         DataLoader.companies(),
       ]);
 
-      // Wait for auth to settle (max 3s) so Pro status is known before first render
-      if (typeof Auth !== 'undefined' && Auth.waitForAuth) {
-        await Promise.race([
-          Auth.waitForAuth(),
-          new Promise(resolve => setTimeout(resolve, 3000)),
-        ]);
-      }
-
-      const [rawProblems, rawTags, rawCompanies] = await dataPromise;
-      const raw = rawProblems || [];
-      console.log('[Problems] Loaded', raw.length, 'problems');
-      allProblems = raw.map(normalize);
+      const indexData = rawIndex || [];
+      console.log('[Problems] Index loaded:', indexData.length, 'problems in', Math.round(performance.now() - t0), 'ms');
+      allProblems = indexData.map(normalizeIndex);
       tagsData = rawTags || { categories: [], types: [] };
       companiesData = rawCompanies || [];
+      buildLookupMap();
 
       // Pass problem data to Auth for XP/difficulty lookups
       if (typeof Auth !== 'undefined' && Auth.setProblemData) {
         Auth.setProblemData(allProblems);
       }
-
-      // Load hide-stubs preference (default to true so incomplete problems are hidden)
-      try {
-        const stored = localStorage.getItem('qr-prep-hide-stubs');
-        hideStubs = stored === null ? true : stored === 'true';
-      }
-      catch (e) { hideStubs = true; }
-
-      const params = App.getParams();
 
       // Support ?list=<id> for featured lists (from Explore page)
       if (params.list) {
@@ -345,36 +390,39 @@ const Problems = (() => {
             if (list && list.problemIds) {
               const idSet = new Set(list.problemIds);
               allProblems = allProblems.filter(p => idSet.has(p.id));
-              console.log('[Problems] Filtered to featured list:', params.list, '—', allProblems.length, 'problems');
+              buildLookupMap();
             }
           }
-        } catch (e) {
-          console.warn('[Problems] Could not load featured list:', e);
-        }
+        } catch (e) { /* ignore */ }
       }
 
-      if (params.id) {
-        renderDetail(parseInt(params.id, 10) || params.id);
+      if (isDetailView) {
+        // Detail view: render immediately with index data (shows header, nav, meta)
+        // Then load full data for statement + solution
+        await renderDetailLazy(parseInt(params.id, 10) || params.id);
       } else {
+        // List view: render instantly from index (no full data needed!)
         renderShell();
         updateList(params);
+        // Preload full data in background for fast detail navigation
+        DataLoader.preloadFullProblems();
       }
 
       // Re-render when auth state changes (tier may upgrade from free to pro)
       window.addEventListener('auth-state-changed', () => {
         const p = App.getParams();
         if (p.id) {
-          renderDetail(parseInt(p.id, 10) || p.id);
+          renderDetailLazy(parseInt(p.id, 10) || p.id);
         } else if (shellRendered) {
           updateList(p);
         }
       });
 
-      // Also listen for browser back/forward
+      // Browser back/forward
       window.addEventListener('popstate', () => {
         const p = App.getParams();
         if (p.id) {
-          renderDetail(parseInt(p.id, 10) || p.id);
+          renderDetailLazy(parseInt(p.id, 10) || p.id);
         } else {
           if (!shellRendered) renderShell();
           updateList(p);
@@ -395,6 +443,89 @@ const Problems = (() => {
         `;
       }
     }
+  }
+
+  // ---- Lazy detail rendering: show skeleton from index, then load full data ----
+  async function renderDetailLazy(id) {
+    const indexProblem = getById(id);
+    if (!indexProblem) {
+      const container = document.getElementById('content');
+      if (container) {
+        container.innerHTML = '<div class="container"><div class="empty-state"><div class="empty-state__icon">\u2753</div><div class="empty-state__title">Problem not found</div><a href="problems.html" class="btn btn--primary mt-4">Back to Problems</a></div></div>';
+      }
+      return;
+    }
+
+    // If we already have full data (statement/solution), render immediately
+    if (indexProblem.statement && indexProblem.statement.length > 20) {
+      renderDetail(id);
+      return;
+    }
+
+    // Show skeleton with index data (title, meta, category — instant)
+    renderDetailSkeleton(indexProblem);
+
+    // Load full problem data
+    const fullData = await DataLoader.problemsFull();
+    if (fullData) {
+      // Merge full data into allProblems
+      const fullMap = new Map();
+      for (const p of fullData) {
+        const nid = typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10);
+        fullMap.set(nid, p);
+      }
+      for (const p of allProblems) {
+        const full = fullMap.get(p.id);
+        if (full) {
+          p.statement = full.statement || full.question || '';
+          p.solution = full.solution || '';
+          p.intuition = full.intuition || null;
+          p.hints = ensureArray(full.hints);
+        }
+      }
+    }
+
+    // Now render with full data
+    renderDetail(id);
+  }
+
+  // ---- Skeleton for detail view (shows instantly from index) ----
+  function renderDetailSkeleton(problem) {
+    const container = document.getElementById('content');
+    if (!container) return;
+    const catMeta = getCatMeta(problem.category);
+
+    container.innerHTML = `
+      <div class="container">
+        <div class="problem-detail__nav-bar">
+          <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
+        </div>
+        <div class="problem-detail-layout">
+          <div class="problem-detail-left">
+            <div class="problem-detail__header">
+              <div class="problem-detail__meta-row">
+                <span class="problem-detail__id-badge">#${problem.id}</span>
+                <span class="badge badge--${problem.difficulty}">${problem.difficulty}</span>
+                <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
+                <span class="problem-detail__type-badge">${formatType(problem.type)}</span>
+              </div>
+              <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
+            </div>
+            <div class="problem-detail__statement-card" style="opacity:0.5">
+              <div class="problem-detail__statement-label">Problem Statement</div>
+              <div style="padding:var(--space-4)">
+                <div style="height:16px;width:90%;background:var(--bg-card);border-radius:4px;margin-bottom:12px;animation:pulse 1.5s ease-in-out infinite"></div>
+                <div style="height:16px;width:75%;background:var(--bg-card);border-radius:4px;margin-bottom:12px;animation:pulse 1.5s ease-in-out infinite"></div>
+                <div style="height:16px;width:60%;background:var(--bg-card);border-radius:4px;animation:pulse 1.5s ease-in-out infinite"></div>
+              </div>
+            </div>
+          </div>
+          <div class="problem-detail-right">
+            <div style="height:200px;background:var(--bg-card);border-radius:var(--radius-lg);opacity:0.3;animation:pulse 1.5s ease-in-out infinite"></div>
+          </div>
+        </div>
+      </div>
+    `;
   }
 
   // ---- Shell (rendered once) ----
@@ -489,8 +620,9 @@ const Problems = (() => {
         const q = searchQ.toLowerCase();
         filtered = filtered.filter(p =>
           p.title.toLowerCase().includes(q) ||
-          p.statement.toLowerCase().includes(q) ||
-          p.tags.some(t => t.toLowerCase().includes(q))
+          p.category.toLowerCase().includes(q) ||
+          p.tags.some(t => t.toLowerCase().includes(q)) ||
+          p.companies.some(c => c.toLowerCase().includes(q))
         );
       }
 
@@ -909,32 +1041,41 @@ const Problems = (() => {
   // Keep loadMore for backwards compat but redirect to goToPage
   function loadMore() { goToPage(currentPage + 1); }
 
-  // ---- Similar Problems Engine ----
+  // ---- Similar Problems Engine (optimized) ----
   function findSimilar(problem, count) {
     count = count || 5;
     const myTags = new Set(problem.tags);
     const myCat = problem.category;
+    const myCompanies = new Set(problem.companies);
 
-    if (myTags.size === 0) {
-      return allProblems
-        .filter(p => p.id !== problem.id && p.category === myCat)
-        .slice(0, count)
-        .map(p => ({ problem: p, score: 1, shared: [] }));
-    }
-
-    const scored = [];
+    // First pass: only check same-category problems for speed
+    const candidates = [];
     for (const p of allProblems) {
-      if (p.id === problem.id) continue;
-      const shared = p.tags.filter(t => myTags.has(t));
-      let score = shared.length;
+      if (p.id === problem.id || p.status === 'duplicate') continue;
+      if (p.category !== myCat && myTags.size === 0) continue;
+
+      let score = 0;
+      const shared = [];
+      for (const t of p.tags) {
+        if (myTags.has(t)) { score++; shared.push(t); }
+      }
       if (p.category === myCat) score += 0.5;
       if (p.difficulty === problem.difficulty) score += 0.3;
-      if (p.companies.some(c => problem.companies.includes(c))) score += 0.2;
-      if (score > 0) scored.push({ problem: p, score, shared });
+      for (const c of p.companies) {
+        if (myCompanies.has(c)) { score += 0.2; break; }
+      }
+      if (score > 0) {
+        candidates.push({ problem: p, score, shared });
+        // Keep a running top-N to avoid sorting the full list
+        if (candidates.length > count * 4) {
+          candidates.sort((a, b) => b.score - a.score);
+          candidates.length = count * 2;
+        }
+      }
     }
 
-    scored.sort((a, b) => b.score - a.score);
-    return scored.slice(0, count);
+    candidates.sort((a, b) => b.score - a.score);
+    return candidates.slice(0, count);
   }
 
   // ---- Detail View ----
@@ -943,7 +1084,8 @@ const Problems = (() => {
     if (!container) return;
     shellRendered = false;
 
-    const problem = allProblems.find(p => p.id === id || p.id === parseInt(id, 10));
+    const numId = typeof id === 'number' ? id : parseInt(id, 10);
+    const problem = getById(numId);
     if (!problem) {
       container.innerHTML = `
         <div class="container">
@@ -978,13 +1120,13 @@ const Problems = (() => {
       const hasForwardHistory = randomHistoryIndex < randomHistory.length - 1;
 
       if (hasPrev) {
-        prev = allProblems.find(p => p.id === randomHistory[randomHistoryIndex - 1]) || null;
+        prev = getById(randomHistory[randomHistoryIndex - 1]) || null;
       } else {
         prev = null;
       }
 
       if (hasForwardHistory) {
-        next = allProblems.find(p => p.id === randomHistory[randomHistoryIndex + 1]) || null;
+        next = getById(randomHistory[randomHistoryIndex + 1]) || null;
       } else {
         // Pick a new random
         const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
@@ -1405,19 +1547,17 @@ const Problems = (() => {
   // ---- Random navigation with history ----
   function navigateRandom(histIdx, newId) {
     if (histIdx >= 0 && histIdx < randomHistory.length) {
-      // Navigate to existing history entry
       randomHistoryIndex = histIdx;
       const targetId = randomHistory[histIdx];
       App.setParams({ id: targetId, random: '1' });
-      renderDetail(targetId);
+      renderDetailLazy(targetId);
       window.scrollTo(0, 0);
     } else if (newId) {
-      // Navigate to new random problem and add to history
       randomHistory = randomHistory.slice(0, randomHistoryIndex + 1);
       randomHistory.push(newId);
       randomHistoryIndex = randomHistory.length - 1;
       App.setParams({ id: newId, random: '1' });
-      renderDetail(newId);
+      renderDetailLazy(newId);
       window.scrollTo(0, 0);
     }
   }
