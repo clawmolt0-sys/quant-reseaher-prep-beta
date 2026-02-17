@@ -459,6 +459,8 @@ const Auth = (() => {
   // ============================================================
 
   async function saveStatus(id, status) {
+    console.log('[Auth] saveStatus:', { id, status, hasUser: !!currentUser, hasDoc: !!userDoc, authSettled });
+
     // Always save to localStorage as fallback
     try {
       if (status) {
@@ -468,22 +470,33 @@ const Auth = (() => {
       }
     } catch (e) { /* ignore */ }
 
-    if (!currentUser) return;
-
-    const db = FirebaseConfig.getDb();
-    if (!db) return;
-
-    // Wait for userDoc to be loaded if it's still pending
-    if (!userDoc) {
-      console.log('[Auth] userDoc not ready, waiting for auth...');
-      try {
-        await waitForAuth();
-      } catch (e) { /* timeout, continue anyway */ }
+    if (!currentUser) {
+      console.warn('[Auth] saveStatus: no currentUser, skipping Firestore');
+      return;
     }
 
-    // If still no userDoc after waiting, create a minimal one in memory
+    const db = FirebaseConfig.getDb();
+    if (!db) {
+      console.warn('[Auth] saveStatus: no db instance');
+      return;
+    }
+
+    // Wait for userDoc to be loaded if it's still pending (with timeout)
     if (!userDoc) {
-      console.warn('[Auth] userDoc still null after wait, creating fallback');
+      console.log('[Auth] userDoc not ready, waiting max 3s...');
+      try {
+        await Promise.race([
+          waitForAuth(),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('auth-timeout')), 3000))
+        ]);
+      } catch (e) {
+        console.warn('[Auth] waitForAuth:', e.message);
+      }
+    }
+
+    // If still no userDoc, create a minimal one
+    if (!userDoc) {
+      console.warn('[Auth] Creating fallback userDoc');
       userDoc = {
         progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
         xp: 0, level: 1, streak: { current: 0, longest: 0, lastActivityDate: null },
@@ -504,11 +517,29 @@ const Auth = (() => {
         delete userDoc.progress[id];
       }
 
-      // Persist to Firestore in background (use set+merge to avoid "doc doesn't exist" errors)
-      const progressUpdate = {};
-      progressUpdate['progress.' + id] = status || firebase.firestore.FieldValue.delete();
-      docRef.set(progressUpdate, { merge: true })
-        .catch(err => console.error('[Auth] Progress persist error:', err));
+      // Persist to Firestore: try update() first (reliable for nested paths),
+      // fall back to set+merge if doc doesn't exist
+      const writeProgress = async () => {
+        try {
+          if (status) {
+            await docRef.update({ ['progress.' + id]: status });
+          } else {
+            await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
+          }
+          console.log('[Auth] Progress written (update)');
+        } catch (err) {
+          if (err.code === 'not-found') {
+            console.log('[Auth] Doc not found, creating with set...');
+            const data = { progress: {} };
+            if (status) data.progress[id] = status;
+            await docRef.set(data, { merge: true });
+            console.log('[Auth] Progress written (set+merge)');
+          } else {
+            console.error('[Auth] Progress write error:', err.code, err.message);
+          }
+        }
+      };
+      writeProgress();
 
       // XP + stats tracking
       if (status === 'solved' && previousStatus !== 'solved') {
@@ -535,13 +566,15 @@ const Auth = (() => {
         // Dispatch event so dropdown XP updates immediately
         forceAuthUIUpdate();
 
-        // Persist to Firestore (background, non-blocking)
-        docRef.set({
-          stats: userDoc.stats,
-          xp: userDoc.xp,
-          level: userDoc.level,
-          streak: userDoc.streak,
-        }, { merge: true }).catch(err => console.error('[Auth] XP update error:', err));
+        // Persist XP/stats to Firestore (background, non-blocking)
+        const xpData = { stats: userDoc.stats, xp: userDoc.xp, level: userDoc.level, streak: userDoc.streak };
+        docRef.update(xpData)
+          .then(() => console.log('[Auth] XP/stats written'))
+          .catch(err => {
+            console.warn('[Auth] XP update() failed:', err.code, '- trying set+merge');
+            return docRef.set(xpData, { merge: true });
+          })
+          .catch(err => console.error('[Auth] XP persist failed completely:', err));
 
         // Check achievements (non-blocking)
         if (typeof Achievements !== 'undefined') {
@@ -557,7 +590,12 @@ const Auth = (() => {
         if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
         if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
         userDoc.stats[diff].attempted++;
-        docRef.set({ stats: userDoc.stats }, { merge: true }).catch(err => console.error('[Auth] Stats update error:', err));
+        docRef.update({ stats: userDoc.stats })
+          .then(() => console.log('[Auth] Attempted stats written'))
+          .catch(err => {
+            return docRef.set({ stats: userDoc.stats }, { merge: true });
+          })
+          .catch(err => console.error('[Auth] Stats persist failed:', err));
       }
     } catch (err) {
       console.error('[Auth] Error saving status:', err);
@@ -647,13 +685,19 @@ const Auth = (() => {
   // ============================================================
 
   async function toggleFavorite(problemId) {
+    console.log('[Auth] toggleFavorite:', problemId, 'hasUser:', !!currentUser, 'hasDoc:', !!userDoc);
     if (!currentUser) return false;
     const db = FirebaseConfig.getDb();
     if (!db) return false;
 
-    // Wait for userDoc if not ready yet
+    // Wait for userDoc if not ready yet (with timeout)
     if (!userDoc) {
-      try { await waitForAuth(); } catch (e) { /* timeout */ }
+      try {
+        await Promise.race([
+          waitForAuth(),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 3000))
+        ]);
+      } catch (e) { console.warn('[Auth] toggleFavorite wait:', e.message); }
     }
     if (!userDoc) return false;
 
@@ -664,17 +708,21 @@ const Auth = (() => {
       if (!userDoc.favorites) userDoc.favorites = [];
 
       if (userDoc.favorites.includes(id)) {
-        // Update local state first for instant UI feedback
+        // Update local state first
         userDoc.favorites = userDoc.favorites.filter(f => f !== id);
-        // Then persist (set+merge to avoid doc-not-found errors)
-        docRef.set({ favorites: firebase.firestore.FieldValue.arrayRemove(id) }, { merge: true })
+        // Persist: try update first, fallback to set+merge
+        docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) })
+          .then(() => console.log('[Auth] Unfavorited persisted'))
+          .catch(err => docRef.set({ favorites: firebase.firestore.FieldValue.arrayRemove(id) }, { merge: true }))
           .catch(err => console.error('[Auth] Unfavorite persist error:', err));
-        return false; // unfavorited
+        return false;
       } else {
         // Update local state first
         userDoc.favorites.push(id);
-        // Then persist (set+merge)
-        docRef.set({ favorites: firebase.firestore.FieldValue.arrayUnion(id) }, { merge: true })
+        // Persist
+        docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) })
+          .then(() => console.log('[Auth] Favorited persisted'))
+          .catch(err => docRef.set({ favorites: firebase.firestore.FieldValue.arrayUnion(id) }, { merge: true }))
           .catch(err => console.error('[Auth] Favorite persist error:', err));
 
         // Check bookworm achievement

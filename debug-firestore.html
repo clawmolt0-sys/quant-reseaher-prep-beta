@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firestore Debug</title>
+  <style>
+    body { font-family: monospace; background: #1a1a2e; color: #e0e0e0; padding: 20px; }
+    .log { margin: 4px 0; padding: 4px 8px; border-radius: 4px; }
+    .ok { background: #1a3a2a; color: #4ade80; }
+    .err { background: #3a1a1a; color: #f87171; }
+    .info { background: #1a2a3a; color: #60a5fa; }
+    .warn { background: #3a2a1a; color: #fbbf24; }
+    button { padding: 8px 16px; margin: 4px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+    .btn-primary { background: #3b82f6; color: white; }
+    .btn-danger { background: #ef4444; color: white; }
+    #log { margin-top: 20px; max-height: 70vh; overflow-y: auto; }
+  </style>
+</head>
+<body>
+  <h2>Firestore Debug Tool</h2>
+  <div>
+    <button class="btn-primary" onclick="testAuth()">1. Check Auth State</button>
+    <button class="btn-primary" onclick="testReadDoc()">2. Read User Doc</button>
+    <button class="btn-primary" onclick="testWriteProgress()">3. Write Test Progress</button>
+    <button class="btn-primary" onclick="testWriteSet()">4. Write with set+merge</button>
+    <button class="btn-primary" onclick="testWriteUpdate()">5. Write with update</button>
+    <button class="btn-danger" onclick="clearLog()">Clear Log</button>
+  </div>
+  <div id="log"></div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    const logEl = document.getElementById('log');
+    function log(msg, type) {
+      const div = document.createElement('div');
+      div.className = 'log ' + (type || 'info');
+      div.textContent = new Date().toLocaleTimeString() + ' ' + msg;
+      logEl.appendChild(div);
+      logEl.scrollTop = logEl.scrollHeight;
+      console.log(msg);
+    }
+    function clearLog() { logEl.innerHTML = ''; }
+
+    // Init Firebase
+    const config = {
+      apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
+      authDomain: "qrprep.firebaseapp.com",
+      projectId: "qrprep",
+      storageBucket: "qrprep.firebasestorage.app",
+      messagingSenderId: "269729809695",
+      appId: "1:269729809695:web:4379017f0e6bec69e7dc2a",
+    };
+
+    try {
+      firebase.initializeApp(config);
+      log('Firebase initialized OK', 'ok');
+    } catch (e) {
+      log('Firebase init FAILED: ' + e.message, 'err');
+    }
+
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+
+    // Listen for auth state
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        log('Auth: Signed in as ' + user.displayName + ' (' + user.email + ') uid=' + user.uid, 'ok');
+      } else {
+        log('Auth: Not signed in', 'warn');
+      }
+    });
+
+    async function testAuth() {
+      const user = auth.currentUser;
+      if (user) {
+        log('Current user: ' + user.displayName + ' | email: ' + user.email + ' | uid: ' + user.uid, 'ok');
+      } else {
+        log('No current user. Trying to sign in with Google...', 'info');
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          const result = await auth.signInWithPopup(provider);
+          log('Signed in: ' + result.user.displayName, 'ok');
+        } catch (e) {
+          log('Sign in failed: ' + e.code + ' - ' + e.message, 'err');
+        }
+      }
+    }
+
+    async function testReadDoc() {
+      const user = auth.currentUser;
+      if (!user) { log('Not signed in!', 'err'); return; }
+
+      try {
+        log('Reading user doc: users/' + user.uid + '...', 'info');
+        const t0 = performance.now();
+        const doc = await db.collection('users').doc(user.uid).get();
+        const elapsed = Math.round(performance.now() - t0);
+
+        if (doc.exists) {
+          const data = doc.data();
+          log('Doc EXISTS (' + elapsed + 'ms). Fields: ' + Object.keys(data).join(', '), 'ok');
+          log('  progress keys: ' + Object.keys(data.progress || {}).length, 'info');
+          log('  xp: ' + (data.xp || 0) + ', level: ' + (data.level || 1), 'info');
+          log('  tier: ' + (data.tier || 'free'), 'info');
+          log('  stats: ' + JSON.stringify(data.stats || {}), 'info');
+        } else {
+          log('Doc DOES NOT EXIST (' + elapsed + 'ms)', 'warn');
+        }
+      } catch (e) {
+        log('Read FAILED: ' + e.code + ' - ' + e.message, 'err');
+      }
+    }
+
+    async function testWriteProgress() {
+      const user = auth.currentUser;
+      if (!user) { log('Not signed in!', 'err'); return; }
+
+      const testId = 'test-' + Date.now();
+      const docRef = db.collection('users').doc(user.uid);
+
+      log('Testing progress write with update()...', 'info');
+      try {
+        const t0 = performance.now();
+        await docRef.update({ ['progress.' + testId]: 'solved' });
+        log('update() SUCCESS (' + Math.round(performance.now() - t0) + 'ms)', 'ok');
+
+        // Clean up
+        await docRef.update({ ['progress.' + testId]: firebase.firestore.FieldValue.delete() });
+        log('Cleanup (delete field) SUCCESS', 'ok');
+      } catch (e) {
+        log('update() FAILED: ' + e.code + ' - ' + e.message, 'err');
+      }
+    }
+
+    async function testWriteSet() {
+      const user = auth.currentUser;
+      if (!user) { log('Not signed in!', 'err'); return; }
+
+      const testId = 'test-set-' + Date.now();
+      const docRef = db.collection('users').doc(user.uid);
+
+      log('Testing progress write with set(merge:true)...', 'info');
+      try {
+        const payload = {};
+        payload['progress.' + testId] = 'solved';
+
+        const t0 = performance.now();
+        await docRef.set(payload, { merge: true });
+        log('set(merge) SUCCESS (' + Math.round(performance.now() - t0) + 'ms)', 'ok');
+
+        // Verify it was written
+        const snap = await docRef.get();
+        const data = snap.data();
+        if (data.progress && data.progress[testId] === 'solved') {
+          log('VERIFIED: progress.' + testId + ' = solved', 'ok');
+        } else if (data['progress.' + testId] === 'solved') {
+          log('BUG! Written as LITERAL KEY "progress.' + testId + '" instead of nested field!', 'err');
+        } else {
+          log('UNEXPECTED: field not found in document', 'err');
+          log('Doc keys: ' + Object.keys(data).join(', '), 'info');
+        }
+
+        // Clean up
+        await docRef.update({ ['progress.' + testId]: firebase.firestore.FieldValue.delete() });
+        log('Cleanup SUCCESS', 'ok');
+      } catch (e) {
+        log('set(merge) FAILED: ' + e.code + ' - ' + e.message, 'err');
+      }
+    }
+
+    async function testWriteUpdate() {
+      const user = auth.currentUser;
+      if (!user) { log('Not signed in!', 'err'); return; }
+
+      const docRef = db.collection('users').doc(user.uid);
+
+      log('Testing XP/stats write with set(merge:true)...', 'info');
+      try {
+        // Read current
+        const snap = await docRef.get();
+        const data = snap.data();
+        const currentXP = data.xp || 0;
+
+        const t0 = performance.now();
+        await docRef.set({
+          xp: currentXP + 1,
+          _debugTest: true,
+        }, { merge: true });
+        log('XP write SUCCESS (' + Math.round(performance.now() - t0) + 'ms) - XP set to ' + (currentXP + 1), 'ok');
+
+        // Reset
+        await docRef.update({ xp: currentXP, _debugTest: firebase.firestore.FieldValue.delete() });
+        log('Reset XP to ' + currentXP, 'ok');
+      } catch (e) {
+        log('XP write FAILED: ' + e.code + ' - ' + e.message, 'err');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -105,18 +105,11 @@ const Problems = (() => {
     catch (e) { return ''; }
   }
 
-  async function markStatus(id, status) {
-    // Use Auth module if available (saves to both Firestore + localStorage)
-    if (typeof Auth !== 'undefined') {
-      await Auth.saveStatus(id, status);
-    } else {
-      try {
-        if (status) localStorage.setItem('qr-prep-status-' + id, status);
-        else localStorage.removeItem('qr-prep-status-' + id);
-      } catch (e) { /* ignore */ }
-    }
+  function markStatus(id, status) {
+    console.log('[Problems] markStatus called:', id, status);
 
-    // Show toast feedback with XP highlight
+    // ===== STEP 1: Instant UI feedback (no awaiting anything) =====
+    // Show toast IMMEDIATELY
     if (status === 'solved') {
       const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
       showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
@@ -126,19 +119,16 @@ const Problems = (() => {
       showToast('Status cleared');
     }
 
-    // Refresh current view — update buttons inline without full re-render
+    // Update buttons IMMEDIATELY
     const params = App.getParams();
     if (params.id) {
-      // Update action bar buttons inline for instant feedback
       const solvedBtn = document.querySelector('.pab__btn:first-child');
       const attemptedBtn = document.querySelector('.pab__btn:nth-child(2)');
       if (solvedBtn) {
         solvedBtn.className = 'pab__btn ' + (status === 'solved' ? 'pab__btn--active-green' : '');
         solvedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'solved' ? '' : 'solved') + "')");
-        // Trigger pop animation
         if (status === 'solved') {
           solvedBtn.classList.add('pab__btn--anim-green');
-          // Show floating +XP text
           const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
           const floater = document.createElement('span');
           floater.className = 'pab__xp-float';
@@ -156,17 +146,37 @@ const Problems = (() => {
           setTimeout(() => attemptedBtn.classList.remove('pab__btn--anim-yellow'), 500);
         }
       }
-
-      // Update level badge in nav bar immediately
-      if (typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
-        const levelBadge = document.querySelector('.nav__user-level-badge');
-        if (levelBadge && Auth.getUserDoc()) {
-          const lvl = Auth.calculateLevel(Auth.getUserDoc().xp || 0);
-          levelBadge.textContent = 'Lv.' + lvl.level;
-        }
-      }
     } else {
       updateList(params);
+    }
+
+    // ===== STEP 2: Persist in background (never blocks UI) =====
+    try {
+      if (typeof Auth !== 'undefined') {
+        // Don't await — fire and forget
+        Auth.saveStatus(id, status).then(() => {
+          console.log('[Problems] Status saved successfully for', id);
+          // Update level badge after save completes
+          if (params.id && Auth.isLoggedIn()) {
+            const levelBadge = document.querySelector('.nav__user-level-badge');
+            if (levelBadge && Auth.getUserDoc()) {
+              const lvl = Auth.calculateLevel(Auth.getUserDoc().xp || 0);
+              levelBadge.textContent = 'Lv.' + lvl.level;
+            }
+          }
+        }).catch(err => {
+          console.error('[Problems] saveStatus failed:', err);
+          showToast('\u26A0\uFE0F Error saving — will retry');
+        });
+      } else {
+        // Fallback to localStorage only
+        try {
+          if (status) localStorage.setItem('qr-prep-status-' + id, status);
+          else localStorage.removeItem('qr-prep-status-' + id);
+        } catch (e) { /* ignore */ }
+      }
+    } catch (err) {
+      console.error('[Problems] markStatus error:', err);
     }
   }
 
@@ -1669,33 +1679,37 @@ const Problems = (() => {
   }
 
   // ---- Favorite toggle ----
-  async function toggleFavorite(problemId) {
+  function toggleFavorite(problemId) {
+    console.log('[Problems] toggleFavorite called:', problemId);
     if (typeof Auth === 'undefined' || !Auth.isLoggedIn()) {
       if (typeof Auth !== 'undefined') Auth.showAuthModal();
       return;
     }
     const wasFavorited = Auth.isFavorited(problemId);
-    await Auth.toggleFavorite(problemId);
-    const isFav = Auth.isFavorited(problemId);
+    const isFav = !wasFavorited; // Optimistic toggle
 
-    // Update the heart button inline (no full re-render)
+    // ===== Instant UI feedback =====
     const heartBtn = document.querySelector('.pab__icon-btn--liked, .pab__icon-btn[title*="favorite"]');
     if (heartBtn) {
       if (isFav) {
         heartBtn.classList.add('pab__icon-btn--liked');
         heartBtn.title = 'Remove from favorites';
-        heartBtn.querySelector('svg').setAttribute('fill', 'currentColor');
+        try { heartBtn.querySelector('svg').setAttribute('fill', 'currentColor'); } catch(e) {}
       } else {
         heartBtn.classList.remove('pab__icon-btn--liked');
         heartBtn.title = 'Add to favorites';
-        heartBtn.querySelector('svg').setAttribute('fill', 'none');
+        try { heartBtn.querySelector('svg').setAttribute('fill', 'none'); } catch(e) {}
       }
-      // Trigger heart pop animation
       heartBtn.classList.add('pab__icon-btn--anim-heart');
       setTimeout(() => heartBtn.classList.remove('pab__icon-btn--anim-heart'), 500);
     }
 
     showToast(isFav ? '\u2764\uFE0F Added to favorites' : 'Removed from favorites');
+
+    // ===== Persist in background =====
+    Auth.toggleFavorite(problemId).catch(err => {
+      console.error('[Problems] toggleFavorite failed:', err);
+    });
   }
 
   // ---- Add to collection ----
