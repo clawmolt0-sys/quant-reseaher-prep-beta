@@ -25,7 +25,6 @@
     { "id": "open-ended", "name": "Open-Ended", "desc": "Discussion or design question" },
     { "id": "brain-teaser", "name": "Brain Teaser", "desc": "Logic puzzle or lateral thinking" },
     { "id": "estimation", "name": "Estimation", "desc": "Fermi estimation or approximation" },
-    { "id": "strategy", "name": "Strategy", "desc": "Optimal strategy or game theory" },
     { "id": "conceptual", "name": "Conceptual", "desc": "Understanding concepts and definitions" }
   ]
 }
