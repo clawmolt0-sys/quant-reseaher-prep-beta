@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR Prep — Quant Interview Preparation for QR, QT, and SWE Roles</title>
-  <meta name="description" content="The most comprehensive preparation platform for quant interviews. Go beyond brain teasers: full lectures, 150+ problems from 18 top firms, coding labs, and finance curriculum — for Quant Researchers, Quant Traders, and SWEs breaking into quant finance.">
+  <meta name="description" content="The most comprehensive preparation platform for quant interviews. 1,090+ problems from 16 top firms, full lectures, coding labs, and finance curriculum.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -21,20 +21,32 @@
 
   <style>
     /* --- Home page specific --- */
-    .hero { text-align: center; padding: var(--space-20) 0 var(--space-12); position: relative; }
+
+    /* Hero with layered background effects */
+    .hero {
+      text-align: center;
+      padding: var(--space-20) 0 var(--space-8);
+      position: relative;
+      overflow: hidden;
+    }
     .hero::before {
       content: '';
       position: absolute;
-      top: -100px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(76,139,245,0.06) 0%, transparent 70%);
-      pointer-events: none;
-      z-index: 0;
+      top: -120px; left: 30%;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(76,139,245,0.08) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -200px; right: 10%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(139,92,246,0.06) 0%, transparent 65%);
+      pointer-events: none; z-index: 0;
     }
     .hero > * { position: relative; z-index: 1; }
+
     .hero__label {
       display: inline-flex;
       align-items: center;
@@ -60,15 +72,15 @@
       50% { opacity: 0.4; }
     }
     .hero__title {
-      font-size: var(--text-5xl);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
       font-weight: var(--font-extrabold);
-      line-height: 1.1;
+      line-height: 1.08;
       letter-spacing: -0.03em;
       margin-bottom: var(--space-6);
       color: var(--text-bright);
     }
     .hero__title-accent {
-      background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+      background: linear-gradient(135deg, #4c8bf5 0%, #8b5cf6 50%, #d946ef 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -76,7 +88,7 @@
     .hero__subtitle {
       font-size: var(--text-lg);
       color: var(--text-secondary);
-      max-width: 640px;
+      max-width: 620px;
       margin: 0 auto var(--space-8);
       line-height: 1.7;
       font-weight: var(--font-normal);
@@ -85,12 +97,18 @@
       display: flex;
       gap: var(--space-3);
       justify-content: center;
+      margin-bottom: var(--space-10);
     }
     .hero__actions .btn--primary {
       padding: var(--space-3) var(--space-8);
       font-size: var(--text-base);
       border-radius: var(--radius-lg);
-      box-shadow: 0 0 20px rgba(76,139,245,0.25);
+      box-shadow: 0 0 20px rgba(76,139,245,0.3);
+      animation: glow-pulse 3s ease-in-out infinite;
+    }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(76,139,245,0.3); }
+      50% { box-shadow: 0 0 35px rgba(76,139,245,0.5); }
     }
     .hero__actions .btn--secondary {
       padding: var(--space-3) var(--space-8);
@@ -98,12 +116,55 @@
       border-radius: var(--radius-lg);
     }
 
+    /* Trust logos bar — immediately below hero */
+    .trust-bar {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-bottom: var(--space-12);
+    }
+    .trust-bar__label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-4);
+      font-weight: var(--font-medium);
+    }
+    .trust-bar__logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-6);
+    }
+    .trust-bar__logo {
+      height: 22px;
+      opacity: 0.5;
+      transition: opacity var(--transition-base);
+      filter: brightness(0) invert(1);
+      object-fit: contain;
+    }
+    .trust-bar__logo:hover { opacity: 0.9; }
+    .trust-bar__logo--text {
+      font-size: 13px;
+      font-weight: var(--font-bold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      opacity: 0.4;
+      white-space: nowrap;
+      transition: opacity var(--transition-base);
+      text-decoration: none;
+    }
+    .trust-bar__logo--text:hover { opacity: 0.8; }
+
     /* Stats */
     .stats-bar {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: var(--space-4);
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto var(--space-16);
       padding: var(--space-6);
       background: var(--bg-card);
@@ -126,6 +187,104 @@
       font-weight: var(--font-medium);
     }
 
+    /* Logo Carousel */
+    .logo-carousel-section {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+      text-align: center;
+      overflow: hidden;
+    }
+    .logo-carousel-section__title {
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-4);
+      font-weight: var(--font-medium);
+    }
+    .logo-carousel {
+      position: relative;
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .logo-carousel__track {
+      display: flex;
+      gap: var(--space-10);
+      animation: logo-scroll 40s linear infinite;
+      width: max-content;
+    }
+    .logo-carousel__track:hover { animation-play-state: paused; }
+    .logo-carousel__item {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      min-width: 100px;
+    }
+    .logo-carousel__item img {
+      max-height: 26px;
+      max-width: 130px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.45;
+      transition: opacity var(--transition-base);
+    }
+    .logo-carousel__item img:hover { opacity: 0.9; }
+    .logo-carousel__item-text {
+      color: var(--text-muted);
+      font-size: var(--text-xs);
+      white-space: nowrap;
+      font-weight: var(--font-bold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.4;
+      transition: opacity var(--transition-base);
+    }
+    .logo-carousel__item-text:hover { opacity: 0.8; }
+    @keyframes logo-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Who This Is For — 3-column role grid */
+    .roles-section {
+      max-width: 900px;
+      margin: 0 auto var(--space-16);
+    }
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .role-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      text-decoration: none;
+      color: inherit;
+      transition: all var(--transition-base);
+      position: relative;
+      overflow: hidden;
+    }
+    .role-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), #8b5cf6);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+    .role-card:hover { border-color: var(--border-light); transform: translateY(-2px); }
+    .role-card:hover::before { opacity: 1; }
+    .role-card__icon { font-size: 1.6rem; margin-bottom: var(--space-3); }
+    .role-card__title { font-size: var(--text-base); font-weight: var(--font-semibold); margin-bottom: var(--space-2); }
+    .role-card__desc { font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-3); }
+    .role-card__topics { font-size: 11px; color: var(--text-muted); line-height: 1.7; }
+    .role-card__topics strong { color: var(--text-secondary); }
+
     /* Differentiators */
     .diff-section {
       max-width: 900px;
@@ -134,7 +293,7 @@
     .diff-section__title {
       font-size: var(--text-xs);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       color: var(--accent);
       font-weight: var(--font-semibold);
       margin-bottom: var(--space-3);
@@ -167,12 +326,13 @@
     .diff-card:hover {
       border-color: var(--border-light);
       background: var(--bg-card-hover);
+      transform: translateY(-1px);
     }
     .diff-card__icon {
-      width: 36px; height: 36px;
+      width: 40px; height: 40px;
       border-radius: var(--radius-md);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: var(--space-3);
       background: var(--accent-light);
     }
@@ -184,7 +344,7 @@
     .diff-card__text {
       font-size: var(--text-xs);
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     /* Section cards */
@@ -205,161 +365,34 @@
       transition: all var(--transition-base);
       display: flex;
       flex-direction: column;
+      position: relative;
+      overflow: hidden;
     }
     .section-card:hover {
       border-color: var(--accent-border);
       box-shadow: var(--shadow-glow);
       transform: translateY(-2px);
     }
-    .section-card__icon {
-      font-size: 1.5rem;
-      margin-bottom: var(--space-3);
-    }
-    .section-card__title {
-      font-size: var(--text-base);
-      font-weight: var(--font-semibold);
-      margin-bottom: var(--space-1);
-    }
-    .section-card__desc {
-      font-size: var(--text-xs);
-      color: var(--text-secondary);
-      line-height: 1.5;
-      flex: 1;
-    }
-    .section-card__stat {
-      margin-top: var(--space-3);
-      font-size: var(--text-xs);
-      color: var(--accent);
-      font-weight: var(--font-semibold);
-    }
-
-    /* Logo Carousel */
-    .logo-carousel-section {
-      max-width: 900px;
-      margin: 0 auto var(--space-16);
-      text-align: center;
-      overflow: hidden;
-    }
-    .logo-carousel-section__title {
-      font-size: var(--text-xs);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-      margin-bottom: var(--space-4);
-      font-weight: var(--font-medium);
-    }
-    .logo-carousel {
-      position: relative;
-      overflow: hidden;
-      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-      -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    }
-    .logo-carousel__track {
-      display: flex;
-      gap: var(--space-10);
-      animation: logo-scroll 35s linear infinite;
-      width: max-content;
-    }
-    .logo-carousel__track:hover {
-      animation-play-state: paused;
-    }
-    .logo-carousel__item {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      min-width: 120px;
-      opacity: 0.35;
-      transition: opacity var(--transition-base);
-    }
-    .logo-carousel__item:hover {
-      opacity: 0.85;
-    }
-    .logo-carousel__item img {
-      max-height: 32px;
-      max-width: 140px;
-      object-fit: contain;
-    }
-    .logo-carousel__name {
-      color: var(--text-secondary);
-      font-size: var(--text-sm);
-      white-space: nowrap;
-      font-weight: var(--font-bold);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    @keyframes logo-scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    .section-card__icon { font-size: 1.5rem; margin-bottom: var(--space-3); }
+    .section-card__title { font-size: var(--text-base); font-weight: var(--font-semibold); margin-bottom: var(--space-1); }
+    .section-card__desc { font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.5; flex: 1; }
+    .section-card__stat { margin-top: var(--space-3); font-size: var(--text-xs); color: var(--accent); font-weight: var(--font-semibold); }
 
     /* Featured */
-    .featured-section {
-      max-width: 900px;
-      margin: 0 auto var(--space-16);
-    }
-    .featured-section__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: var(--space-4);
-    }
-    .featured-section__title {
-      font-size: var(--text-lg);
-      font-weight: var(--font-semibold);
-    }
-    .featured-section__link {
-      font-size: var(--text-xs);
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: var(--font-medium);
-    }
+    .featured-section { max-width: 900px; margin: 0 auto var(--space-16); }
+    .featured-section__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); }
+    .featured-section__title { font-size: var(--text-lg); font-weight: var(--font-semibold); }
+    .featured-section__link { font-size: var(--text-xs); color: var(--accent); text-decoration: none; font-weight: var(--font-medium); }
     .featured-section__link:hover { text-decoration: underline; }
 
     /* Roadmap */
-    .roadmap-section {
-      max-width: 900px;
-      margin: 0 auto var(--space-16);
-    }
-    .roadmap-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-4);
-    }
-    .roadmap-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: var(--radius-lg);
-      padding: var(--space-5);
-    }
-    .roadmap-card__phase {
-      font-size: var(--text-xs);
-      font-weight: var(--font-semibold);
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: var(--space-2);
-    }
-    .roadmap-card__title {
-      font-size: var(--text-sm);
-      font-weight: var(--font-semibold);
-      margin-bottom: var(--space-2);
-    }
-    .roadmap-card__items {
-      list-style: none;
-      font-size: var(--text-xs);
-      color: var(--text-secondary);
-      line-height: 1.8;
-    }
-    .roadmap-card__items li::before {
-      content: ''; display: inline-block;
-      width: 4px; height: 4px;
-      border-radius: 50%;
-      background: var(--text-muted);
-      margin-right: var(--space-2);
-      vertical-align: middle;
-    }
+    .roadmap-section { max-width: 900px; margin: 0 auto var(--space-16); }
+    .roadmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+    .roadmap-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: var(--space-5); }
+    .roadmap-card__phase { font-size: var(--text-xs); font-weight: var(--font-semibold); color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-2); }
+    .roadmap-card__title { font-size: var(--text-sm); font-weight: var(--font-semibold); margin-bottom: var(--space-2); }
+    .roadmap-card__items { list-style: none; font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.8; }
+    .roadmap-card__items li::before { content: ''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: var(--text-muted); margin-right: var(--space-2); vertical-align: middle; }
 
     @media (max-width: 768px) {
       .hero__title { font-size: var(--text-3xl); }
@@ -368,7 +401,10 @@
       .diff-grid { grid-template-columns: 1fr; }
       .sections-grid { grid-template-columns: 1fr; }
       .roadmap-grid { grid-template-columns: 1fr; }
+      .roles-grid { grid-template-columns: 1fr; }
       .hero__actions { flex-direction: column; align-items: center; }
+      .trust-bar__logos { gap: var(--space-4); }
+      .trust-bar__logo { height: 18px; }
     }
   </style>
 </head>
@@ -402,18 +438,23 @@
           1,090+ problems from 16 top quant firms
         </div>
         <h1 class="hero__title">
-          The most comprehensive<br>
-          <span class="hero__title-accent">quant interview</span> prep platform.
+          Ace your next<br>
+          <span class="hero__title-accent">quant interview.</span>
         </h1>
         <p class="hero__subtitle">
-          Go beyond probability puzzles. QR Prep covers stochastic calculus,
-          portfolio optimization, market microstructure, options pricing,
-          and real coding challenges &mdash; everything you need for QR, QT,
-          and quant SWE interviews at the world's top firms.
+          Go beyond probability puzzles. Master stochastic calculus,
+          portfolio optimization, options pricing, and real coding challenges
+          &mdash; everything for QR, QT, and quant SWE interviews at the world's top firms.
         </p>
         <div class="hero__actions">
-          <a href="problems.html" class="btn btn--primary">Start Practicing</a>
+          <a href="problems.html" class="btn btn--primary">Start Practicing &rarr;</a>
           <a href="learn.html" class="btn btn--secondary">Explore Curriculum</a>
+        </div>
+
+        <!-- Trust bar — right below hero -->
+        <div class="trust-bar">
+          <div class="trust-bar__label">Covering interviews at</div>
+          <div class="trust-bar__logos" id="trust-logos"></div>
         </div>
       </section>
 
@@ -437,26 +478,51 @@
         </div>
       </section>
 
+      <!-- Who This Is For -->
+      <section class="roles-section">
+        <div class="diff-section__title">Who this is for</div>
+        <h2 class="diff-section__heading" style="margin-bottom:var(--space-6)">Three roles. One platform.</h2>
+        <div class="roles-grid">
+          <a class="role-card" href="problems.html?category=stochastic-calculus">
+            <div class="role-card__icon">&#x1D6BA;</div>
+            <div class="role-card__title">Quant Researchers</div>
+            <div class="role-card__desc">Deep mathematical foundations for alpha research, risk modeling, and derivatives pricing roles.</div>
+            <div class="role-card__topics"><strong>Focus:</strong> Stochastic calculus, statistical modeling, portfolio optimization, time series</div>
+          </a>
+          <a class="role-card" href="problems.html?category=probability">
+            <div class="role-card__icon">&#x1F4C8;</div>
+            <div class="role-card__title">Quant Traders</div>
+            <div class="role-card__desc">Probability, market microstructure, and fast mental math for trading desk interviews.</div>
+            <div class="role-card__topics"><strong>Focus:</strong> Probability, brain teasers, market making, options, game theory</div>
+          </a>
+          <a class="role-card" href="problems.html?type=coding">
+            <div class="role-card__icon">&#x1F4BB;</div>
+            <div class="role-card__title">Quant SWEs</div>
+            <div class="role-card__desc">Coding challenges with real financial data for software engineers breaking into quant finance.</div>
+            <div class="role-card__topics"><strong>Focus:</strong> Python, algorithms, data pipelines, numerical methods, systems</div>
+          </a>
+        </div>
+      </section>
+
       <!-- Why this is different -->
       <section class="diff-section">
         <div class="diff-section__title">Why QR Prep</div>
         <h2 class="diff-section__heading">Other sites stop at probability puzzles. We cover everything.</h2>
         <p class="diff-section__desc">
           Quant interviews test far more than expected value and coin flips. We cover
-          the full stack &mdash; stochastic calculus, portfolio optimization, market
-          microstructure, options pricing, statistical modeling, and real coding with
-          financial data &mdash; with 1,090+ problems across 18 topic categories.
+          the full stack &mdash; from measure theory to market microstructure &mdash;
+          with 1,090+ problems across 18 topic categories.
         </p>
         <div class="diff-grid">
           <div class="diff-card">
-            <div class="diff-card__icon">&#x1D6BA;</div>
+            <div class="diff-card__icon">&#x1F4DA;</div>
             <div class="diff-card__title">Full Curriculum</div>
-            <div class="diff-card__text">18 topics across two tracks: Quantitative Foundations and Finance &amp; Markets. Structured lectures with slides and interactive notebooks.</div>
+            <div class="diff-card__text">18 topics across two tracks: Quantitative Foundations and Finance &amp; Markets. Structured lectures with interactive notebooks.</div>
           </div>
           <div class="diff-card">
             <div class="diff-card__icon">&#x1F3E2;</div>
             <div class="diff-card__title">Real Firm Questions</div>
-            <div class="diff-card__text">Problems sourced from actual interviews at Citadel, Two Sigma, Jane Street, D.E. Shaw, Jump, and 11 more firms. Tagged by company and topic.</div>
+            <div class="diff-card__text">Problems sourced from actual interviews at Citadel, Two Sigma, Jane Street, D.E. Shaw, Jump, and 11 more firms.</div>
           </div>
           <div class="diff-card">
             <div class="diff-card__icon">&#x1F4C8;</div>
@@ -464,19 +530,19 @@
             <div class="diff-card__text">Options pricing, volatility surfaces, risk modeling, market microstructure, and trading strategies &mdash; not just brain teasers.</div>
           </div>
           <div class="diff-card">
-            <div class="diff-card__icon">&#x1F4BB;</div>
+            <div class="diff-card__icon">&#x2328;</div>
             <div class="diff-card__title">Coding Labs</div>
-            <div class="diff-card__text">Hands-on Python exercises with real financial data: compute VaR, fit vol surfaces, build binomial trees, analyze order flow.</div>
+            <div class="diff-card__text">Hands-on Python: compute VaR, fit vol surfaces, build binomial trees, analyze order flow with real financial data.</div>
           </div>
           <div class="diff-card">
             <div class="diff-card__icon">&#x1F393;</div>
             <div class="diff-card__title">PhD-Level Rigor</div>
-            <div class="diff-card__text">Solutions include full derivations, proofs, and intuition. Built for STEM PhDs, master's students, and engineers transitioning to quant finance.</div>
+            <div class="diff-card__text">Full derivations, proofs, and intuition. Built for STEM PhDs, master's students, and engineers transitioning to quant.</div>
           </div>
           <div class="diff-card">
             <div class="diff-card__icon">&#x26A1;</div>
-            <div class="diff-card__title">AI-Assisted Learning</div>
-            <div class="diff-card__text">Coming soon: an AI tutor that helps you work through problems step-by-step, explains concepts, and reviews your code.</div>
+            <div class="diff-card__title">Progress Tracking</div>
+            <div class="diff-card__text">Sign in with Google to sync your progress across devices. Track solved, attempted, and unsolved problems.</div>
           </div>
         </div>
       </section>
@@ -498,7 +564,7 @@
         <a class="section-card" href="labs.html">
           <div class="section-card__icon">&#x1F4BB;</div>
           <h2 class="section-card__title">Code Labs</h2>
-          <p class="section-card__desc">Write Python to solve real quant problems: VaR calculation, option pricing, skew fitting, order flow analysis.</p>
+          <p class="section-card__desc">Write Python to solve real quant problems: VaR, option pricing, skew fitting, order flow analysis.</p>
           <div class="section-card__stat">6 labs &middot; Coming soon &rarr;</div>
         </a>
         <a class="section-card" href="resources.html">
@@ -509,9 +575,9 @@
         </a>
       </section>
 
-      <!-- Company Logo Carousel -->
+      <!-- Scrolling Logo Carousel -->
       <section class="logo-carousel-section">
-        <div class="logo-carousel-section__title">Covering interviews at</div>
+        <div class="logo-carousel-section__title">All 16 firms &mdash; real interview questions</div>
         <div class="logo-carousel" aria-label="Companies covered">
           <div class="logo-carousel__track" id="logo-track"></div>
         </div>
@@ -547,8 +613,8 @@
             <ul class="roadmap-card__items">
               <li>In-browser Python code editor</li>
               <li>Real financial datasets</li>
-              <li>Progress tracking</li>
-              <li>300+ problems</li>
+              <li>Community discussions</li>
+              <li>300+ more problems</li>
             </ul>
           </div>
           <div class="roadmap-card">
@@ -594,44 +660,87 @@
       const topics = (await DataLoader.topics()) || { tracks: [] };
       const companies = (await DataLoader.companies()) || [];
 
-      // Stats
-      document.getElementById('stat-problems').textContent = problems.length + '+';
-      document.getElementById('stat-lectures').textContent = lectures.length + '+';
-      const topicCount = topics.tracks.reduce((sum, t) => sum + t.topics.length, 0);
-      document.getElementById('stat-topics').textContent = topicCount;
-      document.getElementById('stat-companies').textContent = companies.length;
+      // Animated count-up for stats
+      function animateCount(el, target) {
+        const duration = 1200;
+        const start = performance.now();
+        function update(now) {
+          const t = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - t, 3); // easeOutCubic
+          el.textContent = Math.floor(ease * target) + '+';
+          if (t < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      }
 
-      // Logo carousel
+      const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCount(document.getElementById('stat-problems'), problems.length);
+            animateCount(document.getElementById('stat-lectures'), lectures.length);
+            const topicCount = topics.tracks.reduce((sum, t) => sum + t.topics.length, 0);
+            animateCount(document.getElementById('stat-topics'), topicCount);
+            animateCount(document.getElementById('stat-companies'), companies.length);
+            statsObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      const statsBar = document.getElementById('stats-bar');
+      if (statsBar) statsObserver.observe(statsBar);
+
+      // Trust bar logos (static row below hero)
+      const trustLogos = document.getElementById('trust-logos');
+      if (trustLogos) {
+        const firms = [
+          { name: 'Citadel', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Citadel_LLC_Logo.svg' },
+          { name: 'Two Sigma', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Two_Sigma_logo.svg' },
+          { name: 'D.E. Shaw', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/D._E._Shaw_%26_Co._Logo.svg' },
+          { name: 'Jane Street', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Jane_Street_Capital_Logo.svg' },
+          { name: 'Jump Trading', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Jump_Trading_logo.svg' },
+          { name: 'HRT', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Hudson_River_Trading_Logo.svg' },
+          { name: 'Optiver', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Optiver_Logo.svg' },
+          { name: 'Point72', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Point72logo.png' },
+        ];
+        trustLogos.innerHTML = firms.map(f =>
+          `<img class="trust-bar__logo" src="${f.logo}" alt="${f.name}" title="${f.name}"
+                onerror="this.outerHTML='<span class=\\'trust-bar__logo--text\\'>${f.name}</span>'">`
+        ).join('');
+      }
+
+      // Logo carousel (all 16 firms, scrolling)
       const logoTrack = document.getElementById('logo-track');
       if (logoTrack) {
         const logoCompanies = [
-          { id: 'citadel', name: 'Citadel' },
-          { id: 'two-sigma', name: 'Two Sigma' },
-          { id: 'de-shaw', name: 'D.E. Shaw' },
-          { id: 'jump-trading', name: 'Jump Trading' },
-          { id: 'drw', name: 'DRW' },
-          { id: 'hrt', name: 'HRT' },
-          { id: 'jane-street', name: 'Jane Street' },
-          { id: 'optiver', name: 'Optiver' },
-          { id: 'sig', name: 'SIG' },
-          { id: 'squarepoint', name: 'Squarepoint' },
-          { id: 'tower-research', name: 'Tower Research' },
-          { id: 'millennium', name: 'Millennium' },
-          { id: 'point72', name: 'Point72' },
-          { id: 'aqr', name: 'AQR' },
-          { id: 'renaissance', name: 'RenTech' },
-          { id: 'five-rings', name: 'Five Rings' },
+          { name: 'Citadel', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Citadel_LLC_Logo.svg' },
+          { name: 'Two Sigma', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Two_Sigma_logo.svg' },
+          { name: 'D.E. Shaw', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/62/D._E._Shaw_%26_Co._Logo.svg' },
+          { name: 'Jump Trading', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Jump_Trading_logo.svg' },
+          { name: 'DRW', logo: null },
+          { name: 'HRT', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Hudson_River_Trading_Logo.svg' },
+          { name: 'Jane Street', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Jane_Street_Capital_Logo.svg' },
+          { name: 'Optiver', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Optiver_Logo.svg' },
+          { name: 'SIG', logo: null },
+          { name: 'Squarepoint', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Squarepoint_Capital.svg' },
+          { name: 'Tower Research', logo: null },
+          { name: 'Millennium', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Millennium_logo.svg' },
+          { name: 'Point72', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Point72logo.png' },
+          { name: 'AQR', logo: null },
+          { name: 'RenTech', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Renaissance_Technologies.png' },
+          { name: 'Five Rings', logo: null },
         ];
-        // Double items for seamless infinite loop
         const items = [...logoCompanies, ...logoCompanies];
-        logoTrack.innerHTML = items.map(c => `
-          <div class="logo-carousel__item">
-            <span class="logo-carousel__name">${c.name}</span>
-          </div>
-        `).join('');
+        logoTrack.innerHTML = items.map(c => {
+          if (c.logo) {
+            return `<div class="logo-carousel__item">
+              <img src="${c.logo}" alt="${c.name}" title="${c.name}"
+                   onerror="this.outerHTML='<span class=\\'logo-carousel__item-text\\'>${c.name}</span>'">
+            </div>`;
+          }
+          return `<div class="logo-carousel__item"><span class="logo-carousel__item-text">${c.name}</span></div>`;
+        }).join('');
       }
 
-      // Featured problems (Fisher-Yates shuffle for proper randomization)
+      // Featured problems
       const shuffled = [...problems];
       for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -643,15 +752,13 @@
         const nameMap = {};
         companies.forEach(c => nameMap[c.id] = c.name);
         featuredEl.innerHTML = featured.map((p, i) => {
-          // Support both old schema (topics/company) and new schema (category/companies)
           const cat = p.category || (p.topics && p.topics[0]) || '';
           const catLabel = cat.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
           const rawComps = p.companies || p.company || [];
           const comps = Array.isArray(rawComps) ? rawComps : [rawComps];
           const compLabel = comps.slice(0, 1).map(c => nameMap[c] || c).join('');
-          const pid = typeof p.id === 'number' ? p.id : p.id;
           return `
-            <a class="problem-card" href="problems.html?id=${pid}">
+            <a class="problem-card" href="problems.html?id=${p.id}">
               <span class="problem-card__number">${i + 1}</span>
               <span class="problem-card__title">${p.title}</span>
               <span class="problem-card__tags">

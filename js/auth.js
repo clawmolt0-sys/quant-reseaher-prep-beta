@@ -8,6 +8,15 @@ const Auth = (() => {
   let userDoc = null;
   let migrated = false;
 
+  // ---- Admin emails (always get pro tier) ----
+  const ADMIN_EMAILS = [
+    'alexwuyinchen@gmail.com',
+  ];
+
+  function isAdmin(email) {
+    return ADMIN_EMAILS.includes((email || '').toLowerCase());
+  }
+
   // ---- Init ----
   function init() {
     FirebaseConfig.init();
@@ -60,11 +69,50 @@ const Auth = (() => {
       const provider = new firebase.auth.GoogleAuthProvider();
       await auth.signInWithPopup(provider);
     } catch (err) {
-      if (err.code !== 'auth/popup-closed-by-user') {
+      if (err.code === 'auth/unauthorized-domain') {
+        // Popup blocked due to domain not being authorized — try redirect
+        console.warn('[Auth] Popup blocked (unauthorized domain), trying redirect...');
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (redirectErr) {
+          console.error('[Auth] Redirect sign in also failed:', redirectErr);
+          showDomainError();
+        }
+      } else if (err.code === 'auth/popup-blocked') {
+        // Browser blocked popup — try redirect
+        const provider = new firebase.auth.GoogleAuthProvider();
+        await auth.signInWithRedirect(provider);
+      } else if (err.code !== 'auth/popup-closed-by-user') {
         console.error('[Auth] Sign in error:', err);
         alert('Sign in failed: ' + err.message);
       }
     }
+  }
+
+  // ---- Domain not authorized error dialog ----
+  function showDomainError() {
+    const overlay = document.createElement('div');
+    overlay.className = 'account-modal-overlay';
+    overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+
+    overlay.innerHTML = `
+      <div class="account-modal" style="max-width:460px">
+        <button class="account-modal__close" onclick="this.closest('.account-modal-overlay').remove()">&times;</button>
+        <div style="text-align:center;padding:var(--space-4)">
+          <div style="font-size:2rem;margin-bottom:var(--space-3)">&#x1F6A8;</div>
+          <h3 style="margin-bottom:var(--space-2)">Domain Not Authorized</h3>
+          <p style="color:var(--text-secondary);font-size:var(--text-sm);line-height:1.6;margin-bottom:var(--space-4)">
+            This domain needs to be added to Firebase's authorized domains list.
+            Go to <strong>Firebase Console &rarr; Authentication &rarr; Settings &rarr; Authorized domains</strong>
+            and add <code style="font-size:var(--text-xs);background:var(--bg-card);padding:2px 6px;border-radius:4px">${window.location.hostname}</code>.
+          </p>
+          <button class="btn btn--secondary btn--sm" onclick="this.closest('.account-modal-overlay').remove()">Got it</button>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
   }
 
   // ---- Sign Out ----
@@ -93,13 +141,19 @@ const Auth = (() => {
 
       if (doc.exists) {
         userDoc = doc.data();
+        // Auto-upgrade admins to pro
+        if (isAdmin(user.email) && userDoc.tier !== 'pro') {
+          await docRef.update({ tier: 'pro' });
+          userDoc.tier = 'pro';
+        }
       } else {
         // Create new user doc
+        const tier = isAdmin(user.email) ? 'pro' : 'free';
         userDoc = {
           email: user.email,
           displayName: user.displayName,
           photoURL: user.photoURL,
-          tier: 'free',
+          tier: tier,
           joinDate: firebase.firestore.FieldValue.serverTimestamp(),
           progress: {},
         };
@@ -194,6 +248,8 @@ const Auth = (() => {
 
   // ---- Tier ----
   function getTier() {
+    // Admins always get pro
+    if (currentUser && isAdmin(currentUser.email)) return 'pro';
     if (!currentUser || !userDoc) return 'free';
     return userDoc.tier || 'free';
   }
