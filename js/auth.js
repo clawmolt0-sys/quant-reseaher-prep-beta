@@ -10,6 +10,8 @@ const Auth = (() => {
   let migrated = false;
   let allProblems = null; // Set via setProblemData()
   let pendingAuthUpdate = null; // Queued auth state if DOM not ready
+  let authSettled = false;       // True once onAuthStateChanged has fully processed
+  let authSettledCallbacks = []; // Callbacks waiting for auth to settle
 
   // ---- Admin emails (always get pro tier) ----
   const ADMIN_EMAILS = [
@@ -62,13 +64,20 @@ const Auth = (() => {
     if (user) {
       currentUser = user;
       console.log('[Auth] Signed in as', user.displayName);
+
+      // Render the user avatar IMMEDIATELY (before Firestore loads)
+      // so the UI feels instant
+      renderUserUI();
+
+      // Then load Firestore data in background
       await loadUserDoc(user);
       if (!migrated) {
         await migrateLocalStorage(user.uid);
         migrated = true;
       }
-      // Sync stats for existing users who don't have the new fields
       await syncStatsOnLogin();
+
+      // Re-render with full data (level badge, etc.)
       renderUserUI();
       forceAuthUIUpdate();
     } else {
@@ -78,6 +87,20 @@ const Auth = (() => {
       renderLoginButton();
       forceAuthUIUpdate();
     }
+
+    // Mark auth as settled so profile page and other consumers can proceed
+    authSettled = true;
+    while (authSettledCallbacks.length > 0) {
+      authSettledCallbacks.shift()();
+    }
+  }
+
+  // Returns a promise that resolves once auth has fully settled (user doc loaded or no user)
+  function waitForAuth() {
+    if (authSettled) return Promise.resolve();
+    return new Promise((resolve) => {
+      authSettledCallbacks.push(resolve);
+    });
   }
 
   // ---- Init ----
@@ -653,7 +676,7 @@ const Auth = (() => {
 
   function renderUserUI() {
     const container = document.getElementById('auth-container');
-    if (!container) return;
+    if (!container || !currentUser) return;
 
     const photoURL = currentUser.photoURL || '';
     const name = currentUser.displayName || currentUser.email || 'User';
@@ -747,7 +770,7 @@ const Auth = (() => {
   return {
     init, showAuthModal, signInWithGoogle, signInWithGitHub, signOut,
     saveStatus, getStatus, getTier,
-    isLoggedIn, getUser, getUserDoc,
+    isLoggedIn, getUser, getUserDoc, waitForAuth,
     setProblemData, calculateLevel,
     toggleFavorite, isFavorited, getFavorites,
     renderLoginButton, renderUserUI,

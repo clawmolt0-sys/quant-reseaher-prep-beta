@@ -16,27 +16,15 @@ const Profile = (() => {
         <p style="color:var(--text-secondary)">Loading profile...</p>
       </div>`;
 
-    // Poll for auth readiness - check every 200ms up to 8 seconds
-    const authReady = await new Promise((resolve) => {
-      let elapsed = 0;
-      const interval = setInterval(() => {
-        elapsed += 200;
-        if (Auth.isLoggedIn() && Auth.getUserDoc()) {
-          clearInterval(interval);
-          resolve(true);
-        } else if (elapsed >= 8000) {
-          clearInterval(interval);
-          resolve(Auth.isLoggedIn());
-        }
-      }, 200);
-      // Also check immediately
-      if (Auth.isLoggedIn() && Auth.getUserDoc()) {
-        clearInterval(interval);
-        resolve(true);
-      }
-    });
+    // Wait for auth to fully settle (user doc loaded from Firestore, or no user)
+    // This uses Auth.waitForAuth() which resolves AFTER handleAuthStateChanged completes
+    // including all Firestore loads. No more race conditions.
+    await Promise.race([
+      Auth.waitForAuth(),
+      new Promise(resolve => setTimeout(resolve, 10000)) // 10s absolute max
+    ]);
 
-    if (!authReady) {
+    if (!Auth.isLoggedIn()) {
       container.innerHTML = `
         <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
           <div style="font-size:3rem;margin-bottom:var(--space-4)">\uD83D\uDD12</div>
@@ -55,7 +43,7 @@ const Profile = (() => {
     const user = Auth.getUser();
     const userDoc = Auth.getUserDoc();
 
-    if (!user || !userDoc || !problems) {
+    if (!user || !problems) {
       container.innerHTML = `
         <div class="container"><div class="empty-state">
           <div class="empty-state__icon">\u26A0\uFE0F</div>
@@ -66,7 +54,13 @@ const Profile = (() => {
       return;
     }
 
-    render(user, userDoc, problems, companies || []);
+    // Use userDoc or a sensible default if Firestore failed
+    const doc = userDoc || {
+      progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
+      xp: 0, level: 1, streak: { current: 0, longest: 0 }, favorites: [], collections: [], achievements: []
+    };
+
+    render(user, doc, problems, companies || []);
   }
 
   function render(user, userDoc, problems, companies) {

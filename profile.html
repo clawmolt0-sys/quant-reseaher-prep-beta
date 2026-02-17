@@ -73,15 +73,7 @@
   <script src="js/profile.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Wait for Auth to be ready
-      const checkAuth = setInterval(() => {
-        if (typeof Auth !== 'undefined' && typeof DataLoader !== 'undefined') {
-          clearInterval(checkAuth);
-          Profile.init();
-        }
-      }, 100);
-      // Timeout fallback
-      setTimeout(() => { clearInterval(checkAuth); Profile.init(); }, 3000);
+      Profile.init();
     });
   </script>
 
