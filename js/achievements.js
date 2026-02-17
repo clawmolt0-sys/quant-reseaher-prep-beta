@@ -49,9 +49,9 @@ const Achievements = (() => {
       if (!doc.achievements) doc.achievements = [];
       if (!doc.achievements.includes(achievementId)) {
         doc.achievements.push(achievementId);
-        await db.collection('users').doc(user.uid).update({
+        await db.collection('users').doc(user.uid).set({
           achievements: firebase.firestore.FieldValue.arrayUnion(achievementId),
-        });
+        }, { merge: true });
       }
 
       const achievement = ACHIEVEMENTS.find(a => a.id === achievementId);

@@ -34,7 +34,7 @@ const Collections = (() => {
     try {
       if (!doc.collections) doc.collections = [];
       doc.collections.push(newCollection);
-      await db.collection('users').doc(Auth.getUser().uid).update({ collections: doc.collections });
+      await db.collection('users').doc(Auth.getUser().uid).set({ collections: doc.collections }, { merge: true });
 
       // Check organizer achievement
       if (typeof Achievements !== 'undefined') {
@@ -61,7 +61,7 @@ const Collections = (() => {
 
     doc.collections = doc.collections.filter(c => c.id !== collectionId);
     try {
-      await db.collection('users').doc(Auth.getUser().uid).update({ collections: doc.collections });
+      await db.collection('users').doc(Auth.getUser().uid).set({ collections: doc.collections }, { merge: true });
     } catch (err) {
       console.error('[Collections] Remove error:', err);
     }
@@ -83,7 +83,7 @@ const Collections = (() => {
     if (!col.problemIds.includes(id)) {
       col.problemIds.push(id);
       try {
-        await db.collection('users').doc(Auth.getUser().uid).update({ collections: doc.collections });
+        await db.collection('users').doc(Auth.getUser().uid).set({ collections: doc.collections }, { merge: true });
       } catch (err) {
         console.error('[Collections] Add problem error:', err);
       }
@@ -105,7 +105,7 @@ const Collections = (() => {
     const id = parseInt(problemId);
     col.problemIds = col.problemIds.filter(pid => pid !== id);
     try {
-      await db.collection('users').doc(Auth.getUser().uid).update({ collections: doc.collections });
+      await db.collection('users').doc(Auth.getUser().uid).set({ collections: doc.collections }, { merge: true });
     } catch (err) {
       console.error('[Collections] Remove problem error:', err);
     }
