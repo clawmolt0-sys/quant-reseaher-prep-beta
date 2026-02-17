@@ -40,7 +40,7 @@ const Problems = (() => {
       rating:    p.rating || diffToRating(p.difficulty),
       type:      p.type || 'calculation',
       source:    p.source || 'interview',
-      status:    p.status || 'complete',
+      status:    p.status === 'title-only' ? 'title-only' : (p.status || 'complete'),
     };
   }
 
@@ -397,7 +397,7 @@ const Problems = (() => {
       const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeFilter || searchQ;
 
       // Base set (optionally hide stubs)
-      let base = hideStubs ? allProblems.filter(p => p.status !== 'incomplete') : allProblems;
+      let base = hideStubs ? allProblems.filter(p => p.status !== 'incomplete' && p.status !== 'title-only') : allProblems;
 
       // Favorites filter
       if (activeFilter === 'favorites' && typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
@@ -743,18 +743,20 @@ const Problems = (() => {
     const status = getStatus(p.id);
     const statusIcon = status === 'solved' ? '\u2705' : status === 'attempted' ? '\u{1F7E1}' : '';
     const isStub = p.status === 'incomplete';
+    const isTitleOnly = p.status === 'title-only';
     const locked = isProblemLocked(p);
     const tagHtml = p.tags.slice(0, 3).map(t =>
       `<span class="td-tag">${formatTag(t)}</span>`
     ).join('');
 
     return `
-      <tr class="${isStub ? 'problem-row--stub' : ''} ${locked ? 'problem-row--locked' : ''}">
+      <tr class="${isStub || isTitleOnly ? 'problem-row--stub' : ''} ${locked ? 'problem-row--locked' : ''}">
         <td class="td-status">${locked ? '<span class="lock-icon">\u{1F512}</span>' : statusIcon}</td>
         <td class="td-num">${p.id}</td>
         <td>
-          <a class="td-title-link" href="problems.html?id=${p.id}">${App.escapeHtml(p.title)}</a>
+          <a class="td-title-link" href="problems.html?id=${p.id}" target="_blank">${App.escapeHtml(p.title)}</a>
           ${isStub ? '<span class="stub-badge">draft</span>' : ''}
+          ${isTitleOnly ? '<span class="stub-badge" style="background:#f59e0b22;color:#d97706">Coming Soon</span>' : ''}
           <div class="td-tags">${tagHtml}</div>
         </td>
         <td><span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span></td>
@@ -835,9 +837,29 @@ const Problems = (() => {
       return;
     }
 
+    const params = App.getParams();
+    const isRandom = params.random === '1';
     const idx = allProblems.indexOf(problem);
-    const prev = idx > 0 ? allProblems[idx - 1] : null;
-    const next = idx < allProblems.length - 1 ? allProblems[idx + 1] : null;
+
+    let prev, next, prevLabel, nextLabel;
+    if (isRandom) {
+      // Random mode: pick random prev/next from all eligible problems
+      const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only');
+      prev = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
+      next = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
+      // Ensure next !== prev if possible
+      if (next && prev && next.id === prev.id && eligible.length > 1) {
+        next = eligible.filter(p => p.id !== prev.id)[Math.floor(Math.random() * (eligible.length - 1))];
+      }
+      prevLabel = '\u2190 Random';
+      nextLabel = 'Next Random \u2192';
+    } else {
+      prev = idx > 0 ? allProblems[idx - 1] : null;
+      next = idx < allProblems.length - 1 ? allProblems[idx + 1] : null;
+      prevLabel = '\u2190 Prev';
+      nextLabel = 'Next \u2192';
+    }
+
     const catMeta = getCatMeta(problem.category);
     const currentStatus = getStatus(problem.id);
 
@@ -903,7 +925,7 @@ const Problems = (() => {
           <div class="detail-section__label">Similar Problems</div>
           <div class="similar-problems">
             ${similar.map(s => `
-              <a class="similar-problem-card" href="problems.html?id=${s.problem.id}">
+              <a class="similar-problem-card" href="problems.html?id=${s.problem.id}" target="_blank">
                 <div class="similar-problem-card__top">
                   <span class="similar-problem-card__id">#${s.problem.id}</span>
                   <span class="badge badge--${s.problem.difficulty} badge--sm">${s.problem.difficulty}</span>
@@ -928,12 +950,12 @@ const Problems = (() => {
           <a href="problems.html" class="problem-nav-back">\u2190 All Problems</a>
           <div class="problem-detail__nav-arrows">
             ${prev
-              ? `<a class="problem-nav-arrow" href="problems.html?id=${prev.id}" title="#${prev.id} ${App.escapeHtml(prev.title)}">\u2190 Prev</a>`
-              : '<span class="problem-nav-arrow problem-nav-arrow--disabled">\u2190 Prev</span>'
+              ? `<a class="problem-nav-arrow" href="problems.html?id=${prev.id}${isRandom ? '&random=1' : ''}" title="#${prev.id} ${App.escapeHtml(prev.title)}">${prevLabel}</a>`
+              : `<span class="problem-nav-arrow problem-nav-arrow--disabled">${prevLabel}</span>`
             }
             ${next
-              ? `<a class="problem-nav-arrow" href="problems.html?id=${next.id}" title="#${next.id} ${App.escapeHtml(next.title)}">Next \u2192</a>`
-              : '<span class="problem-nav-arrow problem-nav-arrow--disabled">Next \u2192</span>'
+              ? `<a class="problem-nav-arrow" href="problems.html?id=${next.id}${isRandom ? '&random=1' : ''}" title="#${next.id} ${App.escapeHtml(next.title)}">${nextLabel}</a>`
+              : `<span class="problem-nav-arrow problem-nav-arrow--disabled">${nextLabel}</span>`
             }
           </div>
         </div>
@@ -948,6 +970,7 @@ const Problems = (() => {
                 <span class="cat-pill" style="background:${catMeta.color}15;color:${catMeta.color}">${catMeta.icon} ${catMeta.name}</span>
                 <span class="problem-detail__type-badge">${formatType(problem.type)}</span>
                 ${problem.status === 'incomplete' ? '<span class="stub-badge">draft</span>' : ''}
+                ${problem.status === 'title-only' ? '<span class="stub-badge" style="background:#f59e0b22;color:#d97706">Coming Soon</span>' : ''}
               </div>
               <h1 class="problem-detail__title">${App.escapeHtml(problem.title)}</h1>
               <div class="problem-detail__tags-row">${tagHtml}</div>
@@ -976,7 +999,9 @@ const Problems = (() => {
             <div class="problem-detail__statement-card">
               <div class="problem-detail__statement-label">Problem Statement</div>
               <div class="problem-detail__statement math-content">
-                ${MarkdownRender.render(problem.statement)}
+                ${problem.status === 'title-only'
+                  ? '<p style="color:var(--text-muted);font-style:italic">This problem is sourced from real interviews. Full problem statement and solution coming soon.</p>'
+                  : MarkdownRender.render(problem.statement)}
               </div>
             </div>
 
@@ -1110,11 +1135,11 @@ const Problems = (() => {
   // ---- Random problem ----
   function randomProblem() {
     const pool = currentFiltered.length > 0 ? currentFiltered : allProblems;
-    const eligible = pool.filter(p => p.status !== 'incomplete');
+    const eligible = pool.filter(p => p.status !== 'incomplete' && p.status !== 'title-only');
     const pick = eligible.length > 0
       ? eligible[Math.floor(Math.random() * eligible.length)]
       : pool[Math.floor(Math.random() * pool.length)];
-    if (pick) window.location.href = 'problems.html?id=' + pick.id;
+    if (pick) window.location.href = 'problems.html?id=' + pick.id + '&random=1';
   }
 
   // ---- Stub toggle ----

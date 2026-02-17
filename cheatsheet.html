@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Sheet — QR Prep</title>
+  <meta name="description" content="Comprehensive quick-reference cheat sheet for quant researcher interview preparation — formulas, tips, and topic summaries.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    /* ---- Cheat Sheet page-specific styles ---- */
+
+    .cheatsheet__section {
+      margin-bottom: var(--space-12);
+    }
+
+    .cheatsheet__section-title {
+      font-size: var(--text-xl);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-4);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .cheatsheet__section-icon {
+      font-size: var(--text-2xl);
+      line-height: 1;
+    }
+
+    /* Formula cards */
+    .cheatsheet__formula-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .cheatsheet__formula-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      transition: all var(--transition-base);
+    }
+
+    .cheatsheet__formula-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-light);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cheatsheet__formula-card-title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      color: var(--accent);
+      margin-bottom: var(--space-3);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .cheatsheet__formula-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      line-height: 2.2;
+    }
+
+    .cheatsheet__formula-list p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+    }
+
+    .cheatsheet__formula-list p strong {
+      color: var(--text-primary);
+      font-weight: var(--font-medium);
+    }
+
+    /* Tips */
+    .cheatsheet__tips-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+    }
+
+    .cheatsheet__tip {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4) var(--space-5);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      transition: all var(--transition-base);
+    }
+
+    .cheatsheet__tip:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-light);
+    }
+
+    .cheatsheet__tip-number {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: var(--radius-full);
+      background: var(--accent-light);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: var(--text-xs);
+      font-weight: var(--font-bold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cheatsheet__tip-content {
+      flex: 1;
+    }
+
+    .cheatsheet__tip-label {
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+      font-size: var(--text-sm);
+    }
+
+    .cheatsheet__tip-desc {
+      color: var(--text-secondary);
+      font-size: var(--text-sm);
+      margin-top: 2px;
+    }
+
+    /* Topics grid */
+    .cheatsheet__topics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+    }
+
+    .cheatsheet__topic-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      transition: all var(--transition-base);
+    }
+
+    .cheatsheet__topic-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-light);
+      box-shadow: var(--shadow-md);
+    }
+
+    .cheatsheet__topic-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-3);
+    }
+
+    .cheatsheet__topic-badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: var(--font-semibold);
+      letter-spacing: 0.03em;
+    }
+
+    .cheatsheet__topic-badge--prob {
+      background: var(--color-easy-bg);
+      color: var(--color-easy);
+    }
+    .cheatsheet__topic-badge--stats {
+      background: var(--tag-teal-bg);
+      color: var(--tag-teal);
+    }
+    .cheatsheet__topic-badge--stoch {
+      background: var(--tag-purple-bg);
+      color: var(--tag-purple);
+    }
+    .cheatsheet__topic-badge--options {
+      background: var(--color-medium-bg);
+      color: var(--color-medium);
+    }
+    .cheatsheet__topic-badge--brainteasers {
+      background: var(--color-hard-bg);
+      color: var(--color-hard);
+    }
+    .cheatsheet__topic-badge--coding {
+      background: var(--tag-blue-bg);
+      color: var(--tag-blue);
+    }
+
+    .cheatsheet__topic-title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+    }
+
+    .cheatsheet__topic-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .cheatsheet__topic-items li {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+      padding-left: var(--space-4);
+      position: relative;
+    }
+
+    .cheatsheet__topic-items li::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 9px;
+      width: 4px;
+      height: 4px;
+      border-radius: var(--radius-full);
+      background: var(--text-muted);
+    }
+
+    /* Books */
+    .cheatsheet__books-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .cheatsheet__book-category {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: var(--space-5) var(--space-6);
+      transition: all var(--transition-base);
+    }
+
+    .cheatsheet__book-category:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-light);
+    }
+
+    .cheatsheet__book-category-title {
+      font-size: var(--text-base);
+      font-weight: var(--font-semibold);
+      color: var(--text-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .cheatsheet__book-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      line-height: 1.9;
+    }
+
+    .cheatsheet__book-list p {
+      font-size: var(--text-sm);
+      color: var(--text-secondary);
+    }
+
+    .cheatsheet__book-list strong {
+      color: var(--text-primary);
+      font-weight: var(--font-medium);
+    }
+
+    .cheatsheet__book-list .cheatsheet__book-author {
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .cheatsheet__topics-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-icon">⚡</span>
+        <span>QR Prep</span>
+      </a>
+      <button class="nav__mobile-toggle" aria-label="Menu">☰</button>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="problems.html">Problems</a></li>
+        <li><a class="nav__link" href="explore.html">Explore</a></li>
+        <li><a class="nav__link" href="learn.html">Learn <span class="nav-beta">(Beta)</span></a></li>
+        <li><a class="nav__link" href="labs.html">Code Labs</a></li>
+        <li><a class="nav__link" href="cheatsheet.html">Cheat Sheet</a></li>
+      </ul>
+      <div id="theme-toggle-container"></div>
+      <div id="auth-container"></div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container" style="max-width:900px">
+
+      <div class="section-header">
+        <h1 class="section-header__title">Cheat Sheet</h1>
+        <p class="section-header__subtitle">Quick-reference formulas, tips, and topic summaries for quant interview preparation.</p>
+      </div>
+
+      <!-- ============================== -->
+      <!-- 1. KEY FORMULAS                -->
+      <!-- ============================== -->
+      <section class="cheatsheet__section">
+        <h2 class="cheatsheet__section-title">
+          <span class="cheatsheet__section-icon">&#x1D453;</span> Key Formulas
+        </h2>
+
+        <div class="cheatsheet__formula-group">
+
+          <!-- Options & Derivatives -->
+          <div class="cheatsheet__formula-card">
+            <div class="cheatsheet__formula-card-title">Options &amp; Derivatives</div>
+            <div class="cheatsheet__formula-list">
+              <p><strong>Black-Scholes (Call):</strong> $C = S_0 N(d_1) - Ke^{-rT}N(d_2)$ where $d_1 = \frac{\ln(S/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}$, $d_2 = d_1 - \sigma\sqrt{T}$</p>
+              <p><strong>Put-Call Parity:</strong> $C - P = S_0 - Ke^{-rT}$</p>
+              <p><strong>Delta Hedging:</strong> A delta-neutral portfolio: $\Pi = V - \Delta \cdot S$, rebalanced so $\frac{\partial \Pi}{\partial S} = 0$</p>
+              <p><strong>Greeks:</strong></p>
+              <p style="padding-left:var(--space-4)">
+                $\Delta = \frac{\partial V}{\partial S}$, &ensp;
+                $\Gamma = \frac{\partial^2 V}{\partial S^2}$, &ensp;
+                $\mathcal{V} = \frac{\partial V}{\partial \sigma}$, &ensp;
+                $\Theta = \frac{\partial V}{\partial t}$, &ensp;
+                $\rho = \frac{\partial V}{\partial r}$
+              </p>
+            </div>
+          </div>
+
+          <!-- Stochastic Calculus -->
+          <div class="cheatsheet__formula-card">
+            <div class="cheatsheet__formula-card-title">Stochastic Calculus</div>
+            <div class="cheatsheet__formula-list">
+              <p><strong>Geometric Brownian Motion:</strong> $dS = \mu S\, dt + \sigma S\, dW$</p>
+              <p><strong>Ito's Lemma:</strong> $df = \frac{\partial f}{\partial t}dt + \frac{\partial f}{\partial S}dS + \frac{1}{2}\frac{\partial^2 f}{\partial S^2}(dS)^2$</p>
+              <p><strong>Girsanov's Theorem:</strong> Under a change of measure $\mathbb{Q}$, $\widetilde{W}_t = W_t + \int_0^t \theta_s\, ds$ is a $\mathbb{Q}$-Brownian motion, where $\theta$ is the market price of risk.</p>
+              <p><strong>Martingale Property:</strong> $\{X_t\}$ is a martingale if $\mathbb{E}[X_t \mid \mathcal{F}_s] = X_s$ for all $s \leq t$.</p>
+            </div>
+          </div>
+
+          <!-- Probability & Distributions -->
+          <div class="cheatsheet__formula-card">
+            <div class="cheatsheet__formula-card-title">Probability &amp; Distributions</div>
+            <div class="cheatsheet__formula-list">
+              <p><strong>Bayes' Theorem:</strong> $P(A|B) = \frac{P(B|A)\,P(A)}{P(B)}$</p>
+              <p><strong>Conditional Expectation:</strong> $\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X \mid Y]]$ &ensp;(tower property)</p>
+              <p><strong>Normal Distribution:</strong> $X \sim N(\mu, \sigma^2)$, &ensp; MGF: $M_X(t) = \exp\!\left(\mu t + \frac{\sigma^2 t^2}{2}\right)$</p>
+              <p><strong>Poisson Distribution:</strong> $P(X = k) = e^{-\lambda}\frac{\lambda^k}{k!}$, &ensp; $\mathbb{E}[X] = \text{Var}(X) = \lambda$</p>
+              <p><strong>Central Limit Theorem:</strong> $\frac{\bar{X}_n - \mu}{\sigma / \sqrt{n}} \xrightarrow{d} N(0,1)$ as $n \to \infty$</p>
+              <p><strong>Law of Large Numbers:</strong> $\bar{X}_n \xrightarrow{p} \mu$ as $n \to \infty$</p>
+              <p><strong>Covariance:</strong> $\text{Cov}(X,Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$</p>
+              <p><strong>Correlation:</strong> $\rho_{XY} = \frac{\text{Cov}(X,Y)}{\sigma_X \sigma_Y}$, &ensp; $-1 \leq \rho \leq 1$</p>
+            </div>
+          </div>
+
+          <!-- Statistics & Regression -->
+          <div class="cheatsheet__formula-card">
+            <div class="cheatsheet__formula-card-title">Statistics &amp; Regression</div>
+            <div class="cheatsheet__formula-list">
+              <p><strong>OLS Estimator:</strong> $\hat{\beta} = (X^TX)^{-1}X^TY$</p>
+              <p><strong>VaR (Parametric, Normal):</strong> $\text{VaR}_\alpha = \mu + z_\alpha\, \sigma$</p>
+              <p><strong>Portfolio Variance:</strong> $\sigma_P^2 = \mathbf{w}^T \Sigma\, \mathbf{w}$</p>
+              <p><strong>Duration:</strong> $D = -\frac{1}{P}\frac{dP}{dy}$, &ensp; price change $\approx -D \cdot \Delta y \cdot P$</p>
+            </div>
+          </div>
+
+          <!-- Performance & Sizing -->
+          <div class="cheatsheet__formula-card">
+            <div class="cheatsheet__formula-card-title">Performance &amp; Sizing</div>
+            <div class="cheatsheet__formula-list">
+              <p><strong>Sharpe Ratio:</strong> $SR = \frac{\mathbb{E}[R_p] - R_f}{\sigma_p}$</p>
+              <p><strong>Kelly Criterion:</strong> $f^* = \frac{p(b+1) - 1}{b}$, &ensp; where $p$ = win probability, $b$ = odds ratio</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================== -->
+      <!-- 2. INTERVIEW TIPS              -->
+      <!-- ============================== -->
+      <section class="cheatsheet__section">
+        <h2 class="cheatsheet__section-title">
+          <span class="cheatsheet__section-icon">&#x2728;</span> Interview Tips
+        </h2>
+
+        <div class="cheatsheet__tips-grid">
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">1</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Think out loud</div>
+              <div class="cheatsheet__tip-desc">Interviewers want to see your reasoning process, not just the final answer. Narrate your approach.</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">2</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Start simple</div>
+              <div class="cheatsheet__tip-desc">Solve a simpler version of the problem first, then generalize to the full case.</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">3</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Check edge cases</div>
+              <div class="cheatsheet__tip-desc">Does your answer make sense for extreme values? Try $n=0$, $n=1$, $n \to \infty$.</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">4</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Know your distributions</div>
+              <div class="cheatsheet__tip-desc">Be fluent with Normal, Poisson, Exponential, Geometric, and Binomial distributions.</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">5</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Practice mental math</div>
+              <div class="cheatsheet__tip-desc">Quick estimation is valued highly. Know squares, cubes, key constants ($e \approx 2.718$, $\ln 2 \approx 0.693$).</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">6</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Frame your answer</div>
+              <div class="cheatsheet__tip-desc">State your assumptions clearly before diving in. This shows structured thinking and avoids ambiguity.</div>
+            </div>
+          </div>
+
+          <div class="cheatsheet__tip">
+            <span class="cheatsheet__tip-number">7</span>
+            <div class="cheatsheet__tip-content">
+              <div class="cheatsheet__tip-label">Bound it</div>
+              <div class="cheatsheet__tip-desc">Give upper and lower bounds before solving exactly. This demonstrates estimation skills and sanity-checks your work.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== -->
+      <!-- 3. COMMON INTERVIEW TOPICS     -->
+      <!-- ============================== -->
+      <section class="cheatsheet__section">
+        <h2 class="cheatsheet__section-title">
+          <span class="cheatsheet__section-icon">&#x1F4CB;</span> Common Interview Topics
+        </h2>
+
+        <div class="cheatsheet__topics-grid">
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--prob">Probability</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Expected value and linearity of expectation</li>
+              <li>Conditional probability and Bayes' theorem</li>
+              <li>Counting (permutations, combinations)</li>
+              <li>Markov chains and transition matrices</li>
+              <li>Geometric and negative binomial problems</li>
+            </ul>
+          </div>
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--stats">Statistics</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Hypothesis testing (t-test, chi-squared)</li>
+              <li>Linear regression and OLS properties</li>
+              <li>Bayesian inference and priors</li>
+              <li>MLE and MAP estimation</li>
+              <li>Confidence intervals and p-values</li>
+            </ul>
+          </div>
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--stoch">Stochastic Calculus</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Ito's lemma and applications</li>
+              <li>Geometric Brownian Motion</li>
+              <li>Martingales and stopping times</li>
+              <li>Change of measure (Girsanov)</li>
+              <li>Stochastic integrals and Ito isometry</li>
+            </ul>
+          </div>
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--options">Options Pricing</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Black-Scholes model and assumptions</li>
+              <li>Greeks: Delta, Gamma, Vega, Theta, Rho</li>
+              <li>Put-Call parity</li>
+              <li>Binomial option pricing model</li>
+              <li>Implied volatility and vol smile</li>
+            </ul>
+          </div>
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--brainteasers">Brain Teasers</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Recursion and self-similar sub-problems</li>
+              <li>Symmetry arguments</li>
+              <li>Invariant-based reasoning</li>
+              <li>Fermi estimation</li>
+              <li>Game theory and optimal strategy</li>
+            </ul>
+          </div>
+
+          <div class="cheatsheet__topic-card">
+            <div class="cheatsheet__topic-header">
+              <span class="cheatsheet__topic-badge cheatsheet__topic-badge--coding">Coding</span>
+            </div>
+            <ul class="cheatsheet__topic-items">
+              <li>Time and space complexity analysis</li>
+              <li>Dynamic programming patterns</li>
+              <li>Monte Carlo simulation</li>
+              <li>Data structures (heaps, hash maps, trees)</li>
+              <li>Numerical methods and optimization</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============================== -->
+      <!-- 4. ESSENTIAL READING           -->
+      <!-- ============================== -->
+      <section class="cheatsheet__section" style="margin-bottom:var(--space-8)">
+        <h2 class="cheatsheet__section-title">
+          <span class="cheatsheet__section-icon">&#x1F4DA;</span> Essential Reading
+        </h2>
+
+        <div class="cheatsheet__books-grid">
+
+          <div class="cheatsheet__book-category">
+            <div class="cheatsheet__book-category-title">Probability &amp; Statistics</div>
+            <div class="cheatsheet__book-list">
+              <p><strong>A First Course in Probability</strong> <span class="cheatsheet__book-author">-- Sheldon Ross</span></p>
+              <p><strong>All of Statistics</strong> <span class="cheatsheet__book-author">-- Larry Wasserman</span></p>
+              <p><strong>Introduction to Probability Models</strong> <span class="cheatsheet__book-author">-- Sheldon Ross</span></p>
+              <p><strong>Probability and Statistics for Engineering and the Sciences</strong> <span class="cheatsheet__book-author">-- Jay Devore</span></p>
+            </div>
+          </div>
+
+          <div class="cheatsheet__book-category">
+            <div class="cheatsheet__book-category-title">Stochastic Calculus &amp; Financial Math</div>
+            <div class="cheatsheet__book-list">
+              <p><strong>Stochastic Calculus for Finance I &amp; II</strong> <span class="cheatsheet__book-author">-- Steven Shreve</span></p>
+              <p><strong>Options, Futures, and Other Derivatives</strong> <span class="cheatsheet__book-author">-- John Hull</span></p>
+              <p><strong>Paul Wilmott on Quantitative Finance</strong> <span class="cheatsheet__book-author">-- Paul Wilmott</span></p>
+              <p><strong>Concepts and Practice of Mathematical Finance</strong> <span class="cheatsheet__book-author">-- Mark Joshi</span></p>
+            </div>
+          </div>
+
+          <div class="cheatsheet__book-category">
+            <div class="cheatsheet__book-category-title">Linear Algebra &amp; Optimization</div>
+            <div class="cheatsheet__book-list">
+              <p><strong>Introduction to Linear Algebra</strong> <span class="cheatsheet__book-author">-- Gilbert Strang</span></p>
+              <p><strong>Convex Optimization</strong> <span class="cheatsheet__book-author">-- Stephen Boyd &amp; Lieven Vandenberghe</span></p>
+              <p><strong>Matrix Analysis and Applied Linear Algebra</strong> <span class="cheatsheet__book-author">-- Carl D. Meyer</span></p>
+            </div>
+          </div>
+
+          <div class="cheatsheet__book-category">
+            <div class="cheatsheet__book-category-title">Interview Preparation</div>
+            <div class="cheatsheet__book-list">
+              <p><strong>A Practical Guide to Quantitative Finance Interviews</strong> <span class="cheatsheet__book-author">-- Xinfeng Zhou (the "Green Book")</span></p>
+              <p><strong>Heard on The Street</strong> <span class="cheatsheet__book-author">-- Timothy Crack</span></p>
+              <p><strong>Quant Job Interview Questions and Answers</strong> <span class="cheatsheet__book-author">-- Mark Joshi</span></p>
+              <p><strong>Fifty Challenging Problems in Probability</strong> <span class="cheatsheet__book-author">-- Frederick Mosteller</span></p>
+            </div>
+          </div>
+
+          <div class="cheatsheet__book-category">
+            <div class="cheatsheet__book-category-title">Programming &amp; Data Science</div>
+            <div class="cheatsheet__book-list">
+              <p><strong>Python for Data Analysis</strong> <span class="cheatsheet__book-author">-- Wes McKinney</span></p>
+              <p><strong>Hands-On Machine Learning</strong> <span class="cheatsheet__book-author">-- Aurelien Geron</span></p>
+              <p><strong>Elements of Statistical Learning</strong> <span class="cheatsheet__book-author">-- Hastie, Tibshirani, Friedman</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__text">&copy; 2025 QR Prep — PhD-level quant researcher interview preparation</span>
+      <ul class="footer__links">
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="cheatsheet.html">Cheat Sheet</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/katex-render.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/collections.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

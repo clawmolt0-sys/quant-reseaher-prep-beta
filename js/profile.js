@@ -6,21 +6,57 @@
 const Profile = (() => {
 
   async function init() {
-    // Wait briefly for auth to settle
-    await new Promise(r => setTimeout(r, 500));
-
     const container = document.getElementById('profile-content');
     if (!container) return;
 
+    // Show loading state while waiting for auth
+    container.innerHTML = `
+      <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
+        <div class="nav__auth-loading" style="width:48px;height:48px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite;margin:0 auto var(--space-4)"></div>
+        <p style="color:var(--text-secondary)">Loading profile...</p>
+      </div>`;
+
+    // Wait for auth to actually resolve instead of using a fixed delay.
+    // Listen for the custom 'auth-state-changed' event from auth.js,
+    // or fall back after 5 seconds.
     if (!Auth.isLoggedIn()) {
-      container.innerHTML = `
-        <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
-          <div style="font-size:3rem;margin-bottom:var(--space-4)">\uD83D\uDD12</div>
-          <h2 style="margin-bottom:var(--space-3)">Sign In to View Profile</h2>
-          <p style="color:var(--text-secondary);margin-bottom:var(--space-6)">Track your progress, earn achievements, and build your quant interview reputation.</p>
-          <button class="btn btn--primary" onclick="Auth.showAuthModal()">Sign In</button>
-        </div>`;
-      return;
+      const authReady = await new Promise((resolve) => {
+        // If auth is already resolved (logged in), resolve immediately
+        if (Auth.isLoggedIn()) {
+          resolve(true);
+          return;
+        }
+
+        let settled = false;
+
+        // Listen for the custom event dispatched by auth.js after state change
+        function onAuthChanged(e) {
+          if (settled) return;
+          settled = true;
+          window.removeEventListener('auth-state-changed', onAuthChanged);
+          resolve(e.detail && e.detail.loggedIn);
+        }
+        window.addEventListener('auth-state-changed', onAuthChanged);
+
+        // Fallback timeout: after 5 seconds, give up waiting
+        setTimeout(() => {
+          if (settled) return;
+          settled = true;
+          window.removeEventListener('auth-state-changed', onAuthChanged);
+          resolve(Auth.isLoggedIn());
+        }, 5000);
+      });
+
+      if (!authReady) {
+        container.innerHTML = `
+          <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
+            <div style="font-size:3rem;margin-bottom:var(--space-4)">\uD83D\uDD12</div>
+            <h2 style="margin-bottom:var(--space-3)">Sign In to View Profile</h2>
+            <p style="color:var(--text-secondary);margin-bottom:var(--space-6)">Track your progress, earn achievements, and build your quant interview reputation.</p>
+            <button class="btn btn--primary" onclick="Auth.showAuthModal()">Sign In</button>
+          </div>`;
+        return;
+      }
     }
 
     const [problems, companies] = await Promise.all([

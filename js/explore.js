@@ -208,8 +208,10 @@ const Explore = (() => {
       arr.forEach(c => { counts[c] = (counts[c] || 0) + 1; });
     });
 
-    // Sort by problem count (descending)
-    const sorted = [...companies].sort((a, b) => (counts[b.id] || 0) - (counts[a.id] || 0));
+    // Filter out companies with zero problems, then sort by count (descending)
+    const sorted = [...companies]
+      .filter(c => counts[c.id] && counts[c.id] > 0)
+      .sort((a, b) => (counts[b.id] || 0) - (counts[a.id] || 0));
 
     const cards = sorted.map(c => {
       const count = counts[c.id] || 0;

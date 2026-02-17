@@ -9,6 +9,7 @@ const Auth = (() => {
   let userDoc = null;
   let migrated = false;
   let allProblems = null; // Set via setProblemData()
+  let pendingAuthUpdate = null; // Queued auth state if DOM not ready
 
   // ---- Admin emails (always get pro tier) ----
   const ADMIN_EMAILS = [
@@ -22,8 +23,42 @@ const Auth = (() => {
     return ADMIN_EMAILS.includes((email || '').toLowerCase());
   }
 
+  // ---- Check if DOM is ready for rendering ----
+  function isDomReady() {
+    return document.readyState === 'complete' || document.readyState === 'interactive';
+  }
+
+  // ---- Force a DOM reflow and dispatch auth-state-changed event ----
+  function forceAuthUIUpdate() {
+    const container = document.getElementById('auth-container');
+    if (container) {
+      // Force reflow to ensure the browser paints the new content
+      void container.offsetHeight;
+      container.style.display = 'none';
+      void container.offsetHeight;
+      container.style.display = '';
+    }
+    // Dispatch custom event so other pages (e.g. profile) can react
+    window.dispatchEvent(new CustomEvent('auth-state-changed', {
+      detail: { loggedIn: !!currentUser, user: currentUser }
+    }));
+  }
+
   // ---- Auth state change handler (extracted to avoid duplication) ----
   async function handleAuthStateChanged(user) {
+    // If DOM isn't ready yet, queue the update
+    if (!isDomReady()) {
+      pendingAuthUpdate = user;
+      document.addEventListener('DOMContentLoaded', () => {
+        if (pendingAuthUpdate !== null) {
+          const queued = pendingAuthUpdate;
+          pendingAuthUpdate = null;
+          handleAuthStateChanged(queued);
+        }
+      }, { once: true });
+      return;
+    }
+
     if (user) {
       currentUser = user;
       console.log('[Auth] Signed in as', user.displayName);
@@ -35,11 +70,13 @@ const Auth = (() => {
       // Sync stats for existing users who don't have the new fields
       await syncStatsOnLogin();
       renderUserUI();
+      forceAuthUIUpdate();
     } else {
       currentUser = null;
       userDoc = null;
       migrated = false;
       renderLoginButton();
+      forceAuthUIUpdate();
     }
   }
 
@@ -81,6 +118,19 @@ const Auth = (() => {
     if (!auth) return;
 
     auth.onAuthStateChanged(handleAuthStateChanged);
+
+    // Handle redirect-based auth (e.g. on GitHub Pages where popups are blocked)
+    auth.getRedirectResult().then((result) => {
+      if (result && result.user) {
+        console.log('[Auth] Redirect sign-in completed for', result.user.displayName);
+        // onAuthStateChanged will fire, but force a UI update just in case
+        handleAuthStateChanged(result.user);
+      }
+    }).catch((err) => {
+      if (err.code !== 'auth/credential-already-in-use') {
+        console.warn('[Auth] getRedirectResult error:', err.code, err.message);
+      }
+    });
   }
 
   // ============================================================
