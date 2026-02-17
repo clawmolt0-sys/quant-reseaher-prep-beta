@@ -4,221 +4,164 @@
   <title>Auth + Firestore Test</title>
   <style>
     body { font-family: monospace; background: #1a1a2e; color: #e0e0e0; padding: 20px; max-width: 800px; margin: 0 auto; }
-    .test { padding: 8px 12px; margin: 4px 0; border-radius: 6px; display: flex; align-items: center; gap: 8px; }
+    .test { padding: 8px 12px; margin: 4px 0; border-radius: 6px; }
     .pass { background: #1a3a2a; color: #4ade80; }
     .fail { background: #3a1a1a; color: #f87171; }
-    .running { background: #1a2a3a; color: #60a5fa; }
-    .skip { background: #2a2a2a; color: #888; }
-    .icon { font-size: 16px; min-width: 20px; }
+    .info { background: #1a2a3a; color: #60a5fa; }
+    .warn { background: #3a2a1a; color: #fbbf24; }
     button { padding: 10px 20px; margin: 8px 4px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; }
     .btn-run { background: #3b82f6; color: white; }
-    .btn-run:hover { background: #2563eb; }
     .btn-sign { background: #22c55e; color: white; }
-    .btn-sign:hover { background: #16a34a; }
     h2 { color: #60a5fa; }
-    #summary { margin-top: 16px; padding: 12px; border-radius: 8px; font-weight: bold; }
-    .detail { font-size: 12px; color: #888; margin-top: 2px; }
   </style>
 </head>
 <body>
-  <h2>QR Prep — Auth & Firestore Test Suite</h2>
-  <p style="color:#888">Tests that FirebaseConfig.init(), Auth login, and Firestore read/write all work correctly.</p>
+  <h2>QR Prep — Auth & Firestore Test</h2>
   <div>
-    <button class="btn-run" onclick="runTests()">Run All Tests</button>
     <button class="btn-sign" onclick="doSignIn()">Sign In with Google</button>
+    <button class="btn-run" onclick="testFirestore()">Test Firestore Read/Write</button>
   </div>
-  <div id="results"></div>
-  <div id="summary"></div>
+  <div id="log"></div>
 
-  <!-- Load the SAME scripts as the real site -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-  <script src="js/firebase-config.js"></script>
 
   <script>
-    const results = document.getElementById('results');
-    const summaryEl = document.getElementById('summary');
-    let passed = 0, failed = 0, total = 0;
-
-    function addResult(name, status, detail) {
-      total++;
-      const icon = status === 'pass' ? '\u2705' : status === 'fail' ? '\u274C' : status === 'running' ? '\u23F3' : '\u23ED\uFE0F';
-      if (status === 'pass') passed++;
-      if (status === 'fail') failed++;
-      const div = document.createElement('div');
-      div.className = 'test ' + status;
-      div.id = 'test-' + total;
-      div.innerHTML = '<span class="icon">' + icon + '</span> <strong>' + name + '</strong> ' + (detail ? '\u2014 ' + detail : '');
-      results.appendChild(div);
-      return 'test-' + total;
+    var logEl = document.getElementById('log');
+    function log(msg, cls) {
+      var d = document.createElement('div');
+      d.className = 'test ' + (cls || 'info');
+      d.textContent = new Date().toLocaleTimeString() + ' ' + msg;
+      logEl.appendChild(d);
+      logEl.scrollTop = logEl.scrollHeight;
     }
 
-    function updateResult(id, name, status, detail) {
-      const div = document.getElementById(id);
-      if (!div) return;
-      const icon = status === 'pass' ? '\u2705' : '\u274C';
-      if (status === 'pass') passed++;
-      if (status === 'fail') failed++;
-      div.className = 'test ' + status;
-      div.innerHTML = '<span class="icon">' + icon + '</span> <strong>' + name + '</strong> ' + (detail ? '\u2014 ' + detail : '');
-    }
+    // ---- Minimal Firebase init (NO firebase-config.js dependency) ----
+    log('Initializing Firebase directly...');
 
-    function updateSummary() {
-      summaryEl.style.background = failed > 0 ? '#3a1a1a' : '#1a3a2a';
-      summaryEl.style.color = failed > 0 ? '#f87171' : '#4ade80';
-      summaryEl.textContent = passed + ' passed, ' + failed + ' failed out of ' + (passed + failed) + ' tests';
-    }
-
-    // Sign in helper
-    async function doSignIn() {
-      FirebaseConfig.init();
-      const auth = FirebaseConfig.getAuth();
-      if (!auth) { alert('Firebase not initialized'); return; }
-      try {
-        const provider = new firebase.auth.GoogleAuthProvider();
-        await auth.signInWithPopup(provider);
-        alert('Signed in! Now click Run All Tests.');
-      } catch (e) {
-        alert('Sign in error: ' + e.code + ' - ' + e.message);
-      }
-    }
-
-    async function runTests() {
-      results.innerHTML = '';
-      summaryEl.innerHTML = '';
-      passed = 0; failed = 0; total = 0;
-
-      // TEST 1: FirebaseConfig.init()
-      try {
-        const origError = console.error;
-        let initError = null;
-        console.error = function() { initError = Array.from(arguments).join(' '); origError.apply(console, arguments); };
-        const t0 = performance.now();
-        FirebaseConfig.init();
-        const elapsed = Math.round(performance.now() - t0);
-        console.error = origError;
-        if (FirebaseConfig.isInitialized()) {
-          addResult('FirebaseConfig.init()', 'pass', 'Completed in ' + elapsed + 'ms');
-        } else {
-          addResult('FirebaseConfig.init()', 'fail', 'Error: ' + (initError || 'unknown'));
-          updateSummary(); return;
-        }
-      } catch (e) {
-        addResult('FirebaseConfig.init()', 'fail', e.message);
-        updateSummary(); return;
-      }
-
-      // TEST 2: getAuth()
-      const auth = FirebaseConfig.getAuth();
-      if (auth && typeof auth.onAuthStateChanged === 'function') {
-        addResult('getAuth()', 'pass', 'Valid auth object');
-      } else {
-        addResult('getAuth()', 'fail', 'null or invalid');
-        updateSummary(); return;
-      }
-
-      // TEST 3: getDb()
-      const db = FirebaseConfig.getDb();
-      if (db && typeof db.collection === 'function') {
-        addResult('getDb()', 'pass', 'Valid Firestore object');
-      } else {
-        addResult('getDb()', 'fail', 'null or invalid');
-        updateSummary(); return;
-      }
-
-      // TEST 4: Check current auth state directly (not via listener)
-      const currentUser = auth.currentUser;
-      addResult('auth.currentUser', currentUser ? 'pass' : 'skip',
-        currentUser ? 'Signed in as ' + currentUser.displayName : 'Not signed in yet (click Sign In button above)');
-
-      // TEST 5: onAuthStateChanged with 10s timeout
-      const authStateId = addResult('onAuthStateChanged', 'running', 'Waiting up to 10s...');
-      let authResolved = false;
-      const user = await new Promise(function(resolve) {
-        const timer = setTimeout(function() {
-          if (!authResolved) resolve('timeout');
-        }, 10000);
-        auth.onAuthStateChanged(function(u) {
-          authResolved = true;
-          clearTimeout(timer);
-          resolve(u);
-        });
+    if (firebase.apps.length === 0) {
+      firebase.initializeApp({
+        apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
+        authDomain: "qrprep.firebaseapp.com",
+        projectId: "qrprep",
+        storageBucket: "qrprep.firebasestorage.app",
+        messagingSenderId: "269729809695",
+        appId: "1:269729809695:web:4379017f0e6bec69e7dc2a"
       });
+    }
 
-      if (user === 'timeout') {
-        updateResult(authStateId, 'onAuthStateChanged', 'fail',
-          'Timed out after 10s. Firebase Auth SDK may be blocked by network/CORS. Check browser console for errors.');
-        updateSummary();
-        return;
-      } else if (user) {
-        updateResult(authStateId, 'onAuthStateChanged', 'pass', 'Signed in: ' + user.displayName + ' (' + user.email + ')');
+    log('firebase.initializeApp() done. apps=' + firebase.apps.length);
+
+    var auth = firebase.auth();
+    var db = firebase.firestore();
+
+    log('Got auth and db objects');
+
+    // Try settings (may fail if already set)
+    try {
+      db.settings({ experimentalForceLongPolling: true, merge: true });
+      log('Firestore long-polling enabled');
+    } catch(e) {
+      log('Firestore settings: ' + e.message, 'warn');
+    }
+
+    // Register auth listener IMMEDIATELY (not in setTimeout)
+    log('Registering onAuthStateChanged listener NOW...');
+    var authStartTime = Date.now();
+
+    auth.onAuthStateChanged(function(user) {
+      var elapsed = Date.now() - authStartTime;
+      if (user) {
+        log('onAuthStateChanged: SIGNED IN as ' + user.displayName + ' (' + user.email + ') [' + elapsed + 'ms]', 'pass');
       } else {
-        updateResult(authStateId, 'onAuthStateChanged', 'pass', 'Fired with null (not signed in). Click Sign In above, then re-run tests.');
-        updateSummary();
+        log('onAuthStateChanged: NOT SIGNED IN [' + elapsed + 'ms] — click Sign In button', 'warn');
+      }
+    });
+
+    log('Listener registered. Waiting for callback...');
+
+    // Also set a watchdog timer
+    setTimeout(function() {
+      log('=== 10s watchdog: if you see no auth callback above, Firebase Auth is hanging ===', 'fail');
+      log('This usually means the Firebase auth iframe at qrprep.firebaseapp.com is blocked.', 'fail');
+      log('Try: (1) Clear all site data, (2) Disable ad blockers, (3) Check browser console', 'fail');
+    }, 10000);
+
+    // Sign in
+    async function doSignIn() {
+      try {
+        log('Opening Google sign-in popup...');
+        var provider = new firebase.auth.GoogleAuthProvider();
+        var result = await auth.signInWithPopup(provider);
+        log('Sign-in SUCCESS: ' + result.user.displayName, 'pass');
+      } catch(e) {
+        log('Sign-in error: ' + e.code + ' — ' + e.message, 'fail');
+        if (e.code === 'auth/unauthorized-domain') {
+          log('Domain ' + window.location.hostname + ' is not authorized in Firebase Console', 'fail');
+        }
+      }
+    }
+
+    // Firestore test
+    async function testFirestore() {
+      var user = auth.currentUser;
+      if (!user) {
+        log('Not signed in! Sign in first.', 'fail');
         return;
       }
 
-      // TEST 6: Firestore read
-      const readId = addResult('Firestore read', 'running', 'Reading user doc...');
+      // Read test
+      log('Testing Firestore READ...');
       try {
-        const t0 = performance.now();
-        const timeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('READ TIMED OUT after 10s')); }, 10000); });
-        const doc = await Promise.race([db.collection('users').doc(user.uid).get(), timeout]);
-        const elapsed = Math.round(performance.now() - t0);
-        if (doc.exists) {
-          const data = doc.data();
-          updateResult(readId, 'Firestore read', 'pass',
-            'Doc loaded in ' + elapsed + 'ms. Progress: ' + Object.keys(data.progress || {}).length + ' entries, XP: ' + (data.xp || 0));
+        var t0 = Date.now();
+        var timeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('READ TIMEOUT 10s')); }, 10000); });
+        var snap = await Promise.race([db.collection('users').doc(user.uid).get(), timeout]);
+        var elapsed = Date.now() - t0;
+        if (snap.exists) {
+          var data = snap.data();
+          log('READ OK (' + elapsed + 'ms) — progress: ' + Object.keys(data.progress || {}).length + ', xp: ' + (data.xp || 0), 'pass');
         } else {
-          updateResult(readId, 'Firestore read', 'pass', 'Doc does not exist yet (' + elapsed + 'ms)');
+          log('READ OK (' + elapsed + 'ms) — doc does not exist yet', 'pass');
         }
-      } catch (e) {
-        updateResult(readId, 'Firestore read', 'fail', (e.code || '') + ' ' + e.message);
-        if (e.message.indexOf('TIMED OUT') >= 0) addResult('DIAGNOSIS', 'fail', 'Firestore offline. Clear IndexedDB + reload.');
-        if (e.code === 'permission-denied') addResult('DIAGNOSIS', 'fail', 'Security rules EXPIRED. Update in Firebase Console.');
-        updateSummary(); return;
+      } catch(e) {
+        log('READ FAILED: ' + (e.code || '') + ' ' + e.message, 'fail');
+        if (e.code === 'permission-denied') log('>>> FIRESTORE RULES EXPIRED! Update in Firebase Console.', 'fail');
+        return;
       }
 
-      // TEST 7: Firestore write
-      var writeId = addResult('Firestore write (set+merge)', 'running', 'Writing test field...');
+      // Write test
+      log('Testing Firestore WRITE (set+merge)...');
       try {
         var docRef = db.collection('users').doc(user.uid);
-        var t0 = performance.now();
-        var writeTimeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('WRITE TIMED OUT after 10s')); }, 10000); });
-        await Promise.race([docRef.set({ _test: Date.now() }, { merge: true }), writeTimeout]);
-        var elapsed = Math.round(performance.now() - t0);
-        await Promise.race([
-          docRef.update({ _test: firebase.firestore.FieldValue.delete() }),
-          new Promise(function(_, rej) { setTimeout(function() { rej(new Error('cleanup timeout')); }, 5000); })
-        ]);
-        updateResult(writeId, 'Firestore write (set+merge)', 'pass', 'Write+cleanup in ' + elapsed + 'ms');
-      } catch (e) {
-        updateResult(writeId, 'Firestore write (set+merge)', 'fail', (e.code || '') + ' ' + e.message);
+        var t1 = Date.now();
+        var wtimeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('WRITE TIMEOUT 10s')); }, 10000); });
+        await Promise.race([docRef.set({ _test: Date.now() }, { merge: true }), wtimeout]);
+        var welapsed = Date.now() - t1;
+        // cleanup
+        await docRef.update({ _test: firebase.firestore.FieldValue.delete() });
+        log('WRITE OK (' + welapsed + 'ms)', 'pass');
+      } catch(e) {
+        log('WRITE FAILED: ' + (e.code || '') + ' ' + e.message, 'fail');
+        if (e.code === 'permission-denied') log('>>> FIRESTORE RULES EXPIRED!', 'fail');
       }
 
-      // TEST 8: Firestore update (nested)
-      var updateId = addResult('Firestore update (nested)', 'running', 'Writing progress.test-999...');
+      // Nested update test
+      log('Testing Firestore UPDATE (nested field)...');
       try {
         var docRef2 = db.collection('users').doc(user.uid);
-        var t1 = performance.now();
-        var updateTimeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('UPDATE TIMED OUT after 10s')); }, 10000); });
-        await Promise.race([docRef2.update({ 'progress.test-999': 'solved' }), updateTimeout]);
-        var elapsed2 = Math.round(performance.now() - t1);
-        await Promise.race([
-          docRef2.update({ 'progress.test-999': firebase.firestore.FieldValue.delete() }),
-          new Promise(function(_, rej) { setTimeout(function() { rej(new Error('cleanup timeout')); }, 5000); })
-        ]);
-        updateResult(updateId, 'Firestore update (nested)', 'pass', 'Update+cleanup in ' + elapsed2 + 'ms');
-      } catch (e) {
-        updateResult(updateId, 'Firestore update (nested)', 'fail', (e.code || '') + ' ' + e.message);
+        var t2 = Date.now();
+        var utimeout = new Promise(function(_, rej) { setTimeout(function() { rej(new Error('UPDATE TIMEOUT 10s')); }, 10000); });
+        await Promise.race([docRef2.update({ 'progress.test-999': 'solved' }), utimeout]);
+        var uelapsed = Date.now() - t2;
+        await docRef2.update({ 'progress.test-999': firebase.firestore.FieldValue.delete() });
+        log('UPDATE OK (' + uelapsed + 'ms)', 'pass');
+      } catch(e) {
+        log('UPDATE FAILED: ' + (e.code || '') + ' ' + e.message, 'fail');
       }
 
-      updateSummary();
+      log('=== ALL FIRESTORE TESTS DONE ===', 'pass');
     }
-
-    // Auto-run on load
-    window.addEventListener('load', function() { setTimeout(runTests, 500); });
   </script>
 </body>
 </html>
