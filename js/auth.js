@@ -140,15 +140,15 @@ const Auth = (() => {
   }
 
   // ---- Init ----
-  async function init() {
+  function init() {
     // Immediately show a placeholder to prevent empty container flash
     const container = document.getElementById('auth-container');
     if (container && !container.innerHTML.trim()) {
       container.innerHTML = '<div class="nav__auth-loading" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite"></div>';
     }
 
-    // Await Firebase init (cleans stale IndexedDB before initializing)
-    await FirebaseConfig.init();
+    // Init Firebase (synchronous — no async blocking)
+    FirebaseConfig.init();
 
     if (!FirebaseConfig.isConfigured()) {
       console.log('[Auth] Firebase not configured, running in local-only mode');
@@ -157,13 +157,18 @@ const Auth = (() => {
     }
 
     if (!FirebaseConfig.isInitialized()) {
-      console.warn('[Auth] Firebase not initialized, retrying...');
-      await FirebaseConfig.init();
-      if (!FirebaseConfig.isInitialized()) {
-        console.warn('[Auth] Firebase failed to initialize after retry');
-        renderLoginButton();
-        return;
-      }
+      console.warn('[Auth] Firebase not initialized yet, retrying in 1s...');
+      setTimeout(() => {
+        FirebaseConfig.init();
+        if (FirebaseConfig.isInitialized()) {
+          const auth = FirebaseConfig.getAuth();
+          if (auth) auth.onAuthStateChanged(handleAuthStateChanged);
+        } else {
+          console.warn('[Auth] Firebase failed to initialize after retry');
+          renderLoginButton();
+        }
+      }, 1000);
+      return;
     }
 
     const auth = FirebaseConfig.getAuth();

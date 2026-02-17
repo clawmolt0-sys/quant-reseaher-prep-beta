@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth + Firestore Test</title>
+  <style>
+    body { font-family: monospace; background: #1a1a2e; color: #e0e0e0; padding: 20px; max-width: 800px; margin: 0 auto; }
+    .test { padding: 8px 12px; margin: 4px 0; border-radius: 6px; display: flex; align-items: center; gap: 8px; }
+    .pass { background: #1a3a2a; color: #4ade80; }
+    .fail { background: #3a1a1a; color: #f87171; }
+    .running { background: #1a2a3a; color: #60a5fa; }
+    .skip { background: #2a2a2a; color: #888; }
+    .icon { font-size: 16px; min-width: 20px; }
+    button { padding: 10px 20px; margin: 8px 4px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; }
+    .btn-run { background: #3b82f6; color: white; }
+    .btn-run:hover { background: #2563eb; }
+    h2 { color: #60a5fa; }
+    #summary { margin-top: 16px; padding: 12px; border-radius: 8px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>QR Prep — Auth & Firestore Test Suite</h2>
+  <p style="color:#888">Tests that FirebaseConfig.init(), Auth login, and Firestore read/write all work correctly.</p>
+  <button class="btn-run" onclick="runTests()">Run All Tests</button>
+  <div id="results"></div>
+  <div id="summary"></div>
+
+  <!-- Load the SAME scripts as the real site -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+
+  <script>
+    const results = document.getElementById('results');
+    const summaryEl = document.getElementById('summary');
+    let passed = 0, failed = 0, total = 0;
+
+    function addResult(name, status, detail) {
+      total++;
+      const icon = status === 'pass' ? '✅' : status === 'fail' ? '❌' : status === 'running' ? '⏳' : '⏭️';
+      if (status === 'pass') passed++;
+      if (status === 'fail') failed++;
+      const div = document.createElement('div');
+      div.className = 'test ' + status;
+      div.id = 'test-' + total;
+      div.innerHTML = `<span class="icon">${icon}</span> <strong>${name}</strong> ${detail ? '— ' + detail : ''}`;
+      results.appendChild(div);
+      return 'test-' + total;
+    }
+
+    function updateResult(id, name, status, detail) {
+      const div = document.getElementById(id);
+      if (!div) return;
+      const icon = status === 'pass' ? '✅' : '❌';
+      if (status === 'pass') passed++;
+      if (status === 'fail') failed++;
+      div.className = 'test ' + status;
+      div.innerHTML = `<span class="icon">${icon}</span> <strong>${name}</strong> ${detail ? '— ' + detail : ''}`;
+    }
+
+    function updateSummary() {
+      summaryEl.style.background = failed > 0 ? '#3a1a1a' : '#1a3a2a';
+      summaryEl.style.color = failed > 0 ? '#f87171' : '#4ade80';
+      summaryEl.textContent = `${passed} passed, ${failed} failed out of ${passed + failed} tests`;
+    }
+
+    async function runTests() {
+      results.innerHTML = '';
+      summaryEl.innerHTML = '';
+      passed = 0; failed = 0; total = 0;
+
+      // TEST 1: FirebaseConfig.init() is synchronous and works
+      try {
+        const t0 = performance.now();
+        FirebaseConfig.init();
+        const elapsed = Math.round(performance.now() - t0);
+        if (FirebaseConfig.isInitialized()) {
+          addResult('FirebaseConfig.init()', 'pass', `Synchronous init completed in ${elapsed}ms`);
+        } else {
+          addResult('FirebaseConfig.init()', 'fail', 'init() returned but isInitialized() is false');
+        }
+      } catch (e) {
+        addResult('FirebaseConfig.init()', 'fail', e.message);
+      }
+
+      // TEST 2: getAuth() returns a valid auth object
+      const auth = FirebaseConfig.getAuth();
+      if (auth && typeof auth.onAuthStateChanged === 'function') {
+        addResult('FirebaseConfig.getAuth()', 'pass', 'Returns valid auth object');
+      } else {
+        addResult('FirebaseConfig.getAuth()', 'fail', 'null or invalid auth object');
+        updateSummary();
+        return;
+      }
+
+      // TEST 3: getDb() returns a valid firestore object
+      const db = FirebaseConfig.getDb();
+      if (db && typeof db.collection === 'function') {
+        addResult('FirebaseConfig.getDb()', 'pass', 'Returns valid Firestore object');
+      } else {
+        addResult('FirebaseConfig.getDb()', 'fail', 'null or invalid db object');
+        updateSummary();
+        return;
+      }
+
+      // TEST 4: onAuthStateChanged fires
+      const authStateId = addResult('onAuthStateChanged fires', 'running', 'Waiting up to 5s...');
+      const user = await new Promise((resolve) => {
+        const unsub = auth.onAuthStateChanged(u => {
+          unsub();
+          resolve(u);
+        });
+        setTimeout(() => resolve('timeout'), 5000);
+      });
+
+      if (user === 'timeout') {
+        updateResult(authStateId, 'onAuthStateChanged fires', 'fail', 'Timed out after 5s — auth is broken');
+        updateSummary();
+        return;
+      } else if (user) {
+        updateResult(authStateId, 'onAuthStateChanged fires', 'pass', `Signed in as ${user.displayName} (${user.email})`);
+      } else {
+        updateResult(authStateId, 'onAuthStateChanged fires', 'pass', 'Not signed in (auth works, just no session)');
+        addResult('Firestore read/write tests', 'skip', 'Sign in first to test Firestore');
+        updateSummary();
+        return;
+      }
+
+      // TEST 5: Firestore read with timeout
+      const readId = addResult('Firestore read', 'running', 'Reading user doc...');
+      try {
+        const t0 = performance.now();
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('READ TIMED OUT after 10s')), 10000));
+        const doc = await Promise.race([db.collection('users').doc(user.uid).get(), timeout]);
+        const elapsed = Math.round(performance.now() - t0);
+        if (doc.exists) {
+          const data = doc.data();
+          updateResult(readId, 'Firestore read', 'pass', `Doc loaded in ${elapsed}ms — ${Object.keys(data.progress || {}).length} progress entries, xp=${data.xp || 0}`);
+        } else {
+          updateResult(readId, 'Firestore read', 'pass', `Doc does not exist yet (${elapsed}ms) — will be created on first action`);
+        }
+      } catch (e) {
+        updateResult(readId, 'Firestore read', 'fail', (e.code || '') + ' ' + e.message);
+        if (e.message.includes('TIMED OUT')) {
+          addResult('DIAGNOSIS', 'fail', 'Firestore is stuck in offline mode. Clear browser IndexedDB and reload.');
+        }
+        if (e.code === 'permission-denied') {
+          addResult('DIAGNOSIS', 'fail', 'Firestore security rules have EXPIRED. Update rules in Firebase Console.');
+        }
+        updateSummary();
+        return;
+      }
+
+      // TEST 6: Firestore write with timeout
+      const writeId = addResult('Firestore write', 'running', 'Writing test field...');
+      try {
+        const docRef = db.collection('users').doc(user.uid);
+        const t0 = performance.now();
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('WRITE TIMED OUT after 10s')), 10000));
+        await Promise.race([docRef.set({ _test: Date.now() }, { merge: true }), timeout]);
+        const elapsed = Math.round(performance.now() - t0);
+
+        // Clean up test field
+        await Promise.race([
+          docRef.update({ _test: firebase.firestore.FieldValue.delete() }),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('cleanup timeout')), 5000))
+        ]);
+
+        updateResult(writeId, 'Firestore write', 'pass', `Write + cleanup completed in ${elapsed}ms`);
+      } catch (e) {
+        updateResult(writeId, 'Firestore write', 'fail', (e.code || '') + ' ' + e.message);
+        if (e.message.includes('TIMED OUT')) {
+          addResult('DIAGNOSIS', 'fail', 'Firestore writes are hanging. Check network or clear IndexedDB.');
+        }
+        if (e.code === 'permission-denied') {
+          addResult('DIAGNOSIS', 'fail', 'Firestore security rules have EXPIRED.');
+        }
+      }
+
+      // TEST 7: Firestore update() with nested field
+      const updateId = addResult('Firestore update (nested)', 'running', 'Writing progress.test-999...');
+      try {
+        const docRef = db.collection('users').doc(user.uid);
+        const t0 = performance.now();
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('UPDATE TIMED OUT after 10s')), 10000));
+        await Promise.race([docRef.update({ 'progress.test-999': 'solved' }), timeout]);
+        const elapsed = Math.round(performance.now() - t0);
+
+        // Clean up
+        await Promise.race([
+          docRef.update({ 'progress.test-999': firebase.firestore.FieldValue.delete() }),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('cleanup timeout')), 5000))
+        ]);
+
+        updateResult(updateId, 'Firestore update (nested)', 'pass', `Nested update + cleanup in ${elapsed}ms`);
+      } catch (e) {
+        updateResult(updateId, 'Firestore update (nested)', 'fail', (e.code || '') + ' ' + e.message);
+      }
+
+      updateSummary();
+    }
+
+    // Auto-run on load
+    window.addEventListener('load', () => setTimeout(runTests, 500));
+  </script>
+</body>
+</html>

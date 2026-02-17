@@ -24,90 +24,52 @@ const FirebaseConfig = (() => {
   };
 
   let initialized = false;
-  let initPromise = null; // so multiple callers can await the same init
 
-  // Clean up stale Firestore IndexedDB BEFORE initializing Firebase.
-  // Old enablePersistence() created IndexedDB caches that put the SDK
-  // in a permanent "offline" state where all reads/writes hang forever.
-  async function cleanStaleIndexedDB() {
-    try {
-      if (typeof indexedDB === 'undefined') return;
-
-      // Always try cleanup (not gated by localStorage flag) because
-      // the previous async fire-and-forget version may not have run.
-      if (indexedDB.databases) {
-        const dbs = await indexedDB.databases();
-        for (const db of dbs) {
-          if (db.name && (db.name.startsWith('firestore') || db.name.startsWith('firebase'))) {
-            try {
-              indexedDB.deleteDatabase(db.name);
-              console.log('[FirebaseConfig] Deleted stale IndexedDB:', db.name);
-            } catch (e) { /* ignore individual delete errors */ }
-          }
-        }
-      } else {
-        // Fallback for browsers without indexedDB.databases() (Firefox < 126)
-        // Try common Firestore IndexedDB names
-        const commonNames = [
-          'firestore/[DEFAULT]/qrprep/main',
-          'firestore/[DEFAULT]/qrprep',
-          'firebase-heartbeat-database',
-          'firebase-installations-database',
-        ];
-        for (const name of commonNames) {
-          try { indexedDB.deleteDatabase(name); } catch (e) { /* ignore */ }
-        }
-      }
-    } catch (e) {
-      console.warn('[FirebaseConfig] IndexedDB cleanup error (non-fatal):', e);
-    }
-  }
-
-  async function init() {
+  function init() {
     if (initialized) return;
-
-    // If init is already in progress, return the existing promise
-    if (initPromise) return initPromise;
-
-    initPromise = (async () => {
-      try {
-        // Check if Firebase SDK is loaded
-        if (typeof firebase === 'undefined') {
-          console.warn('[FirebaseConfig] Firebase SDK not loaded');
-          return;
-        }
-
-        // Check if config has been set
-        if (config.apiKey === 'YOUR_API_KEY') {
-          console.warn('[FirebaseConfig] Firebase not configured. Auth features disabled.');
-          return;
-        }
-
-        // CRITICAL: Clean IndexedDB BEFORE Firebase init to prevent
-        // the Firestore SDK from detecting old persistence caches
-        await cleanStaleIndexedDB();
-
-        firebase.initializeApp(config);
-
-        // NOTE: We intentionally do NOT enable Firestore offline persistence.
-        // enablePersistence() creates an IndexedDB cache that on GitHub Pages
-        // frequently enters a broken "offline" state, causing all reads/writes
-        // to fail with "unavailable - client is offline" errors.
-
-        // Force long polling to avoid WebSocket issues on some networks/hosts
-        firebase.firestore().settings({
-          experimentalForceLongPolling: true,
-          merge: true
-        });
-
-        initialized = true;
-        console.log('[FirebaseConfig] Initialized successfully (long-polling mode)');
-      } catch (err) {
-        console.error('[FirebaseConfig] Init error:', err);
+    try {
+      if (typeof firebase === 'undefined') {
+        console.warn('[FirebaseConfig] Firebase SDK not loaded');
+        return;
       }
-    })();
 
-    return initPromise;
+      if (config.apiKey === 'YOUR_API_KEY') {
+        console.warn('[FirebaseConfig] Firebase not configured. Auth features disabled.');
+        return;
+      }
+
+      firebase.initializeApp(config);
+
+      // Force long polling — WebSocket connections can silently fail on
+      // GitHub Pages / some corporate networks, causing writes to hang.
+      firebase.firestore().settings({
+        experimentalForceLongPolling: true,
+        merge: true
+      });
+
+      // NOTE: We intentionally do NOT enable Firestore offline persistence.
+      // enablePersistence() creates IndexedDB caches that on GitHub Pages
+      // frequently enter a broken "offline" state.
+
+      // Fire-and-forget cleanup of stale IndexedDB from old persistence
+      try {
+        if (typeof indexedDB !== 'undefined' && indexedDB.databases) {
+          indexedDB.databases().then(dbs => {
+            for (const db of dbs) {
+              if (db.name && (db.name.startsWith('firestore') || db.name.startsWith('firebase-'))) {
+                indexedDB.deleteDatabase(db.name);
+                console.log('[FirebaseConfig] Cleaned stale IndexedDB:', db.name);
+              }
+            }
+          }).catch(() => {});
+        }
+      } catch (e) { /* ignore */ }
+
+      initialized = true;
+      console.log('[FirebaseConfig] Initialized (long-polling mode)');
+    } catch (err) {
+      console.error('[FirebaseConfig] Init error:', err);
+    }
   }
 
   function isConfigured() {
