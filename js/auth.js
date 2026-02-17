@@ -53,8 +53,12 @@ const Auth = (() => {
       if (!db || !currentUser) return;
 
       const testRef = db.collection('users').doc(currentUser.uid);
-      // Try a tiny write to check if rules allow it
-      await testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true });
+      // Try a tiny write to check if rules allow it (with timeout)
+      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('write-test-timeout')), 8000));
+      await Promise.race([
+        testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true }),
+        timeout
+      ]);
       console.log('[Auth] Firestore write test: OK');
     } catch (err) {
       console.error('[Auth] Firestore write test FAILED:', err.code, err.message);
@@ -136,14 +140,15 @@ const Auth = (() => {
   }
 
   // ---- Init ----
-  function init() {
+  async function init() {
     // Immediately show a placeholder to prevent empty container flash
     const container = document.getElementById('auth-container');
     if (container && !container.innerHTML.trim()) {
       container.innerHTML = '<div class="nav__auth-loading" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite"></div>';
     }
 
-    FirebaseConfig.init();
+    // Await Firebase init (cleans stale IndexedDB before initializing)
+    await FirebaseConfig.init();
 
     if (!FirebaseConfig.isConfigured()) {
       console.log('[Auth] Firebase not configured, running in local-only mode');
@@ -152,21 +157,13 @@ const Auth = (() => {
     }
 
     if (!FirebaseConfig.isInitialized()) {
-      console.warn('[Auth] Firebase not initialized yet, retrying...');
-      // Retry after a short delay in case scripts are still loading
-      setTimeout(() => {
-        FirebaseConfig.init();
-        if (FirebaseConfig.isInitialized()) {
-          const auth = FirebaseConfig.getAuth();
-          if (auth) {
-            auth.onAuthStateChanged(handleAuthStateChanged);
-          }
-        } else {
-          console.warn('[Auth] Firebase failed to initialize after retry');
-          renderLoginButton();
-        }
-      }, 1000);
-      return;
+      console.warn('[Auth] Firebase not initialized, retrying...');
+      await FirebaseConfig.init();
+      if (!FirebaseConfig.isInitialized()) {
+        console.warn('[Auth] Firebase failed to initialize after retry');
+        renderLoginButton();
+        return;
+      }
     }
 
     const auth = FirebaseConfig.getAuth();
@@ -178,7 +175,6 @@ const Auth = (() => {
     auth.getRedirectResult().then((result) => {
       if (result && result.user) {
         console.log('[Auth] Redirect sign-in completed for', result.user.displayName);
-        // onAuthStateChanged will fire, but force a UI update just in case
         handleAuthStateChanged(result.user);
       }
     }).catch((err) => {
@@ -364,7 +360,9 @@ const Auth = (() => {
 
     try {
       const docRef = db.collection('users').doc(user.uid);
-      const doc = await docRef.get();
+      // 10s timeout to prevent hanging forever if Firestore is in broken state
+      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('loadUserDoc timed out after 10s')), 10000));
+      const doc = await Promise.race([docRef.get(), timeout]);
 
       if (doc.exists) {
         userDoc = doc.data();
@@ -550,13 +548,17 @@ const Auth = (() => {
       }
 
       // Persist to Firestore: try update() first (reliable for nested paths),
-      // fall back to set+merge if doc doesn't exist
+      // fall back to set+merge if doc doesn't exist. Timeout after 10s.
+      const withTimeout = (promise, ms) => Promise.race([
+        promise,
+        new Promise((_, rej) => setTimeout(() => rej(new Error('firestore-timeout-' + ms + 'ms')), ms))
+      ]);
       const writeProgress = async () => {
         try {
           if (status) {
-            await docRef.update({ ['progress.' + id]: status });
+            await withTimeout(docRef.update({ ['progress.' + id]: status }), 10000);
           } else {
-            await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
+            await withTimeout(docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() }), 10000);
           }
           console.log('[Auth] Progress written (update)');
         } catch (err) {
@@ -564,10 +566,10 @@ const Auth = (() => {
             console.log('[Auth] Doc not found, creating with set...');
             const data = { progress: {} };
             if (status) data.progress[id] = status;
-            await docRef.set(data, { merge: true });
+            await withTimeout(docRef.set(data, { merge: true }), 10000);
             console.log('[Auth] Progress written (set+merge)');
           } else {
-            console.error('[Auth] Progress write error:', err.code, err.message);
+            console.error('[Auth] Progress write error:', err.code || '', err.message);
           }
         }
       };

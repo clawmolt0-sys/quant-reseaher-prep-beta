@@ -12,17 +12,20 @@
     button { padding: 8px 16px; margin: 4px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
     .btn-primary { background: #3b82f6; color: white; }
     .btn-danger { background: #ef4444; color: white; }
+    .btn-warn { background: #f59e0b; color: white; }
     #log { margin-top: 20px; max-height: 70vh; overflow-y: auto; }
   </style>
 </head>
 <body>
   <h2>Firestore Debug Tool</h2>
   <div>
+    <button class="btn-warn" onclick="cleanIndexedDB()">0. Clean IndexedDB</button>
     <button class="btn-primary" onclick="testAuth()">1. Check Auth State</button>
     <button class="btn-primary" onclick="testReadDoc()">2. Read User Doc</button>
     <button class="btn-primary" onclick="testWriteProgress()">3. Write Test Progress</button>
     <button class="btn-primary" onclick="testWriteSet()">4. Write with set+merge</button>
     <button class="btn-primary" onclick="testWriteUpdate()">5. Write with update</button>
+    <button class="btn-primary" onclick="runAllTests()">Run All Tests</button>
     <button class="btn-danger" onclick="clearLog()">Clear Log</button>
   </div>
   <div id="log"></div>
@@ -44,34 +47,88 @@
     }
     function clearLog() { logEl.innerHTML = ''; }
 
-    // Init Firebase
-    const config = {
-      apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
-      authDomain: "qrprep.firebaseapp.com",
-      projectId: "qrprep",
-      storageBucket: "qrprep.firebasestorage.app",
-      messagingSenderId: "269729809695",
-      appId: "1:269729809695:web:4379017f0e6bec69e7dc2a",
-    };
+    let db, auth;
 
-    try {
-      firebase.initializeApp(config);
-      log('Firebase initialized OK', 'ok');
-    } catch (e) {
-      log('Firebase init FAILED: ' + e.message, 'err');
+    // Step 0: Clean stale IndexedDB BEFORE Firebase init
+    async function cleanIndexedDB() {
+      log('Cleaning IndexedDB databases...', 'info');
+      try {
+        if (indexedDB.databases) {
+          const dbs = await indexedDB.databases();
+          log('Found ' + dbs.length + ' IndexedDB databases: ' + dbs.map(d => d.name).join(', '), 'info');
+          let cleaned = 0;
+          for (const d of dbs) {
+            if (d.name && (d.name.startsWith('firestore') || d.name.startsWith('firebase'))) {
+              indexedDB.deleteDatabase(d.name);
+              log('  Deleted: ' + d.name, 'ok');
+              cleaned++;
+            }
+          }
+          if (cleaned === 0) {
+            log('No stale Firebase IndexedDB databases found.', 'ok');
+          } else {
+            log('Cleaned ' + cleaned + ' databases. Reload the page to apply.', 'warn');
+          }
+        } else {
+          // Fallback
+          const names = [
+            'firestore/[DEFAULT]/qrprep/main',
+            'firestore/[DEFAULT]/qrprep',
+            'firebase-heartbeat-database',
+            'firebase-installations-database',
+          ];
+          for (const name of names) {
+            try { indexedDB.deleteDatabase(name); } catch(e) {}
+          }
+          log('Attempted cleanup of common Firestore databases (no indexedDB.databases API).', 'warn');
+        }
+      } catch (e) {
+        log('IndexedDB cleanup error: ' + e.message, 'err');
+      }
     }
 
-    const db = firebase.firestore();
-    const auth = firebase.auth();
+    // Init Firebase (with IndexedDB cleanup first)
+    async function initFirebase() {
+      log('Cleaning IndexedDB before Firebase init...', 'info');
+      await cleanIndexedDB();
 
-    // Listen for auth state
-    auth.onAuthStateChanged(user => {
-      if (user) {
-        log('Auth: Signed in as ' + user.displayName + ' (' + user.email + ') uid=' + user.uid, 'ok');
-      } else {
-        log('Auth: Not signed in', 'warn');
+      const config = {
+        apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
+        authDomain: "qrprep.firebaseapp.com",
+        projectId: "qrprep",
+        storageBucket: "qrprep.firebasestorage.app",
+        messagingSenderId: "269729809695",
+        appId: "1:269729809695:web:4379017f0e6bec69e7dc2a",
+      };
+
+      try {
+        firebase.initializeApp(config);
+
+        // Force long polling to avoid WebSocket issues
+        firebase.firestore().settings({
+          experimentalForceLongPolling: true,
+          merge: true
+        });
+
+        db = firebase.firestore();
+        auth = firebase.auth();
+        log('Firebase initialized OK (long-polling mode)', 'ok');
+
+        // Listen for auth state
+        auth.onAuthStateChanged(user => {
+          if (user) {
+            log('Auth: Signed in as ' + user.displayName + ' (' + user.email + ') uid=' + user.uid, 'ok');
+          } else {
+            log('Auth: Not signed in', 'warn');
+          }
+        });
+      } catch (e) {
+        log('Firebase init FAILED: ' + e.message, 'err');
       }
-    });
+    }
+
+    // Start initialization
+    initFirebase();
 
     async function testAuth() {
       const user = auth.currentUser;
@@ -96,7 +153,12 @@
       try {
         log('Reading user doc: users/' + user.uid + '...', 'info');
         const t0 = performance.now();
-        const doc = await db.collection('users').doc(user.uid).get();
+
+        // Add a timeout to detect hangs
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('READ TIMED OUT after 10s')), 10000));
+        const read = db.collection('users').doc(user.uid).get();
+        const doc = await Promise.race([read, timeout]);
+
         const elapsed = Math.round(performance.now() - t0);
 
         if (doc.exists) {
@@ -110,7 +172,7 @@
           log('Doc DOES NOT EXIST (' + elapsed + 'ms)', 'warn');
         }
       } catch (e) {
-        log('Read FAILED: ' + e.code + ' - ' + e.message, 'err');
+        log('Read FAILED: ' + (e.code || '') + ' - ' + e.message, 'err');
       }
     }
 
@@ -124,14 +186,28 @@
       log('Testing progress write with update()...', 'info');
       try {
         const t0 = performance.now();
-        await docRef.update({ ['progress.' + testId]: 'solved' });
+
+        // Add a timeout to detect hangs
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('WRITE TIMED OUT after 10s — Firestore may be in offline mode')), 10000));
+        const write = docRef.update({ ['progress.' + testId]: 'solved' });
+        await Promise.race([write, timeout]);
+
         log('update() SUCCESS (' + Math.round(performance.now() - t0) + 'ms)', 'ok');
 
         // Clean up
         await docRef.update({ ['progress.' + testId]: firebase.firestore.FieldValue.delete() });
         log('Cleanup (delete field) SUCCESS', 'ok');
       } catch (e) {
-        log('update() FAILED: ' + e.code + ' - ' + e.message, 'err');
+        log('update() FAILED: ' + (e.code || '') + ' - ' + e.message, 'err');
+        if (e.message.includes('TIMED OUT') || e.message.includes('offline')) {
+          log('>>> This means Firestore is stuck in offline mode!', 'err');
+          log('>>> Click "0. Clean IndexedDB" then reload the page.', 'warn');
+        }
+        if (e.code === 'permission-denied') {
+          log('>>> Firestore security rules have EXPIRED!', 'err');
+          log('>>> Go to Firebase Console > Firestore > Rules and set:', 'warn');
+          log('>>>   allow read, write: if request.auth != null;', 'warn');
+        }
       }
     }
 
@@ -148,11 +224,12 @@
         payload['progress.' + testId] = 'solved';
 
         const t0 = performance.now();
-        await docRef.set(payload, { merge: true });
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('WRITE TIMED OUT after 10s')), 10000));
+        await Promise.race([docRef.set(payload, { merge: true }), timeout]);
         log('set(merge) SUCCESS (' + Math.round(performance.now() - t0) + 'ms)', 'ok');
 
         // Verify it was written
-        const snap = await docRef.get();
+        const snap = await Promise.race([docRef.get(), new Promise((_, rej) => setTimeout(() => rej(new Error('verify timeout')), 10000))]);
         const data = snap.data();
         if (data.progress && data.progress[testId] === 'solved') {
           log('VERIFIED: progress.' + testId + ' = solved', 'ok');
@@ -167,7 +244,7 @@
         await docRef.update({ ['progress.' + testId]: firebase.firestore.FieldValue.delete() });
         log('Cleanup SUCCESS', 'ok');
       } catch (e) {
-        log('set(merge) FAILED: ' + e.code + ' - ' + e.message, 'err');
+        log('set(merge) FAILED: ' + (e.code || '') + ' - ' + e.message, 'err');
       }
     }
 
@@ -180,23 +257,35 @@
       log('Testing XP/stats write with set(merge:true)...', 'info');
       try {
         // Read current
-        const snap = await docRef.get();
+        const timeout10 = () => new Promise((_, rej) => setTimeout(() => rej(new Error('TIMED OUT after 10s')), 10000));
+        const snap = await Promise.race([docRef.get(), timeout10()]);
         const data = snap.data();
         const currentXP = data.xp || 0;
 
         const t0 = performance.now();
-        await docRef.set({
-          xp: currentXP + 1,
-          _debugTest: true,
-        }, { merge: true });
+        await Promise.race([
+          docRef.set({ xp: currentXP + 1, _debugTest: true }, { merge: true }),
+          timeout10()
+        ]);
         log('XP write SUCCESS (' + Math.round(performance.now() - t0) + 'ms) - XP set to ' + (currentXP + 1), 'ok');
 
         // Reset
         await docRef.update({ xp: currentXP, _debugTest: firebase.firestore.FieldValue.delete() });
         log('Reset XP to ' + currentXP, 'ok');
       } catch (e) {
-        log('XP write FAILED: ' + e.code + ' - ' + e.message, 'err');
+        log('XP write FAILED: ' + (e.code || '') + ' - ' + e.message, 'err');
       }
+    }
+
+    async function runAllTests() {
+      log('=== RUNNING ALL TESTS ===', 'info');
+      await testAuth();
+      if (!auth.currentUser) { log('Cannot continue without auth', 'err'); return; }
+      await testReadDoc();
+      await testWriteProgress();
+      await testWriteSet();
+      await testWriteUpdate();
+      log('=== ALL TESTS COMPLETE ===', 'info');
     }
   </script>
 </body>
