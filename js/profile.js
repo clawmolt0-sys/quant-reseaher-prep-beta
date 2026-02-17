@@ -5,6 +5,9 @@
 
 const Profile = (() => {
 
+  let profileProblems = null; // cached normalized problems for re-renders
+  let profileProblemMap = null; // Map<id, problem> for O(1) lookups
+
   async function init() {
     const container = document.getElementById('profile-content');
     if (!container) return;
@@ -12,34 +15,18 @@ const Profile = (() => {
     // Show skeleton loading state immediately
     container.innerHTML = renderSkeleton();
 
-    // Start loading problems INDEX (245KB, fast) instead of full data (2.7MB)
-    const dataPromise = Promise.all([
-      DataLoader.problemsIndex(),
-      DataLoader.companies(),
-    ]);
-
-    // Wait for auth to settle — 2s max timeout, then render what we have
-    await Promise.race([
+    // Start loading problems INDEX + auth in PARALLEL (don't wait for one before the other)
+    const dataPromise = DataLoader.problemsIndex();
+    const authPromise = Promise.race([
       Auth.waitForAuth(),
-      new Promise(resolve => setTimeout(resolve, 2000))
+      new Promise(resolve => setTimeout(resolve, 1500)) // 1.5s max, not 2s
     ]);
 
-    if (!Auth.isLoggedIn()) {
-      container.innerHTML = `
-        <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
-          <div style="font-size:3rem;margin-bottom:var(--space-4)">\uD83D\uDD12</div>
-          <h2 style="margin-bottom:var(--space-3)">Sign In to View Profile</h2>
-          <p style="color:var(--text-secondary);margin-bottom:var(--space-6)">Track your progress, earn achievements, and build your quant interview reputation.</p>
-          <button class="btn btn--primary" onclick="Auth.showAuthModal()">Sign In</button>
-        </div>`;
-      return;
-    }
+    // Wait for both to settle
+    const [rawProblems] = await Promise.all([dataPromise, authPromise]);
 
-    // Data should already be loaded (started in parallel with auth wait)
-    const [rawProblems, companies] = await dataPromise;
-
-    // Normalize index data (short keys → full keys)
-    const problems = (rawProblems || []).map(p => ({
+    // Normalize index data once and cache
+    profileProblems = (rawProblems || []).map(p => ({
       id: p.id,
       title: p.t || p.title || '',
       category: p.c || p.category || 'probability',
@@ -49,59 +36,132 @@ const Profile = (() => {
       companies: p.co || p.companies || [],
       tags: p.tg || p.tags || [],
     }));
+    // Build Map for O(1) lookups
+    profileProblemMap = new Map();
+    for (const p of profileProblems) profileProblemMap.set(p.id, p);
 
-    const user = Auth.getUser();
-    const userDoc = Auth.getUserDoc();
-
-    if (!user || !problems) {
+    if (!Auth.isLoggedIn()) {
       container.innerHTML = `
-        <div class="container"><div class="empty-state">
-          <div class="empty-state__icon">\u26A0\uFE0F</div>
-          <div class="empty-state__title">Could not load profile data</div>
-          <p style="color:var(--text-muted);margin-top:var(--space-2)">Please try refreshing the page.</p>
-          <button class="btn btn--primary btn--sm" style="margin-top:var(--space-4)" onclick="location.reload()">Refresh</button>
-        </div></div>`;
+        <div class="container" style="max-width:600px;text-align:center;padding:var(--space-12) var(--space-4)">
+          <div style="font-size:3rem;margin-bottom:var(--space-4)">\uD83D\uDD12</div>
+          <h2 style="margin-bottom:var(--space-3)">Sign In to View Profile</h2>
+          <p style="color:var(--text-secondary);margin-bottom:var(--space-6)">Track your progress, earn achievements, and build your quant interview reputation.</p>
+          <button class="btn btn--primary" onclick="Auth.showAuthModal()">Sign In</button>
+        </div>`;
+
+      // Listen for sign-in after page load
+      window.addEventListener('auth-state-changed', () => {
+        if (Auth.isLoggedIn()) renderProfile();
+      });
       return;
     }
 
-    // Use userDoc or a sensible default if Firestore failed
+    renderProfile();
+
+    // Re-render when auth data updates (e.g. Firestore doc finishes loading late)
+    window.addEventListener('auth-state-changed', () => {
+      if (!Auth.isLoggedIn()) {
+        init();
+        return;
+      }
+      renderProfile();
+    });
+  }
+
+  function renderProfile() {
+    const user = Auth.getUser();
+    const userDoc = Auth.getUserDoc();
+    const problems = profileProblems;
+    const container = document.getElementById('profile-content');
+
+    if (!user || !problems || !container) return;
+
+    // Use userDoc or a sensible default if Firestore hasn't loaded yet
     const doc = userDoc || {
       progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
       xp: 0, level: 1, streak: { current: 0, longest: 0 }, favorites: [], collections: [], achievements: []
     };
 
-    render(user, doc, problems, companies || []);
+    // If stats are all zero but we have progress data, recalculate from progress
+    const stats = doc.stats || {};
+    const totalFromStats = (stats.easy?.solved || 0) + (stats.medium?.solved || 0) + (stats.hard?.solved || 0);
+    if (totalFromStats === 0 && doc.progress && Object.keys(doc.progress).length > 0) {
+      console.log('[Profile] Stats are 0 but progress exists, recalculating...');
+      recalculateStats(doc, problems);
+    }
 
-    // Re-render if auth data finishes loading after initial render
-    window.addEventListener('auth-state-changed', () => {
-      if (!Auth.isLoggedIn()) {
-        init(); // re-run to show sign-in screen
-        return;
+    render(user, doc, problems, []);
+  }
+
+  // Recalculate stats from progress data (fixes stale/empty stats)
+  function recalculateStats(doc, problems) {
+    const progress = doc.progress || {};
+    const stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+    let xp = 0;
+    const XP_TABLE = { easy: 10, medium: 25, hard: 50 };
+    const problemMap = new Map();
+    for (const p of problems) problemMap.set(p.id, p);
+
+    for (const [idStr, status] of Object.entries(progress)) {
+      const p = problemMap.get(parseInt(idStr));
+      const diff = p ? p.difficulty : 'medium';
+      if (!stats[diff]) stats[diff] = { solved: 0, attempted: 0 };
+      if (status === 'solved') {
+        stats[diff].solved++;
+        xp += XP_TABLE[diff] || 0;
+      } else if (status === 'attempted') {
+        stats[diff].attempted++;
       }
-      const latestUser = Auth.getUser();
-      const latestDoc = Auth.getUserDoc();
-      if (latestUser && latestDoc) {
-        render(latestUser, latestDoc, problems, companies || []);
-      }
-    }, { once: true });
+    }
+
+    doc.stats = stats;
+    if (!doc.xp || doc.xp === 0) doc.xp = xp;
+    if (!doc.level || doc.level <= 1) {
+      doc.level = Auth.calculateLevel(doc.xp).level;
+    }
   }
 
   // ---- Skeleton Loading State ----
   function renderSkeleton() {
+    const shimmer = 'background:linear-gradient(90deg,var(--bg-card) 25%,var(--border-color) 50%,var(--bg-card) 75%);background-size:200% 100%;animation:shimmer 1.5s ease-in-out infinite';
     return `
+      <style>@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}</style>
       <div class="container" style="max-width:1000px">
-        <div class="profile-header" style="opacity:0.5">
+        <div class="profile-header">
           <div class="profile-header__left">
-            <div style="width:80px;height:80px;border-radius:50%;background:var(--bg-card);animation:pulse 1.5s ease-in-out infinite"></div>
+            <div style="width:80px;height:80px;border-radius:50%;${shimmer}"></div>
             <div class="profile-header__info">
-              <div style="width:200px;height:24px;background:var(--bg-card);border-radius:6px;margin-bottom:8px;animation:pulse 1.5s ease-in-out infinite"></div>
-              <div style="width:120px;height:16px;background:var(--bg-card);border-radius:6px;animation:pulse 1.5s ease-in-out infinite"></div>
+              <div style="width:180px;height:24px;border-radius:6px;margin-bottom:10px;${shimmer}"></div>
+              <div style="width:100px;height:14px;border-radius:4px;margin-bottom:6px;${shimmer}"></div>
+              <div style="width:130px;height:12px;border-radius:4px;${shimmer}"></div>
             </div>
           </div>
         </div>
-        <div class="profile-stats-grid" style="opacity:0.4">
-          <div class="profile-card" style="min-height:200px;animation:pulse 1.5s ease-in-out infinite"></div>
-          <div class="profile-card" style="min-height:200px;animation:pulse 1.5s ease-in-out infinite"></div>
+        <div class="profile-stats-grid">
+          <div class="profile-card" style="min-height:180px">
+            <div style="width:140px;height:16px;border-radius:4px;margin-bottom:16px;${shimmer}"></div>
+            <div style="display:flex;gap:24px;align-items:center">
+              <div style="width:120px;height:120px;border-radius:50%;${shimmer}"></div>
+              <div style="flex:1">
+                <div style="height:12px;border-radius:4px;margin-bottom:12px;${shimmer}"></div>
+                <div style="height:12px;border-radius:4px;margin-bottom:12px;${shimmer}"></div>
+                <div style="height:12px;border-radius:4px;${shimmer}"></div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-card" style="min-height:180px">
+            <div style="width:100px;height:16px;border-radius:4px;margin-bottom:16px;${shimmer}"></div>
+            <div style="display:flex;flex-wrap:wrap;gap:12px">
+              <div style="width:80px;height:70px;border-radius:8px;${shimmer}"></div>
+              <div style="width:80px;height:70px;border-radius:8px;${shimmer}"></div>
+              <div style="width:80px;height:70px;border-radius:8px;${shimmer}"></div>
+              <div style="width:80px;height:70px;border-radius:8px;${shimmer}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-card profile-card--wide" style="min-height:120px">
+          <div style="width:200px;height:16px;border-radius:4px;margin-bottom:16px;${shimmer}"></div>
+          <div style="height:80px;border-radius:4px;${shimmer}"></div>
         </div>
       </div>
     `;
@@ -307,7 +367,7 @@ const Profile = (() => {
 
     for (const [idStr, status] of Object.entries(progress)) {
       if (status !== 'solved') continue;
-      const problem = problems.find(p => p.id === parseInt(idStr));
+      const problem = profileProblemMap ? profileProblemMap.get(parseInt(idStr)) : problems.find(p => p.id === parseInt(idStr));
       if (!problem) continue;
 
       const category = problem.category || 'general';
@@ -342,13 +402,13 @@ const Profile = (() => {
   // ---- Recent Solved ----
   function getRecentSolved(userDoc, problems) {
     const progress = userDoc.progress || {};
+    const pMap = profileProblemMap || new Map(problems.map(p => [p.id, p]));
     return Object.entries(progress)
       .filter(([, v]) => v === 'solved')
       .slice(-20)
       .reverse()
       .map(([id]) => {
-        const p = problems.find(pr => pr.id === parseInt(id));
-        return p || { id: parseInt(id), title: 'Problem #' + id, difficulty: 'medium' };
+        return pMap.get(parseInt(id)) || { id: parseInt(id), title: 'Problem #' + id, difficulty: 'medium' };
       });
   }
 
@@ -519,11 +579,11 @@ const Profile = (() => {
   function renderAttemptedTab(problems) {
     const userDoc = Auth.getUserDoc();
     const progress = userDoc?.progress || {};
+    const pMap = profileProblemMap || new Map(problems.map(p => [p.id, p]));
     const attemptedProblems = Object.entries(progress)
       .filter(([, v]) => v === 'attempted')
       .map(([id]) => {
-        const p = problems.find(pr => pr.id === parseInt(id));
-        return p || { id: parseInt(id), title: 'Problem #' + id, difficulty: 'medium' };
+        return pMap.get(parseInt(id)) || { id: parseInt(id), title: 'Problem #' + id, difficulty: 'medium' };
       });
 
     if (attemptedProblems.length === 0) {
@@ -548,7 +608,8 @@ const Profile = (() => {
     if (favorites.length === 0) {
       return '<div style="color:var(--text-muted);padding:var(--space-4);text-align:center">No favorites yet. Heart problems you want to revisit!</div>';
     }
-    const favProblems = favorites.map(id => problems.find(p => p.id === id)).filter(Boolean);
+    const pMap = profileProblemMap || new Map(problems.map(p => [p.id, p]));
+    const favProblems = favorites.map(id => pMap.get(id)).filter(Boolean);
     return `
       <div class="recent-list">
         ${favProblems.map(p => `
@@ -571,7 +632,8 @@ const Profile = (() => {
     return `
       <div class="collections-list">
         ${collections.map(col => {
-          const colProblems = col.problemIds.map(id => problems.find(p => p.id === id)).filter(Boolean);
+          const pMap = profileProblemMap || new Map(problems.map(p => [p.id, p]));
+          const colProblems = col.problemIds.map(id => pMap.get(id)).filter(Boolean);
           return `
             <div class="collection-card">
               <div class="collection-card__header">

@@ -42,15 +42,28 @@ const FirebaseConfig = (() => {
 
       firebase.initializeApp(config);
 
-      // Enable Firestore offline persistence
-      firebase.firestore().enablePersistence({ synchronizeTabs: true })
-        .catch(err => {
-          if (err.code === 'failed-precondition') {
-            console.warn('[Firestore] Multiple tabs open, persistence only in one tab');
-          } else if (err.code === 'unimplemented') {
-            console.warn('[Firestore] Browser does not support persistence');
-          }
-        });
+      // NOTE: We intentionally do NOT enable Firestore offline persistence.
+      // enablePersistence() creates an IndexedDB cache that on GitHub Pages
+      // frequently enters a broken "offline" state, causing all reads/writes
+      // to fail with "unavailable - client is offline" errors.
+      // Our own sessionStorage caching handles the data layer instead.
+
+      // Clean up stale IndexedDB from old persistence (one-time, async fire-and-forget)
+      try {
+        if (!localStorage.getItem('qr-idb-cleaned') && indexedDB.databases) {
+          indexedDB.databases().then(dbs => {
+            for (const db of dbs) {
+              if (db.name && db.name.startsWith('firestore')) {
+                indexedDB.deleteDatabase(db.name);
+                console.log('[FirebaseConfig] Cleaned stale IndexedDB:', db.name);
+              }
+            }
+            localStorage.setItem('qr-idb-cleaned', '1');
+          }).catch(() => {});
+        } else if (!localStorage.getItem('qr-idb-cleaned')) {
+          localStorage.setItem('qr-idb-cleaned', '1');
+        }
+      } catch (e) { /* ignore — indexedDB.databases() not supported in all browsers */ }
 
       initialized = true;
       console.log('[FirebaseConfig] Initialized successfully');
