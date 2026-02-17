@@ -428,8 +428,9 @@ const Problems = (() => {
       const searchQ = params.q || '';
       const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeFilter || searchQ;
 
-      // Base set (optionally hide stubs)
-      let base = hideStubs ? allProblems.filter(p => p.status !== 'incomplete' && p.status !== 'title-only') : allProblems;
+      // Base set: always hide duplicates, optionally hide stubs
+      let base = allProblems.filter(p => p.status !== 'duplicate');
+      if (hideStubs) base = base.filter(p => p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
 
       // Favorites filter
       if (activeFilter === 'favorites' && typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
@@ -899,7 +900,7 @@ const Problems = (() => {
         next = allProblems.find(p => p.id === randomHistory[randomHistoryIndex + 1]) || null;
       } else {
         // Pick a new random
-        const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only');
+        const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
         next = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
       }
 
@@ -1229,7 +1230,7 @@ const Problems = (() => {
   // ---- Random problem ----
   function randomProblem() {
     const pool = currentFiltered.length > 0 ? currentFiltered : allProblems;
-    const eligible = pool.filter(p => p.status !== 'incomplete' && p.status !== 'title-only');
+    const eligible = pool.filter(p => p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
     if (eligible.length === 0) return;
 
     // Build/rebuild the shuffled queue if empty or from a different pool

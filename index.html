@@ -609,8 +609,8 @@
         logoTrack.innerHTML = single + single;
       }
 
-      // Featured problems (filter out title-only)
-      const eligible = problems.filter(p => p.status !== 'title-only');
+      // Featured problems (filter out title-only and duplicates)
+      const eligible = problems.filter(p => p.status !== 'title-only' && p.status !== 'duplicate');
       const shuffled = [...eligible];
       for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
