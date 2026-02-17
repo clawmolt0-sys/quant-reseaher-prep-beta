@@ -150,20 +150,41 @@ const Collections = (() => {
     }, 100);
   }
 
+  // Toast helper (reuse Problems.showToast if available)
+  function _toast(msg) {
+    if (typeof Problems !== 'undefined' && Problems.showToast) {
+      // Not exposed yet, use inline toast
+    }
+    const existing = document.querySelector('.qr-toast');
+    if (existing) existing.remove();
+    const toast = document.createElement('div');
+    toast.className = 'qr-toast';
+    toast.textContent = msg;
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => { toast.classList.add('qr-toast--show'); });
+    setTimeout(() => {
+      toast.classList.remove('qr-toast--show');
+      setTimeout(() => toast.remove(), 300);
+    }, 2500);
+  }
+
   // Internal handlers (exposed for onclick)
   async function _toggleProblem(checkbox, problemId) {
     const colId = checkbox.getAttribute('data-col-id');
+    const col = getAll().find(c => c.id === colId);
     if (checkbox.checked) {
       await addProblem(colId, problemId);
+      _toast('Added to ' + (col ? col.name : 'list'));
     } else {
       await removeProblem(colId, problemId);
+      _toast('Removed from ' + (col ? col.name : 'list'));
     }
     // Update count display
     const label = checkbox.closest('.collection-item');
     if (label) {
-      const col = getAll().find(c => c.id === colId);
+      const updatedCol = getAll().find(c => c.id === colId);
       const countEl = label.querySelector('.collection-item__count');
-      if (col && countEl) countEl.textContent = col.problemIds.length + ' problems';
+      if (updatedCol && countEl) countEl.textContent = updatedCol.problemIds.length + ' problems';
     }
   }
 
@@ -178,9 +199,14 @@ const Collections = (() => {
     const col = await create(name);
     input.disabled = false;
 
-    if (col && currentModalProblemId) {
-      // Re-render the modal with the new collection
-      showModal(currentModalProblemId);
+    if (col) {
+      _toast('List "' + name + '" created!');
+      if (currentModalProblemId) {
+        // Re-render the modal with the new collection
+        showModal(currentModalProblemId);
+      }
+    } else {
+      _toast('Failed to create list');
     }
   }
 

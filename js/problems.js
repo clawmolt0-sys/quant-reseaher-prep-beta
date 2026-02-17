@@ -112,6 +112,12 @@ const Problems = (() => {
         else localStorage.removeItem('qr-prep-status-' + id);
       } catch (e) { /* ignore */ }
     }
+
+    // Show toast feedback
+    if (status === 'solved') showToast('Marked as solved!');
+    else if (status === 'attempted') showToast('Marked as attempted');
+    else showToast('Status cleared');
+
     // Refresh current view
     const params = App.getParams();
     if (params.id) renderDetail(id);
@@ -1118,11 +1124,26 @@ const Problems = (() => {
             ${locked
               ? `<div class="detail-section">${lockedOverlayHtml}</div>`
               : `<div class="detail-section">
-                  <button class="collapsible-toggle collapsible-toggle--solution" onclick="Problems.toggleSolution(this)">
-                    <span class="collapsible-toggle__arrow">\u25B6</span> Solution
-                  </button>
-                  <div class="collapsible-content solution-content math-content">
-                    ${problem.solution ? MarkdownRender.render(problem.solution) : '<p class="no-solution">Solution not yet available for this problem.</p>'}
+                  <div class="solution-gate" id="solution-gate">
+                    <div class="solution-gate__icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                      </svg>
+                    </div>
+                    <div class="solution-gate__title">View Solution</div>
+                    <div class="solution-gate__desc">Try solving the problem yourself first. The solution will be revealed when you click below.</div>
+                    <button class="solution-gate__btn" onclick="Problems.revealSolution()">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                      Show Solution
+                    </button>
+                  </div>
+                  <div class="solution-revealed" id="solution-revealed" style="display:none">
+                    <button class="collapsible-toggle collapsible-toggle--solution collapsible-toggle--open" onclick="Problems.toggleSolution(this)">
+                      <span class="collapsible-toggle__arrow">\u25BC</span> Solution
+                    </button>
+                    <div class="collapsible-content solution-content math-content collapsible-content--visible">
+                      ${problem.solution ? MarkdownRender.render(problem.solution) : '<p class="no-solution">Solution not yet available for this problem.</p>'}
+                    </div>
                   </div>
                 </div>`
             }
@@ -1261,6 +1282,16 @@ const Problems = (() => {
     KatexRender.render(content);
   }
 
+  function revealSolution() {
+    const gate = document.getElementById('solution-gate');
+    const revealed = document.getElementById('solution-revealed');
+    if (gate) gate.style.display = 'none';
+    if (revealed) {
+      revealed.style.display = 'block';
+      KatexRender.render(revealed);
+    }
+  }
+
   function toggleSolution(btn) { toggleCollapsible(btn); }
   function toggleHint(btn) { toggleCollapsible(btn); }
   function toggleIntuition(btn) { toggleCollapsible(btn); }
@@ -1352,9 +1383,25 @@ const Problems = (() => {
       if (typeof Auth !== 'undefined') Auth.showAuthModal();
       return;
     }
+    const wasFavorited = Auth.isFavorited(problemId);
     await Auth.toggleFavorite(problemId);
-    // Re-render detail to update button state
-    renderDetail(problemId);
+    const isFav = Auth.isFavorited(problemId);
+
+    // Update the heart button inline (no full re-render)
+    const heartBtn = document.querySelector('.pab__icon-btn--liked, .pab__icon-btn[title*="favorite"]');
+    if (heartBtn) {
+      if (isFav) {
+        heartBtn.classList.add('pab__icon-btn--liked');
+        heartBtn.title = 'Remove from favorites';
+        heartBtn.querySelector('svg').setAttribute('fill', 'currentColor');
+      } else {
+        heartBtn.classList.remove('pab__icon-btn--liked');
+        heartBtn.title = 'Add to favorites';
+        heartBtn.querySelector('svg').setAttribute('fill', 'none');
+      }
+    }
+
+    showToast(isFav ? 'Added to favorites' : 'Removed from favorites');
   }
 
   // ---- Add to collection ----
@@ -1385,6 +1432,6 @@ const Problems = (() => {
     onNotesInput, loadMore, randomProblem, markStatus,
     addDiscussionEntry, deleteDiscussionEntry,
     toggleFavorite, addToCollection, filterFavorites,
-    navigateRandom, shareProblem, flagProblem,
+    navigateRandom, shareProblem, flagProblem, revealSolution, showToast,
   };
 })();
