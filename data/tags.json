@@ -1,130 +1,31 @@
 {
-    "categories":  [
-                       {
-                           "id":  "probability",
-                           "name":  "Probability",
-                           "icon":  "🎲",
-                           "color":  "#3b82f6"
-                       },
-                       {
-                           "id":  "expectation",
-                           "name":  "Expectation",
-                           "icon":  "📊",
-                           "color":  "#6366f1"
-                       },
-                       {
-                           "id":  "combinatorics",
-                           "name":  "Combinatorics",
-                           "icon":  "🔢",
-                           "color":  "#8b5cf6"
-                       },
-                       {
-                           "id":  "statistics",
-                           "name":  "Statistics",
-                           "icon":  "📈",
-                           "color":  "#a855f7"
-                       },
-                       {
-                           "id":  "linear-algebra",
-                           "name":  "Linear Algebra",
-                           "icon":  "📐",
-                           "color":  "#d946ef"
-                       },
-                       {
-                           "id":  "stochastic-calculus",
-                           "name":  "Stochastic Calculus",
-                           "icon":  "∫",
-                           "color":  "#ec4899"
-                       },
-                       {
-                           "id":  "options-pricing",
-                           "name":  "Options \u0026 Pricing",
-                           "icon":  "📉",
-                           "color":  "#f43f5e"
-                       },
-                       {
-                           "id":  "risk-management",
-                           "name":  "Risk Management",
-                           "icon":  "🛡️",
-                           "color":  "#ef4444"
-                       },
-                       {
-                           "id":  "time-series",
-                           "name":  "Time Series",
-                           "icon":  "📅",
-                           "color":  "#f97316"
-                       },
-                       {
-                           "id":  "coding",
-                           "name":  "Coding",
-                           "icon":  "💻",
-                           "color":  "#22c55e"
-                       },
-                       {
-                           "id":  "brain-teaser",
-                           "name":  "Brain Teaser",
-                           "icon":  "🧩",
-                           "color":  "#eab308"
-                       },
-                       {
-                           "id":  "game-theory",
-                           "name":  "Game Theory",
-                           "icon":  "♟️",
-                           "color":  "#14b8a6"
-                       },
-                       {
-                           "id":  "machine-learning",
-                           "name":  "Machine Learning",
-                           "icon":  "🤖",
-                           "color":  "#06b6d4"
-                       },
-                       {
-                           "id":  "regression",
-                           "name":  "Regression",
-                           "icon":  "📈",
-                           "color":  "#f97316"
-                       }
-                   ],
-    "types":  [
-                  {
-                      "id":  "calculation",
-                      "name":  "Calculation",
-                      "desc":  "Specific numerical or formula answer"
-                  },
-                  {
-                      "id":  "proof",
-                      "name":  "Proof",
-                      "desc":  "Prove a mathematical statement"
-                  },
-                  {
-                      "id":  "coding",
-                      "name":  "Coding",
-                      "desc":  "Algorithm or data structure implementation"
-                  },
-                  {
-                      "id":  "open-ended",
-                      "name":  "Open-Ended",
-                      "desc":  "Discussion or design question"
-                  },
-                  {
-                      "id":  "brain-teaser",
-                      "name":  "Brain Teaser",
-                      "desc":  "Logic puzzle or lateral thinking"
-                  },
-                  {
-                      "id":  "estimation",
-                      "name":  "Estimation",
-                      "desc":  "Fermi estimation or approximation"
-                  },
-                  {
-                      "id":  "strategy",
-                      "name":  "Strategy",
-                      "desc":  "Optimal strategy or game theory"
-                  },
-                  {
-                      "id":  "conceptual",
-                      "name":  "Conceptual",
-                      "desc":  "Understanding concepts and definitions"
-                  }
-              ]
+  "categories": [
+    { "id": "probability", "name": "Probability", "icon": "\ud83c\udfb2", "color": "#3b82f6" },
+    { "id": "expectation", "name": "Expectation", "icon": "\ud83d\udcca", "color": "#6366f1" },
+    { "id": "combinatorics", "name": "Combinatorics", "icon": "\ud83d\udd22", "color": "#8b5cf6" },
+    { "id": "random-variables", "name": "Random Variables", "icon": "\ud83c\udfaf", "color": "#a855f7" },
+    { "id": "stochastic-process", "name": "Stochastic Process", "icon": "\u222b", "color": "#ec4899" },
+    { "id": "statistics", "name": "Statistics", "icon": "\ud83d\udcc8", "color": "#d946ef" },
+    { "id": "linear-algebra", "name": "Linear Algebra", "icon": "\ud83d\udcd0", "color": "#7c3aed" },
+    { "id": "regression", "name": "Regression", "icon": "\ud83d\udcc9", "color": "#f97316" },
+    { "id": "machine-learning", "name": "Machine Learning", "icon": "\ud83e\udd16", "color": "#06b6d4" },
+    { "id": "optimization", "name": "Optimization", "icon": "\u2699\ufe0f", "color": "#0891b2" },
+    { "id": "coding", "name": "Coding", "icon": "\ud83d\udcbb", "color": "#22c55e" },
+    { "id": "brain-teaser", "name": "Brain Teaser", "icon": "\ud83e\udde9", "color": "#eab308" },
+    { "id": "game-theory", "name": "Game Theory", "icon": "\u265f\ufe0f", "color": "#14b8a6" },
+    { "id": "market-microstructure", "name": "Market Microstructure", "icon": "\ud83c\udfe6", "color": "#64748b" },
+    { "id": "time-series", "name": "Time Series", "icon": "\ud83d\udcc5", "color": "#f43f5e" },
+    { "id": "options-pricing", "name": "Options & Pricing", "icon": "\ud83d\udcc9", "color": "#ef4444" },
+    { "id": "finance", "name": "Finance", "icon": "\ud83d\udcb0", "color": "#f59e0b" }
+  ],
+  "types": [
+    { "id": "calculation", "name": "Calculation", "desc": "Specific numerical or formula answer" },
+    { "id": "proof", "name": "Proof", "desc": "Prove a mathematical statement" },
+    { "id": "coding", "name": "Coding", "desc": "Algorithm or data structure implementation" },
+    { "id": "open-ended", "name": "Open-Ended", "desc": "Discussion or design question" },
+    { "id": "brain-teaser", "name": "Brain Teaser", "desc": "Logic puzzle or lateral thinking" },
+    { "id": "estimation", "name": "Estimation", "desc": "Fermi estimation or approximation" },
+    { "id": "strategy", "name": "Strategy", "desc": "Optimal strategy or game theory" },
+    { "id": "conceptual", "name": "Conceptual", "desc": "Understanding concepts and definitions" }
+  ]
 }
