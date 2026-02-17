@@ -17,6 +17,8 @@ const Problems = (() => {
   let hideStubs = false;
   let featuredListData = null; // For ?list= param
   let activeListId = null;
+  let randomQueue = [];
+  let randomQueueIndex = -1;
 
   // ---- Helpers ----
   function ensureArray(val) {
@@ -843,13 +845,20 @@ const Problems = (() => {
 
     let prev, next, prevLabel, nextLabel;
     if (isRandom) {
-      // Random mode: pick random prev/next from all eligible problems
+      // Random mode: pick truly random prev/next from all eligible problems
       const eligible = allProblems.filter(p => p.id !== problem.id && p.status !== 'incomplete' && p.status !== 'title-only');
-      prev = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
-      next = eligible.length > 0 ? eligible[Math.floor(Math.random() * eligible.length)] : null;
-      // Ensure next !== prev if possible
-      if (next && prev && next.id === prev.id && eligible.length > 1) {
-        next = eligible.filter(p => p.id !== prev.id)[Math.floor(Math.random() * (eligible.length - 1))];
+      if (eligible.length > 0) {
+        // Pick from different halves of the shuffled array to ensure variety
+        const shuffled = [...eligible];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        prev = shuffled[0] || null;
+        next = shuffled[1] || shuffled[0] || null;
+      } else {
+        prev = null;
+        next = null;
       }
       prevLabel = '\u2190 Random';
       nextLabel = 'Next Random \u2192';
@@ -1136,9 +1145,22 @@ const Problems = (() => {
   function randomProblem() {
     const pool = currentFiltered.length > 0 ? currentFiltered : allProblems;
     const eligible = pool.filter(p => p.status !== 'incomplete' && p.status !== 'title-only');
-    const pick = eligible.length > 0
-      ? eligible[Math.floor(Math.random() * eligible.length)]
-      : pool[Math.floor(Math.random() * pool.length)];
+    if (eligible.length === 0) return;
+
+    // Build/rebuild the shuffled queue if empty or from a different pool
+    if (randomQueue.length === 0 || randomQueueIndex >= randomQueue.length - 1) {
+      randomQueue = [...eligible];
+      // Fisher-Yates shuffle
+      for (let i = randomQueue.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [randomQueue[i], randomQueue[j]] = [randomQueue[j], randomQueue[i]];
+      }
+      randomQueueIndex = 0;
+    } else {
+      randomQueueIndex++;
+    }
+
+    const pick = randomQueue[randomQueueIndex];
     if (pick) window.location.href = 'problems.html?id=' + pick.id + '&random=1';
   }
 

@@ -111,48 +111,60 @@
       50% { box-shadow: 0 0 35px rgba(76,139,245,0.5); }
     }
 
-    /* Trust logos bar */
-    .trust-bar {
+    /* Logo carousel — infinite scroll */
+    .logo-carousel {
       text-align: center;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding-bottom: var(--space-12);
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     }
-    .trust-bar__label {
+    .logo-carousel__label {
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--text-muted);
-      margin-bottom: var(--space-4);
+      margin-bottom: var(--space-5);
       font-weight: var(--font-medium);
     }
-    .trust-bar__logos {
+    .logo-carousel__track {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
-      gap: var(--space-6);
+      gap: var(--space-8);
+      width: max-content;
+      animation: logo-scroll 35s linear infinite;
     }
-    .trust-bar__logo {
-      height: 22px;
-      opacity: 0.5;
+    .logo-carousel:hover .logo-carousel__track {
+      animation-play-state: paused;
+    }
+    @keyframes logo-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .logo-carousel__item {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      opacity: 0.45;
       transition: opacity var(--transition-base);
+    }
+    .logo-carousel__item:hover { opacity: 0.9; }
+    .logo-carousel__item img {
+      height: 22px;
       filter: brightness(0) invert(1);
       object-fit: contain;
     }
-    .trust-bar__logo:hover { opacity: 0.9; }
-    .trust-bar__logo--text {
+    .logo-carousel__item-text {
       font-size: 13px;
       font-weight: var(--font-bold);
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--text-muted);
-      opacity: 0.4;
       white-space: nowrap;
-      transition: opacity var(--transition-base);
-      text-decoration: none;
     }
-    .trust-bar__logo--text:hover { opacity: 0.8; }
 
     /* Stats */
     .stats-bar {
@@ -340,8 +352,8 @@
       .stats-bar { grid-template-columns: repeat(3, 1fr); }
       .diff-grid { grid-template-columns: 1fr; }
       .hero__actions { flex-direction: column; align-items: center; }
-      .trust-bar__logos { gap: var(--space-4); }
-      .trust-bar__logo { height: 18px; }
+      .logo-carousel__item img { height: 18px; }
+      .logo-carousel__track { gap: var(--space-6); }
     }
   </style>
 </head>
@@ -387,10 +399,10 @@
           <a href="problems.html" class="btn btn--primary">Start Practicing &rarr;</a>
         </div>
 
-        <!-- Trust bar -->
-        <div class="trust-bar">
-          <div class="trust-bar__label">Covering interviews at</div>
-          <div class="trust-bar__logos" id="trust-logos"></div>
+        <!-- Logo carousel -->
+        <div class="logo-carousel">
+          <div class="logo-carousel__label">Covering interviews at</div>
+          <div class="logo-carousel__track" id="logo-track"></div>
         </div>
       </section>
 
@@ -560,9 +572,9 @@
       const statsBar = document.getElementById('stats-bar');
       if (statsBar) statsObserver.observe(statsBar);
 
-      // Trust bar logos
-      const trustLogos = document.getElementById('trust-logos');
-      if (trustLogos) {
+      // Logo carousel (infinite scroll)
+      const logoTrack = document.getElementById('logo-track');
+      if (logoTrack) {
         const firms = [
           { name: 'Citadel', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Citadel_LLC_Logo.svg' },
           { name: 'Two Sigma', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Two_Sigma_logo.svg' },
@@ -572,11 +584,29 @@
           { name: 'HRT', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/aa/Hudson_River_Trading_Logo.svg' },
           { name: 'Optiver', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Optiver_Logo.svg' },
           { name: 'Point72', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Point72logo.png' },
+          { name: 'Millennium', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Millennium_logo.svg' },
+          { name: 'Squarepoint', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Squarepoint_Capital.svg' },
+          { name: 'DRW', logo: null },
+          { name: 'SIG', logo: null },
+          { name: 'Bridgewater', logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Bridgewater_Associates_logo.svg' },
+          { name: 'IMC', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/31/IMC_logo.svg' },
+          { name: 'Renaissance', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Renaissance_Technologies.png' },
+          { name: 'AQR', logo: null },
+          { name: 'Five Rings', logo: null },
+          { name: 'WorldQuant', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/WorldQuant_Logo.svg' },
         ];
-        trustLogos.innerHTML = firms.map(f =>
-          `<img class="trust-bar__logo" src="${f.logo}" alt="${f.name}" title="${f.name}"
-                onerror="this.outerHTML='<span class=\\'trust-bar__logo--text\\'>${f.name}</span>'">`
-        ).join('');
+        function firmHtml(f) {
+          if (f.logo) {
+            return `<div class="logo-carousel__item" title="${f.name}">
+              <img src="${f.logo}" alt="${f.name}"
+                onerror="this.parentElement.innerHTML='<span class=\\'logo-carousel__item-text\\'>${f.name}</span>'">
+            </div>`;
+          }
+          return `<div class="logo-carousel__item"><span class="logo-carousel__item-text">${f.name}</span></div>`;
+        }
+        // Duplicate the list for seamless infinite scroll
+        const single = firms.map(firmHtml).join('');
+        logoTrack.innerHTML = single + single;
       }
 
       // Featured problems (filter out title-only)

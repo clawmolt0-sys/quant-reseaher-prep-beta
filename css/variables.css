@@ -155,13 +155,9 @@
 }
 
 /* Light theme: remove invert filter from logos */
-[data-theme="light"] .trust-bar__logo {
-  filter: none;
-}
 [data-theme="light"] .logo-carousel__item img {
   filter: none;
 }
-[data-theme="light"] .trust-bar__logo--text,
 [data-theme="light"] .logo-carousel__item-text {
   color: var(--text-secondary);
 }
