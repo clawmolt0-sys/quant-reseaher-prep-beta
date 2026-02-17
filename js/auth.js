@@ -46,6 +46,35 @@ const Auth = (() => {
     }));
   }
 
+  // ---- Test Firestore connectivity (detect expired rules) ----
+  async function testFirestoreWrite() {
+    try {
+      const db = FirebaseConfig.getDb();
+      if (!db || !currentUser) return;
+
+      const testRef = db.collection('users').doc(currentUser.uid);
+      // Try a tiny write to check if rules allow it
+      await testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true });
+      console.log('[Auth] Firestore write test: OK');
+    } catch (err) {
+      console.error('[Auth] Firestore write test FAILED:', err.code, err.message);
+      if (err.code === 'permission-denied') {
+        console.error('=== FIRESTORE RULES LIKELY EXPIRED ===');
+        console.error('Go to Firebase Console > Firestore > Rules and update them.');
+        console.error('Set: allow read, write: if request.auth != null;');
+        // Show a warning toast
+        setTimeout(() => {
+          const toast = document.createElement('div');
+          toast.className = 'qr-toast qr-toast--show';
+          toast.style.cssText = 'background:#dc2626;color:white;border:none;position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;z-index:99999;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.3)';
+          toast.innerHTML = '\u26A0\uFE0F Database permissions expired. <a href="https://console.firebase.google.com/project/qrprep/firestore/rules" target="_blank" style="color:#fbbf24;text-decoration:underline">Fix Firestore Rules</a>';
+          document.body.appendChild(toast);
+          setTimeout(() => toast.remove(), 15000);
+        }, 1000);
+      }
+    }
+  }
+
   // ---- Auth state change handler (extracted to avoid duplication) ----
   async function handleAuthStateChanged(user) {
     // If DOM isn't ready yet, queue the update
@@ -80,6 +109,9 @@ const Auth = (() => {
       // Re-render with full data (level badge, etc.)
       renderUserUI();
       forceAuthUIUpdate();
+
+      // Test Firestore connectivity (detects expired rules)
+      testFirestoreWrite();
     } else {
       currentUser = null;
       userDoc = null;
