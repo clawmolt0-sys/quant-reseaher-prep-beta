@@ -1085,7 +1085,7 @@ const Problems = (() => {
         <td class="td-status">${locked ? '<span class="lock-icon">\u{1F512}</span>' : statusIcon}</td>
         <td class="td-num">${p.id}</td>
         <td>
-          <a class="td-title-link" href="problems.html?id=${p.id}" target="_blank">${App.escapeHtml(p.title)}</a>
+          <a class="td-title-link" href="problems.html?id=${p.id}">${App.escapeHtml(p.title)}</a>
           ${isStub ? '<span class="stub-badge">draft</span>' : ''}
           ${isTitleOnly ? '<span class="stub-badge" style="background:#f59e0b22;color:#d97706">Coming Soon</span>' : ''}
           <div class="td-tags">${tagHtml}</div>
@@ -1433,7 +1433,7 @@ const Problems = (() => {
               ).join('');
               const reasonText = s.reason || s.shared.slice(0, 3).map(t => formatTag(t)).join(', ');
               return `
-              <a class="similar-problem-card" href="problems.html?id=${s.problem.id}" target="_blank">
+              <a class="similar-problem-card" href="problems.html?id=${s.problem.id}">
                 <div class="similar-problem-card__top">
                   <span class="similar-problem-card__id">#${s.problem.id}</span>
                   ${typeLabel ? `<span class="badge badge--edge-type badge--edge-${s.edgeType} badge--sm">${typeLabel}</span>` : ''}
