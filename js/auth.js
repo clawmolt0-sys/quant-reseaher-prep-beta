@@ -397,11 +397,12 @@ const Auth = (() => {
     const banner = document.createElement('div');
     banner.className = 'firestore-error-banner';
     banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#dc2626;color:white;padding:12px 20px;font-size:14px;font-family:Inter,sans-serif;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.3)';
-    banner.innerHTML = '⚠️ <strong>Database access denied</strong> — Firestore security rules may have expired. ' +
-      '<a href="https://console.firebase.google.com/project/qrprep/firestore/rules" target="_blank" ' +
-      'style="color:#fbbf24;text-decoration:underline;font-weight:600">Fix Rules</a> ' +
-      '(set: <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:3px;font-size:12px">allow read, write: if request.auth != null;</code>) ' +
-      '— Progress is being saved locally until fixed. ' +
+    banner.innerHTML = '⚠️ <strong>Database access denied</strong> — Firestore may not be set up or rules need updating. ' +
+      '<a href="https://console.firebase.google.com/project/qrprep/firestore" target="_blank" ' +
+      'style="color:#fbbf24;text-decoration:underline;font-weight:600">Open Firebase Console</a> ' +
+      '— Create a <strong>(default)</strong> database if none exists, then set rules to: ' +
+      '<code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:3px;font-size:12px">allow read, write: if request.auth != null;</code> ' +
+      '— Progress is saved locally until fixed. ' +
       '<button onclick="this.parentElement.remove()" style="background:none;border:none;color:white;cursor:pointer;font-size:18px;margin-left:8px;vertical-align:middle">&times;</button>';
     document.body.prepend(banner);
   }
