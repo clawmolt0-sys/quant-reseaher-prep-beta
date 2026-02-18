@@ -38,17 +38,22 @@ const FirebaseConfig = (() => {
         return;
       }
 
-      // Clean up any corrupted IndexedDB databases from old enablePersistence().
-      // We now use SESSION persistence (sessionStorage) instead of LOCAL (IndexedDB),
-      // but old corrupted databases might still interfere on first visit.
+      // ALWAYS delete firebaseLocalStorageDb BEFORE Firebase init.
+      // Firebase Auth with LOCAL persistence uses this IndexedDB to store sessions.
+      // If it's corrupted (from old enablePersistence()), onAuthStateChanged hangs forever.
+      // We use SESSION persistence (sessionStorage) instead, so this DB is never needed.
+      // Delete it on EVERY page load to prevent it from causing hangs.
+      try {
+        indexedDB.deleteDatabase('firebaseLocalStorageDb');
+        console.log('[FirebaseConfig] Deleted firebaseLocalStorageDb');
+      } catch (e) { /* ignore */ }
+      // Clean other old Firestore IndexedDB databases (one-time)
       if (!sessionStorage.getItem('qr-idb-fix-v3')) {
         try {
-          indexedDB.deleteDatabase('firebaseLocalStorageDb');
           indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep/main');
           indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep');
           indexedDB.deleteDatabase('firebase-heartbeat-database');
           indexedDB.deleteDatabase('firebase-installations-database');
-          console.log('[FirebaseConfig] Cleaned old IndexedDB databases');
         } catch (e) { /* ignore */ }
         sessionStorage.setItem('qr-idb-fix-v3', '1');
       }

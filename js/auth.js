@@ -159,24 +159,28 @@ const Auth = (() => {
     authSettledCallbacks.forEach(fn => fn());
     authSettledCallbacks = [];
 
-    // FIX: Set persistence to SESSION to avoid IndexedDB corruption issues.
-    // The default persistence (LOCAL) uses IndexedDB ('firebaseLocalStorageDb').
-    // If that IndexedDB gets corrupted, onAuthStateChanged hangs forever.
-    // SESSION uses sessionStorage instead — survives page refreshes but not
-    // new tabs. Much more reliable on GitHub Pages.
+    // CRITICAL: Set persistence to SESSION BEFORE registering onAuthStateChanged.
+    // The default LOCAL persistence uses IndexedDB ('firebaseLocalStorageDb').
+    // If that DB is corrupted, onAuthStateChanged hangs forever.
+    // By awaiting setPersistence(SESSION) first, we ensure the auth SDK
+    // uses sessionStorage instead, completely bypassing IndexedDB.
     auth.setPersistence(firebase.auth.Auth.Persistence.SESSION)
       .then(() => {
-        console.log('[Auth] Persistence set to SESSION (sessionStorage)');
+        console.log('[Auth] Persistence set to SESSION');
+        // NOW register the auth state listener — it will use sessionStorage
+        auth.onAuthStateChanged((user) => {
+          console.log('[Auth] onAuthStateChanged fired:', user ? user.displayName : 'null');
+          handleAuthStateChanged(user);
+        });
       })
       .catch((err) => {
-        console.warn('[Auth] setPersistence error (non-fatal):', err.message);
+        console.warn('[Auth] setPersistence failed:', err.message, '— registering listener anyway');
+        // Register listener even if setPersistence fails
+        auth.onAuthStateChanged((user) => {
+          console.log('[Auth] onAuthStateChanged fired (fallback):', user ? user.displayName : 'null');
+          handleAuthStateChanged(user);
+        });
       });
-
-    // Register auth state listener — if it fires, update UI
-    auth.onAuthStateChanged((user) => {
-      console.log('[Auth] onAuthStateChanged fired:', user ? user.displayName : 'null');
-      handleAuthStateChanged(user);
-    });
 
     // Handle redirect-based sign-in (page was redirected to Firebase, now coming back)
     auth.getRedirectResult().then((result) => {
