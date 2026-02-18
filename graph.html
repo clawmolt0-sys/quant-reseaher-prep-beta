@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Graph — QR Prep Debug</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #060a10;
+      color: #e2e8f0;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* ---- Top bar ---- */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; gap: 12px;
+      padding: 8px 16px;
+      background: rgba(6,10,16,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #1e293b;
+      height: 48px;
+    }
+    .topbar__title {
+      font-size: 14px; font-weight: 700; color: #e2e8f0;
+      white-space: nowrap;
+    }
+    .topbar__stats {
+      font-size: 11px; color: #64748b; white-space: nowrap;
+    }
+    .topbar select, .topbar input[type="text"] {
+      background: #10151f; border: 1px solid #1e293b; border-radius: 6px;
+      color: #e2e8f0; padding: 4px 8px; font-size: 12px; font-family: inherit;
+    }
+    .topbar select:focus, .topbar input:focus { outline: none; border-color: #4c8bf5; }
+    .topbar input[type="text"] { width: 180px; }
+    .topbar label { font-size: 11px; color: #8392a7; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap; }
+    .topbar input[type="checkbox"] { accent-color: #4c8bf5; }
+    .topbar input[type="range"] { width: 80px; accent-color: #4c8bf5; }
+    .topbar__spacer { flex: 1; }
+    .topbar a { color: #4c8bf5; font-size: 12px; text-decoration: none; white-space: nowrap; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* ---- SVG canvas ---- */
+    #graph-canvas {
+      width: 100vw; height: 100vh; display: block;
+      cursor: grab;
+    }
+    #graph-canvas:active { cursor: grabbing; }
+
+    /* ---- Edges ---- */
+    .edge { stroke-opacity: 0.15; }
+    .edge--highlighted { stroke-opacity: 0.6; }
+
+    /* ---- Nodes ---- */
+    .node { cursor: pointer; transition: r 0.2s; }
+    .node:hover { filter: brightness(1.3); }
+    .node--selected { stroke: #fff; stroke-width: 2; }
+
+    /* ---- Labels ---- */
+    .node-label {
+      font-size: 9px; fill: #94a3b8; pointer-events: none;
+      text-anchor: middle; dominant-baseline: central;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+    .node-label--hover {
+      font-size: 11px; fill: #e2e8f0;
+    }
+
+    /* ---- Tooltip ---- */
+    .tooltip {
+      position: fixed; z-index: 200;
+      background: #10151f; border: 1px solid #1e293b;
+      border-radius: 10px; padding: 14px 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      pointer-events: none; opacity: 0;
+      transition: opacity 0.15s;
+      max-width: 360px; min-width: 240px;
+    }
+    .tooltip--visible { opacity: 1; pointer-events: auto; }
+    .tooltip__id { font-size: 11px; color: #64748b; font-family: 'JetBrains Mono', monospace; }
+    .tooltip__title { font-size: 14px; font-weight: 700; color: #e2e8f0; margin: 4px 0 8px; line-height: 1.3; }
+    .tooltip__meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+    .tooltip__badge {
+      font-size: 10px; font-weight: 600; padding: 2px 8px;
+      border-radius: 99px; text-transform: capitalize;
+    }
+    .tooltip__badge--easy { background: #22c55e20; color: #22c55e; }
+    .tooltip__badge--medium { background: #f5b73120; color: #f5b731; }
+    .tooltip__badge--hard { background: #f43f5e20; color: #f43f5e; }
+    .tooltip__badge--cat { background: #4c8bf515; color: #4c8bf5; }
+    .tooltip__edges-title { font-size: 11px; color: #64748b; margin: 10px 0 4px; font-weight: 600; }
+    .tooltip__edge-list { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+    .tooltip__edge-item {
+      font-size: 11px; padding: 3px 0; display: flex; justify-content: space-between; gap: 8px;
+      border-bottom: 1px solid #1e293b08;
+    }
+    .tooltip__edge-id { color: #64748b; font-family: 'JetBrains Mono', monospace; min-width: 35px; }
+    .tooltip__edge-reason { color: #8392a7; flex: 1; }
+    .tooltip__edge-weight { color: #4c8bf5; font-weight: 600; font-family: 'JetBrains Mono', monospace; min-width: 32px; text-align: right; }
+    .tooltip__link {
+      display: inline-block; margin-top: 10px; font-size: 11px;
+      color: #4c8bf5; text-decoration: none; font-weight: 600;
+    }
+    .tooltip__link:hover { text-decoration: underline; }
+
+    /* ---- Legend ---- */
+    .legend {
+      position: fixed; bottom: 16px; left: 16px; z-index: 100;
+      background: rgba(16,21,31,0.92); backdrop-filter: blur(8px);
+      border: 1px solid #1e293b; border-radius: 10px;
+      padding: 12px 14px; font-size: 11px;
+    }
+    .legend__title { font-weight: 700; color: #8392a7; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; }
+    .legend__item { display: flex; align-items: center; gap: 6px; padding: 1px 0; color: #94a3b8; cursor: pointer; }
+    .legend__item:hover { color: #e2e8f0; }
+    .legend__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .legend__item--dimmed { opacity: 0.3; }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar__title">Knowledge Graph</span>
+  <span class="topbar__stats" id="stats-text">Loading...</span>
+  <div class="topbar__spacer"></div>
+  <input type="text" id="search-input" placeholder="Search by ID or title..." />
+  <select id="filter-category">
+    <option value="">All categories</option>
+  </select>
+  <label><input type="range" id="weight-slider" min="50" max="95" value="50"> <span id="weight-label">w &ge; 0.50</span></label>
+  <label><input type="checkbox" id="show-labels" checked> IDs</label>
+  <a href="problems.html">Back to Problems</a>
+</div>
+
+<svg id="graph-canvas"></svg>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="legend" id="legend">
+  <div class="legend__title">Categories</div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(() => {
+  // ---- Category colors ----
+  const CAT_COLORS = {
+    'probability':          '#818cf8',
+    'statistics':           '#6366f1',
+    'expectation':          '#a78bfa',
+    'random-variables':     '#c084fc',
+    'combinatorics':        '#e879f9',
+    'brain-teaser':         '#f472b6',
+    'game-theory':          '#fb7185',
+    'coding':               '#22d3ee',
+    'linear-algebra':       '#2dd4bf',
+    'stochastic-process':   '#34d399',
+    'finance':              '#f5b731',
+    'options-pricing':      '#fbbf24',
+    'market-microstructure':'#f59e0b',
+    'regression':           '#fb923c',
+    'optimization':         '#f97316',
+    'machine-learning':     '#4c8bf5',
+    'time-series':          '#60a5fa',
+  };
+
+  const DIFF_SIZES = { easy: 4, medium: 5.5, hard: 7.5 };
+
+  let graphData, problemIndex;
+  let nodes = [], links = [];
+  let simulation;
+  let selectedNode = null;
+  let minWeight = 0.50;
+  let showLabels = true;
+  let filterCat = '';
+  let highlightedIds = new Set();
+
+  // ---- Load data ----
+  async function loadData() {
+    const [graph, index] = await Promise.all([
+      fetch('data/similarity-graph.json').then(r => r.json()),
+      fetch('data/problems-index.json').then(r => r.json()),
+    ]);
+    graphData = graph;
+    problemIndex = new Map();
+    for (const p of index) {
+      problemIndex.set(p.id, p);
+    }
+    return graph;
+  }
+
+  function buildGraph() {
+    const edgeMap = graphData.edges;
+    const nodeSet = new Set();
+    const linkArr = [];
+
+    for (const [srcId, edges] of Object.entries(edgeMap)) {
+      const src = parseInt(srcId);
+      const srcP = problemIndex.get(src);
+      if (!srcP) continue;
+      if (filterCat && srcP.c !== filterCat) continue;
+      nodeSet.add(src);
+
+      for (const e of edges) {
+        if (e.w < minWeight) continue;
+        const tgtP = problemIndex.get(e.id);
+        if (!tgtP) continue;
+        if (filterCat && tgtP.c !== filterCat) continue;
+        nodeSet.add(e.id);
+        // Deduplicate: only add edge where src < tgt
+        if (src < e.id) {
+          linkArr.push({ source: src, target: e.id, weight: e.w, reason: e.r });
+        }
+      }
+    }
+
+    nodes = [...nodeSet].map(id => {
+      const p = problemIndex.get(id);
+      return { id, title: p ? p.t : '?', category: p ? p.c : '', difficulty: p ? p.d : 'medium' };
+    });
+
+    links = linkArr;
+  }
+
+  // ---- Render ----
+  const svg = d3.select('#graph-canvas');
+  let g, linkG, nodeG, labelG;
+  let width, height;
+
+  function initSVG() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    svg.attr('width', width).attr('height', height);
+
+    g = svg.append('g');
+    linkG = g.append('g').attr('class', 'links');
+    nodeG = g.append('g').attr('class', 'nodes');
+    labelG = g.append('g').attr('class', 'labels');
+
+    // Zoom
+    const zoom = d3.zoom()
+      .scaleExtent([0.1, 8])
+      .on('zoom', (e) => g.attr('transform', e.transform));
+    svg.call(zoom);
+
+    // Initial zoom to center
+    svg.call(zoom.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.8));
+  }
+
+  function render() {
+    buildGraph();
+
+    // Update stats
+    document.getElementById('stats-text').textContent =
+      `${nodes.length} nodes, ${links.length} edges`;
+
+    // Stop old simulation
+    if (simulation) simulation.stop();
+
+    // Clear
+    linkG.selectAll('*').remove();
+    nodeG.selectAll('*').remove();
+    labelG.selectAll('*').remove();
+
+    // Links
+    const linkSel = linkG.selectAll('line')
+      .data(links, d => d.source + '-' + d.target)
+      .join('line')
+      .attr('class', 'edge')
+      .attr('stroke', '#334155')
+      .attr('stroke-width', d => 0.5 + d.weight * 1.5);
+
+    // Nodes
+    const nodeSel = nodeG.selectAll('circle')
+      .data(nodes, d => d.id)
+      .join('circle')
+      .attr('class', 'node')
+      .attr('r', d => DIFF_SIZES[d.difficulty] || 5)
+      .attr('fill', d => CAT_COLORS[d.category] || '#64748b')
+      .on('mouseover', onNodeHover)
+      .on('mouseout', onNodeOut)
+      .on('click', onNodeClick)
+      .call(d3.drag()
+        .on('start', dragStart)
+        .on('drag', dragging)
+        .on('end', dragEnd));
+
+    // Labels
+    const labelSel = labelG.selectAll('text')
+      .data(nodes, d => d.id)
+      .join('text')
+      .attr('class', 'node-label')
+      .text(d => d.id)
+      .attr('dy', d => -(DIFF_SIZES[d.difficulty] || 5) - 4)
+      .attr('display', showLabels ? null : 'none');
+
+    // Force simulation
+    simulation = d3.forceSimulation(nodes)
+      .force('link', d3.forceLink(links).id(d => d.id).distance(d => 40 + (1 - d.weight) * 80).strength(d => d.weight * 0.3))
+      .force('charge', d3.forceManyBody().strength(-30).distanceMax(300))
+      .force('center', d3.forceCenter(0, 0))
+      .force('collision', d3.forceCollide().radius(d => (DIFF_SIZES[d.difficulty] || 5) + 2))
+      .alphaDecay(0.02)
+      .on('tick', () => {
+        linkSel
+          .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+        nodeSel.attr('cx', d => d.x).attr('cy', d => d.y);
+        labelSel.attr('x', d => d.x).attr('y', d => d.y);
+      });
+  }
+
+  // ---- Interactions ----
+  const tooltip = document.getElementById('tooltip');
+
+  function onNodeHover(event, d) {
+    // Highlight connected edges
+    const connectedIds = new Set([d.id]);
+    const edges = graphData.edges[String(d.id)] || [];
+    edges.forEach(e => connectedIds.add(e.id));
+    highlightedIds = connectedIds;
+
+    linkG.selectAll('line')
+      .classed('edge--highlighted', l => {
+        const sId = typeof l.source === 'object' ? l.source.id : l.source;
+        const tId = typeof l.target === 'object' ? l.target.id : l.target;
+        return (sId === d.id || tId === d.id);
+      })
+      .attr('stroke', l => {
+        const sId = typeof l.source === 'object' ? l.source.id : l.source;
+        const tId = typeof l.target === 'object' ? l.target.id : l.target;
+        return (sId === d.id || tId === d.id) ? (CAT_COLORS[d.category] || '#4c8bf5') : '#334155';
+      });
+
+    nodeG.selectAll('circle')
+      .attr('opacity', n => connectedIds.has(n.id) ? 1 : 0.15);
+    labelG.selectAll('text')
+      .attr('opacity', n => connectedIds.has(n.id) ? 1 : 0.1)
+      .classed('node-label--hover', n => n.id === d.id);
+
+    // Show tooltip
+    const p = problemIndex.get(d.id);
+    const edgeList = edges.slice(0, 12).map(e => {
+      const ep = problemIndex.get(e.id);
+      return `<li class="tooltip__edge-item">
+        <span class="tooltip__edge-id">#${e.id}</span>
+        <span class="tooltip__edge-reason">${e.r}</span>
+        <span class="tooltip__edge-weight">${e.w.toFixed(2)}</span>
+      </li>`;
+    }).join('');
+
+    tooltip.innerHTML = `
+      <div class="tooltip__id">#${d.id}</div>
+      <div class="tooltip__title">${p ? p.t : d.title}</div>
+      <div class="tooltip__meta">
+        <span class="tooltip__badge tooltip__badge--${d.difficulty}">${d.difficulty}</span>
+        <span class="tooltip__badge tooltip__badge--cat">${d.category}</span>
+      </div>
+      <div class="tooltip__edges-title">${edges.length} connections:</div>
+      <ul class="tooltip__edge-list">${edgeList}</ul>
+      <a class="tooltip__link" href="problems.html?id=${d.id}" target="_blank">Open problem &rarr;</a>
+    `;
+    tooltip.classList.add('tooltip--visible');
+    positionTooltip(event);
+  }
+
+  function onNodeOut() {
+    highlightedIds.clear();
+    linkG.selectAll('line')
+      .classed('edge--highlighted', false)
+      .attr('stroke', '#334155');
+    nodeG.selectAll('circle').attr('opacity', 1);
+    labelG.selectAll('text').attr('opacity', 1).classed('node-label--hover', false);
+
+    if (!selectedNode) {
+      tooltip.classList.remove('tooltip--visible');
+    }
+  }
+
+  function onNodeClick(event, d) {
+    event.stopPropagation();
+    if (selectedNode === d.id) {
+      selectedNode = null;
+      tooltip.classList.remove('tooltip--visible');
+      nodeG.selectAll('circle').classed('node--selected', false);
+    } else {
+      selectedNode = d.id;
+      nodeG.selectAll('circle').classed('node--selected', n => n.id === d.id);
+      onNodeHover(event, d);
+    }
+  }
+
+  function positionTooltip(event) {
+    const x = event.clientX;
+    const y = event.clientY;
+    const tw = 360;
+    const left = x + tw + 20 > window.innerWidth ? x - tw - 10 : x + 16;
+    const top = Math.min(y, window.innerHeight - 400);
+    tooltip.style.left = left + 'px';
+    tooltip.style.top = Math.max(52, top) + 'px';
+  }
+
+  // Click on background to deselect
+  svg.on('click', () => {
+    selectedNode = null;
+    tooltip.classList.remove('tooltip--visible');
+    nodeG.selectAll('circle').classed('node--selected', false);
+  });
+
+  // ---- Drag ----
+  function dragStart(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x; d.fy = d.y;
+  }
+  function dragging(event, d) {
+    d.fx = event.x; d.fy = event.y;
+  }
+  function dragEnd(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null; d.fy = null;
+  }
+
+  // ---- Controls ----
+  function setupControls() {
+    // Category filter
+    const catSelect = document.getElementById('filter-category');
+    const cats = [...new Set([...problemIndex.values()].map(p => p.c))].sort();
+    cats.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c; opt.textContent = c;
+      catSelect.appendChild(opt);
+    });
+    catSelect.addEventListener('change', () => {
+      filterCat = catSelect.value;
+      render();
+    });
+
+    // Weight slider
+    const slider = document.getElementById('weight-slider');
+    const label = document.getElementById('weight-label');
+    slider.addEventListener('input', () => {
+      minWeight = parseInt(slider.value) / 100;
+      label.textContent = `w \u2265 ${minWeight.toFixed(2)}`;
+    });
+    slider.addEventListener('change', () => { render(); });
+
+    // Labels toggle
+    const labelsCheck = document.getElementById('show-labels');
+    labelsCheck.addEventListener('change', () => {
+      showLabels = labelsCheck.checked;
+      labelG.selectAll('text').attr('display', showLabels ? null : 'none');
+    });
+
+    // Search
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+      if (!q) {
+        nodeG.selectAll('circle').attr('opacity', 1);
+        labelG.selectAll('text').attr('opacity', 1);
+        return;
+      }
+      nodeG.selectAll('circle').attr('opacity', d => {
+        const match = String(d.id).includes(q) || d.title.toLowerCase().includes(q);
+        return match ? 1 : 0.08;
+      });
+      labelG.selectAll('text').attr('opacity', d => {
+        const match = String(d.id).includes(q) || d.title.toLowerCase().includes(q);
+        return match ? 1 : 0.05;
+      });
+    });
+
+    // Legend
+    const legend = document.getElementById('legend');
+    const activeCats = new Set(cats);
+    cats.forEach(c => {
+      const item = document.createElement('div');
+      item.className = 'legend__item';
+      item.innerHTML = `<span class="legend__dot" style="background:${CAT_COLORS[c] || '#64748b'}"></span>${c}`;
+      item.addEventListener('click', () => {
+        if (activeCats.has(c)) { activeCats.delete(c); item.classList.add('legend__item--dimmed'); }
+        else { activeCats.add(c); item.classList.remove('legend__item--dimmed'); }
+        nodeG.selectAll('circle').attr('opacity', d => activeCats.has(d.category) ? 1 : 0.06);
+        labelG.selectAll('text').attr('opacity', d => activeCats.has(d.category) ? 1 : 0.03);
+        linkG.selectAll('line').attr('opacity', l => {
+          const s = typeof l.source === 'object' ? l.source : nodes.find(n => n.id === l.source);
+          const t = typeof l.target === 'object' ? l.target : nodes.find(n => n.id === l.target);
+          return (s && activeCats.has(s.category)) && (t && activeCats.has(t.category)) ? 1 : 0.03;
+        });
+      });
+      legend.appendChild(item);
+    });
+  }
+
+  // ---- Resize ----
+  window.addEventListener('resize', () => {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    svg.attr('width', width).attr('height', height);
+  });
+
+  // ---- Init ----
+  async function main() {
+    await loadData();
+    initSVG();
+    setupControls();
+    render();
+  }
+
+  main();
+})();
+</script>
+</body>
+</html>
