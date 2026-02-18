@@ -7,20 +7,44 @@ const Learn = (() => {
   let lecturesData = [];
 
   async function init() {
-    topicsData = (await DataLoader.topics()) || { tracks: [] };
-    lecturesData = (await DataLoader.lectures()) || [];
+    const container = document.getElementById('content');
+    if (!container) return;
 
-    const params = App.getParams();
-
-    if (params.lecture) {
-      renderLectureViewer(params.lecture, params.track, params.topic);
-    } else if (params.track && params.topic) {
-      renderTopicPage(params.track, params.topic);
-    } else if (params.track) {
-      renderTrackOverview(params.track);
-    } else {
-      renderLandingPage();
-    }
+    // Show Coming Soon page
+    container.innerHTML = `
+      <div class="container" style="max-width:800px">
+        <div class="coming-soon-hero">
+          <div class="coming-soon-hero__icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <h1 class="coming-soon-hero__title">Learning Path</h1>
+          <p class="coming-soon-hero__subtitle">Structured lectures covering probability, statistics, stochastic calculus, and quantitative finance.</p>
+          <div class="coming-soon-hero__badge">\u{1F6A7} Coming Soon</div>
+          <p class="coming-soon-hero__desc">
+            We\u2019re building a comprehensive learning experience with two tracks: Core Foundations and
+            Applied Quant Finance. Each track includes lectures, practice problems, and interactive exercises.
+          </p>
+          <div class="coming-soon-hero__preview">
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F4D0}</div>
+              <div class="coming-soon-card__text">Core Foundations</div>
+            </div>
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F4C8}</div>
+              <div class="coming-soon-card__text">Applied Quant</div>
+            </div>
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F393}</div>
+              <div class="coming-soon-card__text">Practice Tracks</div>
+            </div>
+          </div>
+          <a href="problems.html" class="btn btn--primary" style="margin-top:var(--space-6)">Browse All Problems \u2192</a>
+        </div>
+      </div>
+    `;
   }
 
   // ---- Landing Page (no params) ----

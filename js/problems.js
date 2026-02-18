@@ -77,8 +77,9 @@ const Problems = (() => {
       'citadel': 'Citadel', 'two-sigma': 'Two Sigma', 'de-shaw': 'D.E. Shaw',
       'jump-trading': 'Jump', 'drw': 'DRW', 'hrt': 'HRT', 'jane-street': 'Jane St',
       'optiver': 'Optiver', 'sig': 'SIG', 'squarepoint': 'Squarepoint',
-      'tower-research': 'Tower', 'millennium': 'Millennium', 'point72': 'Point72',
+      'tower-research': 'Tower Research', 'millennium': 'Millennium', 'point72': 'Point72',
       'aqr': 'AQR', 'renaissance': 'RenTech', 'five-rings': 'Five Rings',
+      'goldman-sachs': 'Goldman Sachs', 'hft': 'HFT',
     };
     return map[id] || id;
   }
@@ -1420,9 +1421,11 @@ const Problems = (() => {
             <div class="problem-detail__statement-card">
               <div class="problem-detail__statement-label">Problem Statement</div>
               <div class="problem-detail__statement math-content">
-                ${problem.status === 'title-only'
-                  ? '<p style="color:var(--text-muted);font-style:italic">This problem is sourced from real interviews. Full problem statement and solution coming soon.</p>'
-                  : MarkdownRender.render(problem.statement)}
+                ${locked
+                  ? lockedOverlayHtml
+                  : (problem.status === 'title-only'
+                      ? '<p style="color:var(--text-muted);font-style:italic">This problem is sourced from real interviews. Full problem statement and solution coming soon.</p>'
+                      : MarkdownRender.render(problem.statement))}
               </div>
             </div>
 

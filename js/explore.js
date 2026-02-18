@@ -73,7 +73,7 @@ const Explore = (() => {
     'belvedere-trading':'#d946ef',
     'worldquant':       '#7c3aed',
     'old-mission-capital':'#0d9488',
-    'transmarket-group':'#ca8a04',
+    'transmarket':      '#ca8a04',
     'balyasny':         '#334155',
     'schonfeld':        '#475569',
     'xtx-markets':      '#7c3aed',
@@ -103,25 +103,49 @@ const Explore = (() => {
     'maven-securities': '#059669',
     'gsa-capital':      '#2563eb',
     'tradebot-systems': '#dc2626',
+    'goldman-sachs':    '#003A70',
+    'hft':              '#94a3b8',
   };
 
   async function init() {
-    const [problems, companies, featuredData] = await Promise.all([
-      DataLoader.problems(),
-      DataLoader.companies(),
-      DataLoader.featuredLists(),
-    ]);
+    const container = document.getElementById('explore-content');
+    if (!container) return;
 
-    if (!problems || !companies || !featuredData) {
-      document.getElementById('explore-content').innerHTML = `
-        <div class="container"><div class="empty-state">
-          <div class="empty-state__icon">\u26A0\uFE0F</div>
-          <div class="empty-state__title">Failed to load data</div>
-        </div></div>`;
-      return;
-    }
-
-    render(problems, companies, featuredData);
+    // Show Coming Soon page
+    container.innerHTML = `
+      <div class="container" style="max-width:800px">
+        <div class="coming-soon-hero">
+          <div class="coming-soon-hero__icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            </svg>
+          </div>
+          <h1 class="coming-soon-hero__title">Explore</h1>
+          <p class="coming-soon-hero__subtitle">Curated problem lists, topic deep-dives, and company-specific prep — all in one place.</p>
+          <div class="coming-soon-hero__badge">\u{1F6A7} Coming Soon</div>
+          <p class="coming-soon-hero__desc">
+            We\u2019re hand-picking the best problem collections and building curated tracks for each major quant firm.
+            This section will include featured lists, topic explorations, and company-specific problem sets.
+          </p>
+          <div class="coming-soon-hero__preview">
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F3C6}</div>
+              <div class="coming-soon-card__text">Curated Lists</div>
+            </div>
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F4CA}</div>
+              <div class="coming-soon-card__text">Topic Deep-Dives</div>
+            </div>
+            <div class="coming-soon-card coming-soon-card--disabled">
+              <div class="coming-soon-card__icon">\u{1F3E2}</div>
+              <div class="coming-soon-card__text">Company Prep</div>
+            </div>
+          </div>
+          <a href="problems.html" class="btn btn--primary" style="margin-top:var(--space-6)">Browse All Problems \u2192</a>
+        </div>
+      </div>
+    `;
   }
 
   function render(problems, companies, featuredData) {

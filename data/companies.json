@@ -1370,5 +1370,24 @@
             "Quant Researcher",
             "Quant Analyst"
         ]
+    },
+    {
+        "id": "goldman-sachs",
+        "name": "Goldman Sachs",
+        "type": "Investment Bank",
+        "roles": [
+            "Quant Researcher",
+            "Quant Strategist",
+            "Quant Developer"
+        ]
+    },
+    {
+        "id": "hft",
+        "name": "HFT (Generic)",
+        "type": "High-Frequency Trading",
+        "roles": [
+            "Quant Researcher",
+            "Quant Developer"
+        ]
     }
 ]

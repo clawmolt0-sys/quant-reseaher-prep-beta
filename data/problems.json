@@ -5972,7 +5972,7 @@
                   ],
         "company":  [
                         "jump-trading",
-                        "tower",
+                        "tower-research",
                         "hft"
                     ],
         "topics":  [
@@ -5990,7 +5990,7 @@
         "rating":  8,
         "companies":  [
                           "jump-trading",
-                          "tower"
+                          "tower-research"
                       ],
         "tags":  [
                      "market-microstructure"
@@ -36831,12 +36831,12 @@
                   ],
         "company":  [
                         "akuna-capital",
-                        "transmarket-group",
+                        "transmarket",
                         "worldquant"
                     ],
         "companies":  [
                           "akuna-capital",
-                          "transmarket-group",
+                          "transmarket",
                           "worldquant"
                       ],
         "difficulty":  "medium",
@@ -38309,11 +38309,11 @@
                   ],
         "company":  [
                         "squarepoint",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "squarepoint",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -39148,10 +39148,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -39181,11 +39181,11 @@
                   ],
         "company":  [
                         "five-rings",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "five-rings",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -39376,10 +39376,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -40121,10 +40121,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -40430,7 +40430,7 @@
                         "hrt",
                         "jane-street",
                         "sig",
-                        "transmarket-group",
+                        "transmarket",
                         "two-sigma"
                     ],
         "companies":  [
@@ -40440,7 +40440,7 @@
                           "hrt",
                           "jane-street",
                           "sig",
-                          "transmarket-group",
+                          "transmarket",
                           "two-sigma"
                       ],
         "difficulty":  "medium",
@@ -42093,12 +42093,12 @@
         "company":  [
                         "old-mission-capital",
                         "optiver",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "old-mission-capital",
                           "optiver",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -43329,10 +43329,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -43361,10 +43361,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -43528,10 +43528,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -44219,10 +44219,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -44580,11 +44580,11 @@
                   ],
         "company":  [
                         "five-rings",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "five-rings",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -45738,12 +45738,12 @@
                   ],
         "company":  [
                         "akuna-capital",
-                        "transmarket-group",
+                        "transmarket",
                         "worldquant"
                     ],
         "companies":  [
                           "akuna-capital",
-                          "transmarket-group",
+                          "transmarket",
                           "worldquant"
                       ],
         "difficulty":  "medium",
@@ -45869,10 +45869,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -46457,11 +46457,11 @@
                   ],
         "company":  [
                         "jane-street",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "jane-street",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -46622,12 +46622,12 @@
         "company":  [
                         "goldman-sachs",
                         "sig",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "goldman-sachs",
                           "sig",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -46881,10 +46881,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -47233,7 +47233,7 @@
                         "optiver",
                         "sig",
                         "squarepoint",
-                        "transmarket-group",
+                        "transmarket",
                         "two-sigma",
                         "worldquant"
                     ],
@@ -47248,7 +47248,7 @@
                           "optiver",
                           "sig",
                           "squarepoint",
-                          "transmarket-group",
+                          "transmarket",
                           "two-sigma",
                           "worldquant"
                       ],
@@ -47503,10 +47503,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -47759,10 +47759,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -48898,10 +48898,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -49521,11 +49521,11 @@
                   ],
         "company":  [
                         "five-rings",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "five-rings",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -49887,7 +49887,7 @@
                         "jane-street",
                         "optiver",
                         "sig",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "akuna-capital",
@@ -49899,7 +49899,7 @@
                           "jane-street",
                           "optiver",
                           "sig",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -50613,10 +50613,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -51203,11 +51203,11 @@
                   ],
         "company":  [
                         "goldman-sachs",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "goldman-sachs",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -51654,11 +51654,11 @@
                   ],
         "company":  [
                         "citadel",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "citadel",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -53160,11 +53160,11 @@
                   ],
         "company":  [
                         "imc-trading",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "imc-trading",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -53421,13 +53421,13 @@
                         "jane-street",
                         "old-mission-capital",
                         "sig",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "jane-street",
                           "old-mission-capital",
                           "sig",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -53715,10 +53715,10 @@
 
                   ],
         "company":  [
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -53849,7 +53849,7 @@
                         "hrt",
                         "jane-street",
                         "sig",
-                        "transmarket-group",
+                        "transmarket",
                         "two-sigma",
                         "worldquant"
                     ],
@@ -53860,7 +53860,7 @@
                           "hrt",
                           "jane-street",
                           "sig",
-                          "transmarket-group",
+                          "transmarket",
                           "two-sigma",
                           "worldquant"
                       ],
@@ -54254,12 +54254,12 @@
         "company":  [
                         "goldman-sachs",
                         "jane-street",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "goldman-sachs",
                           "jane-street",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -55045,12 +55045,12 @@
         "company":  [
                         "jane-street",
                         "sig",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "jane-street",
                           "sig",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
@@ -55150,7 +55150,7 @@
                         "hrt",
                         "optiver",
                         "sig",
-                        "transmarket-group"
+                        "transmarket"
                     ],
         "companies":  [
                           "akuna-capital",
@@ -55160,7 +55160,7 @@
                           "hrt",
                           "optiver",
                           "sig",
-                          "transmarket-group"
+                          "transmarket"
                       ],
         "difficulty":  "medium",
         "topics":  [
