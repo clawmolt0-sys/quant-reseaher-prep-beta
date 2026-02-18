@@ -11,7 +11,7 @@
 const DataLoader = (() => {
   const memCache = {};
   const STORAGE_PREFIX = 'qr-data-';
-  const CACHE_VERSION = 'v5'; // bump to invalidate cache
+  const CACHE_VERSION = 'v6'; // bump to invalidate cache
 
   // ---- SessionStorage helpers ----
   function storageGet(key) {
@@ -113,6 +113,39 @@ const DataLoader = (() => {
     return full.find(p => p.id === id) || null;
   }
 
+  // ---- Category chunk loading (performance: ~300KB vs 2.7MB) ----
+  // Load a single category chunk file
+  function problemChunk(category) {
+    if (!category) return Promise.resolve(null);
+    return load('problems/' + category + '.json', { skipStorage: true });
+  }
+
+  // Load a single problem by its category (much faster than full load)
+  async function problemByCategory(id, category) {
+    id = typeof id === 'number' ? id : parseInt(id, 10);
+    if (!category) return problemById(id);
+
+    // Check if full data is already loaded (free lookup)
+    if (memCache['problems.json']) {
+      return memCache['problems.json'].find(p => p.id === id) || null;
+    }
+
+    // Load category chunk instead of full 2.7MB
+    try {
+      const chunk = await problemChunk(category);
+      if (chunk) {
+        const found = chunk.find(p => p.id === id);
+        if (found) return found;
+      }
+    } catch (e) { /* fall through */ }
+
+    // Fallback to full data
+    return problemById(id);
+  }
+
+  // ---- Similarity graph loader ----
+  function similarityGraph() { return load('similarity-graph.json'); }
+
   // Backwards compat — returns full problems (but prefer problemsIndex for list)
   function problems() { return problemsFull(); }
 
@@ -121,7 +154,10 @@ const DataLoader = (() => {
     problemsIndex,
     problemsFull,
     problemById,
+    problemByCategory,
+    problemChunk,
     preloadFullProblems,
+    similarityGraph,
     lectures:      () => load('lectures.json'),
     labs:          () => load('labs.json'),
     topics:        () => load('topics.json'),

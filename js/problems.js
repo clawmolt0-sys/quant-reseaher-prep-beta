@@ -21,6 +21,7 @@ const Problems = (() => {
   let randomQueueIndex = -1;
   let randomHistory = []; // Track visited random problems for back navigation
   let randomHistoryIndex = -1;
+  let similarityGraph = null; // Pre-computed semantic similarity graph
 
   // ---- Helpers ----
   function ensureArray(val) {
@@ -485,6 +486,11 @@ const Problems = (() => {
         DataLoader.preloadFullProblems();
       }
 
+      // Load similarity graph in background (for detail view similar problems)
+      DataLoader.similarityGraph().then(g => {
+        if (g && g.edges) { similarityGraph = g; console.log('[Problems] Similarity graph loaded:', Object.keys(g.edges).length, 'nodes'); }
+      }).catch(() => {});
+
       // Load tags + companies in background, then re-render sidebar
       if (!tagsData || !tagsData.categories || tagsData.categories.length === 0) {
         Promise.all([DataLoader.tags(), DataLoader.companies()]).then(([rawTags, rawCompanies]) => {
@@ -576,28 +582,49 @@ const Problems = (() => {
     // Show skeleton with index data (title, meta, category — instant)
     renderDetailSkeleton(indexProblem);
 
-    // Load full problem data
-    const fullData = await DataLoader.problemsFull();
-    if (fullData) {
-      // Merge full data into allProblems
-      const fullMap = new Map();
-      for (const p of fullData) {
-        const nid = typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10);
-        fullMap.set(nid, p);
-      }
-      for (const p of allProblems) {
-        const full = fullMap.get(p.id);
-        if (full) {
-          p.statement = full.statement || full.question || '';
-          p.solution = full.solution || '';
-          p.intuition = full.intuition || null;
-          p.hints = ensureArray(full.hints);
+    // Try chunk loading first (faster: ~300KB vs 2.7MB)
+    let rendered = false;
+    if (indexProblem.category) {
+      try {
+        const prob = await DataLoader.problemByCategory(id, indexProblem.category);
+        if (prob && prob.statement && prob.statement.length > 20) {
+          // Merge this problem into allProblems for immediate rendering
+          const target = allProblems.find(p => p.id === id);
+          if (target) {
+            target.statement = prob.statement || prob.question || '';
+            target.solution = prob.solution || '';
+            target.intuition = prob.intuition || null;
+            target.hints = ensureArray(prob.hints);
+          }
+          renderDetail(id);
+          rendered = true;
+          // Preload remaining data in background for similar problems
+          DataLoader.preloadFullProblems();
         }
-      }
+      } catch (e) { /* fall through to full load */ }
     }
 
-    // Now render with full data
-    renderDetail(id);
+    if (!rendered) {
+      // Fallback: Load full problem data (2.7MB)
+      const fullData = await DataLoader.problemsFull();
+      if (fullData) {
+        const fullMap = new Map();
+        for (const p of fullData) {
+          const nid = typeof p.id === 'number' ? p.id : parseInt(String(p.id).replace(/\D/g, ''), 10);
+          fullMap.set(nid, p);
+        }
+        for (const p of allProblems) {
+          const full = fullMap.get(p.id);
+          if (full) {
+            p.statement = full.statement || full.question || '';
+            p.solution = full.solution || '';
+            p.intuition = full.intuition || null;
+            p.hints = ensureArray(full.hints);
+          }
+        }
+      }
+      renderDetail(id);
+    }
   }
 
   // ---- Skeleton for detail view (shows instantly from index) ----
@@ -700,8 +727,10 @@ const Problems = (() => {
       const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeFilter || searchQ;
 
       // Base set: always hide duplicates, optionally hide stubs
+      // Free users always have stubs hidden (no toggle access)
       let base = allProblems.filter(p => p.status !== 'duplicate');
-      if (hideStubs) base = base.filter(p => p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
+      const isPro = typeof Auth !== 'undefined' && Auth.getTier && Auth.getTier() === 'pro';
+      if (hideStubs || !isPro) base = base.filter(p => p.status !== 'incomplete' && p.status !== 'title-only' && p.status !== 'duplicate');
 
       // Favorites filter
       if (activeFilter === 'favorites' && typeof Auth !== 'undefined' && Auth.isLoggedIn()) {
@@ -844,10 +873,10 @@ const Problems = (() => {
             </div>
             <div class="problems-header__meta">
               <span class="problems-header__subtitle">${filtered.length} of ${base.length} problems</span>
-              <label class="stub-toggle">
+              ${isPro ? `<label class="stub-toggle">
                 <input type="checkbox" id="hide-stubs-toggle" onchange="Problems.toggleStubs()" ${hideStubs ? 'checked' : ''}>
                 <span>Hide incomplete</span>
-              </label>
+              </label>` : ''}
             </div>
           </div>
         `;
@@ -1154,14 +1183,32 @@ const Problems = (() => {
   // Keep loadMore for backwards compat but redirect to goToPage
   function loadMore() { goToPage(currentPage + 1); }
 
-  // ---- Similar Problems Engine (optimized) ----
+  // ---- Similar Problems Engine ----
+  // Uses pre-computed semantic graph when available, falls back to tag-based scoring
   function findSimilar(problem, count) {
     count = count || 5;
+
+    // ---- Try pre-computed similarity graph first ----
+    if (similarityGraph && similarityGraph.edges) {
+      const edges = similarityGraph.edges[String(problem.id)];
+      if (edges && edges.length > 0) {
+        const results = [];
+        for (const e of edges) {
+          if (results.length >= count) break;
+          const p = getById(e.id);
+          if (p && p.status !== 'duplicate') {
+            results.push({ problem: p, score: e.w, shared: [], reason: e.r || '' });
+          }
+        }
+        if (results.length > 0) return results;
+      }
+    }
+
+    // ---- Fallback: tag-based scoring ----
     const myTags = new Set(problem.tags);
     const myCat = problem.category;
     const myCompanies = new Set(problem.companies);
 
-    // First pass: only check same-category problems for speed
     const candidates = [];
     for (const p of allProblems) {
       if (p.id === problem.id || p.status === 'duplicate') continue;
@@ -1178,8 +1225,7 @@ const Problems = (() => {
         if (myCompanies.has(c)) { score += 0.2; break; }
       }
       if (score > 0) {
-        candidates.push({ problem: p, score, shared });
-        // Keep a running top-N to avoid sorting the full list
+        candidates.push({ problem: p, score, shared, reason: '' });
         if (candidates.length > count * 4) {
           candidates.sort((a, b) => b.score - a.score);
           candidates.length = count * 2;
@@ -1326,7 +1372,7 @@ const Problems = (() => {
                   <span class="badge badge--${s.problem.difficulty} badge--sm">${s.problem.difficulty}</span>
                 </div>
                 <div class="similar-problem-card__title">${App.escapeHtml(s.problem.title.length > 60 ? s.problem.title.substring(0, 57) + '...' : s.problem.title)}</div>
-                <div class="similar-problem-card__tags">${s.shared.slice(0, 3).map(t => formatTag(t)).join(', ')}</div>
+                <div class="similar-problem-card__tags">${s.reason || s.shared.slice(0, 3).map(t => formatTag(t)).join(', ')}</div>
               </a>
             `).join('')}
           </div>

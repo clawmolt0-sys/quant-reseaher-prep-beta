@@ -1621,6 +1621,56 @@
   .company-bar__pills {
     scrollbar-width: thin;
   }
+
+  /* Problem table → card layout on small screens */
+  .problem-table thead {
+    display: none;
+  }
+  .problem-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--space-3) var(--space-2);
+    border-bottom: 1px solid var(--border-color);
+    gap: var(--space-1) var(--space-2);
+    align-items: center;
+  }
+  .problem-table td {
+    padding: 0;
+    border: none;
+    background: transparent !important;
+  }
+  .td-status { order: -1; flex-shrink: 0; }
+  .td-num { order: 0; font-size: var(--text-xs); opacity: 0.6; flex-shrink: 0; }
+  .td-title-link { order: 1; width: 100%; font-size: var(--text-sm); }
+  .td-tags { display: flex !important; order: 2; width: 100%; overflow: hidden; }
+
+  /* KaTeX overflow on mobile */
+  .math-content .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Action bar → icons only on very small screens */
+@media (max-width: 480px) {
+  .problem-action-bar {
+    gap: var(--space-1);
+  }
+  .pab__btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+  .pab__btn span {
+    display: none;
+  }
+  .pab__sep {
+    display: none;
+  }
+  .pab__icon-btn {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* --- Load More --- */
