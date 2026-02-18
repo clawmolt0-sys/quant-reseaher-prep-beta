@@ -679,6 +679,11 @@ const Auth = (() => {
     // Always cache to localStorage so profile page can read it even if Firestore is down
     saveUserDocToLocal(userDoc);
 
+    // Notify other components (profile page, etc.) that user data changed
+    window.dispatchEvent(new CustomEvent('user-data-changed', {
+      detail: { id, status, previousStatus }
+    }));
+
     // ---- Persist to Firestore (if available) ----
     const db = FirebaseConfig.getDb();
     if (!db || !firestoreAvailable) {
@@ -958,6 +963,26 @@ const Auth = (() => {
   function renderUserUI() {
     const container = document.getElementById('auth-container');
     if (!container || !currentUser) return;
+
+    // If userDoc has no stats data, try to hydrate from localStorage cache
+    const docStats = userDoc?.stats;
+    const docTotalSolved = docStats ? ((docStats.easy?.solved || 0) + (docStats.medium?.solved || 0) + (docStats.hard?.solved || 0)) : 0;
+    if (userDoc && docTotalSolved === 0 && (userDoc.xp || 0) === 0) {
+      const cached = loadUserDocFromLocal();
+      if (cached) {
+        const cachedTotal = ((cached.stats?.easy?.solved || 0) + (cached.stats?.medium?.solved || 0) + (cached.stats?.hard?.solved || 0));
+        if (cachedTotal > 0 || (cached.xp || 0) > 0) {
+          // Merge cached stats into the live userDoc
+          userDoc.stats = cached.stats || userDoc.stats;
+          userDoc.xp = cached.xp || userDoc.xp || 0;
+          userDoc.level = cached.level || userDoc.level || 1;
+          userDoc.streak = cached.streak || userDoc.streak || { current: 0, longest: 0, lastActivityDate: null };
+          userDoc.progress = { ...(cached.progress || {}), ...(userDoc.progress || {}) };
+          userDoc.favorites = cached.favorites && cached.favorites.length > 0 ? cached.favorites : (userDoc.favorites || []);
+          console.log('[Auth] renderUserUI: hydrated userDoc from localStorage cache (solved=' + cachedTotal + ', xp=' + userDoc.xp + ')');
+        }
+      }
+    }
 
     const photoURL = currentUser.photoURL || '';
     const name = currentUser.displayName || currentUser.email || 'User';

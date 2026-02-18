@@ -66,6 +66,11 @@ const Profile = (() => {
       }
       renderProfile();
     });
+
+    // Re-render when user marks a problem as solved/attempted (fires from saveStatus)
+    window.addEventListener('user-data-changed', () => {
+      if (Auth.isLoggedIn()) renderProfile();
+    });
   }
 
   function renderProfile() {
