@@ -140,7 +140,29 @@
       log('Testing Firestore for ' + auth.currentUser.email + '...');
       try {
         var snap = await db.collection('users').doc(auth.currentUser.uid).get();
-        log('READ: ' + (snap.exists ? 'doc exists, xp=' + ((snap.data()||{}).xp||0) : 'no doc yet'), 'ok');
+        if (snap.exists) {
+          var data = snap.data();
+          log('READ: doc exists', 'ok');
+          log('  xp=' + (data.xp || 0) + ', level=' + (data.level || 1) + ', tier=' + (data.tier || 'free'), 'ok');
+          var stats = data.stats || {};
+          log('  stats.easy=' + JSON.stringify(stats.easy || {}) + ', stats.medium=' + JSON.stringify(stats.medium || {}) + ', stats.hard=' + JSON.stringify(stats.hard || {}), 'ok');
+          var progress = data.progress || {};
+          var progressKeys = Object.keys(progress);
+          log('  progress: ' + progressKeys.length + ' entries', 'ok');
+          if (progressKeys.length > 0) {
+            var solved = progressKeys.filter(function(k) { return progress[k] === 'solved'; }).length;
+            var attempted = progressKeys.filter(function(k) { return progress[k] === 'attempted'; }).length;
+            log('  solved=' + solved + ', attempted=' + attempted, 'ok');
+            log('  first 10: ' + progressKeys.slice(0, 10).map(function(k) { return k + '=' + progress[k]; }).join(', '), 'info');
+          }
+          var favs = data.favorites || [];
+          log('  favorites: ' + favs.length + ' items' + (favs.length > 0 ? ' [' + favs.slice(0, 10).join(',') + ']' : ''), 'ok');
+          var cols = data.collections || [];
+          log('  collections: ' + cols.length + ' lists', 'ok');
+          log('  streak: current=' + ((data.streak||{}).current||0) + ', longest=' + ((data.streak||{}).longest||0), 'ok');
+        } else {
+          log('READ: no doc yet — will be created on first sign-in via main site', 'warn');
+        }
         await db.collection('users').doc(auth.currentUser.uid).set({ _test: Date.now() }, { merge: true });
         await db.collection('users').doc(auth.currentUser.uid).update({ _test: firebase.firestore.FieldValue.delete() });
         log('WRITE: OK', 'ok');
