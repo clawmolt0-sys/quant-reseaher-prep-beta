@@ -40,11 +40,18 @@ const FirebaseConfig = (() => {
         return;
       }
 
-      firebase.initializeApp(config);
+      // One-time cleanup: delete corrupted IndexedDB left by old enablePersistence().
+      // After this runs once, the flag prevents it from running again.
+      if (!localStorage.getItem('qr-idb-cleaned')) {
+        try {
+          indexedDB.deleteDatabase('firebaseLocalStorageDb');
+          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep/main');
+          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep');
+        } catch (e) { /* ignore */ }
+        localStorage.setItem('qr-idb-cleaned', '1');
+      }
 
-      // Note: enablePersistence() was removed because it created IndexedDB
-      // caches that caused "client is offline" errors. Firestore works fine
-      // without it — reads just go to the server directly.
+      firebase.initializeApp(config);
 
       initialized = true;
       console.log('[FirebaseConfig] Initialized successfully');
