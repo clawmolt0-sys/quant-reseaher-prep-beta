@@ -12,6 +12,7 @@ const Auth = (() => {
   let pendingAuthUpdate = null; // Queued auth state if DOM not ready
   let authSettled = false;       // True once onAuthStateChanged has fully processed
   let authSettledCallbacks = []; // Callbacks waiting for auth to settle
+  let firestoreAvailable = true; // Set to false if Firestore rules deny access
 
   // ---- Admin emails (always get pro tier) ----
   const ADMIN_EMAILS = [
@@ -53,24 +54,14 @@ const Auth = (() => {
       if (!db || !currentUser) return;
 
       const testRef = db.collection('users').doc(currentUser.uid);
-      // Try a tiny write to check if rules allow it
       await testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true });
+      firestoreAvailable = true;
       console.log('[Auth] Firestore write test: OK');
     } catch (err) {
       console.error('[Auth] Firestore write test FAILED:', err.code, err.message);
       if (err.code === 'permission-denied') {
-        console.error('=== FIRESTORE RULES LIKELY EXPIRED ===');
-        console.error('Go to Firebase Console > Firestore > Rules and update them.');
-        console.error('Set: allow read, write: if request.auth != null;');
-        // Show a warning toast
-        setTimeout(() => {
-          const toast = document.createElement('div');
-          toast.className = 'qr-toast qr-toast--show';
-          toast.style.cssText = 'background:#dc2626;color:white;border:none;position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;z-index:99999;font-size:14px;box-shadow:0 4px 12px rgba(0,0,0,0.3)';
-          toast.innerHTML = '\u26A0\uFE0F Database permissions expired. <a href="https://console.firebase.google.com/project/qrprep/firestore/rules" target="_blank" style="color:#fbbf24;text-decoration:underline">Fix Firestore Rules</a>';
-          document.body.appendChild(toast);
-          setTimeout(() => toast.remove(), 15000);
-        }, 1000);
+        firestoreAvailable = false;
+        showFirestoreError();
       }
     }
   }
@@ -362,45 +353,139 @@ const Auth = (() => {
   //  FIRESTORE — User Doc, Progress, Stats
   // ============================================================
 
+  // ---- LocalStorage fallback for progress when Firestore is unavailable ----
+  function saveProgressToLocal(progress) {
+    try {
+      localStorage.setItem('qr-prep-all-progress', JSON.stringify(progress));
+    } catch (e) { /* ignore */ }
+  }
+
+  function loadProgressFromLocal() {
+    try {
+      const raw = localStorage.getItem('qr-prep-all-progress');
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) { return {}; }
+  }
+
+  function saveUserDocToLocal(doc) {
+    try {
+      const toSave = {
+        progress: doc.progress || {},
+        stats: doc.stats || {},
+        xp: doc.xp || 0,
+        level: doc.level || 1,
+        streak: doc.streak || { current: 0, longest: 0, lastActivityDate: null },
+        favorites: doc.favorites || [],
+        collections: doc.collections || [],
+        achievements: doc.achievements || [],
+        tier: doc.tier || 'free',
+      };
+      localStorage.setItem('qr-prep-userDoc-cache', JSON.stringify(toSave));
+    } catch (e) { /* ignore */ }
+  }
+
+  function loadUserDocFromLocal() {
+    try {
+      const raw = localStorage.getItem('qr-prep-userDoc-cache');
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) { return null; }
+  }
+
+  function showFirestoreError() {
+    // Show a persistent banner at the top of the page
+    if (document.querySelector('.firestore-error-banner')) return; // Already showing
+    const banner = document.createElement('div');
+    banner.className = 'firestore-error-banner';
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:99999;background:#dc2626;color:white;padding:12px 20px;font-size:14px;font-family:Inter,sans-serif;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,0.3)';
+    banner.innerHTML = '⚠️ <strong>Database access denied</strong> — Firestore security rules may have expired. ' +
+      '<a href="https://console.firebase.google.com/project/qrprep/firestore/rules" target="_blank" ' +
+      'style="color:#fbbf24;text-decoration:underline;font-weight:600">Fix Rules</a> ' +
+      '(set: <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:3px;font-size:12px">allow read, write: if request.auth != null;</code>) ' +
+      '— Progress is being saved locally until fixed. ' +
+      '<button onclick="this.parentElement.remove()" style="background:none;border:none;color:white;cursor:pointer;font-size:18px;margin-left:8px;vertical-align:middle">&times;</button>';
+    document.body.prepend(banner);
+  }
+
   async function loadUserDoc(user) {
     const db = FirebaseConfig.getDb();
-    if (!db) return;
+    if (!db) {
+      // No Firestore — load from localStorage
+      userDoc = loadUserDocFromLocal() || createDefaultDoc(user);
+      return;
+    }
 
     try {
       const docRef = db.collection('users').doc(user.uid);
       const doc = await docRef.get();
 
+      firestoreAvailable = true; // Read succeeded
+
       if (doc.exists) {
         userDoc = doc.data();
         // Auto-upgrade admins to pro
         if (isAdmin(user.email) && userDoc.tier !== 'pro') {
-          await docRef.update({ tier: 'pro' });
-          userDoc.tier = 'pro';
+          try {
+            await docRef.update({ tier: 'pro' });
+            userDoc.tier = 'pro';
+          } catch (e) {
+            console.warn('[Auth] Could not upgrade admin tier:', e.code);
+          }
         }
+        // Cache to localStorage for offline/fallback use
+        saveUserDocToLocal(userDoc);
       } else {
         // Create new user doc with extended fields
-        const tier = isAdmin(user.email) ? 'pro' : 'free';
-        userDoc = {
-          email: user.email,
-          displayName: user.displayName,
-          photoURL: user.photoURL,
-          tier: tier,
-          joinDate: firebase.firestore.FieldValue.serverTimestamp(),
-          progress: {},
-          stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
-          xp: 0,
-          level: 1,
-          streak: { current: 0, longest: 0, lastActivityDate: null },
-          favorites: [],
-          collections: [],
-          achievements: [],
-        };
-        await docRef.set(userDoc);
+        const newDoc = createDefaultDoc(user);
+        try {
+          await docRef.set(newDoc);
+          userDoc = newDoc;
+          saveUserDocToLocal(userDoc);
+        } catch (createErr) {
+          console.error('[Auth] Could not create user doc:', createErr.code);
+          if (createErr.code === 'permission-denied') {
+            firestoreAvailable = false;
+            showFirestoreError();
+          }
+          userDoc = newDoc;
+        }
       }
     } catch (err) {
-      console.error('[Auth] Error loading user doc:', err);
-      userDoc = { tier: 'free', progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } }, xp: 0, level: 1, streak: { current: 0, longest: 0, lastActivityDate: null }, favorites: [], collections: [], achievements: [] };
+      console.error('[Auth] Error loading user doc:', err.code, err.message);
+
+      if (err.code === 'permission-denied') {
+        firestoreAvailable = false;
+        showFirestoreError();
+      }
+
+      // Try localStorage cache first, then create default
+      const cached = loadUserDocFromLocal();
+      if (cached && Object.keys(cached.progress || {}).length > 0) {
+        console.log('[Auth] Using cached userDoc from localStorage (' + Object.keys(cached.progress).length + ' progress entries)');
+        userDoc = cached;
+        // Ensure admin gets pro tier locally
+        if (isAdmin(user.email)) userDoc.tier = 'pro';
+      } else {
+        userDoc = createDefaultDoc(user);
+      }
     }
+  }
+
+  function createDefaultDoc(user) {
+    const tier = isAdmin(user?.email) ? 'pro' : 'free';
+    return {
+      email: user?.email,
+      displayName: user?.displayName,
+      photoURL: user?.photoURL,
+      tier: tier,
+      progress: {},
+      stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
+      xp: 0,
+      level: 1,
+      streak: { current: 0, longest: 0, lastActivityDate: null },
+      favorites: [],
+      collections: [],
+      achievements: [],
+    };
   }
 
   // Sync stats for existing users who don't have the new fields,
@@ -448,14 +533,23 @@ const Auth = (() => {
       achievements: userDoc.achievements || [],
     };
 
+    // Always update local state
+    Object.assign(userDoc, update);
+    saveUserDocToLocal(userDoc);
+
+    // Persist to Firestore if available
     try {
       const db = FirebaseConfig.getDb();
-      if (db) {
+      if (db && firestoreAvailable) {
         await db.collection('users').doc(currentUser.uid).update(update);
-        Object.assign(userDoc, update);
+        console.log('[Auth] Stats synced to Firestore');
       }
     } catch (err) {
-      console.error('[Auth] Stats sync error:', err);
+      console.error('[Auth] Stats sync error:', err.code);
+      if (err.code === 'permission-denied') {
+        firestoreAvailable = false;
+        showFirestoreError();
+      }
     }
   }
 
@@ -502,7 +596,7 @@ const Auth = (() => {
   // ============================================================
 
   async function saveStatus(id, status) {
-    console.log('[Auth] saveStatus:', { id, status, hasUser: !!currentUser, hasDoc: !!userDoc, authSettled });
+    console.log('[Auth] saveStatus:', { id, status, hasUser: !!currentUser, hasDoc: !!userDoc, authSettled, firestoreAvailable });
 
     // Always save to localStorage as fallback
     try {
@@ -515,12 +609,6 @@ const Auth = (() => {
 
     if (!currentUser) {
       console.warn('[Auth] saveStatus: no currentUser, skipping Firestore');
-      return;
-    }
-
-    const db = FirebaseConfig.getDb();
-    if (!db) {
-      console.warn('[Auth] saveStatus: no db instance');
       return;
     }
 
@@ -540,44 +628,93 @@ const Auth = (() => {
     // If still no userDoc, create a minimal one
     if (!userDoc) {
       console.warn('[Auth] Creating fallback userDoc');
-      userDoc = {
-        progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
-        xp: 0, level: 1, streak: { current: 0, longest: 0, lastActivityDate: null },
-        favorites: [], collections: [], achievements: [],
-      };
+      userDoc = createDefaultDoc(currentUser);
     }
 
     const previousStatus = userDoc.progress ? (userDoc.progress[id] || '') : '';
 
+    // ---- Update local state IMMEDIATELY ----
+    if (!userDoc.progress) userDoc.progress = {};
+    if (status) {
+      userDoc.progress[id] = status;
+    } else {
+      delete userDoc.progress[id];
+    }
+
+    // XP + stats tracking (local state update — always runs, regardless of Firestore)
+    if (status === 'solved' && previousStatus !== 'solved') {
+      const diff = getProblemDifficulty(id);
+      const xpGain = XP_TABLE[diff] || 0;
+
+      if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+      if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
+      userDoc.stats[diff].solved++;
+
+      if (previousStatus === 'attempted' && userDoc.stats[diff].attempted > 0) {
+        userDoc.stats[diff].attempted--;
+      }
+
+      userDoc.xp = (userDoc.xp || 0) + xpGain;
+      userDoc.level = calculateLevel(userDoc.xp).level;
+      updateStreak();
+
+      // Re-render user dropdown to show updated XP/level (without full page re-render)
+      renderUserUI();
+
+      // Check achievements (non-blocking)
+      if (typeof Achievements !== 'undefined') {
+        try {
+          const newBadges = Achievements.check(userDoc);
+          for (const badge of newBadges) Achievements.award(badge);
+        } catch (e) { console.warn('[Auth] Achievement check error:', e); }
+      }
+    } else if (status === 'attempted' && !previousStatus) {
+      const diff = getProblemDifficulty(id);
+      if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+      if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
+      userDoc.stats[diff].attempted++;
+      renderUserUI();
+    }
+
+    // Always cache to localStorage so profile page can read it even if Firestore is down
+    saveUserDocToLocal(userDoc);
+
+    // ---- Persist to Firestore (if available) ----
+    const db = FirebaseConfig.getDb();
+    if (!db || !firestoreAvailable) {
+      console.warn('[Auth] saveStatus: Firestore unavailable, saved to localStorage only');
+      return;
+    }
+
     try {
       const docRef = db.collection('users').doc(currentUser.uid);
 
-      // Update local state IMMEDIATELY so UI reads the new status instantly
-      if (!userDoc.progress) userDoc.progress = {};
-      if (status) {
-        userDoc.progress[id] = status;
-      } else {
-        delete userDoc.progress[id];
-      }
-
-      // Persist to Firestore: try update() first (reliable for nested paths),
-      // fall back to set+merge if doc doesn't exist
+      // Write progress
       try {
         if (status) {
           await docRef.update({ ['progress.' + id]: status });
         } else {
           await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
         }
-        console.log('[Auth] Progress written (update)');
+        console.log('[Auth] Progress written to Firestore');
       } catch (writeErr) {
-        if (writeErr.code === 'not-found') {
-          console.log('[Auth] Doc not found, creating with set...');
+        if (writeErr.code === 'permission-denied') {
+          firestoreAvailable = false;
+          showFirestoreError();
+          console.error('[Auth] PERMISSION DENIED — Firestore rules likely expired!');
+          return; // Don't try any more Firestore writes
+        } else if (writeErr.code === 'not-found') {
           try {
             const data = { progress: {} };
             if (status) data.progress[id] = status;
             await docRef.set(data, { merge: true });
             console.log('[Auth] Progress written (set+merge)');
           } catch (setErr) {
+            if (setErr.code === 'permission-denied') {
+              firestoreAvailable = false;
+              showFirestoreError();
+              return;
+            }
             console.error('[Auth] Progress set+merge error:', setErr.code, setErr.message);
           }
         } else {
@@ -585,73 +722,45 @@ const Auth = (() => {
         }
       }
 
-      // XP + stats tracking
+      // Write XP/stats/streak
       if (status === 'solved' && previousStatus !== 'solved') {
-        const diff = getProblemDifficulty(id);
-        const xpGain = XP_TABLE[diff] || 0;
-
-        // Update stats locally first (instant UI update)
-        if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-        if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
-        userDoc.stats[diff].solved++;
-
-        // If previously attempted, decrement attempted count
-        if (previousStatus === 'attempted' && userDoc.stats[diff].attempted > 0) {
-          userDoc.stats[diff].attempted--;
-        }
-
-        // Update XP + level locally
-        userDoc.xp = (userDoc.xp || 0) + xpGain;
-        userDoc.level = calculateLevel(userDoc.xp).level;
-
-        // Update streak locally
-        updateStreak();
-
-        // Re-render user dropdown to show updated XP/level (without full page re-render)
-        renderUserUI();
-
-        // Persist XP/stats to Firestore
         const xpData = { stats: userDoc.stats, xp: userDoc.xp, level: userDoc.level, streak: userDoc.streak };
         try {
           await docRef.update(xpData);
-          console.log('[Auth] XP/stats written');
+          console.log('[Auth] XP/stats written to Firestore');
         } catch (xpErr) {
-          console.warn('[Auth] XP update() failed:', xpErr.code, '- trying set+merge');
+          if (xpErr.code === 'permission-denied') {
+            firestoreAvailable = false;
+            showFirestoreError();
+            return;
+          }
           try {
             await docRef.set(xpData, { merge: true });
-            console.log('[Auth] XP/stats written via set+merge');
           } catch (xpSetErr) {
-            console.error('[Auth] XP persist failed completely:', xpSetErr);
+            if (xpSetErr.code === 'permission-denied') {
+              firestoreAvailable = false;
+              showFirestoreError();
+            } else {
+              console.error('[Auth] XP persist failed:', xpSetErr);
+            }
           }
         }
-
-        // Check achievements (non-blocking)
-        if (typeof Achievements !== 'undefined') {
-          try {
-            const newBadges = Achievements.check(userDoc);
-            for (const badge of newBadges) {
-              Achievements.award(badge);
-            }
-          } catch (e) { console.warn('[Auth] Achievement check error:', e); }
-        }
       } else if (status === 'attempted' && !previousStatus) {
-        const diff = getProblemDifficulty(id);
-        if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-        if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
-        userDoc.stats[diff].attempted++;
         try {
           await docRef.update({ stats: userDoc.stats });
-          console.log('[Auth] Attempted stats written');
         } catch (attErr) {
-          try {
-            await docRef.set({ stats: userDoc.stats }, { merge: true });
-          } catch (attSetErr) {
-            console.error('[Auth] Stats persist failed:', attSetErr);
+          if (attErr.code === 'permission-denied') {
+            firestoreAvailable = false;
+            showFirestoreError();
           }
         }
       }
     } catch (err) {
       console.error('[Auth] Error saving status:', err);
+      if (err.code === 'permission-denied') {
+        firestoreAvailable = false;
+        showFirestoreError();
+      }
     }
   }
 
@@ -740,8 +849,6 @@ const Auth = (() => {
   async function toggleFavorite(problemId) {
     console.log('[Auth] toggleFavorite:', problemId, 'hasUser:', !!currentUser, 'hasDoc:', !!userDoc);
     if (!currentUser) return false;
-    const db = FirebaseConfig.getDb();
-    if (!db) return false;
 
     // Wait for userDoc if not ready yet (with timeout)
     if (!userDoc) {
@@ -754,47 +861,51 @@ const Auth = (() => {
     }
     if (!userDoc) return false;
 
-    const docRef = db.collection('users').doc(currentUser.uid);
     const id = parseInt(problemId);
 
     try {
       if (!userDoc.favorites) userDoc.favorites = [];
 
+      let result;
       if (userDoc.favorites.includes(id)) {
-        // Update local state first
         userDoc.favorites = userDoc.favorites.filter(f => f !== id);
-        // Persist: try update first, fallback to set+merge
-        try {
-          await docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) });
-          console.log('[Auth] Unfavorited persisted');
-        } catch (unfavErr) {
-          try {
-            await docRef.set({ favorites: firebase.firestore.FieldValue.arrayRemove(id) }, { merge: true });
-          } catch (e) { console.error('[Auth] Unfavorite persist error:', e); }
-        }
-        return false;
+        result = false;
       } else {
-        // Update local state first
         userDoc.favorites.push(id);
-        // Persist
-        try {
-          await docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) });
-          console.log('[Auth] Favorited persisted');
-        } catch (favErr) {
-          try {
-            await docRef.set({ favorites: firebase.firestore.FieldValue.arrayUnion(id) }, { merge: true });
-          } catch (e) { console.error('[Auth] Favorite persist error:', e); }
-        }
+        result = true;
 
-        // Check bookworm achievement
         if (typeof Achievements !== 'undefined') {
           try {
             const newBadges = Achievements.check(userDoc);
             for (const badge of newBadges) Achievements.award(badge);
           } catch (e) { /* ignore */ }
         }
-        return true; // favorited
       }
+
+      // Always save to localStorage
+      saveUserDocToLocal(userDoc);
+
+      // Persist to Firestore if available
+      const db = FirebaseConfig.getDb();
+      if (db && firestoreAvailable && currentUser) {
+        const docRef = db.collection('users').doc(currentUser.uid);
+        try {
+          if (result) {
+            await docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) });
+          } else {
+            await docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) });
+          }
+        } catch (favErr) {
+          if (favErr.code === 'permission-denied') {
+            firestoreAvailable = false;
+            showFirestoreError();
+          } else {
+            console.error('[Auth] Favorite persist error:', favErr.code);
+          }
+        }
+      }
+
+      return result;
     } catch (err) {
       console.error('[Auth] Favorite error:', err);
       return false;
@@ -982,6 +1093,8 @@ const Auth = (() => {
     return XP_TABLE[diff] || 0;
   }
 
+  function isFirestoreAvailable() { return firestoreAvailable; }
+
   return {
     init, showAuthModal, signInWithGoogle, signInWithGitHub, signOut,
     saveStatus, getStatus, getTier,
@@ -990,6 +1103,6 @@ const Auth = (() => {
     toggleFavorite, isFavorited, getFavorites,
     renderLoginButton, renderUserUI,
     toggleDropdown, closeDropdown, showAccount,
-    getProblemDifficultyXP,
+    getProblemDifficultyXP, isFirestoreAvailable,
   };
 })();

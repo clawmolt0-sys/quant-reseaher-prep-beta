@@ -70,13 +70,36 @@ const Profile = (() => {
 
   function renderProfile() {
     const user = Auth.getUser();
-    const userDoc = Auth.getUserDoc();
+    let userDoc = Auth.getUserDoc();
     const problems = profileProblems;
     const container = document.getElementById('profile-content');
 
     if (!user || !problems || !container) return;
 
-    // Use userDoc or a sensible default if Firestore hasn't loaded yet
+    // If userDoc has no progress, try loading from localStorage cache
+    if (!userDoc || (Object.keys(userDoc.progress || {}).length === 0)) {
+      try {
+        const cached = JSON.parse(localStorage.getItem('qr-prep-userDoc-cache') || 'null');
+        if (cached && Object.keys(cached.progress || {}).length > 0) {
+          console.log('[Profile] Using cached userDoc from localStorage (' + Object.keys(cached.progress).length + ' progress entries)');
+          // Merge cached data into userDoc
+          if (!userDoc) {
+            userDoc = cached;
+          } else {
+            userDoc.progress = cached.progress || userDoc.progress || {};
+            userDoc.stats = cached.stats || userDoc.stats || {};
+            userDoc.xp = cached.xp || userDoc.xp || 0;
+            userDoc.level = cached.level || userDoc.level || 1;
+            userDoc.streak = cached.streak || userDoc.streak || { current: 0, longest: 0 };
+            userDoc.favorites = cached.favorites || userDoc.favorites || [];
+            userDoc.collections = cached.collections || userDoc.collections || [];
+            userDoc.achievements = cached.achievements || userDoc.achievements || [];
+          }
+        }
+      } catch (e) { /* ignore parse errors */ }
+    }
+
+    // Use userDoc or a sensible default if nothing available
     const doc = userDoc || {
       progress: {}, stats: { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } },
       xp: 0, level: 1, streak: { current: 0, longest: 0 }, favorites: [], collections: [], achievements: []
@@ -89,11 +112,11 @@ const Profile = (() => {
       console.log('[Profile] Stats are 0 but progress exists, recalculating...');
       recalculateStats(doc, problems);
 
-      // Persist recalculated stats to Firestore so they don't need recalculating again
+      // Persist recalculated stats to Firestore if available
       try {
         const db = FirebaseConfig.getDb();
         const currentUser = Auth.getUser();
-        if (db && currentUser) {
+        if (db && currentUser && Auth.isFirestoreAvailable()) {
           db.collection('users').doc(currentUser.uid).update({
             stats: doc.stats, xp: doc.xp, level: doc.level
           }).then(() => console.log('[Profile] Recalculated stats saved to Firestore'))

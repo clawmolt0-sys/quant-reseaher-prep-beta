@@ -114,13 +114,17 @@ const Problems = (() => {
 
     // ===== STEP 1: Instant UI feedback (no awaiting anything) =====
     // Show toast IMMEDIATELY
-    if (status === 'solved') {
-      const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
-      showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
-    } else if (status === 'attempted') {
-      showToast('\uD83D\uDFE1 Marked as attempted');
-    } else {
-      showToast('Status cleared');
+    try {
+      if (status === 'solved') {
+        const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
+        showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
+      } else if (status === 'attempted') {
+        showToast('\uD83D\uDFE1 Marked as attempted');
+      } else {
+        showToast('Status cleared');
+      }
+    } catch (toastErr) {
+      console.error('[Problems] Toast error:', toastErr);
     }
 
     // Update buttons IMMEDIATELY
@@ -158,7 +162,7 @@ const Problems = (() => {
     // ===== STEP 2: Persist in background (never blocks UI) =====
     try {
       if (typeof Auth !== 'undefined') {
-        // Don't await — fire and forget
+        // Don't await — fire and forget so UI stays snappy
         Auth.saveStatus(id, status).then(() => {
           console.log('[Problems] Status saved successfully for', id);
           // Update level badge after save completes
@@ -171,7 +175,7 @@ const Problems = (() => {
           }
         }).catch(err => {
           console.error('[Problems] saveStatus failed:', err);
-          showToast('\u26A0\uFE0F Error saving — will retry');
+          showToast('\u26A0\uFE0F Save failed: ' + (err.message || err.code || 'unknown error'));
         });
       } else {
         // Fallback to localStorage only
