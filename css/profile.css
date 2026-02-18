@@ -160,39 +160,133 @@
 
 /* Badges Grid */
 .badges-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: var(--space-3);
 }
 
-.badge-item {
+.badge-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-3);
-  border-radius: var(--radius-md);
-  background: var(--bg-main);
-  min-width: 80px;
+  gap: 6px;
+  padding: 16px 10px 12px;
+  border-radius: 12px;
   text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.badge-item--unlocked {
-  border: 1px solid var(--color-accent, #4c8bf5);
+.badge-card:hover {
+  transform: translateY(-2px);
 }
 
-.badge-item--locked {
-  opacity: 0.4;
-  border: 1px solid var(--border-color);
+/* Rarity-based gradients for unlocked badges */
+.badge-card--unlocked.badge-card--common {
+  background: linear-gradient(135deg, #2a2d3e 0%, #1e2030 100%);
+  border: 1px solid #4a4e69;
+  box-shadow: 0 2px 8px rgba(74, 78, 105, 0.2);
+}
+.badge-card--unlocked.badge-card--common:hover {
+  box-shadow: 0 4px 16px rgba(74, 78, 105, 0.35);
 }
 
-.badge-item__icon {
-  font-size: 1.5rem;
+.badge-card--unlocked.badge-card--rare {
+  background: linear-gradient(135deg, #1a2a4a 0%, #142040 100%);
+  border: 1px solid #4c8bf5;
+  box-shadow: 0 2px 8px rgba(76, 139, 245, 0.15);
+}
+.badge-card--unlocked.badge-card--rare:hover {
+  box-shadow: 0 4px 16px rgba(76, 139, 245, 0.3);
 }
 
-.badge-item__name {
+.badge-card--unlocked.badge-card--epic {
+  background: linear-gradient(135deg, #2a1a4a 0%, #1e1040 100%);
+  border: 1px solid #a855f7;
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.15);
+}
+.badge-card--unlocked.badge-card--epic:hover {
+  box-shadow: 0 4px 16px rgba(168, 85, 247, 0.3);
+}
+
+.badge-card--unlocked.badge-card--legendary {
+  background: linear-gradient(135deg, #3a2a0a 0%, #2a1a00 100%);
+  border: 1px solid #f59e0b;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+}
+.badge-card--unlocked.badge-card--legendary:hover {
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+}
+
+/* Glow effect for unlocked */
+.badge-card__glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(255,255,255,0.03), transparent, rgba(255,255,255,0.03), transparent);
+  animation: badge-shimmer 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes badge-shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Locked badges */
+.badge-card--locked {
+  background: var(--bg-main);
+  border: 1px dashed var(--border-color);
+  opacity: 0.45;
+}
+.badge-card--locked:hover {
+  opacity: 0.65;
+}
+
+.badge-card__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.badge-card--locked .badge-card__icon {
+  color: var(--text-muted);
+}
+
+.badge-card__name {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.badge-card--locked .badge-card__name {
+  color: var(--text-muted);
+}
+
+.badge-card__rarity {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.badge-card--common .badge-card__rarity { color: #9ca3af; }
+.badge-card--rare .badge-card__rarity { color: #60a5fa; }
+.badge-card--epic .badge-card__rarity { color: #c084fc; }
+.badge-card--legendary .badge-card__rarity { color: #fbbf24; }
+.badge-card--locked .badge-card__rarity { color: var(--text-muted); }
+
+.badges-summary {
+  margin-top: var(--space-3);
   font-size: var(--text-xs);
-  color: var(--text-secondary);
+  color: var(--text-muted);
+  text-align: center;
 }
 
 /* Heatmap */

@@ -142,23 +142,29 @@ const Profile = (() => {
     const problemMap = new Map();
     for (const p of problems) problemMap.set(p.id, p);
 
+    // Rebuild solvedHistory if missing
+    if (!doc.solvedHistory) doc.solvedHistory = {};
+
     for (const [idStr, status] of Object.entries(progress)) {
       const p = problemMap.get(parseInt(idStr));
       const diff = p ? p.difficulty : 'medium';
       if (!stats[diff]) stats[diff] = { solved: 0, attempted: 0 };
       if (status === 'solved') {
         stats[diff].solved++;
-        xp += XP_TABLE[diff] || 0;
+        const xpVal = XP_TABLE[diff] || 0;
+        // Use solvedHistory if available, otherwise bootstrap
+        if (!doc.solvedHistory[idStr]) {
+          doc.solvedHistory[idStr] = { firstSolvedAt: new Date().toISOString(), xpAwarded: xpVal };
+        }
+        xp += doc.solvedHistory[idStr].xpAwarded || xpVal;
       } else if (status === 'attempted') {
         stats[diff].attempted++;
       }
     }
 
     doc.stats = stats;
-    if (!doc.xp || doc.xp === 0) doc.xp = xp;
-    if (!doc.level || doc.level <= 1) {
-      doc.level = Auth.calculateLevel(doc.xp).level;
-    }
+    doc.xp = xp;
+    doc.level = Auth.calculateLevel(doc.xp).level;
   }
 
   // ---- Skeleton Loading State ----
@@ -501,28 +507,45 @@ const Profile = (() => {
     const unlocked = all.filter(a => a.unlocked);
     const locked = all.filter(a => !a.unlocked);
 
-    if (unlocked.length === 0) {
+    // Assign rarity tiers based on difficulty
+    function getBadgeRarity(badge) {
+      const name = (badge.name || '').toLowerCase();
+      if (name.includes('master') || name.includes('legend') || name.includes('marathon') || name.includes('unstoppable')) return 'legendary';
+      if (name.includes('streak') || name.includes('scholar') || name.includes('conqueror') || name.includes('veteran')) return 'epic';
+      if (name.includes('solver') || name.includes('explorer') || name.includes('bookworm')) return 'rare';
+      return 'common';
+    }
+
+    if (unlocked.length === 0 && locked.length === 0) {
       return `<div style="color:var(--text-muted);padding:var(--space-4);text-align:center">
         <div style="font-size:2rem;margin-bottom:var(--space-2)">\uD83C\uDFC5</div>
-        <div>No badges earned yet. Start solving problems!</div>
+        <div>No badges available yet. Start solving problems!</div>
       </div>`;
     }
 
     return `
       <div class="badges-grid">
-        ${unlocked.map(a => `
-          <div class="badge-item badge-item--unlocked" title="${a.name}: ${a.description}">
-            <span class="badge-item__icon">${a.icon}</span>
-            <span class="badge-item__name">${a.name}</span>
-          </div>
-        `).join('')}
-        ${locked.slice(0, 3).map(a => `
-          <div class="badge-item badge-item--locked" title="Locked: ${a.description}">
-            <span class="badge-item__icon">\uD83D\uDD12</span>
-            <span class="badge-item__name">${a.name}</span>
-          </div>
-        `).join('')}
+        ${unlocked.map(a => {
+          const rarity = getBadgeRarity(a);
+          return `
+          <div class="badge-card badge-card--unlocked badge-card--${rarity}" title="${a.description}">
+            <div class="badge-card__glow"></div>
+            <div class="badge-card__icon">${a.icon}</div>
+            <div class="badge-card__name">${a.name}</div>
+            <div class="badge-card__rarity">${rarity}</div>
+          </div>`;
+        }).join('')}
+        ${locked.map(a => {
+          const rarity = getBadgeRarity(a);
+          return `
+          <div class="badge-card badge-card--locked" title="${a.description}">
+            <div class="badge-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+            <div class="badge-card__name">${a.name}</div>
+            <div class="badge-card__rarity">${rarity}</div>
+          </div>`;
+        }).join('')}
       </div>
+      <div class="badges-summary">${unlocked.length} of ${all.length} badges earned</div>
     `;
   }
 

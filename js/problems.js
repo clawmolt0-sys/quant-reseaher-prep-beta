@@ -112,12 +112,24 @@ const Problems = (() => {
   function markStatus(id, status) {
     console.log('[Problems] markStatus called:', id, status);
 
+    // ---- Anti-abuse: Cooldown gate ----
+    if (typeof Auth !== 'undefined' && Auth.isStatusOnCooldown && Auth.isStatusOnCooldown(id)) {
+      showToast('\u23F3 Please wait before changing status again');
+      return;
+    }
+
+    // ---- Check if XP will be awarded (for accurate toast) ----
+    const willGetXP = (status === 'solved') && (typeof Auth === 'undefined' || !Auth.willAwardXP || Auth.willAwardXP(id));
+
     // ===== STEP 1: Instant UI feedback (no awaiting anything) =====
-    // Show toast IMMEDIATELY
     try {
       if (status === 'solved') {
-        const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
-        showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
+        if (willGetXP) {
+          const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
+          showToast('\u2705 Solved! +' + xpGain + ' XP', 'xp');
+        } else {
+          showToast('\u2705 Marked as Solved');
+        }
       } else if (status === 'attempted') {
         showToast('\uD83D\uDFE1 Marked as attempted');
       } else {
@@ -138,13 +150,18 @@ const Problems = (() => {
         solvedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'solved' ? '' : 'solved') + "')");
         if (status === 'solved') {
           solvedBtn.classList.add('pab__btn--anim-green');
-          const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
-          const floater = document.createElement('span');
-          floater.className = 'pab__xp-float';
-          floater.textContent = '+' + xpGain + ' XP';
-          solvedBtn.style.position = 'relative';
-          solvedBtn.appendChild(floater);
-          setTimeout(() => { floater.remove(); solvedBtn.classList.remove('pab__btn--anim-green'); }, 1000);
+          // Only show XP floater if XP will actually be awarded
+          if (willGetXP) {
+            const xpGain = (typeof Auth !== 'undefined' && Auth.getProblemDifficultyXP) ? Auth.getProblemDifficultyXP(id) : 10;
+            const floater = document.createElement('span');
+            floater.className = 'pab__xp-float';
+            floater.textContent = '+' + xpGain + ' XP';
+            solvedBtn.style.position = 'relative';
+            solvedBtn.appendChild(floater);
+            setTimeout(() => { floater.remove(); solvedBtn.classList.remove('pab__btn--anim-green'); }, 1000);
+          } else {
+            setTimeout(() => solvedBtn.classList.remove('pab__btn--anim-green'), 500);
+          }
         }
       }
       if (attemptedBtn) {
@@ -162,9 +179,8 @@ const Problems = (() => {
     // ===== STEP 2: Persist in background (never blocks UI) =====
     try {
       if (typeof Auth !== 'undefined') {
-        // Don't await — fire and forget so UI stays snappy
-        Auth.saveStatus(id, status).then(() => {
-          console.log('[Problems] Status saved successfully for', id);
+        Auth.saveStatus(id, status).then((result) => {
+          if (result === 'cooldown') return; // Was rejected by cooldown
           // Update level badge after save completes
           if (params.id && Auth.isLoggedIn()) {
             const levelBadge = document.querySelector('.nav__user-level-badge');
@@ -178,7 +194,6 @@ const Problems = (() => {
           showToast('\u26A0\uFE0F Save failed: ' + (err.message || err.code || 'unknown error'));
         });
       } else {
-        // Fallback to localStorage only
         try {
           if (status) localStorage.setItem('qr-prep-status-' + id, status);
           else localStorage.removeItem('qr-prep-status-' + id);

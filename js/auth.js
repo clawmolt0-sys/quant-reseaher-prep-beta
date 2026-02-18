@@ -22,6 +22,16 @@ const Auth = (() => {
   // ---- XP Config ----
   const XP_TABLE = { easy: 10, medium: 25, hard: 50 };
 
+  // ---- Anti-abuse: Cooldown ----
+  const statusCooldowns = new Map(); // Map<id, timestamp>
+  const COOLDOWN_MS = 3000;          // 3-second cooldown per problem
+
+  function isOnCooldown(id) {
+    const last = statusCooldowns.get(String(id));
+    if (!last) return false;
+    return (Date.now() - last) < COOLDOWN_MS;
+  }
+
   function isAdmin(email) {
     return ADMIN_EMAILS.includes((email || '').toLowerCase());
   }
@@ -378,6 +388,7 @@ const Auth = (() => {
         favorites: doc.favorites || [],
         collections: doc.collections || [],
         achievements: doc.achievements || [],
+        solvedHistory: doc.solvedHistory || {},
         tier: doc.tier || 'free',
       };
       localStorage.setItem('qr-prep-userDoc-cache', JSON.stringify(toSave));
@@ -486,64 +497,101 @@ const Auth = (() => {
       favorites: [],
       collections: [],
       achievements: [],
+      solvedHistory: {},
     };
   }
 
-  // Sync stats for existing users who don't have the new fields,
-  // or recalculate if stats are all zeros but progress data exists
+  // Recalculate stats/XP from progress + solvedHistory on every login.
+  // This is the server-side anti-abuse safety net: even if client-side
+  // state was tampered with, this recalculation corrects it.
   async function syncStatsOnLogin() {
     if (!currentUser || !userDoc) return;
 
-    // Check if stats look correct: if stats exist and total solved > 0, skip
-    const existingStats = userDoc.stats || {};
-    const totalSolved = (existingStats.easy?.solved || 0) + (existingStats.medium?.solved || 0) + (existingStats.hard?.solved || 0);
-    const progressCount = userDoc.progress ? Object.keys(userDoc.progress).length : 0;
-
-    // Only skip if stats are already populated OR there's no progress data to calculate from
-    if (totalSolved > 0 || progressCount === 0) return;
-
     const problems = allProblems || (await DataLoader.problems()) || [];
     const progress = userDoc.progress || {};
+    const solvedHistory = userDoc.solvedHistory || {};
 
-    const stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
-    let xp = 0;
+    // ---- Recalculate stats from progress (source of truth) ----
+    const recalcStats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+    const problemMap = new Map();
+    for (const p of problems) problemMap.set(p.id, p);
 
     for (const [idStr, status] of Object.entries(progress)) {
-      const id = parseInt(idStr);
-      const problem = problems.find(p => p.id === id);
-      const diff = problem ? problem.difficulty : 'medium';
-      if (stats[diff]) {
-        if (status === 'solved') {
-          stats[diff].solved++;
-          xp += XP_TABLE[diff] || 0;
-        } else if (status === 'attempted') {
-          stats[diff].attempted++;
-        }
+      const p = problemMap.get(parseInt(idStr));
+      const diff = p ? p.difficulty : 'medium';
+      if (!recalcStats[diff]) recalcStats[diff] = { solved: 0, attempted: 0 };
+      if (status === 'solved') {
+        recalcStats[diff].solved++;
+      } else if (status === 'attempted') {
+        recalcStats[diff].attempted++;
       }
     }
 
-    const level = calculateLevel(xp).level;
+    // ---- Bootstrap solvedHistory from progress if empty (migration) ----
+    let needsMigration = false;
+    if (Object.keys(solvedHistory).length === 0) {
+      for (const [idStr, status] of Object.entries(progress)) {
+        if (status === 'solved') {
+          const p = problemMap.get(parseInt(idStr));
+          const diff = p ? p.difficulty : 'medium';
+          solvedHistory[idStr] = {
+            firstSolvedAt: new Date().toISOString(),
+            xpAwarded: XP_TABLE[diff] || 0,
+          };
+          needsMigration = true;
+        }
+      }
+      if (needsMigration) {
+        userDoc.solvedHistory = solvedHistory;
+        console.log('[Auth] Migrated ' + Object.keys(solvedHistory).length + ' problems to solvedHistory');
+      }
+    }
+
+    // ---- Recalculate XP from solvedHistory (source of truth) ----
+    let recalcXP = 0;
+    for (const entry of Object.values(solvedHistory)) {
+      recalcXP += entry.xpAwarded || 0;
+    }
+
+    const recalcLevel = calculateLevel(recalcXP).level;
+
+    // ---- Compare and fix if drifted ----
+    const currentStats = userDoc.stats || {};
+    const currentXP = userDoc.xp || 0;
+    const statsMatch =
+      (currentStats.easy?.solved || 0) === recalcStats.easy.solved &&
+      (currentStats.medium?.solved || 0) === recalcStats.medium.solved &&
+      (currentStats.hard?.solved || 0) === recalcStats.hard.solved;
+    const xpMatch = currentXP === recalcXP;
+
+    if (statsMatch && xpMatch && !needsMigration) {
+      console.log('[Auth] syncStatsOnLogin: consistent, no correction needed');
+      return;
+    }
+
+    if (!statsMatch || !xpMatch) {
+      console.warn('[Auth] syncStatsOnLogin: drift detected', { storedXP: currentXP, recalcXP, statsMatch });
+    }
 
     const update = {
-      stats,
-      xp,
-      level,
+      stats: recalcStats,
+      xp: recalcXP,
+      level: recalcLevel,
+      solvedHistory: userDoc.solvedHistory,
       streak: userDoc.streak || { current: 0, longest: 0, lastActivityDate: null },
       favorites: userDoc.favorites || [],
       collections: userDoc.collections || [],
       achievements: userDoc.achievements || [],
     };
 
-    // Always update local state
     Object.assign(userDoc, update);
     saveUserDocToLocal(userDoc);
 
-    // Persist to Firestore if available
     try {
       const db = FirebaseConfig.getDb();
       if (db && firestoreAvailable) {
         await db.collection('users').doc(currentUser.uid).update(update);
-        console.log('[Auth] Stats synced to Firestore');
+        console.log('[Auth] Stats/XP corrected and synced to Firestore');
       }
     } catch (err) {
       console.error('[Auth] Stats sync error:', err.code);
@@ -597,7 +645,15 @@ const Auth = (() => {
   // ============================================================
 
   async function saveStatus(id, status) {
-    console.log('[Auth] saveStatus:', { id, status, hasUser: !!currentUser, hasDoc: !!userDoc, authSettled, firestoreAvailable });
+    const idStr = String(id);
+    console.log('[Auth] saveStatus:', { id, status, hasUser: !!currentUser, hasDoc: !!userDoc, firestoreAvailable });
+
+    // ---- Anti-abuse: Cooldown (3s per problem) ----
+    if (isOnCooldown(idStr)) {
+      console.warn('[Auth] saveStatus: cooldown active for', idStr);
+      return 'cooldown';
+    }
+    statusCooldowns.set(idStr, Date.now());
 
     // Always save to localStorage as fallback
     try {
@@ -615,26 +671,20 @@ const Auth = (() => {
 
     // Wait for userDoc to be loaded if it's still pending (with timeout)
     if (!userDoc) {
-      console.log('[Auth] userDoc not ready, waiting max 3s...');
       try {
         await Promise.race([
           waitForAuth(),
           new Promise((_, rej) => setTimeout(() => rej(new Error('auth-timeout')), 3000))
         ]);
-      } catch (e) {
-        console.warn('[Auth] waitForAuth:', e.message);
-      }
+      } catch (e) { console.warn('[Auth] waitForAuth:', e.message); }
     }
-
-    // If still no userDoc, create a minimal one
     if (!userDoc) {
-      console.warn('[Auth] Creating fallback userDoc');
       userDoc = createDefaultDoc(currentUser);
     }
 
     const previousStatus = userDoc.progress ? (userDoc.progress[id] || '') : '';
 
-    // ---- Update local state IMMEDIATELY ----
+    // ---- Update local progress state ----
     if (!userDoc.progress) userDoc.progress = {};
     if (status) {
       userDoc.progress[id] = status;
@@ -642,12 +692,15 @@ const Auth = (() => {
       delete userDoc.progress[id];
     }
 
-    // XP + stats tracking (local state update — always runs, regardless of Firestore)
-    if (status === 'solved' && previousStatus !== 'solved') {
-      const diff = getProblemDifficulty(id);
-      const xpGain = XP_TABLE[diff] || 0;
+    // ---- XP + stats tracking ----
+    if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+    if (!userDoc.solvedHistory) userDoc.solvedHistory = {};
 
-      if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+    let xpChanged = false;
+
+    if (status === 'solved' && previousStatus !== 'solved') {
+      // ---- SOLVE: Grant XP only on first-ever solve ----
+      const diff = getProblemDifficulty(id);
       if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
       userDoc.stats[diff].solved++;
 
@@ -655,32 +708,66 @@ const Auth = (() => {
         userDoc.stats[diff].attempted--;
       }
 
-      userDoc.xp = (userDoc.xp || 0) + xpGain;
-      userDoc.level = calculateLevel(userDoc.xp).level;
-      updateStreak();
+      // Per-problem XP tracking: only award XP once per problem ever
+      const alreadyAwarded = !!userDoc.solvedHistory[idStr];
+      const xpGain = alreadyAwarded ? 0 : (XP_TABLE[diff] || 0);
 
-      // Re-render user dropdown to show updated XP/level (without full page re-render)
+      if (xpGain > 0) {
+        userDoc.xp = (userDoc.xp || 0) + xpGain;
+        userDoc.level = calculateLevel(userDoc.xp).level;
+        userDoc.solvedHistory[idStr] = {
+          firstSolvedAt: new Date().toISOString(),
+          xpAwarded: xpGain,
+        };
+        xpChanged = true;
+      }
+
+      updateStreak();
       renderUserUI();
 
-      // Check achievements (non-blocking)
       if (typeof Achievements !== 'undefined') {
         try {
           const newBadges = Achievements.check(userDoc);
           for (const badge of newBadges) Achievements.award(badge);
         } catch (e) { console.warn('[Auth] Achievement check error:', e); }
       }
-    } else if (status === 'attempted' && !previousStatus) {
+
+    } else if (previousStatus === 'solved' && status !== 'solved') {
+      // ---- UNSOLVED: Deduct XP and decrement stats ----
       const diff = getProblemDifficulty(id);
-      if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
+      if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
+
+      if (userDoc.stats[diff].solved > 0) {
+        userDoc.stats[diff].solved--;
+      }
+
+      if (status === 'attempted') {
+        userDoc.stats[diff].attempted++;
+      }
+
+      // Deduct XP (floor at 0)
+      const xpLoss = XP_TABLE[diff] || 0;
+      userDoc.xp = Math.max(0, (userDoc.xp || 0) - xpLoss);
+      userDoc.level = calculateLevel(userDoc.xp).level;
+
+      // Remove from solvedHistory so they can earn XP again if they re-solve
+      delete userDoc.solvedHistory[idStr];
+      xpChanged = true;
+
+      renderUserUI();
+
+    } else if (status === 'attempted' && !previousStatus) {
+      // ---- ATTEMPTED (new) ----
+      const diff = getProblemDifficulty(id);
       if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
       userDoc.stats[diff].attempted++;
       renderUserUI();
     }
 
-    // Always cache to localStorage so profile page can read it even if Firestore is down
+    // Cache to localStorage
     saveUserDocToLocal(userDoc);
 
-    // Notify other components (profile page, etc.) that user data changed
+    // Notify other components (profile page, etc.)
     window.dispatchEvent(new CustomEvent('user-data-changed', {
       detail: { id, status, previousStatus }
     }));
@@ -702,63 +789,34 @@ const Auth = (() => {
         } else {
           await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
         }
-        console.log('[Auth] Progress written to Firestore');
       } catch (writeErr) {
         if (writeErr.code === 'permission-denied') {
-          firestoreAvailable = false;
-          showFirestoreError();
-          console.error('[Auth] PERMISSION DENIED — Firestore rules likely expired!');
-          return; // Don't try any more Firestore writes
+          firestoreAvailable = false; showFirestoreError(); return;
         } else if (writeErr.code === 'not-found') {
           try {
             const data = { progress: {} };
             if (status) data.progress[id] = status;
             await docRef.set(data, { merge: true });
-            console.log('[Auth] Progress written (set+merge)');
           } catch (setErr) {
-            if (setErr.code === 'permission-denied') {
-              firestoreAvailable = false;
-              showFirestoreError();
-              return;
-            }
-            console.error('[Auth] Progress set+merge error:', setErr.code, setErr.message);
+            if (setErr.code === 'permission-denied') { firestoreAvailable = false; showFirestoreError(); return; }
           }
-        } else {
-          console.error('[Auth] Progress write error:', writeErr.code, writeErr.message);
         }
       }
 
-      // Write XP/stats/streak
-      if (status === 'solved' && previousStatus !== 'solved') {
-        const xpData = { stats: userDoc.stats, xp: userDoc.xp, level: userDoc.level, streak: userDoc.streak };
+      // Write XP/stats/solvedHistory if changed
+      if (xpChanged || status === 'solved' || previousStatus === 'solved') {
+        const xpData = { stats: userDoc.stats, xp: userDoc.xp, level: userDoc.level, streak: userDoc.streak, solvedHistory: userDoc.solvedHistory };
         try {
           await docRef.update(xpData);
-          console.log('[Auth] XP/stats written to Firestore');
         } catch (xpErr) {
-          if (xpErr.code === 'permission-denied') {
-            firestoreAvailable = false;
-            showFirestoreError();
-            return;
-          }
-          try {
-            await docRef.set(xpData, { merge: true });
-          } catch (xpSetErr) {
-            if (xpSetErr.code === 'permission-denied') {
-              firestoreAvailable = false;
-              showFirestoreError();
-            } else {
-              console.error('[Auth] XP persist failed:', xpSetErr);
-            }
-          }
+          if (xpErr.code === 'permission-denied') { firestoreAvailable = false; showFirestoreError(); return; }
+          try { await docRef.set(xpData, { merge: true }); } catch (e) { /* ignore */ }
         }
       } else if (status === 'attempted' && !previousStatus) {
         try {
           await docRef.update({ stats: userDoc.stats });
         } catch (attErr) {
-          if (attErr.code === 'permission-denied') {
-            firestoreAvailable = false;
-            showFirestoreError();
-          }
+          if (attErr.code === 'permission-denied') { firestoreAvailable = false; showFirestoreError(); }
         }
       }
     } catch (err) {
@@ -1121,6 +1179,16 @@ const Auth = (() => {
 
   function isFirestoreAvailable() { return firestoreAvailable; }
 
+  // Returns true if this problem has NOT yet been awarded XP (first solve pending)
+  function willAwardXP(id) {
+    if (!userDoc || !userDoc.solvedHistory) return true;
+    return !userDoc.solvedHistory[String(id)];
+  }
+
+  function isStatusOnCooldown(id) {
+    return isOnCooldown(String(id));
+  }
+
   return {
     init, showAuthModal, signInWithGoogle, signInWithGitHub, signOut,
     saveStatus, getStatus, getTier,
@@ -1130,5 +1198,6 @@ const Auth = (() => {
     renderLoginButton, renderUserUI,
     toggleDropdown, closeDropdown, showAccount,
     getProblemDifficultyXP, isFirestoreAvailable,
+    willAwardXP, isStatusOnCooldown,
   };
 })();
