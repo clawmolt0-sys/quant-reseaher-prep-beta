@@ -403,11 +403,18 @@ const Auth = (() => {
     }
   }
 
-  // Sync stats for existing users who don't have the new fields
+  // Sync stats for existing users who don't have the new fields,
+  // or recalculate if stats are all zeros but progress data exists
   async function syncStatsOnLogin() {
     if (!currentUser || !userDoc) return;
-    // If user already has stats field, skip
-    if (userDoc.stats && typeof userDoc.xp === 'number') return;
+
+    // Check if stats look correct: if stats exist and total solved > 0, skip
+    const existingStats = userDoc.stats || {};
+    const totalSolved = (existingStats.easy?.solved || 0) + (existingStats.medium?.solved || 0) + (existingStats.hard?.solved || 0);
+    const progressCount = userDoc.progress ? Object.keys(userDoc.progress).length : 0;
+
+    // Only skip if stats are already populated OR there's no progress data to calculate from
+    if (totalSolved > 0 || progressCount === 0) return;
 
     const problems = allProblems || (await DataLoader.problems()) || [];
     const progress = userDoc.progress || {};
@@ -555,27 +562,28 @@ const Auth = (() => {
 
       // Persist to Firestore: try update() first (reliable for nested paths),
       // fall back to set+merge if doc doesn't exist
-      const writeProgress = async () => {
-        try {
-          if (status) {
-            await docRef.update({ ['progress.' + id]: status });
-          } else {
-            await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
-          }
-          console.log('[Auth] Progress written (update)');
-        } catch (err) {
-          if (err.code === 'not-found') {
-            console.log('[Auth] Doc not found, creating with set...');
+      try {
+        if (status) {
+          await docRef.update({ ['progress.' + id]: status });
+        } else {
+          await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
+        }
+        console.log('[Auth] Progress written (update)');
+      } catch (writeErr) {
+        if (writeErr.code === 'not-found') {
+          console.log('[Auth] Doc not found, creating with set...');
+          try {
             const data = { progress: {} };
             if (status) data.progress[id] = status;
             await docRef.set(data, { merge: true });
             console.log('[Auth] Progress written (set+merge)');
-          } else {
-            console.error('[Auth] Progress write error:', err.code, err.message);
+          } catch (setErr) {
+            console.error('[Auth] Progress set+merge error:', setErr.code, setErr.message);
           }
+        } else {
+          console.error('[Auth] Progress write error:', writeErr.code, writeErr.message);
         }
-      };
-      writeProgress();
+      }
 
       // XP + stats tracking
       if (status === 'solved' && previousStatus !== 'solved') {
@@ -599,18 +607,23 @@ const Auth = (() => {
         // Update streak locally
         updateStreak();
 
-        // Dispatch event so dropdown XP updates immediately
-        forceAuthUIUpdate();
+        // Re-render user dropdown to show updated XP/level (without full page re-render)
+        renderUserUI();
 
-        // Persist XP/stats to Firestore (background, non-blocking)
+        // Persist XP/stats to Firestore
         const xpData = { stats: userDoc.stats, xp: userDoc.xp, level: userDoc.level, streak: userDoc.streak };
-        docRef.update(xpData)
-          .then(() => console.log('[Auth] XP/stats written'))
-          .catch(err => {
-            console.warn('[Auth] XP update() failed:', err.code, '- trying set+merge');
-            return docRef.set(xpData, { merge: true });
-          })
-          .catch(err => console.error('[Auth] XP persist failed completely:', err));
+        try {
+          await docRef.update(xpData);
+          console.log('[Auth] XP/stats written');
+        } catch (xpErr) {
+          console.warn('[Auth] XP update() failed:', xpErr.code, '- trying set+merge');
+          try {
+            await docRef.set(xpData, { merge: true });
+            console.log('[Auth] XP/stats written via set+merge');
+          } catch (xpSetErr) {
+            console.error('[Auth] XP persist failed completely:', xpSetErr);
+          }
+        }
 
         // Check achievements (non-blocking)
         if (typeof Achievements !== 'undefined') {
@@ -626,12 +639,16 @@ const Auth = (() => {
         if (!userDoc.stats) userDoc.stats = { easy: { solved: 0, attempted: 0 }, medium: { solved: 0, attempted: 0 }, hard: { solved: 0, attempted: 0 } };
         if (!userDoc.stats[diff]) userDoc.stats[diff] = { solved: 0, attempted: 0 };
         userDoc.stats[diff].attempted++;
-        docRef.update({ stats: userDoc.stats })
-          .then(() => console.log('[Auth] Attempted stats written'))
-          .catch(err => {
-            return docRef.set({ stats: userDoc.stats }, { merge: true });
-          })
-          .catch(err => console.error('[Auth] Stats persist failed:', err));
+        try {
+          await docRef.update({ stats: userDoc.stats });
+          console.log('[Auth] Attempted stats written');
+        } catch (attErr) {
+          try {
+            await docRef.set({ stats: userDoc.stats }, { merge: true });
+          } catch (attSetErr) {
+            console.error('[Auth] Stats persist failed:', attSetErr);
+          }
+        }
       }
     } catch (err) {
       console.error('[Auth] Error saving status:', err);
@@ -747,19 +764,27 @@ const Auth = (() => {
         // Update local state first
         userDoc.favorites = userDoc.favorites.filter(f => f !== id);
         // Persist: try update first, fallback to set+merge
-        docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) })
-          .then(() => console.log('[Auth] Unfavorited persisted'))
-          .catch(err => docRef.set({ favorites: firebase.firestore.FieldValue.arrayRemove(id) }, { merge: true }))
-          .catch(err => console.error('[Auth] Unfavorite persist error:', err));
+        try {
+          await docRef.update({ favorites: firebase.firestore.FieldValue.arrayRemove(id) });
+          console.log('[Auth] Unfavorited persisted');
+        } catch (unfavErr) {
+          try {
+            await docRef.set({ favorites: firebase.firestore.FieldValue.arrayRemove(id) }, { merge: true });
+          } catch (e) { console.error('[Auth] Unfavorite persist error:', e); }
+        }
         return false;
       } else {
         // Update local state first
         userDoc.favorites.push(id);
         // Persist
-        docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) })
-          .then(() => console.log('[Auth] Favorited persisted'))
-          .catch(err => docRef.set({ favorites: firebase.firestore.FieldValue.arrayUnion(id) }, { merge: true }))
-          .catch(err => console.error('[Auth] Favorite persist error:', err));
+        try {
+          await docRef.update({ favorites: firebase.firestore.FieldValue.arrayUnion(id) });
+          console.log('[Auth] Favorited persisted');
+        } catch (favErr) {
+          try {
+            await docRef.set({ favorites: firebase.firestore.FieldValue.arrayUnion(id) }, { merge: true });
+          } catch (e) { console.error('[Auth] Favorite persist error:', e); }
+        }
 
         // Check bookworm achievement
         if (typeof Achievements !== 'undefined') {

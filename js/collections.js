@@ -9,19 +9,35 @@ const Collections = (() => {
   }
 
   async function create(name) {
-    if (!Auth.isLoggedIn()) return null;
+    console.log('[Collections] create called:', name, 'loggedIn:', Auth.isLoggedIn());
+    if (!Auth.isLoggedIn()) {
+      console.warn('[Collections] Not logged in');
+      return null;
+    }
     const db = FirebaseConfig.getDb();
-    if (!db) return null;
+    if (!db) {
+      console.warn('[Collections] No DB instance');
+      return null;
+    }
 
-    // Wait for user doc if it's not ready yet
+    // Wait for user doc if it's not ready yet (with longer timeout)
     let doc = Auth.getUserDoc();
     if (!doc) {
-      try { await Auth.waitForAuth(); } catch (e) { /* timeout */ }
+      console.log('[Collections] Waiting for user doc...');
+      try {
+        await Promise.race([
+          Auth.waitForAuth(),
+          new Promise((_, rej) => setTimeout(() => rej(new Error('timeout')), 5000))
+        ]);
+      } catch (e) {
+        console.warn('[Collections] waitForAuth:', e.message);
+      }
       doc = Auth.getUserDoc();
     }
     if (!doc) {
-      console.error('[Collections] Cannot create — user doc not available');
-      return null;
+      // Last resort: create a minimal doc structure so collections still work
+      console.warn('[Collections] Creating minimal doc for collections');
+      doc = { collections: [] };
     }
 
     const newCollection = {
@@ -34,7 +50,13 @@ const Collections = (() => {
     try {
       if (!doc.collections) doc.collections = [];
       doc.collections.push(newCollection);
-      await db.collection('users').doc(Auth.getUser().uid).set({ collections: doc.collections }, { merge: true });
+      const user = Auth.getUser();
+      if (!user) {
+        console.error('[Collections] No current user');
+        return null;
+      }
+      await db.collection('users').doc(user.uid).set({ collections: doc.collections }, { merge: true });
+      console.log('[Collections] Created:', newCollection.name);
 
       // Check organizer achievement
       if (typeof Achievements !== 'undefined') {
@@ -46,7 +68,11 @@ const Collections = (() => {
 
       return newCollection;
     } catch (err) {
-      console.error('[Collections] Create error:', err);
+      console.error('[Collections] Create error:', err.code, err.message);
+      // Revert local state on failure
+      if (doc.collections) {
+        doc.collections = doc.collections.filter(c => c.id !== newCollection.id);
+      }
       return null;
     }
   }

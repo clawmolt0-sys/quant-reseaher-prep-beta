@@ -58,6 +58,10 @@ const Problems = (() => {
     if (typeof Auth !== 'undefined') {
       const tier = Auth.getTier();
       if (tier === 'pro') return false;
+      // Debug: log when a problem would be locked so we can verify tier detection
+      if (problem.id > FREE_PROBLEM_LIMIT) {
+        console.log('[Problems] isProblemLocked: id=' + problem.id + ', tier=' + tier + ', loggedIn=' + Auth.isLoggedIn());
+      }
     }
     // Free users: only problems with id <= FREE_PROBLEM_LIMIT
     return problem.id > FREE_PROBLEM_LIMIT;
@@ -122,8 +126,9 @@ const Problems = (() => {
     // Update buttons IMMEDIATELY
     const params = App.getParams();
     if (params.id) {
-      const solvedBtn = document.querySelector('.pab__btn:first-child');
-      const attemptedBtn = document.querySelector('.pab__btn:nth-child(2)');
+      const actionBar = document.querySelector('.problem-action-bar');
+      const solvedBtn = actionBar ? actionBar.querySelector('.pab__btn:first-child') : null;
+      const attemptedBtn = actionBar ? actionBar.querySelector('.pab__btn:nth-child(2)') : null;
       if (solvedBtn) {
         solvedBtn.className = 'pab__btn ' + (status === 'solved' ? 'pab__btn--active-green' : '');
         solvedBtn.setAttribute('onclick', "Problems.markStatus(" + id + ", '" + (status === 'solved' ? '' : 'solved') + "')");
@@ -473,10 +478,25 @@ const Problems = (() => {
       }
 
       // Re-render when auth state changes (tier may upgrade from free to pro)
+      // Debounce detail re-renders to avoid wiping out animations/toasts
+      let authChangeDebounce = null;
       window.addEventListener('auth-state-changed', () => {
         const p = App.getParams();
         if (p.id) {
-          renderDetailLazy(parseInt(p.id, 10) || p.id);
+          // If an animation/toast is active, debounce to avoid wiping it out
+          const hasActiveAnimation = document.querySelector('.pab__btn--anim-green, .pab__btn--anim-yellow, .pab__xp-float, .qr-toast--show');
+          const delay = hasActiveAnimation ? 1500 : 0;
+
+          clearTimeout(authChangeDebounce);
+          authChangeDebounce = setTimeout(() => {
+            const numId = parseInt(p.id, 10) || p.id;
+            const prob = getById(numId);
+            if (prob && prob.statement && prob.statement.length > 20) {
+              renderDetail(numId);
+            } else {
+              renderDetailLazy(numId);
+            }
+          }, delay);
         } else if (shellRendered) {
           updateList(p);
         }

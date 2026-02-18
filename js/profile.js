@@ -88,6 +88,18 @@ const Profile = (() => {
     if (totalFromStats === 0 && doc.progress && Object.keys(doc.progress).length > 0) {
       console.log('[Profile] Stats are 0 but progress exists, recalculating...');
       recalculateStats(doc, problems);
+
+      // Persist recalculated stats to Firestore so they don't need recalculating again
+      try {
+        const db = FirebaseConfig.getDb();
+        const currentUser = Auth.getUser();
+        if (db && currentUser) {
+          db.collection('users').doc(currentUser.uid).update({
+            stats: doc.stats, xp: doc.xp, level: doc.level
+          }).then(() => console.log('[Profile] Recalculated stats saved to Firestore'))
+            .catch(err => console.warn('[Profile] Could not save recalculated stats:', err));
+        }
+      } catch (e) { /* ignore */ }
     }
 
     render(user, doc, problems, []);
