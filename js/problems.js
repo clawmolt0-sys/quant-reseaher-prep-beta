@@ -1192,22 +1192,69 @@ const Problems = (() => {
     if (similarityGraph && similarityGraph.edges) {
       const edges = similarityGraph.edges[String(problem.id)];
       if (edges && edges.length > 0) {
-        const results = [];
+        // Diversify: pick from different edge types, concepts, and categories
+        // so the user doesn't get stuck in a single cluster
+        const validEdges = [];
         for (const e of edges) {
-          if (results.length >= count) break;
           const p = getById(e.id);
-          if (p && p.status !== 'duplicate') {
-            results.push({
-              problem: p,
-              score: e.w,
-              shared: [],
-              reason: e.r || '',
-              edgeType: e.type || 'same_concept',
+          if (p && p.status !== 'duplicate' && p.status !== 'title-only' && p.status !== 'incomplete') {
+            validEdges.push({
+              problem: p, score: e.w, shared: [],
+              reason: e.r || '', edgeType: e.type || 'same_concept',
               concepts: e.concepts || []
             });
           }
         }
-        if (results.length > 0) return results;
+
+        if (validEdges.length > 0) {
+          // Strategy: take top 1-2 by weight, then diversify the rest
+          const results = [];
+          const usedIds = new Set();
+          const usedTypes = {};
+          const usedConcepts = new Set();
+          const usedCategories = {};
+
+          function addResult(r) {
+            if (usedIds.has(r.problem.id)) return false;
+            results.push(r);
+            usedIds.add(r.problem.id);
+            usedTypes[r.edgeType] = (usedTypes[r.edgeType] || 0) + 1;
+            (r.concepts || []).forEach(c => usedConcepts.add(c));
+            usedCategories[r.problem.category] = (usedCategories[r.problem.category] || 0) + 1;
+            return true;
+          }
+
+          // Pass 1: Take the single highest-weight edge
+          if (validEdges.length > 0) addResult(validEdges[0]);
+
+          // Pass 2: Prefer edges with different type or category
+          for (const e of validEdges) {
+            if (results.length >= count) break;
+            if (usedIds.has(e.problem.id)) continue;
+            const typeCount = usedTypes[e.edgeType] || 0;
+            const catCount = usedCategories[e.problem.category] || 0;
+            // Prioritize different types (max 2 per type) and cross-category edges
+            if (typeCount < 2 || catCount === 0) {
+              addResult(e);
+            }
+          }
+
+          // Pass 3: Fill remaining slots, but skip same-category if possible
+          for (const e of validEdges) {
+            if (results.length >= count) break;
+            if (usedIds.has(e.problem.id)) continue;
+            const catCount = usedCategories[e.problem.category] || 0;
+            if (catCount < 3) addResult(e);
+          }
+
+          // Pass 4: Just fill whatever's left
+          for (const e of validEdges) {
+            if (results.length >= count) break;
+            addResult(e);
+          }
+
+          if (results.length > 0) return results;
+        }
       }
     }
 
