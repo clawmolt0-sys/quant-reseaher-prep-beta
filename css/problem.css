@@ -1310,8 +1310,9 @@
 .similar-problem-card__top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 6px;
   margin-bottom: 4px;
+  flex-wrap: wrap;
 }
 
 .similar-problem-card__id {
@@ -1331,6 +1332,59 @@
   font-size: 11px;
   color: var(--text-muted);
   margin-top: 4px;
+}
+
+.similar-problem-card__reason {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.similar-problem-card__concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.similar-problem-card__concept {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 99px;
+  background: rgba(99, 102, 241, 0.1);
+  color: rgba(129, 140, 248, 0.9);
+  white-space: nowrap;
+}
+
+/* Edge type badges */
+.badge--edge-type {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.badge--edge-same_technique {
+  background: rgba(34, 211, 238, 0.12);
+  color: #22d3ee;
+}
+.badge--edge-same_concept {
+  background: rgba(129, 140, 248, 0.12);
+  color: #818cf8;
+}
+.badge--edge-prerequisite {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+}
+.badge--edge-variant {
+  background: rgba(52, 211, 153, 0.12);
+  color: #34d399;
+}
+.badge--edge-application {
+  background: rgba(244, 114, 182, 0.12);
+  color: #f472b6;
 }
 
 /* --- Notes --- */

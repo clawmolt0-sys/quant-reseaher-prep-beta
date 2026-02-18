@@ -18,7 +18,7 @@
     /* ---- Top bar ---- */
     .topbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; gap: 12px;
+      display: flex; align-items: center; gap: 10px;
       padding: 8px 16px;
       background: rgba(6,10,16,0.92);
       backdrop-filter: blur(12px);
@@ -37,13 +37,14 @@
       color: #e2e8f0; padding: 4px 8px; font-size: 12px; font-family: inherit;
     }
     .topbar select:focus, .topbar input:focus { outline: none; border-color: #4c8bf5; }
-    .topbar input[type="text"] { width: 180px; }
+    .topbar input[type="text"] { width: 160px; }
     .topbar label { font-size: 11px; color: #8392a7; display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap; }
     .topbar input[type="checkbox"] { accent-color: #4c8bf5; }
-    .topbar input[type="range"] { width: 80px; accent-color: #4c8bf5; }
+    .topbar input[type="range"] { width: 70px; accent-color: #4c8bf5; }
     .topbar__spacer { flex: 1; }
     .topbar a { color: #4c8bf5; font-size: 12px; text-decoration: none; white-space: nowrap; }
     .topbar a:hover { text-decoration: underline; }
+    .topbar__sep { width: 1px; height: 20px; background: #1e293b; }
 
     /* ---- SVG canvas ---- */
     #graph-canvas {
@@ -53,8 +54,8 @@
     #graph-canvas:active { cursor: grabbing; }
 
     /* ---- Edges ---- */
-    .edge { stroke-opacity: 0.15; }
-    .edge--highlighted { stroke-opacity: 0.6; }
+    .edge { stroke-opacity: 0.12; }
+    .edge--highlighted { stroke-opacity: 0.7; }
 
     /* ---- Nodes ---- */
     .node { cursor: pointer; transition: r 0.2s; }
@@ -80,7 +81,7 @@
       box-shadow: 0 12px 40px rgba(0,0,0,0.6);
       pointer-events: none; opacity: 0;
       transition: opacity 0.15s;
-      max-width: 360px; min-width: 240px;
+      max-width: 400px; min-width: 260px;
     }
     .tooltip--visible { opacity: 1; pointer-events: auto; }
     .tooltip__id { font-size: 11px; color: #64748b; font-family: 'JetBrains Mono', monospace; }
@@ -94,14 +95,30 @@
     .tooltip__badge--medium { background: #f5b73120; color: #f5b731; }
     .tooltip__badge--hard { background: #f43f5e20; color: #f43f5e; }
     .tooltip__badge--cat { background: #4c8bf515; color: #4c8bf5; }
-    .tooltip__edges-title { font-size: 11px; color: #64748b; margin: 10px 0 4px; font-weight: 600; }
-    .tooltip__edge-list { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+    .tooltip__concepts { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+    .tooltip__concept-tag {
+      font-size: 9px; font-weight: 600; padding: 2px 7px;
+      border-radius: 99px; background: rgba(99,102,241,0.12); color: #818cf8;
+      cursor: pointer;
+    }
+    .tooltip__concept-tag:hover { background: rgba(99,102,241,0.25); }
+    .tooltip__edges-title { font-size: 11px; color: #64748b; margin: 6px 0 4px; font-weight: 600; }
+    .tooltip__edge-list { list-style: none; padding: 0; max-height: 220px; overflow-y: auto; }
     .tooltip__edge-item {
-      font-size: 11px; padding: 3px 0; display: flex; justify-content: space-between; gap: 8px;
-      border-bottom: 1px solid #1e293b08;
+      font-size: 11px; padding: 3px 0; display: flex; align-items: center; gap: 6px;
+      border-bottom: 1px solid rgba(30,41,59,0.3);
     }
     .tooltip__edge-id { color: #64748b; font-family: 'JetBrains Mono', monospace; min-width: 35px; }
-    .tooltip__edge-reason { color: #8392a7; flex: 1; }
+    .tooltip__edge-type {
+      font-size: 8px; font-weight: 700; padding: 1px 5px; border-radius: 3px;
+      text-transform: uppercase; letter-spacing: 0.03em; min-width: 40px; text-align: center;
+    }
+    .tooltip__edge-type--same_technique { background: rgba(34,211,238,0.15); color: #22d3ee; }
+    .tooltip__edge-type--same_concept { background: rgba(129,140,248,0.15); color: #818cf8; }
+    .tooltip__edge-type--prerequisite { background: rgba(251,191,36,0.15); color: #fbbf24; }
+    .tooltip__edge-type--variant { background: rgba(52,211,153,0.15); color: #34d399; }
+    .tooltip__edge-type--application { background: rgba(244,114,182,0.15); color: #f472b6; }
+    .tooltip__edge-reason { color: #8392a7; flex: 1; font-size: 10px; }
     .tooltip__edge-weight { color: #4c8bf5; font-weight: 600; font-family: 'JetBrains Mono', monospace; min-width: 32px; text-align: right; }
     .tooltip__link {
       display: inline-block; margin-top: 10px; font-size: 11px;
@@ -115,12 +132,60 @@
       background: rgba(16,21,31,0.92); backdrop-filter: blur(8px);
       border: 1px solid #1e293b; border-radius: 10px;
       padding: 12px 14px; font-size: 11px;
+      max-height: calc(100vh - 140px); overflow-y: auto;
     }
     .legend__title { font-weight: 700; color: #8392a7; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; font-size: 10px; }
     .legend__item { display: flex; align-items: center; gap: 6px; padding: 1px 0; color: #94a3b8; cursor: pointer; }
     .legend__item:hover { color: #e2e8f0; }
     .legend__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
     .legend__item--dimmed { opacity: 0.3; }
+    .legend__divider { height: 1px; background: #1e293b; margin: 8px 0; }
+
+    /* ---- Edge type legend ---- */
+    .legend__edge-dot { width: 16px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* ---- Concept panel ---- */
+    .concept-panel {
+      position: fixed; top: 48px; right: 0; bottom: 0; width: 280px; z-index: 90;
+      background: rgba(16,21,31,0.95); backdrop-filter: blur(12px);
+      border-left: 1px solid #1e293b;
+      transform: translateX(100%);
+      transition: transform 0.25s ease;
+      display: flex; flex-direction: column;
+    }
+    .concept-panel--open { transform: translateX(0); }
+    .concept-panel__header {
+      padding: 12px 14px; border-bottom: 1px solid #1e293b;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .concept-panel__title { font-size: 12px; font-weight: 700; color: #e2e8f0; }
+    .concept-panel__close {
+      background: none; border: none; color: #64748b; cursor: pointer;
+      font-size: 16px; line-height: 1; padding: 2px;
+    }
+    .concept-panel__close:hover { color: #e2e8f0; }
+    .concept-panel__search {
+      margin: 8px 12px; padding: 6px 10px;
+      background: #10151f; border: 1px solid #1e293b; border-radius: 6px;
+      color: #e2e8f0; font-size: 12px; font-family: inherit; width: calc(100% - 24px);
+    }
+    .concept-panel__search:focus { outline: none; border-color: #4c8bf5; }
+    .concept-panel__list {
+      flex: 1; overflow-y: auto; padding: 4px 12px 12px;
+    }
+    .concept-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 4px 8px; border-radius: 6px; cursor: pointer;
+      font-size: 11px; color: #94a3b8;
+      transition: background 0.1s;
+    }
+    .concept-item:hover { background: rgba(99,102,241,0.08); color: #e2e8f0; }
+    .concept-item--active { background: rgba(99,102,241,0.15); color: #818cf8; }
+    .concept-item__name { flex: 1; }
+    .concept-item__count {
+      font-size: 10px; font-family: 'JetBrains Mono', monospace;
+      color: #4c8bf5; min-width: 24px; text-align: right;
+    }
   </style>
 </head>
 <body>
@@ -129,12 +194,22 @@
   <span class="topbar__title">Knowledge Graph</span>
   <span class="topbar__stats" id="stats-text">Loading...</span>
   <div class="topbar__spacer"></div>
-  <input type="text" id="search-input" placeholder="Search by ID or title..." />
+  <input type="text" id="search-input" placeholder="Search ID / title..." />
   <select id="filter-category">
     <option value="">All categories</option>
   </select>
+  <select id="filter-edge-type">
+    <option value="">All edge types</option>
+    <option value="same_technique">Same Technique</option>
+    <option value="same_concept">Same Concept</option>
+    <option value="variant">Variant</option>
+    <option value="application">Application</option>
+    <option value="prerequisite">Prerequisite</option>
+  </select>
+  <div class="topbar__sep"></div>
   <label><input type="range" id="weight-slider" min="50" max="95" value="50"> <span id="weight-label">w &ge; 0.50</span></label>
   <label><input type="checkbox" id="show-labels" checked> IDs</label>
+  <label><input type="checkbox" id="show-concepts"> Concepts</label>
   <a href="problems.html">Back to Problems</a>
 </div>
 
@@ -144,6 +219,19 @@
 
 <div class="legend" id="legend">
   <div class="legend__title">Categories</div>
+  <div id="legend-categories"></div>
+  <div class="legend__divider"></div>
+  <div class="legend__title">Edge Types</div>
+  <div id="legend-edge-types"></div>
+</div>
+
+<div class="concept-panel" id="concept-panel">
+  <div class="concept-panel__header">
+    <span class="concept-panel__title">Concepts (128)</span>
+    <button class="concept-panel__close" id="close-concepts">&times;</button>
+  </div>
+  <input type="text" class="concept-panel__search" id="concept-search" placeholder="Search concepts..." />
+  <div class="concept-panel__list" id="concept-list"></div>
 </div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -170,16 +258,34 @@
     'time-series':          '#60a5fa',
   };
 
+  const EDGE_TYPE_COLORS = {
+    'same_technique': '#22d3ee',
+    'same_concept':   '#818cf8',
+    'variant':        '#34d399',
+    'application':    '#f472b6',
+    'prerequisite':   '#fbbf24',
+  };
+  const EDGE_TYPE_LABELS = {
+    'same_technique': 'Same Technique',
+    'same_concept':   'Same Concept',
+    'variant':        'Variant',
+    'application':    'Application',
+    'prerequisite':   'Prerequisite',
+  };
+
   const DIFF_SIZES = { easy: 4, medium: 5.5, hard: 7.5 };
 
   let graphData, problemIndex;
+  let conceptsData = {};
   let nodes = [], links = [];
   let simulation;
   let selectedNode = null;
   let minWeight = 0.50;
   let showLabels = true;
   let filterCat = '';
+  let filterEdgeType = '';
   let highlightedIds = new Set();
+  let activeConcept = null;
 
   // ---- Load data ----
   async function loadData() {
@@ -188,6 +294,7 @@
       fetch('data/problems-index.json').then(r => r.json()),
     ]);
     graphData = graph;
+    conceptsData = graph.concepts || {};
     problemIndex = new Map();
     for (const p of index) {
       problemIndex.set(p.id, p);
@@ -200,22 +307,34 @@
     const nodeSet = new Set();
     const linkArr = [];
 
+    // If a concept is active, restrict to its problems
+    const conceptProblems = activeConcept && conceptsData[activeConcept]
+      ? new Set(conceptsData[activeConcept].problems)
+      : null;
+
     for (const [srcId, edges] of Object.entries(edgeMap)) {
       const src = parseInt(srcId);
       const srcP = problemIndex.get(src);
       if (!srcP) continue;
       if (filterCat && srcP.c !== filterCat) continue;
-      nodeSet.add(src);
+      if (conceptProblems && !conceptProblems.has(src)) continue;
 
       for (const e of edges) {
         if (e.w < minWeight) continue;
+        if (filterEdgeType && e.type !== filterEdgeType) continue;
         const tgtP = problemIndex.get(e.id);
         if (!tgtP) continue;
         if (filterCat && tgtP.c !== filterCat) continue;
+        if (conceptProblems && !conceptProblems.has(e.id)) continue;
+
+        nodeSet.add(src);
         nodeSet.add(e.id);
-        // Deduplicate: only add edge where src < tgt
         if (src < e.id) {
-          linkArr.push({ source: src, target: e.id, weight: e.w, reason: e.r });
+          linkArr.push({
+            source: src, target: e.id, weight: e.w,
+            reason: e.r, edgeType: e.type || 'same_concept',
+            concepts: e.concepts || []
+          });
         }
       }
     }
@@ -243,13 +362,10 @@
     nodeG = g.append('g').attr('class', 'nodes');
     labelG = g.append('g').attr('class', 'labels');
 
-    // Zoom
     const zoom = d3.zoom()
       .scaleExtent([0.1, 8])
       .on('zoom', (e) => g.attr('transform', e.transform));
     svg.call(zoom);
-
-    // Initial zoom to center
     svg.call(zoom.transform, d3.zoomIdentity.translate(width/2, height/2).scale(0.8));
   }
 
@@ -257,23 +373,22 @@
     buildGraph();
 
     // Update stats
+    const conceptCount = Object.keys(conceptsData).length;
     document.getElementById('stats-text').textContent =
-      `${nodes.length} nodes, ${links.length} edges`;
+      `${nodes.length} nodes, ${links.length} edges, ${conceptCount} concepts`;
 
-    // Stop old simulation
     if (simulation) simulation.stop();
 
-    // Clear
     linkG.selectAll('*').remove();
     nodeG.selectAll('*').remove();
     labelG.selectAll('*').remove();
 
-    // Links
+    // Links — colored by edge type
     const linkSel = linkG.selectAll('line')
       .data(links, d => d.source + '-' + d.target)
       .join('line')
       .attr('class', 'edge')
-      .attr('stroke', '#334155')
+      .attr('stroke', d => EDGE_TYPE_COLORS[d.edgeType] || '#334155')
       .attr('stroke-width', d => 0.5 + d.weight * 1.5);
 
     // Nodes
@@ -302,7 +417,9 @@
 
     // Force simulation
     simulation = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(d => d.id).distance(d => 40 + (1 - d.weight) * 80).strength(d => d.weight * 0.3))
+      .force('link', d3.forceLink(links).id(d => d.id)
+        .distance(d => 40 + (1 - d.weight) * 80)
+        .strength(d => d.weight * 0.3))
       .force('charge', d3.forceManyBody().strength(-30).distanceMax(300))
       .force('center', d3.forceCenter(0, 0))
       .force('collision', d3.forceCollide().radius(d => (DIFF_SIZES[d.difficulty] || 5) + 2))
@@ -320,7 +437,6 @@
   const tooltip = document.getElementById('tooltip');
 
   function onNodeHover(event, d) {
-    // Highlight connected edges
     const connectedIds = new Set([d.id]);
     const edges = graphData.edges[String(d.id)] || [];
     edges.forEach(e => connectedIds.add(e.id));
@@ -335,7 +451,10 @@
       .attr('stroke', l => {
         const sId = typeof l.source === 'object' ? l.source.id : l.source;
         const tId = typeof l.target === 'object' ? l.target.id : l.target;
-        return (sId === d.id || tId === d.id) ? (CAT_COLORS[d.category] || '#4c8bf5') : '#334155';
+        if (sId === d.id || tId === d.id) {
+          return EDGE_TYPE_COLORS[l.edgeType] || CAT_COLORS[d.category] || '#4c8bf5';
+        }
+        return EDGE_TYPE_COLORS[l.edgeType] || '#334155';
       });
 
     nodeG.selectAll('circle')
@@ -344,17 +463,28 @@
       .attr('opacity', n => connectedIds.has(n.id) ? 1 : 0.1)
       .classed('node-label--hover', n => n.id === d.id);
 
-    // Show tooltip
-    const p = problemIndex.get(d.id);
-    const edgeList = edges.slice(0, 12).map(e => {
-      const ep = problemIndex.get(e.id);
+    // Collect unique concepts for this problem from its edges
+    const problemConcepts = new Set();
+    edges.forEach(e => { (e.concepts || []).forEach(c => problemConcepts.add(c)); });
+
+    const conceptTags = [...problemConcepts].slice(0, 8).map(c => {
+      const cd = conceptsData[c];
+      const name = cd ? cd.name : c.replace(/-/g, ' ');
+      return `<span class="tooltip__concept-tag" onclick="event.stopPropagation(); window.__selectConcept('${c}')">${name}</span>`;
+    }).join('');
+
+    const edgeList = edges.slice(0, 14).map(e => {
+      const typeColor = EDGE_TYPE_COLORS[e.type] || '#818cf8';
+      const typeLabel = EDGE_TYPE_LABELS[e.type] || e.type || '';
       return `<li class="tooltip__edge-item">
         <span class="tooltip__edge-id">#${e.id}</span>
-        <span class="tooltip__edge-reason">${e.r}</span>
+        <span class="tooltip__edge-type tooltip__edge-type--${e.type || 'same_concept'}">${typeLabel}</span>
+        <span class="tooltip__edge-reason">${e.r || ''}</span>
         <span class="tooltip__edge-weight">${e.w.toFixed(2)}</span>
       </li>`;
     }).join('');
 
+    const p = problemIndex.get(d.id);
     tooltip.innerHTML = `
       <div class="tooltip__id">#${d.id}</div>
       <div class="tooltip__title">${p ? p.t : d.title}</div>
@@ -362,6 +492,7 @@
         <span class="tooltip__badge tooltip__badge--${d.difficulty}">${d.difficulty}</span>
         <span class="tooltip__badge tooltip__badge--cat">${d.category}</span>
       </div>
+      ${conceptTags ? `<div class="tooltip__concepts">${conceptTags}</div>` : ''}
       <div class="tooltip__edges-title">${edges.length} connections:</div>
       <ul class="tooltip__edge-list">${edgeList}</ul>
       <a class="tooltip__link" href="problems.html?id=${d.id}" target="_blank">Open problem &rarr;</a>
@@ -374,7 +505,7 @@
     highlightedIds.clear();
     linkG.selectAll('line')
       .classed('edge--highlighted', false)
-      .attr('stroke', '#334155');
+      .attr('stroke', d => EDGE_TYPE_COLORS[d.edgeType] || '#334155');
     nodeG.selectAll('circle').attr('opacity', 1);
     labelG.selectAll('text').attr('opacity', 1).classed('node-label--hover', false);
 
@@ -399,14 +530,13 @@
   function positionTooltip(event) {
     const x = event.clientX;
     const y = event.clientY;
-    const tw = 360;
+    const tw = 400;
     const left = x + tw + 20 > window.innerWidth ? x - tw - 10 : x + 16;
     const top = Math.min(y, window.innerHeight - 400);
     tooltip.style.left = left + 'px';
     tooltip.style.top = Math.max(52, top) + 'px';
   }
 
-  // Click on background to deselect
   svg.on('click', () => {
     selectedNode = null;
     tooltip.classList.remove('tooltip--visible');
@@ -418,12 +548,74 @@
     if (!event.active) simulation.alphaTarget(0.3).restart();
     d.fx = d.x; d.fy = d.y;
   }
-  function dragging(event, d) {
-    d.fx = event.x; d.fy = event.y;
-  }
+  function dragging(event, d) { d.fx = event.x; d.fy = event.y; }
   function dragEnd(event, d) {
     if (!event.active) simulation.alphaTarget(0);
     d.fx = null; d.fy = null;
+  }
+
+  // ---- Concept panel ----
+  function setupConceptPanel() {
+    const panel = document.getElementById('concept-panel');
+    const list = document.getElementById('concept-list');
+    const searchInput = document.getElementById('concept-search');
+    const closeBtn = document.getElementById('close-concepts');
+    const showCheck = document.getElementById('show-concepts');
+
+    // Sort concepts by problem count descending
+    const sortedConcepts = Object.entries(conceptsData)
+      .map(([slug, data]) => ({ slug, name: data.name, count: data.problems.length, category: data.category }))
+      .sort((a, b) => b.count - a.count);
+
+    // Update header count
+    panel.querySelector('.concept-panel__title').textContent = `Concepts (${sortedConcepts.length})`;
+
+    function renderConceptList(filter) {
+      const q = (filter || '').toLowerCase();
+      const filtered = q ? sortedConcepts.filter(c => c.name.toLowerCase().includes(q) || c.slug.includes(q)) : sortedConcepts;
+      list.innerHTML = filtered.map(c => `
+        <div class="concept-item ${activeConcept === c.slug ? 'concept-item--active' : ''}"
+             data-slug="${c.slug}">
+          <span class="concept-item__name">${c.name}</span>
+          <span class="concept-item__count">${c.count}</span>
+        </div>
+      `).join('');
+
+      list.querySelectorAll('.concept-item').forEach(el => {
+        el.addEventListener('click', () => {
+          const slug = el.dataset.slug;
+          if (activeConcept === slug) {
+            activeConcept = null;
+          } else {
+            activeConcept = slug;
+          }
+          renderConceptList(searchInput.value);
+          render();
+        });
+      });
+    }
+
+    searchInput.addEventListener('input', () => renderConceptList(searchInput.value));
+    closeBtn.addEventListener('click', () => {
+      panel.classList.remove('concept-panel--open');
+      showCheck.checked = false;
+    });
+
+    showCheck.addEventListener('change', () => {
+      panel.classList.toggle('concept-panel--open', showCheck.checked);
+      if (showCheck.checked) renderConceptList(searchInput.value);
+    });
+
+    // Global fn for tooltip concept click
+    window.__selectConcept = (slug) => {
+      activeConcept = activeConcept === slug ? null : slug;
+      showCheck.checked = true;
+      panel.classList.add('concept-panel--open');
+      renderConceptList(searchInput.value);
+      render();
+    };
+
+    renderConceptList('');
   }
 
   // ---- Controls ----
@@ -438,6 +630,13 @@
     });
     catSelect.addEventListener('change', () => {
       filterCat = catSelect.value;
+      render();
+    });
+
+    // Edge type filter
+    const edgeTypeSelect = document.getElementById('filter-edge-type');
+    edgeTypeSelect.addEventListener('change', () => {
+      filterEdgeType = edgeTypeSelect.value;
       render();
     });
 
@@ -476,8 +675,8 @@
       });
     });
 
-    // Legend
-    const legend = document.getElementById('legend');
+    // Category legend
+    const catLegend = document.getElementById('legend-categories');
     const activeCats = new Set(cats);
     cats.forEach(c => {
       const item = document.createElement('div');
@@ -494,7 +693,21 @@
           return (s && activeCats.has(s.category)) && (t && activeCats.has(t.category)) ? 1 : 0.03;
         });
       });
-      legend.appendChild(item);
+      catLegend.appendChild(item);
+    });
+
+    // Edge type legend
+    const edgeLegend = document.getElementById('legend-edge-types');
+    Object.entries(EDGE_TYPE_LABELS).forEach(([type, label]) => {
+      const item = document.createElement('div');
+      item.className = 'legend__item';
+      item.innerHTML = `<span class="legend__edge-dot" style="background:${EDGE_TYPE_COLORS[type]}"></span>${label}`;
+      item.addEventListener('click', () => {
+        filterEdgeType = filterEdgeType === type ? '' : type;
+        edgeTypeSelect.value = filterEdgeType;
+        render();
+      });
+      edgeLegend.appendChild(item);
     });
   }
 
@@ -510,6 +723,7 @@
     await loadData();
     initSVG();
     setupControls();
+    setupConceptPanel();
     render();
   }
 

@@ -1188,7 +1188,7 @@ const Problems = (() => {
   function findSimilar(problem, count) {
     count = count || 5;
 
-    // ---- Try pre-computed similarity graph first ----
+    // ---- Try pre-computed knowledge graph first ----
     if (similarityGraph && similarityGraph.edges) {
       const edges = similarityGraph.edges[String(problem.id)];
       if (edges && edges.length > 0) {
@@ -1197,7 +1197,14 @@ const Problems = (() => {
           if (results.length >= count) break;
           const p = getById(e.id);
           if (p && p.status !== 'duplicate') {
-            results.push({ problem: p, score: e.w, shared: [], reason: e.r || '' });
+            results.push({
+              problem: p,
+              score: e.w,
+              shared: [],
+              reason: e.r || '',
+              edgeType: e.type || 'same_concept',
+              concepts: e.concepts || []
+            });
           }
         }
         if (results.length > 0) return results;
@@ -1361,20 +1368,35 @@ const Problems = (() => {
 
     // Similar problems
     const similar = findSimilar(problem, 5);
+    const EDGE_TYPE_LABELS = {
+      'same_technique': 'Same Technique',
+      'same_concept': 'Same Concept',
+      'prerequisite': 'Prerequisite',
+      'variant': 'Variant',
+      'application': 'Application'
+    };
     const similarHtml = similar.length > 0
       ? `<div class="detail-section detail-section--similar">
           <div class="detail-section__label">Similar Problems</div>
           <div class="similar-problems">
-            ${similar.map(s => `
+            ${similar.map(s => {
+              const typeLabel = EDGE_TYPE_LABELS[s.edgeType] || '';
+              const conceptTags = (s.concepts || []).slice(0, 3).map(c =>
+                `<span class="similar-problem-card__concept">${formatTag(c)}</span>`
+              ).join('');
+              const reasonText = s.reason || s.shared.slice(0, 3).map(t => formatTag(t)).join(', ');
+              return `
               <a class="similar-problem-card" href="problems.html?id=${s.problem.id}" target="_blank">
                 <div class="similar-problem-card__top">
                   <span class="similar-problem-card__id">#${s.problem.id}</span>
+                  ${typeLabel ? `<span class="badge badge--edge-type badge--edge-${s.edgeType} badge--sm">${typeLabel}</span>` : ''}
                   <span class="badge badge--${s.problem.difficulty} badge--sm">${s.problem.difficulty}</span>
                 </div>
                 <div class="similar-problem-card__title">${App.escapeHtml(s.problem.title.length > 60 ? s.problem.title.substring(0, 57) + '...' : s.problem.title)}</div>
-                <div class="similar-problem-card__tags">${s.reason || s.shared.slice(0, 3).map(t => formatTag(t)).join(', ')}</div>
-              </a>
-            `).join('')}
+                <div class="similar-problem-card__reason">${App.escapeHtml(reasonText)}</div>
+                ${conceptTags ? `<div class="similar-problem-card__concepts">${conceptTags}</div>` : ''}
+              </a>`;
+            }).join('')}
           </div>
         </div>`
       : '';

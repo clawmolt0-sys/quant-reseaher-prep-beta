@@ -11,7 +11,7 @@
 const DataLoader = (() => {
   const memCache = {};
   const STORAGE_PREFIX = 'qr-data-';
-  const CACHE_VERSION = 'v6'; // bump to invalidate cache
+  const CACHE_VERSION = 'v7'; // bump to invalidate cache (v7: KG schema upgrade)
 
   // ---- SessionStorage helpers ----
   function storageGet(key) {
