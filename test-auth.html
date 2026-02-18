@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Firebase Auth Debug</title>
+  <title>Firebase Auth Debug v6</title>
   <style>
     body { font-family: monospace; background: #1a1a2e; color: #e0e0e0; padding: 20px; }
-    #log div { padding: 4px 8px; margin: 2px 0; border-radius: 4px; font-size: 13px; }
+    #log div { padding: 4px 8px; margin: 2px 0; border-radius: 4px; font-size: 13px; word-break: break-all; }
     .ok { background: #1a3a2a; color: #4ade80; }
     .err { background: #3a1a1a; color: #f87171; }
     .info { background: #1a2a3a; color: #60a5fa; }
@@ -13,20 +13,19 @@
     .g { background: #4285F4; color: white; }
     .r { background: #ef4444; color: white; }
     .b { background: #3b82f6; color: white; }
-    .y { background: #eab308; color: #1a1a2e; }
+    .gr { background: #22c55e; color: white; }
     h2 { color: #60a5fa; margin-bottom: 4px; }
-    p { color: #888; margin-top: 0; }
+    p { color: #888; margin-top: 0; font-size: 14px; }
   </style>
 </head>
 <body>
-  <h2>Firebase Auth — Full Debug</h2>
-  <p>Tests auth with in-memory persistence (bypasses IndexedDB entirely).</p>
+  <h2>Firebase Auth Debug v6</h2>
+  <p>If popup is blank/stuck, use Redirect instead (it navigates the whole page).</p>
   <div>
-    <button class="g" onclick="tryPopup()">1. Popup Sign-In</button>
-    <button class="g" onclick="tryRedirect()">2. Redirect Sign-In</button>
+    <button class="gr" onclick="tryRedirect()">1. Sign In (Redirect) — RECOMMENDED</button>
+    <button class="g" onclick="tryPopup()">2. Sign In (Popup)</button>
     <button class="b" onclick="testFirestore()">3. Test Firestore</button>
-    <button class="y" onclick="tryPopupDirect()">4. Direct Popup (no persistence)</button>
-    <button class="r" onclick="nukeEverything()">NUKE ALL & Reload</button>
+    <button class="r" onclick="nukeEverything()">NUKE & Reload</button>
   </div>
   <div id="log"></div>
 
@@ -44,7 +43,6 @@
       console.log('[debug]', m);
     }
 
-    // ========== NUKE ==========
     function nukeEverything() {
       log('Nuking all storage...');
       try { localStorage.clear(); } catch(e) {}
@@ -53,29 +51,27 @@
         indexedDB.databases().then(function(dbs) {
           dbs.forEach(function(db) {
             indexedDB.deleteDatabase(db.name);
-            log('Deleted IndexedDB: ' + db.name, 'warn');
+            log('Deleted: ' + db.name, 'warn');
           });
-          log('All storage cleared. Reloading in 1s...', 'ok');
+          log('Done. Reloading...', 'ok');
           setTimeout(function() { location.reload(); }, 1000);
         });
       } else {
-        ['firebaseLocalStorageDb','firestore/[DEFAULT]/qrprep/main','firestore/[DEFAULT]/qrprep',
-         'firebase-heartbeat-database','firebase-installations-database'].forEach(function(n) {
-          indexedDB.deleteDatabase(n);
-        });
-        log('Storage cleared (fallback). Reloading in 1s...', 'ok');
+        log('Reloading...', 'ok');
         setTimeout(function() { location.reload(); }, 1000);
       }
     }
 
-    // ========== INIT ==========
     var auth, db;
 
     (async function() {
-      log('--- Step 1: Init Firebase ---');
+      log('=== Firebase Init ===');
+
+      // Always delete the corrupted auth IndexedDB before init
+      try { indexedDB.deleteDatabase('firebaseLocalStorageDb'); } catch(e) {}
 
       try {
-        if (firebase.apps.length === 0) {
+        if (!firebase.apps.length) {
           firebase.initializeApp({
             apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
             authDomain: "qrprep.firebaseapp.com",
@@ -85,187 +81,130 @@
             appId: "1:269729809695:web:4379017f0e6bec69e7dc2a"
           });
         }
-        log('initializeApp OK (apps=' + firebase.apps.length + ')', 'ok');
+        log('initializeApp OK', 'ok');
       } catch(e) {
-        log('initializeApp FAILED: ' + e.message, 'err');
+        log('initializeApp FAIL: ' + e.message, 'err');
         return;
       }
 
       auth = firebase.auth();
       db = firebase.firestore();
 
-      // Firestore settings
       try {
         db.settings({ experimentalForceLongPolling: true, experimentalAutoDetectLongPolling: false, merge: true });
-        log('Firestore: long-polling ON', 'ok');
-      } catch(e) {
-        log('Firestore settings: ' + e.message, 'warn');
-      }
+        log('Firestore long-polling ON', 'ok');
+      } catch(e) {}
 
-      // ========== KEY FIX: Set persistence to NONE (in-memory only) ==========
-      // This bypasses IndexedDB completely. If onAuthStateChanged was hanging
-      // because of corrupted IndexedDB, this will fix it.
-      log('--- Step 2: Set persistence to NONE (bypass IndexedDB) ---');
+      // CRITICAL: Set persistence to SESSION before anything else.
+      // This makes auth use sessionStorage instead of IndexedDB.
       try {
-        await auth.setPersistence(firebase.auth.Auth.Persistence.NONE);
-        log('setPersistence(NONE) OK — auth will NOT use IndexedDB', 'ok');
+        await auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
+        log('Persistence = SESSION', 'ok');
       } catch(e) {
-        log('setPersistence(NONE) FAILED: ' + e.message, 'err');
+        log('setPersistence error: ' + e.message, 'warn');
       }
 
-      // ========== AUTH STATE ==========
-      log('--- Step 3: Register onAuthStateChanged ---');
-      log('Hostname: ' + window.location.hostname);
-      log('Protocol: ' + window.location.protocol);
-
+      // Register auth state listener AFTER persistence is set
       var t0 = Date.now();
       var authFired = false;
-
       auth.onAuthStateChanged(function(user) {
         authFired = true;
         var ms = Date.now() - t0;
         if (user) {
-          log('onAuthStateChanged [' + ms + 'ms]: SIGNED IN as ' + user.displayName + ' (' + user.email + ')', 'ok');
+          log('AUTH: Signed in as ' + user.displayName + ' (' + user.email + ') [' + ms + 'ms]', 'ok');
+          log('UID: ' + user.uid, 'ok');
         } else {
-          log('onAuthStateChanged [' + ms + 'ms]: NOT signed in (this is CORRECT — it fired!)', 'ok');
+          log('AUTH: Not signed in [' + ms + 'ms] — onAuthStateChanged works!', 'ok');
         }
       });
 
-      // Check redirect result
-      log('--- Step 4: Check getRedirectResult ---');
+      // Check for redirect result (CRITICAL for redirect sign-in)
+      log('Checking for redirect result...');
       try {
         var result = await auth.getRedirectResult();
         if (result && result.user) {
-          log('getRedirectResult: SUCCESS — ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
+          log('REDIRECT SIGN-IN SUCCESS: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
+          log('UID: ' + result.user.uid, 'ok');
         } else {
-          log('getRedirectResult: no redirect result (normal)', 'info');
+          log('No redirect result (normal if not returning from sign-in)', 'info');
         }
       } catch(e) {
-        log('getRedirectResult ERROR: ' + e.code + ' — ' + e.message, 'err');
+        log('getRedirectResult error: ' + e.code + ' — ' + e.message, 'err');
         if (e.code === 'auth/unauthorized-domain') {
-          log('>>> DOMAIN NOT AUTHORIZED! Add "' + window.location.hostname + '" to Firebase Console > Auth > Settings > Authorized Domains', 'err');
+          log('>>> Add "' + window.location.hostname + '" to Firebase Authorized Domains!', 'err');
         }
       }
 
-      // 5s watchdog
+      // 5s check
       setTimeout(function() {
         if (!authFired) {
-          log('=== 5s WATCHDOG: onAuthStateChanged NEVER FIRED ===', 'err');
-          log('Even with persistence=NONE, auth is hanging.', 'err');
-          log('This likely means the Firebase Auth SDK cannot reach its servers.', 'err');
-          log('Possible causes:', 'warn');
-          log('  1. Ad blocker blocking googleapis.com / gstatic.com', 'warn');
-          log('  2. Browser blocking third-party cookies (check Settings > Privacy)', 'warn');
-          log('  3. Network/firewall blocking Firebase endpoints', 'warn');
-          log('  4. Content Security Policy blocking requests', 'warn');
-          // Try to detect if fetch to Firebase works
-          fetch('https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A')
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-              log('Firebase API reachable! Response: ' + JSON.stringify(data).substring(0, 200), 'ok');
-              if (data.authorizedDomains) {
-                log('Authorized domains: ' + data.authorizedDomains.join(', '), 'info');
-                if (data.authorizedDomains.indexOf(window.location.hostname) === -1) {
-                  log('>>> YOUR DOMAIN "' + window.location.hostname + '" IS NOT IN THE LIST! <<<', 'err');
-                  log('>>> Go to Firebase Console > Auth > Settings > Authorized domains and add it! <<<', 'err');
-                } else {
-                  log('Your domain IS authorized.', 'ok');
-                }
-              }
-            })
-            .catch(function(e) {
-              log('Firebase API NOT reachable: ' + e.message, 'err');
-              log('>>> Network is blocking Firebase. Check ad blocker / firewall.', 'err');
-            });
-        } else {
-          log('=== 5s check: onAuthStateChanged fired successfully ===', 'ok');
+          log('=== 5s: onAuthStateChanged still has not fired ===', 'err');
+          log('The auth SDK may be hanging. Try NUKE & Reload.', 'warn');
         }
       }, 5000);
 
-      // Also list IndexedDB databases for diagnosis
+      log('Domain: ' + window.location.hostname + ' | ' + window.location.protocol);
+
       if (indexedDB.databases) {
         indexedDB.databases().then(function(dbs) {
-          log('IndexedDB databases: ' + (dbs.length === 0 ? '(none)' : dbs.map(function(d) { return d.name; }).join(', ')), 'info');
+          log('IndexedDB: ' + (dbs.length === 0 ? 'none' : dbs.map(function(d){ return d.name; }).join(', ')), 'info');
         });
       }
     })();
 
-    // ========== POPUP SIGN-IN (standard) ==========
+    // ========== REDIRECT SIGN-IN (Recommended) ==========
+    // Redirect navigates the whole page to Google, then back.
+    // No popup = no third-party cookie issues.
+    async function tryRedirect() {
+      log('=== Starting Redirect Sign-In ===');
+      log('You will be redirected to Google. After signing in, you will return here.', 'info');
+      log('When you return, look for "REDIRECT SIGN-IN SUCCESS" in the logs above.', 'info');
+      try {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        await auth.signInWithRedirect(provider);
+        // Page navigates away — this line never executes
+      } catch(e) {
+        log('Redirect error: ' + e.code + ' — ' + e.message, 'err');
+        if (e.code === 'auth/unauthorized-domain') {
+          log('Domain "' + window.location.hostname + '" not authorized!', 'err');
+        }
+      }
+    }
+
+    // ========== POPUP SIGN-IN ==========
     async function tryPopup() {
-      log('--- Trying signInWithPopup ---');
+      log('=== Starting Popup Sign-In ===');
+      log('If the popup is blank/white, your browser is blocking third-party cookies.', 'warn');
+      log('Use Redirect instead (button 1).', 'warn');
       try {
         var provider = new firebase.auth.GoogleAuthProvider();
         var result = await auth.signInWithPopup(provider);
         log('POPUP SUCCESS: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
-      } catch(e) {
-        log('POPUP ERROR: ' + e.code + ' — ' + e.message, 'err');
-        if (e.code === 'auth/popup-blocked') log('Browser blocked the popup. Try Redirect instead.', 'warn');
-        if (e.code === 'auth/popup-closed-by-user') log('You closed the popup. Try again.', 'warn');
-        if (e.code === 'auth/unauthorized-domain') log('>>> Add "' + window.location.hostname + '" to Firebase Authorized Domains!', 'err');
-        if (e.code === 'auth/network-request-failed') log('Network error — check internet connection.', 'err');
-      }
-    }
-
-    // ========== REDIRECT SIGN-IN ==========
-    async function tryRedirect() {
-      log('--- Trying signInWithRedirect ---');
-      log('Page will redirect to Google. After sign-in, you will return here.', 'info');
-      try {
-        var provider = new firebase.auth.GoogleAuthProvider();
-        await auth.signInWithRedirect(provider);
-      } catch(e) {
-        log('REDIRECT ERROR: ' + e.code + ' — ' + e.message, 'err');
-        if (e.code === 'auth/unauthorized-domain') log('>>> Add "' + window.location.hostname + '" to Firebase Authorized Domains!', 'err');
-      }
-    }
-
-    // ========== DIRECT POPUP (completely fresh, no Firebase SDK) ==========
-    // This tests if Google OAuth works at all by opening a popup manually
-    function tryPopupDirect() {
-      log('--- Trying Direct Popup (fresh auth instance, no persistence) ---');
-      // Create a completely fresh auth reference and attempt popup
-      var freshAuth = firebase.auth();
-      freshAuth.setPersistence(firebase.auth.Auth.Persistence.NONE).then(function() {
-        var provider = new firebase.auth.GoogleAuthProvider();
-        return freshAuth.signInWithPopup(provider);
-      }).then(function(result) {
-        log('DIRECT POPUP SUCCESS: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
         log('UID: ' + result.user.uid, 'ok');
-        log('Email: ' + result.user.email, 'ok');
-      }).catch(function(e) {
-        log('DIRECT POPUP ERROR: ' + e.code + ' — ' + e.message, 'err');
+      } catch(e) {
+        log('Popup error: ' + e.code + ' — ' + e.message, 'err');
         if (e.code === 'auth/popup-closed-by-user') {
-          log('You closed the popup before completing sign-in. Wait for Google to finish!', 'warn');
+          log('Popup was closed. If it was blank, use Redirect (button 1) instead.', 'warn');
         }
-        if (e.code === 'auth/unauthorized-domain') {
-          log('>>> DOMAIN "' + window.location.hostname + '" NOT AUTHORIZED <<<', 'err');
-          log('Fix: Firebase Console > Auth > Settings > Authorized domains > Add domain', 'err');
-        }
-      });
+      }
     }
 
     // ========== FIRESTORE TEST ==========
     async function testFirestore() {
       var user = auth.currentUser;
-      if (!user) {
-        log('Not signed in — sign in first!', 'err');
-        return;
-      }
-      log('--- Firestore Test (user: ' + user.email + ') ---');
-
+      if (!user) { log('Not signed in — sign in first!', 'err'); return; }
+      log('=== Firestore Test (' + user.email + ') ===');
       try {
         var t1 = Date.now();
         var snap = await Promise.race([
           db.collection('users').doc(user.uid).get(),
           new Promise(function(_, r) { setTimeout(function() { r(new Error('TIMEOUT 10s')); }, 10000); })
         ]);
-        log('READ OK [' + (Date.now()-t1) + 'ms]: ' + (snap.exists ? 'doc exists, xp=' + ((snap.data()||{}).xp||0) : 'doc does not exist'), 'ok');
+        log('READ OK [' + (Date.now()-t1) + 'ms]: ' + (snap.exists ? 'xp=' + ((snap.data()||{}).xp||0) : 'doc not found'), 'ok');
       } catch(e) {
-        log('READ FAIL: ' + (e.code||'') + ' ' + e.message, 'err');
-        if (e.code === 'permission-denied') log('>>> FIRESTORE RULES EXPIRED!', 'err');
+        log('READ FAIL: ' + e.message, 'err');
         return;
       }
-
       try {
         var docRef = db.collection('users').doc(user.uid);
         var t2 = Date.now();
@@ -276,8 +215,7 @@
         await docRef.update({ _test: firebase.firestore.FieldValue.delete() });
         log('WRITE OK [' + (Date.now()-t2) + 'ms]', 'ok');
       } catch(e) {
-        log('WRITE FAIL: ' + (e.code||'') + ' ' + e.message, 'err');
-        if (e.code === 'permission-denied') log('>>> FIRESTORE RULES EXPIRED!', 'err');
+        log('WRITE FAIL: ' + e.message, 'err');
       }
     }
   </script>
