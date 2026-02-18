@@ -154,13 +154,23 @@ const Auth = (() => {
     if (!auth) { renderLoginButton(); return; }
 
     // Show login button IMMEDIATELY — don't wait for onAuthStateChanged.
-    // The auth SDK's onAuthStateChanged can hang forever on some networks.
-    // If the user IS signed in, onAuthStateChanged or getRedirectResult
-    // will fire and upgrade the UI to the signed-in state.
     renderLoginButton();
     authSettled = true;
     authSettledCallbacks.forEach(fn => fn());
     authSettledCallbacks = [];
+
+    // FIX: Set persistence to SESSION to avoid IndexedDB corruption issues.
+    // The default persistence (LOCAL) uses IndexedDB ('firebaseLocalStorageDb').
+    // If that IndexedDB gets corrupted, onAuthStateChanged hangs forever.
+    // SESSION uses sessionStorage instead — survives page refreshes but not
+    // new tabs. Much more reliable on GitHub Pages.
+    auth.setPersistence(firebase.auth.Auth.Persistence.SESSION)
+      .then(() => {
+        console.log('[Auth] Persistence set to SESSION (sessionStorage)');
+      })
+      .catch((err) => {
+        console.warn('[Auth] setPersistence error (non-fatal):', err.message);
+      });
 
     // Register auth state listener — if it fires, update UI
     auth.onAuthStateChanged((user) => {
@@ -251,16 +261,28 @@ const Auth = (() => {
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
-    // Use redirect-based sign-in. Popup-based sign-in fails on GitHub Pages
-    // because the popup at qrprep.firebaseapp.com cannot postMessage back
-    // to alacrity2001.github.io due to cross-origin restrictions.
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
-      await auth.signInWithRedirect(provider);
+      // Use popup sign-in — works cross-origin as long as domain is authorized
+      const result = await auth.signInWithPopup(provider);
+      console.log('[Auth] Google sign-in success:', result.user.displayName);
+      // Explicitly handle the result in case onAuthStateChanged is slow
+      handleAuthStateChanged(result.user);
     } catch (err) {
       console.error('[Auth] Google sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
         showDomainError();
+      } else if (err.code === 'auth/popup-blocked') {
+        // Fallback to redirect if popup is blocked
+        console.log('[Auth] Popup blocked, falling back to redirect...');
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (redirectErr) {
+          console.error('[Auth] Redirect fallback error:', redirectErr);
+        }
+      } else if (err.code === 'auth/popup-closed-by-user') {
+        console.log('[Auth] User closed popup');
       }
     }
   }
@@ -280,11 +302,21 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GithubAuthProvider();
-      await auth.signInWithRedirect(provider);
+      const result = await auth.signInWithPopup(provider);
+      console.log('[Auth] GitHub sign-in success:', result.user.displayName);
+      handleAuthStateChanged(result.user);
     } catch (err) {
       console.error('[Auth] GitHub sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
         showDomainError();
+      } else if (err.code === 'auth/popup-blocked') {
+        console.log('[Auth] Popup blocked, falling back to redirect...');
+        try {
+          const provider = new firebase.auth.GithubAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (redirectErr) {
+          console.error('[Auth] Redirect fallback error:', redirectErr);
+        }
       }
     }
   }
