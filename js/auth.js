@@ -53,12 +53,8 @@ const Auth = (() => {
       if (!db || !currentUser) return;
 
       const testRef = db.collection('users').doc(currentUser.uid);
-      // Try a tiny write to check if rules allow it (with timeout)
-      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('write-test-timeout')), 8000));
-      await Promise.race([
-        testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true }),
-        timeout
-      ]);
+      // Try a tiny write to check if rules allow it
+      await testRef.set({ _lastSeen: new Date().toISOString() }, { merge: true });
       console.log('[Auth] Firestore write test: OK');
     } catch (err) {
       console.error('[Auth] Firestore write test FAILED:', err.code, err.message);
@@ -141,51 +137,48 @@ const Auth = (() => {
 
   // ---- Init ----
   function init() {
-    // Init Firebase (synchronous — no async blocking)
+    // Immediately show a placeholder to prevent empty container flash
+    const container = document.getElementById('auth-container');
+    if (container && !container.innerHTML.trim()) {
+      container.innerHTML = '<div class="nav__auth-loading" style="width:36px;height:36px;border-radius:50%;background:var(--bg-card,#1e1e2e);animation:pulse 1.5s ease-in-out infinite"></div>';
+    }
+
     FirebaseConfig.init();
 
-    if (!FirebaseConfig.isConfigured() || !FirebaseConfig.isInitialized()) {
-      console.log('[Auth] Firebase not configured/initialized, running in local-only mode');
+    if (!FirebaseConfig.isConfigured()) {
+      console.log('[Auth] Firebase not configured, running in local-only mode');
       renderLoginButton();
       return;
     }
 
+    if (!FirebaseConfig.isInitialized()) {
+      console.warn('[Auth] Firebase not initialized yet, retrying...');
+      // Retry after a short delay in case scripts are still loading
+      setTimeout(() => {
+        FirebaseConfig.init();
+        if (FirebaseConfig.isInitialized()) {
+          const auth = FirebaseConfig.getAuth();
+          if (auth) {
+            auth.onAuthStateChanged(handleAuthStateChanged);
+          }
+        } else {
+          console.warn('[Auth] Firebase failed to initialize after retry');
+          renderLoginButton();
+        }
+      }, 1000);
+      return;
+    }
+
     const auth = FirebaseConfig.getAuth();
-    if (!auth) { renderLoginButton(); return; }
+    if (!auth) return;
 
-    // Show login button IMMEDIATELY — don't wait for onAuthStateChanged.
-    renderLoginButton();
-    authSettled = true;
-    authSettledCallbacks.forEach(fn => fn());
-    authSettledCallbacks = [];
+    auth.onAuthStateChanged(handleAuthStateChanged);
 
-    // CRITICAL: Set persistence to SESSION BEFORE registering onAuthStateChanged.
-    // The default LOCAL persistence uses IndexedDB ('firebaseLocalStorageDb').
-    // If that DB is corrupted, onAuthStateChanged hangs forever.
-    // By awaiting setPersistence(SESSION) first, we ensure the auth SDK
-    // uses sessionStorage instead, completely bypassing IndexedDB.
-    auth.setPersistence(firebase.auth.Auth.Persistence.SESSION)
-      .then(() => {
-        console.log('[Auth] Persistence set to SESSION');
-        // NOW register the auth state listener — it will use sessionStorage
-        auth.onAuthStateChanged((user) => {
-          console.log('[Auth] onAuthStateChanged fired:', user ? user.displayName : 'null');
-          handleAuthStateChanged(user);
-        });
-      })
-      .catch((err) => {
-        console.warn('[Auth] setPersistence failed:', err.message, '— registering listener anyway');
-        // Register listener even if setPersistence fails
-        auth.onAuthStateChanged((user) => {
-          console.log('[Auth] onAuthStateChanged fired (fallback):', user ? user.displayName : 'null');
-          handleAuthStateChanged(user);
-        });
-      });
-
-    // Handle redirect-based sign-in (page was redirected to Firebase, now coming back)
+    // Handle redirect-based auth (e.g. on GitHub Pages where popups are blocked)
     auth.getRedirectResult().then((result) => {
       if (result && result.user) {
         console.log('[Auth] Redirect sign-in completed for', result.user.displayName);
+        // onAuthStateChanged will fire, but force a UI update just in case
         handleAuthStateChanged(result.user);
       }
     }).catch((err) => {
@@ -265,17 +258,24 @@ const Auth = (() => {
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
-    // Use REDIRECT sign-in (not popup).
-    // Chrome blocks third-party cookies, which makes the Firebase popup
-    // at qrprep.firebaseapp.com show a blank white page.
-    // Redirect navigates the entire page, avoiding this issue.
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
-      await auth.signInWithRedirect(provider);
+      await auth.signInWithPopup(provider);
     } catch (err) {
-      console.error('[Auth] Google sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
-        showDomainError();
+        console.warn('[Auth] Popup blocked (unauthorized domain), trying redirect...');
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (redirectErr) {
+          console.error('[Auth] Redirect sign in also failed:', redirectErr);
+          showDomainError();
+        }
+      } else if (err.code === 'auth/popup-blocked') {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        await auth.signInWithRedirect(provider);
+      } else if (err.code !== 'auth/popup-closed-by-user') {
+        console.error('[Auth] Sign in error:', err);
       }
     }
   }
@@ -295,11 +295,21 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GithubAuthProvider();
-      await auth.signInWithRedirect(provider);
+      await auth.signInWithPopup(provider);
     } catch (err) {
-      console.error('[Auth] GitHub sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
-        showDomainError();
+        try {
+          const provider = new firebase.auth.GithubAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (redirectErr) {
+          console.error('[Auth] GitHub redirect failed:', redirectErr);
+          showDomainError();
+        }
+      } else if (err.code === 'auth/popup-blocked') {
+        const provider = new firebase.auth.GithubAuthProvider();
+        await auth.signInWithRedirect(provider);
+      } else if (err.code !== 'auth/popup-closed-by-user') {
+        console.error('[Auth] GitHub sign in error:', err);
       }
     }
   }
@@ -354,9 +364,7 @@ const Auth = (() => {
 
     try {
       const docRef = db.collection('users').doc(user.uid);
-      // 10s timeout to prevent hanging forever if Firestore is in broken state
-      const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('loadUserDoc timed out after 10s')), 10000));
-      const doc = await Promise.race([docRef.get(), timeout]);
+      const doc = await docRef.get();
 
       if (doc.exists) {
         userDoc = doc.data();
@@ -542,17 +550,13 @@ const Auth = (() => {
       }
 
       // Persist to Firestore: try update() first (reliable for nested paths),
-      // fall back to set+merge if doc doesn't exist. Timeout after 10s.
-      const withTimeout = (promise, ms) => Promise.race([
-        promise,
-        new Promise((_, rej) => setTimeout(() => rej(new Error('firestore-timeout-' + ms + 'ms')), ms))
-      ]);
+      // fall back to set+merge if doc doesn't exist
       const writeProgress = async () => {
         try {
           if (status) {
-            await withTimeout(docRef.update({ ['progress.' + id]: status }), 10000);
+            await docRef.update({ ['progress.' + id]: status });
           } else {
-            await withTimeout(docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() }), 10000);
+            await docRef.update({ ['progress.' + id]: firebase.firestore.FieldValue.delete() });
           }
           console.log('[Auth] Progress written (update)');
         } catch (err) {
@@ -560,10 +564,10 @@ const Auth = (() => {
             console.log('[Auth] Doc not found, creating with set...');
             const data = { progress: {} };
             if (status) data.progress[id] = status;
-            await withTimeout(docRef.set(data, { merge: true }), 10000);
+            await docRef.set(data, { merge: true });
             console.log('[Auth] Progress written (set+merge)');
           } else {
-            console.error('[Auth] Progress write error:', err.code || '', err.message);
+            console.error('[Auth] Progress write error:', err.code, err.message);
           }
         }
       };

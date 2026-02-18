@@ -28,55 +28,26 @@ const FirebaseConfig = (() => {
   function init() {
     if (initialized) return;
     try {
+      // Check if Firebase SDK is loaded
       if (typeof firebase === 'undefined') {
         console.warn('[FirebaseConfig] Firebase SDK not loaded');
         return;
       }
 
+      // Check if config has been set
       if (config.apiKey === 'YOUR_API_KEY') {
         console.warn('[FirebaseConfig] Firebase not configured. Auth features disabled.');
         return;
       }
 
-      // ALWAYS delete firebaseLocalStorageDb BEFORE Firebase init.
-      // Firebase Auth with LOCAL persistence uses this IndexedDB to store sessions.
-      // If it's corrupted (from old enablePersistence()), onAuthStateChanged hangs forever.
-      // We use SESSION persistence (sessionStorage) instead, so this DB is never needed.
-      // Delete it on EVERY page load to prevent it from causing hangs.
-      try {
-        indexedDB.deleteDatabase('firebaseLocalStorageDb');
-        console.log('[FirebaseConfig] Deleted firebaseLocalStorageDb');
-      } catch (e) { /* ignore */ }
-      // Clean other old Firestore IndexedDB databases (one-time)
-      if (!sessionStorage.getItem('qr-idb-fix-v3')) {
-        try {
-          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep/main');
-          indexedDB.deleteDatabase('firestore/[DEFAULT]/qrprep');
-          indexedDB.deleteDatabase('firebase-heartbeat-database');
-          indexedDB.deleteDatabase('firebase-installations-database');
-        } catch (e) { /* ignore */ }
-        sessionStorage.setItem('qr-idb-fix-v3', '1');
-      }
+      firebase.initializeApp(config);
 
-      // Initialize or get existing app
-      if (!firebase.apps.length) {
-        firebase.initializeApp(config);
-      }
-
-      // Apply Firestore settings — disable autoDetect when forcing long polling
-      try {
-        firebase.firestore().settings({
-          experimentalForceLongPolling: true,
-          experimentalAutoDetectLongPolling: false,
-          merge: true
-        });
-      } catch (settingsErr) {
-        // Already applied or Firestore already accessed
-        console.log('[FirebaseConfig] Firestore settings:', settingsErr.message);
-      }
+      // Note: enablePersistence() was removed because it created IndexedDB
+      // caches that caused "client is offline" errors. Firestore works fine
+      // without it — reads just go to the server directly.
 
       initialized = true;
-      console.log('[FirebaseConfig] Initialized');
+      console.log('[FirebaseConfig] Initialized successfully');
     } catch (err) {
       console.error('[FirebaseConfig] Init error:', err);
     }
