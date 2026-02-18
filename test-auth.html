@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Auth Test</title>
+  <title>Auth Debug</title>
   <style>
     body { font-family: monospace; background: #1a1a2e; color: #e0e0e0; padding: 20px; }
-    #log div { padding: 4px 8px; margin: 2px 0; border-radius: 4px; font-size: 13px; }
+    #log div { padding: 4px 8px; margin: 2px 0; border-radius: 4px; font-size: 13px; word-break: break-all; }
     .ok { background: #1a3a2a; color: #4ade80; }
     .err { background: #3a1a1a; color: #f87171; }
     .info { background: #1a2a3a; color: #60a5fa; }
     .warn { background: #3a2a1a; color: #fbbf24; }
-    button { padding: 12px 24px; margin: 6px; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; font-weight: 700; }
+    button { padding: 14px 28px; margin: 8px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: 700; }
     .g { background: #22c55e; color: white; }
     .b { background: #3b82f6; color: white; }
     .r { background: #ef4444; color: white; }
+    .y { background: #eab308; color: #1a1a2e; }
+    h2 { color: #60a5fa; }
   </style>
 </head>
 <body>
-  <h2 style="color:#60a5fa">Auth Test</h2>
+  <h2>Auth Debug</h2>
   <div>
-    <button class="g" onclick="signIn()">Sign In with Google (Redirect)</button>
+    <button class="g" onclick="doPopup()">Sign In (Popup)</button>
+    <button class="y" onclick="doRedirect()">Sign In (Redirect)</button>
     <button class="b" onclick="testFirestore()">Test Firestore</button>
-    <button class="r" onclick="signOut()">Sign Out</button>
+    <button class="r" onclick="doSignOut()">Sign Out</button>
   </div>
   <div id="log"></div>
 
@@ -34,9 +37,28 @@
       d.className = c || 'info';
       d.textContent = new Date().toLocaleTimeString() + '  ' + m;
       L.appendChild(d);
+      L.scrollTop = L.scrollHeight;
     }
 
-    // Init — same as the real app's firebase-config.js
+    // Save logs to sessionStorage so they survive redirect
+    function saveLog(m, c) {
+      var logs = JSON.parse(sessionStorage.getItem('auth-debug-logs') || '[]');
+      logs.push({ m: m, c: c, t: new Date().toLocaleTimeString() });
+      sessionStorage.setItem('auth-debug-logs', JSON.stringify(logs));
+      log(m, c);
+    }
+
+    // Restore logs from before redirect
+    var prevLogs = JSON.parse(sessionStorage.getItem('auth-debug-logs') || '[]');
+    if (prevLogs.length > 0) {
+      log('=== Logs from before redirect ===', 'warn');
+      prevLogs.forEach(function(entry) { log(entry.t + '  ' + entry.m, entry.c); });
+      log('=== Back from redirect ===', 'warn');
+      sessionStorage.removeItem('auth-debug-logs');
+    }
+
+    // Init
+    log('Initializing Firebase...');
     firebase.initializeApp({
       apiKey: "AIzaSyDGlaIXU9u0RwWoepLR45hJGlpIOREbQ1A",
       authDomain: "qrprep.firebaseapp.com",
@@ -47,45 +69,83 @@
     });
     var auth = firebase.auth();
     var db = firebase.firestore();
-    log('Firebase initialized', 'ok');
+    log('Firebase init OK', 'ok');
 
     // Auth state
     auth.onAuthStateChanged(function(user) {
       if (user) {
-        log('Signed in: ' + user.displayName + ' (' + user.email + ')', 'ok');
+        log('AUTH: Signed in as ' + user.displayName + ' (' + user.email + ')', 'ok');
+        log('UID: ' + user.uid, 'ok');
       } else {
-        log('Not signed in', 'warn');
+        log('AUTH: Not signed in (onAuthStateChanged works)', 'info');
       }
     });
 
-    // Check redirect result
+    // Redirect result
     auth.getRedirectResult().then(function(result) {
       if (result && result.user) {
-        log('Redirect sign-in success: ' + result.user.displayName, 'ok');
+        log('REDIRECT RESULT: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
+      } else {
+        log('No pending redirect result', 'info');
       }
     }).catch(function(e) {
       log('getRedirectResult error: ' + e.code + ' — ' + e.message, 'err');
     });
 
-    function signIn() {
-      var provider = new firebase.auth.GoogleAuthProvider();
-      auth.signInWithRedirect(provider);
+    log('Browser: ' + (/Chrome/.test(navigator.userAgent) ? 'Chrome' : /Edg/.test(navigator.userAgent) ? 'Edge' : navigator.userAgent.split(' ').pop()));
+    log('Domain: ' + window.location.hostname);
+
+    // ---- Popup Sign-In ----
+    // Per Firebase docs, signInWithPopup is the recommended fix for
+    // browsers blocking third-party cookies. The popup uses postMessage
+    // (not cookies) to return the result.
+    async function doPopup() {
+      log('Starting signInWithPopup...', 'info');
+      try {
+        var provider = new firebase.auth.GoogleAuthProvider();
+        var result = await auth.signInWithPopup(provider);
+        log('POPUP SUCCESS: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
+        log('UID: ' + result.user.uid, 'ok');
+      } catch(e) {
+        log('POPUP ERROR: ' + e.code + ' — ' + e.message, 'err');
+        if (e.code === 'auth/popup-closed-by-user') {
+          log('Popup was closed. IMPORTANT: Wait for Google sign-in to complete in the popup!', 'warn');
+          log('If the popup was blank/white, it may be a browser extension blocking it.', 'warn');
+        }
+        if (e.code === 'auth/unauthorized-domain') {
+          log('Domain not authorized! Add ' + window.location.hostname + ' to Firebase console.', 'err');
+        }
+        if (e.code === 'auth/popup-blocked') {
+          log('Popup was blocked by browser. Try the Redirect button instead.', 'warn');
+        }
+      }
     }
 
-    function signOut() {
+    // ---- Redirect Sign-In ----
+    function doRedirect() {
+      saveLog('Starting signInWithRedirect...', 'info');
+      saveLog('Navigating to Google... check logs when you return.', 'info');
+      var provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithRedirect(provider).catch(function(e) {
+        log('signInWithRedirect error: ' + e.code + ' — ' + e.message, 'err');
+      });
+    }
+
+    function doSignOut() {
       auth.signOut().then(function() { log('Signed out', 'ok'); });
     }
 
     async function testFirestore() {
-      if (!auth.currentUser) { log('Sign in first', 'err'); return; }
+      if (!auth.currentUser) { log('Sign in first!', 'err'); return; }
+      log('Testing Firestore for ' + auth.currentUser.email + '...');
       try {
         var snap = await db.collection('users').doc(auth.currentUser.uid).get();
-        log('Read OK: ' + (snap.exists ? 'xp=' + (snap.data().xp||0) : 'no doc'), 'ok');
-        await db.collection('users').doc(auth.currentUser.uid).set({_test: Date.now()}, {merge:true});
-        await db.collection('users').doc(auth.currentUser.uid).update({_test: firebase.firestore.FieldValue.delete()});
-        log('Write OK', 'ok');
+        log('READ: ' + (snap.exists ? 'doc exists, xp=' + ((snap.data()||{}).xp||0) : 'no doc yet'), 'ok');
+        await db.collection('users').doc(auth.currentUser.uid).set({ _test: Date.now() }, { merge: true });
+        await db.collection('users').doc(auth.currentUser.uid).update({ _test: firebase.firestore.FieldValue.delete() });
+        log('WRITE: OK', 'ok');
       } catch(e) {
-        log('Firestore error: ' + (e.code||'') + ' ' + e.message, 'err');
+        log('FIRESTORE ERROR: ' + (e.code||'') + ' ' + e.message, 'err');
       }
     }
   </script>

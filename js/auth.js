@@ -258,16 +258,28 @@ const Auth = (() => {
     const auth = FirebaseConfig.getAuth();
     if (!auth) return;
 
-    // Use redirect (not popup). Chrome blocks third-party cookies which
-    // makes the popup at qrprep.firebaseapp.com show blank white.
-    // Redirect navigates the full page so no cross-origin cookie issues.
+    // Per Firebase docs, signInWithPopup is the recommended method when
+    // authDomain differs from hosting domain (GitHub Pages case).
+    // signInWithRedirect fails because Chrome blocks third-party cookies
+    // needed by the cross-origin iframe. Popup uses postMessage instead.
     try {
       const provider = new firebase.auth.GoogleAuthProvider();
-      await auth.signInWithRedirect(provider);
+      const result = await auth.signInWithPopup(provider);
+      if (result && result.user) {
+        handleAuthStateChanged(result.user);
+      }
     } catch (err) {
       console.error('[Auth] Google sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
         showDomainError();
+      } else if (err.code === 'auth/popup-blocked') {
+        // Fallback: try redirect as last resort
+        try {
+          const provider = new firebase.auth.GoogleAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (e) { console.error('[Auth] Redirect fallback also failed:', e); }
+      } else if (err.code !== 'auth/popup-closed-by-user') {
+        console.error('[Auth] Sign in error:', err);
       }
     }
   }
@@ -287,11 +299,21 @@ const Auth = (() => {
 
     try {
       const provider = new firebase.auth.GithubAuthProvider();
-      await auth.signInWithRedirect(provider);
+      const result = await auth.signInWithPopup(provider);
+      if (result && result.user) {
+        handleAuthStateChanged(result.user);
+      }
     } catch (err) {
       console.error('[Auth] GitHub sign-in error:', err.code, err.message);
       if (err.code === 'auth/unauthorized-domain') {
         showDomainError();
+      } else if (err.code === 'auth/popup-blocked') {
+        try {
+          const provider = new firebase.auth.GithubAuthProvider();
+          await auth.signInWithRedirect(provider);
+        } catch (e) { console.error('[Auth] Redirect fallback also failed:', e); }
+      } else if (err.code !== 'auth/popup-closed-by-user') {
+        console.error('[Auth] GitHub sign in error:', err);
       }
     }
   }
