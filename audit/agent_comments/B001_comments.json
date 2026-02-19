@@ -1,0 +1,665 @@
+[
+  {
+    "id": 1251,
+    "title": "Shuffled Unions",
+    "suggestion_title": "Standardize title and specification for 'Shuffled Unions'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2350,
+    "title": "Square Divisor",
+    "suggestion_title": "Standardize title and specification for 'Square Divisor'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1525,
+    "title": "Circle Triad Tango",
+    "suggestion_title": "Standardize title and specification for 'Circle Triad Tango'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2265,
+    "title": "7 Below I",
+    "suggestion_title": "Standardize title and specification for '7 Below I'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2491
+    ]
+  },
+  {
+    "id": 1219,
+    "title": "Card Flip Gambit",
+    "suggestion_title": "Standardize title and specification for 'Card Flip Gambit'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 318,
+    "title": "Stopping Game Avoiding Perfect Squares",
+    "suggestion_title": "Standardize title and specification for 'Stopping Game Avoiding Perfect Squares'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Define a clear subproblem state and explain why it is sufficient to represent progress. Derive the transition or update rule from first principles, then prove correctness using induction or an exchange argument. Provide time and space complexity with the dominant term and discuss implementation details needed for edge cases. End with a small worked example to make the method intuitive.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2053,
+    "title": "Miami Hurricanes",
+    "suggestion_title": "Standardize title and specification for 'Miami Hurricanes'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1109,
+    "title": "Orderly Coin Dance",
+    "suggestion_title": "Standardize title and specification for 'Orderly Coin Dance'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2121,
+    "title": "Different Intersection I",
+    "suggestion_title": "Standardize title and specification for 'Different Intersection I'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1324,
+    "title": "Bus Roulette Wait",
+    "suggestion_title": "Standardize title and specification for 'Bus Roulette Wait'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1045,
+    "title": "Probability of Negative Return for Asset",
+    "suggestion_title": "Standardize title and specification for 'Probability of Negative Return for Asset'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      488
+    ]
+  },
+  {
+    "id": 302,
+    "title": "Mixture normals and symmetries",
+    "suggestion_title": "Standardize title and specification for 'Mixture normals and symmetries'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1326,
+    "title": "Five Face Quest",
+    "suggestion_title": "Standardize title and specification for 'Five Face Quest'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2330,
+    "title": "Recursive Root",
+    "suggestion_title": "Standardize title and specification for 'Recursive Root'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Begin with explicit notation and restate the objective in mathematical form. Break the problem into lemmas or cases, prove each step, and combine them into the final result. Include a short correctness argument and complexity estimate where relevant. Conclude with edge-case checks to ensure the method is robust.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 614,
+    "title": "Statistics: Stationarity and Residual Autocorrelation",
+    "suggestion_title": "Standardize title and specification for 'Statistics: Stationarity and Residual Autocorrelation'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      6
+    ]
+  },
+  {
+    "id": 2517,
+    "title": "I Flip A Coin Three Times, And",
+    "suggestion_title": "Standardize title and specification for 'I Flip A Coin Three Times, And'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1669,
+    "title": "Handshake Hoopla",
+    "suggestion_title": "Standardize title and specification for 'Handshake Hoopla'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2095,
+    "title": "Consecutive Heads III",
+    "suggestion_title": "Standardize title and specification for 'Consecutive Heads III'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1865
+    ]
+  },
+  {
+    "id": 1225,
+    "title": "Light Isolation Puzzle",
+    "suggestion_title": "Standardize title and specification for 'Light Isolation Puzzle'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 658,
+    "title": "C++: Pointer and Const Correctness",
+    "suggestion_title": "Standardize title and specification for 'C++: Pointer and Const Correctness'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 772,
+    "title": "Expected Ratio of Independent Uniforms",
+    "suggestion_title": "Standardize title and specification for 'Expected Ratio of Independent Uniforms'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      276
+    ]
+  },
+  {
+    "id": 436,
+    "title": "Probability: Bounds on P(B)",
+    "suggestion_title": "Standardize title and specification for 'Probability: Bounds on P(B)'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1171,
+    "title": "Hallway Toggle Tango",
+    "suggestion_title": "Standardize title and specification for 'Hallway Toggle Tango'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1374,
+    "title": "Dicey Dilemma",
+    "suggestion_title": "Standardize title and specification for 'Dicey Dilemma'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2724,
+    "title": "If You Roll Two Dice, What Is",
+    "suggestion_title": "Standardize title and specification for 'If You Roll Two Dice, What Is'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 388,
+    "title": "Coding: String multiplication",
+    "suggestion_title": "Standardize title and specification for 'Coding: String multiplication'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Define a clear subproblem state and explain why it is sufficient to represent progress. Derive the transition or update rule from first principles, then prove correctness using induction or an exchange argument. Provide time and space complexity with the dominant term and discuss implementation details needed for edge cases. End with a small worked example to make the method intuitive.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1498,
+    "title": "Digit Treasure Sum",
+    "suggestion_title": "Standardize title and specification for 'Digit Treasure Sum'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 368,
+    "title": "Market Making on Country Altitude",
+    "suggestion_title": "Standardize title and specification for 'Market Making on Country Altitude'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2491,
+    "title": "Additive Dice I",
+    "suggestion_title": "Standardize title and specification for 'Additive Dice I'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2265
+    ]
+  },
+  {
+    "id": 2297,
+    "title": "Partial Sum",
+    "suggestion_title": "Standardize title and specification for 'Partial Sum'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2350
+    ]
+  },
+  {
+    "id": 566,
+    "title": "Case Study: MVO from a Linear Algebra Perspective",
+    "suggestion_title": "Standardize title and specification for 'Case Study: MVO from a Linear Algebra Perspective'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      422
+    ]
+  },
+  {
+    "id": 2783,
+    "title": "Q1 How Many Ways Are There To",
+    "suggestion_title": "Standardize title and specification for 'Q1 How Many Ways Are There To'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1085,
+    "title": "Second Round: Fixed Income Analyst",
+    "suggestion_title": "Standardize title and specification for 'Second Round: Fixed Income Analyst'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2793,
+    "title": "Hr : Where Do You See Yourself",
+    "suggestion_title": "Standardize title and specification for 'Hr : Where Do You See Yourself'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1708,
+    "title": "Samuel Flips",
+    "suggestion_title": "Standardize title and specification for 'Samuel Flips'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 276,
+    "title": "You meet a random person (heights i",
+    "suggestion_title": "Standardize title and specification for 'You meet a random person (heights i'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      772
+    ]
+  },
+  {
+    "id": 1789,
+    "title": "Equal Rations",
+    "suggestion_title": "Standardize title and specification for 'Equal Rations'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Begin with explicit notation and restate the objective in mathematical form. Break the problem into lemmas or cases, prove each step, and combine them into the final result. Include a short correctness argument and complexity estimate where relevant. Conclude with edge-case checks to ensure the method is robust.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2318,
+    "title": "Volatile Stock",
+    "suggestion_title": "Standardize title and specification for 'Volatile Stock'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Begin with explicit notation and restate the objective in mathematical form. Break the problem into lemmas or cases, prove each step, and combine them into the final result. Include a short correctness argument and complexity estimate where relevant. Conclude with edge-case checks to ensure the method is robust.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 422,
+    "title": "Portfolio theory: Fund allocation",
+    "suggestion_title": "Standardize title and specification for 'Portfolio theory: Fund allocation'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      488,
+      566,
+      885
+    ]
+  },
+  {
+    "id": 994,
+    "title": "Minimum Values in a Data Stream with a Sliding Window",
+    "suggestion_title": "Standardize title and specification for 'Minimum Values in a Data Stream with a Sliding Window'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 885,
+    "title": "Finance / Trading Questions",
+    "suggestion_title": "Standardize title and specification for 'Finance / Trading Questions'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      488,
+      422
+    ]
+  },
+  {
+    "id": 1173,
+    "title": "Endless Square Roots",
+    "suggestion_title": "Standardize title and specification for 'Endless Square Roots'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 540,
+    "title": "Regularization and Prediction Horizon",
+    "suggestion_title": "Standardize title and specification for 'Regularization and Prediction Horizon'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Begin with explicit notation and restate the objective in mathematical form. Break the problem into lemmas or cases, prove each step, and combine them into the final result. Include a short correctness argument and complexity estimate where relevant. Conclude with edge-case checks to ensure the method is robust.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 218,
+    "title": "PCA Derivation: First Principal Component",
+    "suggestion_title": "Standardize title and specification for 'PCA Derivation: First Principal Component'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 4,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1309,
+    "title": "Dice Logic Dance",
+    "suggestion_title": "Standardize title and specification for 'Dice Logic Dance'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 512,
+    "title": "Median Regression",
+    "suggestion_title": "Standardize title and specification for 'Median Regression'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1285,
+    "title": "Uneven Odds",
+    "suggestion_title": "Standardize title and specification for 'Uneven Odds'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1558,
+    "title": "Chop Chance",
+    "suggestion_title": "Standardize title and specification for 'Chop Chance'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 649,
+    "title": "Coding: Reverse Polish to Infix Notation",
+    "suggestion_title": "Standardize title and specification for 'Coding: Reverse Polish to Infix Notation'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Define a clear subproblem state and explain why it is sufficient to represent progress. Derive the transition or update rule from first principles, then prove correctness using induction or an exchange argument. Provide time and space complexity with the dominant term and discuss implementation details needed for edge cases. End with a small worked example to make the method intuitive.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1417,
+    "title": "Coin Toss Puzzle",
+    "suggestion_title": "Standardize title and specification for 'Coin Toss Puzzle'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 6,
+    "title": "Coin Flips Until Two Consecutive Heads",
+    "suggestion_title": "Standardize title and specification for 'Coin Flips Until Two Consecutive Heads'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 4,
+    "duplicate_candidates": [
+      614
+    ]
+  },
+  {
+    "id": 1227,
+    "title": "Roll Dollar Deeds",
+    "suggestion_title": "Standardize title and specification for 'Roll Dollar Deeds'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2523,
+    "title": "3X3x3 Cube; Paint The Outside",
+    "suggestion_title": "Standardize title and specification for '3X3x3 Cube; Paint The Outside'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 288,
+    "title": "Find critical (bridge) edges in an undirected graph",
+    "suggestion_title": "Standardize title and specification for 'Find critical (bridge) edges in an undirected graph'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Define a clear subproblem state and explain why it is sufficient to represent progress. Derive the transition or update rule from first principles, then prove correctness using induction or an exchange argument. Provide time and space complexity with the dominant term and discuss implementation details needed for edge cases. End with a small worked example to make the method intuitive.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2808,
+    "title": "Explain Efficient Frontier And The Implication On",
+    "suggestion_title": "Standardize title and specification for 'Explain Efficient Frontier And The Implication On'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Begin with explicit notation and restate the objective in mathematical form. Break the problem into lemmas or cases, prove each step, and combine them into the final result. Include a short correctness argument and complexity estimate where relevant. Conclude with edge-case checks to ensure the method is robust.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1495,
+    "title": "Flip Fate Fortune",
+    "suggestion_title": "Standardize title and specification for 'Flip Fate Fortune'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1806,
+    "title": "Random Subsets",
+    "suggestion_title": "Standardize title and specification for 'Random Subsets'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1965,
+    "title": "Normal Practice",
+    "suggestion_title": "Standardize title and specification for 'Normal Practice'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1220,
+    "title": "Dice Duel Choice",
+    "suggestion_title": "Standardize title and specification for 'Dice Duel Choice'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 309,
+    "title": "Choose a subset of $\\{1,\\dots,30\\}$ with pairwise coprime elements to maximize the sum",
+    "suggestion_title": "Standardize title and specification for 'Choose a subset of $\\{1,\\dots,30\\}$ with pairwise coprime elements to maximize the sum'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1925,
+    "title": "Stoplight Switch I",
+    "suggestion_title": "Standardize title and specification for 'Stoplight Switch I'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2169,
+    "title": "Zeta Zonk IX",
+    "suggestion_title": "Standardize title and specification for 'Zeta Zonk IX'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Rewrite the condition in terms of prime-factor exponents and divisibility constraints. Identify invariants (parity, residue classes, valuation bounds) and separate necessary from sufficient conditions. Construct the target object using those conditions, then prove correctness in both directions. If optimization is required, justify minimality or maximality with a monotonic argument.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1304,
+    "title": "Fraction Fibbing",
+    "suggestion_title": "Standardize title and specification for 'Fraction Fibbing'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1559,
+    "title": "King Flip Countdown",
+    "suggestion_title": "Standardize title and specification for 'King Flip Countdown'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1323,
+    "title": "Triple Ten Toss",
+    "suggestion_title": "Standardize title and specification for 'Triple Ten Toss'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 1571,
+    "title": "Triad Transport Twist",
+    "suggestion_title": "Standardize title and specification for 'Triad Transport Twist'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2061,
+    "title": "Acceptance-Rejection Sampling",
+    "suggestion_title": "Standardize title and specification for 'Acceptance-Rejection Sampling'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 488,
+    "title": "Annualizing Sharpe Ratio",
+    "suggestion_title": "Standardize title and specification for 'Annualizing Sharpe Ratio'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Start by defining the random experiment precisely and introducing state variables for the minimal information needed to continue the process. Write equations for each state using conditional expectation or conditional probability, then solve the resulting linear system. State boundary conditions clearly, simplify algebraically, and verify that probabilities remain in [0,1] (or expectations are finite and nonnegative). Conclude with a short interpretation of why the computed value is reasonable.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      422,
+      1045,
+      885
+    ]
+  },
+  {
+    "id": 1865,
+    "title": "4Head I",
+    "suggestion_title": "Standardize title and specification for '4Head I'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Describe the counting universe and the exact event/set being counted. Choose one counting strategy (direct counting, complementary counting, or bijection) and justify why it avoids double counting. Carry out the algebra carefully and simplify to a closed form when possible. Validate with a small instance to confirm the formula.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2095
+    ]
+  },
+  {
+    "id": 2157,
+    "title": "Dart Covariance",
+    "suggestion_title": "Standardize title and specification for 'Dart Covariance'",
+    "suggestion_description": "Rewrite the prompt with a formal problem specification: define all inputs, constraints, and random/structural assumptions in precise mathematical language; state exactly what quantity must be computed or proved; and include the required output format (numeric value, closed form, or algorithmic decision). Add one fully worked example with intermediate steps so the expected interpretation is unambiguous. Replace informal wording with explicit definitions of events, states, and stopping conditions.",
+    "suggestion_solution": "Use a coordinate or vector model so each object in the statement has explicit variables. Translate geometric constraints into equations (length, angle, parallelism, tangency, or area relations), then reduce to a solvable system. Check special cases and domain restrictions to avoid extraneous solutions. Finish by mapping the computed quantity back to the original geometric language.",
+    "urgency_1_10": 5,
+    "duplicate_candidates": []
+  }
+]

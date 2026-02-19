@@ -1,0 +1,1015 @@
+[
+  {
+    "id": 2753,
+    "title": "Write A Querry Based On The Schema",
+    "suggestion_title": "Write a Query Based on a Given Schema",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Write a Query Based on a Given Schema'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'SQL Queries: With and Without Joins Given Employees(id, name, dept_id) and Departments(id, dept_name) : Using INNER JOIN: sql SELECT e.name, d.dept_name FROM Employees e INNER JOIN Departments d ON e.dept_id = d.id; With...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2837
+    ]
+  },
+  {
+    "id": 2837,
+    "title": "Q: What Is The Sum Of Numbers",
+    "suggestion_title": "Sum of Integers from 1 to 100 Excluding Digits 7 and 8",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Sum of Integers from 1 to 100 Excluding Digits 7 and 8'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Find the sum of numbers from 1 to 100 that do NOT contain the digit 7 or 8. Valid digits for each position are \\{0,1,2,3,4,5,6,9\\} (8 choices per digit, excluding 7 and 8). Method: Compute \\sum_{k=1}^{100} k \\s...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2746,
+      889,
+      824,
+      2826,
+      306
+    ]
+  },
+  {
+    "id": 306,
+    "title": "Weekend Rain Probability with Dependence",
+    "suggestion_title": "Weekend Rain Probability with Dependence",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Weekend Rain Probability with Dependence'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Weekend rain probability under dependence. Let S = Saturday rain ( P(S)=0.2 ), U = Sunday rain ( P(U)=0.3 ). (i) Independent: P(\\text{at least one}) = 1 P(S^c)P(U^c) = 1 0.8 \\times 0.7 = 0.44 (ii) Saturday rain...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1759,
+      1790,
+      1805,
+      2592,
+      2837
+    ]
+  },
+  {
+    "id": 824,
+    "title": "Drawing Balls Until Two Remain",
+    "suggestion_title": "Drawing Balls Until Two Remain",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Drawing Balls Until Two Remain'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: The last two balls are a uniformly random pair from the original 15. Solution: With 7 red and 8 blue balls (15 total), the two remaining are a uniform random subset of size 2. Total pairs: \\binom{15}{2} = 105 ....') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      728,
+      568,
+      235,
+      768,
+      8
+    ]
+  },
+  {
+    "id": 2722,
+    "title": "Mostly Cv And Project-Based Questions, However They",
+    "suggestion_title": "CV and Project-Based Interview Questions",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('CV and Project-Based Interview Questions'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: This is a behavioral/fit question. Key strategies: 1. Use STAR format: Situation, Task, Action, Result for each project. 2. Be specific and technical: Describe exact data, models, validation, and results. 3. Qu...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2694,
+      2595
+    ]
+  },
+  {
+    "id": 1790,
+    "title": "Last Marble Standing",
+    "suggestion_title": "Last Marble Standing",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Last Marble Standing'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'We can model the process of drawing marbles without replacement as choosing a uniformly random permutation of all the marbles. Let R , B , and G denote the sets of red, blue, and green marbles. Define \\operatorname{last}...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2540,
+      824,
+      1719,
+      2589,
+      2538
+    ]
+  },
+  {
+    "id": 2536,
+    "title": "Probability of the number is divisible by 2",
+    "suggestion_title": "Probability of the number is divisible by 2",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of the number is divisible by 2'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: The number pad layout: 1 2 3 4 5 6 7 8 9 We press a random number, move to an adjacent number (up/down/left/right, no diagonals), then move again. We form a 3 digit number and ask: what is the probability it's ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2540,
+      2826,
+      889,
+      1087,
+      2693
+    ]
+  },
+  {
+    "id": 2851,
+    "title": "\"Given A Table Of Daily Sales Data",
+    "suggestion_title": "SQL Query on Daily Sales Data",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('SQL Query on Daily Sales Data'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: SQL Query for Top 3 Products by Average Weekly Sales (Past 6 Months): sql WITH weekly_sales AS ( SELECT product_id, DATE_TRUNC('week', sale_date) AS week_start, SUM(sales_amount) AS weekly_total FROM daily_sale...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2611,
+      2826,
+      2823
+    ]
+  },
+  {
+    "id": 2804,
+    "title": "How Do You Pick Hypermareters For Xgboost",
+    "suggestion_title": "How Do You Pick Hyperparameters for XGBoost?",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('How Do You Pick Hyperparameters for XGBoost?'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: XGBoost hyperparameters: learning_rate (0.01 0.3), max_depth (3 10), n_estimators (with early stopping), subsample, colsample_bytree, reg_alpha/lambda. Tune via Bayesian optimization + CV. Transformers: Self at...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2595,
+      2602,
+      2837,
+      2826
+    ]
+  },
+  {
+    "id": 1685,
+    "title": "Ten Floor Building",
+    "suggestion_title": "Ten Floor Building",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Ten Floor Building'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'We can solve this problem through the use of indicator random variables. For a quick recap, indicator random variables are often used to decompose a larger random variable, into smaller, binary constituents. The applicat...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2734,
+      510,
+      533,
+      2813
+    ]
+  },
+  {
+    "id": 803,
+    "title": "Geometry and Probability in a Revolver Game",
+    "suggestion_title": "Geometry and Probability in a Revolver Game",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Geometry and Probability in a Revolver Game'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use constrained least squares for triangle estimation and conditional probability for the revolver. Solution: Triangle: With noisy measurements \\tilde{a}, \\tilde{b}, \\tilde{c} and known perimeter C , minimize (...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      941,
+      1053,
+      35,
+      817,
+      1012
+    ]
+  },
+  {
+    "id": 2834,
+    "title": "Bayes Rule Question About Men/Women And How",
+    "suggestion_title": "Bayes Rule Question About Men/Women And How",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Bayes Rule Question About Men/Women And How'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Bayes' Rule Disease Infection by Gender: Typical setup: Given infection rates differ by gender, find P(\\text{male} \\mid \\text{infected}) . Let: P(M) = proportion of men in population P(F) = 1 P(M) = proportion ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      617
+    ]
+  },
+  {
+    "id": 2746,
+    "title": "What Are The First Three Digits After",
+    "suggestion_title": "First Three Digits After the Decimal Point",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('First Three Digits After the Decimal Point'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution We need the first three digits after the decimal of 0.99^{100} . Method: \\ln(0.99) = \\ln(1 0.01) \\approx 0.01 0.00005 \\approx 0.010050 0.99^{100} = e^{100\\ln(0.99)} = e^{ 1.00503...} Since e^{ 1} \\approx 0.36788...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1842,
+      2831,
+      1846,
+      1691,
+      1687
+    ]
+  },
+  {
+    "id": 889,
+    "title": "Probability of Choosing Non-Adjacent Numbers",
+    "suggestion_title": "Probability of Choosing Non-Adjacent Numbers",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Choosing Non-Adjacent Numbers'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Count 3 element subsets of \\{1,...,10\\} with no two adjacent, then divide by total subsets. Solution: Total ways to choose 3 from 10: \\binom{10}{3} = 120 . For non adjacent selections, use the complementary cou...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1684,
+      1691,
+      1736,
+      1741,
+      1771
+    ]
+  },
+  {
+    "id": 2826,
+    "title": "Pick Three Numbers Between 1 And 20",
+    "suggestion_title": "Pick Three Numbers Between 1 And 20",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Pick Three Numbers Between 1 And 20'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Pick three distinct numbers from \\{1, 2, \\ldots, 20\\} . What is the probability that one number is the average of the other two? If one number is the average of the other two, say b = \\frac{a+c}{2} , then a + c...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2760,
+      2540,
+      2536,
+      1087,
+      1759
+    ]
+  },
+  {
+    "id": 2829,
+    "title": "Find A Range [N,2N] Such That It",
+    "suggestion_title": "Find an Integer N such that [N, 2N] Meets a Divisibility Condition",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Find an Integer N such that [N, 2N] Meets a Divisibility Condition'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We want to find the smallest positive integer x such that the decimal representation of x^x contains the consecutive digits \"2016\", and x lies in some range [n, 2n] . This is a computational search problem. Key...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2540,
+      2589,
+      2733,
+      1855,
+      2790
+    ]
+  },
+  {
+    "id": 2693,
+    "title": "You And Your Friend Each Have A",
+    "suggestion_title": "You And Your Friend Each Have A",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('You And Your Friend Each Have A'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: You and your friend each draw 3 numbers independently and uniformly from \\{1, 2, \\ldots, 10\\} (with replacement). We want P(\\text{no number in common}) . Method: Consider your 3 numbers as fixed. For each of yo...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1759,
+      2826,
+      2540,
+      1719,
+      2694
+    ]
+  },
+  {
+    "id": 2636,
+    "title": "calculate and 15 minutes sequencing exam",
+    "suggestion_title": "Mental-Math and Sequencing Interview Round (15 Minutes)",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Mental-Math and Sequencing Interview Round (15 Minutes)'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Mental Math and Sequencing Exam Preparation 7 Minute Calculation Exam: This tests speed and accuracy in mental arithmetic. Common types: Rapid addition/subtraction of multi digit numbers Multiplication (two digit by two ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      239,
+      319,
+      2837,
+      2839
+    ]
+  },
+  {
+    "id": 1759,
+    "title": "Uniform Quotient",
+    "suggestion_title": "Uniform Quotient",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Uniform Quotient'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'If the quotient of a/b lies in [1,3] , b is at least a/3 and at most a . Thus, we can re write our probability to: P(\\frac{a}3 < b < a) We can substitute any value of a into this to find the general conditional probabili...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1945,
+      2527,
+      2793,
+      568,
+      548
+    ]
+  },
+  {
+    "id": 2592,
+    "title": "Show That The Variance Of The Sum",
+    "suggestion_title": "Show That The Variance Of The Sum",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Show That The Variance Of The Sum'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Proof: Variance of the Sum of Two Independent Random Variables Claim: If X and Y are independent random variables, then \\text{Var}(X + Y) = \\text{Var}(X) + \\text{Var}(Y) . Proof: By definition, \\text{Var}(X + Y) = E[(X+Y...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2591,
+      1941,
+      2840,
+      2192,
+      429
+    ]
+  },
+  {
+    "id": 1805,
+    "title": "Free Sundae",
+    "suggestion_title": "Free Sundae",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Free Sundae'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'The probability, p(n) , of getting a sundae when you are the (n ) th person in line is: p(n) = \\left[1 \\cdot \\frac{364}{365} \\cdot \\frac{363}{365} \\cdots \\frac{365 (n 2)}{365}\\right] \\cdot \\frac{n 1}{365}, \\quad 0 < n \\l...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2540,
+      2589,
+      2628,
+      2687,
+      2694
+    ]
+  },
+  {
+    "id": 1011,
+    "title": "Probability of Adjacent Seating",
+    "suggestion_title": "Probability of Adjacent Seating",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Adjacent Seating'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Count favorable seat assignments where all 3 people are consecutive. Solution: Three people choose from 8 seats. Total ways: \\binom{8}{3} \\times 3! = 56 \\times 6 = 336 (ordered) or \\binom{8}{3} = 56 (unordered ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      247,
+      1000,
+      1684,
+      1722,
+      1744
+    ]
+  },
+  {
+    "id": 1005,
+    "title": "Bet Acceptance Probability",
+    "suggestion_title": "Bet Acceptance Probability",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Bet Acceptance Probability'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: This is a conditional probability problem involving optimal stopping / decision theory. Solution: You have a 10 bet. Your friend offers to double the stakes to 20. You should accept if your probability of winni...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1835,
+      2527,
+      2560,
+      2673,
+      2720
+    ]
+  },
+  {
+    "id": 1013,
+    "title": "Probability of Both Travels Being International",
+    "suggestion_title": "Probability of Both Travels Being International",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Both Travels Being International'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Apply Bayes' theorem / conditional probability. This is a variant of the Boy or Girl paradox. Solution: Assume each trip is independently international with probability p , and trips are equally likely to occur...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1738,
+      1787,
+      1832,
+      1848,
+      2672
+    ]
+  },
+  {
+    "id": 429,
+    "title": "Convergence in Probability vs Almost Sure",
+    "suggestion_title": "Convergence in Probability vs Almost Sure",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Convergence in Probability vs Almost Sure'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Define convergence modes and provide the typewriter counterexample. Solution: (a) Convergence in probability: X_n \\xrightarrow{P} X if for every \\epsilon 0 : \\lim_{n\\to\\infty} P(|X_n X| \\epsilon) = 0 . (b) Almo...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1740,
+      1806,
+      1807,
+      2591,
+      2592
+    ]
+  },
+  {
+    "id": 324,
+    "title": "Pick a random positive integer $n$",
+    "suggestion_title": "Pick a random positive integer $n$",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Pick a random positive integer $n$'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Apply Benford's law to determine P(2^n \\text{ starts with } 1) . 2^n starts with digit d iff the fractional part of \\log_{10}(2^n) = n\\log_{10}2 lies in [\\log_{10}d, \\log_{10}(d+1)) . Since \\log_{10}2 \\approx 0...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1684,
+      1740,
+      1753,
+      1757,
+      2540
+    ]
+  },
+  {
+    "id": 951,
+    "title": "Probability of Subsum Sequence Reaching n",
+    "suggestion_title": "Probability of Subsum Sequence Reaching n",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Subsum Sequence Reaching n'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use generating functions or convolution for Binomial sums. Solution: Each X_i \\sim B(2, 0.5) , so X_i \\in \\{0, 1, 2\\} with P(0) = 1/4 , P(1) = 1/2 , P(2) = 1/4 . The sum S_k = \\sum_{i=1}^k X_i has PGF (1/4 + z/...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1773,
+      1782,
+      1795,
+      1834,
+      2668
+    ]
+  },
+  {
+    "id": 319,
+    "title": "Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes",
+    "suggestion_title": "Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: For everyone to meet, the range of arrival times must be at most 15 minutes. Each of N people arrives at T_i \\sim U[0,60] (minutes after 9 AM) and waits 15 min. Everyone meets iff \\max(T_i) \\min(T_i) \\le 15 . C...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      239,
+      1738,
+      2636
+    ]
+  },
+  {
+    "id": 864,
+    "title": "Probability of Winning a Tennis Game",
+    "suggestion_title": "Probability of Winning a Tennis Game",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Winning a Tennis Game'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Model a best of N sets tennis match with given game win probability. Solution: With game win probability p = 0.75 for you, a tennis match is best of 3 or best of 5 sets. Assuming best of 3 sets where each set i...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1687,
+      1730,
+      1746,
+      1752,
+      1755
+    ]
+  },
+  {
+    "id": 866,
+    "title": "Probability of a Professor Getting Wet",
+    "suggestion_title": "Probability of a Professor Getting Wet",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of a Professor Getting Wet'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use a Markov chain with states representing umbrella counts at each location. Solution: With n umbrellas total split between home and office, state = (umbrellas at current location). The professor gets wet when...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1690,
+      1718,
+      2567,
+      2780
+    ]
+  },
+  {
+    "id": 436,
+    "title": "Probability: Bounds on P(B)",
+    "suggestion_title": "Probability: Bounds on P(B)",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability: Bounds on P(B)'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use basic probability inequalities to bound P(B) . Solution: We know P(A \\cap B) \\le P(B) (since A \\cap B \\subseteq B ), so: (B) \\ge P(A \\cap B) Also, P(B) \\le 1 always. For a tighter upper bound, by inclusion ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      928,
+      1075,
+      718,
+      705,
+      617
+    ]
+  },
+  {
+    "id": 1087,
+    "title": "Random Integer Divisibility by 2 or 3",
+    "suggestion_title": "Random Integer Divisibility by 2 or 3",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Random Integer Divisibility by 2 or 3'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'For any k, let A_k = event number divisible by k. P(A_k) = \\sum_{m=1}^\\infty \\frac{1}{2^{mk}} = \\frac{1}{2^k 1} Part 1: Probability divisible by 2 or 3: P(A_2 \\cup A_3) = P(A_2) + P(A_3) P(A_6) = \\frac{1}{3} + \\frac{1}{7...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1715,
+      1807,
+      1837,
+      2536,
+      2540
+    ]
+  },
+  {
+    "id": 1016,
+    "title": "Probability of Two People Sitting Together",
+    "suggestion_title": "Probability of Two People Sitting Together",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Two People Sitting Together'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use complementary counting for circular seating. Solution: Fix one person to remove rotational symmetry. 10 people around a round table: (10 1)! = 9! total arrangements. Three people ( A, B, C ) know each other...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1684,
+      1714,
+      1722,
+      1738,
+      1744
+    ]
+  },
+  {
+    "id": 239,
+    "title": "Meeting Probability for N Uniform Arrivals",
+    "suggestion_title": "Meeting Probability for N Uniform Arrivals",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Meeting Probability for N Uniform Arrivals'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: All N people must pairwise meet (be present simultaneously within the 15 minute window). Each person i arrives at time T_i \\sim U[0,60] (minutes after 9 AM) and stays until T_i + 15 . Two people i,j meet iff |T...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      319,
+      533,
+      1773,
+      2636
+    ]
+  },
+  {
+    "id": 728,
+    "title": "Drawing Balls from Three Boxes",
+    "suggestion_title": "Drawing Balls from Three Boxes",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Drawing Balls from Three Boxes'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Apply Bayes' theorem with three equally likely boxes. Solution: Boxes: BB (2 blue), BR (1 blue, 1 red), RR (2 red). Prior: each box is equally likely (1/3). Likelihood of drawing blue: P(B|BB) = 1 , P(B|BR) = 1...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      824,
+      242,
+      244,
+      836,
+      16
+    ]
+  },
+  {
+    "id": 2691,
+    "title": "Throw Dice Until The Sum Over 100",
+    "suggestion_title": "Throw Dice Until The Sum Over 100",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Throw Dice Until The Sum Over 100'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We throw a fair die repeatedly and keep a running sum. We stop when the sum exceeds 100. We want P(\\text{last throw} = 2) . Let S_n be the sum after n throws. We stop at the first n where S_n 100 . Key insight:...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2540,
+      2760,
+      824,
+      2771,
+      2564
+    ]
+  },
+  {
+    "id": 2634,
+    "title": "If N People Put Their Hat In",
+    "suggestion_title": "If N People Put Their Hat In",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('If N People Put Their Hat In'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Hat Problem: Probability of Getting Your Own Hat Back Problem: N people each put their hat in a room and then randomly select one. What is the probability that a specific person gets their own hat back? Solution: For a s...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      533,
+      617,
+      2540,
+      1820,
+      2683
+    ]
+  },
+  {
+    "id": 568,
+    "title": "Polya's Urn Model",
+    "suggestion_title": "Polya's Urn Model",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Polya's Urn Model'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Recognize this as Polya's urn model with a uniform (Beta(1,1)) prior. Solution: Starting with 1 success out of 2 attempts (so initially m=1 , n=2 ), the probability of the next success is m/n = 1/2 . After each...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      928,
+      436,
+      1075,
+      718,
+      705
+    ]
+  },
+  {
+    "id": 2558,
+    "title": "Probability of the other one is not red",
+    "suggestion_title": "Conditional Color Probability with Two Draws",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Conditional Color Probability with Two Draws'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We have red, yellow, and blue marbles in a bag. We draw 2 marbles. Given that one is blue, what is P(\\text{other is not red}) ? Without specific counts , we cannot compute an exact numerical answer. The answer ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2505,
+      2540,
+      2673,
+      1820,
+      548
+    ]
+  },
+  {
+    "id": 2513,
+    "title": "Determine that number",
+    "suggestion_title": "Determine the Unknown Number",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Determine the Unknown Number'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: This problem has two parts. Part 1: \\int x \\ln x \\, dx Use integration by parts with u = \\ln x , dv = x\\,dx : du = \\frac{1}{x}dx , v = \\frac{x^2}{2} \\int x \\ln x \\, dx = \\frac{x^2}{2}\\ln x \\int \\frac{x^2}{2} \\c...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2826,
+      568,
+      824,
+      533,
+      617
+    ]
+  },
+  {
+    "id": 2547,
+    "title": "determine which ball is the heavy ball",
+    "suggestion_title": "Identify the Heavy Ball with a Balance Scale",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Identify the Heavy Ball with a Balance Scale'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We have 18 balls, one is heavier, and a balance scale. We want the minimum number of weighings. Information theoretic lower bound: Each weighing has 3 outcomes (left heavy, balanced, right heavy). To distinguis...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2516,
+      824,
+      568,
+      617,
+      2781
+    ]
+  },
+  {
+    "id": 235,
+    "title": "There are $N$ identical bins and $m$ distinct balls",
+    "suggestion_title": "There are $N$ identical bins and $m$ distinct balls",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('There are $N$ identical bins and $m$ distinct balls'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Count distributions of m distinct balls into N identical (unlabeled) bins, which is the Stirling number of the second kind summed appropriately. If bins are identical (indistinguishable), the number of ways to ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      768,
+      824
+    ]
+  },
+  {
+    "id": 768,
+    "title": "Basketball Throws and Success Rate",
+    "suggestion_title": "Basketball Throws and Success Rate",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Basketball Throws and Success Rate'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use the intermediate value theorem to show 80% success rate must be crossed. Solution: After throw k , success rate = S_k/k . Given: S_1 = 0 (first missed), S_{100} = 90 . At k=1 : rate = 0% (below 80%). At k=1...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      824,
+      235
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Blue Balls in Three Boxes",
+    "suggestion_title": "Blue Balls in Three Boxes",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Blue Balls in Three Boxes'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Using Bayes' theorem : P(B \\mid \\text{blue}) = \\frac{P(\\text{blue} \\mid B) \\cdot P(B)}{P(\\text{blue})} Likelihoods: P(\\text{blue} \\mid A) = 3/5 P(\\text{blue} \\mid B) = 4/5 P(\\text{blue} \\mid C) = 2/5 Prior: P(A...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      5,
+      499,
+      617,
+      824,
+      568
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Balls in Two Boxes Optimization",
+    "suggestion_title": "Balls in Two Boxes Optimization",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Balls in Two Boxes Optimization'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: P(\\text{red}) = \\frac{1}{2}\\cdot\\frac{r_1}{r_1+b_1} + \\frac{1}{2}\\cdot\\frac{r_2}{r_2+b_2} Put 1 red, 0 blue in Box 1. Put 99 red, 100 blue in Box 2. P = \\frac{1}{2}\\cdot 1 + \\frac{1}{2}\\cdot\\frac{99}{199} = \\fr...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      255,
+      824,
+      728
+    ]
+  },
+  {
+    "id": 836,
+    "title": "Probability Distribution of a Basketball Player's Shots",
+    "suggestion_title": "Probability Distribution of a Basketball Player's Shots",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability Distribution of a Basketball Player's Shots'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Recognize this as a Polya urn model leading to a uniform distribution. Solution: This is a Polya urn model starting with 1 success and 1 failure (after 2 shots, 1 made). In a Polya urn with initial composition ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      802,
+      302,
+      375,
+      824,
+      728
+    ]
+  },
+  {
+    "id": 1700,
+    "title": "King of Hearts",
+    "suggestion_title": "King of Hearts",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('King of Hearts'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'We know the 14th card must be an ace and the 13 cards that precede it can not be an ace. Thus we permute 13 of the 48 non ace cards to be among the first 13, an ace to be in spot 14, and permute the remaining 38 cards to...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2540,
+      1702,
+      1682,
+      2826,
+      2793
+    ]
+  },
+  {
+    "id": 1706,
+    "title": "Biased Coin Sequence",
+    "suggestion_title": "Biased Coin Sequence",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Biased Coin Sequence'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Let's call the number of flips needed to see a tails immediately followed heads TH . If our first flip is heads, one flip has been added but no progress has been made so we will now expect E[TH] + 1 total flips. If our f...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2540,
+      1716,
+      548,
+      2257,
+      2149
+    ]
+  },
+  {
+    "id": 2654,
+    "title": "Probability of they are both boys",
+    "suggestion_title": "Probability That Two Children Are Both Boys",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability That Two Children Are Both Boys'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Conditional Probability: Two Children, One Known Boy Problem: A family has two children. We know that at least one is a boy. What is the probability that both are boys? Sample Space: Each child is equally likely to be a ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1759,
+      2540,
+      1075,
+      2633,
+      824
+    ]
+  },
+  {
+    "id": 2788,
+    "title": "Find the volume of the enclosed region",
+    "suggestion_title": "Find the volume of the enclosed region",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Find the volume of the enclosed region'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Two cylinders of radius 1 intersecting at right angles (Steinmetz solid). At height z , cross section is a square with side 2\\sqrt{1 z^2} . V = \\int_{ 1}^{1} 4(1 z^2)\\,dz = 4\\left[z \\frac{z^3}{3}\\right]_{ 1}^{1...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2526,
+      617,
+      824,
+      568,
+      533
+    ]
+  },
+  {
+    "id": 2812,
+    "title": "Why Trader",
+    "suggestion_title": "Why Trading?",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Why Trading?'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: Minimum socks to guarantee a matching pair (same color): By Pigeonhole Principle, with n colors, you need \\boxed{n+1} draws. After drawing n socks (potentially all different colors), the (n+1) th must match one...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2611,
+      2690,
+      2813,
+      2659,
+      2536
+    ]
+  },
+  {
+    "id": 2836,
+    "title": "If You Were Walking On The Street",
+    "suggestion_title": "Street Interview Estimation Question",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Street Interview Estimation Question'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: If you find a coin on the street, what are the chances it is unfair? This is a Bayesian reasoning question. The key insight is about prior probability and base rates . Argument that it is almost certainly fair:...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      548,
+      2524,
+      824,
+      617,
+      533
+    ]
+  },
+  {
+    "id": 1017,
+    "title": "Coin Toss Sequence Probability",
+    "suggestion_title": "Coin Toss Sequence Probability",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Coin Toss Sequence Probability'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Use Markov chain states for the HTH vs HHT race. Solution: This is the reverse of Problem 1002 (which found HHT wins with prob 2/3 over HTH). Here we want P(HTH before HHT). From the analysis in Problem 1002: s...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      548,
+      989,
+      1046,
+      919,
+      750
+    ]
+  },
+  {
+    "id": 375,
+    "title": "Quant Developer Phone Screen Topics",
+    "suggestion_title": "Quant Developer Phone Screen Topics",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Quant Developer Phone Screen Topics'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Outline key topics for a quant developer phone screen. 1. Ball weighing problems: Classic: Find one defective ball among 12 using a balance scale in 3 weighings. Key insight: each weighing has 3 outcomes (left ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      603,
+      947,
+      559,
+      836
+    ]
+  },
+  {
+    "id": 796,
+    "title": "Additional Probability Problems",
+    "suggestion_title": "Additional Probability Practice Set",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Additional Probability Practice Set'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Problem statement is too vague for a specific solution. Solution: Common quant probability topics: conditional probability (Bayes theorem), expectation calculations (linearity, law of total expectation), varian...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1688,
+      1702,
+      1724,
+      1731,
+      1736
+    ]
+  },
+  {
+    "id": 1682,
+    "title": "Race to Ace",
+    "suggestion_title": "Race to Ace",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Race to Ace'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Imagine you have the following setup: \\begin{equation } \\_\\_\\_ A_1 \\_\\_\\_ A_2 \\_\\_\\_ A_3 \\_\\_\\_ A_4 \\_\\_\\_ \\end{equation } Where A_n represents the nth Ace and the gaps represent the cards in between them. There are 48 c...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1700,
+      1767,
+      2746,
+      2826,
+      2781
+    ]
+  },
+  {
+    "id": 2516,
+    "title": "12 Balls, One Is Slightly Different In Weight",
+    "suggestion_title": "12 Balls, One Is Slightly Different In Weight",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('12 Balls, One Is Slightly Different In Weight'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: This is the classic 12 ball balance puzzle. We know one ball differs in weight but do not know if it is heavier or lighter. Weighing 1: Compare balls {1,2,3,4} vs {5,6,7,8}. Balls {9,10,11,12} are set aside. Ca...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2547,
+      2824,
+      2826,
+      2746,
+      2673
+    ]
+  },
+  {
+    "id": 2608,
+    "title": "If The Vol Of A Stock Is",
+    "suggestion_title": "If The Vol Of A Stock Is",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('If The Vol Of A Stock Is'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Estimating Daily Move from Annual Volatility Setup: A stock has annual volatility \\sigma = 100\\% . Conversion: Daily volatility is obtained by dividing annual volatility by \\sqrt{252} (assuming 252 trading days): \\sigma_...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": []
+  },
+  {
+    "id": 2694,
+    "title": "Probability & Statistics Questions And You Need",
+    "suggestion_title": "Probability and Statistics Interview Questions",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability and Statistics Interview Questions'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: This is a general preparation question. Key probability and statistics topics for quant interviews: Probability Essentials: Bayes' theorem: P(A|B) = \\frac{P(B|A)P(A)}{P(B)} Law of total probability: P(B) = \\sum...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      1759,
+      2540,
+      2693,
+      2691,
+      2790
+    ]
+  },
+  {
+    "id": 2595,
+    "title": "How Much Did You Pay For The",
+    "suggestion_title": "How Much Did You Pay for the Item?",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('How Much Did You Pay for the Item?'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Handling Irrelevant Interview Questions This is noted as an example of an irrelevant question asked during the interview process. The question \"How much did you pay for the academic program?\" is not a quantitative proble...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2525,
+      2694,
+      2602,
+      2645,
+      2633
+    ]
+  },
+  {
+    "id": 2602,
+    "title": "Google \"Python Interview Questions\" And Look At",
+    "suggestion_title": "Python Interview Question Curation Task",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Python Interview Question Curation Task'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Python Interview Questions and Monte Carlo Overview Key Python/Pandas Concepts: 1. How Pandas Works: Pandas is built on NumPy and provides DataFrame (2D) and Series (1D) data structures. DataFrames store data in columnar...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2645,
+      2595,
+      2804
+    ]
+  },
+  {
+    "id": 2642,
+    "title": "calculate really fast and try not to make mistakes",
+    "suggestion_title": "Fast Arithmetic Under Time Pressure",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Fast Arithmetic Under Time Pressure'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Speed Calculation and Quantitative Problem Solving Tips Mental Math Speed Techniques: 1. Complement method for subtraction: 1000 387 = 613 (complement each digit from 9, last from 10: 6,1,3) 2. Cross multiplication for c...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2515,
+      2825,
+      2694,
+      2790,
+      2844
+    ]
+  },
+  {
+    "id": 2645,
+    "title": "Random Data Science Questions With No Connection",
+    "suggestion_title": "Unstructured Data Science Interview Questions",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Unstructured Data Science Interview Questions'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Common Data Science Interview Questions Key Topics and Answers: 1. Bias Variance Tradeoff: Bias: Error from overly simplistic model assumptions (underfitting) Variance: Error from sensitivity to training data fluctuation...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2633,
+      2602,
+      2634,
+      2595,
+      2592
+    ]
+  },
+  {
+    "id": 2633,
+    "title": "Conditional Probability Questions E",
+    "suggestion_title": "Conditional Probability Questions (Set E)",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Conditional Probability Questions (Set E)'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Conditional Probability: 4 Sided vs 6 Sided Die Problem: A fair 4 sided die (faces 1 4) and a fair 6 sided die (faces 1 6). One die is picked at random. A 2 is rolled. What is the probability the 4 sided die was rolled? ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2546,
+      2540,
+      1856,
+      2679,
+      2760
+    ]
+  },
+  {
+    "id": 2679,
+    "title": "find all over the internet",
+    "suggestion_title": "Collect Similar Questions from Public Sources",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Collect Similar Questions from Public Sources'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Common Quant Probability Interview Questions Overview and Solutions 1. Birthday Problem: P(\\text{at least 2 share birthday among } n) = 1 \\frac{365!}{365^n(365 n)!} For n = 23 : P \\approx 50.7\\% . For n = 50 : P \\approx ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      796,
+      2633,
+      2705,
+      2563,
+      2540
+    ]
+  },
+  {
+    "id": 2540,
+    "title": "Probability of both X and X+Y are positive",
+    "suggestion_title": "Probability of both X and X+Y are positive",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of both X and X+Y are positive'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We have X, Y \\sim N(0,1) independently. Find P(X 0 \\text{ and } X + Y 0) . Let Z = X + Y . Then Z \\sim N(0, 2) , and \\text{Cov}(X, Z) = \\text{Cov}(X, X+Y) = \\text{Var}(X) = 1 . So (X, Z) is bivariate normal wit...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      245,
+      324,
+      617,
+      1087,
+      1820
+    ]
+  },
+  {
+    "id": 1719,
+    "title": "Good Grid",
+    "suggestion_title": "Good Grid",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Good Grid'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Note that a <= 0 , as \\min(0,b) <= 0 . Furthermore, we also see that b = 0 , as \\max(0, a) = 0 . Therefore, the solution to the problem is the probability that a <= 0 and b = 0 . There are 21^2 = 441 total ways in which ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1757,
+      1807,
+      1820,
+      529,
+      1734
+    ]
+  },
+  {
+    "id": 2589,
+    "title": "Probability of your answers",
+    "suggestion_title": "Probability of Correct Answers",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability of Correct Answers'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: This is a meta question about calibration assigning a confidence probability to your own answers. Key concepts: 1. Calibration: A well calibrated person who says they are 80% confident should be correct 80% of ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2525,
+      2540,
+      1759,
+      1805,
+      2628
+    ]
+  },
+  {
+    "id": 2538,
+    "title": "Sitting On The Side Of The Road",
+    "suggestion_title": "Roadside Observation Probability Problem",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Roadside Observation Probability Problem'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Solution: We observe at least one car every 20 minutes. A natural model is a Poisson process with rate \\lambda per minute. \"At least one car every 20 minutes\" means the expected inter arrival time is at most 20 minutes. ...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2540,
+      1759,
+      2523,
+      2628,
+      2589
+    ]
+  },
+  {
+    "id": 617,
+    "title": "Probability: Bayesian Detector Accuracy",
+    "suggestion_title": "Probability: Bayesian Detector Accuracy",
+    "suggestion_description": "Current record has an empty problem statement. Replace it with a complete textbook-style prompt. State all givens, define notation, and end with a single explicit objective. For this item, anchor the statement to the topic implied by the title ('Probability: Bayesian Detector Accuracy'). If multiple subparts exist, label them (a), (b), (c) and specify assumptions (independence, uniform sampling, replacement rules, or conditioning) before asking for the final quantity.",
+    "suggestion_solution": "Rewrite the solution as a short correctness-first derivation: (1) define events/variables, (2) write the governing formula, (3) substitute numeric values carefully, (4) simplify to the final answer, and (5) add a one-line sanity check (range/symmetry/extreme-case check). Keep the useful core already present (e.g., 'Approach: Apply Bayes' theorem with sensitivity 95%, specificity 95%, prevalence 0.1%. Solution: Let D = has disease, T^+ = tests positive. Given: P(T^+|D) = 0.95 , P(T^ |\\bar{D}) = 0.95 , P(D) = 0.001 . By Bayes' theore...') but remove verbosity and ensure every step follows from the previous one.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      506,
+      1075,
+      436,
+      928,
+      705
+    ]
+  }
+]

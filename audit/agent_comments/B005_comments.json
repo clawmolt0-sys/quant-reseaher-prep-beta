@@ -1,0 +1,1052 @@
+[
+  {
+    "id": 1961,
+    "title": "Longer Piece II",
+    "suggestion_title": "Rename to descriptive variance-focused title",
+    "suggestion_description": "Replace 'Longer Piece II' with 'Variance of the Longer Segment After a Random Cut'. Correct grammar and avoid dependence on Part I in the hint.",
+    "suggestion_solution": "Derive Y=max(X,1-X) distribution directly (or restate it), then compute Var(Y)=E[Y^2]-E[Y]^2. Keep derivation self-contained.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      1960,
+      2251,
+      2035,
+      1880,
+      2496
+    ]
+  },
+  {
+    "id": 1960,
+    "title": "Longer Piece I",
+    "suggestion_title": "Rename to descriptive title without sequel marker",
+    "suggestion_description": "Replace 'Longer Piece I' with 'Expected Length of the Longer Segment After a Random Cut'. Correct grammar ('its' not 'it's') in the statement.",
+    "suggestion_solution": "Let X~U(0,1), Y=max(X,1-X). Either integrate y on [1/2,1] using Y's density or compute E[max(X,1-X)] by splitting at 1/2.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      1961,
+      1939,
+      2489,
+      2011,
+      1880
+    ]
+  },
+  {
+    "id": 2251,
+    "title": "Maximin Uniform",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Maximin Uniform' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2249,
+      2250,
+      2223,
+      2222,
+      1960
+    ]
+  },
+  {
+    "id": 2035,
+    "title": "Cookie Cruncher",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Cookie Cruncher' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2030,
+      1893,
+      2023,
+      2233,
+      2399
+    ]
+  },
+  {
+    "id": 1880,
+    "title": "Slow Ferry I",
+    "suggestion_title": "Make part labeling self-contained",
+    "suggestion_description": "Because this is 'Slow Ferry I', ensure the problem is fully self-contained and does not rely on hidden sequel context. Include exact arrival-time model and target quantity.",
+    "suggestion_solution": "Solve using geometric waiting-time argument on a fixed schedule: condition on random arrival within one interval, then compute expectation/probability explicitly.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1960,
+      2035,
+      2394,
+      2197,
+      2023
+    ]
+  },
+  {
+    "id": 2496,
+    "title": "Andrew Tate's Elevator I",
+    "suggestion_title": "Use neutral title and clearer setup",
+    "suggestion_description": "Rename 'Andrew Tate's Elevator I' to a neutral descriptive title (e.g., 'Expected Elevator Travel in an n-Floor Building'). Remove personality-specific wording.",
+    "suggestion_solution": "Define random start and destination floors clearly, write travel distance random variable, then compute expectation via symmetry or pair counting.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      2290,
+      2030,
+      2233,
+      2394,
+      1893
+    ]
+  },
+  {
+    "id": 2192,
+    "title": "Mixed Coin",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Mixed Coin' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1941,
+      2592,
+      2279,
+      2605,
+      2591
+    ]
+  },
+  {
+    "id": 2249,
+    "title": "Maxiunif",
+    "suggestion_title": "Use standard terminology for order statistics",
+    "suggestion_description": "Rename 'Maxiunif' to 'Maximum of IID Uniform Variables'. State clearly that Z=max(X1,...,Xn) and ask for cdf/pdf or requested evaluation point.",
+    "suggestion_solution": "Derive F_Z(z)=z^n on [0,1], differentiate to get f_Z(z)=n z^{n-1}, then plug in requested value.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      2250,
+      2251,
+      2223,
+      2501,
+      2399
+    ]
+  },
+  {
+    "id": 1941,
+    "title": "Minimizing Variance",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Minimizing Variance' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2192,
+      2592,
+      2279,
+      2191,
+      2591
+    ]
+  },
+  {
+    "id": 2191,
+    "title": "Low Variance Measure",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Low Variance Measure' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1941,
+      2592,
+      2279,
+      2454,
+      1961
+    ]
+  },
+  {
+    "id": 2223,
+    "title": "Uniforms Contained",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniforms Contained' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2222,
+      2394,
+      2030,
+      2399,
+      2023
+    ]
+  },
+  {
+    "id": 1939,
+    "title": "Red Cube I",
+    "suggestion_title": "Rename to explicit geometric probability title",
+    "suggestion_description": "Replace 'Red Cube I' with a title describing random sub-cube coloring count. Define selection rule precisely (uniform over small cubes) and state exact quantity requested.",
+    "suggestion_solution": "Use linearity of expectation with indicator variables for whether a selected small cube is painted red on k faces. Count by cube location type (corner/edge/face/interior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1940,
+      2216,
+      2119,
+      1881,
+      2254
+    ]
+  },
+  {
+    "id": 2489,
+    "title": "Sticky Ants",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Sticky Ants' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2286,
+      1960,
+      2488,
+      2501,
+      2030
+    ]
+  },
+  {
+    "id": 2011,
+    "title": "Currency Collector",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Currency Collector' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1939,
+      2216,
+      1960,
+      2051,
+      2119
+    ]
+  },
+  {
+    "id": 1947,
+    "title": "Collector's Sculpture",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Collector's Sculpture' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1979,
+      2394,
+      2174,
+      1939,
+      1880
+    ]
+  },
+  {
+    "id": 2501,
+    "title": "EMIN Uniform",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'EMIN Uniform' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2290,
+      2107,
+      2489,
+      2183,
+      2181
+    ]
+  },
+  {
+    "id": 1940,
+    "title": "Red Cube II",
+    "suggestion_title": "Rename to explicit rectangular-prism painting title",
+    "suggestion_description": "Replace 'Red Cube II' with a descriptive title and clearly define dimensions n1,n2,n3 and random variable of interest.",
+    "suggestion_solution": "Classify unit cubes by number of painted faces and apply counting plus linearity of expectation/probability as needed.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1939,
+      2119,
+      2179,
+      2121,
+      2174
+    ]
+  },
+  {
+    "id": 2231,
+    "title": "Random Rectangular Area",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Random Rectangular Area' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2225,
+      2394,
+      1922,
+      1960,
+      1939
+    ]
+  },
+  {
+    "id": 2097,
+    "title": "Maxima Range",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Maxima Range' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2054,
+      2107,
+      2055,
+      2394,
+      2185
+    ]
+  },
+  {
+    "id": 2056,
+    "title": "Auctioneer I",
+    "suggestion_title": "Replace fantasy wording with professional auction model",
+    "suggestion_description": "Keep context concise and mathematical: seller value V~U(a,b), auctioneer offer process, and payoff definition. Remove distracting invented terms.",
+    "suggestion_solution": "Model sale decision with threshold logic. Condition on offer and valuation, then integrate to compute expected revenue/probability requested.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2057,
+      2399,
+      2035,
+      2182,
+      1960
+    ]
+  },
+  {
+    "id": 2057,
+    "title": "Auctioneer II",
+    "suggestion_title": "Ensure sequel problem states new objective explicitly",
+    "suggestion_description": "As 'Auctioneer II', it should restate all assumptions from part I and clearly identify what changes. Avoid requiring the reader to open prior problem.",
+    "suggestion_solution": "Start from the same base model, then compute the new objective (e.g., optimal threshold/expected gain) with explicit conditional expectations.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2056,
+      2399,
+      2035,
+      2182,
+      1960
+    ]
+  },
+  {
+    "id": 2055,
+    "title": "Ordered Uniforms II",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Ordered Uniforms II' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2097,
+      2054,
+      2107,
+      1979,
+      1960
+    ]
+  },
+  {
+    "id": 2250,
+    "title": "Miniunif",
+    "suggestion_title": "Use standard terminology for order statistics",
+    "suggestion_description": "Rename 'Miniunif' to 'Minimum of IID Uniform Variables'. Present W=min(X1,...,Xn) and define the exact quantity to compute.",
+    "suggestion_solution": "Derive survival function P(W>w)=(1-w)^n, convert to cdf/pdf, and evaluate requested expression.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      2251,
+      2249,
+      2223,
+      2399,
+      2501
+    ]
+  },
+  {
+    "id": 2222,
+    "title": "Uniform Probability I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Probability I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2223,
+      2255,
+      2251,
+      2496,
+      1915
+    ]
+  },
+  {
+    "id": 2407,
+    "title": "Wallet Bid II",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Wallet Bid II' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2406,
+      2394,
+      2011,
+      2251,
+      2249
+    ]
+  },
+  {
+    "id": 2399,
+    "title": "Uniform Central",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Central' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2255,
+      2223,
+      2035,
+      2251,
+      2489
+    ]
+  },
+  {
+    "id": 2107,
+    "title": "Uniformly Decreasing Chain",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniformly Decreasing Chain' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2054,
+      2097,
+      2290,
+      1979,
+      2501
+    ]
+  },
+  {
+    "id": 1979,
+    "title": "Products of Uniforms II",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Products of Uniforms II' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1999,
+      1923,
+      2396,
+      2174,
+      2107
+    ]
+  },
+  {
+    "id": 2030,
+    "title": "Floor Equality",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Floor Equality' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2223,
+      2035,
+      1952,
+      1893,
+      2286
+    ]
+  },
+  {
+    "id": 1893,
+    "title": "Contained Origin",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Contained Origin' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1936,
+      1952,
+      2035,
+      2488,
+      2030
+    ]
+  },
+  {
+    "id": 2023,
+    "title": "Conditional RNG I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Conditional RNG I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2035,
+      1932,
+      2223,
+      2394,
+      2496
+    ]
+  },
+  {
+    "id": 2233,
+    "title": "Uniform Crossover",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Crossover' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2496,
+      2035,
+      2223,
+      1880,
+      2255
+    ]
+  },
+  {
+    "id": 1952,
+    "title": "Sublime Snowman",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Sublime Snowman' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1893,
+      2030,
+      46,
+      2035,
+      2185
+    ]
+  },
+  {
+    "id": 2394,
+    "title": "Split Uniforms",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Split Uniforms' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2497,
+      2223,
+      2406,
+      2407,
+      2276
+    ]
+  },
+  {
+    "id": 2009,
+    "title": "Office Hours",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Office Hours' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      14,
+      2035,
+      2030,
+      1893,
+      2116
+    ]
+  },
+  {
+    "id": 2197,
+    "title": "Selection Inside",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Selection Inside' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2137,
+      2035,
+      2496,
+      1880,
+      2223
+    ]
+  },
+  {
+    "id": 2286,
+    "title": "Stripe Stick I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Stripe Stick I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2030,
+      2185,
+      2489,
+      1893,
+      1936
+    ]
+  },
+  {
+    "id": 2083,
+    "title": "Triangular Uniforms",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Triangular Uniforms' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1922,
+      2461,
+      2255,
+      2248,
+      2233
+    ]
+  },
+  {
+    "id": 2240,
+    "title": "Uniform Product Density",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Product Density' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2223,
+      2035,
+      1922,
+      1880,
+      2496
+    ]
+  },
+  {
+    "id": 2148,
+    "title": "MrBeast's Coin Challenge",
+    "suggestion_title": "Remove pop-culture tone and formalize random mechanism",
+    "suggestion_description": "Rewrite with standard language. Define each random stage (wheel outcome, coin process, stopping rule) precisely and state target probability/expectation.",
+    "suggestion_solution": "Condition on wheel outcome first, solve each branch cleanly, then combine with total probability/expectation.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      1979,
+      2032,
+      1880,
+      2128,
+      2223
+    ]
+  },
+  {
+    "id": 2248,
+    "title": "Uniform Angle Overlap",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Angle Overlap' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2083,
+      2255,
+      2233,
+      2461,
+      2222
+    ]
+  },
+  {
+    "id": 2174,
+    "title": "Nearest Diagonal I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Nearest Diagonal I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1979,
+      1875,
+      2182,
+      2181,
+      1939
+    ]
+  },
+  {
+    "id": 2225,
+    "title": "Random Triangle Area",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Random Triangle Area' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2231,
+      2223,
+      2184,
+      2183,
+      1923
+    ]
+  },
+  {
+    "id": 2388,
+    "title": "Boy Ratio",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Boy Ratio' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1979,
+      2149,
+      1931,
+      2147,
+      1900
+    ]
+  },
+  {
+    "id": 2290,
+    "title": "Large Maxima",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Large Maxima' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2107,
+      2501,
+      2496,
+      2285,
+      2488
+    ]
+  },
+  {
+    "id": 2185,
+    "title": "Mean Point",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Mean Point' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2069,
+      2024,
+      2070,
+      2005,
+      664
+    ]
+  },
+  {
+    "id": 2285,
+    "title": "Big Containment",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Big Containment' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2132,
+      2133,
+      1977,
+      1992,
+      2126
+    ]
+  },
+  {
+    "id": 2592,
+    "title": "Show That The Variance Of The Sum",
+    "suggestion_title": "Replace with a precise theorem-style title",
+    "suggestion_description": "Current item is phrased as an instruction rather than a problem. Rewrite it as: 'Variance of a Sum of Independent Random Variables'. State assumptions clearly (finite second moments, independence) and ask for a proof of Var(X+Y)=Var(X)+Var(Y).",
+    "suggestion_solution": "Present a short proof using expansion: Var(X+Y)=E[(X+Y)^2]-E[X+Y]^2. Expand terms, use independence to show E[XY]=E[X]E[Y], and simplify. Optionally add extension to n variables by induction.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2591,
+      1941,
+      2840,
+      2192,
+      429
+    ]
+  },
+  {
+    "id": 2279,
+    "title": "Minimizer Square",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Minimizer Square' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2453,
+      1941,
+      2192,
+      2191,
+      2454
+    ]
+  },
+  {
+    "id": 2605,
+    "title": "Explain Variance To A Client Who Know",
+    "suggestion_title": "Convert interview prompt into a concrete quantitative question",
+    "suggestion_description": "This entry is open-ended and not assessable. Replace with a specific task, for example: 'Given a portfolio return distribution with mean 8% and standard deviation 12%, explain variance in plain language and interpret one-standard-deviation risk in dollars for a $1M portfolio.'",
+    "suggestion_solution": "Provide a model answer rubric: define variance, connect to dispersion around expected return, convert variance/standard deviation into intuitive ranges, and include one concise client-friendly interpretation.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2705,
+      2192,
+      2699,
+      2840,
+      2592
+    ]
+  },
+  {
+    "id": 2591,
+    "title": "How Can You Generate Two Random Variables",
+    "suggestion_title": "Specify a constructive correlation-generation problem",
+    "suggestion_description": "Rewrite as a formal construction problem: 'Given independent standard normals Z1,Z2 and target correlation rho in (-1,1), construct X,Y with Var(X)=Var(Y)=1 and Corr(X,Y)=rho.' Include what must be shown.",
+    "suggestion_solution": "Use X=Z1 and Y=rho Z1+sqrt(1-rho^2) Z2. Verify mean 0, variance 1, and covariance rho step by step. Mention this is a Cholesky-style construction.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2592,
+      2840,
+      1941,
+      1820,
+      429
+    ]
+  },
+  {
+    "id": 1918,
+    "title": "Car Wash II",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Car Wash II' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1917,
+      1933,
+      2192,
+      1941,
+      2191
+    ]
+  },
+  {
+    "id": 2840,
+    "title": "Sample Points Randomly From A Unit Sphere",
+    "suggestion_title": "Split into clear sub-questions on sphere sampling",
+    "suggestion_description": "Current text is fragmented. Rewrite into explicit parts: (a) sample uniformly on S^2, (b) transform to uniform variables, (c) justify uniformity. Define whether sampling is on the surface or in the volume.",
+    "suggestion_solution": "Give the standard normal method: draw G~N(0,I3), set U=G/||G|| for surface sampling. For volume, draw R~U(0,1) and output R^(1/3)U. Prove uniformity using rotational symmetry and Jacobian arguments.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2592,
+      2591,
+      2780,
+      2594,
+      2683
+    ]
+  },
+  {
+    "id": 2002,
+    "title": "Risk Manager",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Risk Manager' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2192,
+      2005,
+      1924,
+      2070,
+      2069
+    ]
+  },
+  {
+    "id": 2453,
+    "title": "Bounding Zero",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Bounding Zero' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2279,
+      2454,
+      1939,
+      2011,
+      2191
+    ]
+  },
+  {
+    "id": 2289,
+    "title": "Sum First II",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Sum First II' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2288,
+      2199,
+      2492,
+      2279,
+      2200
+    ]
+  },
+  {
+    "id": 2454,
+    "title": "Indicator Variance",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Indicator Variance' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2191,
+      2279,
+      2453,
+      2032,
+      2289
+    ]
+  },
+  {
+    "id": 2575,
+    "title": "X Is A Normal Random Variable With",
+    "suggestion_title": "Remove conversational wording and make the probability task exact",
+    "suggestion_description": "Rewrite as: 'Let X~N(50,4). Compute P(X>54).' Clarify that variance is 4 so standard deviation is 2, and remove 'multiple choice' phrasing unless options are provided.",
+    "suggestion_solution": "Standardize: Z=(X-50)/2, so P(X>54)=P(Z>2)=1-Phi(2). Report numeric value to 4 decimals.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [
+      2586,
+      2841,
+      2768,
+      2847,
+      2767
+    ]
+  },
+  {
+    "id": 2599,
+    "title": "What Is The Formula Of Sharpe Ratio",
+    "suggestion_title": "Break multi-topic prompt into separate assessable questions",
+    "suggestion_description": "Current item combines unrelated interview concepts. Split into separate problems: Sharpe ratio formula, mean-variance optimization objective, and definition/examples of black swan events.",
+    "suggestion_solution": "For each sub-question, provide a concise definition and one worked numerical example where applicable (especially Sharpe ratio and Markowitz objective).",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      2747,
+      2604,
+      2808,
+      2578,
+      2663
+    ]
+  },
+  {
+    "id": 2817,
+    "title": "Through All The Interviews: Deriving Simple Regressions",
+    "suggestion_title": "Rewrite as a complete, grammatically correct problem set",
+    "suggestion_description": "Current text is not a full question. Replace with explicit tasks: derive OLS slope/intercept, compute bias and variance of estimators under classical assumptions, and interpret correlation vs covariance in portfolio context.",
+    "suggestion_solution": "Give a structured solution with three sections: regression derivation, bias-variance formulas, and portfolio interpretation. Include assumptions before each derivation.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [
+      976,
+      464,
+      2192,
+      524,
+      2191
+    ]
+  },
+  {
+    "id": 2022,
+    "title": "Sumdard Deviation",
+    "suggestion_title": "Fix title typo and align with content",
+    "suggestion_description": "Rename 'Sumdard Deviation' to 'Standard Deviation of a Sum of Draws'. Ensure statement defines the card values unambiguously (likely 1 through n) and specifies sampling with replacement across sets.",
+    "suggestion_solution": "Use independence and variance additivity: compute variance of one draw, then multiply by k. Take square root for standard deviation.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [
+      2191,
+      1941,
+      2192,
+      2127,
+      1731
+    ]
+  },
+  {
+    "id": 2034,
+    "title": "Uniform Variance",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Uniform Variance' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      1979,
+      2496,
+      1956,
+      2188,
+      2011
+    ]
+  },
+  {
+    "id": 2101,
+    "title": "Exponential Gamma Variance",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Exponential Gamma Variance' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2141,
+      2142,
+      2144,
+      2038,
+      2073
+    ]
+  },
+  {
+    "id": 2032,
+    "title": "Conditional Bivariate",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Conditional Bivariate' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2492,
+      2150,
+      2143,
+      2148,
+      2454
+    ]
+  },
+  {
+    "id": 2209,
+    "title": "Variance of BM Sum",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Variance of BM Sum' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2205,
+      2204,
+      2211,
+      2208,
+      2152
+    ]
+  },
+  {
+    "id": 2444,
+    "title": "Alternate Sample Variance I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Alternate Sample Variance I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      1976,
+      600,
+      2454,
+      2191,
+      2477
+    ]
+  },
+  {
+    "id": 2396,
+    "title": "Exponential and Uniform",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Exponential and Uniform' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2039,
+      2141,
+      2142,
+      1979,
+      2144
+    ]
+  },
+  {
+    "id": 2406,
+    "title": "Wallet Bid I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Wallet Bid I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2407,
+      2394,
+      2011,
+      1932,
+      2223
+    ]
+  },
+  {
+    "id": 2497,
+    "title": "Repeatedly Smaller Uniforms I",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Repeatedly Smaller Uniforms I' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [
+      2394,
+      1979,
+      2097,
+      2175,
+      2023
+    ]
+  },
+  {
+    "id": 2216,
+    "title": "Boy-Girl Line",
+    "suggestion_title": "Improve precision of title and objective statement",
+    "suggestion_description": "The current title 'Boy-Girl Line' is understandable but can be more explicit. Rewrite it to name the random variables, distributional assumptions, and the exact target quantity (probability, expectation, variance, or density). In the statement, define notation before use and specify domain constraints so the problem is fully self-contained.",
+    "suggestion_solution": "Provide a step-by-step solution scaffold: (1) define random variables and events; (2) derive the needed distribution/conditioning identity; (3) compute the target quantity with clear algebra or integration; (4) include a short correctness check (bounds, units, or limiting behavior).",
+    "urgency_1_10": 5,
+    "duplicate_candidates": [
+      2074,
+      1939,
+      1927,
+      1928,
+      2011
+    ]
+  }
+]
