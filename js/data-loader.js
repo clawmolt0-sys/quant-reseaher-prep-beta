@@ -11,7 +11,7 @@
 const DataLoader = (() => {
   const memCache = {};
   const STORAGE_PREFIX = 'qr-data-';
-  const CACHE_VERSION = 'v9'; // bump to invalidate cache (v9: PDF ingestion + roles + dedup, 4924 problems)
+  const CACHE_VERSION = 'v10'; // bump to invalidate cache (v10: fingerprint dedup + quality fixes, 4674 active)
 
   // ---- SessionStorage helpers ----
   function storageGet(key) {
