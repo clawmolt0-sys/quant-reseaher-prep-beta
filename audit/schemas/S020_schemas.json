@@ -1,0 +1,1594 @@
+[
+  {
+    "problem_id": 1907,
+    "name": "Particle Reach II",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "particle position",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "State evolves by nearest-neighbor transitions on integers."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: particle position, integer states | Constraints: State evolves by nearest-neighbor transitions on integers. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1908,
+    "name": "St. Petersburg I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "payout random variable",
+        "coin outcomes",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, payout random variable, coin outcomes, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1909,
+    "name": "Rainbow Socks",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "socks",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: socks, parameter n | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1910,
+    "name": "Excluded Number I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: dice rolls, payout random variable | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1911,
+    "name": "Unchanged Die Pair",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1912,
+    "name": "Unchanged Die Trio",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1913,
+    "name": "Die Difference I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time).",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time).; Event condition depends on consecutive outcomes. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1914,
+    "name": "Die Difference II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time).",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time).; Event condition depends on consecutive outcomes. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1915,
+    "name": "Ball Out",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "ball possession",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: ball possession, players | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1916,
+    "name": "Bivariate Correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Joint distribution is bivariate normal with given marginals/correlation."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random variable X, random variable Y | Constraints: Joint distribution is bivariate normal with given marginals/correlation. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1917,
+    "name": "Car Wash I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1918,
+    "name": "Car Wash II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1919,
+    "name": "See All Sides II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, integer states | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1920,
+    "name": "Undirected Graph Search I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "urn contents",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: urn contents, integer states | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1921,
+    "name": "Undirected Graph Search II",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "urn contents",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: urn contents, integer states | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1922,
+    "name": "Triangular Angle I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1923,
+    "name": "Triangular Angle II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1924,
+    "name": "Standard Deviation Sum",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1925,
+    "name": "Stoplight Switch I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1926,
+    "name": "Greater Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1927,
+    "name": "Sum of Primes I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: integer states | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1928,
+    "name": "Sum of Primes II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: integer states | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1929,
+    "name": "Comparable Flips II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, coin outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1930,
+    "name": "Conditional Geometric I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1931,
+    "name": "Quicker Heads I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, coin outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1932,
+    "name": "Wild Card Room",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1933,
+    "name": "Carpenter Errors I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1934,
+    "name": "Three Die Sum",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1935,
+    "name": "60 Heads I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, coin outcomes | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1936,
+    "name": "Conic Cylinder",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1937,
+    "name": "Cubic Ant I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1938,
+    "name": "Introductory Gamma",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1939,
+    "name": "Red Cube I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1940,
+    "name": "Red Cube II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1941,
+    "name": "Minimizing Variance",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1942,
+    "name": "Friendly Beef",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1943,
+    "name": "Color Mix",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "ball possession"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: ball possession | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1944,
+    "name": "Prior Event I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1945,
+    "name": "Prior Event II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1946,
+    "name": "Prior Die Sum I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1947,
+    "name": "Collector's Sculpture",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1948,
+    "name": "Ones and Twos I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1949,
+    "name": "Parity Difference",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "dice rolls",
+        "payout random variable",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, dice rolls, payout random variable, coin outcomes | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1950,
+    "name": "Cubic Packing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "integer states",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: integer states, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1951,
+    "name": "Scheduling Appointments",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1952,
+    "name": "Sublime Snowman",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "ball possession"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: ball possession | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1953,
+    "name": "Weight Arrangement",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1954,
+    "name": "Prime Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls, integer states | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1955,
+    "name": "Reflip",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "payout random variable",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, payout random variable, coin outcomes | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1956,
+    "name": "Absolute Uniform Difference",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1957,
+    "name": "Maximin",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1958,
+    "name": "Fresh Bagel",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "box contents"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: box contents | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1959,
+    "name": "Even Permutations",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1960,
+    "name": "Longer Piece I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1961,
+    "name": "Longer Piece II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1962,
+    "name": "Carpenter Errors II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1963,
+    "name": "Carpenter Errors III",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1964,
+    "name": "Random Fixed Point",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "integer states",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: integer states, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1965,
+    "name": "Normal Practice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1966,
+    "name": "Exponential Maxima",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1967,
+    "name": "Coin Swap I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, coin outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1968,
+    "name": "Coin Swap II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "urn contents",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, urn contents, coin outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1969,
+    "name": "Coin Swap III",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, coin outcomes | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1970,
+    "name": "Coin Swap IV",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "urn contents",
+        "coin outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, urn contents, coin outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1971,
+    "name": "LinkedIn Networking I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "players"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: players | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1972,
+    "name": "Fruit Picker",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Sampling is without replacement.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1973,
+    "name": "Fred Playing Game Costs Receive Bank,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "integer states",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: integer states, payout random variable | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1974,
+    "name": "Valid Table II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1975,
+    "name": "Consecutive 1",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Event condition depends on consecutive outcomes. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 1976,
+    "name": "Overflow I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1977,
+    "name": "Summed Products",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1978,
+    "name": "Products of Uniforms I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1979,
+    "name": "Products of Uniforms II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1980,
+    "name": "Correlated Bernoulli I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1981,
+    "name": "Brown Conditions I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1982,
+    "name": "Last Color Standing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1983,
+    "name": "Russian Roulette I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1984,
+    "name": "Russian Roulette II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1985,
+    "name": "Russian Roulette III",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1986,
+    "name": "Russian Roulette IV",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1987,
+    "name": "Russian Roulette V",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time).",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time).; Event condition depends on consecutive outcomes. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1988,
+    "name": "Russian Roulette VI",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "urn contents",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time).",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: urn contents, players | Constraints: Process stops at the first occurrence of the target event (stopping time).; Event condition depends on consecutive outcomes. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1989,
+    "name": "Missing Money I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1990,
+    "name": "First and Last I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1991,
+    "name": "First and Last II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1992,
+    "name": "Colorful M&M",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1993,
+    "name": "Spotify Music",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1994,
+    "name": "Missing Values I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "integer states",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: integer states, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1995,
+    "name": "Maximal Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1996,
+    "name": "Final Digit",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Sampling is with replacement.",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: integer states | Constraints: Sampling is with replacement.; Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1997,
+    "name": "Maximum Covariance",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable X",
+        "random variable Y"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable X, random variable Y | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1998,
+    "name": "Varied Numbers",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "ball possession",
+        "urn contents"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: ball possession, urn contents | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 1999,
+    "name": "Figure Collector",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "box contents",
+        "integer states"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: box contents, integer states | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2000,
+    "name": "Matching Royals",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "cards",
+        "players"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: cards, players | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2001,
+    "name": "3 Consecutive Cards II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "cards"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement.",
+        "Event condition depends on consecutive outcomes."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: cards | Constraints: Sampling is without replacement.; Event condition depends on consecutive outcomes. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2002,
+    "name": "Risk Manager",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "urn contents"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: urn contents | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2003,
+    "name": "Runs!",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "coin outcomes",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, coin outcomes, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2004,
+    "name": "Proper Parenthesization",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2005,
+    "name": "Correlation of Sums of Uncorrelated Variables",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "finite sample space",
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: finite sample space, random outcomes | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2006,
+    "name": "Positive Stars",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "integer states",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: integer states, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  }
+]

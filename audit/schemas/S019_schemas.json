@@ -1,0 +1,1592 @@
+[
+  {
+    "problem_id": 1807,
+    "name": "Tic-Tac-Toe Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Uniform random variables | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1808,
+    "name": "Straddle Strat",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Delta-hedged option position"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Delta-hedged option position | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1809,
+    "name": "Bon Apetit",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random variables and probability space | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1810,
+    "name": "Quilt Shop",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the requested variance/moment quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Normal random variables | Constraints: Boundary/absorption conditions | Objective: Compute the requested variance/moment quantity."
+  },
+  {
+    "problem_id": 1811,
+    "name": "Bolt Variance",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the requested variance/moment quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Urn composition and draws; Normal random variables | Constraints: Boundary/absorption conditions | Objective: Compute the requested variance/moment quantity."
+  },
+  {
+    "problem_id": 1812,
+    "name": "Football Cards",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1813,
+    "name": "Perfect Samples",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1814,
+    "name": "Egg Drop",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1815,
+    "name": "Tiger and Sheep",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1816,
+    "name": "Picture Day",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1817,
+    "name": "Most Traded",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Find the optimal policy/threshold that maximizes expected payoff or success probability."
+    },
+    "schema_text": "Domain: Probability | Entities: Urn composition and draws | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Find the optimal policy/threshold that maximizes expected payoff or success probability."
+  },
+  {
+    "problem_id": 1818,
+    "name": "Closest Median Profit",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Find the optimal policy/threshold that maximizes expected payoff or success probability."
+    },
+    "schema_text": "Domain: Probability | Entities: Urn composition and draws | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Find the optimal policy/threshold that maximizes expected payoff or success probability."
+  },
+  {
+    "problem_id": 1819,
+    "name": "See All Sides",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Discrete die outcomes | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1820,
+    "name": "Same Arc",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Uniform random variables",
+        "Random geometric points/segments"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Uniform random variables; Random geometric points/segments | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1821,
+    "name": "Move to the North",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1822,
+    "name": "Message Delivery",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1823,
+    "name": "Digit Sum of One Million",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1824,
+    "name": "Undirected Graph Search",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Condition on observed event/information",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Urn composition and draws; Uniform random variables | Constraints: Uniform sampling over the stated domain; Condition on observed event/information; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1825,
+    "name": "Door to Offer",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1826,
+    "name": "Chess Tournament",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1827,
+    "name": "Last One Standing",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Random geometric points/segments"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Random geometric points/segments | Constraints: Condition on observed event/information; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1828,
+    "name": "Number 50",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1829,
+    "name": "Top Buyer and Seller",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Find the optimal policy/threshold that maximizes expected payoff or success probability."
+    },
+    "schema_text": "Domain: Probability | Entities: Urn composition and draws | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Find the optimal policy/threshold that maximizes expected payoff or success probability."
+  },
+  {
+    "problem_id": 1830,
+    "name": "Shifting Eigenvalues",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1831,
+    "name": "Growing Fund",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Delta-hedged option position"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Find the optimal policy/threshold that maximizes expected payoff or success probability."
+    },
+    "schema_text": "Domain: Probability | Entities: Delta-hedged option position | Constraints: Boundary/absorption conditions | Objective: Find the optimal policy/threshold that maximizes expected payoff or success probability."
+  },
+  {
+    "problem_id": 1832,
+    "name": "Philadelphia Zoo",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1833,
+    "name": "Variable Swap",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1834,
+    "name": "Jury Members Whom Independently Probability Making",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Independence / i.i.d. assumptions",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Coin flips / Bernoulli trials | Constraints: Independence / i.i.d. assumptions; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1835,
+    "name": "Place or Take",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Finite-horizon decision constraints",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Finite-horizon decision constraints; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1836,
+    "name": "Defining Correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1837,
+    "name": "Ant on a Simplex",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Sequential observations with stopping rule"
+      ],
+      "invariant_constraints": [
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Sequential observations with stopping rule | Constraints: Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1838,
+    "name": "Most Profitable Strategy",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Urn composition and draws | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1839,
+    "name": "Nomadic Manager",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Finite-state Markov chain"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Finite-state Markov chain | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1840,
+    "name": "Bank Arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1841,
+    "name": "Sharing a Secret",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1842,
+    "name": "Flipped in Succession",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1843,
+    "name": "Collecting Coupons",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1844,
+    "name": "8 Clubs",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the requested variance/moment quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement | Constraints: Boundary/absorption conditions | Objective: Compute the requested variance/moment quantity."
+  },
+  {
+    "problem_id": 1845,
+    "name": "German Tanks",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1846,
+    "name": "Laboratory, Handful Thin Inch Glass Rods",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1847,
+    "name": "Illegible Dice",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Random card permutation / draws without replacement",
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Discrete die outcomes; Random card permutation / draws without replacement; Normal random variables | Constraints: Symmetric outcome probabilities; Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1848,
+    "name": "Rubik's Cube Stickers",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Random geometric points/segments"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Random geometric points/segments | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1849,
+    "name": "17 Balls",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1850,
+    "name": "Forwards and Futures",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1851,
+    "name": "Infinite Maturity",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Delta-hedged option position"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Delta-hedged option position | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1852,
+    "name": "R Squared Range",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1853,
+    "name": "Trailing Zeros",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1854,
+    "name": "Remainders",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1855,
+    "name": "Adjacent Evens",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random card permutation / draws without replacement | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1856,
+    "name": "Uniform Sum Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Discrete die outcomes; Uniform random variables | Constraints: Symmetric outcome probabilities; Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1857,
+    "name": "Sequential Six",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Stopping time defined by first hitting/event time",
+        "Finite-horizon decision constraints",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Discrete die outcomes; Urn composition and draws | Constraints: Stopping time defined by first hitting/event time; Finite-horizon decision constraints; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1858,
+    "name": "Color Elimination",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Symmetric outcome probabilities; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1859,
+    "name": "Space Station",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random card permutation / draws without replacement | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1860,
+    "name": "Dice Coin Paradigm",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Condition on observed event/information",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Coin flips / Bernoulli trials; Discrete die outcomes | Constraints: Symmetric outcome probabilities; Condition on observed event/information; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1861,
+    "name": "Little End of the Stick",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1862,
+    "name": "Curing the Compulsive Gambler",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "One-dimensional random walk"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: One-dimensional random walk | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1863,
+    "name": "Dollar Cent Confusion",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1864,
+    "name": "Dice Labeling",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Discrete die outcomes | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1865,
+    "name": "4Head I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials; Urn composition and draws | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1866,
+    "name": "4Head II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1867,
+    "name": "4Head III",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1868,
+    "name": "4Head IV",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1869,
+    "name": "See All Sides I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Discrete die outcomes | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1870,
+    "name": "First Ace",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Sampling without replacement; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1871,
+    "name": "Roll Again I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws",
+        "Delta-hedged option position"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Discrete die outcomes; Random card permutation / draws without replacement; Urn composition and draws; Delta-hedged option position | Constraints: Symmetric outcome probabilities; Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1872,
+    "name": "Roll Again II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Random card permutation / draws without replacement",
+        "Delta-hedged option position"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Discrete die outcomes; Random card permutation / draws without replacement; Delta-hedged option position | Constraints: Symmetric outcome probabilities; Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1873,
+    "name": "Coinsecutive I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1874,
+    "name": "Coinsecutive II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Coin flips / Bernoulli trials | Constraints: Symmetric outcome probabilities; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1875,
+    "name": "Groggy Froggy",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Uniform random variables | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1876,
+    "name": "BOOLAH",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1877,
+    "name": "Two Four Ace",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Condition on observed event/information",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement | Constraints: Condition on observed event/information; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1878,
+    "name": "Bowl of Ramen",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Uniform random variables",
+        "Random geometric points/segments"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Uniform random variables; Random geometric points/segments | Constraints: Uniform sampling over the stated domain; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1879,
+    "name": "True Equation",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Discrete die outcomes; Random card permutation / draws without replacement | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1880,
+    "name": "Slow Ferry I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Uniform random variables | Constraints: Uniform sampling over the stated domain; Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1881,
+    "name": "Disco Squares I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Independence / i.i.d. assumptions",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement | Constraints: Independence / i.i.d. assumptions; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1882,
+    "name": "Birthday Squad",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Uniform random variables | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1883,
+    "name": "Quartic Normal I",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Normal random variables | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1884,
+    "name": "Blind Die",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Discrete die outcomes | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1885,
+    "name": "Jenga Stack",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1886,
+    "name": "Die Expected Value",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Symmetric outcome probabilities",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the Expected Value of the requested random quantity."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Discrete die outcomes; Random card permutation / draws without replacement | Constraints: Symmetric outcome probabilities; Boundary/absorption conditions | Objective: Compute the Expected Value of the requested random quantity."
+  },
+  {
+    "problem_id": 1887,
+    "name": "Picky Subset",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1888,
+    "name": "Pair of Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Random card permutation / draws without replacement; Uniform random variables | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1889,
+    "name": "Cordial Handshake I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1890,
+    "name": "Sturdy Roof I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Independence / i.i.d. assumptions",
+        "Finite-horizon decision constraints",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random variables and probability space | Constraints: Independence / i.i.d. assumptions; Finite-horizon decision constraints; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1891,
+    "name": "Sturdy Roof II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Independence / i.i.d. assumptions",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random variables and probability space | Constraints: Independence / i.i.d. assumptions; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1892,
+    "name": "Scholastic Books",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Independence / i.i.d. assumptions",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Independence / i.i.d. assumptions; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1893,
+    "name": "Contained Origin",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1894,
+    "name": "Jar Match",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling over the stated domain",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Uniform random variables | Constraints: Uniform sampling over the stated domain; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1895,
+    "name": "Group Project I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Finite-horizon decision constraints",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Finite-horizon decision constraints; Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1896,
+    "name": "Almost Squares",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 1897,
+    "name": "Pokemon Collector",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random card permutation / draws without replacement | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1898,
+    "name": "Poker Tourney I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement; Urn composition and draws | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1899,
+    "name": "Soccer Shooter I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1900,
+    "name": "Soccer Shooter II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Moments",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Expected Value and Moments | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1901,
+    "name": "Royal Firsts I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement | Constraints: Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1902,
+    "name": "Royal Firsts II",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement | Constraints: Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1903,
+    "name": "Royal Firsts III",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random card permutation / draws without replacement"
+      ],
+      "invariant_constraints": [
+        "Stopping time defined by first hitting/event time",
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Probability | Entities: Random card permutation / draws without replacement | Constraints: Stopping time defined by first hitting/event time; Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  },
+  {
+    "problem_id": 1904,
+    "name": "Cheesy Guy I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Finite-state Markov chain"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Characterize the distribution (CDF/PDF/law) of the target random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Finite-state Markov chain | Constraints: Boundary/absorption conditions | Objective: Characterize the distribution (CDF/PDF/law) of the target random variable."
+  },
+  {
+    "problem_id": 1905,
+    "name": "Cheesy Guy II",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Characterize the distribution (CDF/PDF/law) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Distributions | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Characterize the distribution (CDF/PDF/law) of the target random variable."
+  },
+  {
+    "problem_id": 1906,
+    "name": "Particle Reach I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "One-dimensional random walk"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Compute the target probability of the event of interest."
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: One-dimensional random walk | Constraints: Boundary/absorption conditions | Objective: Compute the target probability of the event of interest."
+  }
+]

@@ -1,0 +1,1667 @@
+[
+  {
+    "problem_id": 1707,
+    "name": "Three Sticks",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Unit interval or geometric object",
+        "Random cut/location variables",
+        "Induced piece lengths or geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Cut/location variables follow the stated sampling law",
+        "Derived lengths obey partition identities and nonnegativity"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the induced geometric quantities"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Unit interval or geometric object, Random cut/location variables, Induced piece lengths or geometric measurements | Constraints: Cut/location variables follow the stated sampling law, Derived lengths obey partition identities and nonnegativity | Objective: Compute the requested probability or Expected Value of the induced geometric quantities"
+  },
+  {
+    "problem_id": 1708,
+    "name": "Samuel Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1709,
+    "name": "Expected Value of Highest Die",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1710,
+    "name": "Consecutive Heads",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1711,
+    "name": "Grid Fill",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1712,
+    "name": "30-20 Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1713,
+    "name": "Pirate Loot",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1714,
+    "name": "Will It Stand",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1715,
+    "name": "Even Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1716,
+    "name": "Odd Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1717,
+    "name": "First to 50",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1718,
+    "name": "Exactly 6",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1719,
+    "name": "Good Grid",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1720,
+    "name": "Four Integers",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1721,
+    "name": "Complete Sets",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1722,
+    "name": "Expected Couples",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1723,
+    "name": "Inconsistent Bakers",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1724,
+    "name": "Gone Fishing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1725,
+    "name": "Last to Discard",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1726,
+    "name": "Royal Card Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1727,
+    "name": "Dice Game 2",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1728,
+    "name": "Dice Game 3",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1729,
+    "name": "Number of Runs",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1730,
+    "name": "Part 1 You Re On A Gameshow and are Tasked To Choose the Lucky Door",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Unit interval or geometric object",
+        "Random cut/location variables",
+        "Induced piece lengths or geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Cut/location variables follow the stated sampling law",
+        "Derived lengths obey partition identities and nonnegativity"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the induced geometric quantities"
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Unit interval or geometric object, Random cut/location variables, Induced piece lengths or geometric measurements | Constraints: Cut/location variables follow the stated sampling law, Derived lengths obey partition identities and nonnegativity | Objective: Compute the requested probability or Expected Value of the induced geometric quantities"
+  },
+  {
+    "problem_id": 1731,
+    "name": "Straight Shooter",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1732,
+    "name": "Mystery Bills",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1733,
+    "name": "King Cake",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1734,
+    "name": "Orb Draws",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1735,
+    "name": "Scattered Coins",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1736,
+    "name": "Lucky Bubble",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1737,
+    "name": "Heaviest Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1738,
+    "name": "Same Birthday",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1739,
+    "name": "Dice Games EV",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1740,
+    "name": "Normal Distributions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1741,
+    "name": "Deconstructed Rubik's Cube",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Unit interval or geometric object",
+        "Random cut/location variables",
+        "Induced piece lengths or geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Cut/location variables follow the stated sampling law",
+        "Derived lengths obey partition identities and nonnegativity"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the induced geometric quantities"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Unit interval or geometric object, Random cut/location variables, Induced piece lengths or geometric measurements | Constraints: Cut/location variables follow the stated sampling law, Derived lengths obey partition identities and nonnegativity | Objective: Compute the requested probability or Expected Value of the induced geometric quantities"
+  },
+  {
+    "problem_id": 1742,
+    "name": "2D Grid Game II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1743,
+    "name": "Find the Variance",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1744,
+    "name": "Sequential Pairs",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1745,
+    "name": "Repeated Rolling",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1746,
+    "name": "Grand Slam Tournament",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1747,
+    "name": "Safe Codes",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1748,
+    "name": "Token Tussle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1749,
+    "name": "Growing Lily Pad",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1750,
+    "name": "Hourglass Timing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1751,
+    "name": "1000 Stones",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1752,
+    "name": "Probability That You Win",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1753,
+    "name": "Triple Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1754,
+    "name": "Optionality",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1755,
+    "name": "Soccer Match",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1756,
+    "name": "Red Rubik's cube",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1757,
+    "name": "Even Prime Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1758,
+    "name": "Ant Journey",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1759,
+    "name": "Uniform Quotient",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1760,
+    "name": "Disease Incidence",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1761,
+    "name": "Society of Women",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1762,
+    "name": "Filet Mignon",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1763,
+    "name": "Deuces of Four",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1764,
+    "name": "Arabian Sultan",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1765,
+    "name": "Maximize the Product",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1766,
+    "name": "100 Switches",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1767,
+    "name": "Number of Turns",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1768,
+    "name": "Find the Money Box",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1769,
+    "name": "Forgetting Neighbor",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1770,
+    "name": "100-Yard Dash",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1771,
+    "name": "Rainbow Trains",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1772,
+    "name": "Sample Duplication",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Graph vertices and edges",
+        "Traversal/selection variables",
+        "Feasibility or cost functional on substructures"
+      ],
+      "invariant_constraints": [
+        "Graph structure is fixed by the problem statement",
+        "Connectivity/path constraints must be satisfied"
+      ],
+      "target_objective": "Compute or optimize the requested graph-theoretic quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Graph vertices and edges, Traversal/selection variables, Feasibility or cost functional on substructures | Constraints: Graph structure is fixed by the problem statement, Connectivity/path constraints must be satisfied | Objective: Compute or optimize the requested graph-theoretic quantity"
+  },
+  {
+    "problem_id": 1773,
+    "name": "Semi-Working Gum Machine",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Unit interval or geometric object",
+        "Random cut/location variables",
+        "Induced piece lengths or geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Cut/location variables follow the stated sampling law",
+        "Derived lengths obey partition identities and nonnegativity"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the induced geometric quantities"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Unit interval or geometric object, Random cut/location variables, Induced piece lengths or geometric measurements | Constraints: Cut/location variables follow the stated sampling law, Derived lengths obey partition identities and nonnegativity | Objective: Compute the requested probability or Expected Value of the induced geometric quantities"
+  },
+  {
+    "problem_id": 1774,
+    "name": "2D Grid Game",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1775,
+    "name": "River Crossing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1776,
+    "name": "Dinner For Four",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite grid/matrix cells",
+        "Assigned values or labels",
+        "Row/column or adjacency constraints"
+      ],
+      "invariant_constraints": [
+        "Each value assignment obeys uniqueness and placement rules",
+        "All parity/sum/local consistency constraints must hold simultaneously"
+      ],
+      "target_objective": "Count feasible configurations or compute the requested probability over valid assignments"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite grid/matrix cells, Assigned values or labels, Row/column or adjacency constraints | Constraints: Each value assignment obeys uniqueness and placement rules, All parity/sum/local consistency constraints must hold simultaneously | Objective: Count feasible configurations or compute the requested probability over valid assignments"
+  },
+  {
+    "problem_id": 1777,
+    "name": "Assign The Quants",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1778,
+    "name": "Stamp Collector",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1779,
+    "name": "Chess Club Photo",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1780,
+    "name": "Date Projection",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1781,
+    "name": "Coin Bundle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1782,
+    "name": "Median Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1783,
+    "name": "Linear Regression MLE",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "Die/dice outcomes",
+        "Selection or comparison rule on rolls",
+        "Target random variable (score/payoff/event indicator)"
+      ],
+      "invariant_constraints": [
+        "Each roll follows the stated distribution and independence assumptions",
+        "Any keep/stop/re-roll rule is applied exactly as defined"
+      ],
+      "target_objective": "Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: Die/dice outcomes, Selection or comparison rule on rolls, Target random variable (score/payoff/event indicator) | Constraints: Each roll follows the stated distribution and independence assumptions, Any keep/stop/re-roll rule is applied exactly as defined | Objective: Compute the requested probability, distributional quantity, or Expected Value for the dice process"
+  },
+  {
+    "problem_id": 1784,
+    "name": "Hotel Floor Infinite Number Rooms Occupie",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1785,
+    "name": "Subtree Removal",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Graph vertices and edges",
+        "Traversal/selection variables",
+        "Feasibility or cost functional on substructures"
+      ],
+      "invariant_constraints": [
+        "Graph structure is fixed by the problem statement",
+        "Connectivity/path constraints must be satisfied"
+      ],
+      "target_objective": "Compute or optimize the requested graph-theoretic quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Graph vertices and edges, Traversal/selection variables, Feasibility or cost functional on substructures | Constraints: Graph structure is fixed by the problem statement, Connectivity/path constraints must be satisfied | Objective: Compute or optimize the requested graph-theoretic quantity"
+  },
+  {
+    "problem_id": 1786,
+    "name": "Diverging Roads",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1787,
+    "name": "Sly Cat",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1788,
+    "name": "Counter Strike",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1789,
+    "name": "Equal Rations",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1790,
+    "name": "Last Marble Standing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1791,
+    "name": "Pay the Meter",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Bernoulli trials (coin flips)",
+        "Outcome counts or run-length state variable",
+        "Stopping rule or payoff mapping"
+      ],
+      "invariant_constraints": [
+        "Coin bias and trial independence are fixed",
+        "Process follows the stated stopping/termination rule"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the coin-flip experiment"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Bernoulli trials (coin flips), Outcome counts or run-length state variable, Stopping rule or payoff mapping | Constraints: Coin bias and trial independence are fixed, Process follows the stated stopping/termination rule | Objective: Compute the requested probability or Expected Value of the coin-flip experiment"
+  },
+  {
+    "problem_id": 1792,
+    "name": "Buy and Sell Stock",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Urn composition across ball categories",
+        "Sampling/update rule per draw",
+        "Event indicator or terminal payoff variable"
+      ],
+      "invariant_constraints": [
+        "Initial counts are fixed inputs",
+        "Replacement and dependency structure follow the stated draw dynamics"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the urn process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Urn composition across ball categories, Sampling/update rule per draw, Event indicator or terminal payoff variable | Constraints: Initial counts are fixed inputs, Replacement and dependency structure follow the stated draw dynamics | Objective: Compute the requested probability or Expected Value for the urn process"
+  },
+  {
+    "problem_id": 1793,
+    "name": "Sumo Wrestlers",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1794,
+    "name": "Happy Meal Unveiling",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1795,
+    "name": "Restaurant Meal",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Unit interval or geometric object",
+        "Random cut/location variables",
+        "Induced piece lengths or geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Cut/location variables follow the stated sampling law",
+        "Derived lengths obey partition identities and nonnegativity"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value of the induced geometric quantities"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Unit interval or geometric object, Random cut/location variables, Induced piece lengths or geometric measurements | Constraints: Cut/location variables follow the stated sampling law, Derived lengths obey partition identities and nonnegativity | Objective: Compute the requested probability or Expected Value of the induced geometric quantities"
+  },
+  {
+    "problem_id": 1796,
+    "name": "Spinner Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1797,
+    "name": "Regression Coefficients",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1798,
+    "name": "Cards Reordering",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  },
+  {
+    "problem_id": 1799,
+    "name": "Favorite Color",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1800,
+    "name": "Joint Model Evaluation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1801,
+    "name": "Soccer Practice",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1802,
+    "name": "Cube Cutting",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1803,
+    "name": "Option Arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1804,
+    "name": "Sitting Birds",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1805,
+    "name": "Free Sundae",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 1806,
+    "name": "Random Subsets",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition by rank/suit/category",
+        "Sampling sequence (with or without replacement)",
+        "Event or payoff random variable induced by revealed cards"
+      ],
+      "invariant_constraints": [
+        "Deck is uniformly shuffled before play unless otherwise stated",
+        "Replacement/order/stopping mechanics are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-sampling game"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition by rank/suit/category, Sampling sequence (with or without replacement), Event or payoff random variable induced by revealed cards | Constraints: Deck is uniformly shuffled before play unless otherwise stated, Replacement/order/stopping mechanics are fixed by the prompt | Objective: Compute the requested probability or Expected Value for the card-sampling game"
+  }
+]
