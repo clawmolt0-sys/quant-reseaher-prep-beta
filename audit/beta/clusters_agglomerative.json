@@ -1,0 +1,4707 @@
+{
+  "method": "AgglomerativeClustering",
+  "distance_threshold": 0.18,
+  "item_count": 839,
+  "cluster_count": 772,
+  "clusters": [
+    {
+      "cluster_id": "agg-625",
+      "problem_ids": [
+        1
+      ]
+    },
+    {
+      "cluster_id": "agg-503",
+      "problem_ids": [
+        3
+      ]
+    },
+    {
+      "cluster_id": "agg-639",
+      "problem_ids": [
+        5
+      ]
+    },
+    {
+      "cluster_id": "agg-715",
+      "problem_ids": [
+        6
+      ]
+    },
+    {
+      "cluster_id": "agg-8",
+      "problem_ids": [
+        8,
+        728
+      ]
+    },
+    {
+      "cluster_id": "agg-475",
+      "problem_ids": [
+        9
+      ]
+    },
+    {
+      "cluster_id": "agg-563",
+      "problem_ids": [
+        11
+      ]
+    },
+    {
+      "cluster_id": "agg-44",
+      "problem_ids": [
+        13,
+        263
+      ]
+    },
+    {
+      "cluster_id": "agg-720",
+      "problem_ids": [
+        14
+      ]
+    },
+    {
+      "cluster_id": "agg-765",
+      "problem_ids": [
+        16
+      ]
+    },
+    {
+      "cluster_id": "agg-692",
+      "problem_ids": [
+        22
+      ]
+    },
+    {
+      "cluster_id": "agg-727",
+      "problem_ids": [
+        24
+      ]
+    },
+    {
+      "cluster_id": "agg-614",
+      "problem_ids": [
+        30
+      ]
+    },
+    {
+      "cluster_id": "agg-602",
+      "problem_ids": [
+        33
+      ]
+    },
+    {
+      "cluster_id": "agg-568",
+      "problem_ids": [
+        34
+      ]
+    },
+    {
+      "cluster_id": "agg-26",
+      "problem_ids": [
+        35,
+        817,
+        941,
+        2545,
+        2557
+      ]
+    },
+    {
+      "cluster_id": "agg-539",
+      "problem_ids": [
+        41
+      ]
+    },
+    {
+      "cluster_id": "agg-63",
+      "problem_ids": [
+        46,
+        1012
+      ]
+    },
+    {
+      "cluster_id": "agg-19",
+      "problem_ids": [
+        47,
+        493,
+        866,
+        984
+      ]
+    },
+    {
+      "cluster_id": "agg-740",
+      "problem_ids": [
+        49
+      ]
+    },
+    {
+      "cluster_id": "agg-659",
+      "problem_ids": [
+        50
+      ]
+    },
+    {
+      "cluster_id": "agg-3",
+      "problem_ids": [
+        52,
+        611
+      ]
+    },
+    {
+      "cluster_id": "agg-682",
+      "problem_ids": [
+        55
+      ]
+    },
+    {
+      "cluster_id": "agg-754",
+      "problem_ids": [
+        56
+      ]
+    },
+    {
+      "cluster_id": "agg-723",
+      "problem_ids": [
+        57
+      ]
+    },
+    {
+      "cluster_id": "agg-762",
+      "problem_ids": [
+        60
+      ]
+    },
+    {
+      "cluster_id": "agg-497",
+      "problem_ids": [
+        61
+      ]
+    },
+    {
+      "cluster_id": "agg-718",
+      "problem_ids": [
+        65
+      ]
+    },
+    {
+      "cluster_id": "agg-753",
+      "problem_ids": [
+        68
+      ]
+    },
+    {
+      "cluster_id": "agg-567",
+      "problem_ids": [
+        74
+      ]
+    },
+    {
+      "cluster_id": "agg-57",
+      "problem_ids": [
+        77,
+        762
+      ]
+    },
+    {
+      "cluster_id": "agg-752",
+      "problem_ids": [
+        81
+      ]
+    },
+    {
+      "cluster_id": "agg-504",
+      "problem_ids": [
+        84
+      ]
+    },
+    {
+      "cluster_id": "agg-554",
+      "problem_ids": [
+        91
+      ]
+    },
+    {
+      "cluster_id": "agg-742",
+      "problem_ids": [
+        93
+      ]
+    },
+    {
+      "cluster_id": "agg-680",
+      "problem_ids": [
+        96
+      ]
+    },
+    {
+      "cluster_id": "agg-577",
+      "problem_ids": [
+        98
+      ]
+    },
+    {
+      "cluster_id": "agg-511",
+      "problem_ids": [
+        109
+      ]
+    },
+    {
+      "cluster_id": "agg-722",
+      "problem_ids": [
+        116
+      ]
+    },
+    {
+      "cluster_id": "agg-522",
+      "problem_ids": [
+        117
+      ]
+    },
+    {
+      "cluster_id": "agg-498",
+      "problem_ids": [
+        118
+      ]
+    },
+    {
+      "cluster_id": "agg-110",
+      "problem_ids": [
+        119,
+        301
+      ]
+    },
+    {
+      "cluster_id": "agg-666",
+      "problem_ids": [
+        120
+      ]
+    },
+    {
+      "cluster_id": "agg-630",
+      "problem_ids": [
+        121
+      ]
+    },
+    {
+      "cluster_id": "agg-613",
+      "problem_ids": [
+        122
+      ]
+    },
+    {
+      "cluster_id": "agg-583",
+      "problem_ids": [
+        128
+      ]
+    },
+    {
+      "cluster_id": "agg-443",
+      "problem_ids": [
+        132
+      ]
+    },
+    {
+      "cluster_id": "agg-421",
+      "problem_ids": [
+        135
+      ]
+    },
+    {
+      "cluster_id": "agg-755",
+      "problem_ids": [
+        137
+      ]
+    },
+    {
+      "cluster_id": "agg-537",
+      "problem_ids": [
+        138
+      ]
+    },
+    {
+      "cluster_id": "agg-575",
+      "problem_ids": [
+        140
+      ]
+    },
+    {
+      "cluster_id": "agg-672",
+      "problem_ids": [
+        143
+      ]
+    },
+    {
+      "cluster_id": "agg-688",
+      "problem_ids": [
+        145
+      ]
+    },
+    {
+      "cluster_id": "agg-725",
+      "problem_ids": [
+        149
+      ]
+    },
+    {
+      "cluster_id": "agg-745",
+      "problem_ids": [
+        152
+      ]
+    },
+    {
+      "cluster_id": "agg-757",
+      "problem_ids": [
+        154
+      ]
+    },
+    {
+      "cluster_id": "agg-624",
+      "problem_ids": [
+        155
+      ]
+    },
+    {
+      "cluster_id": "agg-603",
+      "problem_ids": [
+        157
+      ]
+    },
+    {
+      "cluster_id": "agg-480",
+      "problem_ids": [
+        160
+      ]
+    },
+    {
+      "cluster_id": "agg-701",
+      "problem_ids": [
+        161
+      ]
+    },
+    {
+      "cluster_id": "agg-605",
+      "problem_ids": [
+        163
+      ]
+    },
+    {
+      "cluster_id": "agg-533",
+      "problem_ids": [
+        164
+      ]
+    },
+    {
+      "cluster_id": "agg-647",
+      "problem_ids": [
+        167
+      ]
+    },
+    {
+      "cluster_id": "agg-59",
+      "problem_ids": [
+        168,
+        765
+      ]
+    },
+    {
+      "cluster_id": "agg-376",
+      "problem_ids": [
+        169
+      ]
+    },
+    {
+      "cluster_id": "agg-728",
+      "problem_ids": [
+        170
+      ]
+    },
+    {
+      "cluster_id": "agg-6",
+      "problem_ids": [
+        177,
+        814
+      ]
+    },
+    {
+      "cluster_id": "agg-555",
+      "problem_ids": [
+        178
+      ]
+    },
+    {
+      "cluster_id": "agg-7",
+      "problem_ids": [
+        182,
+        668,
+        719,
+        786
+      ]
+    },
+    {
+      "cluster_id": "agg-493",
+      "problem_ids": [
+        186
+      ]
+    },
+    {
+      "cluster_id": "agg-80",
+      "problem_ids": [
+        190,
+        514
+      ]
+    },
+    {
+      "cluster_id": "agg-710",
+      "problem_ids": [
+        191
+      ]
+    },
+    {
+      "cluster_id": "agg-730",
+      "problem_ids": [
+        194
+      ]
+    },
+    {
+      "cluster_id": "agg-541",
+      "problem_ids": [
+        196
+      ]
+    },
+    {
+      "cluster_id": "agg-448",
+      "problem_ids": [
+        197
+      ]
+    },
+    {
+      "cluster_id": "agg-556",
+      "problem_ids": [
+        198
+      ]
+    },
+    {
+      "cluster_id": "agg-34",
+      "problem_ids": [
+        200,
+        337
+      ]
+    },
+    {
+      "cluster_id": "agg-0",
+      "problem_ids": [
+        202,
+        910
+      ]
+    },
+    {
+      "cluster_id": "agg-695",
+      "problem_ids": [
+        203
+      ]
+    },
+    {
+      "cluster_id": "agg-619",
+      "problem_ids": [
+        207
+      ]
+    },
+    {
+      "cluster_id": "agg-521",
+      "problem_ids": [
+        209
+      ]
+    },
+    {
+      "cluster_id": "agg-306",
+      "problem_ids": [
+        212
+      ]
+    },
+    {
+      "cluster_id": "agg-721",
+      "problem_ids": [
+        219
+      ]
+    },
+    {
+      "cluster_id": "agg-523",
+      "problem_ids": [
+        224
+      ]
+    },
+    {
+      "cluster_id": "agg-50",
+      "problem_ids": [
+        227,
+        359
+      ]
+    },
+    {
+      "cluster_id": "agg-21",
+      "problem_ids": [
+        230,
+        360
+      ]
+    },
+    {
+      "cluster_id": "agg-771",
+      "problem_ids": [
+        232
+      ]
+    },
+    {
+      "cluster_id": "agg-711",
+      "problem_ids": [
+        235
+      ]
+    },
+    {
+      "cluster_id": "agg-24",
+      "problem_ids": [
+        239,
+        319
+      ]
+    },
+    {
+      "cluster_id": "agg-545",
+      "problem_ids": [
+        241
+      ]
+    },
+    {
+      "cluster_id": "agg-29",
+      "problem_ids": [
+        245,
+        324
+      ]
+    },
+    {
+      "cluster_id": "agg-45",
+      "problem_ids": [
+        246,
+        299
+      ]
+    },
+    {
+      "cluster_id": "agg-441",
+      "problem_ids": [
+        247
+      ]
+    },
+    {
+      "cluster_id": "agg-64",
+      "problem_ids": [
+        249,
+        512
+      ]
+    },
+    {
+      "cluster_id": "agg-471",
+      "problem_ids": [
+        251
+      ]
+    },
+    {
+      "cluster_id": "agg-118",
+      "problem_ids": [
+        254,
+        306
+      ]
+    },
+    {
+      "cluster_id": "agg-422",
+      "problem_ids": [
+        256
+      ]
+    },
+    {
+      "cluster_id": "agg-417",
+      "problem_ids": [
+        257
+      ]
+    },
+    {
+      "cluster_id": "agg-551",
+      "problem_ids": [
+        258
+      ]
+    },
+    {
+      "cluster_id": "agg-58",
+      "problem_ids": [
+        261,
+        312
+      ]
+    },
+    {
+      "cluster_id": "agg-540",
+      "problem_ids": [
+        264
+      ]
+    },
+    {
+      "cluster_id": "agg-128",
+      "problem_ids": [
+        269,
+        318
+      ]
+    },
+    {
+      "cluster_id": "agg-737",
+      "problem_ids": [
+        273
+      ]
+    },
+    {
+      "cluster_id": "agg-664",
+      "problem_ids": [
+        274
+      ]
+    },
+    {
+      "cluster_id": "agg-606",
+      "problem_ids": [
+        276
+      ]
+    },
+    {
+      "cluster_id": "agg-637",
+      "problem_ids": [
+        280
+      ]
+    },
+    {
+      "cluster_id": "agg-729",
+      "problem_ids": [
+        282
+      ]
+    },
+    {
+      "cluster_id": "agg-509",
+      "problem_ids": [
+        286
+      ]
+    },
+    {
+      "cluster_id": "agg-667",
+      "problem_ids": [
+        304
+      ]
+    },
+    {
+      "cluster_id": "agg-460",
+      "problem_ids": [
+        315
+      ]
+    },
+    {
+      "cluster_id": "agg-661",
+      "problem_ids": [
+        321
+      ]
+    },
+    {
+      "cluster_id": "agg-543",
+      "problem_ids": [
+        326
+      ]
+    },
+    {
+      "cluster_id": "agg-490",
+      "problem_ids": [
+        327
+      ]
+    },
+    {
+      "cluster_id": "agg-483",
+      "problem_ids": [
+        328
+      ]
+    },
+    {
+      "cluster_id": "agg-485",
+      "problem_ids": [
+        333
+      ]
+    },
+    {
+      "cluster_id": "agg-633",
+      "problem_ids": [
+        342
+      ]
+    },
+    {
+      "cluster_id": "agg-626",
+      "problem_ids": [
+        349
+      ]
+    },
+    {
+      "cluster_id": "agg-635",
+      "problem_ids": [
+        351
+      ]
+    },
+    {
+      "cluster_id": "agg-570",
+      "problem_ids": [
+        355
+      ]
+    },
+    {
+      "cluster_id": "agg-455",
+      "problem_ids": [
+        364
+      ]
+    },
+    {
+      "cluster_id": "agg-439",
+      "problem_ids": [
+        366
+      ]
+    },
+    {
+      "cluster_id": "agg-610",
+      "problem_ids": [
+        370
+      ]
+    },
+    {
+      "cluster_id": "agg-573",
+      "problem_ids": [
+        375
+      ]
+    },
+    {
+      "cluster_id": "agg-277",
+      "problem_ids": [
+        377
+      ]
+    },
+    {
+      "cluster_id": "agg-671",
+      "problem_ids": [
+        383
+      ]
+    },
+    {
+      "cluster_id": "agg-749",
+      "problem_ids": [
+        389
+      ]
+    },
+    {
+      "cluster_id": "agg-668",
+      "problem_ids": [
+        390
+      ]
+    },
+    {
+      "cluster_id": "agg-412",
+      "problem_ids": [
+        392
+      ]
+    },
+    {
+      "cluster_id": "agg-519",
+      "problem_ids": [
+        394
+      ]
+    },
+    {
+      "cluster_id": "agg-467",
+      "problem_ids": [
+        397
+      ]
+    },
+    {
+      "cluster_id": "agg-390",
+      "problem_ids": [
+        399
+      ]
+    },
+    {
+      "cluster_id": "agg-601",
+      "problem_ids": [
+        402
+      ]
+    },
+    {
+      "cluster_id": "agg-758",
+      "problem_ids": [
+        404
+      ]
+    },
+    {
+      "cluster_id": "agg-451",
+      "problem_ids": [
+        405
+      ]
+    },
+    {
+      "cluster_id": "agg-686",
+      "problem_ids": [
+        406
+      ]
+    },
+    {
+      "cluster_id": "agg-681",
+      "problem_ids": [
+        407
+      ]
+    },
+    {
+      "cluster_id": "agg-586",
+      "problem_ids": [
+        408
+      ]
+    },
+    {
+      "cluster_id": "agg-735",
+      "problem_ids": [
+        414
+      ]
+    },
+    {
+      "cluster_id": "agg-513",
+      "problem_ids": [
+        417
+      ]
+    },
+    {
+      "cluster_id": "agg-767",
+      "problem_ids": [
+        419
+      ]
+    },
+    {
+      "cluster_id": "agg-535",
+      "problem_ids": [
+        420
+      ]
+    },
+    {
+      "cluster_id": "agg-558",
+      "problem_ids": [
+        422
+      ]
+    },
+    {
+      "cluster_id": "agg-627",
+      "problem_ids": [
+        423
+      ]
+    },
+    {
+      "cluster_id": "agg-2",
+      "problem_ids": [
+        424,
+        2740
+      ]
+    },
+    {
+      "cluster_id": "agg-662",
+      "problem_ids": [
+        426
+      ]
+    },
+    {
+      "cluster_id": "agg-643",
+      "problem_ids": [
+        427
+      ]
+    },
+    {
+      "cluster_id": "agg-431",
+      "problem_ids": [
+        429
+      ]
+    },
+    {
+      "cluster_id": "agg-741",
+      "problem_ids": [
+        433
+      ]
+    },
+    {
+      "cluster_id": "agg-579",
+      "problem_ids": [
+        434
+      ]
+    },
+    {
+      "cluster_id": "agg-397",
+      "problem_ids": [
+        436
+      ]
+    },
+    {
+      "cluster_id": "agg-407",
+      "problem_ids": [
+        441
+      ]
+    },
+    {
+      "cluster_id": "agg-434",
+      "problem_ids": [
+        442
+      ]
+    },
+    {
+      "cluster_id": "agg-300",
+      "problem_ids": [
+        445
+      ]
+    },
+    {
+      "cluster_id": "agg-251",
+      "problem_ids": [
+        446
+      ]
+    },
+    {
+      "cluster_id": "agg-424",
+      "problem_ids": [
+        448
+      ]
+    },
+    {
+      "cluster_id": "agg-525",
+      "problem_ids": [
+        449
+      ]
+    },
+    {
+      "cluster_id": "agg-569",
+      "problem_ids": [
+        454
+      ]
+    },
+    {
+      "cluster_id": "agg-532",
+      "problem_ids": [
+        456
+      ]
+    },
+    {
+      "cluster_id": "agg-46",
+      "problem_ids": [
+        457,
+        811
+      ]
+    },
+    {
+      "cluster_id": "agg-714",
+      "problem_ids": [
+        459
+      ]
+    },
+    {
+      "cluster_id": "agg-574",
+      "problem_ids": [
+        464
+      ]
+    },
+    {
+      "cluster_id": "agg-391",
+      "problem_ids": [
+        466
+      ]
+    },
+    {
+      "cluster_id": "agg-702",
+      "problem_ids": [
+        471
+      ]
+    },
+    {
+      "cluster_id": "agg-694",
+      "problem_ids": [
+        472
+      ]
+    },
+    {
+      "cluster_id": "agg-645",
+      "problem_ids": [
+        474
+      ]
+    },
+    {
+      "cluster_id": "agg-389",
+      "problem_ids": [
+        475
+      ]
+    },
+    {
+      "cluster_id": "agg-20",
+      "problem_ids": [
+        478,
+        2736
+      ]
+    },
+    {
+      "cluster_id": "agg-40",
+      "problem_ids": [
+        486,
+        853
+      ]
+    },
+    {
+      "cluster_id": "agg-5",
+      "problem_ids": [
+        488,
+        859
+      ]
+    },
+    {
+      "cluster_id": "agg-642",
+      "problem_ids": [
+        489
+      ]
+    },
+    {
+      "cluster_id": "agg-418",
+      "problem_ids": [
+        496
+      ]
+    },
+    {
+      "cluster_id": "agg-707",
+      "problem_ids": [
+        498
+      ]
+    },
+    {
+      "cluster_id": "agg-31",
+      "problem_ids": [
+        500,
+        885
+      ]
+    },
+    {
+      "cluster_id": "agg-54",
+      "problem_ids": [
+        503,
+        896
+      ]
+    },
+    {
+      "cluster_id": "agg-14",
+      "problem_ids": [
+        507,
+        902,
+        924
+      ]
+    },
+    {
+      "cluster_id": "agg-423",
+      "problem_ids": [
+        508
+      ]
+    },
+    {
+      "cluster_id": "agg-43",
+      "problem_ids": [
+        517,
+        949
+      ]
+    },
+    {
+      "cluster_id": "agg-444",
+      "problem_ids": [
+        521
+      ]
+    },
+    {
+      "cluster_id": "agg-32",
+      "problem_ids": [
+        522,
+        955
+      ]
+    },
+    {
+      "cluster_id": "agg-656",
+      "problem_ids": [
+        529
+      ]
+    },
+    {
+      "cluster_id": "agg-411",
+      "problem_ids": [
+        533
+      ]
+    },
+    {
+      "cluster_id": "agg-514",
+      "problem_ids": [
+        534
+      ]
+    },
+    {
+      "cluster_id": "agg-615",
+      "problem_ids": [
+        535
+      ]
+    },
+    {
+      "cluster_id": "agg-750",
+      "problem_ids": [
+        538
+      ]
+    },
+    {
+      "cluster_id": "agg-456",
+      "problem_ids": [
+        540
+      ]
+    },
+    {
+      "cluster_id": "agg-22",
+      "problem_ids": [
+        542,
+        997
+      ]
+    },
+    {
+      "cluster_id": "agg-433",
+      "problem_ids": [
+        546
+      ]
+    },
+    {
+      "cluster_id": "agg-604",
+      "problem_ids": [
+        548
+      ]
+    },
+    {
+      "cluster_id": "agg-536",
+      "problem_ids": [
+        552
+      ]
+    },
+    {
+      "cluster_id": "agg-477",
+      "problem_ids": [
+        553
+      ]
+    },
+    {
+      "cluster_id": "agg-548",
+      "problem_ids": [
+        560
+      ]
+    },
+    {
+      "cluster_id": "agg-388",
+      "problem_ids": [
+        561
+      ]
+    },
+    {
+      "cluster_id": "agg-747",
+      "problem_ids": [
+        563
+      ]
+    },
+    {
+      "cluster_id": "agg-746",
+      "problem_ids": [
+        566
+      ]
+    },
+    {
+      "cluster_id": "agg-39",
+      "problem_ids": [
+        568,
+        836
+      ]
+    },
+    {
+      "cluster_id": "agg-655",
+      "problem_ids": [
+        579
+      ]
+    },
+    {
+      "cluster_id": "agg-607",
+      "problem_ids": [
+        581
+      ]
+    },
+    {
+      "cluster_id": "agg-486",
+      "problem_ids": [
+        582
+      ]
+    },
+    {
+      "cluster_id": "agg-640",
+      "problem_ids": [
+        583
+      ]
+    },
+    {
+      "cluster_id": "agg-734",
+      "problem_ids": [
+        590
+      ]
+    },
+    {
+      "cluster_id": "agg-364",
+      "problem_ids": [
+        593
+      ]
+    },
+    {
+      "cluster_id": "agg-670",
+      "problem_ids": [
+        596
+      ]
+    },
+    {
+      "cluster_id": "agg-739",
+      "problem_ids": [
+        597
+      ]
+    },
+    {
+      "cluster_id": "agg-531",
+      "problem_ids": [
+        601
+      ]
+    },
+    {
+      "cluster_id": "agg-748",
+      "problem_ids": [
+        602
+      ]
+    },
+    {
+      "cluster_id": "agg-675",
+      "problem_ids": [
+        604
+      ]
+    },
+    {
+      "cluster_id": "agg-402",
+      "problem_ids": [
+        610
+      ]
+    },
+    {
+      "cluster_id": "agg-588",
+      "problem_ids": [
+        612
+      ]
+    },
+    {
+      "cluster_id": "agg-732",
+      "problem_ids": [
+        613
+      ]
+    },
+    {
+      "cluster_id": "agg-510",
+      "problem_ids": [
+        614
+      ]
+    },
+    {
+      "cluster_id": "agg-426",
+      "problem_ids": [
+        617
+      ]
+    },
+    {
+      "cluster_id": "agg-636",
+      "problem_ids": [
+        621
+      ]
+    },
+    {
+      "cluster_id": "agg-649",
+      "problem_ids": [
+        622
+      ]
+    },
+    {
+      "cluster_id": "agg-591",
+      "problem_ids": [
+        623
+      ]
+    },
+    {
+      "cluster_id": "agg-453",
+      "problem_ids": [
+        624
+      ]
+    },
+    {
+      "cluster_id": "agg-476",
+      "problem_ids": [
+        625
+      ]
+    },
+    {
+      "cluster_id": "agg-459",
+      "problem_ids": [
+        627
+      ]
+    },
+    {
+      "cluster_id": "agg-428",
+      "problem_ids": [
+        631
+      ]
+    },
+    {
+      "cluster_id": "agg-482",
+      "problem_ids": [
+        636
+      ]
+    },
+    {
+      "cluster_id": "agg-11",
+      "problem_ids": [
+        643,
+        772
+      ]
+    },
+    {
+      "cluster_id": "agg-419",
+      "problem_ids": [
+        646
+      ]
+    },
+    {
+      "cluster_id": "agg-578",
+      "problem_ids": [
+        649
+      ]
+    },
+    {
+      "cluster_id": "agg-691",
+      "problem_ids": [
+        650
+      ]
+    },
+    {
+      "cluster_id": "agg-256",
+      "problem_ids": [
+        652
+      ]
+    },
+    {
+      "cluster_id": "agg-677",
+      "problem_ids": [
+        653
+      ]
+    },
+    {
+      "cluster_id": "agg-16",
+      "problem_ids": [
+        654,
+        785
+      ]
+    },
+    {
+      "cluster_id": "agg-47",
+      "problem_ids": [
+        661,
+        792
+      ]
+    },
+    {
+      "cluster_id": "agg-770",
+      "problem_ids": [
+        663
+      ]
+    },
+    {
+      "cluster_id": "agg-33",
+      "problem_ids": [
+        664,
+        730,
+        794
+      ]
+    },
+    {
+      "cluster_id": "agg-447",
+      "problem_ids": [
+        670
+      ]
+    },
+    {
+      "cluster_id": "agg-585",
+      "problem_ids": [
+        672
+      ]
+    },
+    {
+      "cluster_id": "agg-581",
+      "problem_ids": [
+        673
+      ]
+    },
+    {
+      "cluster_id": "agg-620",
+      "problem_ids": [
+        674
+      ]
+    },
+    {
+      "cluster_id": "agg-81",
+      "problem_ids": [
+        682,
+        812
+      ]
+    },
+    {
+      "cluster_id": "agg-609",
+      "problem_ids": [
+        685
+      ]
+    },
+    {
+      "cluster_id": "agg-593",
+      "problem_ids": [
+        686
+      ]
+    },
+    {
+      "cluster_id": "agg-696",
+      "problem_ids": [
+        688
+      ]
+    },
+    {
+      "cluster_id": "agg-518",
+      "problem_ids": [
+        689
+      ]
+    },
+    {
+      "cluster_id": "agg-465",
+      "problem_ids": [
+        690
+      ]
+    },
+    {
+      "cluster_id": "agg-629",
+      "problem_ids": [
+        697
+      ]
+    },
+    {
+      "cluster_id": "agg-557",
+      "problem_ids": [
+        698
+      ]
+    },
+    {
+      "cluster_id": "agg-632",
+      "problem_ids": [
+        702
+      ]
+    },
+    {
+      "cluster_id": "agg-526",
+      "problem_ids": [
+        703
+      ]
+    },
+    {
+      "cluster_id": "agg-683",
+      "problem_ids": [
+        705
+      ]
+    },
+    {
+      "cluster_id": "agg-738",
+      "problem_ids": [
+        706
+      ]
+    },
+    {
+      "cluster_id": "agg-415",
+      "problem_ids": [
+        710
+      ]
+    },
+    {
+      "cluster_id": "agg-621",
+      "problem_ids": [
+        711
+      ]
+    },
+    {
+      "cluster_id": "agg-660",
+      "problem_ids": [
+        713
+      ]
+    },
+    {
+      "cluster_id": "agg-35",
+      "problem_ids": [
+        714,
+        748
+      ]
+    },
+    {
+      "cluster_id": "agg-759",
+      "problem_ids": [
+        716
+      ]
+    },
+    {
+      "cluster_id": "agg-488",
+      "problem_ids": [
+        717
+      ]
+    },
+    {
+      "cluster_id": "agg-369",
+      "problem_ids": [
+        718
+      ]
+    },
+    {
+      "cluster_id": "agg-534",
+      "problem_ids": [
+        720
+      ]
+    },
+    {
+      "cluster_id": "agg-594",
+      "problem_ids": [
+        721
+      ]
+    },
+    {
+      "cluster_id": "agg-372",
+      "problem_ids": [
+        724
+      ]
+    },
+    {
+      "cluster_id": "agg-466",
+      "problem_ids": [
+        725
+      ]
+    },
+    {
+      "cluster_id": "agg-454",
+      "problem_ids": [
+        732
+      ]
+    },
+    {
+      "cluster_id": "agg-399",
+      "problem_ids": [
+        733
+      ]
+    },
+    {
+      "cluster_id": "agg-312",
+      "problem_ids": [
+        738
+      ]
+    },
+    {
+      "cluster_id": "agg-600",
+      "problem_ids": [
+        745
+      ]
+    },
+    {
+      "cluster_id": "agg-559",
+      "problem_ids": [
+        752
+      ]
+    },
+    {
+      "cluster_id": "agg-628",
+      "problem_ids": [
+        753
+      ]
+    },
+    {
+      "cluster_id": "agg-505",
+      "problem_ids": [
+        755
+      ]
+    },
+    {
+      "cluster_id": "agg-571",
+      "problem_ids": [
+        758
+      ]
+    },
+    {
+      "cluster_id": "agg-584",
+      "problem_ids": [
+        763
+      ]
+    },
+    {
+      "cluster_id": "agg-425",
+      "problem_ids": [
+        768
+      ]
+    },
+    {
+      "cluster_id": "agg-292",
+      "problem_ids": [
+        769
+      ]
+    },
+    {
+      "cluster_id": "agg-658",
+      "problem_ids": [
+        773
+      ]
+    },
+    {
+      "cluster_id": "agg-420",
+      "problem_ids": [
+        777
+      ]
+    },
+    {
+      "cluster_id": "agg-473",
+      "problem_ids": [
+        778
+      ]
+    },
+    {
+      "cluster_id": "agg-463",
+      "problem_ids": [
+        779
+      ]
+    },
+    {
+      "cluster_id": "agg-641",
+      "problem_ids": [
+        783
+      ]
+    },
+    {
+      "cluster_id": "agg-673",
+      "problem_ids": [
+        787
+      ]
+    },
+    {
+      "cluster_id": "agg-599",
+      "problem_ids": [
+        788
+      ]
+    },
+    {
+      "cluster_id": "agg-719",
+      "problem_ids": [
+        791
+      ]
+    },
+    {
+      "cluster_id": "agg-552",
+      "problem_ids": [
+        796
+      ]
+    },
+    {
+      "cluster_id": "agg-4",
+      "problem_ids": [
+        797,
+        977
+      ]
+    },
+    {
+      "cluster_id": "agg-416",
+      "problem_ids": [
+        803
+      ]
+    },
+    {
+      "cluster_id": "agg-699",
+      "problem_ids": [
+        805
+      ]
+    },
+    {
+      "cluster_id": "agg-13",
+      "problem_ids": [
+        806,
+        1807
+      ]
+    },
+    {
+      "cluster_id": "agg-330",
+      "problem_ids": [
+        807
+      ]
+    },
+    {
+      "cluster_id": "agg-634",
+      "problem_ids": [
+        809
+      ]
+    },
+    {
+      "cluster_id": "agg-587",
+      "problem_ids": [
+        813
+      ]
+    },
+    {
+      "cluster_id": "agg-360",
+      "problem_ids": [
+        820
+      ]
+    },
+    {
+      "cluster_id": "agg-665",
+      "problem_ids": [
+        823
+      ]
+    },
+    {
+      "cluster_id": "agg-592",
+      "problem_ids": [
+        824
+      ]
+    },
+    {
+      "cluster_id": "agg-597",
+      "problem_ids": [
+        828
+      ]
+    },
+    {
+      "cluster_id": "agg-705",
+      "problem_ids": [
+        831
+      ]
+    },
+    {
+      "cluster_id": "agg-299",
+      "problem_ids": [
+        832
+      ]
+    },
+    {
+      "cluster_id": "agg-442",
+      "problem_ids": [
+        833
+      ]
+    },
+    {
+      "cluster_id": "agg-449",
+      "problem_ids": [
+        840
+      ]
+    },
+    {
+      "cluster_id": "agg-314",
+      "problem_ids": [
+        841
+      ]
+    },
+    {
+      "cluster_id": "agg-565",
+      "problem_ids": [
+        844
+      ]
+    },
+    {
+      "cluster_id": "agg-524",
+      "problem_ids": [
+        845
+      ]
+    },
+    {
+      "cluster_id": "agg-333",
+      "problem_ids": [
+        846
+      ]
+    },
+    {
+      "cluster_id": "agg-608",
+      "problem_ids": [
+        851
+      ]
+    },
+    {
+      "cluster_id": "agg-622",
+      "problem_ids": [
+        852
+      ]
+    },
+    {
+      "cluster_id": "agg-494",
+      "problem_ids": [
+        857
+      ]
+    },
+    {
+      "cluster_id": "agg-413",
+      "problem_ids": [
+        860
+      ]
+    },
+    {
+      "cluster_id": "agg-470",
+      "problem_ids": [
+        861
+      ]
+    },
+    {
+      "cluster_id": "agg-646",
+      "problem_ids": [
+        864
+      ]
+    },
+    {
+      "cluster_id": "agg-576",
+      "problem_ids": [
+        865
+      ]
+    },
+    {
+      "cluster_id": "agg-743",
+      "problem_ids": [
+        867
+      ]
+    },
+    {
+      "cluster_id": "agg-508",
+      "problem_ids": [
+        871
+      ]
+    },
+    {
+      "cluster_id": "agg-561",
+      "problem_ids": [
+        874
+      ]
+    },
+    {
+      "cluster_id": "agg-295",
+      "problem_ids": [
+        875
+      ]
+    },
+    {
+      "cluster_id": "agg-520",
+      "problem_ids": [
+        877
+      ]
+    },
+    {
+      "cluster_id": "agg-409",
+      "problem_ids": [
+        882
+      ]
+    },
+    {
+      "cluster_id": "agg-595",
+      "problem_ids": [
+        883
+      ]
+    },
+    {
+      "cluster_id": "agg-403",
+      "problem_ids": [
+        884
+      ]
+    },
+    {
+      "cluster_id": "agg-652",
+      "problem_ids": [
+        886
+      ]
+    },
+    {
+      "cluster_id": "agg-502",
+      "problem_ids": [
+        889
+      ]
+    },
+    {
+      "cluster_id": "agg-15",
+      "problem_ids": [
+        891,
+        904
+      ]
+    },
+    {
+      "cluster_id": "agg-149",
+      "problem_ids": [
+        895
+      ]
+    },
+    {
+      "cluster_id": "agg-373",
+      "problem_ids": [
+        897
+      ]
+    },
+    {
+      "cluster_id": "agg-248",
+      "problem_ids": [
+        900
+      ]
+    },
+    {
+      "cluster_id": "agg-275",
+      "problem_ids": [
+        901
+      ]
+    },
+    {
+      "cluster_id": "agg-387",
+      "problem_ids": [
+        914
+      ]
+    },
+    {
+      "cluster_id": "agg-395",
+      "problem_ids": [
+        928
+      ]
+    },
+    {
+      "cluster_id": "agg-547",
+      "problem_ids": [
+        929
+      ]
+    },
+    {
+      "cluster_id": "agg-211",
+      "problem_ids": [
+        939
+      ]
+    },
+    {
+      "cluster_id": "agg-763",
+      "problem_ids": [
+        945
+      ]
+    },
+    {
+      "cluster_id": "agg-392",
+      "problem_ids": [
+        951
+      ]
+    },
+    {
+      "cluster_id": "agg-724",
+      "problem_ids": [
+        958
+      ]
+    },
+    {
+      "cluster_id": "agg-18",
+      "problem_ids": [
+        965,
+        1036
+      ]
+    },
+    {
+      "cluster_id": "agg-457",
+      "problem_ids": [
+        969
+      ]
+    },
+    {
+      "cluster_id": "agg-266",
+      "problem_ids": [
+        970
+      ]
+    },
+    {
+      "cluster_id": "agg-481",
+      "problem_ids": [
+        974
+      ]
+    },
+    {
+      "cluster_id": "agg-612",
+      "problem_ids": [
+        975
+      ]
+    },
+    {
+      "cluster_id": "agg-458",
+      "problem_ids": [
+        976
+      ]
+    },
+    {
+      "cluster_id": "agg-589",
+      "problem_ids": [
+        980
+      ]
+    },
+    {
+      "cluster_id": "agg-401",
+      "problem_ids": [
+        981
+      ]
+    },
+    {
+      "cluster_id": "agg-638",
+      "problem_ids": [
+        982
+      ]
+    },
+    {
+      "cluster_id": "agg-254",
+      "problem_ids": [
+        990
+      ]
+    },
+    {
+      "cluster_id": "agg-427",
+      "problem_ids": [
+        993
+      ]
+    },
+    {
+      "cluster_id": "agg-617",
+      "problem_ids": [
+        994
+      ]
+    },
+    {
+      "cluster_id": "agg-611",
+      "problem_ids": [
+        1004
+      ]
+    },
+    {
+      "cluster_id": "agg-580",
+      "problem_ids": [
+        1005
+      ]
+    },
+    {
+      "cluster_id": "agg-291",
+      "problem_ids": [
+        1010
+      ]
+    },
+    {
+      "cluster_id": "agg-145",
+      "problem_ids": [
+        1011
+      ]
+    },
+    {
+      "cluster_id": "agg-260",
+      "problem_ids": [
+        1013
+      ]
+    },
+    {
+      "cluster_id": "agg-507",
+      "problem_ids": [
+        1015
+      ]
+    },
+    {
+      "cluster_id": "agg-438",
+      "problem_ids": [
+        1016
+      ]
+    },
+    {
+      "cluster_id": "agg-28",
+      "problem_ids": [
+        1017,
+        2672
+      ]
+    },
+    {
+      "cluster_id": "agg-430",
+      "problem_ids": [
+        1020
+      ]
+    },
+    {
+      "cluster_id": "agg-768",
+      "problem_ids": [
+        1027
+      ]
+    },
+    {
+      "cluster_id": "agg-316",
+      "problem_ids": [
+        1028
+      ]
+    },
+    {
+      "cluster_id": "agg-648",
+      "problem_ids": [
+        1033
+      ]
+    },
+    {
+      "cluster_id": "agg-396",
+      "problem_ids": [
+        1034
+      ]
+    },
+    {
+      "cluster_id": "agg-616",
+      "problem_ids": [
+        1040
+      ]
+    },
+    {
+      "cluster_id": "agg-598",
+      "problem_ids": [
+        1041
+      ]
+    },
+    {
+      "cluster_id": "agg-530",
+      "problem_ids": [
+        1043
+      ]
+    },
+    {
+      "cluster_id": "agg-193",
+      "problem_ids": [
+        1044
+      ]
+    },
+    {
+      "cluster_id": "agg-516",
+      "problem_ids": [
+        1045
+      ]
+    },
+    {
+      "cluster_id": "agg-582",
+      "problem_ids": [
+        1046
+      ]
+    },
+    {
+      "cluster_id": "agg-644",
+      "problem_ids": [
+        1048
+      ]
+    },
+    {
+      "cluster_id": "agg-663",
+      "problem_ids": [
+        1054
+      ]
+    },
+    {
+      "cluster_id": "agg-305",
+      "problem_ids": [
+        1056
+      ]
+    },
+    {
+      "cluster_id": "agg-404",
+      "problem_ids": [
+        1057
+      ]
+    },
+    {
+      "cluster_id": "agg-385",
+      "problem_ids": [
+        1059
+      ]
+    },
+    {
+      "cluster_id": "agg-259",
+      "problem_ids": [
+        1070
+      ]
+    },
+    {
+      "cluster_id": "agg-452",
+      "problem_ids": [
+        1071
+      ]
+    },
+    {
+      "cluster_id": "agg-653",
+      "problem_ids": [
+        1075
+      ]
+    },
+    {
+      "cluster_id": "agg-760",
+      "problem_ids": [
+        1081
+      ]
+    },
+    {
+      "cluster_id": "agg-487",
+      "problem_ids": [
+        1082
+      ]
+    },
+    {
+      "cluster_id": "agg-374",
+      "problem_ids": [
+        1084
+      ]
+    },
+    {
+      "cluster_id": "agg-359",
+      "problem_ids": [
+        1085
+      ]
+    },
+    {
+      "cluster_id": "agg-287",
+      "problem_ids": [
+        1087
+      ]
+    },
+    {
+      "cluster_id": "agg-378",
+      "problem_ids": [
+        1088
+      ]
+    },
+    {
+      "cluster_id": "agg-726",
+      "problem_ids": [
+        1096
+      ]
+    },
+    {
+      "cluster_id": "agg-756",
+      "problem_ids": [
+        1115
+      ]
+    },
+    {
+      "cluster_id": "agg-322",
+      "problem_ids": [
+        1118
+      ]
+    },
+    {
+      "cluster_id": "agg-379",
+      "problem_ids": [
+        1119
+      ]
+    },
+    {
+      "cluster_id": "agg-345",
+      "problem_ids": [
+        1127
+      ]
+    },
+    {
+      "cluster_id": "agg-298",
+      "problem_ids": [
+        1128
+      ]
+    },
+    {
+      "cluster_id": "agg-751",
+      "problem_ids": [
+        1137
+      ]
+    },
+    {
+      "cluster_id": "agg-546",
+      "problem_ids": [
+        1139
+      ]
+    },
+    {
+      "cluster_id": "agg-469",
+      "problem_ids": [
+        1159
+      ]
+    },
+    {
+      "cluster_id": "agg-761",
+      "problem_ids": [
+        1170
+      ]
+    },
+    {
+      "cluster_id": "agg-320",
+      "problem_ids": [
+        1183
+      ]
+    },
+    {
+      "cluster_id": "agg-700",
+      "problem_ids": [
+        1186
+      ]
+    },
+    {
+      "cluster_id": "agg-657",
+      "problem_ids": [
+        1198
+      ]
+    },
+    {
+      "cluster_id": "agg-440",
+      "problem_ids": [
+        1204
+      ]
+    },
+    {
+      "cluster_id": "agg-706",
+      "problem_ids": [
+        1209
+      ]
+    },
+    {
+      "cluster_id": "agg-1",
+      "problem_ids": [
+        1214,
+        1511,
+        1678
+      ]
+    },
+    {
+      "cluster_id": "agg-716",
+      "problem_ids": [
+        1225
+      ]
+    },
+    {
+      "cluster_id": "agg-564",
+      "problem_ids": [
+        1234
+      ]
+    },
+    {
+      "cluster_id": "agg-10",
+      "problem_ids": [
+        1243,
+        1649
+      ]
+    },
+    {
+      "cluster_id": "agg-53",
+      "problem_ids": [
+        1245,
+        1417
+      ]
+    },
+    {
+      "cluster_id": "agg-281",
+      "problem_ids": [
+        1248
+      ]
+    },
+    {
+      "cluster_id": "agg-631",
+      "problem_ids": [
+        1251
+      ]
+    },
+    {
+      "cluster_id": "agg-703",
+      "problem_ids": [
+        1257
+      ]
+    },
+    {
+      "cluster_id": "agg-766",
+      "problem_ids": [
+        1279
+      ]
+    },
+    {
+      "cluster_id": "agg-566",
+      "problem_ids": [
+        1283
+      ]
+    },
+    {
+      "cluster_id": "agg-315",
+      "problem_ids": [
+        1287
+      ]
+    },
+    {
+      "cluster_id": "agg-232",
+      "problem_ids": [
+        1293
+      ]
+    },
+    {
+      "cluster_id": "agg-654",
+      "problem_ids": [
+        1295
+      ]
+    },
+    {
+      "cluster_id": "agg-319",
+      "problem_ids": [
+        1306
+      ]
+    },
+    {
+      "cluster_id": "agg-432",
+      "problem_ids": [
+        1316
+      ]
+    },
+    {
+      "cluster_id": "agg-349",
+      "problem_ids": [
+        1320
+      ]
+    },
+    {
+      "cluster_id": "agg-478",
+      "problem_ids": [
+        1322
+      ]
+    },
+    {
+      "cluster_id": "agg-676",
+      "problem_ids": [
+        1324
+      ]
+    },
+    {
+      "cluster_id": "agg-340",
+      "problem_ids": [
+        1325
+      ]
+    },
+    {
+      "cluster_id": "agg-301",
+      "problem_ids": [
+        1334
+      ]
+    },
+    {
+      "cluster_id": "agg-284",
+      "problem_ids": [
+        1336
+      ]
+    },
+    {
+      "cluster_id": "agg-243",
+      "problem_ids": [
+        1338
+      ]
+    },
+    {
+      "cluster_id": "agg-462",
+      "problem_ids": [
+        1343
+      ]
+    },
+    {
+      "cluster_id": "agg-382",
+      "problem_ids": [
+        1357
+      ]
+    },
+    {
+      "cluster_id": "agg-321",
+      "problem_ids": [
+        1358
+      ]
+    },
+    {
+      "cluster_id": "agg-764",
+      "problem_ids": [
+        1359
+      ]
+    },
+    {
+      "cluster_id": "agg-429",
+      "problem_ids": [
+        1360
+      ]
+    },
+    {
+      "cluster_id": "agg-464",
+      "problem_ids": [
+        1364
+      ]
+    },
+    {
+      "cluster_id": "agg-278",
+      "problem_ids": [
+        1367
+      ]
+    },
+    {
+      "cluster_id": "agg-380",
+      "problem_ids": [
+        1369
+      ]
+    },
+    {
+      "cluster_id": "agg-495",
+      "problem_ids": [
+        1378
+      ]
+    },
+    {
+      "cluster_id": "agg-769",
+      "problem_ids": [
+        1415
+      ]
+    },
+    {
+      "cluster_id": "agg-623",
+      "problem_ids": [
+        1416
+      ]
+    },
+    {
+      "cluster_id": "agg-484",
+      "problem_ids": [
+        1421
+      ]
+    },
+    {
+      "cluster_id": "agg-549",
+      "problem_ids": [
+        1433
+      ]
+    },
+    {
+      "cluster_id": "agg-684",
+      "problem_ids": [
+        1459
+      ]
+    },
+    {
+      "cluster_id": "agg-311",
+      "problem_ids": [
+        1460
+      ]
+    },
+    {
+      "cluster_id": "agg-265",
+      "problem_ids": [
+        1467
+      ]
+    },
+    {
+      "cluster_id": "agg-733",
+      "problem_ids": [
+        1473
+      ]
+    },
+    {
+      "cluster_id": "agg-208",
+      "problem_ids": [
+        1479
+      ]
+    },
+    {
+      "cluster_id": "agg-362",
+      "problem_ids": [
+        1483
+      ]
+    },
+    {
+      "cluster_id": "agg-304",
+      "problem_ids": [
+        1485
+      ]
+    },
+    {
+      "cluster_id": "agg-709",
+      "problem_ids": [
+        1493
+      ]
+    },
+    {
+      "cluster_id": "agg-744",
+      "problem_ids": [
+        1495
+      ]
+    },
+    {
+      "cluster_id": "agg-227",
+      "problem_ids": [
+        1496
+      ]
+    },
+    {
+      "cluster_id": "agg-323",
+      "problem_ids": [
+        1506
+      ]
+    },
+    {
+      "cluster_id": "agg-296",
+      "problem_ids": [
+        1518
+      ]
+    },
+    {
+      "cluster_id": "agg-383",
+      "problem_ids": [
+        1521
+      ]
+    },
+    {
+      "cluster_id": "agg-678",
+      "problem_ids": [
+        1522
+      ]
+    },
+    {
+      "cluster_id": "agg-596",
+      "problem_ids": [
+        1525
+      ]
+    },
+    {
+      "cluster_id": "agg-690",
+      "problem_ids": [
+        1533
+      ]
+    },
+    {
+      "cluster_id": "agg-669",
+      "problem_ids": [
+        1535
+      ]
+    },
+    {
+      "cluster_id": "agg-253",
+      "problem_ids": [
+        1555
+      ]
+    },
+    {
+      "cluster_id": "agg-212",
+      "problem_ids": [
+        1565
+      ]
+    },
+    {
+      "cluster_id": "agg-512",
+      "problem_ids": [
+        1580
+      ]
+    },
+    {
+      "cluster_id": "agg-679",
+      "problem_ids": [
+        1582
+      ]
+    },
+    {
+      "cluster_id": "agg-293",
+      "problem_ids": [
+        1598
+      ]
+    },
+    {
+      "cluster_id": "agg-240",
+      "problem_ids": [
+        1601
+      ]
+    },
+    {
+      "cluster_id": "agg-334",
+      "problem_ids": [
+        1612
+      ]
+    },
+    {
+      "cluster_id": "agg-618",
+      "problem_ids": [
+        1633
+      ]
+    },
+    {
+      "cluster_id": "agg-468",
+      "problem_ids": [
+        1638
+      ]
+    },
+    {
+      "cluster_id": "agg-357",
+      "problem_ids": [
+        1640
+      ]
+    },
+    {
+      "cluster_id": "agg-335",
+      "problem_ids": [
+        1647
+      ]
+    },
+    {
+      "cluster_id": "agg-262",
+      "problem_ids": [
+        1653
+      ]
+    },
+    {
+      "cluster_id": "agg-650",
+      "problem_ids": [
+        1672
+      ]
+    },
+    {
+      "cluster_id": "agg-186",
+      "problem_ids": [
+        1673
+      ]
+    },
+    {
+      "cluster_id": "agg-704",
+      "problem_ids": [
+        1676
+      ]
+    },
+    {
+      "cluster_id": "agg-207",
+      "problem_ids": [
+        1680
+      ]
+    },
+    {
+      "cluster_id": "agg-363",
+      "problem_ids": [
+        1682
+      ]
+    },
+    {
+      "cluster_id": "agg-213",
+      "problem_ids": [
+        1685
+      ]
+    },
+    {
+      "cluster_id": "agg-590",
+      "problem_ids": [
+        1686
+      ]
+    },
+    {
+      "cluster_id": "agg-354",
+      "problem_ids": [
+        1690
+      ]
+    },
+    {
+      "cluster_id": "agg-229",
+      "problem_ids": [
+        1692
+      ]
+    },
+    {
+      "cluster_id": "agg-350",
+      "problem_ids": [
+        1699
+      ]
+    },
+    {
+      "cluster_id": "agg-303",
+      "problem_ids": [
+        1700
+      ]
+    },
+    {
+      "cluster_id": "agg-324",
+      "problem_ids": [
+        1706
+      ]
+    },
+    {
+      "cluster_id": "agg-339",
+      "problem_ids": [
+        1711
+      ]
+    },
+    {
+      "cluster_id": "agg-214",
+      "problem_ids": [
+        1716
+      ]
+    },
+    {
+      "cluster_id": "agg-408",
+      "problem_ids": [
+        1718
+      ]
+    },
+    {
+      "cluster_id": "agg-226",
+      "problem_ids": [
+        1719
+      ]
+    },
+    {
+      "cluster_id": "agg-713",
+      "problem_ids": [
+        1721
+      ]
+    },
+    {
+      "cluster_id": "agg-572",
+      "problem_ids": [
+        1722
+      ]
+    },
+    {
+      "cluster_id": "agg-370",
+      "problem_ids": [
+        1723
+      ]
+    },
+    {
+      "cluster_id": "agg-328",
+      "problem_ids": [
+        1727
+      ]
+    },
+    {
+      "cluster_id": "agg-491",
+      "problem_ids": [
+        1731
+      ]
+    },
+    {
+      "cluster_id": "agg-289",
+      "problem_ids": [
+        1733
+      ]
+    },
+    {
+      "cluster_id": "agg-189",
+      "problem_ids": [
+        1734
+      ]
+    },
+    {
+      "cluster_id": "agg-529",
+      "problem_ids": [
+        1735
+      ]
+    },
+    {
+      "cluster_id": "agg-550",
+      "problem_ids": [
+        1736
+      ]
+    },
+    {
+      "cluster_id": "agg-297",
+      "problem_ids": [
+        1738
+      ]
+    },
+    {
+      "cluster_id": "agg-375",
+      "problem_ids": [
+        1755
+      ]
+    },
+    {
+      "cluster_id": "agg-393",
+      "problem_ids": [
+        1759
+      ]
+    },
+    {
+      "cluster_id": "agg-288",
+      "problem_ids": [
+        1761
+      ]
+    },
+    {
+      "cluster_id": "agg-731",
+      "problem_ids": [
+        1762
+      ]
+    },
+    {
+      "cluster_id": "agg-501",
+      "problem_ids": [
+        1763
+      ]
+    },
+    {
+      "cluster_id": "agg-712",
+      "problem_ids": [
+        1764
+      ]
+    },
+    {
+      "cluster_id": "agg-309",
+      "problem_ids": [
+        1769
+      ]
+    },
+    {
+      "cluster_id": "agg-492",
+      "problem_ids": [
+        1771
+      ]
+    },
+    {
+      "cluster_id": "agg-250",
+      "problem_ids": [
+        1773
+      ]
+    },
+    {
+      "cluster_id": "agg-474",
+      "problem_ids": [
+        1778
+      ]
+    },
+    {
+      "cluster_id": "agg-181",
+      "problem_ids": [
+        1781
+      ]
+    },
+    {
+      "cluster_id": "agg-132",
+      "problem_ids": [
+        1783
+      ]
+    },
+    {
+      "cluster_id": "agg-496",
+      "problem_ids": [
+        1785
+      ]
+    },
+    {
+      "cluster_id": "agg-160",
+      "problem_ids": [
+        1787
+      ]
+    },
+    {
+      "cluster_id": "agg-42",
+      "problem_ids": [
+        1790,
+        1982
+      ]
+    },
+    {
+      "cluster_id": "agg-674",
+      "problem_ids": [
+        1792
+      ]
+    },
+    {
+      "cluster_id": "agg-553",
+      "problem_ids": [
+        1797
+      ]
+    },
+    {
+      "cluster_id": "agg-368",
+      "problem_ids": [
+        1805
+      ]
+    },
+    {
+      "cluster_id": "agg-179",
+      "problem_ids": [
+        1806
+      ]
+    },
+    {
+      "cluster_id": "agg-105",
+      "problem_ids": [
+        1810
+      ]
+    },
+    {
+      "cluster_id": "agg-697",
+      "problem_ids": [
+        1812
+      ]
+    },
+    {
+      "cluster_id": "agg-143",
+      "problem_ids": [
+        1817
+      ]
+    },
+    {
+      "cluster_id": "agg-307",
+      "problem_ids": [
+        1818
+      ]
+    },
+    {
+      "cluster_id": "agg-166",
+      "problem_ids": [
+        1820
+      ]
+    },
+    {
+      "cluster_id": "agg-693",
+      "problem_ids": [
+        1830
+      ]
+    },
+    {
+      "cluster_id": "agg-269",
+      "problem_ids": [
+        1833
+      ]
+    },
+    {
+      "cluster_id": "agg-400",
+      "problem_ids": [
+        1838
+      ]
+    },
+    {
+      "cluster_id": "agg-461",
+      "problem_ids": [
+        1843
+      ]
+    },
+    {
+      "cluster_id": "agg-489",
+      "problem_ids": [
+        1845
+      ]
+    },
+    {
+      "cluster_id": "agg-326",
+      "problem_ids": [
+        1852
+      ]
+    },
+    {
+      "cluster_id": "agg-689",
+      "problem_ids": [
+        1855
+      ]
+    },
+    {
+      "cluster_id": "agg-406",
+      "problem_ids": [
+        1856
+      ]
+    },
+    {
+      "cluster_id": "agg-528",
+      "problem_ids": [
+        1860
+      ]
+    },
+    {
+      "cluster_id": "agg-446",
+      "problem_ids": [
+        1862
+      ]
+    },
+    {
+      "cluster_id": "agg-527",
+      "problem_ids": [
+        1870
+      ]
+    },
+    {
+      "cluster_id": "agg-261",
+      "problem_ids": [
+        1878
+      ]
+    },
+    {
+      "cluster_id": "agg-352",
+      "problem_ids": [
+        1879
+      ]
+    },
+    {
+      "cluster_id": "agg-437",
+      "problem_ids": [
+        1880
+      ]
+    },
+    {
+      "cluster_id": "agg-225",
+      "problem_ids": [
+        1881
+      ]
+    },
+    {
+      "cluster_id": "agg-245",
+      "problem_ids": [
+        1882
+      ]
+    },
+    {
+      "cluster_id": "agg-205",
+      "problem_ids": [
+        1893
+      ]
+    },
+    {
+      "cluster_id": "agg-436",
+      "problem_ids": [
+        1897
+      ]
+    },
+    {
+      "cluster_id": "agg-351",
+      "problem_ids": [
+        1901
+      ]
+    },
+    {
+      "cluster_id": "agg-336",
+      "problem_ids": [
+        1903
+      ]
+    },
+    {
+      "cluster_id": "agg-228",
+      "problem_ids": [
+        1907
+      ]
+    },
+    {
+      "cluster_id": "agg-264",
+      "problem_ids": [
+        1918
+      ]
+    },
+    {
+      "cluster_id": "agg-371",
+      "problem_ids": [
+        1919
+      ]
+    },
+    {
+      "cluster_id": "agg-12",
+      "problem_ids": [
+        1920,
+        1921
+      ]
+    },
+    {
+      "cluster_id": "agg-685",
+      "problem_ids": [
+        1923
+      ]
+    },
+    {
+      "cluster_id": "agg-241",
+      "problem_ids": [
+        1924
+      ]
+    },
+    {
+      "cluster_id": "agg-223",
+      "problem_ids": [
+        1926
+      ]
+    },
+    {
+      "cluster_id": "agg-210",
+      "problem_ids": [
+        1936
+      ]
+    },
+    {
+      "cluster_id": "agg-246",
+      "problem_ids": [
+        1937
+      ]
+    },
+    {
+      "cluster_id": "agg-17",
+      "problem_ids": [
+        1939,
+        1940
+      ]
+    },
+    {
+      "cluster_id": "agg-736",
+      "problem_ids": [
+        1941
+      ]
+    },
+    {
+      "cluster_id": "agg-151",
+      "problem_ids": [
+        1947
+      ]
+    },
+    {
+      "cluster_id": "agg-283",
+      "problem_ids": [
+        1951
+      ]
+    },
+    {
+      "cluster_id": "agg-717",
+      "problem_ids": [
+        1952
+      ]
+    },
+    {
+      "cluster_id": "agg-381",
+      "problem_ids": [
+        1958
+      ]
+    },
+    {
+      "cluster_id": "agg-687",
+      "problem_ids": [
+        1960
+      ]
+    },
+    {
+      "cluster_id": "agg-343",
+      "problem_ids": [
+        1961
+      ]
+    },
+    {
+      "cluster_id": "agg-209",
+      "problem_ids": [
+        1963
+      ]
+    },
+    {
+      "cluster_id": "agg-344",
+      "problem_ids": [
+        1969
+      ]
+    },
+    {
+      "cluster_id": "agg-500",
+      "problem_ids": [
+        1979
+      ]
+    },
+    {
+      "cluster_id": "agg-152",
+      "problem_ids": [
+        1980
+      ]
+    },
+    {
+      "cluster_id": "agg-515",
+      "problem_ids": [
+        1981
+      ]
+    },
+    {
+      "cluster_id": "agg-435",
+      "problem_ids": [
+        1985
+      ]
+    },
+    {
+      "cluster_id": "agg-236",
+      "problem_ids": [
+        1989
+      ]
+    },
+    {
+      "cluster_id": "agg-129",
+      "problem_ids": [
+        1999
+      ]
+    },
+    {
+      "cluster_id": "agg-331",
+      "problem_ids": [
+        2002
+      ]
+    },
+    {
+      "cluster_id": "agg-499",
+      "problem_ids": [
+        2003
+      ]
+    },
+    {
+      "cluster_id": "agg-698",
+      "problem_ids": [
+        2006
+      ]
+    },
+    {
+      "cluster_id": "agg-313",
+      "problem_ids": [
+        2009
+      ]
+    },
+    {
+      "cluster_id": "agg-398",
+      "problem_ids": [
+        2011
+      ]
+    },
+    {
+      "cluster_id": "agg-238",
+      "problem_ids": [
+        2022
+      ]
+    },
+    {
+      "cluster_id": "agg-445",
+      "problem_ids": [
+        2023
+      ]
+    },
+    {
+      "cluster_id": "agg-244",
+      "problem_ids": [
+        2026
+      ]
+    },
+    {
+      "cluster_id": "agg-112",
+      "problem_ids": [
+        2030
+      ]
+    },
+    {
+      "cluster_id": "agg-231",
+      "problem_ids": [
+        2032
+      ]
+    },
+    {
+      "cluster_id": "agg-276",
+      "problem_ids": [
+        2034
+      ]
+    },
+    {
+      "cluster_id": "agg-450",
+      "problem_ids": [
+        2035
+      ]
+    },
+    {
+      "cluster_id": "agg-203",
+      "problem_ids": [
+        2040
+      ]
+    },
+    {
+      "cluster_id": "agg-302",
+      "problem_ids": [
+        2055
+      ]
+    },
+    {
+      "cluster_id": "agg-91",
+      "problem_ids": [
+        2056,
+        2057
+      ]
+    },
+    {
+      "cluster_id": "agg-150",
+      "problem_ids": [
+        2071
+      ]
+    },
+    {
+      "cluster_id": "agg-394",
+      "problem_ids": [
+        2080
+      ]
+    },
+    {
+      "cluster_id": "agg-337",
+      "problem_ids": [
+        2081
+      ]
+    },
+    {
+      "cluster_id": "agg-294",
+      "problem_ids": [
+        2083
+      ]
+    },
+    {
+      "cluster_id": "agg-263",
+      "problem_ids": [
+        2097
+      ]
+    },
+    {
+      "cluster_id": "agg-517",
+      "problem_ids": [
+        2101
+      ]
+    },
+    {
+      "cluster_id": "agg-347",
+      "problem_ids": [
+        2103
+      ]
+    },
+    {
+      "cluster_id": "agg-224",
+      "problem_ids": [
+        2107
+      ]
+    },
+    {
+      "cluster_id": "agg-196",
+      "problem_ids": [
+        2108
+      ]
+    },
+    {
+      "cluster_id": "agg-220",
+      "problem_ids": [
+        2116
+      ]
+    },
+    {
+      "cluster_id": "agg-308",
+      "problem_ids": [
+        2117
+      ]
+    },
+    {
+      "cluster_id": "agg-405",
+      "problem_ids": [
+        2119
+      ]
+    },
+    {
+      "cluster_id": "agg-366",
+      "problem_ids": [
+        2121
+      ]
+    },
+    {
+      "cluster_id": "agg-257",
+      "problem_ids": [
+        2124
+      ]
+    },
+    {
+      "cluster_id": "agg-185",
+      "problem_ids": [
+        2148
+      ]
+    },
+    {
+      "cluster_id": "agg-346",
+      "problem_ids": [
+        2152
+      ]
+    },
+    {
+      "cluster_id": "agg-121",
+      "problem_ids": [
+        2164
+      ]
+    },
+    {
+      "cluster_id": "agg-222",
+      "problem_ids": [
+        2174
+      ]
+    },
+    {
+      "cluster_id": "agg-358",
+      "problem_ids": [
+        2175
+      ]
+    },
+    {
+      "cluster_id": "agg-479",
+      "problem_ids": [
+        2176
+      ]
+    },
+    {
+      "cluster_id": "agg-175",
+      "problem_ids": [
+        2177
+      ]
+    },
+    {
+      "cluster_id": "agg-86",
+      "problem_ids": [
+        2181,
+        2182
+      ]
+    },
+    {
+      "cluster_id": "agg-25",
+      "problem_ids": [
+        2183,
+        2184
+      ]
+    },
+    {
+      "cluster_id": "agg-199",
+      "problem_ids": [
+        2185
+      ]
+    },
+    {
+      "cluster_id": "agg-249",
+      "problem_ids": [
+        2191
+      ]
+    },
+    {
+      "cluster_id": "agg-272",
+      "problem_ids": [
+        2192
+      ]
+    },
+    {
+      "cluster_id": "agg-230",
+      "problem_ids": [
+        2197
+      ]
+    },
+    {
+      "cluster_id": "agg-542",
+      "problem_ids": [
+        2200
+      ]
+    },
+    {
+      "cluster_id": "agg-341",
+      "problem_ids": [
+        2202
+      ]
+    },
+    {
+      "cluster_id": "agg-155",
+      "problem_ids": [
+        2203
+      ]
+    },
+    {
+      "cluster_id": "agg-161",
+      "problem_ids": [
+        2204
+      ]
+    },
+    {
+      "cluster_id": "agg-544",
+      "problem_ids": [
+        2205
+      ]
+    },
+    {
+      "cluster_id": "agg-172",
+      "problem_ids": [
+        2207
+      ]
+    },
+    {
+      "cluster_id": "agg-239",
+      "problem_ids": [
+        2208
+      ]
+    },
+    {
+      "cluster_id": "agg-169",
+      "problem_ids": [
+        2209
+      ]
+    },
+    {
+      "cluster_id": "agg-290",
+      "problem_ids": [
+        2210
+      ]
+    },
+    {
+      "cluster_id": "agg-270",
+      "problem_ids": [
+        2211
+      ]
+    },
+    {
+      "cluster_id": "agg-386",
+      "problem_ids": [
+        2212
+      ]
+    },
+    {
+      "cluster_id": "agg-506",
+      "problem_ids": [
+        2216
+      ]
+    },
+    {
+      "cluster_id": "agg-361",
+      "problem_ids": [
+        2219
+      ]
+    },
+    {
+      "cluster_id": "agg-310",
+      "problem_ids": [
+        2222
+      ]
+    },
+    {
+      "cluster_id": "agg-195",
+      "problem_ids": [
+        2223
+      ]
+    },
+    {
+      "cluster_id": "agg-267",
+      "problem_ids": [
+        2225
+      ]
+    },
+    {
+      "cluster_id": "agg-285",
+      "problem_ids": [
+        2231
+      ]
+    },
+    {
+      "cluster_id": "agg-159",
+      "problem_ids": [
+        2233
+      ]
+    },
+    {
+      "cluster_id": "agg-247",
+      "problem_ids": [
+        2234
+      ]
+    },
+    {
+      "cluster_id": "agg-106",
+      "problem_ids": [
+        2240
+      ]
+    },
+    {
+      "cluster_id": "agg-286",
+      "problem_ids": [
+        2245
+      ]
+    },
+    {
+      "cluster_id": "agg-233",
+      "problem_ids": [
+        2248
+      ]
+    },
+    {
+      "cluster_id": "agg-92",
+      "problem_ids": [
+        2249
+      ]
+    },
+    {
+      "cluster_id": "agg-342",
+      "problem_ids": [
+        2250
+      ]
+    },
+    {
+      "cluster_id": "agg-200",
+      "problem_ids": [
+        2251
+      ]
+    },
+    {
+      "cluster_id": "agg-154",
+      "problem_ids": [
+        2254
+      ]
+    },
+    {
+      "cluster_id": "agg-410",
+      "problem_ids": [
+        2255
+      ]
+    },
+    {
+      "cluster_id": "agg-144",
+      "problem_ids": [
+        2263
+      ]
+    },
+    {
+      "cluster_id": "agg-365",
+      "problem_ids": [
+        2264
+      ]
+    },
+    {
+      "cluster_id": "agg-194",
+      "problem_ids": [
+        2275
+      ]
+    },
+    {
+      "cluster_id": "agg-258",
+      "problem_ids": [
+        2277
+      ]
+    },
+    {
+      "cluster_id": "agg-115",
+      "problem_ids": [
+        2279
+      ]
+    },
+    {
+      "cluster_id": "agg-274",
+      "problem_ids": [
+        2281
+      ]
+    },
+    {
+      "cluster_id": "agg-111",
+      "problem_ids": [
+        2285
+      ]
+    },
+    {
+      "cluster_id": "agg-202",
+      "problem_ids": [
+        2286
+      ]
+    },
+    {
+      "cluster_id": "agg-217",
+      "problem_ids": [
+        2289
+      ]
+    },
+    {
+      "cluster_id": "agg-538",
+      "problem_ids": [
+        2290
+      ]
+    },
+    {
+      "cluster_id": "agg-708",
+      "problem_ids": [
+        2296
+      ]
+    },
+    {
+      "cluster_id": "agg-252",
+      "problem_ids": [
+        2301
+      ]
+    },
+    {
+      "cluster_id": "agg-221",
+      "problem_ids": [
+        2327
+      ]
+    },
+    {
+      "cluster_id": "agg-146",
+      "problem_ids": [
+        2337
+      ]
+    },
+    {
+      "cluster_id": "agg-282",
+      "problem_ids": [
+        2344
+      ]
+    },
+    {
+      "cluster_id": "agg-355",
+      "problem_ids": [
+        2346
+      ]
+    },
+    {
+      "cluster_id": "agg-472",
+      "problem_ids": [
+        2347
+      ]
+    },
+    {
+      "cluster_id": "agg-52",
+      "problem_ids": [
+        2350
+      ]
+    },
+    {
+      "cluster_id": "agg-348",
+      "problem_ids": [
+        2365
+      ]
+    },
+    {
+      "cluster_id": "agg-201",
+      "problem_ids": [
+        2373
+      ]
+    },
+    {
+      "cluster_id": "agg-198",
+      "problem_ids": [
+        2376
+      ]
+    },
+    {
+      "cluster_id": "agg-55",
+      "problem_ids": [
+        2384
+      ]
+    },
+    {
+      "cluster_id": "agg-9",
+      "problem_ids": [
+        2385,
+        2555
+      ]
+    },
+    {
+      "cluster_id": "agg-384",
+      "problem_ids": [
+        2388
+      ]
+    },
+    {
+      "cluster_id": "agg-113",
+      "problem_ids": [
+        2391
+      ]
+    },
+    {
+      "cluster_id": "agg-562",
+      "problem_ids": [
+        2393
+      ]
+    },
+    {
+      "cluster_id": "agg-197",
+      "problem_ids": [
+        2394
+      ]
+    },
+    {
+      "cluster_id": "agg-142",
+      "problem_ids": [
+        2396
+      ]
+    },
+    {
+      "cluster_id": "agg-242",
+      "problem_ids": [
+        2399
+      ]
+    },
+    {
+      "cluster_id": "agg-414",
+      "problem_ids": [
+        2402
+      ]
+    },
+    {
+      "cluster_id": "agg-204",
+      "problem_ids": [
+        2403
+      ]
+    },
+    {
+      "cluster_id": "agg-23",
+      "problem_ids": [
+        2406,
+        2407
+      ]
+    },
+    {
+      "cluster_id": "agg-356",
+      "problem_ids": [
+        2408
+      ]
+    },
+    {
+      "cluster_id": "agg-651",
+      "problem_ids": [
+        2413
+      ]
+    },
+    {
+      "cluster_id": "agg-141",
+      "problem_ids": [
+        2418
+      ]
+    },
+    {
+      "cluster_id": "agg-167",
+      "problem_ids": [
+        2423
+      ]
+    },
+    {
+      "cluster_id": "agg-174",
+      "problem_ids": [
+        2444
+      ]
+    },
+    {
+      "cluster_id": "agg-125",
+      "problem_ids": [
+        2446
+      ]
+    },
+    {
+      "cluster_id": "agg-329",
+      "problem_ids": [
+        2453
+      ]
+    },
+    {
+      "cluster_id": "agg-157",
+      "problem_ids": [
+        2454
+      ]
+    },
+    {
+      "cluster_id": "agg-148",
+      "problem_ids": [
+        2456
+      ]
+    },
+    {
+      "cluster_id": "agg-171",
+      "problem_ids": [
+        2459
+      ]
+    },
+    {
+      "cluster_id": "agg-182",
+      "problem_ids": [
+        2465
+      ]
+    },
+    {
+      "cluster_id": "agg-147",
+      "problem_ids": [
+        2468
+      ]
+    },
+    {
+      "cluster_id": "agg-119",
+      "problem_ids": [
+        2470
+      ]
+    },
+    {
+      "cluster_id": "agg-191",
+      "problem_ids": [
+        2478
+      ]
+    },
+    {
+      "cluster_id": "agg-170",
+      "problem_ids": [
+        2483
+      ]
+    },
+    {
+      "cluster_id": "agg-192",
+      "problem_ids": [
+        2487
+      ]
+    },
+    {
+      "cluster_id": "agg-273",
+      "problem_ids": [
+        2488
+      ]
+    },
+    {
+      "cluster_id": "agg-317",
+      "problem_ids": [
+        2489
+      ]
+    },
+    {
+      "cluster_id": "agg-136",
+      "problem_ids": [
+        2490
+      ]
+    },
+    {
+      "cluster_id": "agg-318",
+      "problem_ids": [
+        2494
+      ]
+    },
+    {
+      "cluster_id": "agg-140",
+      "problem_ids": [
+        2495
+      ]
+    },
+    {
+      "cluster_id": "agg-73",
+      "problem_ids": [
+        2496
+      ]
+    },
+    {
+      "cluster_id": "agg-255",
+      "problem_ids": [
+        2497
+      ]
+    },
+    {
+      "cluster_id": "agg-377",
+      "problem_ids": [
+        2501
+      ]
+    },
+    {
+      "cluster_id": "agg-338",
+      "problem_ids": [
+        2506
+      ]
+    },
+    {
+      "cluster_id": "agg-271",
+      "problem_ids": [
+        2510
+      ]
+    },
+    {
+      "cluster_id": "agg-560",
+      "problem_ids": [
+        2513
+      ]
+    },
+    {
+      "cluster_id": "agg-130",
+      "problem_ids": [
+        2514
+      ]
+    },
+    {
+      "cluster_id": "agg-353",
+      "problem_ids": [
+        2516
+      ]
+    },
+    {
+      "cluster_id": "agg-235",
+      "problem_ids": [
+        2518
+      ]
+    },
+    {
+      "cluster_id": "agg-178",
+      "problem_ids": [
+        2526
+      ]
+    },
+    {
+      "cluster_id": "agg-187",
+      "problem_ids": [
+        2536
+      ]
+    },
+    {
+      "cluster_id": "agg-127",
+      "problem_ids": [
+        2538
+      ]
+    },
+    {
+      "cluster_id": "agg-206",
+      "problem_ids": [
+        2540
+      ]
+    },
+    {
+      "cluster_id": "agg-99",
+      "problem_ids": [
+        2542
+      ]
+    },
+    {
+      "cluster_id": "agg-138",
+      "problem_ids": [
+        2543
+      ]
+    },
+    {
+      "cluster_id": "agg-71",
+      "problem_ids": [
+        2544
+      ]
+    },
+    {
+      "cluster_id": "agg-98",
+      "problem_ids": [
+        2547
+      ]
+    },
+    {
+      "cluster_id": "agg-153",
+      "problem_ids": [
+        2548
+      ]
+    },
+    {
+      "cluster_id": "agg-327",
+      "problem_ids": [
+        2549
+      ]
+    },
+    {
+      "cluster_id": "agg-280",
+      "problem_ids": [
+        2558
+      ]
+    },
+    {
+      "cluster_id": "agg-75",
+      "problem_ids": [
+        2567
+      ]
+    },
+    {
+      "cluster_id": "agg-123",
+      "problem_ids": [
+        2570
+      ]
+    },
+    {
+      "cluster_id": "agg-137",
+      "problem_ids": [
+        2574
+      ]
+    },
+    {
+      "cluster_id": "agg-176",
+      "problem_ids": [
+        2575
+      ]
+    },
+    {
+      "cluster_id": "agg-268",
+      "problem_ids": [
+        2576
+      ]
+    },
+    {
+      "cluster_id": "agg-158",
+      "problem_ids": [
+        2577
+      ]
+    },
+    {
+      "cluster_id": "agg-188",
+      "problem_ids": [
+        2579
+      ]
+    },
+    {
+      "cluster_id": "agg-87",
+      "problem_ids": [
+        2582
+      ]
+    },
+    {
+      "cluster_id": "agg-218",
+      "problem_ids": [
+        2586
+      ]
+    },
+    {
+      "cluster_id": "agg-122",
+      "problem_ids": [
+        2587
+      ]
+    },
+    {
+      "cluster_id": "agg-180",
+      "problem_ids": [
+        2589
+      ]
+    },
+    {
+      "cluster_id": "agg-279",
+      "problem_ids": [
+        2591
+      ]
+    },
+    {
+      "cluster_id": "agg-135",
+      "problem_ids": [
+        2592
+      ]
+    },
+    {
+      "cluster_id": "agg-156",
+      "problem_ids": [
+        2593
+      ]
+    },
+    {
+      "cluster_id": "agg-120",
+      "problem_ids": [
+        2595
+      ]
+    },
+    {
+      "cluster_id": "agg-173",
+      "problem_ids": [
+        2599
+      ]
+    },
+    {
+      "cluster_id": "agg-216",
+      "problem_ids": [
+        2600
+      ]
+    },
+    {
+      "cluster_id": "agg-190",
+      "problem_ids": [
+        2602
+      ]
+    },
+    {
+      "cluster_id": "agg-76",
+      "problem_ids": [
+        2605
+      ]
+    },
+    {
+      "cluster_id": "agg-332",
+      "problem_ids": [
+        2608
+      ]
+    },
+    {
+      "cluster_id": "agg-215",
+      "problem_ids": [
+        2615
+      ]
+    },
+    {
+      "cluster_id": "agg-325",
+      "problem_ids": [
+        2617
+      ]
+    },
+    {
+      "cluster_id": "agg-97",
+      "problem_ids": [
+        2619
+      ]
+    },
+    {
+      "cluster_id": "agg-134",
+      "problem_ids": [
+        2621
+      ]
+    },
+    {
+      "cluster_id": "agg-367",
+      "problem_ids": [
+        2628
+      ]
+    },
+    {
+      "cluster_id": "agg-165",
+      "problem_ids": [
+        2633
+      ]
+    },
+    {
+      "cluster_id": "agg-94",
+      "problem_ids": [
+        2634
+      ]
+    },
+    {
+      "cluster_id": "agg-163",
+      "problem_ids": [
+        2636
+      ]
+    },
+    {
+      "cluster_id": "agg-68",
+      "problem_ids": [
+        2642
+      ]
+    },
+    {
+      "cluster_id": "agg-133",
+      "problem_ids": [
+        2645
+      ]
+    },
+    {
+      "cluster_id": "agg-219",
+      "problem_ids": [
+        2652
+      ]
+    },
+    {
+      "cluster_id": "agg-234",
+      "problem_ids": [
+        2654
+      ]
+    },
+    {
+      "cluster_id": "agg-116",
+      "problem_ids": [
+        2657
+      ]
+    },
+    {
+      "cluster_id": "agg-131",
+      "problem_ids": [
+        2662
+      ]
+    },
+    {
+      "cluster_id": "agg-79",
+      "problem_ids": [
+        2665
+      ]
+    },
+    {
+      "cluster_id": "agg-124",
+      "problem_ids": [
+        2670
+      ]
+    },
+    {
+      "cluster_id": "agg-168",
+      "problem_ids": [
+        2673
+      ]
+    },
+    {
+      "cluster_id": "agg-74",
+      "problem_ids": [
+        2674
+      ]
+    },
+    {
+      "cluster_id": "agg-89",
+      "problem_ids": [
+        2675
+      ]
+    },
+    {
+      "cluster_id": "agg-85",
+      "problem_ids": [
+        2676
+      ]
+    },
+    {
+      "cluster_id": "agg-60",
+      "problem_ids": [
+        2677
+      ]
+    },
+    {
+      "cluster_id": "agg-108",
+      "problem_ids": [
+        2679
+      ]
+    },
+    {
+      "cluster_id": "agg-100",
+      "problem_ids": [
+        2680
+      ]
+    },
+    {
+      "cluster_id": "agg-37",
+      "problem_ids": [
+        2685
+      ]
+    },
+    {
+      "cluster_id": "agg-114",
+      "problem_ids": [
+        2691
+      ]
+    },
+    {
+      "cluster_id": "agg-183",
+      "problem_ids": [
+        2693
+      ]
+    },
+    {
+      "cluster_id": "agg-102",
+      "problem_ids": [
+        2694
+      ]
+    },
+    {
+      "cluster_id": "agg-109",
+      "problem_ids": [
+        2695
+      ]
+    },
+    {
+      "cluster_id": "agg-90",
+      "problem_ids": [
+        2701
+      ]
+    },
+    {
+      "cluster_id": "agg-126",
+      "problem_ids": [
+        2702
+      ]
+    },
+    {
+      "cluster_id": "agg-78",
+      "problem_ids": [
+        2708
+      ]
+    },
+    {
+      "cluster_id": "agg-104",
+      "problem_ids": [
+        2710
+      ]
+    },
+    {
+      "cluster_id": "agg-36",
+      "problem_ids": [
+        2719
+      ]
+    },
+    {
+      "cluster_id": "agg-56",
+      "problem_ids": [
+        2722
+      ]
+    },
+    {
+      "cluster_id": "agg-62",
+      "problem_ids": [
+        2723
+      ]
+    },
+    {
+      "cluster_id": "agg-82",
+      "problem_ids": [
+        2729
+      ]
+    },
+    {
+      "cluster_id": "agg-177",
+      "problem_ids": [
+        2734
+      ]
+    },
+    {
+      "cluster_id": "agg-83",
+      "problem_ids": [
+        2735
+      ]
+    },
+    {
+      "cluster_id": "agg-66",
+      "problem_ids": [
+        2741
+      ]
+    },
+    {
+      "cluster_id": "agg-88",
+      "problem_ids": [
+        2743
+      ]
+    },
+    {
+      "cluster_id": "agg-93",
+      "problem_ids": [
+        2746
+      ]
+    },
+    {
+      "cluster_id": "agg-107",
+      "problem_ids": [
+        2747
+      ]
+    },
+    {
+      "cluster_id": "agg-67",
+      "problem_ids": [
+        2753
+      ]
+    },
+    {
+      "cluster_id": "agg-184",
+      "problem_ids": [
+        2755
+      ]
+    },
+    {
+      "cluster_id": "agg-49",
+      "problem_ids": [
+        2756
+      ]
+    },
+    {
+      "cluster_id": "agg-117",
+      "problem_ids": [
+        2775
+      ]
+    },
+    {
+      "cluster_id": "agg-101",
+      "problem_ids": [
+        2780
+      ]
+    },
+    {
+      "cluster_id": "agg-48",
+      "problem_ids": [
+        2782
+      ]
+    },
+    {
+      "cluster_id": "agg-61",
+      "problem_ids": [
+        2788
+      ]
+    },
+    {
+      "cluster_id": "agg-103",
+      "problem_ids": [
+        2792
+      ]
+    },
+    {
+      "cluster_id": "agg-30",
+      "problem_ids": [
+        2803
+      ]
+    },
+    {
+      "cluster_id": "agg-77",
+      "problem_ids": [
+        2804
+      ]
+    },
+    {
+      "cluster_id": "agg-27",
+      "problem_ids": [
+        2806
+      ]
+    },
+    {
+      "cluster_id": "agg-96",
+      "problem_ids": [
+        2812
+      ]
+    },
+    {
+      "cluster_id": "agg-51",
+      "problem_ids": [
+        2813
+      ]
+    },
+    {
+      "cluster_id": "agg-237",
+      "problem_ids": [
+        2817
+      ]
+    },
+    {
+      "cluster_id": "agg-84",
+      "problem_ids": [
+        2819
+      ]
+    },
+    {
+      "cluster_id": "agg-70",
+      "problem_ids": [
+        2826
+      ]
+    },
+    {
+      "cluster_id": "agg-139",
+      "problem_ids": [
+        2828
+      ]
+    },
+    {
+      "cluster_id": "agg-41",
+      "problem_ids": [
+        2829
+      ]
+    },
+    {
+      "cluster_id": "agg-69",
+      "problem_ids": [
+        2834
+      ]
+    },
+    {
+      "cluster_id": "agg-95",
+      "problem_ids": [
+        2836
+      ]
+    },
+    {
+      "cluster_id": "agg-65",
+      "problem_ids": [
+        2837
+      ]
+    },
+    {
+      "cluster_id": "agg-38",
+      "problem_ids": [
+        2840
+      ]
+    },
+    {
+      "cluster_id": "agg-72",
+      "problem_ids": [
+        2843
+      ]
+    },
+    {
+      "cluster_id": "agg-164",
+      "problem_ids": [
+        2848
+      ]
+    },
+    {
+      "cluster_id": "agg-162",
+      "problem_ids": [
+        2851
+      ]
+    }
+  ]
+}

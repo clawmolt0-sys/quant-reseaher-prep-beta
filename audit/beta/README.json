@@ -1,0 +1,18 @@
+{
+  "unique_problem_count_testset": 839,
+  "agglomerative_cluster_count": 772,
+  "dbscan_cluster_count": 103,
+  "eval": {
+    "flagged_pairs": 119,
+    "co_cluster_pairs": 48,
+    "co_cluster_rate": 0.40336134453781514
+  },
+  "outputs": [
+    "audit/beta/golden_comments_B001_B015.json",
+    "audit/beta/cosine_matrix.npy",
+    "audit/beta/clusters_agglomerative.json",
+    "audit/beta/clusters_dbscan.json",
+    "audit/beta/cluster_eval_against_flags.json",
+    "audit/beta/canonicalization_prompt_template.txt"
+  ]
+}
