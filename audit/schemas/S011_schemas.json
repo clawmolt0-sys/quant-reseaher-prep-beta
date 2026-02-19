@@ -1,0 +1,1670 @@
+[
+  {
+    "problem_id": 1005,
+    "name": "Bet Acceptance Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1006,
+    "name": "Fair Value of Land",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1007,
+    "name": "Expected Distance on a Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt, Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem, Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1008,
+    "name": "White Cube Painted Green Outside Equal",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair six-sided dice | Constraints: All puzzle rules and admissible moves/states are exactly as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1009,
+    "name": "Fair Price of a Call Option",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Model parameters (rates, volatility, maturity)"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Derivative Pricing | Entities: Underlying asset process, Derivative payoff definition, Model parameters (rates, volatility, maturity) | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1010,
+    "name": "Expectation of Chord Length Between Two Points on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1011,
+    "name": "Three People Sit In Eight Available Seats",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1012,
+    "name": "Probability Randomly Chosen Points Circumference Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1013,
+    "name": "Trips Occurred Last Year, Least Them",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1014,
+    "name": "Dice Game Winning Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice, Mixture over boxes/urns, Colored balls in urns | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1015,
+    "name": "Expected Number of Cards Received",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1016,
+    "name": "Ten People Sit Around A Round Table",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1017,
+    "name": "Coin Toss Sequence Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt, Fair coin toss process | Constraints: Use exactly the assumptions and parameter values stated in the problem, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1018,
+    "name": "Mean, Mode, and Median of Random Digit Product",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem, Independence assumptions hold as stated | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1019,
+    "name": "The Sum N 1 100 N . Taking the Derivative Wit",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Model parameters (rates, volatility, maturity)"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Derivative Pricing | Entities: Underlying asset process, Derivative payoff definition, Model parameters (rates, volatility, maturity) | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1020,
+    "name": "Clock Hands Meeting Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt, Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem, Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1021,
+    "name": "Consecutive Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1022,
+    "name": "Marble Piles Strategy Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Decision Making",
+      "problem_setup_entities": [
+        "Players, actions, and payoff structure",
+        "Information structure and strategy space",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Rules of play and payoff mappings are fixed as stated"
+      ],
+      "target_objective": "Identify optimal strategy, equilibrium, or expected payoff quantity"
+    },
+    "schema_text": "Domain: Game Theory and Strategic Decision Making | Entities: Players, actions, and payoff structure, Information structure and strategy space, Mixture over boxes/urns, Colored balls in urns | Constraints: Rules of play and payoff mappings are fixed as stated | Objective: Identify optimal strategy, equilibrium, or expected payoff quantity"
+  },
+  {
+    "problem_id": 1023,
+    "name": "Market Making: Population Estimation Game",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1024,
+    "name": "Probability Question",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Model parameters (rates, volatility, maturity)",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Derivative Pricing | Entities: Underlying asset process, Derivative payoff definition, Model parameters (rates, volatility, maturity), Fair six-sided dice | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1025,
+    "name": "Programming Question",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1026,
+    "name": "Technical Problem-Solving",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1027,
+    "name": "Coding Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1028,
+    "name": "Bayesian Statistics Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1029,
+    "name": "Coding Question",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1030,
+    "name": "Statistics Questions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Fair coin toss process",
+        "Fair six-sided dice",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated",
+        "Underlying random mechanism is fair/uniform as specified",
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Input data structure, Algorithm state, Output structure or metric, Fair coin toss process, Fair six-sided dice, Mixture over boxes/urns, Colored balls in urns | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated, Underlying random mechanism is fair/uniform as specified, Independence assumptions hold as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1031,
+    "name": "Second Round Questions",
+    "schema": {
+      "core_mathematical_domain": "Risk Management and Portfolio Theory",
+      "problem_setup_entities": [
+        "Portfolio/loss random variable",
+        "Risk model parameters",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Risk measure definition and confidence horizon are fixed as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Risk Management and Portfolio Theory | Entities: Portfolio/loss random variable, Risk model parameters, Fair coin toss process | Constraints: Risk measure definition and confidence horizon are fixed as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1032,
+    "name": "Brain Teaser: Expected Payoff of a Card Game",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Model parameters (rates, volatility, maturity)"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Derivative Pricing | Entities: Underlying asset process, Derivative payoff definition, Model parameters (rates, volatility, maturity) | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1033,
+    "name": "Problem: Maximum Subarray (LeetCode)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Mixture over boxes/urns, Colored balls in urns | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1034,
+    "name": "Coding Problems",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Mixture over boxes/urns, Colored balls in urns | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1035,
+    "name": "Assumptions in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1036,
+    "name": "Derivation of Linear Regression Formula",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Estimation",
+      "problem_setup_entities": [
+        "Observed sample/data-generating model",
+        "Unknown parameters and estimators"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and estimator definition are fixed as stated"
+      ],
+      "target_objective": "Compute or characterize the requested estimator, interval, test, or predictive metric"
+    },
+    "schema_text": "Domain: Statistics and Estimation | Entities: Observed sample/data-generating model, Unknown parameters and estimators | Constraints: Sampling assumptions and estimator definition are fixed as stated | Objective: Compute or characterize the requested estimator, interval, test, or predictive metric"
+  },
+  {
+    "problem_id": 1037,
+    "name": "Convergence of Series",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1038,
+    "name": "Simple Knapsack Problem Program",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1039,
+    "name": "Dynamic Programming Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1040,
+    "name": "Regression Coefficients Relationship",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Estimation",
+      "problem_setup_entities": [
+        "Observed sample/data-generating model",
+        "Unknown parameters and estimators"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and estimator definition are fixed as stated"
+      ],
+      "target_objective": "Compute or characterize the requested estimator, interval, test, or predictive metric"
+    },
+    "schema_text": "Domain: Statistics and Estimation | Entities: Observed sample/data-generating model, Unknown parameters and estimators | Constraints: Sampling assumptions and estimator definition are fixed as stated | Objective: Compute or characterize the requested estimator, interval, test, or predictive metric"
+  },
+  {
+    "problem_id": 1041,
+    "name": "Eigenvector of a Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors defined in the prompt",
+        "Linear transformations or eigensystem quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensions and algebraic constraints are fixed by the problem statement"
+      ],
+      "target_objective": "Derive the requested eigenvalue/eigenvector or matrix-derived quantity"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors defined in the prompt, Linear transformations or eigensystem quantities | Constraints: Dimensions and algebraic constraints are fixed by the problem statement | Objective: Derive the requested eigenvalue/eigenvector or matrix-derived quantity"
+  },
+  {
+    "problem_id": 1042,
+    "name": "LeetCode 121: Best Time to Buy and Sell Stock",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1043,
+    "name": "Counting Subarrays with Sum Less Than \\(k\\)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1044,
+    "name": "Linear Regression Coefficients",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Estimation",
+      "problem_setup_entities": [
+        "Observed sample/data-generating model",
+        "Unknown parameters and estimators"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and estimator definition are fixed as stated"
+      ],
+      "target_objective": "Compute or characterize the requested estimator, interval, test, or predictive metric"
+    },
+    "schema_text": "Domain: Statistics and Estimation | Entities: Observed sample/data-generating model, Unknown parameters and estimators | Constraints: Sampling assumptions and estimator definition are fixed as stated | Objective: Compute or characterize the requested estimator, interval, test, or predictive metric"
+  },
+  {
+    "problem_id": 1045,
+    "name": "Asset Annual Sharpe Ratio Probability Negati",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt, Mixture over boxes/urns, Colored balls in urns | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1046,
+    "name": "Fair Coin Flipped Times, Probability Number",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1047,
+    "name": "Expected Reward in the 100 Doors Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1048,
+    "name": "Linear Regression Transformation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1049,
+    "name": "Brain Teaser",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Poisson Process/Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory (Poisson Process/Distribution) | Entities: Random variables and model parameters defined in the prompt, Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem, Selection is uniformly random | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1050,
+    "name": "Linear Regression Assumptions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1051,
+    "name": "Handling Missing Data and Outliers",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1052,
+    "name": "Overfitting in Machine Learning Models",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1053,
+    "name": "Regression on Uniformly Distributed Points",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Uniform(0,1) random variables | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1054,
+    "name": "Counting Solutions to \\( x + y + z = N \\)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1055,
+    "name": "Options Fundamentals",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Model parameters (rates, volatility, maturity)"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute the fair value, hedge quantity, or payoff-related metric"
+    },
+    "schema_text": "Domain: Derivative Pricing | Entities: Underlying asset process, Derivative payoff definition, Model parameters (rates, volatility, maturity) | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute the fair value, hedge quantity, or payoff-related metric"
+  },
+  {
+    "problem_id": 1056,
+    "name": "Finding Stationary Distribution",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Markov chain states and transition probabilities"
+      ],
+      "invariant_constraints": [
+        "State transitions follow the given transition probabilities"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Markov chain states and transition probabilities | Constraints: State transitions follow the given transition probabilities | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1057,
+    "name": "Suppose A Strategy has A Sharpe Ratio Of 3",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Decision Making",
+      "problem_setup_entities": [
+        "Players, actions, and payoff structure",
+        "Information structure and strategy space",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Rules of play and payoff mappings are fixed as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Game Theory and Strategic Decision Making | Entities: Players, actions, and payoff structure, Information structure and strategy space, Mixture over boxes/urns, Colored balls in urns | Constraints: Rules of play and payoff mappings are fixed as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1058,
+    "name": "Geometric Interpretation of Regression Methods",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors defined in the prompt",
+        "Linear transformations or eigensystem quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensions and algebraic constraints are fixed by the problem statement"
+      ],
+      "target_objective": "Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors defined in the prompt, Linear transformations or eigensystem quantities | Constraints: Dimensions and algebraic constraints are fixed by the problem statement | Objective: Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+  },
+  {
+    "problem_id": 1059,
+    "name": "PCA on Covariance vs Correlation Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors defined in the prompt",
+        "Linear transformations or eigensystem quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensions and algebraic constraints are fixed by the problem statement"
+      ],
+      "target_objective": "Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors defined in the prompt, Linear transformations or eigensystem quantities | Constraints: Dimensions and algebraic constraints are fixed by the problem statement | Objective: Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+  },
+  {
+    "problem_id": 1060,
+    "name": "Wine Dataset",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Stochastic Calculus | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1061,
+    "name": "Estimating Parameter of Uniform Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt, Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem, Selection is uniformly random | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1062,
+    "name": "Coin Toss with Uniform Prior",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Problem-defined variables and logical conditions, Fair coin toss process, Uniform(0,1) random variables | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified, Selection is uniformly random | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1063,
+    "name": "Linear Regression Parameters",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1064,
+    "name": "Ridge and LASSO Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Estimation",
+      "problem_setup_entities": [
+        "Observed sample/data-generating model",
+        "Unknown parameters and estimators",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and estimator definition are fixed as stated"
+      ],
+      "target_objective": "Compute or characterize the requested estimator, interval, test, or predictive metric"
+    },
+    "schema_text": "Domain: Statistics and Estimation | Entities: Observed sample/data-generating model, Unknown parameters and estimators, Fair six-sided dice | Constraints: Sampling assumptions and estimator definition are fixed as stated | Objective: Compute or characterize the requested estimator, interval, test, or predictive metric"
+  },
+  {
+    "problem_id": 1065,
+    "name": "LeetCode Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1066,
+    "name": "Probability Problem",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair six-sided dice | Constraints: All puzzle rules and admissible moves/states are exactly as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1067,
+    "name": "Expected Time for All Ants to Fall Off",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1068,
+    "name": "Bias of Coins",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1069,
+    "name": "LeetCode Problem 1143",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1070,
+    "name": "Mathematical Statistics Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1071,
+    "name": "ATM Queue Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Mixture over boxes/urns, Colored balls in urns | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1072,
+    "name": "Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1073,
+    "name": "Integral Calculation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1074,
+    "name": "Expected Number of Arrangements",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1075,
+    "name": "Lie Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1076,
+    "name": "Paper Sheets",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Mixture over boxes/urns, Colored balls in urns | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1077,
+    "name": "Matrix Traversal",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors defined in the prompt",
+        "Linear transformations or eigensystem quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensions and algebraic constraints are fixed by the problem statement"
+      ],
+      "target_objective": "Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors defined in the prompt, Linear transformations or eigensystem quantities | Constraints: Dimensions and algebraic constraints are fixed by the problem statement | Objective: Derive the requested matrix, eigenvalue/eigenvector, or linear-algebraic quantity"
+  },
+  {
+    "problem_id": 1078,
+    "name": "First Round: Coding and Basic Statistics",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Uniform(0,1) random variables | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated, Selection is uniformly random | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1079,
+    "name": "Second Round: Probability and Finance Questions",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Decision Making",
+      "problem_setup_entities": [
+        "Players, actions, and payoff structure",
+        "Information structure and strategy space",
+        "Fair six-sided dice",
+        "Mixture over boxes/urns",
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Rules of play and payoff mappings are fixed as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Game Theory and Strategic Decision Making | Entities: Players, actions, and payoff structure, Information structure and strategy space, Fair six-sided dice, Mixture over boxes/urns, Colored balls in urns | Constraints: Rules of play and payoff mappings are fixed as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1080,
+    "name": "Queue at ATM (Hackerrank Problem)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric",
+        "Fair coin toss process",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric, Fair coin toss process, Fair six-sided dice | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated, Underlying random mechanism is fair/uniform as specified | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1081,
+    "name": "Second Round",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Time-indexed stochastic process",
+        "Model parameters and lag structure",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Stationarity/dynamics assumptions are as stated in the prompt",
+        "Selection is uniformly random",
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Time-indexed stochastic process, Model parameters and lag structure, Uniform(0,1) random variables | Constraints: Stationarity/dynamics assumptions are as stated in the prompt, Selection is uniformly random, Independence assumptions hold as stated | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1082,
+    "name": "Time Series Correlation Question",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Time-indexed stochastic process",
+        "Model parameters and lag structure"
+      ],
+      "invariant_constraints": [
+        "Stationarity/dynamics assumptions are as stated in the prompt"
+      ],
+      "target_objective": "Derive forecasts, moments, or parameter implications for the specified process"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Time-indexed stochastic process, Model parameters and lag structure | Constraints: Stationarity/dynamics assumptions are as stated in the prompt | Objective: Derive forecasts, moments, or parameter implications for the specified process"
+  },
+  {
+    "problem_id": 1083,
+    "name": "Risk Preference / KellyÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s Criterion",
+    "schema": {
+      "core_mathematical_domain": "Risk Management and Portfolio Theory",
+      "problem_setup_entities": [
+        "Portfolio/loss random variable",
+        "Risk model parameters",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Risk measure definition and confidence horizon are fixed as stated"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Risk Management and Portfolio Theory | Entities: Portfolio/loss random variable, Risk model parameters, Fair six-sided dice | Constraints: Risk measure definition and confidence horizon are fixed as stated | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1084,
+    "name": "Classic Buy/Sell Stocks Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 1085,
+    "name": "Second Round: Fixed Income Analyst",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Stochastic process (e.g., Brownian motion/Itô process)",
+        "Problem-defined stopping time or functional",
+        "Fair six-sided dice",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Process dynamics and filtration assumptions are fixed by the prompt",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Stochastic process (e.g., Brownian motion/Itô process), Problem-defined stopping time or functional, Fair six-sided dice, Uniform(0,1) random variables | Constraints: Process dynamics and filtration assumptions are fixed by the prompt, Selection is uniformly random | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 1086,
+    "name": "Coin Streak Length Correlation",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions",
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated",
+        "Underlying random mechanism is fair/uniform as specified",
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions, Fair coin toss process | Constraints: All puzzle rules and admissible moves/states are exactly as stated, Underlying random mechanism is fair/uniform as specified, Independence assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1087,
+    "name": "Random Integer Divisibility by 2 or 3",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem",
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem, Independence assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1088,
+    "name": "Expected Chord Intersections on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Finite sample space and counting structure",
+        "Random combinatorial configuration"
+      ],
+      "invariant_constraints": [
+        "Counting model and admissible configurations are fixed by the prompt"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Finite sample space and counting structure, Random combinatorial configuration | Constraints: Counting model and admissible configurations are fixed by the prompt | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1091,
+    "name": "Finding Eigenvalue Using Trace",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors defined in the prompt",
+        "Linear transformations or eigensystem quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensions and algebraic constraints are fixed by the problem statement"
+      ],
+      "target_objective": "Derive the requested eigenvalue/eigenvector or matrix-derived quantity"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors defined in the prompt, Linear transformations or eigensystem quantities | Constraints: Dimensions and algebraic constraints are fixed by the problem statement | Objective: Derive the requested eigenvalue/eigenvector or matrix-derived quantity"
+  },
+  {
+    "problem_id": 1092,
+    "name": "OLS Derivation, Collinearity, and Data Duplication",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Problem Solving",
+      "problem_setup_entities": [
+        "Problem-defined variables and logical conditions"
+      ],
+      "invariant_constraints": [
+        "All puzzle rules and admissible moves/states are exactly as stated"
+      ],
+      "target_objective": "Derive the requested quantity or strategy using rigorous reasoning"
+    },
+    "schema_text": "Domain: Mathematical Problem Solving | Entities: Problem-defined variables and logical conditions | Constraints: All puzzle rules and admissible moves/states are exactly as stated | Objective: Derive the requested quantity or strategy using rigorous reasoning"
+  },
+  {
+    "problem_id": 1093,
+    "name": "Prime Rollout Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 1094,
+    "name": "Three Dice Tango",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1095,
+    "name": "Correlation Quest",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Estimation",
+      "problem_setup_entities": [
+        "Observed sample/data-generating model",
+        "Unknown parameters and estimators"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and estimator definition are fixed as stated"
+      ],
+      "target_objective": "Compute or characterize the requested estimator, interval, test, or predictive metric"
+    },
+    "schema_text": "Domain: Statistics and Estimation | Entities: Observed sample/data-generating model, Unknown parameters and estimators | Constraints: Sampling assumptions and estimator definition are fixed as stated | Objective: Compute or characterize the requested estimator, interval, test, or predictive metric"
+  },
+  {
+    "problem_id": 1096,
+    "name": "Dice Chase Duo",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1097,
+    "name": "Spending Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1098,
+    "name": "Noodle Knot Loop",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1099,
+    "name": "Die Divergence Delight",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1100,
+    "name": "Factorial Count Quest",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Finite sample space and counting structure",
+        "Random combinatorial configuration"
+      ],
+      "invariant_constraints": [
+        "Counting model and admissible configurations are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested count, probability, or Expected Value"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Finite sample space and counting structure, Random combinatorial configuration | Constraints: Counting model and admissible configurations are fixed by the prompt | Objective: Compute the requested count, probability, or Expected Value"
+  },
+  {
+    "problem_id": 1101,
+    "name": "Dice Duality Delight",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt, Fair six-sided dice | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 1102,
+    "name": "Digit Multiplier Quest",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "Integers and arithmetic relations defined in the problem"
+      ],
+      "invariant_constraints": [
+        "Divisibility/congruence constraints are fixed by the prompt"
+      ],
+      "target_objective": "Derive the requested arithmetic count, property, or closed-form value"
+    },
+    "schema_text": "Domain: Number Theory | Entities: Integers and arithmetic relations defined in the problem | Constraints: Divisibility/congruence constraints are fixed by the prompt | Objective: Derive the requested arithmetic count, property, or closed-form value"
+  },
+  {
+    "problem_id": 1103,
+    "name": "Path Puzzle Paths",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Finite sample space and counting structure",
+        "Random combinatorial configuration"
+      ],
+      "invariant_constraints": [
+        "Counting model and admissible configurations are fixed by the prompt"
+      ],
+      "target_objective": "Compute the requested count, probability, or Expected Value"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Finite sample space and counting structure, Random combinatorial configuration | Constraints: Counting model and admissible configurations are fixed by the prompt | Objective: Compute the requested count, probability, or Expected Value"
+  },
+  {
+    "problem_id": 1104,
+    "name": "Charmed Circlets",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric objects and measures defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Geometric constraints and sampling assumptions are fixed as stated"
+      ],
+      "target_objective": "Compute the requested length/area/volume/probability quantity"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric objects and measures defined in the prompt | Constraints: Geometric constraints and sampling assumptions are fixed as stated | Objective: Compute the requested length/area/volume/probability quantity"
+  },
+  {
+    "problem_id": 1105,
+    "name": "Hidden Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 1106,
+    "name": "Whispering Sequence",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Solve for the requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Solve for the requested quantity using the stated assumptions"
+  }
+]

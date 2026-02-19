@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 1307,
+    "name": "Correlation Triangles",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables",
+        "Moments or dependence structure",
+        "Sample or population parameters"
+      ],
+      "invariant_constraints": [
+        "Definitions of expectation, variance, and correlation apply",
+        "Stated distributional assumptions are fixed"
+      ],
+      "target_objective": "Derive the requested statistical quantity using the given assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables, Moments or dependence structure, Sample or population parameters | Constraints: Definitions of expectation, variance, and correlation apply, Stated distributional assumptions are fixed | Objective: Derive the requested statistical quantity using the given assumptions"
+  },
+  {
+    "problem_id": 1308,
+    "name": "Basketball Decider",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1309,
+    "name": "Dice Logic Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1310,
+    "name": "Card Cascade Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1311,
+    "name": "Concert Mystery Math",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1312,
+    "name": "Correlated Sum Mystery",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1313,
+    "name": "Ladder Slide Chase",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1314,
+    "name": "Power Surprise",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1315,
+    "name": "Circle Randomness",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric region",
+        "Random point/length/angle selection rule",
+        "Derived geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations hold",
+        "Sampling is uniform over the stated geometric domain unless noted otherwise"
+      ],
+      "target_objective": "Compute the requested geometric probability or measurement"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric region, Random point/length/angle selection rule, Derived geometric measurements | Constraints: Euclidean geometry relations hold, Sampling is uniform over the stated geometric domain unless noted otherwise | Objective: Compute the requested geometric probability or measurement"
+  },
+  {
+    "problem_id": 1316,
+    "name": "Conflicted Companions",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1317,
+    "name": "High Rollers Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1318,
+    "name": "Twist Correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables",
+        "Moments or dependence structure",
+        "Sample or population parameters"
+      ],
+      "invariant_constraints": [
+        "Definitions of expectation, variance, and correlation apply",
+        "Stated distributional assumptions are fixed"
+      ],
+      "target_objective": "Derive the requested statistical quantity using the given assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables, Moments or dependence structure, Sample or population parameters | Constraints: Definitions of expectation, variance, and correlation apply, Stated distributional assumptions are fixed | Objective: Derive the requested statistical quantity using the given assumptions"
+  },
+  {
+    "problem_id": 1319,
+    "name": "Random Radius Ripple",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1320,
+    "name": "Beta Surprise Hunt",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables",
+        "Moments or dependence structure",
+        "Sample or population parameters"
+      ],
+      "invariant_constraints": [
+        "Definitions of expectation, variance, and correlation apply",
+        "Stated distributional assumptions are fixed"
+      ],
+      "target_objective": "Derive the requested statistical quantity using the given assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables, Moments or dependence structure, Sample or population parameters | Constraints: Definitions of expectation, variance, and correlation apply, Stated distributional assumptions are fixed | Objective: Derive the requested statistical quantity using the given assumptions"
+  },
+  {
+    "problem_id": 1321,
+    "name": "Pizza Squad Variance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables",
+        "Moments or dependence structure",
+        "Sample or population parameters"
+      ],
+      "invariant_constraints": [
+        "Definitions of expectation, variance, and correlation apply",
+        "Stated distributional assumptions are fixed"
+      ],
+      "target_objective": "Derive the requested statistical quantity using the given assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables, Moments or dependence structure, Sample or population parameters | Constraints: Definitions of expectation, variance, and correlation apply, Stated distributional assumptions are fixed | Objective: Derive the requested statistical quantity using the given assumptions"
+  },
+  {
+    "problem_id": 1322,
+    "name": "Marble Escape Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "Game state and transition/payoff rules",
+        "Strategy choices"
+      ],
+      "invariant_constraints": [
+        "All players observe and follow the stated rules",
+        "Payoff structure is fixed and common knowledge"
+      ],
+      "target_objective": "Determine the optimal strategy and resulting value/win probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy | Entities: Players and action sets, Game state and transition/payoff rules, Strategy choices | Constraints: All players observe and follow the stated rules, Payoff structure is fixed and common knowledge | Objective: Determine the optimal strategy and resulting value/win probability"
+  },
+  {
+    "problem_id": 1323,
+    "name": "Triple Ten Toss",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1324,
+    "name": "Bus Roulette Wait",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1325,
+    "name": "Age Circle Riddle",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric region",
+        "Random point/length/angle selection rule",
+        "Derived geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations hold",
+        "Sampling is uniform over the stated geometric domain unless noted otherwise"
+      ],
+      "target_objective": "Compute the requested geometric probability or measurement"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric region, Random point/length/angle selection rule, Derived geometric measurements | Constraints: Euclidean geometry relations hold, Sampling is uniform over the stated geometric domain unless noted otherwise | Objective: Compute the requested geometric probability or measurement"
+  },
+  {
+    "problem_id": 1326,
+    "name": "Five Face Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1327,
+    "name": "Dicey Dilemmas",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1328,
+    "name": "Prime Dice Quest",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Discrete Constraints",
+      "problem_setup_entities": [
+        "Integer variables",
+        "Divisibility/modular relations",
+        "Constraint equations or inequalities"
+      ],
+      "invariant_constraints": [
+        "Variables are restricted to integers in the stated domain",
+        "All arithmetic constraints must be satisfied simultaneously"
+      ],
+      "target_objective": "Count or characterize all integer solutions satisfying the constraints"
+    },
+    "schema_text": "Domain: Number Theory and Discrete Constraints | Entities: Integer variables, Divisibility/modular relations, Constraint equations or inequalities | Constraints: Variables are restricted to integers in the stated domain, All arithmetic constraints must be satisfied simultaneously | Objective: Count or characterize all integer solutions satisfying the constraints"
+  },
+  {
+    "problem_id": 1329,
+    "name": "Door Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1330,
+    "name": "Betting Brilliance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1331,
+    "name": "Hidden Color Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1332,
+    "name": "Egg Drop Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1333,
+    "name": "Circle in Triangle",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric region",
+        "Random point/length/angle selection rule",
+        "Derived geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations hold",
+        "Sampling is uniform over the stated geometric domain unless noted otherwise"
+      ],
+      "target_objective": "Compute the requested geometric probability or measurement"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric region, Random point/length/angle selection rule, Derived geometric measurements | Constraints: Euclidean geometry relations hold, Sampling is uniform over the stated geometric domain unless noted otherwise | Objective: Compute the requested geometric probability or measurement"
+  },
+  {
+    "problem_id": 1334,
+    "name": "Triangular Square Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1335,
+    "name": "Palindrome Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1336,
+    "name": "Power Play Modulo",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Discrete Constraints",
+      "problem_setup_entities": [
+        "Integer variables",
+        "Divisibility/modular relations",
+        "Constraint equations or inequalities"
+      ],
+      "invariant_constraints": [
+        "Variables are restricted to integers in the stated domain",
+        "All arithmetic constraints must be satisfied simultaneously"
+      ],
+      "target_objective": "Count or characterize all integer solutions satisfying the constraints"
+    },
+    "schema_text": "Domain: Number Theory and Discrete Constraints | Entities: Integer variables, Divisibility/modular relations, Constraint equations or inequalities | Constraints: Variables are restricted to integers in the stated domain, All arithmetic constraints must be satisfied simultaneously | Objective: Count or characterize all integer solutions satisfying the constraints"
+  },
+  {
+    "problem_id": 1337,
+    "name": "Apple Countdown",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Finite set of objects",
+        "Selection/arrangement rules",
+        "Counting variables"
+      ],
+      "invariant_constraints": [
+        "Counting is over valid configurations only",
+        "Symmetry/indistinguishability conditions are applied as stated"
+      ],
+      "target_objective": "Compute the exact number of valid configurations or arrangements"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Finite set of objects, Selection/arrangement rules, Counting variables | Constraints: Counting is over valid configurations only, Symmetry/indistinguishability conditions are applied as stated | Objective: Compute the exact number of valid configurations or arrangements"
+  },
+  {
+    "problem_id": 1338,
+    "name": "Squaring Exponents",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1339,
+    "name": "Pipe Trio Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1340,
+    "name": "Straddle Jigsaw",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Finance and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Underlying asset/value process",
+        "Model parameters",
+        "Payoff or valuation functional"
+      ],
+      "invariant_constraints": [
+        "Dynamics follow the stated stochastic process assumptions",
+        "Contract/payoff definition is fixed"
+      ],
+      "target_objective": "Compute the requested valuation, probability, or risk metric"
+    },
+    "schema_text": "Domain: Mathematical Finance and Stochastic Modeling | Entities: Underlying asset/value process, Model parameters, Payoff or valuation functional | Constraints: Dynamics follow the stated stochastic process assumptions, Contract/payoff definition is fixed | Objective: Compute the requested valuation, probability, or risk metric"
+  },
+  {
+    "problem_id": 1341,
+    "name": "Lucky Seventh Derivative",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1342,
+    "name": "Orb Forecast Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1343,
+    "name": "Correlate Bound Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1344,
+    "name": "Variance Twist",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables",
+        "Moments or dependence structure",
+        "Sample or population parameters"
+      ],
+      "invariant_constraints": [
+        "Definitions of expectation, variance, and correlation apply",
+        "Stated distributional assumptions are fixed"
+      ],
+      "target_objective": "Derive the requested statistical quantity using the given assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables, Moments or dependence structure, Sample or population parameters | Constraints: Definitions of expectation, variance, and correlation apply, Stated distributional assumptions are fixed | Objective: Derive the requested statistical quantity using the given assumptions"
+  },
+  {
+    "problem_id": 1345,
+    "name": "Dice Difference Dream",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1346,
+    "name": "Even Odd Duel",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "Game state and transition/payoff rules",
+        "Strategy choices"
+      ],
+      "invariant_constraints": [
+        "All players observe and follow the stated rules",
+        "Payoff structure is fixed and common knowledge"
+      ],
+      "target_objective": "Determine the optimal strategy and resulting value/win probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy | Entities: Players and action sets, Game state and transition/payoff rules, Strategy choices | Constraints: All players observe and follow the stated rules, Payoff structure is fixed and common knowledge | Objective: Determine the optimal strategy and resulting value/win probability"
+  },
+  {
+    "problem_id": 1347,
+    "name": "Ending with Four",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1348,
+    "name": "Twin Birthrate Apex",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1349,
+    "name": "Even Quest Rolls",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1350,
+    "name": "Perfect Pair Mystique",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1351,
+    "name": "Dice Divisibility Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1352,
+    "name": "Triple Match Chance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1353,
+    "name": "Heads Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1354,
+    "name": "Dice Reprise",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1355,
+    "name": "Dice Strategy Duel",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "Game state and transition/payoff rules",
+        "Strategy choices"
+      ],
+      "invariant_constraints": [
+        "All players observe and follow the stated rules",
+        "Payoff structure is fixed and common knowledge"
+      ],
+      "target_objective": "Determine the optimal strategy and resulting value/win probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy | Entities: Players and action sets, Game state and transition/payoff rules, Strategy choices | Constraints: All players observe and follow the stated rules, Payoff structure is fixed and common knowledge | Objective: Determine the optimal strategy and resulting value/win probability"
+  },
+  {
+    "problem_id": 1356,
+    "name": "Fixed Point Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1357,
+    "name": "Heads Wins",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1358,
+    "name": "Dice Dissonance Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1359,
+    "name": "Double Leap Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1360,
+    "name": "Race of Patterns",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1361,
+    "name": "Crimson Roll",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1362,
+    "name": "Double Dice Delight",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1363,
+    "name": "Dice Climb",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1364,
+    "name": "Cyclic Multiplier Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1365,
+    "name": "Gridlock Pathways",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Finite set of objects",
+        "Selection/arrangement rules",
+        "Counting variables"
+      ],
+      "invariant_constraints": [
+        "Counting is over valid configurations only",
+        "Symmetry/indistinguishability conditions are applied as stated"
+      ],
+      "target_objective": "Compute the exact number of valid configurations or arrangements"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Finite set of objects, Selection/arrangement rules, Counting variables | Constraints: Counting is over valid configurations only, Symmetry/indistinguishability conditions are applied as stated | Objective: Compute the exact number of valid configurations or arrangements"
+  },
+  {
+    "problem_id": 1366,
+    "name": "Roadside Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1367,
+    "name": "Random Max Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1368,
+    "name": "Dice Gamble Spread",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1369,
+    "name": "Dice Ascendancy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1370,
+    "name": "Coin Clash Chase",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1371,
+    "name": "Stamp Sum Limit",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1372,
+    "name": "Exponent Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1373,
+    "name": "Circular Puzzle Quandary",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1374,
+    "name": "Dicey Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1375,
+    "name": "Dice Ladder Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1376,
+    "name": "Colorful Choices",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1377,
+    "name": "Coin Flip Synchronicity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1378,
+    "name": "Crash Watch Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1379,
+    "name": "Dice Duel",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "Game state and transition/payoff rules",
+        "Strategy choices"
+      ],
+      "invariant_constraints": [
+        "All players observe and follow the stated rules",
+        "Payoff structure is fixed and common knowledge"
+      ],
+      "target_objective": "Determine the optimal strategy and resulting value/win probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy | Entities: Players and action sets, Game state and transition/payoff rules, Strategy choices | Constraints: All players observe and follow the stated rules, Payoff structure is fixed and common knowledge | Objective: Determine the optimal strategy and resulting value/win probability"
+  },
+  {
+    "problem_id": 1380,
+    "name": "Rope Slice Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1381,
+    "name": "Orbital Reunion",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1382,
+    "name": "Twin Spades Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1383,
+    "name": "Factor Quandary",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Discrete Constraints",
+      "problem_setup_entities": [
+        "Integer variables",
+        "Divisibility/modular relations",
+        "Constraint equations or inequalities"
+      ],
+      "invariant_constraints": [
+        "Variables are restricted to integers in the stated domain",
+        "All arithmetic constraints must be satisfied simultaneously"
+      ],
+      "target_objective": "Count or characterize all integer solutions satisfying the constraints"
+    },
+    "schema_text": "Domain: Number Theory and Discrete Constraints | Entities: Integer variables, Divisibility/modular relations, Constraint equations or inequalities | Constraints: Variables are restricted to integers in the stated domain, All arithmetic constraints must be satisfied simultaneously | Objective: Count or characterize all integer solutions satisfying the constraints"
+  },
+  {
+    "problem_id": 1384,
+    "name": "Cinema Seat Shuffle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1385,
+    "name": "Egg Drop Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1386,
+    "name": "Liquid Swap Mystery",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1387,
+    "name": "Chance Boosting",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1388,
+    "name": "Random Tango",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1389,
+    "name": "Sequential Ones Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1390,
+    "name": "Random Ant Trek",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1391,
+    "name": "Poison Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1392,
+    "name": "Odd First Charm",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1393,
+    "name": "Handshake Enigma",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1394,
+    "name": "Dice Climb Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1395,
+    "name": "Dice Medley Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1396,
+    "name": "Odd Chase Rolls",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1397,
+    "name": "Odd Sphere Quest",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric region",
+        "Random point/length/angle selection rule",
+        "Derived geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations hold",
+        "Sampling is uniform over the stated geometric domain unless noted otherwise"
+      ],
+      "target_objective": "Compute the requested geometric probability or measurement"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric region, Random point/length/angle selection rule, Derived geometric measurements | Constraints: Euclidean geometry relations hold, Sampling is uniform over the stated geometric domain unless noted otherwise | Objective: Compute the requested geometric probability or measurement"
+  },
+  {
+    "problem_id": 1398,
+    "name": "Dice Double Dare",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1399,
+    "name": "Dice Memory Repeat",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1400,
+    "name": "Flip of Fate",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1401,
+    "name": "Dice Divisor Duel",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "Game state and transition/payoff rules",
+        "Strategy choices"
+      ],
+      "invariant_constraints": [
+        "All players observe and follow the stated rules",
+        "Payoff structure is fixed and common knowledge"
+      ],
+      "target_objective": "Determine the optimal strategy and resulting value/win probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy | Entities: Players and action sets, Game state and transition/payoff rules, Strategy choices | Constraints: All players observe and follow the stated rules, Payoff structure is fixed and common knowledge | Objective: Determine the optimal strategy and resulting value/win probability"
+  },
+  {
+    "problem_id": 1402,
+    "name": "Circle Trio Gamble",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric region",
+        "Random point/length/angle selection rule",
+        "Derived geometric measurements"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations hold",
+        "Sampling is uniform over the stated geometric domain unless noted otherwise"
+      ],
+      "target_objective": "Compute the requested geometric probability or measurement"
+    },
+    "schema_text": "Domain: Geometry and Geometric Probability | Entities: Geometric region, Random point/length/angle selection rule, Derived geometric measurements | Constraints: Euclidean geometry relations hold, Sampling is uniform over the stated geometric domain unless noted otherwise | Objective: Compute the requested geometric probability or measurement"
+  },
+  {
+    "problem_id": 1403,
+    "name": "Ace Chase Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1404,
+    "name": "Approaching Infinity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1405,
+    "name": "Looping Labyrinth",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  },
+  {
+    "problem_id": 1406,
+    "name": "Lucky Streak Gamble",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random experiment outcomes",
+        "Associated random variables",
+        "Given parameters and payoff/counting rules"
+      ],
+      "invariant_constraints": [
+        "Outcome probabilities follow the stated fair/biased mechanism",
+        "Rules of the experiment remain fixed across trials"
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or distributional quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random experiment outcomes, Associated random variables, Given parameters and payoff/counting rules | Constraints: Outcome probabilities follow the stated fair/biased mechanism, Rules of the experiment remain fixed across trials | Objective: Compute the required probability, Expected Value, or distributional quantity"
+  }
+]

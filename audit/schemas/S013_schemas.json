@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 1207,
+    "name": "Melon Weight Mystery",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1208,
+    "name": "Color Code Quest",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input state space",
+        "Algorithm state transitions",
+        "Output quantity"
+      ],
+      "invariant_constraints": [
+        "Computational complexity constraints apply as stated",
+        "State transitions must preserve correctness invariants"
+      ],
+      "target_objective": "Construct a correct and efficient algorithm to compute the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input state space, Algorithm state transitions, Output quantity | Constraints: Computational complexity constraints apply as stated, State transitions must preserve correctness invariants | Objective: Construct a correct and efficient algorithm to compute the required output"
+  },
+  {
+    "problem_id": 1209,
+    "name": "Top Spot Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1210,
+    "name": "Coin Gambit Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1211,
+    "name": "Maximus Expectatus",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Random Variables",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Outcome distribution",
+        "Payoff/random variable mapping"
+      ],
+      "invariant_constraints": [
+        "Randomness assumptions (independence/uniformity) are as stated",
+        "Expectation/probability laws must be applied consistently"
+      ],
+      "target_objective": "Compute the requested expected value, variance, or related moment/probability"
+    },
+    "schema_text": "Domain: Expected Value and Random Variables | Entities: Random experiment, Outcome distribution, Payoff/random variable mapping | Constraints: Randomness assumptions (independence/uniformity) are as stated, Expectation/probability laws must be applied consistently | Objective: Compute the requested expected value, variance, or related moment/probability"
+  },
+  {
+    "problem_id": 1212,
+    "name": "Dice Deja Vu",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1213,
+    "name": "Double Trouble Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression Inference",
+      "problem_setup_entities": [
+        "Random variables or sample data",
+        "Model parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are as stated",
+        "Estimator/test definition must be internally consistent"
+      ],
+      "target_objective": "Derive or evaluate the requested estimator, probability, or inferential quantity"
+    },
+    "schema_text": "Domain: Statistics and Regression Inference | Entities: Random variables or sample data, Model parameters, Estimator or test statistic | Constraints: Distributional assumptions are as stated, Estimator/test definition must be internally consistent | Objective: Derive or evaluate the requested estimator, probability, or inferential quantity"
+  },
+  {
+    "problem_id": 1214,
+    "name": "Dice Dominance",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1215,
+    "name": "Coin Stratagem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1216,
+    "name": "Diophantine Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1217,
+    "name": "Trailing Zeros Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1218,
+    "name": "Dice Correlation Quest",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1219,
+    "name": "Card Flip Gambit",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1220,
+    "name": "Dice Duel Choice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1221,
+    "name": "Prime Roll Showdown",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1222,
+    "name": "Coin Flip Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1223,
+    "name": "Heads Prediction Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1224,
+    "name": "Color Match Munch",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1225,
+    "name": "Light Isolation Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1226,
+    "name": "Coin Toss Parity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1227,
+    "name": "Roll Dollar Deeds",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1228,
+    "name": "Doubled Data Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1229,
+    "name": "Bill Breaker Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1230,
+    "name": "Heads Streak Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1231,
+    "name": "River Rush Riddle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1232,
+    "name": "Dice Surpass",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1233,
+    "name": "Birthday Paradox Maximization",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1234,
+    "name": "Bearly Catching Five",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1235,
+    "name": "Interval Tango",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1236,
+    "name": "Dice Delight",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1237,
+    "name": "Triple Entanglement",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1238,
+    "name": "Fives Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1239,
+    "name": "Passenger Puzzle Roll",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1240,
+    "name": "Bacterial Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1241,
+    "name": "Lantern Bridge Dash",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression Inference",
+      "problem_setup_entities": [
+        "Random variables or sample data",
+        "Model parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are as stated",
+        "Estimator/test definition must be internally consistent"
+      ],
+      "target_objective": "Derive or evaluate the requested estimator, probability, or inferential quantity"
+    },
+    "schema_text": "Domain: Statistics and Regression Inference | Entities: Random variables or sample data, Model parameters, Estimator or test statistic | Constraints: Distributional assumptions are as stated, Estimator/test definition must be internally consistent | Objective: Derive or evaluate the requested estimator, probability, or inferential quantity"
+  },
+  {
+    "problem_id": 1242,
+    "name": "Timewarp Call Option",
+    "schema": {
+      "core_mathematical_domain": "Financial Mathematics and Derivatives",
+      "problem_setup_entities": [
+        "Underlying stochastic driver",
+        "Contract payoff mapping",
+        "Pricing or hedging inputs"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated",
+        "Payoff definition is fixed by contract rules"
+      ],
+      "target_objective": "Compute or characterize the fair value, risk metric, or optimal decision under the model"
+    },
+    "schema_text": "Domain: Financial Mathematics and Derivatives | Entities: Underlying stochastic driver, Contract payoff mapping, Pricing or hedging inputs | Constraints: No-arbitrage and model assumptions hold as stated, Payoff definition is fixed by contract rules | Objective: Compute or characterize the fair value, risk metric, or optimal decision under the model"
+  },
+  {
+    "problem_id": 1243,
+    "name": "Nine Sum Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1244,
+    "name": "Chopping Trilogue",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1245,
+    "name": "Equilibrium Toss Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1246,
+    "name": "Fixed Points Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1247,
+    "name": "Odd Roll Odyssey",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1248,
+    "name": "Cubed Wanderer Variance",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression Inference",
+      "problem_setup_entities": [
+        "Random variables or sample data",
+        "Model parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are as stated",
+        "Estimator/test definition must be internally consistent"
+      ],
+      "target_objective": "Derive or evaluate the requested estimator, probability, or inferential quantity"
+    },
+    "schema_text": "Domain: Statistics and Regression Inference | Entities: Random variables or sample data, Model parameters, Estimator or test statistic | Constraints: Distributional assumptions are as stated, Estimator/test definition must be internally consistent | Objective: Derive or evaluate the requested estimator, probability, or inferential quantity"
+  },
+  {
+    "problem_id": 1249,
+    "name": "Dice Peaks",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1250,
+    "name": "Sprout Feast Frenzy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1251,
+    "name": "Shuffled Unions",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1252,
+    "name": "Final Flicker Forecast",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Time Series",
+      "problem_setup_entities": [
+        "State variable process",
+        "Transition dynamics",
+        "Path-dependent quantity of interest"
+      ],
+      "invariant_constraints": [
+        "Process assumptions are fixed by the problem statement",
+        "Derived quantities must be consistent with filtration/time index"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or distributional property of the process"
+    },
+    "schema_text": "Domain: Stochastic Processes and Time Series | Entities: State variable process, Transition dynamics, Path-dependent quantity of interest | Constraints: Process assumptions are fixed by the problem statement, Derived quantities must be consistent with filtration/time index | Objective: Compute the requested probability, expectation, or distributional property of the process"
+  },
+  {
+    "problem_id": 1253,
+    "name": "Binary Fifteen Quest",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input state space",
+        "Algorithm state transitions",
+        "Output quantity"
+      ],
+      "invariant_constraints": [
+        "Computational complexity constraints apply as stated",
+        "State transitions must preserve correctness invariants"
+      ],
+      "target_objective": "Construct a correct and efficient algorithm to compute the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input state space, Algorithm state transitions, Output quantity | Constraints: Computational complexity constraints apply as stated, State transitions must preserve correctness invariants | Objective: Construct a correct and efficient algorithm to compute the required output"
+  },
+  {
+    "problem_id": 1254,
+    "name": "Pond Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1255,
+    "name": "Fraction Riddle Chain",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1256,
+    "name": "Safe Code Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input state space",
+        "Algorithm state transitions",
+        "Output quantity"
+      ],
+      "invariant_constraints": [
+        "Computational complexity constraints apply as stated",
+        "State transitions must preserve correctness invariants"
+      ],
+      "target_objective": "Construct a correct and efficient algorithm to compute the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input state space, Algorithm state transitions, Output quantity | Constraints: Computational complexity constraints apply as stated, State transitions must preserve correctness invariants | Objective: Construct a correct and efficient algorithm to compute the required output"
+  },
+  {
+    "problem_id": 1257,
+    "name": "Dice Duel Dominance",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1258,
+    "name": "Dice Deja Vu 2",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1259,
+    "name": "Dice Duel Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1260,
+    "name": "Accident Odds Shrink",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1261,
+    "name": "Dice Coin Alchemy",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1262,
+    "name": "Dialing Dreams",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1263,
+    "name": "Clockhand Reunion",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1264,
+    "name": "Random Gap Chase",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1265,
+    "name": "Coin Flip Quartet",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1266,
+    "name": "Gridwalk Challenge",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input state space",
+        "Algorithm state transitions",
+        "Output quantity"
+      ],
+      "invariant_constraints": [
+        "Computational complexity constraints apply as stated",
+        "State transitions must preserve correctness invariants"
+      ],
+      "target_objective": "Construct a correct and efficient algorithm to compute the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input state space, Algorithm state transitions, Output quantity | Constraints: Computational complexity constraints apply as stated, State transitions must preserve correctness invariants | Objective: Construct a correct and efficient algorithm to compute the required output"
+  },
+  {
+    "problem_id": 1267,
+    "name": "Major Mystery",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1268,
+    "name": "Triple Heads Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1269,
+    "name": "Weighted Dice Duet",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1270,
+    "name": "Unique Dates Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1271,
+    "name": "Streak Flip Fun",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1272,
+    "name": "Painted Cube Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Geometric Combinatorics",
+      "problem_setup_entities": [
+        "Cube partition structure",
+        "Coloring/painting rule",
+        "Count/probability target"
+      ],
+      "invariant_constraints": [
+        "Geometric symmetry and counting constraints are preserved",
+        "Piece classification rules remain fixed"
+      ],
+      "target_objective": "Count relevant piece classes and compute the requested probability or expectation"
+    },
+    "schema_text": "Domain: Geometric Combinatorics | Entities: Cube partition structure, Coloring/painting rule, Count/probability target | Constraints: Geometric symmetry and counting constraints are preserved, Piece classification rules remain fixed | Objective: Count relevant piece classes and compute the requested probability or expectation"
+  },
+  {
+    "problem_id": 1273,
+    "name": "Lilypad Countdown",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1274,
+    "name": "Dice Option Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1275,
+    "name": "Letter Blitz Strategy",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Decision Making",
+      "problem_setup_entities": [
+        "Players or decision maker",
+        "Action space",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Information structure and move order are fixed by the setup",
+        "Optimization is over admissible strategies only"
+      ],
+      "target_objective": "Find an optimal strategy or equilibrium and quantify expected payoff/probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Decision Making | Entities: Players or decision maker, Action space, Payoff function | Constraints: Information structure and move order are fixed by the setup, Optimization is over admissible strategies only | Objective: Find an optimal strategy or equilibrium and quantify expected payoff/probability"
+  },
+  {
+    "problem_id": 1276,
+    "name": "Critter Parade",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1277,
+    "name": "Lucky Even Tosses",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1278,
+    "name": "Correlate Twins",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression Inference",
+      "problem_setup_entities": [
+        "Random variables or sample data",
+        "Model parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are as stated",
+        "Estimator/test definition must be internally consistent"
+      ],
+      "target_objective": "Derive or evaluate the requested estimator, probability, or inferential quantity"
+    },
+    "schema_text": "Domain: Statistics and Regression Inference | Entities: Random variables or sample data, Model parameters, Estimator or test statistic | Constraints: Distributional assumptions are as stated, Estimator/test definition must be internally consistent | Objective: Derive or evaluate the requested estimator, probability, or inferential quantity"
+  },
+  {
+    "problem_id": 1279,
+    "name": "Dice Completion Quest",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1280,
+    "name": "Dice Dilemma Decision",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1281,
+    "name": "Ring Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1282,
+    "name": "Dice Profit Anticipation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1283,
+    "name": "Painted Cube Mystery",
+    "schema": {
+      "core_mathematical_domain": "Geometric Combinatorics",
+      "problem_setup_entities": [
+        "Cube partition structure",
+        "Coloring/painting rule",
+        "Count/probability target"
+      ],
+      "invariant_constraints": [
+        "Geometric symmetry and counting constraints are preserved",
+        "Piece classification rules remain fixed"
+      ],
+      "target_objective": "Count relevant piece classes and compute the requested probability or expectation"
+    },
+    "schema_text": "Domain: Geometric Combinatorics | Entities: Cube partition structure, Coloring/painting rule, Count/probability target | Constraints: Geometric symmetry and counting constraints are preserved, Piece classification rules remain fixed | Objective: Count relevant piece classes and compute the requested probability or expectation"
+  },
+  {
+    "problem_id": 1284,
+    "name": "Dicey Sum Quest",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1285,
+    "name": "Uneven Odds",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1286,
+    "name": "Painted Cubes Quest",
+    "schema": {
+      "core_mathematical_domain": "Geometric Combinatorics",
+      "problem_setup_entities": [
+        "Cube partition structure",
+        "Coloring/painting rule",
+        "Count/probability target"
+      ],
+      "invariant_constraints": [
+        "Geometric symmetry and counting constraints are preserved",
+        "Piece classification rules remain fixed"
+      ],
+      "target_objective": "Count relevant piece classes and compute the requested probability or expectation"
+    },
+    "schema_text": "Domain: Geometric Combinatorics | Entities: Cube partition structure, Coloring/painting rule, Count/probability target | Constraints: Geometric symmetry and counting constraints are preserved, Piece classification rules remain fixed | Objective: Count relevant piece classes and compute the requested probability or expectation"
+  },
+  {
+    "problem_id": 1287,
+    "name": "Scaling Mysteries",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1288,
+    "name": "Dice Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1289,
+    "name": "Tripod Balance Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1290,
+    "name": "Cubed Color Chance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1291,
+    "name": "Pooling Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1292,
+    "name": "Stochastic Log Dance",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Time Series",
+      "problem_setup_entities": [
+        "State variable process",
+        "Transition dynamics",
+        "Path-dependent quantity of interest"
+      ],
+      "invariant_constraints": [
+        "Process assumptions are fixed by the problem statement",
+        "Derived quantities must be consistent with filtration/time index"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or distributional property of the process"
+    },
+    "schema_text": "Domain: Stochastic Processes and Time Series | Entities: State variable process, Transition dynamics, Path-dependent quantity of interest | Constraints: Process assumptions are fixed by the problem statement, Derived quantities must be consistent with filtration/time index | Objective: Compute the requested probability, expectation, or distributional property of the process"
+  },
+  {
+    "problem_id": 1293,
+    "name": "Shifted Expectation",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Random Variables",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Outcome distribution",
+        "Payoff/random variable mapping"
+      ],
+      "invariant_constraints": [
+        "Randomness assumptions (independence/uniformity) are as stated",
+        "Expectation/probability laws must be applied consistently"
+      ],
+      "target_objective": "Compute the requested expected value, variance, or related moment/probability"
+    },
+    "schema_text": "Domain: Expected Value and Random Variables | Entities: Random experiment, Outcome distribution, Payoff/random variable mapping | Constraints: Randomness assumptions (independence/uniformity) are as stated, Expectation/probability laws must be applied consistently | Objective: Compute the requested expected value, variance, or related moment/probability"
+  },
+  {
+    "problem_id": 1294,
+    "name": "Leggy Livestock Logic",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1295,
+    "name": "Toasty Odds",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1296,
+    "name": "Bullet Logic Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1297,
+    "name": "Jar Harmony Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1298,
+    "name": "Dice Ascendancy Exploration",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1299,
+    "name": "Double Trouble Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1300,
+    "name": "Curious Coin Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability and Bernoulli Processes",
+      "problem_setup_entities": [
+        "Bernoulli trial sequence",
+        "Event pattern or stopping condition",
+        "Probability/Expected Value functional"
+      ],
+      "invariant_constraints": [
+        "Coin bias and independence assumptions are as stated",
+        "Pattern/event definitions are fixed throughout the calculation"
+      ],
+      "target_objective": "Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability and Bernoulli Processes | Entities: Bernoulli trial sequence, Event pattern or stopping condition, Probability/Expected Value functional | Constraints: Coin bias and independence assumptions are as stated, Pattern/event definitions are fixed throughout the calculation | Objective: Compute the requested event probability, Expected Value, or optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 1301,
+    "name": "Auction Gamble",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Decision Making",
+      "problem_setup_entities": [
+        "Players or decision maker",
+        "Action space",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Information structure and move order are fixed by the setup",
+        "Optimization is over admissible strategies only"
+      ],
+      "target_objective": "Find an optimal strategy or equilibrium and quantify expected payoff/probability"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Decision Making | Entities: Players or decision maker, Action space, Payoff function | Constraints: Information structure and move order are fixed by the setup, Optimization is over admissible strategies only | Objective: Find an optimal strategy or equilibrium and quantify expected payoff/probability"
+  },
+  {
+    "problem_id": 1302,
+    "name": "Dice Duel Dollars",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Dice Processes",
+      "problem_setup_entities": [
+        "Discrete die outcome space",
+        "Game or comparison rule",
+        "Payoff/selection criterion"
+      ],
+      "invariant_constraints": [
+        "Die fairness/bias assumptions are fixed by the setup",
+        "Strategy choices are evaluated under the stated payout rules"
+      ],
+      "target_objective": "Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+    },
+    "schema_text": "Domain: Discrete Probability and Dice Processes | Entities: Discrete die outcome space, Game or comparison rule, Payoff/selection criterion | Constraints: Die fairness/bias assumptions are fixed by the setup, Strategy choices are evaluated under the stated payout rules | Objective: Compute probabilities/Expected Value and, when applicable, identify the optimal dice strategy"
+  },
+  {
+    "problem_id": 1303,
+    "name": "Coprime Collection Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1304,
+    "name": "Fraction Fibbing",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  },
+  {
+    "problem_id": 1305,
+    "name": "Exceeding Gaussian",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression Inference",
+      "problem_setup_entities": [
+        "Random variables or sample data",
+        "Model parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are as stated",
+        "Estimator/test definition must be internally consistent"
+      ],
+      "target_objective": "Derive or evaluate the requested estimator, probability, or inferential quantity"
+    },
+    "schema_text": "Domain: Statistics and Regression Inference | Entities: Random variables or sample data, Model parameters, Estimator or test statistic | Constraints: Distributional assumptions are as stated, Estimator/test definition must be internally consistent | Objective: Derive or evaluate the requested estimator, probability, or inferential quantity"
+  },
+  {
+    "problem_id": 1306,
+    "name": "Prep Odds Mixup",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space or combinatorial structure",
+        "Event(s) of interest"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions (independence/uniformity) are fixed by the setup",
+        "Counting/probability relationships must remain internally consistent"
+      ],
+      "target_objective": "Compute the requested probability, count, or optimal probabilistic decision"
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment, Sample space or combinatorial structure, Event(s) of interest | Constraints: Sampling assumptions (independence/uniformity) are fixed by the setup, Counting/probability relationships must remain internally consistent | Objective: Compute the requested probability, count, or optimal probabilistic decision"
+  }
+]

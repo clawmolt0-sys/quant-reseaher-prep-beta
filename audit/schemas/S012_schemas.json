@@ -1,0 +1,1584 @@
+[
+  {
+    "problem_id": 1107,
+    "name": "Covariance Quest",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Statistics and Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1108,
+    "name": "Risky Coin Wager",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1109,
+    "name": "Orderly Coin Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1110,
+    "name": "Random Triangle Quest",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1111,
+    "name": "Big Mac Math",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1112,
+    "name": "Cone Zone Chance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1113,
+    "name": "Eggsplosive Heights",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1114,
+    "name": "Even Leapways Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1115,
+    "name": "Odd Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1116,
+    "name": "Chance Snip Spread",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1117,
+    "name": "Median Quest",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Statistics and Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1118,
+    "name": "Chordal Quadrilateral Chance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1119,
+    "name": "Cube Quest",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Geometry | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1120,
+    "name": "Graph Safari Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1121,
+    "name": "Match Madness",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1122,
+    "name": "Dice Delta Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1123,
+    "name": "Dice Triad Triumph",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1124,
+    "name": "Sphere Triangle Maximization",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Optimize the target metric (maximize or minimize) under the stated constraints."
+    },
+    "schema_text": "Domain: Geometry | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Optimize the target metric (maximize or minimize) under the stated constraints."
+  },
+  {
+    "problem_id": 1125,
+    "name": "Coin Chase Duel",
+    "schema": {
+      "core_mathematical_domain": "Game-Theoretic Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Game-Theoretic Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes, Strategic players and action choices | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T}, Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1126,
+    "name": "Logarithmic Growth Twist",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1127,
+    "name": "Odd Chase Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1128,
+    "name": "Permutation Swap Chaos",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite discrete configurations",
+        "Counting over permutations/combinations"
+      ],
+      "invariant_constraints": [
+        "All admissible configurations are equally likely unless weighted"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite discrete configurations, Counting over permutations/combinations | Constraints: All admissible configurations are equally likely unless weighted | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1129,
+    "name": "Quadrant Surprise",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1130,
+    "name": "Digit Deluge",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Number Theory | Entities: Integers and divisibility/parity structure | Constraints: Integer domain constraints induced by arithmetic properties | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1131,
+    "name": "Parity Coin Flip Enigma",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes",
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}",
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes, Integers and divisibility/parity structure | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T}, Integer domain constraints induced by arithmetic properties | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1132,
+    "name": "Card Chaos",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits | Constraints: Sampling without replacement unless otherwise specified | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1133,
+    "name": "Unstable Timing Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1134,
+    "name": "Chance Meeting",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1135,
+    "name": "Triad Prime Hunt",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Number Theory | Entities: Integers and divisibility/parity structure | Constraints: Integer domain constraints induced by arithmetic properties | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1136,
+    "name": "Stairway Sprint",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1137,
+    "name": "Odds Alchemy",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1138,
+    "name": "Heart Value Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits | Constraints: Sampling without replacement unless otherwise specified | Objective: Compute the Expected Value of the target random quantity."
+  },
+  {
+    "problem_id": 1139,
+    "name": "Infinite Sons Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1140,
+    "name": "Binary Factorial Fade",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Number Theory | Entities: Integers and divisibility/parity structure | Constraints: Integer domain constraints induced by arithmetic properties | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1141,
+    "name": "Inner Circle Chance",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1142,
+    "name": "Tardy Pair Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1143,
+    "name": "Pirate Diplomacy",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1144,
+    "name": "Dice Redux Quandary",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1145,
+    "name": "Dice Face Chase",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1146,
+    "name": "Area Gamble",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Points/segments/regions in Euclidean geometry, Strategic players and action choices | Constraints: Uniform selection over the stated geometric region, Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1147,
+    "name": "Square Expectation Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the Expected Value of the target random quantity."
+  },
+  {
+    "problem_id": 1148,
+    "name": "Coin Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1149,
+    "name": "Threshold Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1150,
+    "name": "Duo Draw Drama",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1151,
+    "name": "Sum of Slopes",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1152,
+    "name": "Colorful Circle Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Geometry | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1153,
+    "name": "Adjacent Ones Hunt",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits",
+        "Finite discrete configurations",
+        "Counting over permutations/combinations"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified",
+        "All admissible configurations are equally likely unless weighted"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits, Finite discrete configurations, Counting over permutations/combinations | Constraints: Sampling without replacement unless otherwise specified, All admissible configurations are equally likely unless weighted | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1154,
+    "name": "Fishy Triples Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1155,
+    "name": "Logs and Logic",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1156,
+    "name": "Disk Center Drift",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1157,
+    "name": "Triple Ring Toss",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1158,
+    "name": "Triple Six Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1159,
+    "name": "Change Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1160,
+    "name": "Jug Puzzle Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1161,
+    "name": "Bowls of Destiny",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1162,
+    "name": "Royal Race Earnings",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits, Strategic players and action choices | Constraints: Sampling without replacement unless otherwise specified, Players maximize expected payoff under common rules | Objective: Compute the Expected Value of the target random quantity."
+  },
+  {
+    "problem_id": 1163,
+    "name": "Counting Ones Challenge",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite discrete configurations",
+        "Counting over permutations/combinations"
+      ],
+      "invariant_constraints": [
+        "All admissible configurations are equally likely unless weighted"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite discrete configurations, Counting over permutations/combinations | Constraints: All admissible configurations are equally likely unless weighted | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1164,
+    "name": "Lunar Launch",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1165,
+    "name": "Dice Battle Royale",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6}, Strategic players and action choices | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces, Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1166,
+    "name": "Platform Plunge",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1167,
+    "name": "Min Sequence Magic",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Optimize the target metric (maximize or minimize) under the stated constraints."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Optimize the target metric (maximize or minimize) under the stated constraints."
+  },
+  {
+    "problem_id": 1168,
+    "name": "Sum Shuffle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1169,
+    "name": "Dice Dilemma Dee",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1170,
+    "name": "Brownian Escape",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Brownian motion / random walk state process",
+        "Stopping time or hitting boundary"
+      ],
+      "invariant_constraints": [
+        "Markov and martingale properties as defined by the process"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Brownian motion / random walk state process, Stopping time or hitting boundary | Constraints: Markov and martingale properties as defined by the process | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1171,
+    "name": "Hallway Toggle Tango",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1172,
+    "name": "Bus Wait Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1173,
+    "name": "Endless Square Roots",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1174,
+    "name": "Hopping Odyssey",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1175,
+    "name": "Canoe Clock Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1176,
+    "name": "Ramen Loops Counting",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite discrete configurations",
+        "Counting over permutations/combinations"
+      ],
+      "invariant_constraints": [
+        "All admissible configurations are equally likely unless weighted"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite discrete configurations, Counting over permutations/combinations | Constraints: All admissible configurations are equally likely unless weighted | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1177,
+    "name": "Million Hunt Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1178,
+    "name": "Dice Dilemma Dance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1179,
+    "name": "Dice Coin Cascade",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes",
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}",
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes, Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T}, Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1180,
+    "name": "Triangular Ant Trek",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1181,
+    "name": "Penny Payout Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the Expected Value of the target random quantity."
+  },
+  {
+    "problem_id": 1182,
+    "name": "Dice Reimagined",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1183,
+    "name": "Win Margin Battle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Strategic players and action choices | Constraints: Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1184,
+    "name": "Cubicle Crawl Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1185,
+    "name": "Correlated Contrasts",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1186,
+    "name": "Lucky Six Hunt",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6} | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1187,
+    "name": "Windy Pedal Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1188,
+    "name": "Squad Showdown Chance",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Strategic players and action choices | Constraints: Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1189,
+    "name": "Odd Faces Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits | Constraints: Sampling without replacement unless otherwise specified | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1190,
+    "name": "Height Harmony",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1191,
+    "name": "Option Magic",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Finance",
+      "problem_setup_entities": [
+        "Underlying asset price process",
+        "Derivative payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework and specified market assumptions"
+      ],
+      "target_objective": "Optimize the target metric (maximize or minimize) under the stated constraints."
+    },
+    "schema_text": "Domain: Mathematical Finance | Entities: Underlying asset price process, Derivative payoff function | Constraints: No-arbitrage pricing framework and specified market assumptions | Objective: Optimize the target metric (maximize or minimize) under the stated constraints."
+  },
+  {
+    "problem_id": 1192,
+    "name": "Corner Cube Conundrum",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "Points/segments/regions in Euclidean geometry"
+      ],
+      "invariant_constraints": [
+        "Uniform selection over the stated geometric region"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Geometry | Entities: Points/segments/regions in Euclidean geometry | Constraints: Uniform selection over the stated geometric region | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1193,
+    "name": "Last Number Standing",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Number Theory | Entities: Integers and divisibility/parity structure | Constraints: Integer domain constraints induced by arithmetic properties | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1194,
+    "name": "Sum Pair Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1195,
+    "name": "Boundary Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1196,
+    "name": "Red Black Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Strategic players and action choices | Constraints: Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1197,
+    "name": "Dice Duel Dynamics",
+    "schema": {
+      "core_mathematical_domain": "Game-Theoretic Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Game-Theoretic Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6}, Strategic players and action choices | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces, Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1198,
+    "name": "Dark Deck Dilemma",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Standard deck card draws",
+        "Card ranks and suits"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement unless otherwise specified"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Standard deck card draws, Card ranks and suits | Constraints: Sampling without replacement unless otherwise specified | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1199,
+    "name": "Dice Parity Quest",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}",
+        "Integers and divisibility/parity structure"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces",
+        "Integer domain constraints induced by arithmetic properties"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6}, Integers and divisibility/parity structure | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces, Integer domain constraints induced by arithmetic properties | Objective: Derive the exact count or probability of the qualifying outcomes."
+  },
+  {
+    "problem_id": 1200,
+    "name": "Hefty Hundred Showdown",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Strategic players and action choices | Constraints: Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1201,
+    "name": "Urn Flip Payout",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Compute the Expected Value of the target random quantity."
+  },
+  {
+    "problem_id": 1202,
+    "name": "Ball Color Parade",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1203,
+    "name": "Walkway Luck",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1204,
+    "name": "Charred Pancake Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables representing experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Probability model follows the assumptions given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables representing experiment outcomes | Constraints: Probability model follows the assumptions given in the problem statement | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1205,
+    "name": "Dice Gamble Quandary",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Fair six-sided dice rolls",
+        "Discrete outcomes on {1,2,3,4,5,6}",
+        "Strategic players and action choices"
+      ],
+      "invariant_constraints": [
+        "Independent rolls unless otherwise specified",
+        "Uniform probability over die faces",
+        "Players maximize expected payoff under common rules"
+      ],
+      "target_objective": "Compute the requested probability or distributional quantity exactly."
+    },
+    "schema_text": "Domain: Probability | Entities: Fair six-sided dice rolls, Discrete outcomes on {1,2,3,4,5,6}, Strategic players and action choices | Constraints: Independent rolls unless otherwise specified, Uniform probability over die faces, Players maximize expected payoff under common rules | Objective: Compute the requested probability or distributional quantity exactly."
+  },
+  {
+    "problem_id": 1206,
+    "name": "Hidden Heads Hunt",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Biased or fair coin flips",
+        "Bernoulli trial outcomes"
+      ],
+      "invariant_constraints": [
+        "Independent flips unless otherwise specified",
+        "Each flip has two outcomes {H,T}"
+      ],
+      "target_objective": "Derive the exact count or probability of the qualifying outcomes."
+    },
+    "schema_text": "Domain: Probability | Entities: Biased or fair coin flips, Bernoulli trial outcomes | Constraints: Independent flips unless otherwise specified, Each flip has two outcomes {H,T} | Objective: Derive the exact count or probability of the qualifying outcomes."
+  }
+]
