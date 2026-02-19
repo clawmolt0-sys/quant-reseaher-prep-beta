@@ -948,7 +948,7 @@
     },
     {
         "id":  "voleon",
-        "name":  "Voleon Group",
+        "name":  "The Voleon Group",
         "type":  "Systematic Hedge Fund",
         "roles":  [
                       "Quant Researcher",
@@ -1392,7 +1392,7 @@
     },
     {
         "id":  "2cents-capital",
-        "name":  " 2cents capital.Groups[1].Value.ToUpper() cents  2cents capital.Groups[1].Value.ToUpper() apital",
+        "name":  "2cents Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1400,7 +1400,7 @@
     },
     {
         "id":  "act-commodities",
-        "name":  " act commodities.Groups[1].Value.ToUpper() ct  act commodities.Groups[1].Value.ToUpper() ommodities",
+        "name":  "Act Commodities",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1408,7 +1408,7 @@
     },
     {
         "id":  "albatross-labs",
-        "name":  " albatross labs.Groups[1].Value.ToUpper() lbatross  albatross labs.Groups[1].Value.ToUpper() abs",
+        "name":  "Albatross Labs",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1416,7 +1416,7 @@
     },
     {
         "id":  "alipes-capital",
-        "name":  " alipes capital.Groups[1].Value.ToUpper() lipes  alipes capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Alipes Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1424,7 +1424,7 @@
     },
     {
         "id":  "alphataraxia",
-        "name":  " alphataraxia.Groups[1].Value.ToUpper() lphataraxia",
+        "name":  "Alphataraxia",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1432,7 +1432,7 @@
     },
     {
         "id":  "ant-group",
-        "name":  " ant group.Groups[1].Value.ToUpper() nt  ant group.Groups[1].Value.ToUpper() roup",
+        "name":  "Ant Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1440,7 +1440,7 @@
     },
     {
         "id":  "apt-research",
-        "name":  " apt research.Groups[1].Value.ToUpper() pt  apt research.Groups[1].Value.ToUpper() esearch",
+        "name":  "Apt Research",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1448,7 +1448,7 @@
     },
     {
         "id":  "arch-capital-management",
-        "name":  " arch capital management.Groups[1].Value.ToUpper() rch  arch capital management.Groups[1].Value.ToUpper() apital  arch capital management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Arch Capital Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1456,7 +1456,7 @@
     },
     {
         "id":  "arrowstreet",
-        "name":  " arrowstreet.Groups[1].Value.ToUpper() rrowstreet",
+        "name":  "Arrowstreet",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1464,7 +1464,7 @@
     },
     {
         "id":  "aviva",
-        "name":  " aviva.Groups[1].Value.ToUpper() viva",
+        "name":  "Aviva",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1472,7 +1472,7 @@
     },
     {
         "id":  "bank-of-america",
-        "name":  " bank of america.Groups[1].Value.ToUpper() ank  bank of america.Groups[1].Value.ToUpper() f  bank of america.Groups[1].Value.ToUpper() merica",
+        "name":  "Bank of America",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1480,7 +1480,7 @@
     },
     {
         "id":  "barclays",
-        "name":  " barclays.Groups[1].Value.ToUpper() arclays",
+        "name":  "Barclays",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1488,7 +1488,7 @@
     },
     {
         "id":  "bayview-asset-management",
-        "name":  " bayview asset management.Groups[1].Value.ToUpper() ayview  bayview asset management.Groups[1].Value.ToUpper() sset  bayview asset management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Bayview Asset Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1496,7 +1496,7 @@
     },
     {
         "id":  "blackedge",
-        "name":  " blackedge.Groups[1].Value.ToUpper() lackedge",
+        "name":  "Blackedge",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1504,7 +1504,7 @@
     },
     {
         "id":  "blackrock",
-        "name":  " blackrock.Groups[1].Value.ToUpper() lackrock",
+        "name":  "BlackRock",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1512,7 +1512,7 @@
     },
     {
         "id":  "blackstair",
-        "name":  " blackstair.Groups[1].Value.ToUpper() lackstair",
+        "name":  "Blackstair",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1520,7 +1520,7 @@
     },
     {
         "id":  "blackstone",
-        "name":  " blackstone.Groups[1].Value.ToUpper() lackstone",
+        "name":  "Blackstone",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1528,7 +1528,7 @@
     },
     {
         "id":  "bloomberg",
-        "name":  " bloomberg.Groups[1].Value.ToUpper() loomberg",
+        "name":  "Bloomberg",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1536,7 +1536,7 @@
     },
     {
         "id":  "bnp-paribas",
-        "name":  " bnp paribas.Groups[1].Value.ToUpper() np  bnp paribas.Groups[1].Value.ToUpper() aribas",
+        "name":  "BNP Paribas",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1544,7 +1544,7 @@
     },
     {
         "id":  "bny-mellon",
-        "name":  " bny mellon.Groups[1].Value.ToUpper() ny  bny mellon.Groups[1].Value.ToUpper() ellon",
+        "name":  "BNY Mellon",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1552,7 +1552,7 @@
     },
     {
         "id":  "boerboel-trading",
-        "name":  " boerboel trading.Groups[1].Value.ToUpper() oerboel  boerboel trading.Groups[1].Value.ToUpper() rading",
+        "name":  "Boerboel Trading",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1560,7 +1560,7 @@
     },
     {
         "id":  "boston-consulting-group",
-        "name":  " boston consulting group.Groups[1].Value.ToUpper() oston  boston consulting group.Groups[1].Value.ToUpper() onsulting  boston consulting group.Groups[1].Value.ToUpper() roup",
+        "name":  "Boston Consulting Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1568,7 +1568,7 @@
     },
     {
         "id":  "cantab-capital-partners",
-        "name":  " cantab capital partners.Groups[1].Value.ToUpper() antab  cantab capital partners.Groups[1].Value.ToUpper() apital  cantab capital partners.Groups[1].Value.ToUpper() artners",
+        "name":  "Cantab Capital Partners",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1576,7 +1576,7 @@
     },
     {
         "id":  "capital-one",
-        "name":  " capital one.Groups[1].Value.ToUpper() apital  capital one.Groups[1].Value.ToUpper() ne",
+        "name":  "Capital One",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1584,7 +1584,7 @@
     },
     {
         "id":  "capstone-investment-advisors",
-        "name":  " capstone investment advisors.Groups[1].Value.ToUpper() apstone  capstone investment advisors.Groups[1].Value.ToUpper() nvestment  capstone investment advisors.Groups[1].Value.ToUpper() dvisors",
+        "name":  "Capstone Investment Advisors",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1592,7 +1592,7 @@
     },
     {
         "id":  "cboe",
-        "name":  " cboe.Groups[1].Value.ToUpper() boe",
+        "name":  "CBOE",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1600,7 +1600,7 @@
     },
     {
         "id":  "chicago-trading-company",
-        "name":  " chicago trading company.Groups[1].Value.ToUpper() hicago  chicago trading company.Groups[1].Value.ToUpper() rading  chicago trading company.Groups[1].Value.ToUpper() ompany",
+        "name":  "Chicago Trading Company",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1608,7 +1608,7 @@
     },
     {
         "id":  "citi",
-        "name":  " citi.Groups[1].Value.ToUpper() iti",
+        "name":  "Citi",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1616,7 +1616,7 @@
     },
     {
         "id":  "credit-suisse",
-        "name":  " credit suisse.Groups[1].Value.ToUpper() redit  credit suisse.Groups[1].Value.ToUpper() uisse",
+        "name":  "Credit Suisse",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1624,7 +1624,7 @@
     },
     {
         "id":  "cubist",
-        "name":  " cubist.Groups[1].Value.ToUpper() ubist",
+        "name":  "Cubist Systematic",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1632,7 +1632,7 @@
     },
     {
         "id":  "cutler-group",
-        "name":  " cutler group.Groups[1].Value.ToUpper() utler  cutler group.Groups[1].Value.ToUpper() roup",
+        "name":  "Cutler Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1640,7 +1640,7 @@
     },
     {
         "id":  "datasocket",
-        "name":  " datasocket.Groups[1].Value.ToUpper() atasocket",
+        "name":  "Datasocket",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1648,7 +1648,7 @@
     },
     {
         "id":  "davidson-kempner-capital-management",
-        "name":  " davidson kempner capital management.Groups[1].Value.ToUpper() avidson  davidson kempner capital management.Groups[1].Value.ToUpper() empner  davidson kempner capital management.Groups[1].Value.ToUpper() apital  davidson kempner capital management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Davidson Kempner Capital Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1656,7 +1656,7 @@
     },
     {
         "id":  "da-vinci-derivatives",
-        "name":  " da vinci derivatives.Groups[1].Value.ToUpper() a  da vinci derivatives.Groups[1].Value.ToUpper() inci  da vinci derivatives.Groups[1].Value.ToUpper() erivatives",
+        "name":  "Da Vinci Derivatives",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1664,7 +1664,7 @@
     },
     {
         "id":  "deloitte",
-        "name":  " deloitte.Groups[1].Value.ToUpper() eloitte",
+        "name":  "Deloitte",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1672,7 +1672,7 @@
     },
     {
         "id":  "deutsche-bank",
-        "name":  " deutsche bank.Groups[1].Value.ToUpper() eutsche  deutsche bank.Groups[1].Value.ToUpper() ank",
+        "name":  "Deutsche Bank",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1680,7 +1680,7 @@
     },
     {
         "id":  "dolat-capital",
-        "name":  " dolat capital.Groups[1].Value.ToUpper() olat  dolat capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Dolat Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1688,7 +1688,7 @@
     },
     {
         "id":  "dv-trading",
-        "name":  " dv trading.Groups[1].Value.ToUpper() v  dv trading.Groups[1].Value.ToUpper() rading",
+        "name":  "DV Trading",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1696,7 +1696,7 @@
     },
     {
         "id":  "dynamic-technology-lab",
-        "name":  " dynamic technology lab.Groups[1].Value.ToUpper() ynamic  dynamic technology lab.Groups[1].Value.ToUpper() echnology  dynamic technology lab.Groups[1].Value.ToUpper() ab",
+        "name":  "Dynamic Technology Lab",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1704,7 +1704,7 @@
     },
     {
         "id":  "eagle-seven",
-        "name":  " eagle seven.Groups[1].Value.ToUpper() agle  eagle seven.Groups[1].Value.ToUpper() even",
+        "name":  "Eagle Seven",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1712,7 +1712,7 @@
     },
     {
         "id":  "evernote",
-        "name":  " evernote.Groups[1].Value.ToUpper() vernote",
+        "name":  "Evernote",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1720,7 +1720,7 @@
     },
     {
         "id":  "first-republic",
-        "name":  " first republic.Groups[1].Value.ToUpper() irst  first republic.Groups[1].Value.ToUpper() epublic",
+        "name":  "First Republic",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1728,7 +1728,7 @@
     },
     {
         "id":  "forest-creek-capital",
-        "name":  " forest creek capital.Groups[1].Value.ToUpper() orest  forest creek capital.Groups[1].Value.ToUpper() reek  forest creek capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Forest Creek Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1736,7 +1736,7 @@
     },
     {
         "id":  "gic",
-        "name":  " gic.Groups[1].Value.ToUpper() ic",
+        "name":  "GIC",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1744,7 +1744,7 @@
     },
     {
         "id":  "global-atlantic",
-        "name":  " global atlantic.Groups[1].Value.ToUpper() lobal  global atlantic.Groups[1].Value.ToUpper() tlantic",
+        "name":  "Global Atlantic",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1752,7 +1752,7 @@
     },
     {
         "id":  "google",
-        "name":  " google.Groups[1].Value.ToUpper() oogle",
+        "name":  "Google",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1760,7 +1760,7 @@
     },
     {
         "id":  "graviton-research-capital",
-        "name":  " graviton research capital.Groups[1].Value.ToUpper() raviton  graviton research capital.Groups[1].Value.ToUpper() esearch  graviton research capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Graviton Research Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1768,7 +1768,7 @@
     },
     {
         "id":  "gresearch",
-        "name":  " gresearch.Groups[1].Value.ToUpper() research",
+        "name":  "G-Research",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1776,7 +1776,7 @@
     },
     {
         "id":  "hana-financial-group",
-        "name":  " hana financial group.Groups[1].Value.ToUpper() ana  hana financial group.Groups[1].Value.ToUpper() inancial  hana financial group.Groups[1].Value.ToUpper() roup",
+        "name":  "Hana Financial Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1784,7 +1784,7 @@
     },
     {
         "id":  "hap-capital",
-        "name":  " hap capital.Groups[1].Value.ToUpper() ap  hap capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Hap Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1792,7 +1792,7 @@
     },
     {
         "id":  "headlands",
-        "name":  " headlands.Groups[1].Value.ToUpper() eadlands",
+        "name":  "Headlands Technologies",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1800,7 +1800,7 @@
     },
     {
         "id":  "intercontinental-exchange",
-        "name":  " intercontinental exchange.Groups[1].Value.ToUpper() ntercontinental  intercontinental exchange.Groups[1].Value.ToUpper() xchange",
+        "name":  "Intercontinental Exchange",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1808,7 +1808,7 @@
     },
     {
         "id":  "irage",
-        "name":  " irage.Groups[1].Value.ToUpper() rage",
+        "name":  "iRage",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1816,7 +1816,7 @@
     },
     {
         "id":  "jpmorgan",
-        "name":  " jpmorgan.Groups[1].Value.ToUpper() pmorgan",
+        "name":  "JPMorgan Chase",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1824,7 +1824,7 @@
     },
     {
         "id":  "kcg",
-        "name":  " kcg.Groups[1].Value.ToUpper() cg",
+        "name":  "KCG Holdings",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1832,7 +1832,7 @@
     },
     {
         "id":  "kepos-capital",
-        "name":  " kepos capital.Groups[1].Value.ToUpper() epos  kepos capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Kepos Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1840,7 +1840,7 @@
     },
     {
         "id":  "kieger",
-        "name":  " kieger.Groups[1].Value.ToUpper() ieger",
+        "name":  "Kieger",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1848,7 +1848,7 @@
     },
     {
         "id":  "kokomo-capital",
-        "name":  " kokomo capital.Groups[1].Value.ToUpper() okomo  kokomo capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Kokomo Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1856,7 +1856,7 @@
     },
     {
         "id":  "kpmg",
-        "name":  " kpmg.Groups[1].Value.ToUpper() pmg",
+        "name":  "KPMG",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1864,7 +1864,7 @@
     },
     {
         "id":  "lombard-odier",
-        "name":  " lombard odier.Groups[1].Value.ToUpper() ombard  lombard odier.Groups[1].Value.ToUpper() dier",
+        "name":  "Lombard Odier",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1872,7 +1872,7 @@
     },
     {
         "id":  "lseg-london-stock-exchange-group",
-        "name":  " lseg london stock exchange group.Groups[1].Value.ToUpper() seg  lseg london stock exchange group.Groups[1].Value.ToUpper() ondon  lseg london stock exchange group.Groups[1].Value.ToUpper() tock  lseg london stock exchange group.Groups[1].Value.ToUpper() xchange  lseg london stock exchange group.Groups[1].Value.ToUpper() roup",
+        "name":  "LSEG (London Stock Exchange Group)",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1880,7 +1880,7 @@
     },
     {
         "id":  "marathon-trading",
-        "name":  " marathon trading.Groups[1].Value.ToUpper() arathon  marathon trading.Groups[1].Value.ToUpper() rading",
+        "name":  "Marathon Trading",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1888,7 +1888,7 @@
     },
     {
         "id":  "maven",
-        "name":  " maven.Groups[1].Value.ToUpper() aven",
+        "name":  "Maven Securities",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1896,7 +1896,7 @@
     },
     {
         "id":  "mgic-investment",
-        "name":  " mgic investment.Groups[1].Value.ToUpper() gic  mgic investment.Groups[1].Value.ToUpper() nvestment",
+        "name":  "MGIC Investment",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1904,7 +1904,7 @@
     },
     {
         "id":  "millennium-management",
-        "name":  " millennium management.Groups[1].Value.ToUpper() illennium  millennium management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Millennium Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1912,7 +1912,7 @@
     },
     {
         "id":  "moodys",
-        "name":  " moodys.Groups[1].Value.ToUpper() oodys",
+        "name":  "Moody\u0027s",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1920,7 +1920,7 @@
     },
     {
         "id":  "morgan-stanley",
-        "name":  " morgan stanley.Groups[1].Value.ToUpper() organ  morgan stanley.Groups[1].Value.ToUpper() tanley",
+        "name":  "Morgan Stanley",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1928,7 +1928,7 @@
     },
     {
         "id":  "move-digital",
-        "name":  " move digital.Groups[1].Value.ToUpper() ove  move digital.Groups[1].Value.ToUpper() igital",
+        "name":  "Move Digital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1936,7 +1936,7 @@
     },
     {
         "id":  "mufg",
-        "name":  " mufg.Groups[1].Value.ToUpper() ufg",
+        "name":  "MUFG",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1944,7 +1944,7 @@
     },
     {
         "id":  "nedbank",
-        "name":  " nedbank.Groups[1].Value.ToUpper() edbank",
+        "name":  "Nedbank",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1952,7 +1952,7 @@
     },
     {
         "id":  "nisa-investment-advisors-llc",
-        "name":  " nisa investment advisors llc.Groups[1].Value.ToUpper() isa  nisa investment advisors llc.Groups[1].Value.ToUpper() nvestment  nisa investment advisors llc.Groups[1].Value.ToUpper() dvisors  nisa investment advisors llc.Groups[1].Value.ToUpper() lc",
+        "name":  "NISA Investment Advisors",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1960,7 +1960,7 @@
     },
     {
         "id":  "nomura",
-        "name":  " nomura.Groups[1].Value.ToUpper() omura",
+        "name":  "Nomura",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1968,7 +1968,7 @@
     },
     {
         "id":  "okg",
-        "name":  " okg.Groups[1].Value.ToUpper() kg",
+        "name":  "OKG",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1976,7 +1976,7 @@
     },
     {
         "id":  "old-mission",
-        "name":  " old mission.Groups[1].Value.ToUpper() ld  old mission.Groups[1].Value.ToUpper() ission",
+        "name":  "Old Mission Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1984,7 +1984,7 @@
     },
     {
         "id":  "quadeye",
-        "name":  " quadeye.Groups[1].Value.ToUpper() uadeye",
+        "name":  "Quadeye",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -1992,7 +1992,7 @@
     },
     {
         "id":  "quantedge",
-        "name":  " quantedge.Groups[1].Value.ToUpper() uantedge",
+        "name":  "Quantedge",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2000,7 +2000,7 @@
     },
     {
         "id":  "qube-research-technologies",
-        "name":  " qube research technologies.Groups[1].Value.ToUpper() ube  qube research technologies.Groups[1].Value.ToUpper() esearch  qube research technologies.Groups[1].Value.ToUpper() echnologies",
+        "name":  "Qube Research Technologies",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2008,7 +2008,7 @@
     },
     {
         "id":  "ripple",
-        "name":  " ripple.Groups[1].Value.ToUpper() ipple",
+        "name":  "Ripple",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2016,7 +2016,7 @@
     },
     {
         "id":  "royal-bank-of-canada",
-        "name":  " royal bank of canada.Groups[1].Value.ToUpper() oyal  royal bank of canada.Groups[1].Value.ToUpper() ank  royal bank of canada.Groups[1].Value.ToUpper() f  royal bank of canada.Groups[1].Value.ToUpper() anada",
+        "name":  "Royal Bank of Canada (RBC)",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2024,7 +2024,7 @@
     },
     {
         "id":  "saratoga-capital-management",
-        "name":  " saratoga capital management.Groups[1].Value.ToUpper() aratoga  saratoga capital management.Groups[1].Value.ToUpper() apital  saratoga capital management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Saratoga Capital Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2032,7 +2032,7 @@
     },
     {
         "id":  "scorelogix",
-        "name":  " scorelogix.Groups[1].Value.ToUpper() corelogix",
+        "name":  "Scorelogix",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2040,7 +2040,7 @@
     },
     {
         "id":  "shepherd-ventures",
-        "name":  " shepherd ventures.Groups[1].Value.ToUpper() hepherd  shepherd ventures.Groups[1].Value.ToUpper() entures",
+        "name":  "Shepherd Ventures",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2048,7 +2048,7 @@
     },
     {
         "id":  "simon-markets",
-        "name":  " simon markets.Groups[1].Value.ToUpper() imon  simon markets.Groups[1].Value.ToUpper() arkets",
+        "name":  "Simon Markets",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2056,7 +2056,7 @@
     },
     {
         "id":  "sixie-capital-management",
-        "name":  " sixie capital management.Groups[1].Value.ToUpper() ixie  sixie capital management.Groups[1].Value.ToUpper() apital  sixie capital management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Sixie Capital Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2064,7 +2064,7 @@
     },
     {
         "id":  "squarepoint-capital",
-        "name":  " squarepoint capital.Groups[1].Value.ToUpper() quarepoint  squarepoint capital.Groups[1].Value.ToUpper() apital",
+        "name":  "Squarepoint Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2072,7 +2072,7 @@
     },
     {
         "id":  "state-street",
-        "name":  " state street.Groups[1].Value.ToUpper() tate  state street.Groups[1].Value.ToUpper() treet",
+        "name":  "State Street",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2080,7 +2080,7 @@
     },
     {
         "id":  "tanius-technology",
-        "name":  " tanius technology.Groups[1].Value.ToUpper() anius  tanius technology.Groups[1].Value.ToUpper() echnology",
+        "name":  "Tanius Technology",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2088,7 +2088,7 @@
     },
     {
         "id":  "tethys-technology",
-        "name":  " tethys technology.Groups[1].Value.ToUpper() ethys  tethys technology.Groups[1].Value.ToUpper() echnology",
+        "name":  "Tethys Technology",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2096,7 +2096,7 @@
     },
     {
         "id":  "teza-technologies",
-        "name":  " teza technologies.Groups[1].Value.ToUpper() eza  teza technologies.Groups[1].Value.ToUpper() echnologies",
+        "name":  "Teza Technologies",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2104,7 +2104,7 @@
     },
     {
         "id":  "tgs-management-company",
-        "name":  " tgs management company.Groups[1].Value.ToUpper() gs  tgs management company.Groups[1].Value.ToUpper() anagement  tgs management company.Groups[1].Value.ToUpper() ompany",
+        "name":  "TGS Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2112,7 +2112,7 @@
     },
     {
         "id":  "tibra",
-        "name":  " tibra.Groups[1].Value.ToUpper() ibra",
+        "name":  "Tibra",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2120,7 +2120,7 @@
     },
     {
         "id":  "transmarket-group",
-        "name":  " transmarket group.Groups[1].Value.ToUpper() ransmarket  transmarket group.Groups[1].Value.ToUpper() roup",
+        "name":  "TransMarket Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2128,7 +2128,7 @@
     },
     {
         "id":  "tudor-investment-corporation",
-        "name":  " tudor investment corporation.Groups[1].Value.ToUpper() udor  tudor investment corporation.Groups[1].Value.ToUpper() nvestment  tudor investment corporation.Groups[1].Value.ToUpper() orporation",
+        "name":  "Tudor Investment Corporation",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2136,7 +2136,7 @@
     },
     {
         "id":  "ubs",
-        "name":  " ubs.Groups[1].Value.ToUpper() bs",
+        "name":  "UBS",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2144,7 +2144,7 @@
     },
     {
         "id":  "unigestion",
-        "name":  " unigestion.Groups[1].Value.ToUpper() nigestion",
+        "name":  "Unigestion",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2152,7 +2152,7 @@
     },
     {
         "id":  "university-of-illinois-at-urbanachampaign",
-        "name":  " university of illinois at urbanachampaign.Groups[1].Value.ToUpper() niversity  university of illinois at urbanachampaign.Groups[1].Value.ToUpper() f  university of illinois at urbanachampaign.Groups[1].Value.ToUpper() llinois  university of illinois at urbanachampaign.Groups[1].Value.ToUpper() t  university of illinois at urbanachampaign.Groups[1].Value.ToUpper() rbanachampaign",
+        "name":  "University of Illinois at Urbana-Champaign",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2160,7 +2160,7 @@
     },
     {
         "id":  "valkyrie-trading",
-        "name":  " valkyrie trading.Groups[1].Value.ToUpper() alkyrie  valkyrie trading.Groups[1].Value.ToUpper() rading",
+        "name":  "Valkyrie Trading",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2168,7 +2168,7 @@
     },
     {
         "id":  "vatic",
-        "name":  " vatic.Groups[1].Value.ToUpper() atic",
+        "name":  "Vatic",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2176,7 +2176,7 @@
     },
     {
         "id":  "virtu",
-        "name":  " virtu.Groups[1].Value.ToUpper() irtu",
+        "name":  "Virtu Financial",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2184,7 +2184,7 @@
     },
     {
         "id":  "voleon-group",
-        "name":  " voleon group.Groups[1].Value.ToUpper() oleon  voleon group.Groups[1].Value.ToUpper() roup",
+        "name":  "The Voleon Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2192,7 +2192,7 @@
     },
     {
         "id":  "voloridge-investment-management",
-        "name":  " voloridge investment management.Groups[1].Value.ToUpper() oloridge  voloridge investment management.Groups[1].Value.ToUpper() nvestment  voloridge investment management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Voloridge Investment Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2200,7 +2200,7 @@
     },
     {
         "id":  "walmart-global-tech",
-        "name":  " walmart global tech.Groups[1].Value.ToUpper() almart  walmart global tech.Groups[1].Value.ToUpper() lobal  walmart global tech.Groups[1].Value.ToUpper() ech",
+        "name":  "Walmart Global Tech",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2208,7 +2208,7 @@
     },
     {
         "id":  "wealthfront",
-        "name":  " wealthfront.Groups[1].Value.ToUpper() ealthfront",
+        "name":  "Wealthfront",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2216,7 +2216,7 @@
     },
     {
         "id":  "wells-fargo",
-        "name":  " wells fargo.Groups[1].Value.ToUpper() ells  wells fargo.Groups[1].Value.ToUpper() argo",
+        "name":  "Wells Fargo",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2224,7 +2224,7 @@
     },
     {
         "id":  "wincent-capital-management",
-        "name":  " wincent capital management.Groups[1].Value.ToUpper() incent  wincent capital management.Groups[1].Value.ToUpper() apital  wincent capital management.Groups[1].Value.ToUpper() anagement",
+        "name":  "Wincent Capital Management",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2232,7 +2232,7 @@
     },
     {
         "id":  "wintermute",
-        "name":  " wintermute.Groups[1].Value.ToUpper() intermute",
+        "name":  "Wintermute",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2240,7 +2240,7 @@
     },
     {
         "id":  "winton-group",
-        "name":  " winton group.Groups[1].Value.ToUpper() inton  winton group.Groups[1].Value.ToUpper() roup",
+        "name":  "Winton Group",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2248,7 +2248,7 @@
     },
     {
         "id":  "xy-capital",
-        "name":  " xy capital.Groups[1].Value.ToUpper() y  xy capital.Groups[1].Value.ToUpper() apital",
+        "name":  "XY Capital",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"
@@ -2256,7 +2256,23 @@
     },
     {
         "id":  "zomato",
-        "name":  " zomato.Groups[1].Value.ToUpper() omato",
+        "name":  "Zomato",
+        "type":  "Trading Firm",
+        "roles":  [
+                      "Quant"
+                  ]
+    },
+    {
+        "id":  "akuna",
+        "name":  "Akuna",
+        "type":  "Trading Firm",
+        "roles":  [
+                      "Quant"
+                  ]
+    },
+    {
+        "id":  "imc",
+        "name":  "Imc",
         "type":  "Trading Firm",
         "roles":  [
                       "Quant"

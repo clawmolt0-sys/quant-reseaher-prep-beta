@@ -148,7 +148,7 @@ if ($DryRun) {
 # ============ SAVE ============
 # Add new companies
 foreach ($comp in ($newCompanies.Keys | Sort-Object)) {
-    $displayName = ($comp -replace '-', ' ') -replace '\b(\w)', { $_.Groups[1].Value.ToUpper() }
+    $displayName = [regex]::Replace(($comp -replace '-', ' '), '\b(\w)', { param($m) $m.Groups[1].Value.ToUpper() })
     $companies += [PSCustomObject]@{
         id = $comp
         name = $displayName

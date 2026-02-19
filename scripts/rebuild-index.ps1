@@ -1,5 +1,5 @@
 # Rebuild problems-index.json from problems.json
-# Index fields: id, t (title), c (category), d (difficulty), y (type), s (status), co (companies), tg (tags)
+# Index fields: id, t (title), c (category), d (difficulty), y (type), s (status), co (companies), tg (tags), ro (roles)
 
 $problemsPath = "$PSScriptRoot\..\data\problems.json"
 $indexPath = "$PSScriptRoot\..\data\problems-index.json"
@@ -19,6 +19,7 @@ foreach ($p in $problems) {
         s  = $p.status
         co = @($p.companies)
         tg = @($p.tags)
+        ro = @($p.roles)
     }
     $index += [PSCustomObject]$entry
 }

@@ -46,6 +46,7 @@ const Problems = (() => {
       type:      p.type || 'calculation',
       source:    p.source || 'interview',
       status:    p.status === 'title-only' ? 'title-only' : (p.status || 'complete'),
+      roles:     ensureArray(p.roles),
     };
   }
 
@@ -74,15 +75,13 @@ const Problems = (() => {
   }
 
   function companyShort(id) {
-    const map = {
-      'citadel': 'Citadel', 'two-sigma': 'Two Sigma', 'de-shaw': 'D.E. Shaw',
-      'jump-trading': 'Jump', 'drw': 'DRW', 'hrt': 'HRT', 'jane-street': 'Jane St',
-      'optiver': 'Optiver', 'sig': 'SIG', 'squarepoint': 'Squarepoint',
-      'tower-research': 'Tower Research', 'millennium': 'Millennium', 'point72': 'Point72',
-      'aqr': 'AQR', 'renaissance': 'RenTech', 'five-rings': 'Five Rings',
-      'goldman-sachs': 'Goldman Sachs', 'hft': 'HFT',
-    };
-    return map[id] || id;
+    // Use companiesData if loaded
+    if (companiesData && Array.isArray(companiesData)) {
+      const entry = companiesData.find(c => c.id === id);
+      if (entry && entry.name) return entry.name;
+    }
+    // Fallback: title case from slug
+    return id.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   }
 
   function formatTag(id) {
@@ -278,6 +277,7 @@ const Problems = (() => {
     const activeType = params.type || null;
     const activeTag = params.tag || null;
     const activeStatus = params.status || null;
+    const activeRole = params.role || null;
     const q = (params.q || '').toLowerCase();
 
     function applyExcept(exclude) {
@@ -287,6 +287,7 @@ const Problems = (() => {
       if (exclude !== 'difficulty' && activeDiff) set = set.filter(p => p.difficulty === activeDiff);
       if (exclude !== 'type' && activeType) set = set.filter(p => p.type === activeType);
       if (exclude !== 'tag' && activeTag) set = set.filter(p => p.tags.includes(activeTag));
+      if (exclude !== 'role' && activeRole) set = set.filter(p => p.roles && p.roles.includes(activeRole));
       if (exclude !== 'status' && activeStatus) {
         set = set.filter(p => {
           const s = getStatus(p.id);
@@ -344,7 +345,12 @@ const Problems = (() => {
     const sortedTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
     const sortedCompanies = Object.entries(companyCounts).sort((a, b) => b[1] - a[1]);
 
-    return { catCounts, diffCounts, typeCounts, tagCounts, sortedTags, companyCounts, sortedCompanies, statusCounts };
+    // Role counts: filtered by everything except role
+    const roleSet = applyExcept('role');
+    const roleCounts = { QR: 0, QT: 0, SWE: 0 };
+    roleSet.forEach(p => { if (p.roles) p.roles.forEach(r => { roleCounts[r] = (roleCounts[r] || 0) + 1; }); });
+
+    return { catCounts, diffCounts, typeCounts, tagCounts, sortedTags, companyCounts, sortedCompanies, statusCounts, roleCounts };
   }
 
   // ---- Sorting ----
@@ -422,6 +428,7 @@ const Problems = (() => {
       type:      p.y || p.type || 'calculation',
       source:    p.source || 'interview',
       status:    p.s || p.status || 'complete',
+      roles:     ensureArray(p.ro || p.roles),
     };
   }
 
@@ -722,9 +729,10 @@ const Problems = (() => {
       const activeType = params.type || null;
       const activeTag = params.tag || null;
       const activeStatus = params.status || null;
+      const activeRole = params.role || null;
       const activeFilter = params.filter || null;
       const searchQ = params.q || '';
-      const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeFilter || searchQ;
+      const hasFilters = activeCat || activeCompany || activeDiff || activeType || activeTag || activeStatus || activeRole || activeFilter || searchQ;
 
       // Base set: always hide duplicates, optionally hide stubs
       // Free users always have stubs hidden (no toggle access)
@@ -749,6 +757,7 @@ const Problems = (() => {
       if (activeDiff) filtered = filtered.filter(p => p.difficulty === activeDiff);
       if (activeType) filtered = filtered.filter(p => p.type === activeType);
       if (activeTag) filtered = filtered.filter(p => p.tags.includes(activeTag));
+      if (activeRole) filtered = filtered.filter(p => p.roles && p.roles.includes(activeRole));
       if (activeStatus) {
         filtered = filtered.filter(p => {
           const s = getStatus(p.id);
@@ -833,6 +842,26 @@ const Problems = (() => {
               onclick="Problems.filterStatus('unsolved')">
               <span>\u2B1C Unsolved</span>
               <span class="sidebar__cat-count">${counts.statusCounts.unsolved}</span>
+            </button>
+          </div>
+
+          <div class="sidebar__divider"></div>
+          <div class="sidebar__title">Role</div>
+          <div class="sidebar__categories">
+            <button class="sidebar__cat-btn ${activeRole === 'QR' ? 'sidebar__cat-btn--active' : ''}"
+              onclick="Problems.filterRole('QR')">
+              <span><span class="role-badge role-badge--qr">QR</span> Quant Researcher</span>
+              <span class="sidebar__cat-count">${counts.roleCounts.QR || 0}</span>
+            </button>
+            <button class="sidebar__cat-btn ${activeRole === 'QT' ? 'sidebar__cat-btn--active' : ''}"
+              onclick="Problems.filterRole('QT')">
+              <span><span class="role-badge role-badge--qt">QT</span> Quant Trader</span>
+              <span class="sidebar__cat-count">${counts.roleCounts.QT || 0}</span>
+            </button>
+            <button class="sidebar__cat-btn ${activeRole === 'SWE' ? 'sidebar__cat-btn--active' : ''}"
+              onclick="Problems.filterRole('SWE')">
+              <span><span class="role-badge role-badge--swe">SWE</span> Software Engineer</span>
+              <span class="sidebar__cat-count">${counts.roleCounts.SWE || 0}</span>
             </button>
           </div>
 
@@ -1052,6 +1081,7 @@ const Problems = (() => {
                 ${activeTag ? `<button class="filter-chip" onclick="Problems.filterTag(null)">${formatTag(activeTag)} \u00D7</button>` : ''}
                 ${activeCompany ? `<button class="filter-chip" onclick="Problems.filterCompany(null)">${companyShort(activeCompany)} \u00D7</button>` : ''}
                 ${activeStatus ? `<button class="filter-chip" onclick="Problems.filterStatus(null)">${activeStatus} \u00D7</button>` : ''}
+                ${activeRole ? `<button class="filter-chip" onclick="Problems.filterRole(null)">${activeRole} \u00D7</button>` : ''}
               </div>
               <button class="btn btn--secondary mt-4" onclick="Problems.clearAllFilters()">Clear all filters</button>
             </div>
@@ -1664,6 +1694,14 @@ const Problems = (() => {
     updateList(p);
   }
 
+  function filterRole(role) {
+    const p = App.getParams();
+    p.role = p.role === role ? null : role;
+    App.setParams(p);
+    if (!shellRendered) { renderShell(); }
+    updateList(p);
+  }
+
   function clearAllFilters() {
     // Preserve list param if active (from Explore page)
     const newParams = activeListId ? { list: activeListId } : {};
@@ -1898,7 +1936,7 @@ const Problems = (() => {
   return {
     init, toggleSolution, toggleHint, toggleIntuition,
     filterCat, filterDiff, filterType, filterTag, filterCompany,
-    filterStatus, clearAllFilters, filterCompanySearch, scrollCompanies,
+    filterStatus, filterRole, clearAllFilters, filterCompanySearch, scrollCompanies,
     toggleTagCloud, toggleStubs, sort, changeSort,
     onNotesInput, loadMore, goToPage, randomProblem, markStatus,
     addDiscussionEntry, deleteDiscussionEntry,
