@@ -1,0 +1,21 @@
+{
+  "full_problem_count": 4924,
+  "target_cluster_range": [
+    1000,
+    1500
+  ],
+  "selected_tau": 0.62,
+  "final_cluster_count": 1549,
+  "reduced_problem_count": 1549,
+  "reduction_ratio": 0.3146,
+  "testset_duplicate_eval": {
+    "flagged_pairs": 136,
+    "co_cluster_pairs": 29,
+    "co_cluster_rate": 0.21323529411764705
+  },
+  "beta_site_updated_files": [
+    "data/problems.json",
+    "data/problems-index.json"
+  ],
+  "llm_jobs_count": 588
+}
