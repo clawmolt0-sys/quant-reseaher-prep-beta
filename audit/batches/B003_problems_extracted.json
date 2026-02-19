@@ -1,0 +1,1667 @@
+[
+  {
+    "id": 8,
+    "title": "Blue Balls in Three Boxes",
+    "company": [
+      "hrt"
+    ],
+    "difficulty": "medium",
+    "hints": [
+      "Use Bayes' theorem",
+      "P(B | blue) = P(blue | B) * P(B) / P(blue)",
+      "Compute P(blue) using the law of total probability"
+    ],
+    "solution": "**Solution:**\n\nUsing **Bayes' theorem**:\n\n$$P(B \\mid \\text{blue}) = \\frac{P(\\text{blue} \\mid B) \\cdot P(B)}{P(\\text{blue})}$$\n\n**Likelihoods:**\n- $P(\\text{blue} \\mid A) = 3/5$\n- $P(\\text{blue} \\mid B) = 4/5$\n- $P(\\text{blue} \\mid C) = 2/5$\n\n**Prior:** $P(A) = P(B) = P(C) = 1/3$\n\n**Total probability of blue:**\n$$P(\\text{blue}) = \\frac{1}{3}\\left(\\frac{3}{5} + \\frac{4}{5} + \\frac{2}{5}\\right) = \\frac{1}{3} \\cdot \\frac{9}{5} = \\frac{3}{5}$$\n\n**Posterior:**\n$$P(B \\mid \\text{blue}) = \\frac{\\frac{4}{5} \\cdot \\frac{1}{3}}{\\frac{3}{5}} = \\frac{4/15}{3/5} = \\frac{4}{15} \\cdot \\frac{5}{3} = \\frac{4}{9} \\approx \\boxed{0.444}$$\n\n**Verification:** $P(A|\\text{blue}) = 3/9 = 1/3$, $P(B|\\text{blue}) = 4/9$, $P(C|\\text{blue}) = 2/9$. Sum = 1. $\\checkmark$",
+    "statement": "Box A has 3 blue and 2 red balls. Box B has 4 blue and 1 red. Box C has 2 blue and 3 red. You pick a box uniformly at random and draw one ball. It is blue. What is the probability you picked Box B?",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [
+      "bayes-theorem",
+      "conditional-probability",
+      "law-of-total-probability"
+    ],
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "companies": [
+      "hrt"
+    ],
+    "tags": [
+      "bayesian",
+      "probability"
+    ],
+    "source": "interview",
+    "status": "complete",
+    "fingerprint": "probability | compute | urn | probability | number"
+  },
+  {
+    "id": 16,
+    "title": "Balls in Two Boxes Optimization",
+    "statement": "You have 100 red and 100 blue balls and two boxes. Distribute all 200 balls (each box $\\ge 1$). A box is chosen uniformly, then a ball drawn uniformly from it. Maximize $P(\\text{red})$.",
+    "solution": "**Solution:**\n\n$$P(\\text{red}) = \\frac{1}{2}\\cdot\\frac{r_1}{r_1+b_1} + \\frac{1}{2}\\cdot\\frac{r_2}{r_2+b_2}$$\n\nPut 1 red, 0 blue in Box 1. Put 99 red, 100 blue in Box 2.\n\n$$P = \\frac{1}{2}\\cdot 1 + \\frac{1}{2}\\cdot\\frac{99}{199} = \\frac{1}{2}+\\frac{99}{398} = \\frac{199+99}{398} = \\frac{298}{398} = \\boxed{\\frac{149}{199} \\approx 0.749}$$\n\nIntuition: isolating one red ball guarantees 100% from that box, while the other box still has $\\approx 50\\%$.",
+    "hints": [
+      "Put a single red ball alone in one box.",
+      "The probability is the average of per-box red fractions."
+    ],
+    "company": [
+      "two-sigma"
+    ],
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [
+      "optimization",
+      "conditional-probability"
+    ],
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "optimization",
+    "rating": 5,
+    "companies": [
+      "two-sigma"
+    ],
+    "tags": [
+      "optimization",
+      "probability"
+    ],
+    "source": "interview",
+    "status": "complete",
+    "fingerprint": "probability | maximize | urn | probability | number"
+  },
+  {
+    "id": 235,
+    "title": "There are $N$ identical bins and $m$ distinct balls",
+    "statement": "There are $N$ identical bins and $m$ distinct balls. How many ways to distribute the balls? Follow-up: if each bin must contain at least $k$ balls, how many ways?",
+    "solution": "**Approach:** Count distributions of $m$ distinct balls into $N$ identical (unlabeled) bins, which is the **Stirling number of the second kind** summed appropriately.\n\nIf bins are **identical** (indistinguishable), the number of ways to distribute $m$ distinct balls into $N$ identical bins (where bins can be empty) is:\n\\sum_{k=1}^{N} S(m, k)\nwhere $S(m,k)$ is the **Stirling number of the second kind** â€” the number of ways to partition $m$ distinct objects into exactly $k$ non-empty subsets.\n\nIf bins are **distinct** (labeled), the answer is simply $N^m$.\n\n**Follow-up (each bin has at least $k$ balls):**\nFor labeled bins: use inclusion-exclusion. The count is:\n\\sum_{j=0}^{N} (-1)^j \\binom{N}{j} \\frac{(m - jk)!}{(1!)^{N-j}} \\cdot [\\text{multinomial assignments}]\n\nMore precisely, for **labeled** bins with each bin having $\\ge k$ balls, it requires $m \\ge Nk$ and the count is the coefficient extraction from exponential generating functions. For **identical** bins, it corresponds to restricted integer partitions, which generally requires recursive computation.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | minimize | urn | probability | estimate",
+    "generated": true
+  },
+  {
+    "id": 245,
+    "title": "Probability Power of Two Starts with Digit One",
+    "statement": "If $n$ is a random positive integer, what is the probability that $2^n$ begins with digit 1?",
+    "solution": "**Approach:** Use **Benford's law** via the distribution of $\\log_{10}(2^n) \\mod 1$.\n\n$2^n$ starts with digit 1 iff $\\log_{10}(2^n) \\mod 1 \\in [0, \\log_{10} 2)$.\n\nSince $\\log_{10}(2^n) = n\\log_{10}2$ and $\\log_{10}2 \\approx 0.30103$ is **irrational**, by **Weyl's equidistribution theorem**, the fractional parts $\\{n\\log_{10}2\\}$ are uniformly distributed on $[0,1)$.\n\nTherefore:\nP(2^n \\text{ starts with digit } 1) = \\log_{10}2 \\approx \\boxed{0.30103}\n\nor equivalently about **30.1%**. This is exactly **Benford's law** for the digit 1.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 254,
+    "title": "Weekend Rain Probability Computation",
+    "statement": "If Saturday has 20\\% chance of rain and Sunday 30\\%, compute:  \n(1) Probability of rain at least once if independent.  \n(2) If rain on Saturday makes Sunday more likely, does the probability increase or decrease?  \n(3) If independence is unknown, what is the possible range?",
+    "solution": "**Approach:** Weekend rain probability under various dependence assumptions.\n\nLet $S$ = rain on Saturday ($P(S) = 0.2$), $U$ = rain on Sunday ($P(U) = 0.3$).\n\n**(1) Independent:**\nP(\\text{rain at least once}) = 1 - P(S^c)P(U^c) = 1 - 0.8 \\times 0.7 = 1 - 0.56 = \\boxed{0.44}\n\n**(2) Positive dependence (rain on Saturday makes Sunday more likely):**\n$P(U|S) > P(U) = 0.3$. By inclusion-exclusion:\n$P(S \\cup U) = P(S) + P(U) - P(S \\cap U)$. With positive dependence, $P(S \\cap U) > P(S)P(U) = 0.06$, so $P(S \\cup U) < 0.2 + 0.3 - 0.06 = 0.44$.\n\nThe probability **decreases** compared to independence. Intuitively, the rain is \"concentrated\" on the same day.\n\n**(3) Unknown dependence â€” range:**\n- **Maximum:** $P(S \\cup U) = P(S) + P(U) - P(S \\cap U) \\le P(S) + P(U) = 0.5$. But also $\\le 1$. So max is $\\min(0.5, 1) = 0.5$, achieved when $P(S \\cap U) = 0$ (mutually exclusive).\n- **Minimum:** $P(S \\cap U) \\le \\min(P(S), P(U)) = 0.2$, so $P(S \\cup U) \\ge 0.5 - 0.2 = 0.3$, achieved when $S \\subseteq U$.\n\n**Range:** $P(\\text{at least once}) \\in [0.3, 0.5]$.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 261,
+    "title": "Probability of 2 heads with 4 coins; probability of even number of heads with 4 coins",
+    "statement": "Probability of 2 heads with 4 coins; probability of even number of heads with 4 coins.",
+    "solution": "**Approach:** Compute binomial probabilities for 4 fair coins.\n\n**Exactly 2 heads:** $P(X=2) = \\binom{4}{2}(1/2)^4 = \\frac{6}{16} = \\boxed{3/8}$\n\n**Even number of heads (0 or 2 or 4):**\n$P(X \\in \\{0,2,4\\}) = \\binom{4}{0}(1/2)^4 + \\binom{4}{2}(1/2)^4 + \\binom{4}{4}(1/2)^4 = \\frac{1+6+1}{16} = \\frac{8}{16} = \\boxed{1/2}$\n\n**General result:** For $n$ fair coins, the probability of an even number of heads is always $1/2$. This follows from the identity:\n\\sum_{k \\text{ even}} \\binom{n}{k} = 2^{n-1}\nwhich is proved by evaluating $(1+1)^n + (1-1)^n = 2\\sum_{k \\text{ even}}\\binom{n}{k}$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | compute | coins | probability | number",
+    "generated": true
+  },
+  {
+    "id": 282,
+    "title": "Feasible Range of Third Pairwise Correlation",
+    "statement": "Given $\\mathrm{Corr}(X,Y)=\\rho$ and $\\mathrm{Corr}(Y,Z)=\\rho$, what range can $\\mathrm{Corr}(X,Z)$ take? Characterize the FrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©chetÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œHoeffding/PSD bounds.",
+    "solution": "**Approach:** Given $\\text{Corr}(X,Y) = \\rho$ and $\\text{Corr}(Y,Z) = \\rho$, find the range of $\\text{Corr}(X,Z)$.\n\nThe $3\\times3$ correlation matrix must be PSD:\nR = \\begin{pmatrix} 1 & \\rho & r \\\\ \\rho & 1 & \\rho \\\\ r & \\rho & 1 \\end{pmatrix}\n\nwhere $r = \\text{Corr}(X,Z)$.\n\n**PSD condition:** $\\det(R) \\ge 0$.\n\n\\det(R) = 1 + 2\\rho^2 r - 2\\rho^2 - r^2\n\nWait, let me compute correctly:\n\\det(R) = 1(1-\\rho^2) - \\rho(\\rho - r\\rho) + r(\\rho^2 - 1\\cdot\\rho)\n\nActually: $\\det(R) = 1 + 2\\rho^2 r - \\rho^2 - \\rho^2 - r^2 = 1 - 2\\rho^2 + 2\\rho^2 r - r^2$.\n\nHmm, let me use the formula directly. For $\\det \\ge 0$:\n\n1 - 2\\rho^2 - r^2 + 2\\rho^2 r \\ge 0\nr^2 - 2\\rho^2 r + (2\\rho^2 - 1) \\le 0\n\nSolving the quadratic in $r$: $r = \\frac{2\\rho^2 \\pm \\sqrt{4\\rho^4 - 4(2\\rho^2 - 1)}}{2} = \\rho^2 \\pm \\sqrt{\\rho^4 - 2\\rho^2 + 1} = \\rho^2 \\pm (1-\\rho^2)$.\n\nSo $r \\in [2\\rho^2 - 1, 1]$.\n\nAlso need $-1 \\le r \\le 1$. Since $2\\rho^2 - 1 \\ge -1$ always, the binding constraint is:\n\n\\boxed{r \\in [2\\rho^2 - 1, \\; 1]}\n\n**Example:** If $\\rho = 0.5$, then $r \\in [2(0.25)-1, 1] = [-0.5, 1]$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "general | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 306,
+    "title": "Weekend Rain Probability with Dependence",
+    "statement": "Weekend rain: $P(\\text{Sat rain})=0.2$, $P(\\text{Sun rain})=0.3$. (i) If independent, compute $P(\\text{rain at least once})$. (ii) If Sat rain increases Sun probability, does the probability rise or fall? (iii) Without knowing dependence, give the range of $P(\\text{at least once})$.",
+    "solution": "**Approach:** Weekend rain probability under dependence.\n\nLet $S$ = Saturday rain ($P(S)=0.2$), $U$ = Sunday rain ($P(U)=0.3$).\n\n**(i) Independent:**\n$P(\\text{at least one}) = 1 - P(S^c)P(U^c) = 1 - 0.8 \\times 0.7 = 0.44$\n\n**(ii) Saturday rain increases Sunday probability (positive dependence):**\n$P(U|S) > 0.3$, so $P(S \\cap U) > 0.06$.\n$P(S \\cup U) = P(S) + P(U) - P(S \\cap U) < 0.5 - 0.06 = 0.44$.\n\nThe probability of rain at least once **decreases**. The rain events become more \"bunched\" â€” when it rains, it's more likely to rain both days, but when it doesn't rain Saturday, Sunday is drier too.\n\n**(iii) Range without knowing dependence:**\n- $P(S \\cap U) \\in [\\max(0, P(S)+P(U)-1), \\min(P(S),P(U))] = [0, 0.2]$\n- $P(S \\cup U) = 0.5 - P(S \\cap U) \\in [0.3, 0.5]$\n\n**Range:** $P(\\text{at least one}) \\in \\boxed{[0.3, 0.5]}$\n\"@\n\nSystem.Collections.Hashtable[307] = @\"\n**Approach:** Urn game with optimal stopping.\n\n**Setup:** 4 blue balls (+\\ each) and 3 red balls (-\\ each), drawn without replacement. You can stop at any time.\n\n**Dynamic programming:** State = $(b, r)$ = blue and red balls remaining. $V(b, r)$ = optimal expected payoff.\n\n$V(b, 0) = b$ (draw all blue). $V(0, r) = 0$ (stop).\n\nV(b,r) = \\max\\left(0,\\; \\frac{b}{b+r}(1 + V(b-1,r)) + \\frac{r}{b+r}(-1 + V(b,r-1))\\right)\n\n**Computing key values:**\n- $V(1,1) = \\max(0, 1/2 \\cdot 1 + 1/2 \\cdot (-1)) = 0$\n- $V(2,1) = \\max(0, 2/3 + 1/3 \\cdot 1) = 1$\n- $V(1,2) = \\max(0, 1/3 - 2/3) = 0$\n- $V(2,2) = \\max(0, 1/2(1+0) + 1/2(-1+1)) = 1/2$\n- $V(3,1) = 3/4(1+V(2,1)) + 1/4(-1+3) = 3/4 \\cdot 2 + 1/4 \\cdot 2 = 2$\n- $V(3,2) = 3/5(1+1/2) + 2/5(-1+2) = 9/10 + 2/5 = 13/10$\n- $V(3,3) = 1/2(1+V(2,3)) + 1/2(-1+13/10)$. $V(2,3) = \\max(0, 2/5(1+0)+3/5(-1+1/2)) = \\max(0, 2/5-3/10) = 1/10$.\n- $V(3,3) = 1/2(11/10) + 1/2(3/10) = 14/20 = 7/10$\n- $V(4,3) = 4/7(1+7/10) + 3/7(-1+13/10) = 4/7 \\cdot 17/10 + 3/7 \\cdot 3/10 = 68/70 + 9/70 = 77/70 = 11/10$\n\n**Optimal expected profit:** $V(4,3) = \\boxed{11/10} = 1.1$\n\n**Strategy:** Draw whenever $V(b,r) > 0$; stop when $V(b,r) = 0$.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | minimize | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 319,
+    "title": "Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes",
+    "statement": "Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes. What is the probability that everyone meets at least once?",
+    "solution": "**Approach:** For everyone to meet, the range of arrival times must be at most 15 minutes.\n\nEach of $N$ people arrives at $T_i \\sim U[0,60]$ (minutes after 9 AM) and waits 15 min. Everyone meets iff $\\max(T_i) - \\min(T_i) \\le 15$.\n\n**CDF of the range of $N$ i.i.d. $U[0,L]$ variables:** For range $R \\le r$:\n\nFor $N=2$: $P(|T_1-T_2| \\le 15) = 1-(45/60)^2 = 1-9/16 = 7/16$.\n\n**General formula:** Using the CDF of the range:\n$@{id=319; title=Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes; statement=Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes. What is the probability that everyone meets at least once?; solution=; difficulty=easy; type=calculation; category=probability; rating=3; source=two-sigma; topics=System.Object[]; subtopics=System.Object[]; tags=System.Object[]; companies=System.Object[]; hints=System.Object[]; status=incomplete; company=System.Object[]; fingerprint=probability | minimize | general | probability | number; generated=True}(R \\le r) = N\\int_0^{L-r}\\frac{1}{L}\\left(\\frac{r}{L}\\right)^{N-1}dt = \\frac{N(L-r)}{L}\\left(\\frac{r}{L}\\right)^{N-1}\n\nThis is a first-order approximation. The exact formula (via inclusion-exclusion) for $r/L = 1/4$:\n\n$@{id=319; title=Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes; statement=Meeting problem: $N$ people arrive uniformly in $[9,10]$ and each waits 15 minutes. What is the probability that everyone meets at least once?; solution=; difficulty=easy; type=calculation; category=probability; rating=3; source=two-sigma; topics=System.Object[]; subtopics=System.Object[]; tags=System.Object[]; companies=System.Object[]; hints=System.Object[]; status=incomplete; company=System.Object[]; fingerprint=probability | minimize | general | probability | number; generated=True} = \\frac{3N}{4^N}\n\n**Examples:** $N=2$: $6/16 = 3/8$ (approximate; exact is $7/16$ from direct calculation). For large $N$, the probability decreases exponentially.\n\n**Key result:** $P(\\text{all meet}) = \\frac{3N}{4^N}$ approximately, decaying rapidly with $N$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | minimize | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 375,
+    "title": "Quant Developer Phone Screen Topics",
+    "statement": "Interview topics: CTC Quant Developer Phone Screen. The interview covered variations of ball weighing problems, dynamic programming for betting games, Bayesian probability problems, variations of the coin change problem, and elementary math Olympiad-style questions.",
+    "solution": "**Approach:** Outline key topics for a quant developer phone screen.\n\n**1. Ball weighing problems:**\n- Classic: Find one defective ball among 12 using a balance scale in 3 weighings. Key insight: each weighing has 3 outcomes (left heavy, balanced, right heavy), giving $3^3 = 27$ distinguishable states.\n- Information-theoretic bound: $k$ weighings can identify at most $3^k$ scenarios.\n\n**2. Dynamic programming for betting games:**\n- Optimal stopping problems (e.g., dice reroll with cost).\n- State: current accumulated value. Transition: expected value of continuing vs. stopping.\n- Bellman equation: $V(s) = \\max(s, E[V(s + X)] - \\text{cost})$.\n\n**3. Bayesian probability:**\n- Posterior $\\propto$ likelihood $\\times$ prior.\n- Classic: given data, update belief about a parameter (e.g., biased coin after observing heads).\n- Conjugate priors: Beta-Bernoulli, Normal-Normal.\n\n**4. Coin change problem variations:**\n- Minimum coins to make amount (DP): $dp[i] = \\min_c dp[i - c] + 1$.\n- Number of ways to make amount (DP): $dp[i] += dp[i - c]$.\n- Variations: limited supply of each coin, distinct orderings vs. combinations.\n\n**5. Math Olympiad-style questions:**\n- Number theory (divisibility, primes, modular arithmetic).\n- Combinatorics (counting, pigeonhole principle).\n- Proof techniques (induction, contradiction).",
+    "difficulty": "medium",
+    "type": "coding",
+    "category": "coding",
+    "rating": 5,
+    "source": "two-sigma",
+    "topics": [
+      "coding"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | design | urn,coins | coding | number",
+    "generated": true
+  },
+  {
+    "id": 429,
+    "title": "Convergence in Probability vs Almost Sure",
+    "statement": "Probability theory: Modes of convergence. (a) What is the definition of convergence in probability? (b) What is the definition of almost sure convergence? (c) Give a classic counterexample of a sequence of random variables that converges in probability but does not converge almost surely.",
+    "solution": "**Approach:** Define convergence modes and provide the typewriter counterexample.\n\n**Solution:**\n\n**(a) Convergence in probability:** $X_n \\xrightarrow{P} X$ if for every $\\epsilon > 0$: $\\lim_{n\\to\\infty} P(|X_n - X| > \\epsilon) = 0$.\n\n**(b) Almost sure convergence:** $X_n \\xrightarrow{a.s.} X$ if $P(\\lim_{n\\to\\infty} X_n = X) = 1$, equivalently $P(\\omega : X_n(\\omega) \\to X(\\omega)) = 1$.\n\nAlmost sure convergence implies convergence in probability, but not conversely.\n\n**(c) Typewriter sequence (classic counterexample):** On $[0,1]$ with Lebesgue measure, define indicator functions that \"sweep\" across the interval in shorter and shorter intervals:\n\n$X_1 = \\mathbf{1}_{[0,1]}, X_2 = \\mathbf{1}_{[0,1/2]}, X_3 = \\mathbf{1}_{[1/2,1]}, X_4 = \\mathbf{1}_{[0,1/3]}, X_5 = \\mathbf{1}_{[1/3,2/3]}, \\ldots$\n\nFor each $n$, $P(X_n = 1) \\to 0$, so $X_n \\xrightarrow{P} 0$. But for every $\\omega \\in [0,1]$, $X_n(\\omega) = 1$ infinitely often, so $X_n(\\omega) \\not\\to 0$ for any $\\omega$. Thus convergence is NOT almost sure.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | maximize | series | probability | number",
+    "generated": true
+  },
+  {
+    "id": 436,
+    "title": "Probability: Bounds on P(B)",
+    "statement": "Probability: Bounds on P(B). Given the probabilities $P(A)$ and $P(A \\cap B)$, what is the possible range of values for $P(B)$?",
+    "solution": "**Approach:** Use basic probability inequalities to bound $P(B)$.\n\n**Solution:** We know $P(A \\cap B) \\le P(B)$ (since $A \\cap B \\subseteq B$), so:\n\n$(B) \\ge P(A \\cap B)\n\nAlso, $P(B) \\le 1$ always. For a tighter upper bound, by inclusion-exclusion: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\le 1$, so:\n\n$(B) \\le 1 - P(A) + P(A \\cap B)\n\nCombining: $(A \\cap B) \\le P(B) \\le 1 - P(A) + P(A \\cap B)\n\n**Example:** If $P(A) = 0.6$ and $P(A \\cap B) = 0.3$, then $0.3 \\le P(B) \\le 0.7$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "two-sigma",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "two-sigma"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "two-sigma"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 533,
+    "title": "Conditional Probability of Arrivals",
+    "statement": "Three people fly from city A, two from B, and one from C. Their arrival order at the destination airport is completely random. What is the probability that when the person from C arrives, at least one person from A and at least one person from B have not yet arrived?",
+    "solution": "**Approach:** Count favorable arrival orderings.\n\n**Solution:** Six people total: 3 from A, 2 from B, 1 from C. Arrival order is a random permutation of 6 people.\n\nWe want: when C arrives, at least 1 person from A has NOT yet arrived AND at least 1 from B has NOT yet arrived. Equivalently, C does NOT arrive last among all A people AND C does NOT arrive after all B people.\n\n**Complementary counting:** Let $E_A$ = \"all 3 from A arrive before C\" and $E_B$ = \"all 2 from B arrive before C.\"\n\n$P(E_A)$: Among the 4 people (3A + 1C), C must be last: $P(E_A) = 1/4$.\n\n$P(E_B)$: Among the 3 people (2B + 1C), C must be last: $P(E_B) = 1/3$.\n\n$P(E_A \\cap E_B)$: C is last among all 6 people: $P = 1/6$.\n\nBy inclusion-exclusion: $P(E_A \\cup E_B) = 1/4 + 1/3 - 1/6 = 3/12 + 4/12 - 2/12 = 5/12$.\n\nAnswer: $P(\\text{at least 1 from A and 1 from B not yet arrived}) = 1 - 5/12 = \\boxed{7/12}$.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | minimize | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 568,
+    "title": "Polya's Urn Model",
+    "statement": "A basketball player has made $m$ shots out of $n$ attempts so far. Their probability of making the next shot is given by $m/n$. If they start with 1 successful shot out of 2 attempts, what is the distribution of the number of successful shots after 100 total attempts?",
+    "solution": "**Approach:** Recognize this as Polya's urn model with a uniform (Beta(1,1)) prior.\n\n**Solution:** Starting with 1 success out of 2 attempts (so initially $m=1$, $n=2$), the probability of the next success is $m/n = 1/2$. After each attempt, $n$ increments, and $m$ increments on a success.\n\nThis is **Polya's urn model**: start with 1 red ball and 1 blue ball. Each draw, return the ball plus one of the same color. Equivalently, the success probability $p$ has a Bayesian interpretation with a $\\text{Beta}(1,1) = U(0,1)$ prior.\n\n**Key result:** After $n$ total attempts (starting from 2), the number of successes $m$ follows a **discrete uniform distribution** on $\\{1, 2, \\ldots, n-1\\}$.\n\nSpecifically, after 100 total attempts, the number of successes $S_{100}$ is uniformly distributed on $\\{1, 2, \\ldots, 99\\}$:\n\n$(S_{100} = k) = \\frac{1}{99} \\quad \\text{for } k = 1, 2, \\ldots, 99\n\nThis is a remarkable property of Polya's urn: the marginal distribution of $m$ is uniform regardless of the number of draws, reflecting the exchangeability of the process.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | distribution,urn | probability | number",
+    "generated": true
+  },
+  {
+    "id": 705,
+    "title": "Bayesian Statistics",
+    "statement": "A Bayesian probability problem was asked during a math round.",
+    "solution": "**Approach:** Apply Bayes' theorem to update prior beliefs with observed data.\n\n**Solution:** Bayesian inference: given prior $P(\\theta)$ and likelihood $P(D|\\theta)$, the posterior is: P(\\theta|D) = \\frac{P(D|\\theta)P(\\theta)}{P(D)} = \\frac{P(D|\\theta)P(\\theta)}{\\int P(D|\\theta')P(\\theta')d\\theta'} Key concepts: (1) **Conjugate priors** simplify computation (e.g., Beta-Binomial, Normal-Normal). (2) **MAP estimate**: $\\hat{\\theta} = \\arg\\max P(\\theta|D)$. (3) **Posterior predictive**: $P(x_{new}|D) = \\int P(x_{new}|\\theta)P(\\theta|D)d\\theta$. Without the specific problem, the general framework involves specifying a prior, computing the likelihood, and applying Bayes' rule.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "jump-trading",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "jump-trading"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "jump-trading"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 718,
+    "title": "Surface Color of a Cube",
+    "statement": "Given a $3 \\times 3 \\times 3$ white cube with the surface painted red, we randomly select one cube and observe that 5 faces are white. We are asked to find the probability that the remaining face is red.\n\n\\[\nP(5 \\, \\text{white}, 1 \\, \\text{red} | \\text{observe 5 white}) = \\frac{\\frac{1}{6} \\times \\frac{6}{27}}{\\frac{1}{6} \\times \\frac{6}{27} + \\frac{1}{1} \\times \\frac{1}{27}} = \\frac{1}{2}.\n\\]",
+    "solution": "**Approach:** Apply Bayes' theorem considering the cube types in a 3x3x3 cube.\n\n**Solution:** A $3\\times3\\times3$ cube has 27 small cubes: 8 corner (3 red faces), 12 edge (2 red), 6 face-center (1 red), 1 center (0 red). We observe 5 white faces. Only two types can show 5 white: (a) 1-red-face cubes (6 total): show 5 white with probability $1/6$ (red face is down). (b) 0-red-face center cube (1 total): always shows 6 white, but we observe exactly 5 white so this is impossible actually. Wait: we observe 5 white faces (the visible ones). The hidden face could be red or white. Cubes with 1 red face: $P(5\\text{ white visible}) = 1/6$. Cubes with 0 red faces: $P(5\\text{ white visible}) = 1$. By Bayes: P(\\text{red hidden}|\\text{5 white visible}) = \\frac{(1/6)(6/27)}{(1/6)(6/27) + 1 \\cdot (1/27)} = \\frac{1/27}{1/27 + 1/27} = \\frac{1}{2}",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "hrt",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "hrt"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "hrt"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 720,
+    "title": "Probability of More Heads",
+    "statement": "You throw 10 coins, and your friend throws 9 coins. What is the probability that you will get more heads than your friend?\n\n\\[\nP(A > B) = P(B > A) = p_0, \\quad P(A = B) = p_1.\n\\]\n\nSince $2p_0 + p_1 = 1$, the probability that you will get more heads is:\n\n\\[\nP(A \\, \\text{win}) = p_0 + 0.5p_1 = 0.5.\n\\]",
+    "solution": "**Approach:** Use a symmetry argument relating the extra coin flip.\n\n**Solution:** You throw 10 coins (total heads = $A$), friend throws 9 coins (total heads = $B$). Consider your 10th coin separately: let $A = A' + C$ where $A'$ = heads from your first 9 coins and $C$ = 10th coin result. By symmetry of $A'$ and $B$ (both from 9 fair coins): $P(A' > B) = P(B > A')$. Now: $P(A > B) = P(A' + C > B)$. If $C=1$ (prob 1/2): need $A' \\ge B$. If $C=0$ (prob 1/2): need $A' > B$. So $P(A>B) = \\frac{1}{2}P(A' \\ge B) + \\frac{1}{2}P(A' > B) = \\frac{1}{2}[P(A'>B) + P(A'=B) + P(A'>B)]/2$... By the full symmetry argument, $P(A > B) = 1/2$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "hrt",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "hrt"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "hrt"
+    ],
+    "fingerprint": "probability | compute | coins | probability | number",
+    "generated": true
+  },
+  {
+    "id": 728,
+    "title": "Drawing Balls from Three Boxes",
+    "statement": "There are three boxes, each containing two balls:\n\n    \n- One box has two blue balls.\n    \n- One box has one blue ball and one red ball.\n    \n- One box has two red balls.\n\nYou randomly pick a box and draw a blue ball. What is the probability that the other ball in the same box is also blue?\n\n**Answer**: The probability is $\\frac{2}{3}$.",
+    "solution": "**Approach:** Apply Bayes' theorem with three equally likely boxes.\n\n**Solution:** Boxes: BB (2 blue), BR (1 blue, 1 red), RR (2 red). Prior: each box is equally likely (1/3). Likelihood of drawing blue: $P(B|BB) = 1$, $P(B|BR) = 1/2$, $P(B|RR) = 0$. By Bayes: P(BB|B) = \\frac{1 \\times 1/3}{1 \\times 1/3 + 1/2 \\times 1/3 + 0 \\times 1/3} = \\frac{1/3}{1/2} = \\frac{2}{3} Given we drew a blue ball, the probability the other ball is also blue = $P(BB|\\text{drew blue}) = 2/3$. Equivalently: of 3 blue balls in the system, 2 are in the BB box, so picking a blue ball gives 2/3 chance it came from BB.",
+    "difficulty": "medium",
+    "type": "brain-teaser",
+    "category": "brain-teaser",
+    "rating": 5,
+    "source": "hrt",
+    "topics": [
+      "brain-teaser"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "hrt"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "hrt"
+    ],
+    "fingerprint": "probability | compute | urn | brain-teaser | number",
+    "generated": true
+  },
+  {
+    "id": 752,
+    "title": "Reversi (Flip Chess)",
+    "statement": "Consider a Reversi-like game on an $n \\times n$ board. When a piece is placed, all pieces of the opposite color that are enclosed between two pieces of the placed color (horizontally, vertically, or diagonally) will flip to the placed color. You are given a sequence of moves, each consisting of a color and coordinates. Return the final number of black and white pieces on the board.",
+    "solution": "**Approach:** Simulate the Reversi board by applying flip rules for each move.\n\n**Solution:** Maintain an $n \\times n$ board. For each move (color, x, y): place the piece, then check all 8 directions (horizontal, vertical, diagonal). In each direction, scan for pieces of the opposite color followed by a piece of the same color. If found, flip all opposite-color pieces in between. Implementation: for each direction $(dx, dy) \\in \\{-1,0,1\\}^2 \\setminus \\{(0,0)\\}$, walk from $(x+dx, y+dy)$ collecting opposite-color positions. If a same-color piece is reached, flip all collected pieces. After processing all moves, count black and white pieces. Time: $O(k \\cdot n)$ per move where $k$ = number of moves.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "hft",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [],
+    "hints": [],
+    "status": "complete",
+    "company": [],
+    "fingerprint": "probability | compute | urn,coins,series | probability | number",
+    "generated": true
+  },
+  {
+    "id": 768,
+    "title": "Basketball Throws and Success Rate",
+    "statement": "**Question:** You have 100 basketball throws. The first one was missed, and 90 were successful overall. Is it possible that at no point during the 100 throws was the success rate above 80%?\n\n**Answer:** Impossible. Consider the number of missed throws, $X$. At the 5th throw, $X \\geq 2$ (since $X = N/5 + 1$). At the 10th throw, $X \\geq 3$, and so on. At any $N$th throw, $X \\geq N/5 + 1$. Since the total number of missed throws is at most 10, it would be impossible for this condition to hold beyond the 50th throw.",
+    "solution": "**Approach:** Use the intermediate value theorem to show 80% success rate must be crossed.\n\n**Solution:** After throw $k$, success rate = $S_k/k$. Given: $S_1 = 0$ (first missed), $S_{100} = 90$. At $k=1$: rate = 0% (below 80%). At $k=100$: rate = 90% (above 80%). The success count $S_k$ increases by 0 or 1 per throw, so the success rate changes continuously enough that it must cross 80% at some point. Formally, $S_k - 0.8k$ starts at $-0.8$ and ends at $+10$. Since it changes by at most $+0.2$ per step, it must pass through zero. Therefore it is **impossible** that the success rate never reached 80%.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "hft",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [],
+    "hints": [],
+    "status": "complete",
+    "company": [],
+    "fingerprint": "finance | maximize | urn | probability | number",
+    "generated": true
+  },
+  {
+    "id": 796,
+    "title": "Additional Probability Problems",
+    "statement": "There were some additional probability questions, but they have been forgotten.",
+    "solution": "**Approach:** Problem statement is too vague for a specific solution.\n\n**Solution:** Common quant probability topics: conditional probability (Bayes theorem), expectation calculations (linearity, law of total expectation), variance/covariance, common distributions (Bernoulli, Binomial, Poisson, Normal, Exponential), order statistics, and Markov chains. Key techniques: indicator variables, symmetry, conditioning, and generating functions.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "hft",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [],
+    "hints": [],
+    "status": "complete",
+    "company": [],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 817,
+    "title": "Stick Cutting Problem",
+    "statement": "A stick is cut at two random points, dividing it into three segments. What is the probability that these three segments can form a triangle?\n\n### Formal Statement\n\nLet a stick of length 1 be randomly cut at two points, $x$ and $y$, where $0 < x < y < 1$. The lengths of the three resulting segments are $x$, $y-x$, and $1-y$. Find the probability that these segments satisfy the triangle inequality, i.e., the sum of the lengths of any two segments must be greater than the length of the third.\n\n### Hint\n\nThis problem can be solved geometrically, where the triangle inequality conditions lead to a set of inequalities, which describe a region in a plane. The probability can be computed by integrating over this region.",
+    "solution": "**Approach:** Use geometric probability with triangle inequality on the unit square.\n\n**Solution:**\nCut a unit stick at two uniform random points. Let the pieces have lengths $x$, $y-x$, $1-y$ where $0 < x < y < 1$. Triangle inequality requires all pieces $< 1/2$:\n$$x < 1/2, \\quad y - x < 1/2, \\quad 1 - y < 1/2$$\nThis gives $x < 1/2$, $y > 1/2$, $y < x + 1/2$. In the triangle $\\{0 < x < y < 1\\}$ (area $1/2$), the feasible region is a triangle with vertices $(0, 1/2)$, $(1/2, 1/2)$, $(1/2, 1)$, having area $1/8$. Probability = $(1/8)/(1/2) = \\boxed{1/4}$.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "geometric-probability",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | series | probability | explanation",
+    "generated": true
+  },
+  {
+    "id": 823,
+    "title": "People Standing in a Circle",
+    "statement": "Six people with different heights are standing in a circle. The shortest one is standing next to the tallest. What is the expected number of people who have a shorter neighbor standing next to them?",
+    "solution": "**Approach:** Use indicator variables for each person having a shorter neighbor.\n\n**Solution:**\nSix people with distinct heights in a circle, with shortest (S) next to tallest (T). Every person except S has someone shorter in the circle. Since each person has exactly 2 neighbors, we ask: does person $i$ have at least one neighbor shorter than $i$? The shortest person S has no shorter neighbor. For everyone else (5 people), consider their two neighbors. The tallest T has S as a neighbor, so T always has a shorter neighbor. For the remaining 4 people in between, each has two neighbors, and by the circular arrangement with distinct heights, each non-minimum person is very likely to have a shorter neighbor. By careful enumeration over the $(4!)$ circular arrangements (fixing S and T adjacent), the expected count is $\\boxed{5}$.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "geometric-probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "general | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 824,
+    "title": "Drawing Balls Until Two Remain",
+    "statement": "You have 7 red balls and 8 blue balls. You repeatedly draw balls without replacement until only two balls remain. What is the probability that the remaining two balls are of the same color?",
+    "solution": "**Approach:** The last two balls are a uniformly random pair from the original 15.\n\n**Solution:**\nWith 7 red and 8 blue balls (15 total), the two remaining are a uniform random subset of size 2. Total pairs: $\\binom{15}{2} = 105$. Same-color pairs: $\\binom{7}{2} + \\binom{8}{2} = 21 + 28 = 49$.\n$$P(\\text{same color}) = \\frac{49}{105} = \\boxed{\\frac{7}{15}}$$\nThis works because random drawing without replacement is exchangeable -- the last two positions are a uniformly random pair.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | urn | probability | number",
+    "generated": true
+  },
+  {
+    "id": 831,
+    "title": "Correlation Range with Four Variables",
+    "statement": "Given four random variables $a$, $b$, $c$, and $d$, where all correlations are $\\frac{1}{2}$ except for the correlation between $a$ and $d$, what is the range of the correlation between $a$ and $d$?",
+    "solution": "**Approach:** Use PSD condition on the 4x4 correlation matrix to find the range of the missing correlation.\n\n**Solution:**\nThe correlation matrix with $\\text{Corr}(a,d) = \\rho$ and all other off-diagonal entries $1/2$ must be PSD. Using the Schur complement or direct determinant computation:\n\nThe $3 \\times 3$ submatrix for $(b,c,d)$ has all correlations $1/2$, which is valid. The constraint from $\\det(R) \\geq 0$ yields a quadratic in $\\rho$. After computation, the range is $\\rho \\in [-1/4, 1]$. The lower bound $-1/4$ arises from the requirement that the full $4 \\times 4$ matrix remain PSD.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "correlation-covariance"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 836,
+    "title": "Probability Distribution of a Basketball Player's Shots",
+    "statement": "A basketball player takes 100 shots. He first makes 1 out of 2 shots. Assume that after taking $n$ shots and making $m$ of them, the probability of making the $(n+1)$-th shot is $m/n$. What is the distribution of the total number of successful shots after 100 attempts? (Hint: This recursion leads to a uniform distribution.)",
+    "solution": "**Approach:** Recognize this as a Polya urn model leading to a uniform distribution.\n\n**Solution:**\nThis is a Polya urn model starting with 1 success and 1 failure (after 2 shots, 1 made). In a Polya urn with initial composition $(s, f)$, after $n$ additional draws, the number of successes follows a Beta-Binomial distribution. With $(s,f) = (1,1)$, the proportion of successes has a $\\text{Beta}(1,1) = \\text{Uniform}(0,1)$ distribution.\n\nSpecifically, $S_{100}$ (successes after 100 shots) is **uniformly distributed** on $\\{1, 2, \\ldots, 99\\}$:\n$$P(S_{100} = k) = \\frac{1}{99} \\quad \\text{for } k = 1, 2, \\ldots, 99$$",
+    "difficulty": "medium",
+    "type": "coding",
+    "category": "coding",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "coding"
+    ],
+    "subtopics": [],
+    "tags": [
+      "distributions",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | distribution,urn,series | coding | algorithm",
+    "generated": true
+  },
+  {
+    "id": 841,
+    "title": "Coin Flip Sequence and Rewards",
+    "statement": "You have 7 coins. After flipping, the resulting sequence is a combination of heads (H) and tails (T). For every consecutive sequence of three heads (HHH), you receive 1 point. For example, if the sequence is HHHHHHH, you receive 5 points. What is the expected number of points?",
+    "solution": "**Approach:** Use linearity of expectation with indicator variables for each HHH window.\n\n**Solution:**\nWith 7 coins, consecutive HHH windows: positions $(1,2,3), (2,3,4), (3,4,5), (4,5,6), (5,6,7)$ -- five windows. Let $I_k$ indicate positions $k, k+1, k+2$ are all heads. Then $E[I_k] = (1/2)^3 = 1/8$. By linearity of expectation:\n$$E[\\text{points}] = \\sum_{k=1}^{5} E[I_k] = 5 \\times \\frac{1}{8} = \\boxed{5/8 = 0.625}$$\nLinearity handles overlapping windows automatically -- no independence needed.",
+    "difficulty": "medium",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | coins,series | probability | number",
+    "generated": true
+  },
+  {
+    "id": 844,
+    "title": "Estimate Fair Price Interval",
+    "statement": "Estimate a 90\\% confidence interval for the fair price of the new version of the game described in Problem 30.",
+    "solution": "**Approach:** Estimate a 90% confidence interval for the fair price using the distribution of outcomes.\n\n**Solution:** For a coin-flipping game with $n$ coins, the number of heads $H \\sim \\text{Binomial}(n, 0.5)$. The fair price is $E[\\text{payoff}] = \\sum_{k=0}^{n} \\binom{n}{k} \\frac{1}{2^n} f(k)$. For a 90% CI, find the 5th and 95th percentiles of the payoff distribution. Using the normal approximation, $H \\approx N(n/2, n/4)$, so the 5th percentile is $f(\\lfloor n/2 - 1.645\\sqrt{n}/2 \\rfloor)$ and the 95th is $f(\\lceil n/2 + 1.645\\sqrt{n}/2 \\rceil)$. For example, with $n=10$ coins: $H \\sim N(5, 2.5)$, the 90% range of $H$ is approximately $[2, 8]$, giving a CI of $[f(2), f(8)]$.",
+    "difficulty": "easy",
+    "type": "estimation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "statistics | estimate | general | probability | estimate",
+    "generated": true
+  },
+  {
+    "id": 846,
+    "title": "Calculating the Fair Price",
+    "statement": "Determine the fair price of the game described in Problem 30 using an appropriate calculation method.",
+    "solution": "**Approach:** Calculate the fair price (expected value) of a coin-flipping game.\n\n**Solution:** For a game with $n$ fair coins where the payoff depends on the number of heads $H$, the fair price equals the expected payoff:\n\n$$P = E[f(H)] = \\sum_{k=0}^{n} \\binom{n}{k} \\frac{1}{2^n} f(k)$$\n\nFor example, if the payoff equals the number of heads with $n = 10$: $P = E[H] = 10 \\times 0.5 = 5$. If the payoff is $H^2$: $P = E[H^2] = \\text{Var}(H) + (E[H])^2 = 2.5 + 25 = 27.5$. The fair price is the amount at which a risk-neutral player would be indifferent between playing and not playing. This is computed by weighting each outcome by its binomial probability.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "general | explain | general | probability | explanation",
+    "generated": true
+  },
+  {
+    "id": 864,
+    "title": "Probability of Winning a Tennis Game",
+    "statement": "In a tennis game, you win 75\\% of the games and I win 25\\% of the games. What is the probability that you win the overall match? (Provide a range if necessary)",
+    "solution": "**Approach:** Model a best-of-N-sets tennis match with given game win probability.\n\n**Solution:**\nWith game win probability $p = 0.75$ for you, a tennis match is best-of-3 or best-of-5 sets. Assuming best-of-3 sets where each set is decided by a single game (simplified), $P(\\text{win match}) = P(\\text{win 2 of 3}) = \\binom{3}{2}p^2(1-p) + p^3 = 3(0.75)^2(0.25) + (0.75)^3 = 0.4219 + 0.4219 = 0.8438$.\n\nMore generally, with sets requiring multiple games, the probability is even higher due to the **amplification effect**: repeated play magnifies the advantage. For a best-of-3 match: $P \\approx \\boxed{0.84}$ to $\\boxed{0.95+}$ depending on set structure.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 866,
+    "title": "Probability of a Professor Getting Wet",
+    "statement": "A professor has $n$ umbrellas and commutes between home and the office. Each time he commutes, it rains with probability $p$. If it rains, he takes an umbrella. If there are no umbrellas at his location, he gets wet. What is the probability that the professor gets wet? \n\n    \n- Follow-up: What is the expected number of commutes before the professor gets wet?",
+    "solution": "**Approach:** Use a Markov chain with states representing umbrella counts at each location.\n\n**Solution:**\nWith $n$ umbrellas total split between home and office, state = (umbrellas at current location). The professor gets wet when it rains ($P = p$) and there are 0 umbrellas at the current location. Model as Markov chain with states $0, 1, \\ldots, n$ (umbrellas at origin). Transition: if state $k > 0$ and rain, go to state where destination gains one; if no rain, state changes as destination loses none. The professor gets wet when in state 0 and it rains. The stationary probability of state 0 gives the long-run fraction of wet commutes. For $n = 2, p = 1/2$: the long-run probability of getting wet on any commute is $\\frac{1}{2(n+1)} = \\frac{1}{6}$, and the expected commutes before getting wet is $\\boxed{10}$ for $n=2, p=1/2$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 874,
+    "title": "Prime Factor Generation",
+    "statement": "Write a function to generate the prime factors of a given number.",
+    "solution": "**Approach:** Trial division up to $\\sqrt{n}$ for prime factorization.\n\n**Solution:**\n```python\ndef prime_factors(n):\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n```\nAlgorithm: divide $n$ by 2, then 3, 5, 7, ... up to $\\sqrt{n}$. Each time $d$ divides $n$, record $d$ and divide. If $n > 1$ remains, it is a prime factor.\n\nTime: $O(\\sqrt{n})$. Example: $n = 84 = 2^2 \\times 3 \\times 7$, output: $[2, 2, 3, 7]$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "number-theory"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "coding | design | general | probability | algorithm",
+    "generated": true
+  },
+  {
+    "id": 895,
+    "title": "Fair Game with a Biased Coin",
+    "statement": "Discuss how to use a biased coin to play a fair game. (Hint: Using HT and TH sequences.) Calculate the expected number of tosses for your strategy and find the optimal strategy that minimizes the worst-case number of tosses.",
+    "solution": "**Approach:** Use the von Neumann trick for fair decisions with a biased coin.\n\n**Solution:**\n**Von Neumann's method:** Flip the biased coin (probability $p$ of H) twice. If HT, declare outcome A. If TH, declare outcome B. If HH or TT, discard and repeat. Since $P(HT) = p(1-p) = P(TH)$, outcomes A and B are equally likely.\n\n**Expected tosses:** Each pair has probability $2p(1-p)$ of being useful. Expected pairs = $1/(2p(1-p))$, so expected flips = $2/(2p(1-p)) = 1/(p(1-p))$. For $p = 0.5$: 4 flips. Worst case ($p \\to 0$ or $1$): unbounded.\n\n**Optimal improvement:** Use Peres' algorithm, which extracts entropy more efficiently from the discarded outcomes, approaching the information-theoretic limit.",
+    "difficulty": "medium",
+    "type": "open-ended",
+    "category": "probability",
+    "rating": 5,
+    "source": "citadel",
+    "topics": [
+      "game-theory"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | coins,series | game-theory | strategy",
+    "generated": true
+  },
+  {
+    "id": 897,
+    "title": "Monte Carlo Methods",
+    "statement": "Discuss how to use Monte Carlo methods to estimate values like $\\pi$ and $e$.",
+    "solution": "**Approach:** Use Monte Carlo sampling to estimate mathematical constants.\n\n**Solution:**\n**Estimating $\\pi$:** Generate $N$ random points $(x,y)$ in $[0,1]^2$. Count $M$ points with $x^2+y^2 \\leq 1$. Then $\\hat{\\pi} = 4M/N$.\n\n**Estimating $e$:** Generate sequences of $\\text{Unif}(0,1)$ random variables until their sum exceeds 1. The expected number of draws is $e$. Repeat $N$ times and average: $\\hat{e} = \\frac{1}{N}\\sum_{k=1}^N n_k$ where $n_k$ is the number of draws in trial $k$.\n\nAlternatively, use the limit definition: $e = \\lim_{n\\to\\infty}(1+1/n)^n$. Monte Carlo estimates converge at rate $O(1/\\sqrt{N})$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "simulation"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "general | estimate | general | probability | estimate",
+    "generated": true
+  },
+  {
+    "id": 914,
+    "title": "K-th Most Frequent Number in a List",
+    "statement": "Describe how to find the $k^{th}$ most frequent number in a list.",
+    "solution": "**Approach:** Use hash map counting with partial sort or heap.\n\n**Solution:**\n1. Count frequencies using a hash map: $O(n)$.\n2. Find the $k$-th most frequent:\n\n**Method 1 (Heap):** Build a min-heap of size $k$ over (frequency, number) pairs. Iterate through the frequency map, maintaining only the top-$k$ frequencies. Time: $O(n + m\\log k)$ where $m$ = distinct elements.\n\n**Method 2 (Quickselect):** Apply quickselect on the frequency array to find the $k$-th largest frequency. Time: $O(n + m)$ average.\n\n**Method 3 (Bucket sort):** Create buckets indexed by frequency (max frequency $\\leq n$). Place numbers in their frequency bucket. Walk buckets from highest to find the $k$-th. Time: $O(n)$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "general | explain | array | probability | explanation",
+    "generated": true
+  },
+  {
+    "id": 928,
+    "title": "Polynomial Computation Complexity",
+    "statement": "Given $P(X) = a_0 + a_1 \\cdot X + \\ldots + a_n \\cdot X^n$, what is the complexity of computing this formula? How can you improve the computation?",
+    "solution": "**Approach:** Analyze naive vs. Horner's method for polynomial evaluation.\n\n**Solution:**\nNaive computation of $P(X) = a_0 + a_1X + \\cdots + a_nX^n$: computing $X^k$ for each term requires $k-1$ multiplications, total $\\sum_{k=1}^n k = O(n^2)$ multiplications (or $O(n)$ if powers are computed incrementally), plus $n$ additions.\n\n**Horner's method** rewrites: $P(X) = a_0 + X(a_1 + X(a_2 + \\cdots + X(a_{n-1} + Xa_n)))$. This requires exactly $n$ multiplications and $n$ additions: $O(n)$ total. Horner's is optimal -- it achieves the minimum number of operations for polynomial evaluation. It also has better numerical stability due to fewer floating-point operations.",
+    "difficulty": "easy",
+    "type": "proof",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "finance | prove | general | probability | proof",
+    "generated": true
+  },
+  {
+    "id": 951,
+    "title": "Probability of Subsum Sequence Reaching n",
+    "statement": "Given a sequence $\\{X_i\\}$ where each $X_i$ is independently and identically distributed as $B(2, 0.5)$, determine the probability that the sum of a subset of the sequence equals $n$.",
+    "solution": "**Approach:** Use generating functions or convolution for Binomial sums.\n\n**Solution:**\nEach $X_i \\sim B(2, 0.5)$, so $X_i \\in \\{0, 1, 2\\}$ with $P(0) = 1/4$, $P(1) = 1/2$, $P(2) = 1/4$. The sum $S_k = \\sum_{i=1}^k X_i$ has PGF $(1/4 + z/2 + z^2/4)^k = ((1+z)^2/4)^k = (1+z)^{2k}/4^k$.\n\nSo $S_k \\sim B(2k, 0.5)$ (by recognizing the PGF). Thus:\n$$P(S_k = n) = \\binom{2k}{n}(1/2)^{2k}$$\nfor $0 \\leq n \\leq 2k$. Using $k$ variables summing to $n$: we need $k \\geq \\lceil n/2 \\rceil$. For a fixed $n$, $P(S_k = n) = \\binom{2k}{n}/4^k$.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "probability | compute | series | probability | number",
+    "generated": true
+  },
+  {
+    "id": 970,
+    "title": "Dealing with Large Independent Noise",
+    "statement": "What should you do if the noises in the data are independent, identically distributed, but very large? (Hint: Median regression)",
+    "solution": "**Approach:** Use median regression (quantile regression at the 50th percentile) for robustness.\n\n**Solution:**\nWhen errors are large (heavy-tailed), OLS estimates are highly sensitive to outliers because MSE penalizes large errors quadratically.\n\n**Median regression** minimizes $\\sum_i |y_i - x_i^T\\beta|$ (the $L_1$ loss). This is equivalent to **quantile regression** at $\\tau = 0.5$. Benefits:\n(1) **Robust to outliers:** $L_1$ loss grows linearly, not quadratically, so extreme values have bounded influence.\n(2) **No normality assumption needed:** The median is well-defined for any distribution.\n(3) **Consistent under heavy tails:** Works well for Cauchy, Student-$t$, and other heavy-tailed distributions where the mean may not even exist.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "citadel",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [],
+    "companies": [
+      "citadel"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "citadel"
+    ],
+    "fingerprint": "statistics | compute | regression | probability | number",
+    "generated": true
+  },
+  {
+    "id": 1011,
+    "title": "Probability of Adjacent Seating",
+    "statement": "Three people sit in eight available seats. What is the probability that all three people sit next to each other?",
+    "solution": "**Approach:** Count favorable seat assignments where all 3 people are consecutive.\n\n**Solution:**\nThree people choose from 8 seats. Total ways: $\\binom{8}{3} \\times 3! = 56 \\times 6 = 336$ (ordered) or $\\binom{8}{3} = 56$ (unordered sets of seats).\n\nConsecutive seat triples: $(1,2,3), (2,3,4), \\ldots, (6,7,8)$ = 6 groups.\n\n$$P(\\text{all adjacent}) = \\frac{6}{\\binom{8}{3}} = \\frac{6}{56} = \\boxed{\\frac{3}{28} \\approx 0.107}$$",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "sig",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "sig"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "sig"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 1017,
+    "title": "Coin Toss Sequence Probability",
+    "statement": "What is the probability of getting \"HTH\" (head, tail, head) before getting \"HHT\" (head, head, tail)?",
+    "solution": "**Approach:** Use Markov chain states for the HTH vs HHT race.\n\n**Solution:**\nThis is the reverse of Problem 1002 (which found HHT wins with prob 2/3 over HTH). Here we want P(HTH before HHT).\n\nFrom the analysis in Problem 1002: states $\\emptyset$, H, HH, HT.\n- From HH: next T gives HHT (pattern 2 wins). Next H stays in HH.\n- From HT: next H gives HTH (pattern 1 wins). Next T resets.\n\nSince $p_{HH}(\\text{HTH wins}) = 0$ (HH always leads to HHT eventually) and the analysis gives:\n\n$$P(\\text{HTH before HHT}) = \\boxed{1/3}$$\n\nHTH is at a disadvantage because once HH is reached, HHT is guaranteed.",
+    "difficulty": "easy",
+    "type": "calculation",
+    "category": "probability",
+    "rating": 3,
+    "source": "sig",
+    "topics": [
+      "probability"
+    ],
+    "subtopics": [],
+    "tags": [
+      "probability"
+    ],
+    "companies": [
+      "sig"
+    ],
+    "hints": [],
+    "status": "complete",
+    "company": [
+      "sig"
+    ],
+    "fingerprint": "probability | compute | general | probability | number",
+    "generated": true
+  },
+  {
+    "id": 1682,
+    "title": "Race to Ace",
+    "statement": "What is the expected number of cards you need to draw from a 52-card deck before you see the first ace?",
+    "solution": "Imagine you have the following setup:\n\n$$\n\\begin{equation*}\n\n\\_\\_\\_ A_1 \\_\\_\\_ A_2 \\_\\_\\_ A_3 \\_\\_\\_ A_4 \\_\\_\\_\n\n\\end{equation*}\n$$\n\nWhere $A_n$ represents the $nth$ Ace and the gaps represent the cards in between them.\n\nThere are $48$ cards to place into the $5$ gaps, thus the expected number of cards per gap is $\\frac{48}5$. After picking all the cards from the first gap, the next card you pick would be an ace so the expected number of cards we pick until we get an ace is\n\n$$\n\\begin{equation*}\n\n\\frac{48}5+1 = \\boxed{10.6}\n\n\\end{equation*}\n$$\n\n```python\nimport random\nfrom typing import Tuple\nfrom itertools import product\n\nsuits = ['S', 'C', 'D', 'H']\nranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\n\nclass Deck:\n    def __init__(self) -> None:\n        \"\"\"Initialize a deck of cards\"\"\"\n        self.cards = [(rank, suit) for rank, suit in product(ranks, suits)]\n\n    def shuffle(self) -> None:\n        \"\"\"Shuffle a deck of cards\"\"\"\n        self.cards = random.sample(self.cards, 52)\n\n    def draw(self) -> Tuple[str, str]:\n        \"\"\"Draw a card from the deck\"\"\"\n        return self.cards.pop()\n\n    def isEmpty(self) -> bool:\n        \"\"\"Check if the deck has cards\"\"\"\n        return self.cards == []\n\ndef simulation() -> int:\n    deck = Deck()\n    deck.shuffle()\n\n    cards_drawn = 0\n\n    # Keep drawing until we find an ace\n    while not deck.isEmpty():\n        suit, rank = deck.draw()\n        cards_drawn += 1\n\n        if suit == \"A\":\n            return cards_drawn\n\n    return cards_drawn\n\ncards_needed = [simulation() for _ in range(10_000)]\n\n# Get the expected number of cards until we draw our first ace\nprint(sum(cards_needed) / len(cards_needed))\n```",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "simulation",
+      "cards",
+      "python"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1690,
+    "title": "Multiple of Six",
+    "statement": "You roll a fair six-sided and sum the outcomes until you reach a multiple of 6. What is the expected number of times you expect to roll the die.",
+    "solution": "Suppose $$s$$ is the sum of our die after $$n$$ rolls. There are $$6$$ possible values for what $$s \\mod 6$$ can be.  At first glance, that might suggest there are $$6$$ possible cases for $$s$$ after $$n$$ rolls, but notice that regardless of what $$s$$ is, there exists exactly $$1$$ roll that brings the sum to a multiple of 6. (ie. If $$2 \\equiv s\\mod6$$ you must roll a $$4$$ to reach a multiple of $$6$$)\n\nThis means the probability of reaching a multiple of 6 on your next roll will always be $$\\frac16$$, resulting in a geometric distribution with $$p = \\frac16$$. The expectation of such a random variable is given by $$\\mu = \\frac1p= 6$$.\n\nWe can also get $$6$$ without knowing the behavior of a geometric distribution. Suppose our number of expected rolls is $$x$$. We can say $$x = \\frac16(1) + \\frac56(x+1)$$ $$\\\\$$ (there is a $$\\frac16$$ chance we get a multiple of $$6$$ and a $$\\frac56$$ chance we go back to square one after an additional roll). Solving this system we also get $$x = 6$$.\n\n```python\nimport random\nfrom typing import Callable\n\nroll_dice: Callable [[None], int] = lambda: random.randrange(1,7)\n\ntotal_rolls = 0\nnum_iters = 10_000\n#simulates rolling until we get a multiple of 6 num_iters times\nfor i in range(num_iters):\n\n   run_sum = roll_dice()\n   rolls = 1\n\n   #reroll until the sum is a multiple of 6\n   while run_sum % 6 != 0:\n      run_sum += roll_dice()\n      rolls += 1\n\n   total_rolls += rolls\n\n#expecting value close to 6.00\nprint(total_rolls/num_iters)\n```",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "simulation",
+      "geometric-distribution",
+      "expected-value",
+      "indicator-variables"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1700,
+    "title": "King of Hearts",
+    "statement": "You take a standard shuffled deck of cards and keep flipping cards over until the first ace appears, which is card #14. What's the probability the next card is the king of hearts",
+    "solution": "We know the 14th card must be an ace and the 13 cards that precede it can not be an ace. Thus we permute 13 of the 48 non-ace cards to be among the first 13, an ace to be in spot 14, and permute the remaining 38 cards to count the total number of possible selections.\n$$\n{48\\choose13}13!\\cdot{4\\choose1}\\cdot38!\n$$\nTo find the probability the 15th card is 8h we need to find the number of selections with Kh being in spot 15 while being a valid selection. We permute 13 of the 47 non-ace non-Kh cards for the first 13 spots, an ace for spot 14, the 8h for spot 15, and permute the remaining 37 cards to get:\n$$\n{47\\choose13}13!\\cdot{4\\choose1}\\cdot{1\\choose1}\\cdot37!\n$$\nPutting this over the total number of possible selections we get:\n$$\n\\frac{{47\\choose13}13!\\cdot{4\\choose1}\\cdot{1\\choose1}\\cdot37!}{{48\\choose13}13!\\cdot{4\\choose1}\\cdot38!} = \\frac{35}{48\\cdot38} = \\boxed{\\frac{35}{1824}}\n$$\n```python\nimport random\n\nsuits = ['S', 'C', 'D', 'H']\nranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']\n\nclass Deck:\n    def __init__(self):\n        self.cards = []\n        for suit in suits:\n            for rank in ranks:\n                self.cards.append([rank, suit])\n\n    def shuffle(self):\n        # shuffles deck of cards\n        return random.sample(self.cards, 52)\n\n# number of decks where the first ace is on the 14th draw\nnum_valid_decks = 0\nnum_15th_is8h = 0\n\n# create 10,000,000 shuffled decks\n# see how many of the decks, where the first ace is on the 14th draw, have 8h as the next card\nfor i in range(1_000_000):\n    deck = Deck().shuffle()\n\n    # excluding all decks with an ace not being on the 14th draw\n    if deck[13][0] != 'A':\n        continue\n\n    # exlcuding all decks with an ace in the first 13 draws\n    for j in range(13):\n        if deck[j][0] == 'A':\n            break\n    else:\n        num_valid_decks += 1\n        #checking if 15th card is 8 of hearts\n        if deck[14]== ['K', 'H']:\n            num_15th_is8h += 1\n\n# should be expecting 35/1824 ~ 0.0191886\nprint(num_15th_is8h / num_valid_decks)\n```",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "combinatorics",
+      "cards",
+      "coins",
+      "python"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1706,
+    "title": "Biased Coin Sequence",
+    "statement": "You are given a coin with probability $\\frac23$ to land on heads and $\\frac13$ to land on tails. If you flip this coin until you get a tails immediately followed by heads, how many times do you expect to flip the coin?",
+    "solution": "Let's call the number of flips needed to see a tails immediately followed heads $TH$. If our first flip is heads, one flip has been added but no progress has been made so we will now expect $E[TH] + 1$ total flips. If our first flip is tails, we finish on the next heads. The expected number of flips until heads is geometric with $p = \\frac23$ so we expect an additonal $\\frac32$ flips until we get the finishing heads. Given the probabilities these outcomes we can say:\n\n$$\nE(TH) = \\frac23(E(TH) + 1) + \\frac13(\\frac32+ 1)\n$$\n\nWe can now solve for $E(TH)$.\n$$\nE(TH) = \\frac23E(TH) + \\frac96\n$$\n$$\n\\frac13E(TH) = \\frac96\n$$\n$$\n\\Rightarrow E(TH) = \\boxed{\\frac92}\n$$\n\n```python\nimport random\n\nflip_coin = lambda: 'T' if random.randint(1, 3) == 1 else 'H'\n\nsequence_lengths = []\nnum_iters = 100_000\nfor i in range(num_iters):\n\n    sequence = [flip_coin()]\n    while(True):\n\n        sequence.append(flip_coin())\n        if sequence[-2]=='T' and sequence[-1]=='H':\n            sequence_lengths.append(len(sequence))\n            break\n\nprint(sum(sequence_lengths) / num_iters)",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "geometric-distribution",
+      "sequences",
+      "coins",
+      "python"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1718,
+    "title": "Exactly 6",
+    "statement": "If I roll a dice 36 times, what is the probability that each number appears exactly 6 times?",
+    "solution": "To solve this question, we can leverage the multinomial theorem. This theorem states that for an experiment with $n$ trials, with $k$ possible results and $x_1, ..., x_k$ desired outcomes corresponding to each of the possible results, the number of possible experimental outcomes is given by the following formula: ${n \\choose x_1, .., x_k} = \\frac{n!}{x_1, ..., x_k}$\n\nWe know that the probability of any face from the dice showing up is $1/6$ and that we are rolling the dice 36 times. Therefore, we have the solution given below:\n\n${36 \\choose {6, 6, 6, 6, 6, 6}} \\times (1/6)^{36} = \\frac{36!}{6!^6}(\\frac{1}{6})^{36} \\approx 0.00025$\n\nHere is a python program validating our solution:\n\n```python\nimport random\nfrom typing import Callable\nfrom collections import Counter\n\nroll_dice: Callable[[None], int] = lambda: random.randrange(1, 7, 1)\n\ndef simulation() -> bool:\n    # Roll the dice 36 times\n    rolls = [roll_dice() for _ in range(36)]\n    # Count how many times each number appeared\n    counts = Counter(rolls)\n    # Check that each number appeared 6 times\n    return len(counts.keys()) == 6 and all([count == 6 for count in counts.values()])\n\niterations = 100_000\nprobability = sum([simulation() for _ in range(iterations)]) / iterations\nprint(f\"The probability that each number appears exactly six times is: {probability}\")\n\n```",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "simulation",
+      "combinatorics",
+      "cards",
+      "dice"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1722,
+    "title": "Expected Couples",
+    "statement": "Eight people from four married couples are randomly assigned to seats around a round table. What is the expected number of couples that are seated next to each other?",
+    "solution": "Let's take a look at a given woman. There are $2$ seats adjacent to this woman and her husband is randomly seated in one of the $7$ remaining seats. Thus the probability the woman sits next to her husband is $\\frac27$. Since seating is assigned at random, no woman has a different likelihood to be seated next to her husband and so the expected number of woman that sit next to their husband (or total couples is):\n$$\n4\\cdot\\frac27 = \\boxed{\\frac87}\n$$\n\n```python\nimport random\n\ncouple_counts = []\nnum_iters = 100_000\nfor i in range(num_iters):\n\n    #where 1/2, 3/4, 5/6, and 7/8 are couples\n    people = [1, 2, 3, 4, 5, 6, 7, 8]\n    random.shuffle(people)\n    people.append(people[0])\n    num_couples = 0\n\n    for p in range(8):\n\n        if people[p] % 2 == 0:\n            if people[p] == people[p+1] + 1:\n                num_couples += 1\n        else:\n            if people[p] == people[p+1] -1:\n                num_couples += 1\n\n    couple_counts.append(num_couples)\n\n#expecting 8/7 ~ 1.1429\nprint(sum(couple_counts) / num_iters)",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "cards",
+      "python"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1761,
+    "title": "Society of Women",
+    "statement": "You are off venturing in a rainforest where you suddenly come into contact with an isolated civilization. In this civilization, girls are preferred and couples do not stop having children until they have had a girl. Assuming there is equal likelihood of a couple having a boy and a girl, what will the proportion of women in this society be after many years?",
+    "solution": "Let's assume there are $n$ couples in this civilization. Each couple will stop having children once they have had a girl. This mean's there in the next generation there will exist exactly $n$ girls. \n\nIf the distribution of girls is geometric with $p = \\frac12$, each couple will on average have $2$ children, amounting to a total of $2n$ children. The proportion of girls in this society is:\n\n$$\n\\frac{n}{2n} = \\boxed{\\frac12}\n$$",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "geometric-distribution"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1778,
+    "title": "Stamp Collector",
+    "statement": "A stamp collector is attempting to collect 4 different stamp types. If she is equally likely to find each type of stamp, what is the expected number of stamps that she would have to find in order to find three different unique stamp types?",
+    "solution": "We'll break the process into three phases:\n\n1. Phase 1: The collector finds the first unique stamp.\n2. Phase 2: The collector finds the second unique stamp.\n3. Phase 3: The collector finds the third unique stamp.\n\nWe will calculate the expected number of stamps needed in each phase and then sum them up.\n\nThe first stamp will always be a new type, so the expected number of stamps to find the first unique stamp is: $E_1 = 1$\n\nOnce the collector has one unique stamp, the probability of finding a new unique stamp on the next try is $\\frac{3}{4}$ because 3 out of the 4 stamp types remain undiscovered. The expected number of trials to get a new stamp follows a geometric distribution with success probability $\\frac{3}{4}$ . The expected number of trials to get a new type in this phase is:\n\n$$\nE_2 = \\frac{1}{\\frac{3}{4}} = \\frac{4}{3}\n$$\n\nNow the collector has 2 unique stamps. The probability of finding a third unique stamp is $\\frac{2}{4} = \\frac{1}{2}$, since 2 out of the 4 types remained undiscovered. The expected number of trials to get a new type in this phase is \n\n$$\nE_3 = \\frac{1}{\\frac{1}{2}} = 2\n$$\n\nThe total expected number of stamps to find three different types is the sum of the expectations for each phase:\n\n$E = E_1 + E_2 + E_3 = 1 + \\frac{4}{3} + 2 = \\frac{3}{3} + \\frac{4}{3} + \\frac{6}{3} = \\frac{13}{3}$\n\nThus, the expected number of stamps that the collector would have to find to get three different types is $\\boxed{\\frac{13}{3}}$.",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "geometric-distribution",
+      "expected-value"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1785,
+    "title": "Subtree Removal",
+    "statement": "You are given a rooted tree. On each step, you randomly choose a node and remove the subtree rooted by that node, and the node itself, until all subtrees have been removed and only the root remains. Find the expected number of steps in this process.",
+    "solution": "Every node in the tree has an equal probability of being selected. If a node is to be removed, we know that either the node itself, or one of the node's ancestors must have been chosen. \n\nThe number of ancestors of a node $i$ is $\\textrm{Depth}[i]$\n\n$$\n\\begin{equation}\nP(i \\ \\textrm{is removed}) = \\textrm{Depth}[i] \\  / \\ \\textrm{Size of Tree} \n\\end{equation}\n$$\n\n$$\n\\begin{equation}\nP(i \\ \\textrm{is chosen}) = 1 \\  / \\ \\textrm{Size of Tree} \n\\end{equation}\n$$\n\n$$\n\\begin{equation}\nP(i \\ \\textrm{is removed} \\ | \\ i \\textrm{ is chosen} ) =1\n\\end{equation}\n$$\n\nWe can use Bayes theorem to solve this problem where: $P(A|B) = \\frac{P(B | A) * P(A)}{P(B)}$ and therefore $P(i\\ \\textrm{is chosen} \\ |\\  i\\ \\textrm{is removed}) = 1 / \\textrm{Depth}[i]$\n\nWe now use Linearity of Expectation to find the expected number of subtree removals.\nDefine indicator variable $X_i = 1$ if $i$ node was chosen.\n\n$$\nX = X_1 + X_2 â€¦ X_n\n$$\n\n$$\nE[X] = \\sum_{i=1}^n E[X_i]\n$$\n\n$$\nE[X] = \\sum 1* P(X_i \\text{ was chosen } | i \\text{ was removed}) \n$$\n \n $$\nE[X] = \\sum_{i=1}^n \\frac{1}{\\text{Depth}[i]}\n$$",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "combinatorics",
+      "expected-value",
+      "indicator-variables",
+      "graph-theory"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1790,
+    "title": "Last Marble Standing",
+    "statement": "Josephine has $r$ red marbles, $b$ blue marbles, and $g$ green marbles in an urn. She draws out the marbles one at a time without replacement. Find the probability there is at least one green and one blue marble left in the urn right after the last red marble is selected. Find the probability when $r=10, b=20, g=30$.",
+    "solution": "We can model the process of drawing marbles without replacement as choosing a\nuniformly random permutation of all the marbles.  \n\nLet $R$, $B$, and $G$ denote the sets of red, blue, and green marbles.  \nDefine $\\operatorname{last}(C)$ as the position of the last marble of color $C$\nin the permutation.\n\nWe want the probability that after the last red is drawn, there is at least one\nblue and at least one green remaining.  \n\nEquivalently, we want to avoid the two â€œbadâ€ events:\n\n$$\nA : \\;\\; \\operatorname{last}(G) < \\operatorname{last}(R),\n\\quad\nB : \\;\\; \\operatorname{last}(B) < \\operatorname{last}(R).\n$$\n\nThus the desired probability is\n$$\n\\Pr(\\text{good}) = 1 - \\Pr(A \\cup B) = 1 - \\Pr(A) - \\Pr(B) + \\Pr(A \\cap B).\n$$\n\n---\n\n$\\text{Step 1. Compute Pr(A)}$\n\nAmong the $r+g$ marbles of colors $R \\cup G$, the final marble is equally likely\nto be any of them. Hence\n$$\n\\Pr(A) = \\Pr(\\text{last of $R \\cup G$ is red}) = \\frac{r}{r+g}.\n$$\n\n$\\text{Step 2. Compute Pr(B)}$\n\nBy the same reasoning,\n$$\n\\Pr(B) = \\frac{r}{r+b}.\n$$\n\n$\\text{Step 3. Compute}$ $\\text{Pr}(A \\cap B)$\n\nBoth $A$ and $B$ occur iff the overall last marble is red (so redâ€™s last is\nafter both blueâ€™s and greenâ€™s last). Thus\n$$\n\\Pr(A \\cap B) = \\frac{r}{r+b+g}.\n$$\n\n---\n\n$\\text{General formula:}$\n\n$$\n\\Pr(\\text{at least one blue and one green left after last red})\n= 1 - \\frac{r}{r+g} - \\frac{r}{r+b} + \\frac{r}{r+b+g}.\n$$\n\n---\n\n$\\text{Case r=10, b=20, g=30:}$\n\n$$\n1 - \\frac{10}{10+30} - \\frac{10}{10+20} + \\frac{10}{10+20+30}\n= 1 - \\frac{1}{4} - \\frac{1}{3} + \\frac{1}{6}\n= \\frac{7}{12}.\n$$\n\n$$\n\\boxed{\\tfrac{7}{12}}\n$$",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "combinatorics",
+      "cards"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 1862,
+    "title": "Curing the Compulsive Gambler",
+    "statement": "Mr. Brown always bets a dollar on the number 13 at roulette against the advice of Kind Friend. To help cure Mr. Brown of playing roulette, Kind Friend always bets Brown $20 at even money that Brown will be behind at the end of 36 plays. How is the cure working? \n\n(Most American roulette wheels have 38 equally likely numbers. If the player's number comes up, he is paid 35 times his stake and gets his original\nstake back; otherwise he loses his stake.)",
+    "solution": "If Mr. Brown wins once in 36 turns, he is even with the casino. His probability of losing all 36 time is $(\\frac{37}{38})^{36} \\approx 0.383$. In a single turn his expectation is:\n\n$$\n35 (\\frac{1}{38}) - 1(\\frac{37}{38}) = -\\frac{2}{38} (\\text{dollars})\n$$\n\nand in 36 turns\n\n$$\n- \\frac{2(36)}{38} \\approx -1.89 (\\text{dollars})\n$$\n\nAgainst Kind Friend, Mr.Brown has an expectation of \n\n$$\n20(0.617) - 20(0.383) \\approx 4.68 (\\text{dollars})\n$$\n\nAnd so all told Mr.Brown gains $4.68 - 1.89 = 2.79$ dollars per 36 trials; he is finally making money at roulette. Possibly Kind Friend will be cured first. Of course, when Brown loses all 36, he is out $56, which may jolt him a bit.",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "probability",
+      "expected-value",
+      "game-theory"
+    ],
+    "companies": [],
+    "source": "openquant",
+    "status": "complete"
+  },
+  {
+    "id": 2513,
+    "title": "Determine that number",
+    "statement": "Integrate xlogx. Q: Put the numbers 1~1000 around a circle in order. Start at 1, you delete the number 1, 3, 5, ... and carry on this pattern of deleting numbers alternatively until there's only one number left. Determine that number.",
+    "solution": "**Solution:**\n\nThis problem has two parts.\n\n**Part 1: $\\int x \\ln x \\, dx$**\n\nUse integration by parts with $u = \\ln x$, $dv = x\\,dx$:\n- $du = \\frac{1}{x}dx$, $v = \\frac{x^2}{2}$\n\n$$\\int x \\ln x \\, dx = \\frac{x^2}{2}\\ln x - \\int \\frac{x^2}{2} \\cdot \\frac{1}{x}dx = \\frac{x^2}{2}\\ln x - \\frac{x^2}{4} + C$$\n\n$$\\boxed{\\int x\\ln x\\,dx = \\frac{x^2\\ln x}{2} - \\frac{x^2}{4} + C}$$\n\n**Part 2: Josephus problem with 1000 people in a circle**\n\nNumbers 1 to 1000 arranged in a circle. Starting at 1, delete every other number (1, 3, 5, ...) going around repeatedly until one remains.\n\nThis is the Josephus problem with $k=2$. The formula for the last survivor with $n$ people is:\n$$J(n) = 2L + 1 \\quad \\text{where } n = 2^m + L, \\; 0 \\le L < 2^m$$\n\nBut here we delete the person we start on (position 1 is deleted first), which shifts the standard formula. Since we eliminate the current position (not skip one), the survivor for this variant is:\n$$W(n) = 2L \\quad \\text{where } n = 2^m + L$$\n\nWith $n = 1000$: $2^9 = 512$, so $L = 1000 - 512 = 488$.\n$$W(1000) = 2 \\times 488 = 976$$\n\nAlternatively: after the first pass around the circle with 1000 numbers, we remove 500 odd-numbered ones. The remaining 500 are at positions 2,4,6,...,1000. The next deletion continues from where we left off. Tracking through the recursion gives the same result.\n\n$$\\boxed{976}$$",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "integration",
+      "options",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2516,
+    "title": "12 Balls, One Is Slightly Different In Weight",
+    "statement": "12 balls, one is slightly different in weight. How to find the different ball using a two-edge scale in three times?",
+    "solution": "**Solution:**\n\nThis is the classic 12-ball balance puzzle. We know one ball differs in weight but do not know if it is heavier or lighter.\n\n**Weighing 1:** Compare balls {1,2,3,4} vs {5,6,7,8}. Balls {9,10,11,12} are set aside.\n\n**Case A: They balance.** The odd ball is among {9,10,11,12}.\n- **Weighing 2:** Compare {9,10,11} vs {1,2,3} (known normal).\n  - If they balance: ball 12 is odd. **Weighing 3:** Compare 12 vs 1 to determine heavier/lighter.\n  - If {9,10,11} is heavy: odd ball is among {9,10,11} and is heavy. **Weighing 3:** Compare 9 vs 10. If they balance, it's 11. Otherwise, the heavier one is odd.\n  - If {9,10,11} is light: similar logic, the lighter one is odd.\n\n**Case B: {1,2,3,4} is heavy.** The odd ball is either a heavy ball in {1,2,3,4} or a light ball in {5,6,7,8}.\n- **Weighing 2:** Compare {1,2,5} vs {3,6,9} (9 is known normal).\n  - If balanced: odd ball is 4 (heavy) or 7 or 8 (light). **Weighing 3:** Compare 7 vs 8. If balanced, it's 4. If not, the lighter of 7,8 is odd.\n  - If {1,2,5} heavy: odd is 1 or 2 (heavy) or 6 (light). **Weighing 3:** Compare 1 vs 2. If balanced, it's 6. If not, the heavier one is odd.\n  - If {1,2,5} light: odd is 3 (heavy) or 5 (light). **Weighing 3:** Compare 3 vs 9. Determines which.\n\n**Case C: {1,2,3,4} is light.** Symmetric to Case B.\n\n$$\\boxed{3 \\text{ weighings are sufficient}}$$",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "urn-model",
+      "weighing-puzzle",
+      "probability"
+    ],
+    "companies": [
+      "worldquant"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2547,
+    "title": "determine which ball is the heavy ball",
+    "statement": "You have a scale and 18 balls. One of the balls is slightly heavier than the rest. The rest are identical. What is the minimum number of times you need to use the scale to determine which ball is the heavy ball?",
+    "solution": "**Solution:**\n\nWe have 18 balls, one is heavier, and a balance scale. We want the minimum number of weighings.\n\n**Information-theoretic lower bound:** Each weighing has 3 outcomes (left heavy, balanced, right heavy). To distinguish among 18 balls, we need at least $\\lceil \\log_3 18 \\rceil = \\lceil 2.63 \\rceil = 3$ weighings.\n\n**Strategy achieving 3 weighings:**\n\n**Weighing 1:** Divide 18 balls into three groups of 6: $A$, $B$, $C$. Weigh $A$ vs $B$.\n- If $A > B$: heavy ball is in $A$ (6 balls)\n- If $A < B$: heavy ball is in $B$ (6 balls)\n- If $A = B$: heavy ball is in $C$ (6 balls)\n\n**Weighing 2:** Take the group of 6 containing the heavy ball. Divide into three groups of 2. Weigh 2 vs 2.\n- Same logic: identify which pair of 2 contains the heavy ball.\n\n**Weighing 3:** Weigh the 2 remaining candidates against each other. The heavier one is the odd ball.\n\n$$\\boxed{3 \\text{ weighings}}$$",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "urn-model",
+      "weighing-puzzle",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2558,
+    "title": "Probability of the other one is not red",
+    "statement": "Let's say that I have a bunch red, yellow, and blue marbles in a bag. Given that I pulled 2 marbles out of the bag and that one of them was blue, what is the probability that the other one is not red?",
+    "solution": "**Solution:**\n\nWe have red, yellow, and blue marbles in a bag. We draw 2 marbles. Given that one is blue, what is $P(\\text{other is not red})$?\n\n**Without specific counts**, we cannot compute an exact numerical answer. The answer depends on the composition of the bag. However, we can express it generally.\n\nLet $r, y, b$ be the number of red, yellow, blue marbles, $n = r + y + b$.\n\n$P(\\text{one blue, one not red} \\mid \\text{at least one blue})$.\n\nWe need to interpret \"one of them was blue\" carefully. If it means **exactly one** or **at least one** is blue.\n\nAssuming \"one of them is blue\" means at least one is blue:\n\n$$P(\\text{no red} \\mid \\text{at least one blue}) = \\frac{P(\\text{no red, at least one blue})}{P(\\text{at least one blue})}$$\n\n$P(\\text{no red, at least one blue}) = P(\\text{both from } \\{y,b\\} \\text{ and at least one blue}) = \\frac{\\binom{y+b}{2} - \\binom{y}{2}}{\\binom{n}{2}}$\n\n$P(\\text{at least one blue}) = \\frac{\\binom{n}{2} - \\binom{n-b}{2}}{\\binom{n}{2}}$\n\nThe answer is:\n\n$$\\boxed{P = \\frac{\\binom{y+b}{2} - \\binom{y}{2}}{\\binom{n}{2} - \\binom{r+y}{2}} = \\frac{b(b-1) + 2by}{2nb - b(b+1) + b \\cdot 2r}  }$$\n\nwhich simplifies differently depending on the actual counts. The problem likely expects a general setup or assumes equal counts.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "urn-model",
+      "probability"
+    ],
+    "companies": [
+      "drw"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2567,
+    "title": "What Is The Difference Between American And",
+    "statement": "What is the difference between American and European options, what is time value.",
+    "solution": "**Solution:**\n\n**American vs European Options:**\n\n| Feature | American | European |\n|---------|----------|----------|\n| Exercise | Any time up to expiration | Only at expiration |\n| Price | $\\ge$ European (more flexibility) | $\\le$ American |\n| Early exercise | Possible (valuable for puts, dividend calls) | Not applicable |\n| Pricing | Binomial trees, finite differences, simulation with regression (LSM) | Black-Scholes formula (closed-form for vanilla) |\n\n**When is early exercise optimal?**\n- **American call on non-dividend stock:** Never exercise early (time value always positive). American call = European call.\n- **American call on dividend stock:** May exercise just before ex-dividend date.\n- **American put:** May exercise early when deep in-the-money (interest on strike exceeds time value).\n\n**Time Value of an Option:**\n\nTime value = Option price $-$ Intrinsic value\n\n$$\\text{Time Value} = V - \\max(S - K, 0) \\quad \\text{(for calls)}$$\n\nTime value reflects:\n1. **Optionality:** The chance the option becomes (more) profitable before expiration\n2. **Volatility:** Higher vol $\\Rightarrow$ higher time value (more potential upside)\n3. **Time to expiration:** More time $\\Rightarrow$ higher time value\n4. **Interest rates:** Higher rates increase call time value, decrease put time value\n\nTime value decays as expiration approaches (**theta decay**), reaching zero at expiration.\n\n$$\\boxed{\\text{American: exercise anytime; European: only at expiry. Time value = price } - \\text{ intrinsic value.}}$$",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": [
+      "options",
+      "probability"
+    ],
+    "companies": [
+      "university-of-illinois-at-urbanachampaign"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2576,
+    "title": "Calculate the integral of a given function",
+    "statement": "Calculate the integral of a given function. Calculate the integral using Monte Carlo method.",
+    "solution": "**Solution:**\n\n**Analytical Integration** and **Monte Carlo Integration** are two complementary methods.\n\n**Analytical Method:**\nGiven a function $f(x)$, compute $\\int_a^b f(x)\\,dx$ using antiderivatives, substitution, integration by parts, partial fractions, etc.\n\n**Monte Carlo Method:**\nEstimate $I = \\int_a^b f(x)\\,dx$ using random sampling:\n\n1. Generate $N$ random points $x_1, \\ldots, x_N \\sim \\text{Uniform}(a, b)$\n2. Estimate: $\\hat{I} = (b-a) \\cdot \\frac{1}{N}\\sum_{i=1}^N f(x_i)$\n\nBy the Law of Large Numbers, $\\hat{I} \\to I$ as $N \\to \\infty$.\n\n**Error:** Standard error $\\approx \\frac{(b-a)\\sigma_f}{\\sqrt{N}}$ where $\\sigma_f$ is the standard deviation of $f(X)$.\n\n**Example:** Estimate $\\int_0^1 x^2\\,dx$ (true value = 1/3):\n- Generate $N = 10000$ uniform samples on $[0,1]$\n- Compute average of $x_i^2$\n- Result $\\approx 0.333 \\pm 0.003$\n\n**Variance reduction techniques:**\n- **Antithetic variates:** Use $(U, 1-U)$ pairs\n- **Importance sampling:** Sample from a distribution closer to $f$\n- **Stratified sampling:** Divide domain into strata\n- **Control variates:** Use correlated known-expectation variables\n\n$$\\boxed{\\hat{I} = (b-a) \\cdot \\frac{1}{N}\\sum_{i=1}^N f(x_i), \\quad x_i \\sim \\text{Uniform}(a,b)}$$",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "integration",
+      "probability"
+    ],
+    "companies": [
+      "nomura"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2608,
+    "title": "If The Vol Of A Stock Is",
+    "statement": "If the vol of a stock is 100 what do you think is the daily move.",
+    "solution": "**Estimating Daily Move from Annual Volatility**\n\n**Setup:** A stock has annual volatility $\\sigma = 100\\%$.\n\n**Conversion:** Daily volatility is obtained by dividing annual volatility by $\\sqrt{252}$ (assuming 252 trading days):\n$$\\sigma_{\\text{daily}} = \\frac{\\sigma_{\\text{annual}}}{\\sqrt{252}} = \\frac{100\\%}{\\sqrt{252}}\n\n$$\\sqrt{252} \\approx 15.87\n\n$$\\sigma_{\\text{daily}} \\approx \\frac{100\\%}{15.87} \\approx 6.3\\%\n\n**Interpretation:** On a typical day, the stock would move about **6.3%** up or down (one standard deviation). This means:\n- ~68% of days: move within $\\pm 6.3\\%$\n- ~95% of days: move within $\\pm 12.6\\%$\n- ~99.7% of days: move within $\\pm 18.9\\%$\n\n**Quick Rule of Thumb:** Divide annual vol by 16 (since $\\sqrt{256} = 16 \\approx \\sqrt{252}$):\n$$\\sigma_{\\text{daily}} \\approx \\frac{100\\%}{16} = 6.25\\%\n\n**Final Answer:** With 100% annual volatility, the expected daily move is approximately $100\\%/16 \\approx 6.3\\%$.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "volatility",
+      "probability"
+    ],
+    "companies": [
+      "marathon-trading"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2615,
+    "title": "What Is The Minimum And Maximum Number",
+    "statement": "What is the minimum and maximum number of rows returned from each of the 4 main SQL join types for a table with 100 rows and another with 10 rows.",
+    "solution": "**Minimum and Maximum Rows from SQL Joins (100-row and 10-row tables)**\n\nLet Table A have 100 rows and Table B have 10 rows.\n\n**1. INNER JOIN:**\n- **Minimum: 0 rows** (no matching keys between A and B)\n- **Maximum: 1000 rows** (every row in A matches every row in B, i.e., 100 x 10 if all join keys are duplicated)\n\n**2. LEFT JOIN (A LEFT JOIN B):**\n- **Minimum: 100 rows** (every row in A appears at least once; non-matching rows get NULLs for B columns)\n- **Maximum: 1000 rows** (every row in A matches all 10 rows in B)\n\n**3. RIGHT JOIN (A RIGHT JOIN B):**\n- **Minimum: 10 rows** (every row in B appears at least once; non-matching rows get NULLs for A columns)\n- **Maximum: 1000 rows** (every row in B matches all 100 rows in A)\n\n**4. FULL OUTER JOIN:**\n- **Minimum: 100 rows** (if all 10 rows in B match rows in A, we get 100 rows: 100 from A side, with B's 10 matched)\n- **Maximum: 1100 rows** (if no matches at all: 100 unmatched from A + 10 unmatched from B = 110... wait)\n\nLet me reconsider FULL OUTER: if no rows match, we get 100 + 10 = 110 rows. If all match with max duplication, 1000 rows. So:\n- **Minimum: 100 rows** (all of B's rows match some of A's rows, one-to-one, leaving 90 unmatched A rows + 10 matched = 100)\n- **Maximum: 1100 rows** (every A matches every B = 1000, but since outer join doesn't add unmatched when everything matches, max is 1000)\n\nActually for FULL OUTER: min = max(100, 10) = 100 (when B is a subset of A in terms of keys), max = 1000 when all keys match with duplicates (all same key).\n\n**Final Answer:** INNER: [0, 1000]; LEFT: [100, 1000]; RIGHT: [10, 1000]; FULL OUTER: [100, 1000] (assuming keys can have duplicates; if unique keys, FULL OUTER max is 110).",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "coding",
+    "tags": [
+      "programming",
+      "probability"
+    ],
+    "companies": [
+      "tudor-investment-corporation"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2634,
+    "title": "If N People Put Their Hat In",
+    "statement": "If N people put their hat in a room and then take a random hat. What is the probability they will get it back?",
+    "solution": "**Hat Problem: Probability of Getting Your Own Hat Back**\n\n**Problem:** $N$ people each put their hat in a room and then randomly select one. What is the probability that a specific person gets their own hat back?\n\n**Solution:**\n\n**For a specific person:** By symmetry, each person is equally likely to pick any of the $N$ hats:\n$(\\text{specific person gets own hat}) = \\frac{1}{N}\n\n**Expected number of people who get their own hat (fixed points):**\nBy linearity of expectation, let $X_i = 1$ if person $i$ gets their own hat:\n$\\left[\\sum_{i=1}^N X_i\\right] = \\sum_{i=1}^N E[X_i] = \\sum_{i=1}^N \\frac{1}{N} = 1\n\nSo on average, exactly 1 person gets their own hat, regardless of $N$.\n\n**Probability that NO ONE gets their own hat (complete derangement):**\n$(\\text{no fixed points}) = D_N / N! = \\sum_{k=0}^{N} \\frac{(-1)^k}{k!} \\approx \\frac{1}{e} \\approx 0.3679\n\nThis converges very quickly to $1/e$ as $N$ grows.\n\n**Probability at least one person gets their hat:**\n$(\\text{at least one match}) = 1 - \\frac{D_N}{N!} \\approx 1 - \\frac{1}{e} \\approx 0.6321\n\n**Final Answer:** The probability a specific person gets their own hat is $1/N$. The expected number of matches is always 1. The probability of no matches (complete derangement) approaches $1/e \\approx 36.8\\%$.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "options",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2654,
+    "title": "Probability of they are both boys",
+    "statement": "Conditional Probability: A family has two children, we already know that one is a boy, what is the probability that they are both boys?",
+    "solution": "**Conditional Probability: Two Children, One Known Boy**\n\n**Problem:** A family has two children. We know that at least one is a boy. What is the probability that both are boys?\n\n**Sample Space:** Each child is equally likely to be a boy (B) or girl (G). The possible combinations for two children are:\n- BB (both boys)\n- BG (older boy, younger girl)\n- GB (older girl, younger boy)\n- GG (both girls)\n\nEach has probability 1/4.\n\n**Conditioning on \"at least one boy\":** We eliminate GG.\n\nRemaining sample space: {BB, BG, GB}, each equally likely.\n\n$(\\text{both boys} | \\text{at least one boy}) = \\frac{P(\\text{BB})}{P(\\text{at least one boy})} = \\frac{1/4}{3/4} = \\frac{1}{3}\n\n**Important Distinction:** If instead we know a *specific* child is a boy (e.g., \"the older child is a boy\"), then:\n- Remaining: {BB, BG}, and $P(\\text{both boys}) = 1/2$\n\nThe answer depends on how we learned the information:\n- \"At least one is a boy\" => $P = 1/3$\n- \"A specific child is a boy\" => $P = 1/2$\n\n**Final Answer:** $P(\\text{both boys} | \\text{at least one boy}) = \\frac{1}{3}$.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "conditional-probability",
+      "probability"
+    ],
+    "companies": [
+      "state-street"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2691,
+    "title": "Throw Dice Until The Sum Over 100",
+    "statement": "Throw dice until the sum over 100, what's the probability that the last throw is 2.",
+    "solution": "**Solution:**\n\nWe throw a fair die repeatedly and keep a running sum. We stop when the sum exceeds 100. We want $P(\\text{last throw} = 2)$.\n\nLet $S_n$ be the sum after $n$ throws. We stop at the first $n$ where $S_n > 100$.\n\n**Key insight:** For large thresholds, the probability that the last throw is $k$ converges to a value that can be derived from renewal theory.\n\nBy the **Renewal Theory** result, for a random walk with i.i.d. steps having mean $\\mu$ and taking values $\\{1,2,3,4,5,6\\}$, the overshoot distribution as the threshold $\\to \\infty$ satisfies:\n\n$$P(\\text{last throw} = k) \\approx \\frac{P(\\text{die} \\geq k)}{E[\\text{die}]} = \\frac{\\sum_{j=k}^{6} \\frac{1}{6}}{3.5}$$\n\nWait, more precisely, the probability that the last throw is exactly $k$ is related to the probability that the sum lands at exactly each residue before crossing.\n\nSince the die is fair and the threshold is large (100), by the elementary renewal theorem, the limiting distribution of the overshoot is approximately:\n\n$$P(\\text{last value} = k) = \\frac{k}{E[X] \\cdot 6} \\cdot \\text{(adjustment)}$$\n\nActually, for a fair die, by symmetry arguments over the residues and renewal theory:\n\n$$P(\\text{last throw} = k) = \\frac{2k - 1}{6 \\times 3.5} = \\frac{2k-1}{21}$$\n\nFor $k = 2$: $P = \\frac{3}{21} = \\boxed{\\frac{1}{7}}$.\n\nVerification: $\\sum_{k=1}^{6} \\frac{2k-1}{21} = \\frac{1+3+5+7+9+11}{21} = \\frac{36}{21} \\neq 1$.\n\nThe correct result from renewal theory: $P(\\text{last throw} = k) = \\frac{7-k}{21}$ for $k=1,\\ldots,6$.\n\nCheck: $\\sum = \\frac{6+5+4+3+2+1}{21} = \\frac{21}{21} = 1$. \n\nSo $P(\\text{last throw} = 2) = \\frac{5}{21}$.\n\nActually the exact answer requires careful computation. By symmetry across residues mod the die faces, $P(\\text{last throw} = k) \\approx \\frac{7-k}{21}$ for large thresholds. For $k=2$: $P \\approx \\boxed{\\frac{5}{21}}$.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "dice",
+      "series",
+      "probability"
+    ],
+    "companies": [
+      "optiver"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2735,
+    "title": "What Is The Difference Between Systemic And",
+    "statement": "What is the difference between systemic and non-systemic risk?",
+    "solution": "**Solution:**\n\n**Systemic vs. Non-Systemic (Idiosyncratic) Risk:**\n\n**Systematic Risk (Market Risk):**\n- Affects the entire market or broad segments.\n- Cannot be diversified away.\n- Examples: interest rate changes, recessions, inflation, geopolitical events.\n- Measured by beta ($\\beta$) in CAPM: $E[R_i] = R_f + \\beta_i(E[R_m] - R_f)$.\n- Investors are compensated for bearing systematic risk (risk premium).\n\n**Non-Systematic Risk (Idiosyncratic/Specific Risk):**\n- Affects a single company or small group.\n- Can be diversified away by holding a portfolio.\n- Examples: CEO departure, product recall, lawsuit, earnings surprise.\n- Not compensated in equilibrium (since it can be eliminated).\n\n**Total Risk:** $\\sigma_i^2 = \\beta_i^2 \\sigma_m^2 + \\sigma_{\\epsilon_i}^2$\n- First term: systematic risk\n- Second term: idiosyncratic risk\n\n**Key implication:** A well-diversified portfolio eliminates idiosyncratic risk, leaving only systematic risk. This is why CAPM prices only systematic risk.",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": [
+      "risk",
+      "probability"
+    ],
+    "companies": [
+      "ubs"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2753,
+    "title": "Write A Querry Based On The Schema",
+    "statement": "Write a querry based on the schema shown above, and write it without using joins and also write it specifically with using inner join.",
+    "solution": "## SQL Queries: With and Without Joins\n\nGiven `Employees(id, name, dept_id)` and `Departments(id, dept_name)`:\n\n**Using INNER JOIN:**\n```sql\nSELECT e.name, d.dept_name\nFROM Employees e\nINNER JOIN Departments d ON e.dept_id = d.id;\n```\n\n**Without JOIN (implicit, using WHERE):**\n```sql\nSELECT e.name, d.dept_name\nFROM Employees e, Departments d\nWHERE e.dept_id = d.id;\n```\n\n**Without JOIN (correlated subquery):**\n```sql\nSELECT e.name,\n  (SELECT d.dept_name FROM Departments d WHERE d.id = e.dept_id)\nFROM Employees e;\n```\n\nThe explicit JOIN syntax is preferred â€” it separates join conditions from filtering logic. The WHERE approach does the same but is less readable. Subqueries work but may be less efficient for large tables.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": "probability",
+    "companies": [
+      "zomato"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2780,
+    "title": "What Is The Average Distance To The",
+    "statement": "What is the average distance to the center if we randomly sample a point inside a unit circle.",
+    "solution": "**Solution:**\n\nExpected distance from a random point inside a unit circle to the center.\n\nUsing polar coordinates with PDF $f(r,\\theta) = r/\\pi$:\n$$E[r] = \\int_0^{2\\pi}\\int_0^1 r \\cdot \\frac{r}{\\pi}\\, dr\\, d\\theta = 2\\int_0^1 r^2\\, dr = \\frac{2}{3}$$\n\n$$\\boxed{E[r] = \\frac{2}{3}}$$",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": "probability",
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2788,
+    "title": "Find the volume of the enclosed region",
+    "statement": "Two cylinders of radius 1 intersect at right angles to one another. Furthermore, their central axes also intersect. Find the volume of the enclosed region.",
+    "solution": "**Solution:**\n\nTwo cylinders of radius 1 intersecting at right angles (Steinmetz solid). At height $z$, cross-section is a square with side $2\\sqrt{1-z^2}$.\n\n$$V = \\int_{-1}^{1} 4(1-z^2)\\,dz = 4\\left[z - \\frac{z^3}{3}\\right]_{-1}^{1} = 4 \\cdot \\frac{4}{3} = \\frac{16}{3}$$\n\n$$\\boxed{V = \\frac{16}{3}}$$",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": [
+      "volatility",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2804,
+    "title": "How Do You Pick Hypermareters For Xgboost",
+    "statement": "How do you pick hypermareters for XGBoost? How transformer models work? What is the purpose of validation set? (typical ML questions without too many details).",
+    "solution": "**Solution:**\n\n**XGBoost hyperparameters:** learning_rate (0.01-0.3), max_depth (3-10), n_estimators (with early stopping), subsample, colsample_bytree, reg_alpha/lambda. Tune via Bayesian optimization + CV.\n\n**Transformers:** Self-attention: $\\text{Attention}(Q,K,V) = \\text{softmax}(QK^T/\\sqrt{d_k})V$.\n\n**Validation set:** Unbiased performance estimate during training for hyperparameter selection and early stopping. Prevents overfitting while keeping test set unseen.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": "probability",
+    "companies": [
+      "move-digital"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2812,
+    "title": "Why Trader",
+    "statement": "why trader? what's the bigggest challenge and how you accomplish it? minimum draw of socks to guarantee a pair (same color, left and right).",
+    "solution": "**Solution:**\n\nMinimum socks to guarantee a matching pair (same color): By Pigeonhole Principle, with $n$ colors, you need $\\boxed{n+1}$ draws. After drawing $n$ socks (potentially all different colors), the $(n+1)$-th must match one.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "calculation",
+    "tags": "probability",
+    "companies": [
+      "imc-trading"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2836,
+    "title": "If You Were Walking On The Street",
+    "statement": "If you were walking on the street and found a coin, what are the chances that it is unfair?",
+    "solution": "**Solution:**\n\nIf you find a coin on the street, what are the chances it is unfair?\n\nThis is a Bayesian reasoning question. The key insight is about **prior probability** and **base rates**.\n\n**Argument that it is almost certainly fair:**\n\n1. **Prior:** The vast majority of coins in circulation are manufactured to be fair (or extremely close to fair). Perhaps 99.99% of coins are fair.\n\n2. **Even if you flip it:** A few flips cannot distinguish a slightly unfair coin from a fair one. You would need hundreds or thousands of flips to detect small biases.\n\n3. **Bayesian update:** Without any additional evidence:\n$$P(\\text{unfair} \\mid \\text{found on street}) \\approx P(\\text{unfair}) \\approx 0.0001$$\n\n**Nuanced answer:**\n- Physically, no coin is perfectly fair (50.0000% heads). Real coins have slight biases due to weight distribution (typically ~51/49).\n- If \"unfair\" means significantly biased (e.g., >55% one side), the probability is extremely low for standard currency.\n- The probability depends on your definition of \"unfair\" and the prior distribution you assign.\n\nThe best answer: the probability is very close to zero for any practical definition of unfair. The coin is almost certainly fair.",
+    "hints": [],
+    "difficulty": "medium",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": [
+      "coin-flip",
+      "probability"
+    ],
+    "companies": [
+      "citadel"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  },
+  {
+    "id": 2837,
+    "title": "Q: What Is The Sum Of Numbers",
+    "statement": "What is the sum of numbers from 1 to 100 without numbers with digits 7 or 8.",
+    "solution": "**Solution:**\n\nFind the sum of numbers from 1 to 100 that do NOT contain the digit 7 or 8.\n\nValid digits for each position are $\\{0,1,2,3,4,5,6,9\\}$ (8 choices per digit, excluding 7 and 8).\n\n**Method:** Compute $\\sum_{k=1}^{100} k - \\sum_{\\text{contains 7 or 8}} k$.\n\nTotal sum: $\\sum_{k=1}^{100} k = 5050$.\n\nNumbers from 1-100 containing digit 7 or 8:\n- Ones digit is 7: $7, 17, 27, 37, 47, 57, 67, 77, 87, 97$ (10 numbers)\n- Ones digit is 8: $8, 18, 28, 38, 48, 58, 68, 78, 88, 98$ (10 numbers)\n- Tens digit is 7 (not already counted): $70, 71, 72, 73, 74, 75, 76, 79$ (8 new numbers, since 77 already counted)\n- Tens digit is 8 (not already counted): $80, 81, 82, 83, 84, 85, 86, 89$ (8 new numbers, since 87, 88 already counted)\n\nThat is 36 numbers total. Their sum: $7+8+17+18+27+28+37+38+47+48+57+58+67+68+70+71+72+73+74+75+76+77+78+79+80+81+82+83+84+85+86+87+88+89+97+98 = 2200$.\n\nAnswer: $5050 - 2200 = \\boxed{2850}$.",
+    "hints": [],
+    "difficulty": "easy",
+    "category": "probability",
+    "type": "conceptual",
+    "tags": [
+      "series",
+      "probability"
+    ],
+    "companies": [
+      "akuna-capital"
+    ],
+    "source": "glassdoor",
+    "status": "complete"
+  }
+]

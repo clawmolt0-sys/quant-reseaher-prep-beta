@@ -1,16 +1,30 @@
 # B003 Audit Summary
 
-- Problems reviewed: 70
-- High urgency (8-10): 21
-- Clear duplicate groups flagged:
-  - 254 ↔ 306 (Weekend rain probability with dependence assumptions)
-  - 568 ↔ 836 (Polya-urn basketball recursion; distribution after 100 attempts)
+- Batch size: 70
+- High-urgency items (>=8): 17
+- Clear duplicate groups: #844/#846, #768/#836
 
-## Primary quality patterns
-- Many entries are under-specified interview notes rather than formal standalone problems.
-- Several prompts leak answers or include hints directly in the statement.
-- Multiple records contain formatting/encoding corruption or pasted template artifacts.
-- Some items depend on missing external context (“Problem 30”, “schema shown above”).
+## Priority observations
+1. Many entries are underspecified or interview-note style rather than formal problems.
+2. Several solutions include conversational self-corrections and should be standardized for parser safety.
+3. A subset are conceptual discussion prompts and should be reclassified or fully formalized.
+4. Duplicate consolidation recommended for the two clear pairs above.
 
-## Recommendation
-Prioritize: (1) remove/merge strict duplicates, (2) repair corrupted records, (3) rewrite vague prompts into formal textbook-style specs with explicit I/O and constraints, and (4) enforce standardized solution formatting across the batch.
+## High-urgency IDs
+- #375 — Quant Developer Phone Screen Topics (urgency 8)
+- #768 — Basketball Throws and Success Rate (urgency 9)
+- #796 — Additional Probability Problems (urgency 9)
+- #836 — Probability Distribution of a Basketball Player's Shots (urgency 9)
+- #844 — Estimate Fair Price Interval (urgency 9)
+- #846 — Calculating the Fair Price (urgency 9)
+- #895 — Fair Game with a Biased Coin (urgency 8)
+- #897 — Monte Carlo Methods (urgency 9)
+- #2567 — What Is The Difference Between American And (urgency 9)
+- #2691 — Throw Dice Until The Sum Over 100 (urgency 8)
+- #2735 — What Is The Difference Between Systemic And (urgency 9)
+- #2753 — Write A Querry Based On The Schema (urgency 8)
+- #2780 — What Is The Average Distance To The (urgency 8)
+- #2804 — How Do You Pick Hypermareters For Xgboost (urgency 8)
+- #2812 — Why Trader (urgency 8)
+- #2836 — If You Were Walking On The Street (urgency 8)
+- #2837 — Q: What Is The Sum Of Numbers (urgency 8)

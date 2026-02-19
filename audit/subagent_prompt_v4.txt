@@ -1,0 +1,70 @@
+Subagent Prompt
+You are auditing interview-prep problems for quality, clarity, formatting, and duplication.
+Your output must match the style, specificity, and structure of the following examples. Read and imitate their depth.
+
+Reference examples (style target)
+Comment for #583 — Original Problem: Pancake Sorting (Prefix Reversal Sorting)
+Brief context: This is the classic pancake sorting problem: given an array (representing a stack from top to bottom), the only allowed operation is a prefix reversal (flip the top k elements), and the objective is to sort the array in nondecreasing order.
+(Clarity + Agent Parsing Risk)
+Title: Rename to “Pancake Sorting via Prefix Reversals” (remove “Variation” unless a genuine constraint modification exists).
+Problem Statement: Rewrite as a formal, textbook-style algorithm problem — explicitly define stack order (top→bottom), formally define the prefix reversal operation, specify precise input/output format, constraints, and include at least one clear step-by-step example; avoid conversational wording.
+Specification: Clearly state the required function signature and expected return type (e.g., sequence of flips vs sorted array) to eliminate ambiguity.
+Solution Section: Restructure into standardized sections (Approach → Intuition → Correctness → Complexity → Code); ensure properly fenced code blocks and a clean, minimal, correct implementation using the standard “max-to-bottom in ≤2 flips per iteration” strategy.
+Final Recommendation:Rewrite and standardize the problem to meet formal coding-platform standards; retain the problem, but upgrade its structure and specification to ensure clarity, professionalism, and agent-readability.
+Urgency: 8/10
+
+Comment for #1882 — Original Problem: Birthday Squad
+Brief context: This is a classical circular permutation probability problem: nnn distinct individuals sit uniformly at random around a round table, and we compute the probability that their ages appear in strictly increasing order (clockwise or counterclockwise).
+(Tagging accuracy + readability issue)
+Company Tags: Current tagging is clearly inflated and inaccurate (multiple banks + prop shops). This is a standard combinatorics problem and should not be attributed broadly; either remove company tags entirely or restrict to verified sources only.
+Problem Statement: Conceptually correct, but could clarify “uniformly at random” over circular permutations and explicitly state that rotations are considered identical to avoid ambiguity.
+Solution Section: Mathematically correct but poorly formatted — currently a single dense paragraph. Break into structured steps (1. Count total circular arrangements → 2. Count favorable arrangements → 3. Compute probability), use line breaks and displayed formulas for clarity.
+Presentation: Add minimal structure (Approach → Counting Argument → Final Probability) to improve readability and agent parsing.
+Final Recommendation: Keep the problem (content is solid), remove or drastically reduce company tags, and refactor the solution into clean, stepwise formatting with proper mathematical structure for clarity and professionalism.
+Urgency: 5/10
+
+Comment for #730 — Original Problem: Generating a Uniform Point in a Circle
+Brief context: This is a standard geometric probability / simulation question: given access to independent 𝑈 ( 0 , 1 ) U(0,1) random variables, construct a method to generate a point uniformly distributed over the unit disk.
+(Specification + structure issue)
+Title: Acceptable, but could be slightly formalized to “Generate a Uniform Random Point in the Unit Disk.”
+Problem Statement: Currently informal and immediately leaks the answer under an “Answer” section. Rewrite as a formal prompt without embedding the solution. Clearly specify assumptions (independent 𝑈 ( 0 , 1 ) U(0,1) variables available), required output (coordinates ( 𝑋 , 𝑌 ) (X,Y)), and what “uniform” means (uniform with respect to area measure).
+Specification: Remove the solution from the problem statement. The problem section should only contain the task, not the method.
+Solution Section: Content is mathematically correct but should be structured into clear steps (Method → Justification via CDF of radius → Alternative method). Avoid mixing explanation into one dense paragraph; use short logical blocks or equations on separate lines.
+Standardization: Enforce separation between Problem and Solution sections; ensure consistent formatting so agents do not confuse embedded answers as part of the prompt.
+Final Recommendation: Keep the problem (strong interview relevance), remove the embedded answer from the statement, rewrite the description in formal problem style, and restructure the solution into clean, stepwise mathematical exposition.
+Urgency: 8/10
+
+Comment for #794 — Original Problem: Generate Uniformly Distributed Points in a Unit Circle
+Brief context: This is the standard problem of generating a uniformly distributed random point in the unit disk using inverse CDF or rejection sampling — conceptually identical to #730.(Duplicate content + weak specification)
+Core Issue: This problem is a direct duplicate of #730 with slightly different wording and higher difficulty tag. It adds no new constraint, variation, or conceptual depth.
+Title: Nearly identical to #730; redundant naming reinforces duplication.
+Problem Statement: Extremely informal and underspecified (no assumptions about available random variables, no required output format, no clarification of “uniform”).
+Solution Section: Same method (polar coordinates with r=Ur=\sqrt{U}r=U​), same explanation, minimal structural differentiation from #730.
+Difficulty Tag: Marked “Hard” without justification; conceptually standard interview-level probability/simulation question.
+Final Recommendation: Remove this problem entirely as a duplicate of #730. If differentiation is desired, merge into a single canonical problem and optionally add a harder extension (e.g., generalization to higher dimensions or proof of uniformity).
+Urgency: 9/10
+
+Inputs
+/home/claw/.openclaw/workspace/quant-researcher-prep/audit/batches/<BATCH_ID>.json
+/home/claw/.openclaw/workspace/quant-researcher-prep_problems.json
+/home/claw/.openclaw/workspace/quant-researcher-prep_similarity.json
+
+Required per-problem output (JSON)
+id
+original_title
+comment (long-form, sectioned, same style as examples)
+urgency_1_10
+duplicate_candidates (ONLY clear duplicates; else empty list)
+duplicate_justification (required only if duplicate_candidates is non-empty)
+proposed_rewrite_prompt (formal textbook style, no leaked solution)
+proposed_solution_outline (Approach → Intuition → Correctness → Complexity → Code Notes)
+
+Duplicate rule (strict)
+Be very careful about potential duplicates
+You need to remember the past problem that you see and its core concept
+If they are indeed duplicate, flag them. Make it high urgency score if you are confident.
+Otherwise, flag it but keep low urgency.
+
+Save outputs
+/home/claw/.openclaw/workspace/quant-researcher-prep/audit/agent_comments/<BATCH_ID>_comments.json
+/home/claw/.openclaw/workspace/quant-researcher-prep/audit/agent_comments/<BATCH_ID>_summary.md

@@ -1,0 +1,728 @@
+[
+  {
+    "id": 446,
+    "original_title": "Sources of Bias in Regression Coefficients",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 563,
+    "original_title": "Regression with Leverage Points",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 161,
+    "original_title": "Errors-in-Variables Regression Bias",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 464,
+    "original_title": "Linear Regression Concepts",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 875,
+    "original_title": "Linear Regression Questions",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      706
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 853,
+    "original_title": "Negative $R^2$ in Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      486
+    ],
+    "proposed_rewrite_prompt": "State the definition of R^2 for linear regression under (i) models with intercept and (ii) models without intercept or evaluated out-of-sample. Determine the attainable range in each case and give explicit examples where R^2<0.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 852,
+    "original_title": "Assumptions of Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      96,
+      2685,
+      2743
+    ],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 958,
+    "original_title": "Impact of Doubling Data Points in Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Given a dataset D={(x_i,y_i)}_{i=1}^n used in OLS regression with intercept, construct D' by duplicating each observation exactly once. Determine how estimated coefficients, R^2, residual variance estimate, standard errors, t-statistics, and p-values change. Provide a proof using matrix notation.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 807,
+    "original_title": "Multicollinearity in Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "In a multiple linear regression model, define multicollinearity formally, explain its effect on coefficient variance and interpretability, and propose diagnostics and mitigation strategies. Include VIF-based criteria.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 448,
+    "original_title": "Duplicate Data Points Impact on Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Given a dataset D={(x_i,y_i)}_{i=1}^n used in OLS regression with intercept, construct D' by duplicating each observation exactly once. Determine how estimated coefficients, R^2, residual variance estimate, standard errors, t-statistics, and p-values change. Provide a proof using matrix notation.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 342,
+    "original_title": "Conditional linear regression of uniform variables",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 777,
+    "original_title": "Correlation and Linear Regression with Different Samples",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nSpecification: The prompt leaks or embeds answer-like guidance; separate the task from any solution hints.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 860,
+    "original_title": "Least Squares Solution in Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "In a multiple linear regression model, define multicollinearity formally, explain its effect on coefficient variance and interpretability, and propose diagnostics and mitigation strategies. Include VIF-based criteria.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 273,
+    "original_title": "Duplicate Observations Effect on OLS",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      471,
+      2708
+    ],
+    "proposed_rewrite_prompt": "Given a dataset D={(x_i,y_i)}_{i=1}^n used in OLS regression with intercept, construct D' by duplicating each observation exactly once. Determine how estimated coefficients, R^2, residual variance estimate, standard errors, t-statistics, and p-values change. Provide a proof using matrix notation.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 1044,
+    "original_title": "Linear Regression Coefficients",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 459,
+    "original_title": "Impact of Adding Derived Features to Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      427
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 832,
+    "original_title": "Error Range in a Linear Model",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      833
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 1040,
+    "original_title": "Regression Coefficients Relationship",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      2782,
+      1797,
+      2619
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 833,
+    "original_title": "Comparison of Coefficients in Linear Models",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      832
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 427,
+    "original_title": "Suppressor Variables in Multiple Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      459
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 1036,
+    "original_title": "Derivation of Linear Regression Formula",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      945,
+      990,
+      2579
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 249,
+    "original_title": "When is median regression better than OLS? Why do we still use OLS?",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Define median (quantile-0.5) regression as an optimization problem. Compare it to OLS in terms of robustness, efficiency, and assumptions. Give one scenario where each method is preferable.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 471,
+    "original_title": "Effect of Duplicating Data on Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      273,
+      2708
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 404,
+    "original_title": "Statistics: OLS assumptions",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 612,
+    "original_title": "Statistics: Effect of Noise on Predictors in OLS",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2579,
+    "original_title": "What Is The Maximum Likelihood Estimator For",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1036,
+      945,
+      990
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 783,
+    "original_title": "Definition and Range of $R^2$ in Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2514,
+    "original_title": "What Is The Influence To R Square",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2665,
+    "original_title": "Tell Me About Your Resume (Especially Stat",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 1783,
+    "original_title": "Linear Regression MLE",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Assume y|X ~ N(X\u03b2,\u03c3^2I). Derive the maximum-likelihood estimators of \u03b2 and \u03c3^2 for linear regression. Show equivalence between the MLE for \u03b2 and the OLS estimator.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 725,
+    "original_title": "Effect of Doubling Dataset on Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nSpecification: The prompt leaks or embeds answer-like guidance; separate the task from any solution hints.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Given a dataset D={(x_i,y_i)}_{i=1}^n used in OLS regression with intercept, construct D' by duplicating each observation exactly once. Determine how estimated coefficients, R^2, residual variance estimate, standard errors, t-statistics, and p-values change. Provide a proof using matrix notation.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2599,
+    "original_title": "What Is The Formula Of Sharpe Ratio",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2817,
+    "original_title": "Through All The Interviews: Deriving Simple Regressions",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 622,
+    "original_title": "Statistics: OLS with Non-linear Data",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 779,
+    "original_title": "Correlation in Split Samples",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 969,
+    "original_title": "Poor Model Performance Overall",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 328,
+    "original_title": "Weighted Lasso Regression KKT Conditions",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 489,
+    "original_title": "Recursive Least Squares",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 1070,
+    "original_title": "Mathematical Statistics Problems",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 910,
+    "original_title": "Light Switch Problem",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 845,
+    "original_title": "Market Making and Fair Price Guessing",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2327,
+    "original_title": "Vowels and Consonants",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 945,
+    "original_title": "Derivation of OLS Coefficient Optimal Solution",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1036,
+      990,
+      2579
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 512,
+    "original_title": "Median Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 7,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Define median (quantile-0.5) regression as an optimization problem. Compare it to OLS in terms of robustness, efficiency, and assumptions. Give one scenario where each method is preferable.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 706,
+    "original_title": "Ordinary Least Squares",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      875
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 96,
+    "original_title": "Linear Regression Assumptions and Violations",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      852,
+      2685,
+      2743
+    ],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2593,
+    "original_title": "estimate parameters, when to use it",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2685,
+    "original_title": "Explain What Linear Regression Is, And The",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      852,
+      96,
+      2743
+    ],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2708,
+    "original_title": "value change",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      273,
+      471
+    ],
+    "proposed_rewrite_prompt": "Given a dataset D={(x_i,y_i)}_{i=1}^n used in OLS regression with intercept, construct D' by duplicating each observation exactly once. Determine how estimated coefficients, R^2, residual variance estimate, standard errors, t-statistics, and p-values change. Provide a proof using matrix notation.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2677,
+    "original_title": "What Is The Difference Between A Numpy",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 1797,
+    "original_title": "Regression Coefficients",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1040,
+      2782,
+      2619
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 1833,
+    "original_title": "Variable Swap",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "For simple linear regression of Y on X and X on Y, derive relationships among slopes, variances, correlation, and R^2. State which quantities are invariant under swapping dependent and independent variables.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 791,
+    "original_title": "Range of $R^2$ for Multiple Regressions",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 402,
+    "original_title": "Effect of Demeaning Variables in OLS",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 990,
+    "original_title": "Closed-Form for OLS Linear Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1036,
+      945,
+      2579
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2782,
+    "original_title": "Linear Regression: If We Exchange X And",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1040,
+      1797,
+      2619
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2843,
+    "original_title": "How Would You Detect And Address Multicollinearity",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "In a multiple linear regression model, define multicollinearity formally, explain its effect on coefficient variance and interpretability, and propose diagnostics and mitigation strategies. Include VIF-based criteria.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2719,
+    "original_title": "When We Perform Ols For A Linear",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2518,
+    "original_title": "How Do You Check If Your Regression",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 441,
+    "original_title": "Best Subset Selection for R-Squared",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2848,
+    "original_title": "Tell Me About Your Cv",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 10,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 2743,
+    "original_title": "Assumptions",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nScope: The item is bundled as a discussion checklist rather than a single well-posed problem; split into atomic, gradable prompts.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      852,
+      96,
+      2685
+    ],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2792,
+    "original_title": "- Whats Is The Variance Of X",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 1852,
+    "original_title": "R Squared Range",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nSpecification: The prompt leaks or embeds answer-like guidance; separate the task from any solution hints.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 8,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 561,
+    "original_title": "OLS Confidence Intervals",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "List the classical OLS assumptions for Y=X\u03b2+\u03b5. For each assumption, state (a) formal condition, (b) consequence of violation, (c) diagnostic, and (d) one remedy. Present concise mathematical justification where relevant.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 901,
+    "original_title": "Regression with Normal Variables",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 486,
+    "original_title": "Negative R-squared",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nProblem Statement: Underspecified and too terse; missing formal input assumptions, required output, and edge-case scope.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      853
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 2619,
+    "original_title": "compute c and d as c = 1/a and d = -b/a",
+    "comment": "Brief context: This is an interview-style linear regression/statistics problem.\n(Duplicate content + specification issue)\nCore Issue: This appears to be a direct or near-direct duplicate of other items in the bank with the same mathematical task and expected answer.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Remove as duplicate or merge into one canonical version with stronger specification.",
+    "urgency_1_10": 9,
+    "duplicate_candidates": [
+      1040,
+      2782,
+      1797
+    ],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible.",
+    "duplicate_justification": "Near-identical core concept, setup, and expected derivation; differences are mostly wording or minor framing, not substantive constraints."
+  },
+  {
+    "id": 98,
+    "original_title": "Linear MMSE Estimation",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  },
+  {
+    "id": 154,
+    "original_title": "Minimize Variance of Linear Combination",
+    "comment": "Brief context: This is an interview-style quantitative reasoning problem.\n(Clarity + structure issue)\nProblem Statement: Convert to a formal, textbook-style specification with explicit givens, required derivation/proof/computation, and expected output format.\nSolution Section: Standardize as Approach \u2192 Intuition \u2192 Correctness/Derivation \u2192 Complexity (if algorithmic) \u2192 Code Notes; avoid paragraph-dump formatting.\nFinal Recommendation: Keep the concept, but rewrite and standardize for clarity, grading consistency, and agent-readability.",
+    "urgency_1_10": 6,
+    "duplicate_candidates": [],
+    "proposed_rewrite_prompt": "Rewrite this as a single formal problem with explicit assumptions, symbols, and required outputs. Avoid conversational prompts, bundled subquestions, and leaked solution hints.",
+    "proposed_solution_outline": "Approach: Formalize notation and assumptions; reduce to standard regression/probability identities.\nIntuition: Explain the key mechanism (projection geometry, variance decomposition, or likelihood) driving the result.\nCorrectness: Provide step-by-step derivation with equations and boundary cases.\nComplexity: OLS closed-form O(np^2 + p^3) where relevant; otherwise O(1) analytical derivation.\nCode Notes: Optional NumPy/R snippet to verify numerically on synthetic data; keep implementation minimal and reproducible."
+  }
+]

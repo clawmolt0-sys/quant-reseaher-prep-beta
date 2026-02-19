@@ -1,5 +1,5 @@
 {
-  "batch_count": 70,
+  "batch_count": 100,
   "batch_size": 70,
   "batches": [
     {
@@ -350,6 +350,156 @@
     {
       "batch_id": "B070",
       "seed": 2181,
+      "size": 70
+    },
+    {
+      "batch_id": "B071",
+      "seed": 1840,
+      "size": 70
+    },
+    {
+      "batch_id": "B072",
+      "seed": 1581,
+      "size": 70
+    },
+    {
+      "batch_id": "B073",
+      "seed": 2127,
+      "size": 70
+    },
+    {
+      "batch_id": "B074",
+      "seed": 1842,
+      "size": 70
+    },
+    {
+      "batch_id": "B075",
+      "seed": 2707,
+      "size": 70
+    },
+    {
+      "batch_id": "B076",
+      "seed": 916,
+      "size": 70
+    },
+    {
+      "batch_id": "B077",
+      "seed": 881,
+      "size": 70
+    },
+    {
+      "batch_id": "B078",
+      "seed": 2616,
+      "size": 70
+    },
+    {
+      "batch_id": "B079",
+      "seed": 971,
+      "size": 70
+    },
+    {
+      "batch_id": "B080",
+      "seed": 2009,
+      "size": 70
+    },
+    {
+      "batch_id": "B081",
+      "seed": 1693,
+      "size": 70
+    },
+    {
+      "batch_id": "B082",
+      "seed": 1426,
+      "size": 70
+    },
+    {
+      "batch_id": "B083",
+      "seed": 2602,
+      "size": 70
+    },
+    {
+      "batch_id": "B084",
+      "seed": 265,
+      "size": 70
+    },
+    {
+      "batch_id": "B085",
+      "seed": 1228,
+      "size": 70
+    },
+    {
+      "batch_id": "B086",
+      "seed": 2377,
+      "size": 70
+    },
+    {
+      "batch_id": "B087",
+      "seed": 2323,
+      "size": 70
+    },
+    {
+      "batch_id": "B088",
+      "seed": 17,
+      "size": 70
+    },
+    {
+      "batch_id": "B089",
+      "seed": 2750,
+      "size": 70
+    },
+    {
+      "batch_id": "B090",
+      "seed": 1384,
+      "size": 70
+    },
+    {
+      "batch_id": "B091",
+      "seed": 1071,
+      "size": 70
+    },
+    {
+      "batch_id": "B092",
+      "seed": 2179,
+      "size": 70
+    },
+    {
+      "batch_id": "B093",
+      "seed": 2032,
+      "size": 70
+    },
+    {
+      "batch_id": "B094",
+      "seed": 2367,
+      "size": 70
+    },
+    {
+      "batch_id": "B095",
+      "seed": 105,
+      "size": 70
+    },
+    {
+      "batch_id": "B096",
+      "seed": 1927,
+      "size": 70
+    },
+    {
+      "batch_id": "B097",
+      "seed": 2287,
+      "size": 70
+    },
+    {
+      "batch_id": "B098",
+      "seed": 140,
+      "size": 70
+    },
+    {
+      "batch_id": "B099",
+      "seed": 600,
+      "size": 70
+    },
+    {
+      "batch_id": "B100",
+      "seed": 435,
       "size": 70
     }
   ]

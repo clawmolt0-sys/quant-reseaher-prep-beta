@@ -1,17 +1,33 @@
-# B002 Audit Summary
+# Audit Summary — B002
 
-- Problems reviewed: **70**
-- Items flagged with clear duplicate candidates: **24**
-- High-urgency items (8-10): **33**
+- Total problems audited: 70
+- High-confidence duplicate flags: 17
+- Dominant issues: overscoped list-style prompts, weak formal specification, and repeated canonical coding questions.
 
-## Primary Findings
-- Significant duplication clusters exist (k-sorted array, sliding-window minimum, queue-with-max, sorted-matrix search, word game, islands, encounter-order sorting, pancake sorting, hash-table variants).
-- Multiple entries leak hints/answers directly in the prompt or are underspecified (missing explicit I/O, constraints, return type).
-- Several records are aggregate lists of many unrelated questions; these are not atomic interview problems and should be split.
-- Formatting is inconsistent; standardize all solutions into: Approach → Intuition → Correctness → Complexity → Code.
+## Topic distribution (rough)
+- general: 32
+- meta_list: 11
+- hashing: 5
+- k_sorted: 4
+- encounter_sort: 3
+- pancake: 2
+- disk_space: 2
+- queue_max: 2
+- word_game: 2
+- sorted_matrix: 2
+- islands: 2
+- quicksort: 1
+- quickselect: 1
+- kway_merge: 1
 
-## Recommended Batch Actions
-1. Merge/delete strict duplicates and keep a single canonical version per concept.
-2. Rewrite prompts in formal textbook style with precise specs and no leaked solutions.
-3. Convert aggregate/meta entries into separate standalone problems.
-4. Normalize code/solution formatting for parser reliability and quality control.
+## Duplicate clusters flagged
+- K-sorted array cluster: 182, 668, 719, 786
+- Disk space sliding-window cluster: 177, 814
+- Encounter-order sorting cluster: 507, 902, 924
+- Sorted matrix search cluster: 663, 840
+- Queue get-max cluster: 190, 514
+- Number of Islands cluster: 891, 904
+- Hashing collision-free cluster: 682, 812
+
+## Recommendation
+Create one canonical problem per concept with strict I/O, constraints, and standardized solution templates; remove omnibus/list entries or split them into atomic items.

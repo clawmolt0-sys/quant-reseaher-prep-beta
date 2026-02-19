@@ -1,16 +1,17 @@
-# B001 Audit Summary
+# Audit Summary — B001
 
-- Total problems audited: 70
-- Problems flagged with clear duplicate candidates: 2
-- Average urgency: 7.00/10
+- Problems reviewed: **70**
+- High-urgency items (8-10): **2**
+- Problems flagged with clear duplicate candidates: **2**
+- Problems needing substantial rewrite/standardization: **25**
 
-## High-Urgency Items (>=8)
-- #2095 Consecutive Heads III — urgency 9/10
-- #2318 Volatile Stock — urgency 8/10
-- #1965 Normal Practice — urgency 8/10
-- #2169 Zeta Zonk IX — urgency 8/10
-- #1865 4Head I — urgency 9/10
+## Duplicate flags
+- #1901 ↔ #1903 (high-confidence near-duplicate, same core combinatorics/cards structure)
 
-## Duplicate Flags
-- #2095 -> [2094, 2093]
-- #1865 -> [1867, 1866, 1868]
+## General quality pattern
+- A large share of entries use informal/interview-chat title phrasing instead of canonical problem naming.
+- Many statements are short and omit explicit input/output contracts and assumptions.
+- Solutions often need stronger sectioning for parser-friendly consumption.
+
+## Recommendation
+Standardize all retained problems into a strict template: Formal Title → Problem Statement (definitions, assumptions, constraints, I/O, examples) → Solution (Approach, Intuition, Correctness, Complexity, Code Notes). Merge/remove duplicate variants in series-style entries.
