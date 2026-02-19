@@ -1,0 +1,1653 @@
+[
+  {
+    "problem_id": 201,
+    "name": "Sudoku Uniqueness Proof",
+    "schema": {
+      "core_mathematical_domain": "Constraint satisfaction / combinatorics",
+      "problem_setup_entities": [
+        "9x9 Sudoku grid",
+        "row/column/box constraints",
+        "given clues"
+      ],
+      "invariant_constraints": [
+        "Each row, column, and 3x3 box is a permutation of 1-9",
+        "Puzzle has a unique completion"
+      ],
+      "target_objective": "Determine minimum number of clues guaranteeing uniqueness"
+    },
+    "schema_text": "Domain: Constraint satisfaction / combinatorics | Entities: 9x9 Sudoku grid, row/column/box constraints, given clues | Constraints: Each row, column, and 3x3 box is a permutation of 1-9, Puzzle has a unique completion | Objective: Determine minimum number of clues guaranteeing uniqueness"
+  },
+  {
+    "problem_id": 202,
+    "name": "Binary Switch Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Number theory / divisors parity",
+      "problem_setup_entities": [
+        "switch indices 1..n",
+        "toggle operations by divisors"
+      ],
+      "invariant_constraints": [
+        "Switch i toggled once per positive divisor of i",
+        "ON iff toggled odd number of times"
+      ],
+      "target_objective": "Characterize indices of switches left ON"
+    },
+    "schema_text": "Domain: Number theory / divisors parity | Entities: switch indices 1..n, toggle operations by divisors | Constraints: Switch i toggled once per positive divisor of i, ON iff toggled odd number of times | Objective: Characterize indices of switches left ON"
+  },
+  {
+    "problem_id": 203,
+    "name": "Nim-Style Counting Game",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial game theory",
+      "problem_setup_entities": [
+        "running total",
+        "moves 1..10",
+        "target 100"
+      ],
+      "invariant_constraints": [
+        "Players alternate and play optimally",
+        "Win when total reaches or exceeds target"
+      ],
+      "target_objective": "Find winning strategy and winning first moves"
+    },
+    "schema_text": "Domain: Combinatorial game theory | Entities: running total, moves 1..10, target 100 | Constraints: Players alternate and play optimally, Win when total reaches or exceeds target | Objective: Find winning strategy and winning first moves"
+  },
+  {
+    "problem_id": 204,
+    "name": "Guess 2/3 of the Average",
+    "schema": {
+      "core_mathematical_domain": "Game theory / Nash equilibrium",
+      "problem_setup_entities": [
+        "n players",
+        "choice interval [0,100]",
+        "target = (2/3)*average choice"
+      ],
+      "invariant_constraints": [
+        "Payoff determined by distance to target",
+        "Simultaneous move game"
+      ],
+      "target_objective": "Find Nash equilibrium profile"
+    },
+    "schema_text": "Domain: Game theory / Nash equilibrium | Entities: n players, choice interval [0,100], target = (2/3)*average choice | Constraints: Payoff determined by distance to target, Simultaneous move game | Objective: Find Nash equilibrium profile"
+  },
+  {
+    "problem_id": 205,
+    "name": "Betting Game: Optimal Strategy with Dice",
+    "schema": {
+      "core_mathematical_domain": "Expected utility / optimal betting",
+      "problem_setup_entities": [
+        "single die outcome",
+        "bet size b",
+        "initial bankroll"
+      ],
+      "invariant_constraints": [
+        "Stake constrained by bankroll",
+        "Different payoff odds scenarios"
+      ],
+      "target_objective": "Maximize Expected Value and expected log-wealth over b"
+    },
+    "schema_text": "Domain: Expected utility / optimal betting | Entities: single die outcome, bet size b, initial bankroll | Constraints: Stake constrained by bankroll, Different payoff odds scenarios | Objective: Maximize Expected Value and expected log-wealth over b"
+  },
+  {
+    "problem_id": 206,
+    "name": "Card Betting Strategy",
+    "schema": {
+      "core_mathematical_domain": "Dynamic betting / martingale-style control",
+      "problem_setup_entities": [
+        "shuffled 52-card deck",
+        "sequential reveals",
+        "bet on next card color"
+      ],
+      "invariant_constraints": [
+        "Can condition on remaining deck composition",
+        "Bet size bounded by current bankroll"
+      ],
+      "target_objective": "Find strategy maximizing expected final bankroll"
+    },
+    "schema_text": "Domain: Dynamic betting / martingale-style control | Entities: shuffled 52-card deck, sequential reveals, bet on next card color | Constraints: Can condition on remaining deck composition, Bet size bounded by current bankroll | Objective: Find strategy maximizing expected final bankroll"
+  },
+  {
+    "problem_id": 207,
+    "name": "Expected Minimum of N Rolls of a 100-Sided Die",
+    "schema": {
+      "core_mathematical_domain": "Order statistics",
+      "problem_setup_entities": [
+        "N i.i.d. fair rolls on {1..100}",
+        "minimum statistic"
+      ],
+      "invariant_constraints": [
+        "Discrete uniform draws independent"
+      ],
+      "target_objective": "Compute Expected Value of the minimum (specific N=2 and general N)"
+    },
+    "schema_text": "Domain: Order statistics | Entities: N i.i.d. fair rolls on {1..100}, minimum statistic | Constraints: Discrete uniform draws independent | Objective: Compute Expected Value of the minimum (specific N=2 and general N)"
+  },
+  {
+    "problem_id": 208,
+    "name": "Arbitrage in Betting Markets",
+    "schema": {
+      "core_mathematical_domain": "Arbitrage / implied probabilities",
+      "problem_setup_entities": [
+        "multiple bookmakers",
+        "decimal odds by outcome",
+        "stakes across books"
+      ],
+      "invariant_constraints": [
+        "Exactly one match outcome occurs",
+        "Guaranteed profit exists iff inverse-odds sum < 1 using best odds"
+      ],
+      "target_objective": "Detect arbitrage and compute stake allocation"
+    },
+    "schema_text": "Domain: Arbitrage / implied probabilities | Entities: multiple bookmakers, decimal odds by outcome, stakes across books | Constraints: Exactly one match outcome occurs, Guaranteed profit exists iff inverse-odds sum < 1 using best odds | Objective: Detect arbitrage and compute stake allocation"
+  },
+  {
+    "problem_id": 209,
+    "name": "Simplified Mahjong: Expected Draws to Complete Hand",
+    "schema": {
+      "core_mathematical_domain": "Coupon collector / Markov expectation",
+      "problem_setup_entities": [
+        "tile types sampled with replacement",
+        "required counts per type"
+      ],
+      "invariant_constraints": [
+        "Independent draws from fixed categorical distribution"
+      ],
+      "target_objective": "Compute Expected Value of draws to hit completion state"
+    },
+    "schema_text": "Domain: Coupon collector / Markov expectation | Entities: tile types sampled with replacement, required counts per type | Constraints: Independent draws from fixed categorical distribution | Objective: Compute Expected Value of draws to hit completion state"
+  },
+  {
+    "problem_id": 210,
+    "name": "Pirate Game (Backward Induction)",
+    "schema": {
+      "core_mathematical_domain": "Backward induction game theory",
+      "problem_setup_entities": [
+        "5 pirates ordered by seniority",
+        "100 gold coins",
+        "majority voting rule"
+      ],
+      "invariant_constraints": [
+        "Rational preferences: survival > gold > others' outcomes",
+        "Rejected proposer is eliminated"
+      ],
+      "target_objective": "Derive subgame-perfect proposal of Pirate A"
+    },
+    "schema_text": "Domain: Backward induction game theory | Entities: 5 pirates ordered by seniority, 100 gold coins, majority voting rule | Constraints: Rational preferences: survival > gold > others' outcomes, Rejected proposer is eliminated | Objective: Derive subgame-perfect proposal of Pirate A"
+  },
+  {
+    "problem_id": 211,
+    "name": "Second Largest with Minimum Comparisons",
+    "schema": {
+      "core_mathematical_domain": "Comparison-based algorithms",
+      "problem_setup_entities": [
+        "n distinct elements",
+        "comparison tournament tree"
+      ],
+      "invariant_constraints": [
+        "Only pairwise comparisons allowed"
+      ],
+      "target_objective": "Find second largest with minimum comparisons"
+    },
+    "schema_text": "Domain: Comparison-based algorithms | Entities: n distinct elements, comparison tournament tree | Constraints: Only pairwise comparisons allowed | Objective: Find second largest with minimum comparisons"
+  },
+  {
+    "problem_id": 212,
+    "name": "GARCH(1,1) Model",
+    "schema": {
+      "core_mathematical_domain": "Time-series volatility modeling",
+      "problem_setup_entities": [
+        "GARCH(1,1) parameters",
+        "lagged return and variance"
+      ],
+      "invariant_constraints": [
+        "sigma_t^2 = omega + alpha r_{t-1}^2 + beta sigma_{t-1}^2",
+        "Stationarity requires alpha+beta<1"
+      ],
+      "target_objective": "Compute conditional variance and unconditional variance"
+    },
+    "schema_text": "Domain: Time-series volatility modeling | Entities: GARCH(1,1) parameters, lagged return and variance | Constraints: sigma_t^2 = omega + alpha r_{t-1}^2 + beta sigma_{t-1}^2, Stationarity requires alpha+beta<1 | Objective: Compute conditional variance and unconditional variance"
+  },
+  {
+    "problem_id": 213,
+    "name": "Gradient Clipping Training Neural Networks. Solve,",
+    "schema": {
+      "core_mathematical_domain": "Optimization in deep learning",
+      "problem_setup_entities": [
+        "network gradients",
+        "clipping threshold"
+      ],
+      "invariant_constraints": [
+        "Exploding gradients destabilize updates"
+      ],
+      "target_objective": "Explain clipping methods and what issue they solve"
+    },
+    "schema_text": "Domain: Optimization in deep learning | Entities: network gradients, clipping threshold | Constraints: Exploding gradients destabilize updates | Objective: Explain clipping methods and what issue they solve"
+  },
+  {
+    "problem_id": 214,
+    "name": "Recursive Least Squares Update",
+    "schema": {
+      "core_mathematical_domain": "Recursive estimation / linear algebra",
+      "problem_setup_entities": [
+        "OLS normal equations",
+        "new data point update",
+        "inverse Gram matrix"
+      ],
+      "invariant_constraints": [
+        "Apply Sherman-Morrison / RLS recursion"
+      ],
+      "target_objective": "Derive recursive update for coefficients without full inversion"
+    },
+    "schema_text": "Domain: Recursive estimation / linear algebra | Entities: OLS normal equations, new data point update, inverse Gram matrix | Constraints: Apply Sherman-Morrison / RLS recursion | Objective: Derive recursive update for coefficients without full inversion"
+  },
+  {
+    "problem_id": 215,
+    "name": "Perturbation Analysis in Logistic Regression",
+    "schema": {
+      "core_mathematical_domain": "Logistic regression sensitivity",
+      "problem_setup_entities": [
+        "sigmoid probability",
+        "feature perturbation delta"
+      ],
+      "invariant_constraints": [
+        "p = sigma(beta^T x)",
+        "Use local first-order expansion"
+      ],
+      "target_objective": "Express change in predicted probability from perturbing X_j"
+    },
+    "schema_text": "Domain: Logistic regression sensitivity | Entities: sigmoid probability, feature perturbation delta | Constraints: p = sigma(beta^T x), Use local first-order expansion | Objective: Express change in predicted probability from perturbing X_j"
+  },
+  {
+    "problem_id": 216,
+    "name": "Kalman Filter: Basic Update Equations",
+    "schema": {
+      "core_mathematical_domain": "State-space filtering",
+      "problem_setup_entities": [
+        "latent state x_t",
+        "process noise Q",
+        "measurement noise R"
+      ],
+      "invariant_constraints": [
+        "Linear Gaussian model",
+        "Predict-update recursion"
+      ],
+      "target_objective": "Derive Kalman filter equations for mean and covariance"
+    },
+    "schema_text": "Domain: State-space filtering | Entities: latent state x_t, process noise Q, measurement noise R | Constraints: Linear Gaussian model, Predict-update recursion | Objective: Derive Kalman filter equations for mean and covariance"
+  },
+  {
+    "problem_id": 217,
+    "name": "Handling Outliers in Kalman Filter",
+    "schema": {
+      "core_mathematical_domain": "Robust state estimation",
+      "problem_setup_entities": [
+        "Kalman filter",
+        "outlier-contaminated measurements"
+      ],
+      "invariant_constraints": [
+        "Standard Gaussian update is sensitive to large innovations"
+      ],
+      "target_objective": "Describe robustification approaches for outliers"
+    },
+    "schema_text": "Domain: Robust state estimation | Entities: Kalman filter, outlier-contaminated measurements | Constraints: Standard Gaussian update is sensitive to large innovations | Objective: Describe robustification approaches for outliers"
+  },
+  {
+    "problem_id": 218,
+    "name": "PCA Derivation: First Principal Component",
+    "schema": {
+      "core_mathematical_domain": "Principal component analysis",
+      "problem_setup_entities": [
+        "centered data matrix X",
+        "covariance matrix Sigma",
+        "unit direction vector w"
+      ],
+      "invariant_constraints": [
+        "Maximize projected variance under ||w||=1"
+      ],
+      "target_objective": "Derive first principal component direction"
+    },
+    "schema_text": "Domain: Principal component analysis | Entities: centered data matrix X, covariance matrix Sigma, unit direction vector w | Constraints: Maximize projected variance under ||w||=1 | Objective: Derive first principal component direction"
+  },
+  {
+    "problem_id": 219,
+    "name": "GARCH vs HAR-RV for Volatility Forecasting",
+    "schema": {
+      "core_mathematical_domain": "Volatility forecasting model comparison",
+      "problem_setup_entities": [
+        "GARCH(1,1)",
+        "HAR-RV"
+      ],
+      "invariant_constraints": [
+        "Different data inputs and memory structures"
+      ],
+      "target_objective": "Compare model assumptions and use-cases"
+    },
+    "schema_text": "Domain: Volatility forecasting model comparison | Entities: GARCH(1,1), HAR-RV | Constraints: Different data inputs and memory structures | Objective: Compare model assumptions and use-cases"
+  },
+  {
+    "problem_id": 220,
+    "name": "Open question: Portfolio optimization",
+    "schema": {
+      "core_mathematical_domain": "Portfolio optimization",
+      "problem_setup_entities": [
+        "alpha signals across N stocks",
+        "portfolio weights",
+        "risk/neutrality constraints"
+      ],
+      "invariant_constraints": [
+        "Weights subject to budget/risk/exposure constraints"
+      ],
+      "target_objective": "Map alpha signals into implementable neutral portfolio weights"
+    },
+    "schema_text": "Domain: Portfolio optimization | Entities: alpha signals across N stocks, portfolio weights, risk/neutrality constraints | Constraints: Weights subject to budget/risk/exposure constraints | Objective: Map alpha signals into implementable neutral portfolio weights"
+  },
+  {
+    "problem_id": 221,
+    "name": "Factor Neutralization for Alpha Signals",
+    "schema": {
+      "core_mathematical_domain": "Factor neutralization / regression projection",
+      "problem_setup_entities": [
+        "alpha vector",
+        "risk factor exposures",
+        "residual alpha"
+      ],
+      "invariant_constraints": [
+        "Neutralized alpha has zero exposure to selected factors"
+      ],
+      "target_objective": "Construct factor-neutral alpha"
+    },
+    "schema_text": "Domain: Factor neutralization / regression projection | Entities: alpha vector, risk factor exposures, residual alpha | Constraints: Neutralized alpha has zero exposure to selected factors | Objective: Construct factor-neutral alpha"
+  },
+  {
+    "problem_id": 222,
+    "name": "Alpha Factor Screening Strategy",
+    "schema": {
+      "core_mathematical_domain": "Alpha research process",
+      "problem_setup_entities": [
+        "candidate factors",
+        "backtest and diagnostics",
+        "selection criteria"
+      ],
+      "invariant_constraints": [
+        "Avoid overfitting and redundancy",
+        "Use out-of-sample validation"
+      ],
+      "target_objective": "Design screening framework to choose deployable alphas"
+    },
+    "schema_text": "Domain: Alpha research process | Entities: candidate factors, backtest and diagnostics, selection criteria | Constraints: Avoid overfitting and redundancy, Use out-of-sample validation | Objective: Design screening framework to choose deployable alphas"
+  },
+  {
+    "problem_id": 224,
+    "name": "Time Series Random Variable Alternates Between",
+    "schema": {
+      "core_mathematical_domain": "Time-series regression interpretation",
+      "problem_setup_entities": [
+        "alternating sequence +/-1",
+        "time index t"
+      ],
+      "invariant_constraints": [
+        "Deterministic alternating pattern"
+      ],
+      "target_objective": "Determine signs of OLS slope and intercept in specified scenarios"
+    },
+    "schema_text": "Domain: Time-series regression interpretation | Entities: alternating sequence +/-1, time index t | Constraints: Deterministic alternating pattern | Objective: Determine signs of OLS slope and intercept in specified scenarios"
+  },
+  {
+    "problem_id": 225,
+    "name": "Merge intervals",
+    "schema": {
+      "core_mathematical_domain": "Interval algorithms",
+      "problem_setup_entities": [
+        "list of closed intervals",
+        "sorted by start"
+      ],
+      "invariant_constraints": [
+        "Overlapping intervals merge into union segments"
+      ],
+      "target_objective": "Output merged non-overlapping intervals"
+    },
+    "schema_text": "Domain: Interval algorithms | Entities: list of closed intervals, sorted by start | Constraints: Overlapping intervals merge into union segments | Objective: Output merged non-overlapping intervals"
+  },
+  {
+    "problem_id": 226,
+    "name": "Hyperparameter Tuning and Overfitting Diagnostics",
+    "schema": {
+      "core_mathematical_domain": "Model validation / hyperparameter tuning",
+      "problem_setup_entities": [
+        "hyperparameter search",
+        "out-of-sample performance"
+      ],
+      "invariant_constraints": [
+        "Generalization assessed on holdout/CV"
+      ],
+      "target_objective": "Interpret flat OOS response and discuss tuning methodology"
+    },
+    "schema_text": "Domain: Model validation / hyperparameter tuning | Entities: hyperparameter search, out-of-sample performance | Constraints: Generalization assessed on holdout/CV | Objective: Interpret flat OOS response and discuss tuning methodology"
+  },
+  {
+    "problem_id": 227,
+    "name": "Joint Normal Conditional Estimation and Confidence",
+    "schema": {
+      "core_mathematical_domain": "Multivariate normal conditioning",
+      "problem_setup_entities": [
+        "jointly normal (x1,x2)",
+        "observed x1",
+        "conditional distribution of x2"
+      ],
+      "invariant_constraints": [
+        "Use Gaussian conditional mean/variance formulas"
+      ],
+      "target_objective": "Compute estimate and 95% confidence interval for x2"
+    },
+    "schema_text": "Domain: Multivariate normal conditioning | Entities: jointly normal (x1,x2), observed x1, conditional distribution of x2 | Constraints: Use Gaussian conditional mean/variance formulas | Objective: Compute estimate and 95% confidence interval for x2"
+  },
+  {
+    "problem_id": 228,
+    "name": "Decreasing Uniform Sequence Properties",
+    "schema": {
+      "core_mathematical_domain": "Order constraints on i.i.d. samples",
+      "problem_setup_entities": [
+        "uniform samples on [0,1]",
+        "monotone decreasing event"
+      ],
+      "invariant_constraints": [
+        "Conditioning on ranking/order statistics"
+      ],
+      "target_objective": "Characterize properties of the constrained sequence"
+    },
+    "schema_text": "Domain: Order constraints on i.i.d. samples | Entities: uniform samples on [0,1], monotone decreasing event | Constraints: Conditioning on ranking/order statistics | Objective: Characterize properties of the constrained sequence"
+  },
+  {
+    "problem_id": 230,
+    "name": "Simulating Correlated Normal Variables via Cholesky",
+    "schema": {
+      "core_mathematical_domain": "Simulation of correlated Gaussians",
+      "problem_setup_entities": [
+        "target covariance matrix",
+        "independent standard normal generator",
+        "Cholesky factor"
+      ],
+      "invariant_constraints": [
+        "Covariance must be PSD"
+      ],
+      "target_objective": "Generate samples with required joint normal covariance"
+    },
+    "schema_text": "Domain: Simulation of correlated Gaussians | Entities: target covariance matrix, independent standard normal generator, Cholesky factor | Constraints: Covariance must be PSD | Objective: Generate samples with required joint normal covariance"
+  },
+  {
+    "problem_id": 231,
+    "name": "Simulating Fair Coin from Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Randomness extraction",
+      "problem_setup_entities": [
+        "biased coin with p≈0.99",
+        "target fair bit"
+      ],
+      "invariant_constraints": [
+        "Only coin flips allowed",
+        "Output unbiased result"
+      ],
+      "target_objective": "Design fair-game procedure minimizing worst-case tosses"
+    },
+    "schema_text": "Domain: Randomness extraction | Entities: biased coin with p≈0.99, target fair bit | Constraints: Only coin flips allowed, Output unbiased result | Objective: Design fair-game procedure minimizing worst-case tosses"
+  },
+  {
+    "problem_id": 232,
+    "name": "Counting Integer Partitions with Ordering",
+    "schema": {
+      "core_mathematical_domain": "Asymptotic combinatorics",
+      "problem_setup_entities": [
+        "integer triples x<=y<=z",
+        "sum constraint x+y+z=N"
+      ],
+      "invariant_constraints": [
+        "Positive integer partitions into 3 ordered parts"
+      ],
+      "target_objective": "Find asymptotic constant for f(N)/N^2"
+    },
+    "schema_text": "Domain: Asymptotic combinatorics | Entities: integer triples x<=y<=z, sum constraint x+y+z=N | Constraints: Positive integer partitions into 3 ordered parts | Objective: Find asymptotic constant for f(N)/N^2"
+  },
+  {
+    "problem_id": 233,
+    "name": "Replicating Payoffs with Calls and Puts",
+    "schema": {
+      "core_mathematical_domain": "Option replication / integral identities",
+      "problem_setup_entities": [
+        "random payoff X",
+        "call and put payoffs",
+        "smooth function f"
+      ],
+      "invariant_constraints": [
+        "Use decomposition via f'' and linear terms"
+      ],
+      "target_objective": "Express E[f(X)] from moments of linear/call/put components"
+    },
+    "schema_text": "Domain: Option replication / integral identities | Entities: random payoff X, call and put payoffs, smooth function f | Constraints: Use decomposition via f'' and linear terms | Objective: Express E[f(X)] from moments of linear/call/put components"
+  },
+  {
+    "problem_id": 234,
+    "name": "Round-Robin Tournament Point Distribution",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics of round-robin scoring",
+      "problem_setup_entities": [
+        "N teams",
+        "win/draw point rules",
+        "bottom-10 subset"
+      ],
+      "invariant_constraints": [
+        "Each match contributes total 2 points"
+      ],
+      "target_objective": "Determine N satisfying point-share condition"
+    },
+    "schema_text": "Domain: Combinatorics of round-robin scoring | Entities: N teams, win/draw point rules, bottom-10 subset | Constraints: Each match contributes total 2 points | Objective: Determine N satisfying point-share condition"
+  },
+  {
+    "problem_id": 235,
+    "name": "There are Identical Bins and Distinct Balls",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / set partitions",
+      "problem_setup_entities": [
+        "m distinct balls",
+        "N identical bins"
+      ],
+      "invariant_constraints": [
+        "Bins unlabeled",
+        "optional minimum occupancy constraints"
+      ],
+      "target_objective": "Count number of valid distributions"
+    },
+    "schema_text": "Domain: Combinatorics / set partitions | Entities: m distinct balls, N identical bins | Constraints: Bins unlabeled, optional minimum occupancy constraints | Objective: Count number of valid distributions"
+  },
+  {
+    "problem_id": 236,
+    "name": "There is a black box containing $K$ dollars",
+    "schema": {
+      "core_mathematical_domain": "Game theory / mechanism with budget cap",
+      "problem_setup_entities": [
+        "players choose claims x,y",
+        "box value K"
+      ],
+      "invariant_constraints": [
+        "Payoffs x,y only if x+y<=K, else zero"
+      ],
+      "target_objective": "Find rational strategy across one-shot and repeated variants"
+    },
+    "schema_text": "Domain: Game theory / mechanism with budget cap | Entities: players choose claims x,y, box value K | Constraints: Payoffs x,y only if x+y<=K, else zero | Objective: Find rational strategy across one-shot and repeated variants"
+  },
+  {
+    "problem_id": 237,
+    "name": "Largest Number Array Minimum Number Comparisons.",
+    "schema": {
+      "core_mathematical_domain": "Comparison-based algorithms",
+      "problem_setup_entities": [
+        "array of distinct numbers",
+        "pairwise comparisons"
+      ],
+      "invariant_constraints": [
+        "Need second order statistic"
+      ],
+      "target_objective": "Minimize comparisons to find second largest"
+    },
+    "schema_text": "Domain: Comparison-based algorithms | Entities: array of distinct numbers, pairwise comparisons | Constraints: Need second order statistic | Objective: Minimize comparisons to find second largest"
+  },
+  {
+    "problem_id": 238,
+    "name": "Probability That All 5 Lie",
+    "schema": {
+      "core_mathematical_domain": "Geometric probability on sphere",
+      "problem_setup_entities": [
+        "5 random points on S^2",
+        "hemisphere containment"
+      ],
+      "invariant_constraints": [
+        "Points sampled uniformly"
+      ],
+      "target_objective": "Compute probability all points lie in a common hemisphere"
+    },
+    "schema_text": "Domain: Geometric probability on sphere | Entities: 5 random points on S^2, hemisphere containment | Constraints: Points sampled uniformly | Objective: Compute probability all points lie in a common hemisphere"
+  },
+  {
+    "problem_id": 239,
+    "name": "Meeting Probability for N Uniform Arrivals",
+    "schema": {
+      "core_mathematical_domain": "Geometric probability / arrival windows",
+      "problem_setup_entities": [
+        "N uniform arrival times on interval",
+        "fixed waiting time 15 min"
+      ],
+      "invariant_constraints": [
+        "All meet iff max-min <= wait window"
+      ],
+      "target_objective": "Compute meeting probability"
+    },
+    "schema_text": "Domain: Geometric probability / arrival windows | Entities: N uniform arrival times on interval, fixed waiting time 15 min | Constraints: All meet iff max-min <= wait window | Objective: Compute meeting probability"
+  },
+  {
+    "problem_id": 240,
+    "name": "Expected Good Neighbor Points on Unit Interval",
+    "schema": {
+      "core_mathematical_domain": "Random points / nearest-neighbor graph",
+      "problem_setup_entities": [
+        "N i.i.d. U(0,1) points",
+        "mutual nearest-neighbor relation"
+      ],
+      "invariant_constraints": [
+        "Good point if nearest-neighbor relation is reciprocal"
+      ],
+      "target_objective": "Find and prove Expected Value of number of good points"
+    },
+    "schema_text": "Domain: Random points / nearest-neighbor graph | Entities: N i.i.d. U(0,1) points, mutual nearest-neighbor relation | Constraints: Good point if nearest-neighbor relation is reciprocal | Objective: Find and prove Expected Value of number of good points"
+  },
+  {
+    "problem_id": 241,
+    "name": "Expected Length Random Points Unit Sphere.",
+    "schema": {
+      "core_mathematical_domain": "Geometric probability",
+      "problem_setup_entities": [
+        "two random points on unit sphere",
+        "great-circle/arc distance"
+      ],
+      "invariant_constraints": [
+        "Uniform surface measure"
+      ],
+      "target_objective": "Compute expected arc length"
+    },
+    "schema_text": "Domain: Geometric probability | Entities: two random points on unit sphere, great-circle/arc distance | Constraints: Uniform surface measure | Objective: Compute expected arc length"
+  },
+  {
+    "problem_id": 242,
+    "name": "Expected Number of Balls Left",
+    "schema": {
+      "core_mathematical_domain": "Stochastic process / stopping time",
+      "problem_setup_entities": [
+        "two boxes each with n balls",
+        "random box selection and draw"
+      ],
+      "invariant_constraints": [
+        "Stop when selected box is empty"
+      ],
+      "target_objective": "Compute Expected Value of balls remaining in other box"
+    },
+    "schema_text": "Domain: Stochastic process / stopping time | Entities: two boxes each with n balls, random box selection and draw | Constraints: Stop when selected box is empty | Objective: Compute Expected Value of balls remaining in other box"
+  },
+  {
+    "problem_id": 243,
+    "name": "Asymmetric Random Walk with Absorbing Barrier",
+    "schema": {
+      "core_mathematical_domain": "Markov chains / random walk hitting time",
+      "problem_setup_entities": [
+        "asymmetric 1D walk",
+        "absorbing state at 0",
+        "start at 1"
+      ],
+      "invariant_constraints": [
+        "Transition probabilities fixed per step"
+      ],
+      "target_objective": "Find expected steps to absorption"
+    },
+    "schema_text": "Domain: Markov chains / random walk hitting time | Entities: asymmetric 1D walk, absorbing state at 0, start at 1 | Constraints: Transition probabilities fixed per step | Objective: Find expected steps to absorption"
+  },
+  {
+    "problem_id": 244,
+    "name": "Nearest Neighbor Distance in Unit Ball",
+    "schema": {
+      "core_mathematical_domain": "Order statistics in unit ball",
+      "problem_setup_entities": [
+        "N uniform points in unit ball",
+        "distances to origin",
+        "minimum distance D"
+      ],
+      "invariant_constraints": [
+        "i.i.d. radial distribution"
+      ],
+      "target_objective": "Compute median of D"
+    },
+    "schema_text": "Domain: Order statistics in unit ball | Entities: N uniform points in unit ball, distances to origin, minimum distance D | Constraints: i.i.d. radial distribution | Objective: Compute median of D"
+  },
+  {
+    "problem_id": 245,
+    "name": "Power of Two Starts with Digit One",
+    "schema": {
+      "core_mathematical_domain": "Benford / equidistribution modulo 1",
+      "problem_setup_entities": [
+        "sequence 2^n",
+        "leading digit event"
+      ],
+      "invariant_constraints": [
+        "Leading digit determined by fractional parts of n log10 2"
+      ],
+      "target_objective": "Compute limiting probability leading digit is 1"
+    },
+    "schema_text": "Domain: Benford / equidistribution modulo 1 | Entities: sequence 2^n, leading digit event | Constraints: Leading digit determined by fractional parts of n log10 2 | Objective: Compute limiting probability leading digit is 1"
+  },
+  {
+    "problem_id": 246,
+    "name": "Expected Time Between Supervisor Referrals",
+    "schema": {
+      "core_mathematical_domain": "Poisson thinning and superposition",
+      "problem_setup_entities": [
+        "two exponential arrival streams",
+        "referral probabilities p1,p2"
+      ],
+      "invariant_constraints": [
+        "Referred events are thinned Poisson streams"
+      ],
+      "target_objective": "Find expected inter-referral time"
+    },
+    "schema_text": "Domain: Poisson thinning and superposition | Entities: two exponential arrival streams, referral probabilities p1,p2 | Constraints: Referred events are thinned Poisson streams | Objective: Find expected inter-referral time"
+  },
+  {
+    "problem_id": 247,
+    "name": "Random Seating Displacement Problem",
+    "schema": {
+      "core_mathematical_domain": "Random sequential adsorption (1D)",
+      "problem_setup_entities": [
+        "n seats line",
+        "sequential random placement",
+        "hard-core adjacency exclusion"
+      ],
+      "invariant_constraints": [
+        "Cannot occupy adjacent seats"
+      ],
+      "target_objective": "Compute expected final occupancy"
+    },
+    "schema_text": "Domain: Random sequential adsorption (1D) | Entities: n seats line, sequential random placement, hard-core adjacency exclusion | Constraints: Cannot occupy adjacent seats | Objective: Compute expected final occupancy"
+  },
+  {
+    "problem_id": 248,
+    "name": "1 , , Flip A Fair Coin If Heads, If Tails",
+    "schema": {
+      "core_mathematical_domain": "Mixture distributions and joint normality",
+      "problem_setup_entities": [
+        "mixture of normals via fair coin",
+        "sign-flip product Y=XZ"
+      ],
+      "invariant_constraints": [
+        "Independence/symmetry conditions"
+      ],
+      "target_objective": "Derive pdf/cdf and assess normality/joint normality claims"
+    },
+    "schema_text": "Domain: Mixture distributions and joint normality | Entities: mixture of normals via fair coin, sign-flip product Y=XZ | Constraints: Independence/symmetry conditions | Objective: Derive pdf/cdf and assess normality/joint normality claims"
+  },
+  {
+    "problem_id": 249,
+    "name": "Median Regression Better Still",
+    "schema": {
+      "core_mathematical_domain": "Robust regression",
+      "problem_setup_entities": [
+        "OLS loss vs absolute loss",
+        "median/quantile target"
+      ],
+      "invariant_constraints": [
+        "Different sensitivity to outliers/heavy tails"
+      ],
+      "target_objective": "Explain when median regression preferred and why OLS remains common"
+    },
+    "schema_text": "Domain: Robust regression | Entities: OLS loss vs absolute loss, median/quantile target | Constraints: Different sensitivity to outliers/heavy tails | Objective: Explain when median regression preferred and why OLS remains common"
+  },
+  {
+    "problem_id": 250,
+    "name": "Highly Correlated Variables in OLS and Regularization",
+    "schema": {
+      "core_mathematical_domain": "Multicollinearity and regularization",
+      "problem_setup_entities": [
+        "highly correlated predictors",
+        "OLS/Lasso/Ridge coefficients",
+        "measurement noise in regressors"
+      ],
+      "invariant_constraints": [
+        "Collinearity inflates variance",
+        "Errors-in-variables induces attenuation"
+      ],
+      "target_objective": "Explain coefficient behavior and variable-selection implications"
+    },
+    "schema_text": "Domain: Multicollinearity and regularization | Entities: highly correlated predictors, OLS/Lasso/Ridge coefficients, measurement noise in regressors | Constraints: Collinearity inflates variance, Errors-in-variables induces attenuation | Objective: Explain coefficient behavior and variable-selection implications"
+  },
+  {
+    "problem_id": 251,
+    "name": "Black Vanilla Regression Routine Ridge Regression",
+    "schema": {
+      "core_mathematical_domain": "Regularization implementation",
+      "problem_setup_entities": [
+        "black-box least-squares solver",
+        "ridge penalty lambda||beta||^2"
+      ],
+      "invariant_constraints": [
+        "Ridge can be recast as augmented least squares"
+      ],
+      "target_objective": "Implement ridge using vanilla regression routine"
+    },
+    "schema_text": "Domain: Regularization implementation | Entities: black-box least-squares solver, ridge penalty lambda||beta||^2 | Constraints: Ridge can be recast as augmented least squares | Objective: Implement ridge using vanilla regression routine"
+  },
+  {
+    "problem_id": 252,
+    "name": "Regularized regression:",
+    "schema": {
+      "core_mathematical_domain": "Penalized regression theory",
+      "problem_setup_entities": [
+        "Lasso/Ridge/Elastic Net",
+        "sparsity and uniqueness"
+      ],
+      "invariant_constraints": [
+        "Penalty geometry determines solution structure"
+      ],
+      "target_objective": "Compare methods and selection criteria"
+    },
+    "schema_text": "Domain: Penalized regression theory | Entities: Lasso/Ridge/Elastic Net, sparsity and uniqueness | Constraints: Penalty geometry determines solution structure | Objective: Compare methods and selection criteria"
+  },
+  {
+    "problem_id": 253,
+    "name": "Smallest Largest Integer Whose Digits Multiply",
+    "schema": {
+      "core_mathematical_domain": "Digit-factorization number construction",
+      "problem_setup_entities": [
+        "integer digits 0-9",
+        "digit product target 10000"
+      ],
+      "invariant_constraints": [
+        "Product of decimal digits fixed"
+      ],
+      "target_objective": "Find smallest and largest integers meeting digit-product constraint"
+    },
+    "schema_text": "Domain: Digit-factorization number construction | Entities: integer digits 0-9, digit product target 10000 | Constraints: Product of decimal digits fixed | Objective: Find smallest and largest integers meeting digit-product constraint"
+  },
+  {
+    "problem_id": 254,
+    "name": "Weekend Rain Probability Computation",
+    "schema": {
+      "core_mathematical_domain": "Elementary probability bounds",
+      "problem_setup_entities": [
+        "rain events Saturday/Sunday",
+        "marginal probabilities"
+      ],
+      "invariant_constraints": [
+        "P(Sat)=0.2, P(Sun)=0.3",
+        "dependence may be unknown"
+      ],
+      "target_objective": "Compute at-least-once rain probability under independence and bounds without it"
+    },
+    "schema_text": "Domain: Elementary probability bounds | Entities: rain events Saturday/Sunday, marginal probabilities | Constraints: P(Sat)=0.2, P(Sun)=0.3, dependence may be unknown | Objective: Compute at-least-once rain probability under independence and bounds without it"
+  },
+  {
+    "problem_id": 255,
+    "name": "Contains Blue Balls Balls. Draw Without",
+    "schema": {
+      "core_mathematical_domain": "Optimal stopping / sequential decision",
+      "problem_setup_entities": [
+        "urn with red/blue balls without replacement",
+        "gain/loss per color"
+      ],
+      "invariant_constraints": [
+        "Can stop strategically based on remaining composition"
+      ],
+      "target_objective": "Find optimal strategy and Expected Value"
+    },
+    "schema_text": "Domain: Optimal stopping / sequential decision | Entities: urn with red/blue balls without replacement, gain/loss per color | Constraints: Can stop strategically based on remaining composition | Objective: Find optimal strategy and Expected Value"
+  },
+  {
+    "problem_id": 256,
+    "name": "Compare the expectations:",
+    "schema": {
+      "core_mathematical_domain": "Expectation computation",
+      "problem_setup_entities": [
+        "die rolls",
+        "functions of outcomes (square/product/median)"
+      ],
+      "invariant_constraints": [
+        "Fair independent rolls"
+      ],
+      "target_objective": "Compare specified expected values"
+    },
+    "schema_text": "Domain: Expectation computation | Entities: die rolls, functions of outcomes (square/product/median) | Constraints: Fair independent rolls | Objective: Compare specified expected values"
+  },
+  {
+    "problem_id": 257,
+    "name": "Pick Numbers Pairwise Coprime, Maximizing Sum.",
+    "schema": {
+      "core_mathematical_domain": "Number theory / combinatorial optimization",
+      "problem_setup_entities": [
+        "subset of {1..30}",
+        "pairwise coprime constraint"
+      ],
+      "invariant_constraints": [
+        "Any two chosen numbers have gcd 1"
+      ],
+      "target_objective": "Maximize sum of chosen numbers"
+    },
+    "schema_text": "Domain: Number theory / combinatorial optimization | Entities: subset of {1..30}, pairwise coprime constraint | Constraints: Any two chosen numbers have gcd 1 | Objective: Maximize sum of chosen numbers"
+  },
+  {
+    "problem_id": 258,
+    "name": "Expected Number of Gold Heads",
+    "schema": {
+      "core_mathematical_domain": "Conditional expectation",
+      "problem_setup_entities": [
+        "1000 fair tosses",
+        "gold/silver head payoffs",
+        "observed total payoff"
+      ],
+      "invariant_constraints": [
+        "Linear relation between payoff and head counts"
+      ],
+      "target_objective": "Compute Expected Value of number of gold heads given payoff"
+    },
+    "schema_text": "Domain: Conditional expectation | Entities: 1000 fair tosses, gold/silver head payoffs, observed total payoff | Constraints: Linear relation between payoff and head counts | Objective: Compute Expected Value of number of gold heads given payoff"
+  },
+  {
+    "problem_id": 259,
+    "name": "Bidding Game Contains Money Equal Number",
+    "schema": {
+      "core_mathematical_domain": "Auction/bidding under uncertainty",
+      "problem_setup_entities": [
+        "box value equals number of heads in 200 tosses",
+        "highest bid wins"
+      ],
+      "invariant_constraints": [
+        "Different opponent models/information structures"
+      ],
+      "target_objective": "Derive optimal bidding and information-revelation strategy by scenario"
+    },
+    "schema_text": "Domain: Auction/bidding under uncertainty | Entities: box value equals number of heads in 200 tosses, highest bid wins | Constraints: Different opponent models/information structures | Objective: Derive optimal bidding and information-revelation strategy by scenario"
+  },
+  {
+    "problem_id": 260,
+    "name": "Expected throws to see all six die faces once",
+    "schema": {
+      "core_mathematical_domain": "Coupon collector and dice probability",
+      "problem_setup_entities": [
+        "repeated fair die rolls",
+        "time to see all faces",
+        "product of two dice"
+      ],
+      "invariant_constraints": [
+        "Independent rolls"
+      ],
+      "target_objective": "Compute Expected Value of cover time and probability product is perfect square"
+    },
+    "schema_text": "Domain: Coupon collector and dice probability | Entities: repeated fair die rolls, time to see all faces, product of two dice | Constraints: Independent rolls | Objective: Compute Expected Value of cover time and probability product is perfect square"
+  },
+  {
+    "problem_id": 261,
+    "name": "Probability Heads Coins Probability Even Number",
+    "schema": {
+      "core_mathematical_domain": "Binomial parity probabilities",
+      "problem_setup_entities": [
+        "4 fair coins",
+        "head-count events"
+      ],
+      "invariant_constraints": [
+        "Independent Bernoulli trials"
+      ],
+      "target_objective": "Compute probability of exactly two heads and even number of heads"
+    },
+    "schema_text": "Domain: Binomial parity probabilities | Entities: 4 fair coins, head-count events | Constraints: Independent Bernoulli trials | Objective: Compute probability of exactly two heads and even number of heads"
+  },
+  {
+    "problem_id": 262,
+    "name": "Smallest integer whose digits multiply to 96",
+    "schema": {
+      "core_mathematical_domain": "Digit-factorization number construction",
+      "problem_setup_entities": [
+        "decimal digits",
+        "target product 96"
+      ],
+      "invariant_constraints": [
+        "Digit product fixed"
+      ],
+      "target_objective": "Find smallest integer with digit product 96"
+    },
+    "schema_text": "Domain: Digit-factorization number construction | Entities: decimal digits, target product 96 | Constraints: Digit product fixed | Objective: Find smallest integer with digit product 96"
+  },
+  {
+    "problem_id": 263,
+    "name": "Even Number of Heads Probability",
+    "schema": {
+      "core_mathematical_domain": "Parity of binomial counts",
+      "problem_setup_entities": [
+        "n fair coin tosses",
+        "even-head event"
+      ],
+      "invariant_constraints": [
+        "Use symmetry / binomial expansion"
+      ],
+      "target_objective": "Compute even-head probabilities for specified n parity cases"
+    },
+    "schema_text": "Domain: Parity of binomial counts | Entities: n fair coin tosses, even-head event | Constraints: Use symmetry / binomial expansion | Objective: Compute even-head probabilities for specified n parity cases"
+  },
+  {
+    "problem_id": 264,
+    "name": "Three six-sided dice vs",
+    "schema": {
+      "core_mathematical_domain": "Game fairness / distribution comparison",
+      "problem_setup_entities": [
+        "sum of three d6",
+        "single d20"
+      ],
+      "invariant_constraints": [
+        "Independent fair dice"
+      ],
+      "target_objective": "Determine whether game is fair"
+    },
+    "schema_text": "Domain: Game fairness / distribution comparison | Entities: sum of three d6, single d20 | Constraints: Independent fair dice | Objective: Determine whether game is fair"
+  },
+  {
+    "problem_id": 265,
+    "name": "Date Yyyy Today Digits Distinct",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial search on dates",
+      "problem_setup_entities": [
+        "date format YYYYMMDD",
+        "digit distinctness constraint"
+      ],
+      "invariant_constraints": [
+        "Valid calendar date after given reference date"
+      ],
+      "target_objective": "Find earliest future date with all 8 digits distinct"
+    },
+    "schema_text": "Domain: Combinatorial search on dates | Entities: date format YYYYMMDD, digit distinctness constraint | Constraints: Valid calendar date after given reference date | Objective: Find earliest future date with all 8 digits distinct"
+  },
+  {
+    "problem_id": 266,
+    "name": "Game: Roll a 100-sided die",
+    "schema": {
+      "core_mathematical_domain": "Optimal stopping",
+      "problem_setup_entities": [
+        "die value offer",
+        "option to pay cost and reroll"
+      ],
+      "invariant_constraints": [
+        "Threshold policy from continuation value"
+      ],
+      "target_objective": "Compute optimal Expected Value for different die setups"
+    },
+    "schema_text": "Domain: Optimal stopping | Entities: die value offer, option to pay cost and reroll | Constraints: Threshold policy from continuation value | Objective: Compute optimal Expected Value for different die setups"
+  },
+  {
+    "problem_id": 267,
+    "name": "Dice Game Die, Opponent Sees Other.",
+    "schema": {
+      "core_mathematical_domain": "Bayesian game / auction with private signals",
+      "problem_setup_entities": [
+        "two players observe different die",
+        "common value = sum",
+        "sequential bidding"
+      ],
+      "invariant_constraints": [
+        "Each player's bid conditions on private information and opponent behavior"
+      ],
+      "target_objective": "Determine first-mover advantage and optimal bidding"
+    },
+    "schema_text": "Domain: Bayesian game / auction with private signals | Entities: two players observe different die, common value = sum, sequential bidding | Constraints: Each player's bid conditions on private information and opponent behavior | Objective: Determine first-mover advantage and optimal bidding"
+  },
+  {
+    "problem_id": 268,
+    "name": "Four players roll 30-sided dice (all distinct)",
+    "schema": {
+      "core_mathematical_domain": "Order statistics game",
+      "problem_setup_entities": [
+        "4 distinct d30 outcomes",
+        "teams: extremes vs middle pair"
+      ],
+      "invariant_constraints": [
+        "Payment based on average difference"
+      ],
+      "target_objective": "Identify preferred first-roll value strategically"
+    },
+    "schema_text": "Domain: Order statistics game | Entities: 4 distinct d30 outcomes, teams: extremes vs middle pair | Constraints: Payment based on average difference | Objective: Identify preferred first-roll value strategically"
+  },
+  {
+    "problem_id": 269,
+    "name": "Cumulative Sum Game Avoiding Perfect Squares",
+    "schema": {
+      "core_mathematical_domain": "Risky stopping game",
+      "problem_setup_entities": [
+        "running sum of die rolls",
+        "ruin if total hits perfect square"
+      ],
+      "invariant_constraints": [
+        "Can stop any time to lock current sum"
+      ],
+      "target_objective": "Decide whether to continue from state 35"
+    },
+    "schema_text": "Domain: Risky stopping game | Entities: running sum of die rolls, ruin if total hits perfect square | Constraints: Can stop any time to lock current sum | Objective: Decide whether to continue from state 35"
+  },
+  {
+    "problem_id": 270,
+    "name": "Geometric interpretation of LARS for Lasso",
+    "schema": {
+      "core_mathematical_domain": "Lasso path algorithms",
+      "problem_setup_entities": [
+        "LARS procedure",
+        "active set",
+        "equiangular direction"
+      ],
+      "invariant_constraints": [
+        "Coefficient path piecewise linear with kinks at active-set changes"
+      ],
+      "target_objective": "Explain geometric interpretation of LARS for Lasso"
+    },
+    "schema_text": "Domain: Lasso path algorithms | Entities: LARS procedure, active set, equiangular direction | Constraints: Coefficient path piecewise linear with kinks at active-set changes | Objective: Explain geometric interpretation of LARS for Lasso"
+  },
+  {
+    "problem_id": 271,
+    "name": "R-Squared Range in Multiple Regression",
+    "schema": {
+      "core_mathematical_domain": "Regression fit bounds",
+      "problem_setup_entities": [
+        "variables x1,x2,y",
+        "given marginal R^2 values"
+      ],
+      "invariant_constraints": [
+        "Multiple R^2 depends on correlation structure among predictors and with y"
+      ],
+      "target_objective": "Find feasible range of multiple-regression R^2"
+    },
+    "schema_text": "Domain: Regression fit bounds | Entities: variables x1,x2,y, given marginal R^2 values | Constraints: Multiple R^2 depends on correlation structure among predictors and with y | Objective: Find feasible range of multiple-regression R^2"
+  },
+  {
+    "problem_id": 272,
+    "name": "Errors-in-Variables Attenuation Bias",
+    "schema": {
+      "core_mathematical_domain": "Errors-in-variables regression",
+      "problem_setup_entities": [
+        "true regressor x",
+        "observed noisy regressor z",
+        "slope estimates"
+      ],
+      "invariant_constraints": [
+        "Measurement noise independent of signal and error"
+      ],
+      "target_objective": "Derive attenuation bias and expression for estimated slope"
+    },
+    "schema_text": "Domain: Errors-in-variables regression | Entities: true regressor x, observed noisy regressor z, slope estimates | Constraints: Measurement noise independent of signal and error | Objective: Derive attenuation bias and expression for estimated slope"
+  },
+  {
+    "problem_id": 273,
+    "name": "Duplicate Observations Effect on OLS",
+    "schema": {
+      "core_mathematical_domain": "OLS invariance/scaling properties",
+      "problem_setup_entities": [
+        "dataset duplicated",
+        "OLS outputs and inference stats"
+      ],
+      "invariant_constraints": [
+        "Point estimates unchanged under exact duplication"
+      ],
+      "target_objective": "Determine effects on R^2, standard errors, and t-statistics"
+    },
+    "schema_text": "Domain: OLS invariance/scaling properties | Entities: dataset duplicated, OLS outputs and inference stats | Constraints: Point estimates unchanged under exact duplication | Objective: Determine effects on R^2, standard errors, and t-statistics"
+  },
+  {
+    "problem_id": 274,
+    "name": "Covariance Matrix Eigenvalue Interpretation",
+    "schema": {
+      "core_mathematical_domain": "Linear algebra in statistics",
+      "problem_setup_entities": [
+        "covariance eigenvalues/eigenvectors",
+        "principal components",
+        "conditioning"
+      ],
+      "invariant_constraints": [
+        "Eigenvalues nonnegative and sum to total variance"
+      ],
+      "target_objective": "Interpret eigenvalues for variance, multicollinearity, and numerics"
+    },
+    "schema_text": "Domain: Linear algebra in statistics | Entities: covariance eigenvalues/eigenvectors, principal components, conditioning | Constraints: Eigenvalues nonnegative and sum to total variance | Objective: Interpret eigenvalues for variance, multicollinearity, and numerics"
+  },
+  {
+    "problem_id": 275,
+    "name": "Expected Maximum of Correlated Normals",
+    "schema": {
+      "core_mathematical_domain": "Expectation of maximum of Gaussians",
+      "problem_setup_entities": [
+        "X and 3Y normal",
+        "max operator"
+      ],
+      "invariant_constraints": [
+        "Linear transforms of normal variables"
+      ],
+      "target_objective": "Compute Expected Value of max(X,3Y)"
+    },
+    "schema_text": "Domain: Expectation of maximum of Gaussians | Entities: X and 3Y normal, max operator | Constraints: Linear transforms of normal variables | Objective: Compute Expected Value of max(X,3Y)"
+  },
+  {
+    "problem_id": 276,
+    "name": "Meet Random Person Heights I.i.d. Continuous",
+    "schema": {
+      "core_mathematical_domain": "Records and ranks",
+      "problem_setup_entities": [
+        "initial sampled height",
+        "subsequent i.i.d. continuous heights",
+        "waiting time T until exceedance"
+      ],
+      "invariant_constraints": [
+        "Relative rank among first T+1 observations governs event"
+      ],
+      "target_objective": "Find E[T] and median(T)"
+    },
+    "schema_text": "Domain: Records and ranks | Entities: initial sampled height, subsequent i.i.d. continuous heights, waiting time T until exceedance | Constraints: Relative rank among first T+1 observations governs event | Objective: Find E[T] and median(T)"
+  },
+  {
+    "problem_id": 278,
+    "name": "Covariance of Min and Max of Uniform Variables",
+    "schema": {
+      "core_mathematical_domain": "Order statistics covariance",
+      "problem_setup_entities": [
+        "X,Y i.i.d. U[0,1]",
+        "min and max"
+      ],
+      "invariant_constraints": [
+        "Joint density of order statistics on unit interval"
+      ],
+      "target_objective": "Compute covariance of min and max"
+    },
+    "schema_text": "Domain: Order statistics covariance | Entities: X,Y i.i.d. U[0,1], min and max | Constraints: Joint density of order statistics on unit interval | Objective: Compute covariance of min and max"
+  },
+  {
+    "problem_id": 279,
+    "name": "Dependent Uncorrelated Random Variables.",
+    "schema": {
+      "core_mathematical_domain": "Dependence vs correlation",
+      "problem_setup_entities": [
+        "pair of random variables"
+      ],
+      "invariant_constraints": [
+        "Zero covariance does not imply independence in general"
+      ],
+      "target_objective": "Provide dependent but uncorrelated example"
+    },
+    "schema_text": "Domain: Dependence vs correlation | Entities: pair of random variables | Constraints: Zero covariance does not imply independence in general | Objective: Provide dependent but uncorrelated example"
+  },
+  {
+    "problem_id": 280,
+    "name": "Prove Jointly Normal and Uncorrelated Independent",
+    "schema": {
+      "core_mathematical_domain": "Multivariate normal theory",
+      "problem_setup_entities": [
+        "jointly normal variables",
+        "covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "For Gaussian vectors, uncorrelated components are independent"
+      ],
+      "target_objective": "Prove theorem and provide non-jointly-normal counterexample"
+    },
+    "schema_text": "Domain: Multivariate normal theory | Entities: jointly normal variables, covariance/correlation structure | Constraints: For Gaussian vectors, uncorrelated components are independent | Objective: Prove theorem and provide non-jointly-normal counterexample"
+  },
+  {
+    "problem_id": 281,
+    "name": "Random Variables Share Pairwise Correlation Feasible",
+    "schema": {
+      "core_mathematical_domain": "Correlation matrix feasibility",
+      "problem_setup_entities": [
+        "3 variables with equal pairwise correlation rho"
+      ],
+      "invariant_constraints": [
+        "Correlation matrix must be positive semidefinite"
+      ],
+      "target_objective": "Find allowable range of rho"
+    },
+    "schema_text": "Domain: Correlation matrix feasibility | Entities: 3 variables with equal pairwise correlation rho | Constraints: Correlation matrix must be positive semidefinite | Objective: Find allowable range of rho"
+  },
+  {
+    "problem_id": 282,
+    "name": "Feasible Range of Third Pairwise Correlation",
+    "schema": {
+      "core_mathematical_domain": "PSD bounds on correlations",
+      "problem_setup_entities": [
+        "Corr(X,Y)=rho",
+        "Corr(Y,Z)=rho",
+        "Corr(X,Z)=?"
+      ],
+      "invariant_constraints": [
+        "3x3 correlation matrix PSD constraints"
+      ],
+      "target_objective": "Derive feasible interval for third correlation"
+    },
+    "schema_text": "Domain: PSD bounds on correlations | Entities: Corr(X,Y)=rho, Corr(Y,Z)=rho, Corr(X,Z)=? | Constraints: 3x3 correlation matrix PSD constraints | Objective: Derive feasible interval for third correlation"
+  },
+  {
+    "problem_id": 283,
+    "name": "Lagrange multipliers (quadratic/linear programs)",
+    "schema": {
+      "core_mathematical_domain": "Constrained optimization / KKT",
+      "problem_setup_entities": [
+        "quadratic objective",
+        "linear constraints",
+        "Lagrange multipliers"
+      ],
+      "invariant_constraints": [
+        "KKT necessary and (under convexity) sufficient"
+      ],
+      "target_objective": "Solve and interpret constrained optimum and uniqueness conditions"
+    },
+    "schema_text": "Domain: Constrained optimization / KKT | Entities: quadratic objective, linear constraints, Lagrange multipliers | Constraints: KKT necessary and (under convexity) sufficient | Objective: Solve and interpret constrained optimum and uniqueness conditions"
+  },
+  {
+    "problem_id": 284,
+    "name": "Mean Clock Times Robustly. Propose Circular",
+    "schema": {
+      "core_mathematical_domain": "Circular statistics",
+      "problem_setup_entities": [
+        "clock times on unit circle S1",
+        "circular mean/median"
+      ],
+      "invariant_constraints": [
+        "Angles wrap modulo 2pi; branch-cut ambiguity"
+      ],
+      "target_objective": "Define robust central tendency for clock times"
+    },
+    "schema_text": "Domain: Circular statistics | Entities: clock times on unit circle S1, circular mean/median | Constraints: Angles wrap modulo 2pi; branch-cut ambiguity | Objective: Define robust central tendency for clock times"
+  },
+  {
+    "problem_id": 285,
+    "name": "Probability Fair Dice Divisible Roots Unity",
+    "schema": {
+      "core_mathematical_domain": "Discrete Fourier / roots-of-unity filter",
+      "problem_setup_entities": [
+        "sum of n fair dice",
+        "divisibility modulo m"
+      ],
+      "invariant_constraints": [
+        "Use characteristic function on cyclic groups"
+      ],
+      "target_objective": "Compute probability sum divisible by 6 and by 7"
+    },
+    "schema_text": "Domain: Discrete Fourier / roots-of-unity filter | Entities: sum of n fair dice, divisibility modulo m | Constraints: Use characteristic function on cyclic groups | Objective: Compute probability sum divisible by 6 and by 7"
+  },
+  {
+    "problem_id": 286,
+    "name": "Merging Sorted Lists City Name Timestamp",
+    "schema": {
+      "core_mathematical_domain": "Merge algorithms / data engineering",
+      "problem_setup_entities": [
+        "two sorted lists",
+        "primary key city, secondary timestamp"
+      ],
+      "invariant_constraints": [
+        "Need stable O(n+m) merge with per-city ordering"
+      ],
+      "target_objective": "Design algorithm and analyze time/memory"
+    },
+    "schema_text": "Domain: Merge algorithms / data engineering | Entities: two sorted lists, primary key city, secondary timestamp | Constraints: Need stable O(n+m) merge with per-city ordering | Objective: Design algorithm and analyze time/memory"
+  },
+  {
+    "problem_id": 287,
+    "name": "Integer Addition Multiplication Decimal Strings Single",
+    "schema": {
+      "core_mathematical_domain": "Big-integer arithmetic algorithms",
+      "problem_setup_entities": [
+        "decimal strings",
+        "single-digit add/multiply primitives",
+        "carry handling"
+      ],
+      "invariant_constraints": [
+        "No native big-int operations"
+      ],
+      "target_objective": "Implement addition and multiplication with complexity analysis"
+    },
+    "schema_text": "Domain: Big-integer arithmetic algorithms | Entities: decimal strings, single-digit add/multiply primitives, carry handling | Constraints: No native big-int operations | Objective: Implement addition and multiplication with complexity analysis"
+  },
+  {
+    "problem_id": 288,
+    "name": "Find Critical Bridge Edges In An Undirected Graph",
+    "schema": {
+      "core_mathematical_domain": "Graph algorithms",
+      "problem_setup_entities": [
+        "undirected graph",
+        "bridges",
+        "DFS discovery/low-link values"
+      ],
+      "invariant_constraints": [
+        "Edge is bridge iff no back-edge bypasses it"
+      ],
+      "target_objective": "Return all critical edges in O(n+m)"
+    },
+    "schema_text": "Domain: Graph algorithms | Entities: undirected graph, bridges, DFS discovery/low-link values | Constraints: Edge is bridge iff no back-edge bypasses it | Objective: Return all critical edges in O(n+m)"
+  },
+  {
+    "problem_id": 289,
+    "name": "Generating Ramanujan Taxi Numbers Efficiently",
+    "schema": {
+      "core_mathematical_domain": "Number generation with heaps",
+      "problem_setup_entities": [
+        "taxicab numbers a^3+b^3",
+        "duplicate representations"
+      ],
+      "invariant_constraints": [
+        "Need sorted generation and deduplication"
+      ],
+      "target_objective": "Find nth smallest Ramanujan taxi number efficiently"
+    },
+    "schema_text": "Domain: Number generation with heaps | Entities: taxicab numbers a^3+b^3, duplicate representations | Constraints: Need sorted generation and deduplication | Objective: Find nth smallest Ramanujan taxi number efficiently"
+  },
+  {
+    "problem_id": 290,
+    "name": "Order-matching engine",
+    "schema": {
+      "core_mathematical_domain": "Matching engine design",
+      "problem_setup_entities": [
+        "buy/sell limit orders",
+        "price-time priority",
+        "order books"
+      ],
+      "invariant_constraints": [
+        "Best bid/ask heaps maintain executable top-of-book"
+      ],
+      "target_objective": "Implement matching operations preserving invariants"
+    },
+    "schema_text": "Domain: Matching engine design | Entities: buy/sell limit orders, price-time priority, order books | Constraints: Best bid/ask heaps maintain executable top-of-book | Objective: Implement matching operations preserving invariants"
+  },
+  {
+    "problem_id": 291,
+    "name": "Linear MMSE estimator",
+    "schema": {
+      "core_mathematical_domain": "Linear MMSE estimation",
+      "problem_setup_entities": [
+        "random variables X,Y",
+        "affine estimator in Y"
+      ],
+      "invariant_constraints": [
+        "Orthogonality principle for projection in L2"
+      ],
+      "target_objective": "Derive optimal linear estimator and resulting MSE"
+    },
+    "schema_text": "Domain: Linear MMSE estimation | Entities: random variables X,Y, affine estimator in Y | Constraints: Orthogonality principle for projection in L2 | Objective: Derive optimal linear estimator and resulting MSE"
+  },
+  {
+    "problem_id": 292,
+    "name": "Linear MMSE Estimator for Conditional Exponential",
+    "schema": {
+      "core_mathematical_domain": "Applied linear MMSE",
+      "problem_setup_entities": [
+        "X~U(1,2)",
+        "Y|X exponential with rate 1/X"
+      ],
+      "invariant_constraints": [
+        "Compute moments then apply linear-MMSE formula"
+      ],
+      "target_objective": "Obtain estimator and MSE for this model"
+    },
+    "schema_text": "Domain: Applied linear MMSE | Entities: X~U(1,2), Y|X exponential with rate 1/X | Constraints: Compute moments then apply linear-MMSE formula | Objective: Obtain estimator and MSE for this model"
+  },
+  {
+    "problem_id": 293,
+    "name": "Sequential Rank Guessing Optimal Strategy",
+    "schema": {
+      "core_mathematical_domain": "Sequential decision / rank guessing",
+      "problem_setup_entities": [
+        "i.i.d. U(0,1) samples",
+        "online rank guesses"
+      ],
+      "invariant_constraints": [
+        "Win only if every guess correct"
+      ],
+      "target_objective": "Find optimal strategy and exact success probability"
+    },
+    "schema_text": "Domain: Sequential decision / rank guessing | Entities: i.i.d. U(0,1) samples, online rank guesses | Constraints: Win only if every guess correct | Objective: Find optimal strategy and exact success probability"
+  },
+  {
+    "problem_id": 294,
+    "name": "Fair Outcome from Extremely Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Randomness extraction from biased coin",
+      "problem_setup_entities": [
+        "extremely biased Bernoulli source",
+        "fair output requirement"
+      ],
+      "invariant_constraints": [
+        "Minimize worst-case toss complexity"
+      ],
+      "target_objective": "Design and compare fair-generation schemes"
+    },
+    "schema_text": "Domain: Randomness extraction from biased coin | Entities: extremely biased Bernoulli source, fair output requirement | Constraints: Minimize worst-case toss complexity | Objective: Design and compare fair-generation schemes"
+  },
+  {
+    "problem_id": 295,
+    "name": "Maximum Entries in a Nilpotent Binary Matrix",
+    "schema": {
+      "core_mathematical_domain": "Extremal combinatorics / graph interpretation",
+      "problem_setup_entities": [
+        "binary matrix A",
+        "nilpotent condition A^2=0"
+      ],
+      "invariant_constraints": [
+        "No length-2 directed path in associated digraph"
+      ],
+      "target_objective": "Maximize number of ones and characterize extremizers"
+    },
+    "schema_text": "Domain: Extremal combinatorics / graph interpretation | Entities: binary matrix A, nilpotent condition A^2=0 | Constraints: No length-2 directed path in associated digraph | Objective: Maximize number of ones and characterize extremizers"
+  },
+  {
+    "problem_id": 296,
+    "name": "Breeden-Litzenberger Option Replication Formula",
+    "schema": {
+      "core_mathematical_domain": "Option pricing representation",
+      "problem_setup_entities": [
+        "random variable X",
+        "positive/negative parts",
+        "twice-differentiable payoff f"
+      ],
+      "invariant_constraints": [
+        "Call-put integral decomposition (Breeden-Litzenberger style)"
+      ],
+      "target_objective": "Express E[f(X)] and interpret replication instruments"
+    },
+    "schema_text": "Domain: Option pricing representation | Entities: random variable X, positive/negative parts, twice-differentiable payoff f | Constraints: Call-put integral decomposition (Breeden-Litzenberger style) | Objective: Express E[f(X)] and interpret replication instruments"
+  },
+  {
+    "problem_id": 297,
+    "name": "League Point Allocation and Team Count",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics of league scoring",
+      "problem_setup_entities": [
+        "round-robin with N teams",
+        "2/1/0 points",
+        "bottom-10 condition"
+      ],
+      "invariant_constraints": [
+        "Each match contributes 2 total points"
+      ],
+      "target_objective": "Determine feasible N from point-allocation constraint"
+    },
+    "schema_text": "Domain: Combinatorics of league scoring | Entities: round-robin with N teams, 2/1/0 points, bottom-10 condition | Constraints: Each match contributes 2 total points | Objective: Determine feasible N from point-allocation constraint"
+  },
+  {
+    "problem_id": 298,
+    "name": "Distributing Balls into Identical Bins",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / unlabeled occupancy",
+      "problem_setup_entities": [
+        "m distinct balls",
+        "N identical bins",
+        "minimum occupancy k"
+      ],
+      "invariant_constraints": [
+        "Configurations modulo bin relabeling"
+      ],
+      "target_objective": "Count valid distributions under constraints"
+    },
+    "schema_text": "Domain: Combinatorics / unlabeled occupancy | Entities: m distinct balls, N identical bins, minimum occupancy k | Constraints: Configurations modulo bin relabeling | Objective: Count valid distributions under constraints"
+  },
+  {
+    "problem_id": 299,
+    "name": "Competing Exponential Arrivals with Referrals",
+    "schema": {
+      "core_mathematical_domain": "Poisson thinning and superposition",
+      "problem_setup_entities": [
+        "two exponential arrival processes",
+        "referral probabilities"
+      ],
+      "invariant_constraints": [
+        "Referrals form thinned Poisson streams"
+      ],
+      "target_objective": "Compute Expected Value of time between referrals"
+    },
+    "schema_text": "Domain: Poisson thinning and superposition | Entities: two exponential arrival processes, referral probabilities | Constraints: Referrals form thinned Poisson streams | Objective: Compute Expected Value of time between referrals"
+  },
+  {
+    "problem_id": 300,
+    "name": "Non-Adjacent Seating Expected Occupancy",
+    "schema": {
+      "core_mathematical_domain": "Random sequential adsorption (1D)",
+      "problem_setup_entities": [
+        "n seats",
+        "sequential random occupation",
+        "no-adjacent rule"
+      ],
+      "invariant_constraints": [
+        "Process stops at maximal independent set"
+      ],
+      "target_objective": "Find expected terminal occupancy"
+    },
+    "schema_text": "Domain: Random sequential adsorption (1D) | Entities: n seats, sequential random occupation, no-adjacent rule | Constraints: Process stops at maximal independent set | Objective: Find expected terminal occupancy"
+  },
+  {
+    "problem_id": 301,
+    "name": "Standard Brownian motion $B_t$ with $B_0=0$",
+    "schema": {
+      "core_mathematical_domain": "Brownian motion / conditional expectation",
+      "problem_setup_entities": [
+        "standard Brownian motion B_t",
+        "conditioning on B_1"
+      ],
+      "invariant_constraints": [
+        "Gaussian process with linear regression property"
+      ],
+      "target_objective": "Compute E[B_t | B_1]"
+    },
+    "schema_text": "Domain: Brownian motion / conditional expectation | Entities: standard Brownian motion B_t, conditioning on B_1 | Constraints: Gaussian process with linear regression property | Objective: Compute E[B_t | B_1]"
+  },
+  {
+    "problem_id": 302,
+    "name": "Mixture normals and symmetries",
+    "schema": {
+      "core_mathematical_domain": "Mixture distributions and Gaussian properties",
+      "problem_setup_entities": [
+        "mixture of N(0,1) and N(0,4)",
+        "random sign product XZ"
+      ],
+      "invariant_constraints": [
+        "Symmetry may preserve marginals but not joint Gaussianity"
+      ],
+      "target_objective": "Derive distribution formulas and test normal/joint-normal claims"
+    },
+    "schema_text": "Domain: Mixture distributions and Gaussian properties | Entities: mixture of N(0,1) and N(0,4), random sign product XZ | Constraints: Symmetry may preserve marginals but not joint Gaussianity | Objective: Derive distribution formulas and test normal/joint-normal claims"
+  },
+  {
+    "problem_id": 303,
+    "name": "Nested Uniforms , , ,",
+    "schema": {
+      "core_mathematical_domain": "Nested conditional uniforms",
+      "problem_setup_entities": [
+        "Markov chain X1~U(0,1), Xi~U(X_{i-1},1)",
+        "product of Xi"
+      ],
+      "invariant_constraints": [
+        "Support is nondecreasing sequence in [0,1]"
+      ],
+      "target_objective": "Find pdf of X_n and asymptotic limit of E[product Xi]"
+    },
+    "schema_text": "Domain: Nested conditional uniforms | Entities: Markov chain X1~U(0,1), Xi~U(X_{i-1},1), product of Xi | Constraints: Support is nondecreasing sequence in [0,1] | Objective: Find pdf of X_n and asymptotic limit of E[product Xi]"
+  }
+]

@@ -1,0 +1,1552 @@
+[
+  {
+    "problem_id": 304,
+    "name": "Distribution of Product Raised to Uniform Power",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling | Constraints: Random draws are independent unless otherwise conditioned; Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 305,
+    "name": "Digit Product Puzzles for Target Values",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 306,
+    "name": "Weekend Rain Probability with Dependence",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Random draws are independent unless otherwise conditioned | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 307,
+    "name": "Game Blue Balls Draw Without Replacement.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Shuffled deck / card draws",
+        "Sequential accept/reject decision",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement",
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws; Shuffled deck / card draws; Sequential accept/reject decision; Expected Value objective | Constraints: Sampling is without replacement; Process stops at a first-hitting or stopping rule | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 308,
+    "name": "Comparing Die Roll Square, Product, and Median",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Discrete die outcomes; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 309,
+    "name": "Choose A Subset Of With Pairwise Coprime Elements To Maximize the Sum",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Dynamic Optimization",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Selected integers must be pairwise coprime"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Optimal Stopping and Dynamic Optimization | Entities: Integer set with arithmetic constraints | Constraints: Selected integers must be pairwise coprime | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 310,
+    "name": "Sealed-Bid Auction for Coin Flip Payoff",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Uniform random variables / geometric sampling",
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Coin flips / Bernoulli trials; Uniform random variables / geometric sampling; Integer set with arithmetic constraints | Constraints: Sampling is uniform over the specified space | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 311,
+    "name": "Coupon Collector Expected Tosses To see all Six Faces Once",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Shuffled deck / card draws",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Discrete die outcomes; Shuffled deck / card draws; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 312,
+    "name": "Coin Parity Fair Coins, Probability Exactly",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Underlying device is fair / symmetric"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Coin flips / Bernoulli trials | Constraints: Underlying device is fair / symmetric | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 313,
+    "name": "Three Dice Vs one Die Is the Game Fair Under Any Payoff Mapping E",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Option Greeks and volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Option Greeks and volatility inputs | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 314,
+    "name": "Future Date Yyyy Pairwise Distinct Digits.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 315,
+    "name": "Optimal Stopping for Die Roll with Reroll Option",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Shuffled deck / card draws",
+        "Option Greeks and volatility inputs",
+        "Sequential accept/reject decision"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Shuffled deck / card draws; Option Greeks and volatility inputs; Sequential accept/reject decision | Constraints: Random draws are independent unless otherwise conditioned; Process stops at a first-hitting or stopping rule | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 316,
+    "name": "Two-Dice Sealed-Bid Game Strategy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Discrete die outcomes | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 317,
+    "name": "Team Formation Game with Four Dice",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Option Greeks and volatility inputs",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Option Greeks and volatility inputs; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 318,
+    "name": "Stopping Game Avoiding Perfect Squares",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Option Greeks and volatility inputs",
+        "Sequential accept/reject decision"
+      ],
+      "invariant_constraints": [
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Option Greeks and volatility inputs; Sequential accept/reject decision | Constraints: Process stops at a first-hitting or stopping rule | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 319,
+    "name": "Meeting Problem People Arrive Uniformly In and Each Waits 15 Minutes",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling | Constraints: Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 320,
+    "name": "Mutual Nearest Neighbors on the Unit Interval",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling; Expected Value objective | Constraints: Random draws are independent unless otherwise conditioned; Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 321,
+    "name": "Random matrices: $A$ is $n\\times n$ with i",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Random draws are independent unless otherwise conditioned | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 322,
+    "name": "Two Urns Drawing Until Empty",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Sequential accept/reject decision",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws; Sequential accept/reject decision; Expected Value objective | Constraints: Process stops at a first-hitting or stopping rule | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 323,
+    "name": "Asymmetric Random Walk Starting Absorbing Boundary",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Random walk on discrete states",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Random walk on discrete states; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 324,
+    "name": "Pick a random positive integer $n$",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 325,
+    "name": "Random Number Generator Without Replacement",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Shuffled deck / card draws",
+        "Uniform random variables / geometric sampling",
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement",
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws; Shuffled deck / card draws; Uniform random variables / geometric sampling; Integer set with arithmetic constraints | Constraints: Sampling is without replacement; Sampling is uniform over the specified space | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 326,
+    "name": "Streaming Merge Join with Missing Keys",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 327,
+    "name": "Daily Return Confidence Interval from Annual Data",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Finite-state Markov chain",
+        "Option Greeks and volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Urn composition and draws; Finite-state Markov chain; Option Greeks and volatility inputs | Constraints: Random draws are independent unless otherwise conditioned | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 328,
+    "name": "Weighted Lasso Regression KKT Conditions",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 329,
+    "name": "Sequential vs Joint OLS with Orthogonal Regressors",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 330,
+    "name": "Correlation Matrix Eigenvalue Characterization",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 331,
+    "name": "Causal ROI Modeling from Payment Data",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 332,
+    "name": "City Rent Prediction with NLP Features",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 333,
+    "name": "Bike Sharing Demand Forecasting Case Study",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 334,
+    "name": "Equal Pairwise Correlation Feasible Range",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 335,
+    "name": "Order Statistics Expectations and Densities",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value objective | Constraints: Random draws are independent unless otherwise conditioned | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 336,
+    "name": "Covariance of Min and Max of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling | Constraints: Random draws are independent unless otherwise conditioned; Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 337,
+    "name": "Expected Additional Waiting Time",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Finite-state Markov chain",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Finite-state Markov chain; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 338,
+    "name": "Sample Size Derivation via CLT",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 339,
+    "name": "Twitter-Based Stock Prediction Features",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 340,
+    "name": "Sampling until sum exceeds one",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Sequential accept/reject decision",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Sequential accept/reject decision; Expected Value objective | Constraints: Random draws are independent unless otherwise conditioned; Process stops at a first-hitting or stopping rule | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 341,
+    "name": "Stock Price Lookup Game Design",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 342,
+    "name": "Linear Regression of on I.e",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned",
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling; Expected Value objective | Constraints: Random draws are independent unless otherwise conditioned; Sampling is uniform over the specified space | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 343,
+    "name": "Range of Equicorrelated Variable Correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 344,
+    "name": "House Price Prediction Machine Learning Pipeline",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 345,
+    "name": "Bayesian Posterior for Bernoulli Parameter",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Option Greeks and volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Option Greeks and volatility inputs | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 346,
+    "name": "Case study: New York house price modeling",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 347,
+    "name": "Large Number Arithmetic with Strings",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Number Theory",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Combinatorics and Number Theory | Entities: Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 348,
+    "name": "Interpretations of correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 349,
+    "name": "Geometric and MLE Interpretations of OLS",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 350,
+    "name": "Case study: Apartment rental pricing",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Maximize success probability under admissible strategy"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Maximize success probability under admissible strategy"
+  },
+  {
+    "problem_id": 351,
+    "name": "List of LeetCode problems",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 352,
+    "name": "Stock Prediction via Twitter Sentiment Analysis",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 353,
+    "name": "Uniform Sampling from a Triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Uniform random variables / geometric sampling",
+        "Geometric configuration under uniform randomness"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws; Uniform random variables / geometric sampling; Geometric configuration under uniform randomness | Constraints: Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 354,
+    "name": "Rectangle Area II",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 355,
+    "name": "Annualized Sharpe Ratio with Autocorrelation",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Urn composition and draws; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 356,
+    "name": "Multicollinearity in House Price Regression",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 357,
+    "name": "Humidity Query with Closest Prior Timestamp",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 358,
+    "name": "Ridge Regression Hyperparameter Diagnostics",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 359,
+    "name": "Conditional distribution of bivariate normal",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Normal random variables | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 360,
+    "name": "Simulating Equicorrelated Normal Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Normal random variables | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 361,
+    "name": "Open-Ended Modeling Strategy Discussion",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Dynamic Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Optimal Stopping and Dynamic Optimization | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 362,
+    "name": "Machine learning: Lasso vs",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 363,
+    "name": "Machine learning: Advantages of Lasso",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 364,
+    "name": "Confidence Interval Estimation Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 365,
+    "name": "Python: Numpy array vs",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 366,
+    "name": "Fibonacci Staircase Climbing Complexity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 367,
+    "name": "Paying for a Better Die in a Game",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Option Greeks and volatility inputs",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Option Greeks and volatility inputs; Expected Value objective | Constraints: Process stops at a first-hitting or stopping rule | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 368,
+    "name": "Market Making on Country Altitude",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Maximize success probability under admissible strategy"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Maximize success probability under admissible strategy"
+  },
+  {
+    "problem_id": 369,
+    "name": "Ascending Order Probability for Drawn Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Shuffled deck / card draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Shuffled deck / card draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 370,
+    "name": "Expected Payoff of Max Difference of Dice",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Shuffled deck / card draws",
+        "Option Greeks and volatility inputs",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Underlying device is fair / symmetric"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Discrete die outcomes; Shuffled deck / card draws; Option Greeks and volatility inputs; Expected Value objective | Constraints: Underlying device is fair / symmetric | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 371,
+    "name": "Bayesian Coin Selection After Observing Heads",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Coin flips / Bernoulli trials | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 372,
+    "name": "St. Petersburg Paradox with Uniform Reciprocal",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Uniform random variables / geometric sampling",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Uniform random variables / geometric sampling; Expected Value objective | Constraints: Sampling is uniform over the specified space | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 373,
+    "name": "Expected cards to draw for first Ace",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Shuffled deck / card draws",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Shuffled deck / card draws; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 374,
+    "name": "Linear algebra: Sudoku matrix eigenvalue",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 375,
+    "name": "Quant Developer Phone Screen Topics",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Coin flips / Bernoulli trials; Urn composition and draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 376,
+    "name": "Quant Developer Onsite Interview Topics",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 377,
+    "name": "Expected number of adjacent cat-dog pairs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Shuffled deck / card draws",
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Shuffled deck / card draws; Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 378,
+    "name": "Balls of Three Colors Combination Count",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Number Theory",
+      "problem_setup_entities": [
+        "Urn composition and draws",
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Count feasible configurations satisfying the constraints"
+    },
+    "schema_text": "Domain: Combinatorics and Number Theory | Entities: Urn composition and draws; Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Count feasible configurations satisfying the constraints"
+  },
+  {
+    "problem_id": 379,
+    "name": "Cumulative Dice Sum Threshold Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Discrete die outcomes"
+      ],
+      "invariant_constraints": [
+        "Underlying device is fair / symmetric",
+        "Process stops at a first-hitting or stopping rule"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Discrete die outcomes | Constraints: Underlying device is fair / symmetric; Process stops at a first-hitting or stopping rule | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 380,
+    "name": "Random Forest and Bagging Variance Reduction",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 381,
+    "name": "Linear Regression Assumptions and Violations",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Normal random variables | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 382,
+    "name": "Linear Interpolation from Sorted Pairs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 383,
+    "name": "Merge sorted array",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Shuffled deck / card draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Shuffled deck / card draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 384,
+    "name": "Pandas Grouped Mean and Weighted Mean",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 385,
+    "name": "Onsite Data Analysis Project Case Study",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 386,
+    "name": "OLS Regression of X on Y vs Y on X",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 387,
+    "name": "House Price Feature Sign and Collinearity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 388,
+    "name": "String multiplication",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Number Theory",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Combinatorics and Number Theory | Entities: Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 389,
+    "name": "Principal Components of Stock Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Urn composition and draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Urn composition and draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 390,
+    "name": "Spectral Decomposition for Multivariate Normal",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Normal random variables | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 391,
+    "name": "Confidence Interval with Zero Successes",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Coin flips / Bernoulli trials | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 392,
+    "name": "Quantitative finance: Portfolio optimization",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the Expected Value of the target quantity"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Expected Value objective | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the Expected Value of the target quantity"
+  },
+  {
+    "problem_id": 393,
+    "name": "Mathematical proof",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Integer set with arithmetic constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Integer set with arithmetic constraints | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 394,
+    "name": "Python Hashable Objects and Custom Classes",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 395,
+    "name": "Python: '\\_\\_new\\_\\_' vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 396,
+    "name": "Pirate Hat Puzzle Cooperative Strategy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Maximize success probability under admissible strategy"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Maximize success probability under admissible strategy"
+  },
+  {
+    "problem_id": 397,
+    "name": "Estimation with Equicorrelated Normal Samples",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Optimize Expected Value under decision constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Normal random variables | Constraints: Random draws are independent unless otherwise conditioned | Objective: Optimize Expected Value under decision constraints"
+  },
+  {
+    "problem_id": 398,
+    "name": "Airbnb Price Rationality Case Study",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and Risk Decomposition",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Derivative Pricing and Risk Decomposition | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 399,
+    "name": "Confidence intervals for logistic regression parameters",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Compute the required probability exactly or in closed form"
+  },
+  {
+    "problem_id": 400,
+    "name": "Linear Recurrence via Matrix Exponentiation",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Dynamic Optimization",
+      "problem_setup_entities": [
+        "Shuffled deck / card draws"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Optimal Stopping and Dynamic Optimization | Entities: Shuffled deck / card draws | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 401,
+    "name": "OLS Model Comparison Bias-Variance Tradeoff",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Option Greeks and volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Option Greeks and volatility inputs | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 402,
+    "name": "Effect of Demeaning Variables in OLS",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Random variables and model parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-specific feasibility constraints from setup"
+      ],
+      "target_objective": "Derive the requested quantitative quantity from model assumptions"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: Random variables and model parameters | Constraints: Problem-specific feasibility constraints from setup | Objective: Derive the requested quantitative quantity from model assumptions"
+  },
+  {
+    "problem_id": 403,
+    "name": "Expectation of a ratio of IID variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value objective"
+      ],
+      "invariant_constraints": [
+        "Random draws are independent unless otherwise conditioned"
+      ],
+      "target_objective": "Compute the required probability exactly or in closed form"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value objective | Constraints: Random draws are independent unless otherwise conditioned | Objective: Compute the required probability exactly or in closed form"
+  }
+]

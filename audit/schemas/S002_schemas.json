@@ -1,0 +1,1906 @@
+[
+  {
+    "problem_id": 101,
+    "name": "Eigenvalue of Rank-1 Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "eigenvalue"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Eigenvalue of Rank-1 Matrix."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, eigenvalue | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Eigenvalue of Rank-1 Matrix."
+  },
+  {
+    "problem_id": 102,
+    "name": "Positive Semi-Definite Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "regression",
+        "matrix",
+        "covariance",
+        "variance",
+        "positive"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Prove that every covariance matrix is positive semi-definite."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, regression, matrix, covariance, variance, positive | Constraints: Use only the assumptions specified in the problem statement. | Objective: Prove that every covariance matrix is positive semi-definite."
+  },
+  {
+    "problem_id": 103,
+    "name": "Trace and Determinant from Eigenvalues",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "eigenvalue",
+        "trace",
+        "determinant",
+        "eigenvalues"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Trace and Determinant from Eigenvalues."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, eigenvalue, trace, determinant, eigenvalues | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Trace and Determinant from Eigenvalues."
+  },
+  {
+    "problem_id": 104,
+    "name": "Eigenvector of Equicorrelation Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "vector",
+        "eigenvalue",
+        "eigenvector",
+        "covariance"
+      ],
+      "invariant_constraints": [
+        "Consider the covariance matrix (equicorrelation with variance )."
+      ],
+      "target_objective": "Find all eigenvectors and eigenvalues."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, vector, eigenvalue, eigenvector, covariance | Constraints: Consider the covariance matrix (equicorrelation with variance ). | Objective: Find all eigenvectors and eigenvalues."
+  },
+  {
+    "problem_id": 105,
+    "name": "Vector Projection and Gram-Schmidt",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "vector",
+        "projection",
+        "gram",
+        "schmidt"
+      ],
+      "invariant_constraints": [
+        "Given vectors and in , find the projection of onto , the residual, and explain how this extends to Gram-Schmidt orthogonalization."
+      ],
+      "target_objective": "Given vectors and in , find the projection of onto , the residual, and explain how this extends to Gram-Schmidt orthogonalization."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, vector, projection, gram, schmidt | Constraints: Given vectors and in , find the projection of onto , the residual, and explain how this extends to Gram-Schmidt orthogonalization. | Objective: Given vectors and in , find the projection of onto , the residual, and explain how this extends to Gram-Schmidt orthogonalization."
+  },
+  {
+    "problem_id": 106,
+    "name": "Var(det A) for Random Sign Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "sign"
+      ],
+      "invariant_constraints": [
+        "Let be with each entry i.i.d.",
+        "with equal probability."
+      ],
+      "target_objective": "Compute ."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, sign | Constraints: Let be with each entry i.i.d.; with equal probability. | Objective: Compute ."
+  },
+  {
+    "problem_id": 107,
+    "name": "Eigenvalue-Determinant-Trace Relationship",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "eigenvalue",
+        "determinant",
+        "trace",
+        "relationship"
+      ],
+      "invariant_constraints": [
+        "Prove that for any matrix with eigenvalues (a) and (b) ."
+      ],
+      "target_objective": "Prove that for any matrix with eigenvalues (a) and (b) ."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, eigenvalue, determinant, trace, relationship | Constraints: Prove that for any matrix with eigenvalues (a) and (b) . | Objective: Prove that for any matrix with eigenvalues (a) and (b) ."
+  },
+  {
+    "problem_id": 108,
+    "name": "Equicorrelation Matrix with Equal Off-Diagonal",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "correlation",
+        "equicorrelation",
+        "equal",
+        "diagonal"
+      ],
+      "invariant_constraints": [
+        "Consider an correlation matrix with 1 on the diagonal and constant off-diagonal."
+      ],
+      "target_objective": "Find its inverse in closed form."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, correlation, equicorrelation, equal, diagonal | Constraints: Consider an correlation matrix with 1 on the diagonal and constant off-diagonal. | Objective: Find its inverse in closed form."
+  },
+  {
+    "problem_id": 109,
+    "name": "Eigenvalue Interpretation in PCA",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning",
+      "problem_setup_entities": [
+        "machine learning",
+        "matrix",
+        "eigenvalue",
+        "covariance",
+        "variance",
+        "interpretation"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Eigenvalue Interpretation in PCA."
+    },
+    "schema_text": "Domain: Machine Learning | Entities: machine learning, matrix, eigenvalue, covariance, variance, interpretation | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Eigenvalue Interpretation in PCA."
+  },
+  {
+    "problem_id": 110,
+    "name": "Equicorrelation Matrix: Valid Range of rho",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "correlation",
+        "equicorrelation",
+        "valid",
+        "range"
+      ],
+      "invariant_constraints": [
+        "An correlation matrix has 1 on the diagonal and everywhere off-diagonal."
+      ],
+      "target_objective": "Determine the requested quantitative result for Equicorrelation Matrix: Valid Range of rho."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, correlation, equicorrelation, valid, range | Constraints: An correlation matrix has 1 on the diagonal and everywhere off-diagonal. | Objective: Determine the requested quantitative result for Equicorrelation Matrix: Valid Range of rho."
+  },
+  {
+    "problem_id": 111,
+    "name": "SVD and Low-Rank Approximation",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "approximation"
+      ],
+      "invariant_constraints": [
+        "Let be an matrix with singular values where ."
+      ],
+      "target_objective": "What is the best rank- approximation to in the Frobenius norm"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, approximation | Constraints: Let be an matrix with singular values where . | Objective: What is the best rank- approximation to in the Frobenius norm"
+  },
+  {
+    "problem_id": 112,
+    "name": "Eigenvalues of J + cI Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "eigenvalue",
+        "eigenvalues"
+      ],
+      "invariant_constraints": [
+        "Let be the matrix with all entries equal to 1 (i.e., )."
+      ],
+      "target_objective": "Find all eigenvalues of for a constant ."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, eigenvalue, eigenvalues | Constraints: Let be the matrix with all entries equal to 1 (i.e., ). | Objective: Find all eigenvalues of for a constant ."
+  },
+  {
+    "problem_id": 113,
+    "name": "Rotation Operator as Orthogonal Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "vector",
+        "eigenvalue",
+        "rotation",
+        "operator"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Rotation Operator as Orthogonal Matrix."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, vector, eigenvalue, rotation, operator | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Rotation Operator as Orthogonal Matrix."
+  },
+  {
+    "problem_id": 114,
+    "name": "Range of Equicorrelation Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "correlation",
+        "range",
+        "equicorrelation"
+      ],
+      "invariant_constraints": [
+        "Consider an equicorrelation matrix where all diagonal entries are 1 and all off-diagonal entries are ."
+      ],
+      "target_objective": "Determine the requested quantitative result for Range of Equicorrelation Matrix."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, correlation, range, equicorrelation | Constraints: Consider an equicorrelation matrix where all diagonal entries are 1 and all off-diagonal entries are . | Objective: Determine the requested quantitative result for Range of Equicorrelation Matrix."
+  },
+  {
+    "problem_id": 115,
+    "name": "0-1 Matrix with A squared = 0",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "squared"
+      ],
+      "invariant_constraints": [
+        "Let be an matrix with entries in satisfying ."
+      ],
+      "target_objective": "What is the maximum number of 1s that can have"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, squared | Constraints: Let be an matrix with entries in satisfying . | Objective: What is the maximum number of 1s that can have"
+  },
+  {
+    "problem_id": 116,
+    "name": "Star Matrix: Properties and Eigenvalues",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "linear algebra",
+        "matrix",
+        "eigenvalue",
+        "star",
+        "properties",
+        "eigenvalues"
+      ],
+      "invariant_constraints": [
+        "Define the star matrix where if or (first row and first column are all 1s) and otherwise."
+      ],
+      "target_objective": "Find the eigenvalues of ."
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: linear algebra, matrix, eigenvalue, star, properties, eigenvalues | Constraints: Define the star matrix where if or (first row and first column are all 1s) and otherwise. | Objective: Find the eigenvalues of ."
+  },
+  {
+    "problem_id": 117,
+    "name": "Simulate Correlated Brownian Motions",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "numerical methods",
+        "linear algebra",
+        "correlation",
+        "brownian motion",
+        "option",
+        "simulate"
+      ],
+      "invariant_constraints": [
+        "You need to simulate two correlated Brownian motions and with correlation for pricing a basket option."
+      ],
+      "target_objective": "Determine the requested quantitative result for Simulate Correlated Brownian Motions."
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: numerical methods, linear algebra, correlation, brownian motion, option, simulate | Constraints: You need to simulate two correlated Brownian motions and with correlation for pricing a basket option. | Objective: Determine the requested quantitative result for Simulate Correlated Brownian Motions."
+  },
+  {
+    "problem_id": 118,
+    "name": "Ito's Lemma: Geometric Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "stochastic calculus",
+        "black scholes greeks",
+        "brownian motion",
+        "lemma",
+        "geometric",
+        "brownian"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Using Ito s lemma, find ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: stochastic calculus, black scholes greeks, brownian motion, lemma, geometric, brownian | Constraints: Use only the assumptions specified in the problem statement. | Objective: Using Ito s lemma, find ."
+  },
+  {
+    "problem_id": 119,
+    "name": "E[B(t) | B(1)] for Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "stochastic calculus",
+        "brownian motion",
+        "brownian",
+        "motion"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Compute for ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: stochastic calculus, brownian motion, brownian, motion | Constraints: Use only the assumptions specified in the problem statement. | Objective: Compute for ."
+  },
+  {
+    "problem_id": 120,
+    "name": "Martingale Property of Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "stochastic calculus",
+        "brownian motion",
+        "martingale",
+        "property",
+        "brownian",
+        "motion"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Show that is a martingale."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: stochastic calculus, brownian motion, martingale, property, brownian, motion | Constraints: Use only the assumptions specified in the problem statement. | Objective: Show that is a martingale."
+  },
+  {
+    "problem_id": 121,
+    "name": "Brownian Motion Hitting Boundary",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "stochastic calculus",
+        "brownian motion",
+        "brownian",
+        "motion",
+        "hitting",
+        "boundary"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Find and ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: stochastic calculus, brownian motion, brownian, motion, hitting, boundary | Constraints: Use only the assumptions specified in the problem statement. | Objective: Find and ."
+  },
+  {
+    "problem_id": 122,
+    "name": "Girsanov's Theorem Application",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "stochastic calculus",
+        "girsanov",
+        "theorem",
+        "application"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Using Girsanov s theorem, find the dynamics of under the risk-neutral measure and identify the market price of risk."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: stochastic calculus, girsanov, theorem, application | Constraints: Use only the assumptions specified in the problem statement. | Objective: Using Girsanov s theorem, find the dynamics of under the risk-neutral measure and identify the market price of risk."
+  },
+  {
+    "problem_id": 123,
+    "name": "Put-Call Parity",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "black scholes greeks",
+        "option",
+        "call",
+        "parity"
+      ],
+      "invariant_constraints": [
+        "The risk-free rate is (continuous compounding)."
+      ],
+      "target_objective": "Derive the put-call parity relationship for European options."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, black scholes greeks, option, call, parity | Constraints: The risk-free rate is (continuous compounding). | Objective: Derive the put-call parity relationship for European options."
+  },
+  {
+    "problem_id": 124,
+    "name": "Monte Carlo Option Pricing",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "numerical methods",
+        "options derivatives",
+        "option",
+        "monte",
+        "carlo",
+        "pricing"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Monte Carlo Option Pricing."
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: numerical methods, options derivatives, option, monte, carlo, pricing | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Monte Carlo Option Pricing."
+  },
+  {
+    "problem_id": 125,
+    "name": "Fair Price for a European Call (Discrete)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "option",
+        "fair",
+        "price",
+        "european",
+        "call"
+      ],
+      "invariant_constraints": [
+        "A stock is currently trading at 2 (with real-world probability 0.6) or down to 2 (with probability 0.4).",
+        "The risk-free rate is 5% per period.",
+        "What is the fair price of a European call option with strike"
+      ],
+      "target_objective": "What is the fair price of a European call option with strike"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, option, fair, price, european, call | Constraints: A stock is currently trading at 2 (with real-world probability 0.6) or down to 2 (with probability 0.4).; The risk-free rate is 5% per period.; What is the fair price of a European call option with strike | Objective: What is the fair price of a European call option with strike"
+  },
+  {
+    "problem_id": 126,
+    "name": "Implied Volatility Surface Arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "volatility modeling",
+        "implied",
+        "volatility",
+        "surface",
+        "arbitrage"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Implied Volatility Surface Arbitrage."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, volatility modeling, implied, volatility, surface, arbitrage | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Implied Volatility Surface Arbitrage."
+  },
+  {
+    "problem_id": 127,
+    "name": "Newton's Method for Implied Volatility",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "numerical methods",
+        "black scholes greeks",
+        "newton",
+        "method",
+        "implied",
+        "volatility"
+      ],
+      "invariant_constraints": [
+        "Given a market price for a European call with , , , , write pseudocode using Newton s method to find the implied volatility."
+      ],
+      "target_objective": "Given a market price for a European call with , , , , write pseudocode using Newton s method to find the implied volatility."
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: numerical methods, black scholes greeks, newton, method, implied, volatility | Constraints: Given a market price for a European call with , , , , write pseudocode using Newton s method to find the implied volatility. | Objective: Given a market price for a European call with , , , , write pseudocode using Newton s method to find the implied volatility."
+  },
+  {
+    "problem_id": 128,
+    "name": "Gamma Hedging",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "black scholes greeks",
+        "risk management",
+        "portfolio",
+        "option",
+        "gamma",
+        "hedging"
+      ],
+      "invariant_constraints": [
+        "You hold a short position in 1000 ATM call options with , , and per option.",
+        "You can trade the underlying stock and a different option with , , and ."
+      ],
+      "target_objective": "Determine the requested quantitative result for Gamma Hedging."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: black scholes greeks, risk management, portfolio, option, gamma, hedging | Constraints: You hold a short position in 1000 ATM call options with , , and per option.; You can trade the underlying stock and a different option with , , and . | Objective: Determine the requested quantitative result for Gamma Hedging."
+  },
+  {
+    "problem_id": 129,
+    "name": "Black-Scholes Assumptions",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "black scholes greeks",
+        "volatility modeling",
+        "black",
+        "scholes",
+        "assumptions"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "For each, explain how it fails in practice and what the consequence is."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: black scholes greeks, volatility modeling, black, scholes, assumptions | Constraints: Use only the assumptions specified in the problem statement. | Objective: For each, explain how it fails in practice and what the consequence is."
+  },
+  {
+    "problem_id": 130,
+    "name": "Option on Product of Two Dice",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "option",
+        "product",
+        "dice"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the fair price of this option"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, option, product, dice | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the fair price of this option"
+  },
+  {
+    "problem_id": 131,
+    "name": "Delta of a Digital Option",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "black scholes greeks",
+        "options derivatives",
+        "option",
+        "delta",
+        "digital"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Under Black-Scholes assumptions, what is the delta of this option"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: black scholes greeks, options derivatives, option, delta, digital | Constraints: Use only the assumptions specified in the problem statement. | Objective: Under Black-Scholes assumptions, what is the delta of this option"
+  },
+  {
+    "problem_id": 132,
+    "name": "Black-Scholes PDE Derivation",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "black scholes greeks",
+        "stochastic calculus",
+        "portfolio",
+        "option",
+        "black",
+        "scholes"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Derive the Black-Scholes partial differential equation by constructing a riskless portfolio consisting of the option and the underlying stock."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: black scholes greeks, stochastic calculus, portfolio, option, black, scholes | Constraints: Use only the assumptions specified in the problem statement. | Objective: Derive the Black-Scholes partial differential equation by constructing a riskless portfolio consisting of the option and the underlying stock."
+  },
+  {
+    "problem_id": 133,
+    "name": "Breeden-Litzenberger Formula",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "option",
+        "breeden",
+        "litzenberger",
+        "formula"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Breeden-Litzenberger Formula."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, option, breeden, litzenberger, formula | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Breeden-Litzenberger Formula."
+  },
+  {
+    "problem_id": 134,
+    "name": "Carr-Madan Formula for Option Pricing",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "options derivatives",
+        "option",
+        "carr",
+        "madan",
+        "formula",
+        "pricing"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Explain the Carr-Madan approach to pricing European call options using the characteristic function of the log-price."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: options derivatives, option, carr, madan, formula, pricing | Constraints: Use only the assumptions specified in the problem statement. | Objective: Explain the Carr-Madan approach to pricing European call options using the characteristic function of the log-price."
+  },
+  {
+    "problem_id": 135,
+    "name": "Stress Testing a Portfolio",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "risk modeling",
+        "risk management",
+        "portfolio",
+        "stress",
+        "testing"
+      ],
+      "invariant_constraints": [
+        "You also have 10M in investment-grade corporate bonds with spread duration 5."
+      ],
+      "target_objective": "Estimate your total portfolio loss under this stress scenario."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: risk modeling, risk management, portfolio, stress, testing | Constraints: You also have 10M in investment-grade corporate bonds with spread duration 5. | Objective: Estimate your total portfolio loss under this stress scenario."
+  },
+  {
+    "problem_id": 136,
+    "name": "E[max(X,Y)] for Uniform Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "random variable",
+        "uniform",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Compute ."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, random variable, uniform, variables | Constraints: Use only the assumptions specified in the problem statement. | Objective: Compute ."
+  },
+  {
+    "problem_id": 137,
+    "name": "Markowitz Efficient Frontier",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "portfolio optimization",
+        "portfolio construction",
+        "correlation",
+        "portfolio",
+        "variance",
+        "markowitz"
+      ],
+      "invariant_constraints": [
+        "Given two assets with expected returns , , standard deviations , , and correlation , find the minimum-variance portfolio and the global minimum variance."
+      ],
+      "target_objective": "Given two assets with expected returns , , standard deviations , , and correlation , find the minimum-variance portfolio and the global minimum variance."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: portfolio optimization, portfolio construction, correlation, portfolio, variance, markowitz | Constraints: Given two assets with expected returns , , standard deviations , , and correlation , find the minimum-variance portfolio and the global minimum variance. | Objective: Given two assets with expected returns , , standard deviations , , and correlation , find the minimum-variance portfolio and the global minimum variance."
+  },
+  {
+    "problem_id": 138,
+    "name": "Dependent but Uncorrelated Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "random variable",
+        "dependent",
+        "uncorrelated",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Give an example of two random variables that are uncorrelated ( ) but not independent."
+      ],
+      "target_objective": "Determine the requested quantitative result for Dependent but Uncorrelated Random Variables."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, random variable, dependent, uncorrelated, variables | Constraints: Give an example of two random variables that are uncorrelated ( ) but not independent. | Objective: Determine the requested quantitative result for Dependent but Uncorrelated Random Variables."
+  },
+  {
+    "problem_id": 139,
+    "name": "Kelly Criterion",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "trading strategies",
+        "optimization",
+        "kelly"
+      ],
+      "invariant_constraints": [
+        "You have the opportunity to bet on a biased coin that lands heads with probability .",
+        "What fraction of your bankroll should you bet on each flip to maximize long-run growth rate"
+      ],
+      "target_objective": "What fraction of your bankroll should you bet on each flip to maximize long-run growth rate"
+    },
+    "schema_text": "Domain: Optimization | Entities: trading strategies, optimization, kelly | Constraints: You have the opportunity to bet on a biased coin that lands heads with probability .; What fraction of your bankroll should you bet on each flip to maximize long-run growth rate | Objective: What fraction of your bankroll should you bet on each flip to maximize long-run growth rate"
+  },
+  {
+    "problem_id": 140,
+    "name": "Correlation vs Covariance",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "portfolio construction",
+        "regression",
+        "covariance",
+        "correlation",
+        "portfolio",
+        "variance"
+      ],
+      "invariant_constraints": [
+        "Two assets have daily returns with standard deviations and , and correlation ."
+      ],
+      "target_objective": "What is the standard deviation of an equally-weighted portfolio"
+    },
+    "schema_text": "Domain: Regression | Entities: portfolio construction, regression, covariance, correlation, portfolio, variance | Constraints: Two assets have daily returns with standard deviations and , and correlation . | Objective: What is the standard deviation of an equally-weighted portfolio"
+  },
+  {
+    "problem_id": 141,
+    "name": "Kelly Criterion for Log Utility",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "kelly",
+        "utility"
+      ],
+      "invariant_constraints": [
+        "A bet wins dollars for each dollar wagered with probability , and loses the wager with probability .",
+        "Derive the optimal that maximizes long-run growth rate."
+      ],
+      "target_objective": "Derive the optimal that maximizes long-run growth rate."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, kelly, utility | Constraints: A bet wins dollars for each dollar wagered with probability , and loses the wager with probability .; Derive the optimal that maximizes long-run growth rate. | Objective: Derive the optimal that maximizes long-run growth rate."
+  },
+  {
+    "problem_id": 142,
+    "name": "Kelly Criterion Position Sizing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "kelly",
+        "position",
+        "sizing"
+      ],
+      "invariant_constraints": [
+        "You have a trading opportunity with probability of making dollars and probability of losing dollars per unit bet.",
+        "What is the long-run growth rate"
+      ],
+      "target_objective": "If (even money bet), what is"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, kelly, position, sizing | Constraints: You have a trading opportunity with probability of making dollars and probability of losing dollars per unit bet.; What is the long-run growth rate | Objective: If (even money bet), what is"
+  },
+  {
+    "problem_id": 143,
+    "name": "Unbiased Estimator of Variance",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "variance",
+        "mean",
+        "distribution",
+        "estimator",
+        "unbiased"
+      ],
+      "invariant_constraints": [
+        "samples from a distribution with mean and variance , show why we divide by (not ) in the sample variance ."
+      ],
+      "target_objective": "samples from a distribution with mean and variance , show why we divide by (not ) in the sample variance ."
+    },
+    "schema_text": "Domain: Regression | Entities: regression, variance, mean, distribution, estimator, unbiased | Constraints: samples from a distribution with mean and variance , show why we divide by (not ) in the sample variance . | Objective: samples from a distribution with mean and variance , show why we divide by (not ) in the sample variance ."
+  },
+  {
+    "problem_id": 144,
+    "name": "Expectation of Ratio of Uniform Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "random variable",
+        "expectation",
+        "ratio",
+        "uniform",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Let be independent random variables."
+      ],
+      "target_objective": "What is"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, random variable, expectation, ratio, uniform, variables | Constraints: Let be independent random variables. | Objective: What is"
+  },
+  {
+    "problem_id": 145,
+    "name": "Omitted Variable Bias",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "linear regression",
+        "regression",
+        "omitted",
+        "variable",
+        "bias"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the expected bias in your estimate of"
+    },
+    "schema_text": "Domain: Regression | Entities: linear regression, regression, omitted, variable, bias | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the expected bias in your estimate of"
+  },
+  {
+    "problem_id": 146,
+    "name": "Bond Duration Hedge",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "fixed income",
+        "risk management",
+        "bond",
+        "duration",
+        "hedge"
+      ],
+      "invariant_constraints": [
+        "You hold a 10-year bond with modified duration 7.5 and market value 10M.",
+        "You want to hedge interest rate risk using a 2-year bond with modified duration 1.8."
+      ],
+      "target_objective": "Determine the requested quantitative result for Bond Duration Hedge."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: fixed income, risk management, bond, duration, hedge | Constraints: You hold a 10-year bond with modified duration 7.5 and market value 10M.; You want to hedge interest rate risk using a 2-year bond with modified duration 1.8. | Objective: Determine the requested quantitative result for Bond Duration Hedge."
+  },
+  {
+    "problem_id": 147,
+    "name": "VaR vs Expected Shortfall",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "risk modeling",
+        "expected",
+        "shortfall"
+      ],
+      "invariant_constraints": [
+        "Give a concrete example where VaR can be misleading."
+      ],
+      "target_objective": "Explain the difference between Value-at-Risk (VaR) and Expected Shortfall (ES)."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: risk modeling, expected, shortfall | Constraints: Give a concrete example where VaR can be misleading. | Objective: Explain the difference between Value-at-Risk (VaR) and Expected Shortfall (ES)."
+  },
+  {
+    "problem_id": 148,
+    "name": "Two Piles Nim Variant",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "brain teasers",
+        "piles",
+        "variant"
+      ],
+      "invariant_constraints": [
+        "There are two piles of stones with and stones respectively.",
+        "For which initial configurations does the first player have a winning strategy"
+      ],
+      "target_objective": "Determine the requested quantitative result for Two Piles Nim Variant."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: brain teasers, piles, variant | Constraints: There are two piles of stones with and stones respectively.; For which initial configurations does the first player have a winning strategy | Objective: Determine the requested quantitative result for Two Piles Nim Variant."
+  },
+  {
+    "problem_id": 149,
+    "name": "Correlation of Dependent Variables",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "correlation",
+        "dependent",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Let and where is independent of ."
+      ],
+      "target_objective": "What is the correlation"
+    },
+    "schema_text": "Domain: Regression | Entities: regression, correlation, dependent, variables | Constraints: Let and where is independent of . | Objective: What is the correlation"
+  },
+  {
+    "problem_id": 150,
+    "name": "Kelly Criterion for Optimal Bet Sizing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "kelly",
+        "sizing"
+      ],
+      "invariant_constraints": [
+        "You can bet a fraction of your bankroll on a coin flip that lands heads with probability .",
+        "What fraction maximizes long-run growth rate"
+      ],
+      "target_objective": "What fraction maximizes long-run growth rate"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, kelly, sizing | Constraints: You can bet a fraction of your bankroll on a coin flip that lands heads with probability .; What fraction maximizes long-run growth rate | Objective: What fraction maximizes long-run growth rate"
+  },
+  {
+    "problem_id": 151,
+    "name": "Quadratic Form Optimization",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "optimization",
+        "quadratic",
+        "form"
+      ],
+      "invariant_constraints": [
+        "Minimize where is symmetric positive definite."
+      ],
+      "target_objective": "Minimize where is symmetric positive definite."
+    },
+    "schema_text": "Domain: Optimization | Entities: optimization, quadratic, form | Constraints: Minimize where is symmetric positive definite. | Objective: Minimize where is symmetric positive definite."
+  },
+  {
+    "problem_id": 152,
+    "name": "Max Drawdown of a Process",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "risk modeling",
+        "drawdown",
+        "process"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Define the maximum drawdown of a price path and write an algorithm to compute it."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: risk modeling, drawdown, process | Constraints: Use only the assumptions specified in the problem statement. | Objective: Define the maximum drawdown of a price path and write an algorithm to compute it."
+  },
+  {
+    "problem_id": 153,
+    "name": "Futures Exchange Data Feed Delay",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "market microstructure",
+        "mean",
+        "futures",
+        "exchange",
+        "data",
+        "feed"
+      ],
+      "invariant_constraints": [
+        "A futures exchange provides two data feeds a fast direct feed (arriving at time ) and a slower consolidated feed (arriving at time , where with mean 50 microseconds).",
+        "(a) What is the probability the consolidated feed has not yet reflected this change after 100 microseconds"
+      ],
+      "target_objective": "(a) What is the probability the consolidated feed has not yet reflected this change after 100 microseconds"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: market microstructure, mean, futures, exchange, data, feed | Constraints: A futures exchange provides two data feeds a fast direct feed (arriving at time ) and a slower consolidated feed (arriving at time , where with mean 50 microseconds).; (a) What is the probability the consolidated feed has not yet reflected this change after 100 microseconds | Objective: (a) What is the probability the consolidated feed has not yet reflected this change after 100 microseconds"
+  },
+  {
+    "problem_id": 154,
+    "name": "Minimize Variance of Linear Combination",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "random variable",
+        "variance",
+        "minimize",
+        "linear",
+        "combination"
+      ],
+      "invariant_constraints": [
+        "Let and be random variables with , , and ."
+      ],
+      "target_objective": "Find the value of that minimizes ."
+    },
+    "schema_text": "Domain: Regression | Entities: regression, random variable, variance, minimize, linear, combination | Constraints: Let and be random variables with , , and . | Objective: Find the value of that minimizes ."
+  },
+  {
+    "problem_id": 155,
+    "name": "Portfolio Allocation by Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "portfolio construction",
+        "portfolio",
+        "allocation",
+        "sharpe",
+        "ratio"
+      ],
+      "invariant_constraints": [
+        "You have two uncorrelated assets with excess returns and volatilities ."
+      ],
+      "target_objective": "What portfolio weights maximize the Sharpe ratio"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: portfolio construction, portfolio, allocation, sharpe, ratio | Constraints: You have two uncorrelated assets with excess returns and volatilities . | Objective: What portfolio weights maximize the Sharpe ratio"
+  },
+  {
+    "problem_id": 156,
+    "name": "Correlation Range with Three Variables",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "correlation",
+        "random variable",
+        "range",
+        "three",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Let be random variables with and ."
+      ],
+      "target_objective": "What is the feasible range of"
+    },
+    "schema_text": "Domain: Regression | Entities: regression, correlation, random variable, range, three, variables | Constraints: Let be random variables with and . | Objective: What is the feasible range of"
+  },
+  {
+    "problem_id": 157,
+    "name": "Portfolio Optimization with Alpha Signals",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "portfolio construction",
+        "portfolio",
+        "optimization",
+        "alpha",
+        "signals"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Portfolio Optimization with Alpha Signals."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: portfolio construction, portfolio, optimization, alpha, signals | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Portfolio Optimization with Alpha Signals."
+  },
+  {
+    "problem_id": 158,
+    "name": "Lagrange Multiplier: Minimum Variance with Target Return",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "portfolio optimization",
+        "optimization",
+        "matrix",
+        "vector",
+        "covariance",
+        "portfolio"
+      ],
+      "invariant_constraints": [
+        "You have assets with expected return vector and covariance matrix .",
+        "Find the portfolio weights that minimize subject to and ."
+      ],
+      "target_objective": "Find the portfolio weights that minimize subject to and ."
+    },
+    "schema_text": "Domain: Optimization | Entities: portfolio optimization, optimization, matrix, vector, covariance, portfolio | Constraints: You have assets with expected return vector and covariance matrix .; Find the portfolio weights that minimize subject to and . | Objective: Find the portfolio weights that minimize subject to and ."
+  },
+  {
+    "problem_id": 159,
+    "name": "Price Impact and Optimal Execution",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "market microstructure",
+        "trading strategies",
+        "price",
+        "impact",
+        "execution"
+      ],
+      "invariant_constraints": [
+        "You need to sell 100,000 shares of a stock with average daily volume of 500,000 shares."
+      ],
+      "target_objective": "splitting into 10 equal trades over the day, estimate the execution cost difference."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: market microstructure, trading strategies, price, impact, execution | Constraints: You need to sell 100,000 shares of a stock with average daily volume of 500,000 shares. | Objective: splitting into 10 equal trades over the day, estimate the execution cost difference."
+  },
+  {
+    "problem_id": 160,
+    "name": "Ridge Regression Bias-Variance Tradeoff",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "linear regression",
+        "regression",
+        "variance",
+        "estimator",
+        "ridge",
+        "bias"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Show that this estimator is biased and derive its bias."
+    },
+    "schema_text": "Domain: Regression | Entities: linear regression, regression, variance, estimator, ridge, bias | Constraints: Use only the assumptions specified in the problem statement. | Objective: Show that this estimator is biased and derive its bias."
+  },
+  {
+    "problem_id": 161,
+    "name": "Errors-in-Variables Regression Bias",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "estimator",
+        "errors",
+        "variables",
+        "bias"
+      ],
+      "invariant_constraints": [
+        "In simple linear regression , you observe instead of the true regressor , where is measurement error independent of and ."
+      ],
+      "target_objective": "What is the bias of the OLS estimator"
+    },
+    "schema_text": "Domain: Regression | Entities: regression, estimator, errors, variables, bias | Constraints: In simple linear regression , you observe instead of the true regressor , where is measurement error independent of and . | Objective: What is the bias of the OLS estimator"
+  },
+  {
+    "problem_id": 162,
+    "name": "Array Partition to Minimize Variance",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "variance",
+        "array",
+        "partition",
+        "minimize"
+      ],
+      "invariant_constraints": [
+        "Given an array of positive integers and a number , partition the array into contiguous subarrays to minimize the maximum variance among all subarrays."
+      ],
+      "target_objective": "Given an array of positive integers and a number , partition the array into contiguous subarrays to minimize the maximum variance among all subarrays."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, variance, array, partition, minimize | Constraints: Given an array of positive integers and a number , partition the array into contiguous subarrays to minimize the maximum variance among all subarrays. | Objective: Given an array of positive integers and a number , partition the array into contiguous subarrays to minimize the maximum variance among all subarrays."
+  },
+  {
+    "problem_id": 163,
+    "name": "Cov(min, max) of Two Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "random variable",
+        "variance",
+        "variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Compute ."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, random variable, variance, variables | Constraints: Use only the assumptions specified in the problem statement. | Objective: Compute ."
+  },
+  {
+    "problem_id": 164,
+    "name": "Pricing a European Call via Risk-Neutral Expectation",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "black scholes greeks",
+        "options derivatives",
+        "stochastic calculus",
+        "pricing",
+        "european",
+        "call"
+      ],
+      "invariant_constraints": [
+        "Under the risk-neutral measure, a stock follows where ."
+      ],
+      "target_objective": "Derive the Black-Scholes formula for a European call ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: black scholes greeks, options derivatives, stochastic calculus, pricing, european, call | Constraints: Under the risk-neutral measure, a stock follows where . | Objective: Derive the Black-Scholes formula for a European call ."
+  },
+  {
+    "problem_id": 165,
+    "name": "Bid-Ask Spread in Market Making",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "market microstructure",
+        "trading strategies",
+        "spread",
+        "market",
+        "making"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Bid-Ask Spread in Market Making."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: market microstructure, trading strategies, spread, market, making | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Bid-Ask Spread in Market Making."
+  },
+  {
+    "problem_id": 166,
+    "name": "Market Making Interval Bidding Game",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "market microstructure",
+        "market",
+        "making",
+        "interval",
+        "bidding",
+        "game"
+      ],
+      "invariant_constraints": [
+        "You are a market maker for a stock whose true value is uniformly distributed on .",
+        "You must quote a bid and ask (with )."
+      ],
+      "target_objective": "What bid and ask should you quote to maximize expected profit"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: market microstructure, market, making, interval, bidding, game | Constraints: You are a market maker for a stock whose true value is uniformly distributed on .; You must quote a bid and ask (with ). | Objective: What bid and ask should you quote to maximize expected profit"
+  },
+  {
+    "problem_id": 167,
+    "name": "Sharpe Ratio Hypothesis Testing",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "regression",
+        "mean",
+        "hypothesis",
+        "sharpe",
+        "ratio",
+        "testing"
+      ],
+      "invariant_constraints": [
+        "A trading strategy produces daily returns with sample mean and sample standard deviation over trading days."
+      ],
+      "target_objective": "What is the standard error of the estimated Sharpe ratio"
+    },
+    "schema_text": "Domain: Regression | Entities: regression, mean, hypothesis, sharpe, ratio, testing | Constraints: A trading strategy produces daily returns with sample mean and sample standard deviation over trading days. | Objective: What is the standard error of the estimated Sharpe ratio"
+  },
+  {
+    "problem_id": 168,
+    "name": "Expected Sum to See All Die Faces (Coupon Collector Variant)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "expected",
+        "faces",
+        "coupon",
+        "collector",
+        "variant"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the expected SUM of all the rolls (not just the number of rolls)"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, expected, faces, coupon, collector, variant | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the expected SUM of all the rolls (not just the number of rolls)"
+  },
+  {
+    "problem_id": 169,
+    "name": "Stationarity of AR(1) Process",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "time series",
+        "regression",
+        "correlation",
+        "stationarity",
+        "process"
+      ],
+      "invariant_constraints": [
+        "Consider the AR(1) process where ."
+      ],
+      "target_objective": "When stationary, find , , and the autocorrelation function ."
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: time series, regression, correlation, stationarity, process | Constraints: Consider the AR(1) process where . | Objective: When stationary, find , , and the autocorrelation function ."
+  },
+  {
+    "problem_id": 170,
+    "name": "Pairs Trading and Cointegration",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "trading strategies",
+        "time series",
+        "mean",
+        "pairs",
+        "trading",
+        "cointegration"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "You estimate and the spread has mean , standard deviation , and half-life of mean reversion of 10 days."
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: trading strategies, time series, mean, pairs, trading, cointegration | Constraints: Use only the assumptions specified in the problem statement. | Objective: You estimate and the spread has mean , standard deviation , and half-life of mean reversion of 10 days."
+  },
+  {
+    "problem_id": 171,
+    "name": "Number Guessing Game (Binary Search)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "brain teasers",
+        "number",
+        "guessing",
+        "game",
+        "binary",
+        "search"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the minimum number of guesses needed to guarantee finding the number"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: brain teasers, number, guessing, game, binary, search | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the minimum number of guesses needed to guarantee finding the number"
+  },
+  {
+    "problem_id": 172,
+    "name": "Best Time to Buy and Sell Stock (Single Transaction)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "best",
+        "time",
+        "sell",
+        "stock",
+        "single"
+      ],
+      "invariant_constraints": [
+        "Given an array of stock prices where prices i is the price on day , find the maximum profit from buying on one day and selling on a later day."
+      ],
+      "target_objective": "Given an array of stock prices where prices i is the price on day , find the maximum profit from buying on one day and selling on a later day."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, best, time, sell, stock, single | Constraints: Given an array of stock prices where prices i is the price on day , find the maximum profit from buying on one day and selling on a later day. | Objective: Given an array of stock prices where prices i is the price on day , find the maximum profit from buying on one day and selling on a later day."
+  },
+  {
+    "problem_id": 173,
+    "name": "Real-Time Position and PnL Calculation",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "real",
+        "time",
+        "position",
+        "calculation"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Real-Time Position and PnL Calculation."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, real, time, position, calculation | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Real-Time Position and PnL Calculation."
+  },
+  {
+    "problem_id": 174,
+    "name": "Merge Intervals",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "merge",
+        "intervals"
+      ],
+      "invariant_constraints": [
+        "Given a collection of intervals , merge all overlapping intervals."
+      ],
+      "target_objective": "Determine the requested quantitative result for Merge Intervals."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, merge, intervals | Constraints: Given a collection of intervals , merge all overlapping intervals. | Objective: Determine the requested quantitative result for Merge Intervals."
+  },
+  {
+    "problem_id": 175,
+    "name": "Longest Monotone Subsequence",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "longest",
+        "monotone",
+        "subsequence"
+      ],
+      "invariant_constraints": [
+        "Given an array of integers, find the length of the longest strictly increasing subsequence (LIS)."
+      ],
+      "target_objective": "Given an array of integers, find the length of the longest strictly increasing subsequence (LIS)."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, longest, monotone, subsequence | Constraints: Given an array of integers, find the length of the longest strictly increasing subsequence (LIS). | Objective: Given an array of integers, find the length of the longest strictly increasing subsequence (LIS)."
+  },
+  {
+    "problem_id": 176,
+    "name": "Trie Prefix Search Implementation",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "trie",
+        "prefix",
+        "search",
+        "implementation"
+      ],
+      "invariant_constraints": [
+        "All operations should run in time where is the length of the input string."
+      ],
+      "target_objective": "Determine the requested quantitative result for Trie Prefix Search Implementation."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, trie, prefix, search, implementation | Constraints: All operations should run in time where is the length of the input string. | Objective: Determine the requested quantitative result for Trie Prefix Search Implementation."
+  },
+  {
+    "problem_id": 177,
+    "name": "Disk Space Analysis (Sliding Window Minimum)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "disk",
+        "space",
+        "analysis",
+        "sliding",
+        "window"
+      ],
+      "invariant_constraints": [
+        "Given an array of disk space values of length and a window size , find the maximum of the minimums across all contiguous windows of size .",
+        "For example, given spaces 8, 2, 4, 6 and k 2, the sliding window minimums are 2, 2, 4 , so the answer is 4."
+      ],
+      "target_objective": "Given an array of disk space values of length and a window size , find the maximum of the minimums across all contiguous windows of size ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, disk, space, analysis, sliding, window | Constraints: Given an array of disk space values of length and a window size , find the maximum of the minimums across all contiguous windows of size .; For example, given spaces 8, 2, 4, 6 and k 2, the sliding window minimums are 2, 2, 4 , so the answer is 4. | Objective: Given an array of disk space values of length and a window size , find the maximum of the minimums across all contiguous windows of size ."
+  },
+  {
+    "problem_id": 178,
+    "name": "Merge K Sorted Streams",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "merge",
+        "sorted",
+        "streams"
+      ],
+      "invariant_constraints": [
+        "How would you handle the case where some exchanges have network delays"
+      ],
+      "target_objective": "What is the time complexity per event"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, merge, sorted, streams | Constraints: How would you handle the case where some exchanges have network delays | Objective: What is the time complexity per event"
+  },
+  {
+    "problem_id": 179,
+    "name": "Edit Distance (Levenshtein Distance)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "edit",
+        "distance",
+        "levenshtein"
+      ],
+      "invariant_constraints": [
+        "Given two strings and , find the minimum number of single-character edits (insertions, deletions, substitutions) to convert into ."
+      ],
+      "target_objective": "Given two strings and , find the minimum number of single-character edits (insertions, deletions, substitutions) to convert into ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, edit, distance, levenshtein | Constraints: Given two strings and , find the minimum number of single-character edits (insertions, deletions, substitutions) to convert into . | Objective: Given two strings and , find the minimum number of single-character edits (insertions, deletions, substitutions) to convert into ."
+  },
+  {
+    "problem_id": 180,
+    "name": "Maximum Profit with Dynamic Programming",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "maximum",
+        "profit",
+        "dynamic",
+        "programming"
+      ],
+      "invariant_constraints": [
+        "Given an array of stock prices over days, find the maximum profit achievable with at most 2 buy-sell transactions."
+      ],
+      "target_objective": "Given an array of stock prices over days, find the maximum profit achievable with at most 2 buy-sell transactions."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, maximum, profit, dynamic, programming | Constraints: Given an array of stock prices over days, find the maximum profit achievable with at most 2 buy-sell transactions. | Objective: Given an array of stock prices over days, find the maximum profit achievable with at most 2 buy-sell transactions."
+  },
+  {
+    "problem_id": 181,
+    "name": "Merging K Sorted Lists",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "merging",
+        "sorted",
+        "lists"
+      ],
+      "invariant_constraints": [
+        "Given sorted lists with a total of elements, merge them into one sorted list."
+      ],
+      "target_objective": "What is the optimal time complexity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, merging, sorted, lists | Constraints: Given sorted lists with a total of elements, merge them into one sorted list. | Objective: What is the optimal time complexity"
+  },
+  {
+    "problem_id": 182,
+    "name": "Sorting with Limited Displacement (K-Sorted Array)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "sorting",
+        "limited",
+        "displacement",
+        "sorted",
+        "array"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Sorting with Limited Displacement (K-Sorted Array)."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, sorting, limited, displacement, sorted, array | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Sorting with Limited Displacement (K-Sorted Array)."
+  },
+  {
+    "problem_id": 183,
+    "name": "Online Mean and Standard Deviation (Welford's Algorithm)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "mean",
+        "online",
+        "standard",
+        "deviation",
+        "welford"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Design an algorithm to compute the running mean and standard deviation of a stream of numbers in time per update and space, without storing all past values."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, mean, online, standard, deviation, welford | Constraints: Use only the assumptions specified in the problem statement. | Objective: Design an algorithm to compute the running mean and standard deviation of a stream of numbers in time per update and space, without storing all past values."
+  },
+  {
+    "problem_id": 184,
+    "name": "LFU Cache Design",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "cache",
+        "design"
+      ],
+      "invariant_constraints": [
+        "Design and implement a Least Frequently Used (LFU) cache with capacity ."
+      ],
+      "target_objective": "Determine the requested quantitative result for LFU Cache Design."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, cache, design | Constraints: Design and implement a Least Frequently Used (LFU) cache with capacity . | Objective: Determine the requested quantitative result for LFU Cache Design."
+  },
+  {
+    "problem_id": 185,
+    "name": "Order Management System API Design",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "order",
+        "management",
+        "system",
+        "design"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the time complexity of each operation"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, order, management, system, design | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the time complexity of each operation"
+  },
+  {
+    "problem_id": 186,
+    "name": "Automated Trading System Architecture",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "automated",
+        "trading",
+        "system",
+        "architecture"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "The system must (1) consume market data feeds from 5 exchanges (2) compute trading signals with latency (3) manage risk limits (position limits, loss limits) (4) route orders to the optimal exchange (5) handle failover gracefully."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, automated, trading, system, architecture | Constraints: Use only the assumptions specified in the problem statement. | Objective: The system must (1) consume market data feeds from 5 exchanges (2) compute trading signals with latency (3) manage risk limits (position limits, loss limits) (4) route orders to the optimal exchange (5) handle failover gracefully."
+  },
+  {
+    "problem_id": 187,
+    "name": "Visiting Cities (DP Shortest Path)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "visiting",
+        "cities",
+        "shortest",
+        "path"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Find the minimum cost to travel from city 1 to city ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, visiting, cities, shortest, path | Constraints: Use only the assumptions specified in the problem statement. | Objective: Find the minimum cost to travel from city 1 to city ."
+  },
+  {
+    "problem_id": 188,
+    "name": "Step Function Fitting with DP",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "step",
+        "function",
+        "fitting"
+      ],
+      "invariant_constraints": [
+        "Given data points sorted by , fit a step function with at most steps that minimizes the total squared error."
+      ],
+      "target_objective": "Given data points sorted by , fit a step function with at most steps that minimizes the total squared error."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, step, function, fitting | Constraints: Given data points sorted by , fit a step function with at most steps that minimizes the total squared error. | Objective: Given data points sorted by , fit a step function with at most steps that minimizes the total squared error."
+  },
+  {
+    "problem_id": 189,
+    "name": "Polynomial Coefficient Recovery",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "polynomial",
+        "coefficient",
+        "recovery"
+      ],
+      "invariant_constraints": [
+        "You are given a black-box function that computes a polynomial of degree with non-negative integer coefficients, each at most ."
+      ],
+      "target_objective": "You are given a black-box function that computes a polynomial of degree with non-negative integer coefficients, each at most ."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, polynomial, coefficient, recovery | Constraints: You are given a black-box function that computes a polynomial of degree with non-negative integer coefficients, each at most . | Objective: You are given a black-box function that computes a polynomial of degree with non-negative integer coefficients, each at most ."
+  },
+  {
+    "problem_id": 190,
+    "name": "Queue with O(1) Get-Max",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "queue"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Queue with O(1) Get-Max."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, queue | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Queue with O(1) Get-Max."
+  },
+  {
+    "problem_id": 191,
+    "name": "Trapping Rain Water",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "trapping",
+        "rain",
+        "water"
+      ],
+      "invariant_constraints": [
+        "Given non-negative integers representing an elevation map where the width of each bar is 1, compute how much water can be trapped after raining."
+      ],
+      "target_objective": "Given non-negative integers representing an elevation map where the width of each bar is 1, compute how much water can be trapped after raining."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, trapping, rain, water | Constraints: Given non-negative integers representing an elevation map where the width of each bar is 1, compute how much water can be trapped after raining. | Objective: Given non-negative integers representing an elevation map where the width of each bar is 1, compute how much water can be trapped after raining."
+  },
+  {
+    "problem_id": 192,
+    "name": "Order Matching Engine Design",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "order",
+        "matching",
+        "engine",
+        "design"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Determine the requested quantitative result for Order Matching Engine Design."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, order, matching, engine, design | Constraints: Use only the assumptions specified in the problem statement. | Objective: Determine the requested quantitative result for Order Matching Engine Design."
+  },
+  {
+    "problem_id": 193,
+    "name": "Memory Pool Allocator",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "memory",
+        "pool",
+        "allocator"
+      ],
+      "invariant_constraints": [
+        "Design a fixed-size memory pool allocator optimized for a trading system where latency is critical."
+      ],
+      "target_objective": "Determine the requested quantitative result for Memory Pool Allocator."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, memory, pool, allocator | Constraints: Design a fixed-size memory pool allocator optimized for a trading system where latency is critical. | Objective: Determine the requested quantitative result for Memory Pool Allocator."
+  },
+  {
+    "problem_id": 194,
+    "name": "Surface Color of a Painted Cube",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "surface",
+        "color",
+        "painted",
+        "cube"
+      ],
+      "invariant_constraints": [
+        "What is the probability the top face is red"
+      ],
+      "target_objective": "What is the probability the top face is red"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, surface, color, painted, cube | Constraints: What is the probability the top face is red | Objective: What is the probability the top face is red"
+  },
+  {
+    "problem_id": 195,
+    "name": "Monty Hall Problem Variant",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "monty",
+        "hall",
+        "problem",
+        "variant"
+      ],
+      "invariant_constraints": [
+        "The host, who knows where the car is, opens 98 doors (all with goats)."
+      ],
+      "target_objective": "Determine the requested quantitative result for Monty Hall Problem Variant."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, monty, hall, problem, variant | Constraints: The host, who knows where the car is, opens 98 doors (all with goats). | Objective: Determine the requested quantitative result for Monty Hall Problem Variant."
+  },
+  {
+    "problem_id": 196,
+    "name": "NumPy Array Game: Who Wins?",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "coding",
+        "numpy",
+        "array",
+        "game",
+        "wins"
+      ],
+      "invariant_constraints": [
+        "For , who wins with optimal play"
+      ],
+      "target_objective": "Determine the requested quantitative result for NumPy Array Game: Who Wins?."
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: coding, numpy, array, game, wins | Constraints: For , who wins with optimal play | Objective: Determine the requested quantitative result for NumPy Array Game: Who Wins?."
+  },
+  {
+    "problem_id": 197,
+    "name": "Divisibility Puzzle with Dice",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "brain teasers",
+        "divisibility",
+        "puzzle",
+        "dice"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "What is the expected number of rolls until the resulting integer is divisible by 6"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: brain teasers, divisibility, puzzle, dice | Constraints: Use only the assumptions specified in the problem statement. | Objective: What is the expected number of rolls until the resulting integer is divisible by 6"
+  },
+  {
+    "problem_id": 198,
+    "name": "Treasure Box with Bomb",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "treasure",
+        "bomb"
+      ],
+      "invariant_constraints": [
+        "What is the optimal strategy and your probability of winning"
+      ],
+      "target_objective": "If you find the treasure first, you win."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, treasure, bomb | Constraints: What is the optimal strategy and your probability of winning | Objective: If you find the treasure first, you win."
+  },
+  {
+    "problem_id": 199,
+    "name": "Loop Termination Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "loop",
+        "termination"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions specified in the problem statement."
+      ],
+      "target_objective": "Consider this pseudocode x 1 while x n flip a fair coin if heads x x + 1 if tails x max(1, x - 1) What is the expected number of iterations until the loop terminates (x reaches n)"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, loop, termination | Constraints: Use only the assumptions specified in the problem statement. | Objective: Consider this pseudocode x 1 while x n flip a fair coin if heads x x + 1 if tails x max(1, x - 1) What is the expected number of iterations until the loop terminates (x reaches n)"
+  },
+  {
+    "problem_id": 200,
+    "name": "Bus Waiting Paradox (Inspection Paradox)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "probability",
+        "poisson process",
+        "waiting",
+        "paradox",
+        "inspection"
+      ],
+      "invariant_constraints": [
+        "Buses arrive at a stop according to a Poisson process with rate (average inter-arrival time ).",
+        "You arrive at the bus stop at a uniformly random time."
+      ],
+      "target_objective": "What is the expected time until the next bus arrives"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: probability, poisson process, waiting, paradox, inspection | Constraints: Buses arrive at a stop according to a Poisson process with rate (average inter-arrival time ).; You arrive at the bus stop at a uniformly random time. | Objective: What is the expected time until the next bus arrives"
+  }
+]

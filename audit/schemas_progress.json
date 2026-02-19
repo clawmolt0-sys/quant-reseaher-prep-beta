@@ -1,0 +1,11 @@
+{
+  "completed_batches": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005"
+  ],
+  "completed_records": 500,
+  "target_records": 4924
+}

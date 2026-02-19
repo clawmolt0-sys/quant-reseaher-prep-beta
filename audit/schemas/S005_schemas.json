@@ -1,0 +1,1902 @@
+[
+  {
+    "problem_id": 404,
+    "name": "OLS assumptions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 405,
+    "name": "Find next palindrome",
+    "schema": {
+      "core_mathematical_domain": "Applied Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Problem-specific variables",
+        "Known assumptions",
+        "Unknown quantity to compute"
+      ],
+      "invariant_constraints": [
+        "Mathematical consistency",
+        "Given constraints must hold",
+        "Result should be interpretable"
+      ],
+      "target_objective": "Derive or design method to solve stated quantitative objective"
+    },
+    "schema_text": "Domain: Applied Quantitative Reasoning | Entities: Problem-specific variables; Known assumptions; Unknown quantity to compute | Constraints: Mathematical consistency; Given constraints must hold; Result should be interpretable | Objective: Derive or design method to solve stated quantitative objective"
+  },
+  {
+    "problem_id": 406,
+    "name": "Sorting Algorithm Design and Complexity",
+    "schema": {
+      "core_mathematical_domain": "Sorting Algorithms and Complexity",
+      "problem_setup_entities": [
+        "Input collection",
+        "Comparison/key function",
+        "Auxiliary memory model"
+      ],
+      "invariant_constraints": [
+        "Correct total ordering",
+        "Complexity analyzed by n and memory constraints",
+        "Stability/in-place properties may matter"
+      ],
+      "target_objective": "Design or choose efficient sorting approach with justified complexity"
+    },
+    "schema_text": "Domain: Sorting Algorithms and Complexity | Entities: Input collection; Comparison/key function; Auxiliary memory model | Constraints: Correct total ordering; Complexity analyzed by n and memory constraints; Stability/in-place properties may matter | Objective: Design or choose efficient sorting approach with justified complexity"
+  },
+  {
+    "problem_id": 407,
+    "name": "Probability on a graph",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Process Hitting Times",
+      "problem_setup_entities": [
+        "Random walk state space",
+        "Boundary/exit set",
+        "Transition kernel"
+      ],
+      "invariant_constraints": [
+        "Markov property",
+        "Absorbing boundaries define stopping time",
+        "Step distribution fixed"
+      ],
+      "target_objective": "Compute expected exit/hitting time or related probabilities"
+    },
+    "schema_text": "Domain: Stochastic Process Hitting Times | Entities: Random walk state space; Boundary/exit set; Transition kernel | Constraints: Markov property; Absorbing boundaries define stopping time; Step distribution fixed | Objective: Compute expected exit/hitting time or related probabilities"
+  },
+  {
+    "problem_id": 408,
+    "name": "Sharpe Ratio Aggregation and Annualization",
+    "schema": {
+      "core_mathematical_domain": "Risk-Adjusted Return Scaling",
+      "problem_setup_entities": [
+        "Return process",
+        "Mean excess return",
+        "Return volatility and sampling horizon"
+      ],
+      "invariant_constraints": [
+        "Assumes iid/weakly dependent returns for sqrt-time scaling",
+        "Consistent return frequency",
+        "Model aggregation constraints across strategies"
+      ],
+      "target_objective": "Derive combined/annualized Sharpe ratio and discuss deviations from theoretical scaling"
+    },
+    "schema_text": "Domain: Risk-Adjusted Return Scaling | Entities: Return process; Mean excess return; Return volatility and sampling horizon | Constraints: Assumes iid/weakly dependent returns for sqrt-time scaling; Consistent return frequency; Model aggregation constraints across strategies | Objective: Derive combined/annualized Sharpe ratio and discuss deviations from theoretical scaling"
+  },
+  {
+    "problem_id": 409,
+    "name": "Markov Decision Process for Stock Trading",
+    "schema": {
+      "core_mathematical_domain": "Markov Decision Process Optimization",
+      "problem_setup_entities": [
+        "State space (inventory/price/position)",
+        "Action set (buy/sell/hold)",
+        "Transition probabilities and rewards"
+      ],
+      "invariant_constraints": [
+        "Markov property",
+        "Policy maps states to actions",
+        "Objective evaluated over horizon/discounting"
+      ],
+      "target_objective": "Find policy maximizing expected cumulative reward"
+    },
+    "schema_text": "Domain: Markov Decision Process Optimization | Entities: State space (inventory/price/position); Action set (buy/sell/hold); Transition probabilities and rewards | Constraints: Markov property; Policy maps states to actions; Objective evaluated over horizon/discounting | Objective: Find policy maximizing expected cumulative reward"
+  },
+  {
+    "problem_id": 410,
+    "name": "Maximizing Taxi Driver Revenue Strategy",
+    "schema": {
+      "core_mathematical_domain": "Predictive Modeling and Decision Analytics",
+      "problem_setup_entities": [
+        "Target variable/business objective",
+        "Feature set and data sources",
+        "Training/validation/evaluation framework"
+      ],
+      "invariant_constraints": [
+        "Temporal leakage avoided",
+        "Operational constraints included",
+        "Performance metric aligned with objective"
+      ],
+      "target_objective": "Build model/strategy maximizing out-of-sample decision value"
+    },
+    "schema_text": "Domain: Predictive Modeling and Decision Analytics | Entities: Target variable/business objective; Feature set and data sources; Training/validation/evaluation framework | Constraints: Temporal leakage avoided; Operational constraints included; Performance metric aligned with objective | Objective: Build model/strategy maximizing out-of-sample decision value"
+  },
+  {
+    "problem_id": 411,
+    "name": "Diophantine equation",
+    "schema": {
+      "core_mathematical_domain": "Applied Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Problem-specific variables",
+        "Known assumptions",
+        "Unknown quantity to compute"
+      ],
+      "invariant_constraints": [
+        "Mathematical consistency",
+        "Given constraints must hold",
+        "Result should be interpretable"
+      ],
+      "target_objective": "Derive or design method to solve stated quantitative objective"
+    },
+    "schema_text": "Domain: Applied Quantitative Reasoning | Entities: Problem-specific variables; Known assumptions; Unknown quantity to compute | Constraints: Mathematical consistency; Given constraints must hold; Result should be interpretable | Objective: Derive or design method to solve stated quantitative objective"
+  },
+  {
+    "problem_id": 412,
+    "name": "Case study: Predicting Citi Bike distribution",
+    "schema": {
+      "core_mathematical_domain": "Predictive Modeling and Decision Analytics",
+      "problem_setup_entities": [
+        "Target variable/business objective",
+        "Feature set and data sources",
+        "Training/validation/evaluation framework"
+      ],
+      "invariant_constraints": [
+        "Temporal leakage avoided",
+        "Operational constraints included",
+        "Performance metric aligned with objective"
+      ],
+      "target_objective": "Build model/strategy maximizing out-of-sample decision value"
+    },
+    "schema_text": "Domain: Predictive Modeling and Decision Analytics | Entities: Target variable/business objective; Feature set and data sources; Training/validation/evaluation framework | Constraints: Temporal leakage avoided; Operational constraints included; Performance metric aligned with objective | Objective: Build model/strategy maximizing out-of-sample decision value"
+  },
+  {
+    "problem_id": 413,
+    "name": "Bayesian Hierarchical Coin Toss Correlation",
+    "schema": {
+      "core_mathematical_domain": "Hierarchical Bayesian Count Dependence",
+      "problem_setup_entities": [
+        "Latent coin bias p",
+        "Binomial counts N_10 and N_100",
+        "Prior distribution for p"
+      ],
+      "invariant_constraints": [
+        "Conditional independence given p",
+        "Shared latent parameter induces dependence",
+        "Counts are nested samples"
+      ],
+      "target_objective": "Compute correlation between nested binomial counts under hierarchical model"
+    },
+    "schema_text": "Domain: Hierarchical Bayesian Count Dependence | Entities: Latent coin bias p; Binomial counts N_10 and N_100; Prior distribution for p | Constraints: Conditional independence given p; Shared latent parameter induces dependence; Counts are nested samples | Objective: Compute correlation between nested binomial counts under hierarchical model"
+  },
+  {
+    "problem_id": 414,
+    "name": "Evaluating Probabilistic Weather Forecasters",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 415,
+    "name": "Case study: Airbnb pricing model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 416,
+    "name": "General Prediction Modeling Process",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 417,
+    "name": "Pandas data processing",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 418,
+    "name": "CS fundamentals: TreeMap vs",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 419,
+    "name": "Hash Table Implementation and Collision Resolution",
+    "schema": {
+      "core_mathematical_domain": "Hash Table Algorithms",
+      "problem_setup_entities": [
+        "Hash function",
+        "Array of buckets/slots",
+        "Collision resolution rule"
+      ],
+      "invariant_constraints": [
+        "Load factor controls expected complexity",
+        "Collision handling via probing/chaining",
+        "Rehashing preserves key-value mappings"
+      ],
+      "target_objective": "Explain/implement hash map operations and complexity trade-offs"
+    },
+    "schema_text": "Domain: Hash Table Algorithms | Entities: Hash function; Array of buckets/slots; Collision resolution rule | Constraints: Load factor controls expected complexity; Collision handling via probing/chaining; Rehashing preserves key-value mappings | Objective: Explain/implement hash map operations and complexity trade-offs"
+  },
+  {
+    "problem_id": 420,
+    "name": "CS fundamentals: Thread vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 421,
+    "name": "CS fundamentals: Design patterns",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 422,
+    "name": "Portfolio theory: Fund allocation",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization",
+      "problem_setup_entities": [
+        "Candidate assets or strategies",
+        "Expected returns vector",
+        "Covariance/risk model and constraints"
+      ],
+      "invariant_constraints": [
+        "Budget and leverage constraints",
+        "Diversification/risk limits",
+        "Feasible weights sum to capital"
+      ],
+      "target_objective": "Choose allocation maximizing utility (e.g., expected return per unit risk)"
+    },
+    "schema_text": "Domain: Portfolio Optimization | Entities: Candidate assets or strategies; Expected returns vector; Covariance/risk model and constraints | Constraints: Budget and leverage constraints; Diversification/risk limits; Feasible weights sum to capital | Objective: Choose allocation maximizing utility (e.g., expected return per unit risk)"
+  },
+  {
+    "problem_id": 423,
+    "name": "Portfolio theory: Reducing volatility",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization",
+      "problem_setup_entities": [
+        "Candidate assets or strategies",
+        "Expected returns vector",
+        "Covariance/risk model and constraints"
+      ],
+      "invariant_constraints": [
+        "Budget and leverage constraints",
+        "Diversification/risk limits",
+        "Feasible weights sum to capital"
+      ],
+      "target_objective": "Choose allocation maximizing utility (e.g., expected return per unit risk)"
+    },
+    "schema_text": "Domain: Portfolio Optimization | Entities: Candidate assets or strategies; Expected returns vector; Covariance/risk model and constraints | Constraints: Budget and leverage constraints; Diversification/risk limits; Feasible weights sum to capital | Objective: Choose allocation maximizing utility (e.g., expected return per unit risk)"
+  },
+  {
+    "problem_id": 424,
+    "name": "CS fundamentals: Sorting algorithms",
+    "schema": {
+      "core_mathematical_domain": "Sorting Algorithms and Complexity",
+      "problem_setup_entities": [
+        "Input collection",
+        "Comparison/key function",
+        "Auxiliary memory model"
+      ],
+      "invariant_constraints": [
+        "Correct total ordering",
+        "Complexity analyzed by n and memory constraints",
+        "Stability/in-place properties may matter"
+      ],
+      "target_objective": "Design or choose efficient sorting approach with justified complexity"
+    },
+    "schema_text": "Domain: Sorting Algorithms and Complexity | Entities: Input collection; Comparison/key function; Auxiliary memory model | Constraints: Correct total ordering; Complexity analyzed by n and memory constraints; Stability/in-place properties may matter | Objective: Design or choose efficient sorting approach with justified complexity"
+  },
+  {
+    "problem_id": 425,
+    "name": "Find common elements in two arrays",
+    "schema": {
+      "core_mathematical_domain": "Two-Pointer / Linear Scan Algorithms",
+      "problem_setup_entities": [
+        "One or more ordered arrays",
+        "Pointer indices",
+        "Matching/target condition"
+      ],
+      "invariant_constraints": [
+        "Pointers move monotonically",
+        "Each element processed bounded times",
+        "Correct handling of duplicates/boundaries"
+      ],
+      "target_objective": "Find required pairs/intersections in linear or near-linear time"
+    },
+    "schema_text": "Domain: Two-Pointer / Linear Scan Algorithms | Entities: One or more ordered arrays; Pointer indices; Matching/target condition | Constraints: Pointers move monotonically; Each element processed bounded times; Correct handling of duplicates/boundaries | Objective: Find required pairs/intersections in linear or near-linear time"
+  },
+  {
+    "problem_id": 426,
+    "name": "OLS: Slopes of x~y vs",
+    "schema": {
+      "core_mathematical_domain": "Simple Linear Regression Geometry",
+      "problem_setup_entities": [
+        "Random variables X and Y",
+        "Two regressions: Y on X and X on Y",
+        "Correlation coefficient"
+      ],
+      "invariant_constraints": [
+        "Finite nonzero variances",
+        "Least-squares estimation",
+        "Same sample used for both regressions"
+      ],
+      "target_objective": "Characterize relationship between the two slope coefficients via correlation and variance ratios"
+    },
+    "schema_text": "Domain: Simple Linear Regression Geometry | Entities: Random variables X and Y; Two regressions: Y on X and X on Y; Correlation coefficient | Constraints: Finite nonzero variances; Least-squares estimation; Same sample used for both regressions | Objective: Characterize relationship between the two slope coefficients via correlation and variance ratios"
+  },
+  {
+    "problem_id": 427,
+    "name": "Suppressor Variables in Multiple Regression",
+    "schema": {
+      "core_mathematical_domain": "Multiple Linear Regression Inference",
+      "problem_setup_entities": [
+        "Response y",
+        "Predictors x1, x2",
+        "t-statistics and partial coefficients"
+      ],
+      "invariant_constraints": [
+        "Model includes correlated predictors",
+        "Inference conditional on included variables",
+        "OLS assumptions for interpretation"
+      ],
+      "target_objective": "Explain how suppressor effects permit significant coefficients despite weak marginal correlations"
+    },
+    "schema_text": "Domain: Multiple Linear Regression Inference | Entities: Response y; Predictors x1, x2; t-statistics and partial coefficients | Constraints: Model includes correlated predictors; Inference conditional on included variables; OLS assumptions for interpretation | Objective: Explain how suppressor effects permit significant coefficients despite weak marginal correlations"
+  },
+  {
+    "problem_id": 428,
+    "name": "Expected tosses for consecutive heads",
+    "schema": {
+      "core_mathematical_domain": "Stopping-Time Expectation",
+      "problem_setup_entities": [
+        "Bernoulli coin toss process",
+        "Pattern of consecutive heads",
+        "State for current streak length"
+      ],
+      "invariant_constraints": [
+        "Independent fair tosses",
+        "Markovian streak-state transitions",
+        "Absorption at target streak length"
+      ],
+      "target_objective": "Find expected number of tosses to first reach target run length"
+    },
+    "schema_text": "Domain: Stopping-Time Expectation | Entities: Bernoulli coin toss process; Pattern of consecutive heads; State for current streak length | Constraints: Independent fair tosses; Markovian streak-state transitions; Absorption at target streak length | Objective: Find expected number of tosses to first reach target run length"
+  },
+  {
+    "problem_id": 429,
+    "name": "Convergence in Probability vs Almost Sure",
+    "schema": {
+      "core_mathematical_domain": "Modes of Stochastic Convergence",
+      "problem_setup_entities": [
+        "Sequence of random variables X_n",
+        "Limit random variable X",
+        "Probability measure space"
+      ],
+      "invariant_constraints": [
+        "Formal epsilon-delta definitions",
+        "Almost-sure implies in-probability (not converse generally)",
+        "Counterexamples characterize separation"
+      ],
+      "target_objective": "State and compare convergence in probability vs almost sure convergence"
+    },
+    "schema_text": "Domain: Modes of Stochastic Convergence | Entities: Sequence of random variables X_n; Limit random variable X; Probability measure space | Constraints: Formal epsilon-delta definitions; Almost-sure implies in-probability (not converse generally); Counterexamples characterize separation | Objective: State and compare convergence in probability vs almost sure convergence"
+  },
+  {
+    "problem_id": 430,
+    "name": "Citi Bike Availability Forecasting",
+    "schema": {
+      "core_mathematical_domain": "Predictive Modeling and Decision Analytics",
+      "problem_setup_entities": [
+        "Target variable/business objective",
+        "Feature set and data sources",
+        "Training/validation/evaluation framework"
+      ],
+      "invariant_constraints": [
+        "Temporal leakage avoided",
+        "Operational constraints included",
+        "Performance metric aligned with objective"
+      ],
+      "target_objective": "Build model/strategy maximizing out-of-sample decision value"
+    },
+    "schema_text": "Domain: Predictive Modeling and Decision Analytics | Entities: Target variable/business objective; Feature set and data sources; Training/validation/evaluation framework | Constraints: Temporal leakage avoided; Operational constraints included; Performance metric aligned with objective | Objective: Build model/strategy maximizing out-of-sample decision value"
+  },
+  {
+    "problem_id": 431,
+    "name": "Wildcard matching",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming String Matching",
+      "problem_setup_entities": [
+        "Input string s",
+        "Pattern p with wildcards ? and *",
+        "DP state over prefixes"
+      ],
+      "invariant_constraints": [
+        "? matches single character; * matches any sequence",
+        "Full-string match required",
+        "State transitions deterministic"
+      ],
+      "target_objective": "Decide whether pattern matches string efficiently"
+    },
+    "schema_text": "Domain: Dynamic Programming String Matching | Entities: Input string s; Pattern p with wildcards ? and *; DP state over prefixes | Constraints: ? matches single character; * matches any sequence; Full-string match required; State transitions deterministic | Objective: Decide whether pattern matches string efficiently"
+  },
+  {
+    "problem_id": 432,
+    "name": "Optimal Worker-Task Assignment Problem",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Optimization (Assignment)",
+      "problem_setup_entities": [
+        "Workers",
+        "Task instances by type",
+        "Cost/reward matrix"
+      ],
+      "invariant_constraints": [
+        "Each worker assigned at most one task instance",
+        "Task capacities fixed",
+        "Global objective additive across assignments"
+      ],
+      "target_objective": "Find assignment maximizing total reward (or minimizing cost)"
+    },
+    "schema_text": "Domain: Combinatorial Optimization (Assignment) | Entities: Workers; Task instances by type; Cost/reward matrix | Constraints: Each worker assigned at most one task instance; Task capacities fixed; Global objective additive across assignments | Objective: Find assignment maximizing total reward (or minimizing cost)"
+  },
+  {
+    "problem_id": 433,
+    "name": "Sorting large arrays",
+    "schema": {
+      "core_mathematical_domain": "Sorting Algorithms and Complexity",
+      "problem_setup_entities": [
+        "Input collection",
+        "Comparison/key function",
+        "Auxiliary memory model"
+      ],
+      "invariant_constraints": [
+        "Correct total ordering",
+        "Complexity analyzed by n and memory constraints",
+        "Stability/in-place properties may matter"
+      ],
+      "target_objective": "Design or choose efficient sorting approach with justified complexity"
+    },
+    "schema_text": "Domain: Sorting Algorithms and Complexity | Entities: Input collection; Comparison/key function; Auxiliary memory model | Constraints: Correct total ordering; Complexity analyzed by n and memory constraints; Stability/in-place properties may matter | Objective: Design or choose efficient sorting approach with justified complexity"
+  },
+  {
+    "problem_id": 434,
+    "name": "Game theory: Lottery expectation",
+    "schema": {
+      "core_mathematical_domain": "Expected Utility Decision Theory",
+      "problem_setup_entities": [
+        "Set of lottery tickets",
+        "Outcome probabilities and payoffs",
+        "Utility or value function"
+      ],
+      "invariant_constraints": [
+        "Probabilities sum to 1",
+        "Risk preference may be nonlinear in payoff",
+        "Comparable ticket costs"
+      ],
+      "target_objective": "Select ticket maximizing expected utility (or expected value)"
+    },
+    "schema_text": "Domain: Expected Utility Decision Theory | Entities: Set of lottery tickets; Outcome probabilities and payoffs; Utility or value function | Constraints: Probabilities sum to 1; Risk preference may be nonlinear in payoff; Comparable ticket costs | Objective: Select ticket maximizing expected utility (or expected value)"
+  },
+  {
+    "problem_id": 435,
+    "name": "Variance and expectation inequality",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 436,
+    "name": "Bounds on P(B)",
+    "schema": {
+      "core_mathematical_domain": "Probability Bounds and Fréchet Inequalities",
+      "problem_setup_entities": [
+        "Events A and B",
+        "Known P(A) and P(A∩B)",
+        "Unknown marginal P(B)"
+      ],
+      "invariant_constraints": [
+        "0<=probabilities<=1",
+        "Intersection cannot exceed marginals",
+        "Union probability bounded by 1"
+      ],
+      "target_objective": "Derive feasible interval for P(B) given constraints"
+    },
+    "schema_text": "Domain: Probability Bounds and Fréchet Inequalities | Entities: Events A and B; Known P(A) and P(A∩B); Unknown marginal P(B) | Constraints: 0<=probabilities<=1; Intersection cannot exceed marginals; Union probability bounded by 1 | Objective: Derive feasible interval for P(B) given constraints"
+  },
+  {
+    "problem_id": 437,
+    "name": "FX contract volatility",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance Risk-Return Modeling",
+      "problem_setup_entities": [
+        "Asset returns",
+        "Risk factors",
+        "Trading or allocation rules"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage or feasibility constraints",
+        "Risk metrics consistently defined",
+        "Data frequency alignment"
+      ],
+      "target_objective": "Optimize decision rule under return-risk trade-offs"
+    },
+    "schema_text": "Domain: Quantitative Finance Risk-Return Modeling | Entities: Asset returns; Risk factors; Trading or allocation rules | Constraints: No-arbitrage or feasibility constraints; Risk metrics consistently defined; Data frequency alignment | Objective: Optimize decision rule under return-risk trade-offs"
+  },
+  {
+    "problem_id": 438,
+    "name": "Uber vs Taxi Driver Strategy Comparison",
+    "schema": {
+      "core_mathematical_domain": "Predictive Modeling and Decision Analytics",
+      "problem_setup_entities": [
+        "Target variable/business objective",
+        "Feature set and data sources",
+        "Training/validation/evaluation framework"
+      ],
+      "invariant_constraints": [
+        "Temporal leakage avoided",
+        "Operational constraints included",
+        "Performance metric aligned with objective"
+      ],
+      "target_objective": "Build model/strategy maximizing out-of-sample decision value"
+    },
+    "schema_text": "Domain: Predictive Modeling and Decision Analytics | Entities: Target variable/business objective; Feature set and data sources; Training/validation/evaluation framework | Constraints: Temporal leakage avoided; Operational constraints included; Performance metric aligned with objective | Objective: Build model/strategy maximizing out-of-sample decision value"
+  },
+  {
+    "problem_id": 439,
+    "name": "Linear Interpolation with Edge Cases",
+    "schema": {
+      "core_mathematical_domain": "Piecewise Linear Interpolation",
+      "problem_setup_entities": [
+        "Sorted x_i grid",
+        "Observed y_i values",
+        "Query x or missing positions"
+      ],
+      "invariant_constraints": [
+        "x-values ordered",
+        "Interpolation only between bracketing points",
+        "Edge-case extrapolation policy specified"
+      ],
+      "target_objective": "Compute interpolated y-values accurately and efficiently"
+    },
+    "schema_text": "Domain: Piecewise Linear Interpolation | Entities: Sorted x_i grid; Observed y_i values; Query x or missing positions | Constraints: x-values ordered; Interpolation only between bracketing points; Edge-case extrapolation policy specified | Objective: Compute interpolated y-values accurately and efficiently"
+  },
+  {
+    "problem_id": 440,
+    "name": "Maximizing R-Squared with Variable Selection",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 441,
+    "name": "Best Subset Selection for R-Squared",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 442,
+    "name": "LRU Cache Data Structure Design",
+    "schema": {
+      "core_mathematical_domain": "Cache Data Structure Design",
+      "problem_setup_entities": [
+        "Key-value store",
+        "Recency order structure",
+        "Capacity constraint"
+      ],
+      "invariant_constraints": [
+        "get/put in O(1) average time",
+        "Evict least recently used on overflow",
+        "Updates refresh recency"
+      ],
+      "target_objective": "Implement efficient LRU cache with required operations"
+    },
+    "schema_text": "Domain: Cache Data Structure Design | Entities: Key-value store; Recency order structure; Capacity constraint | Constraints: get/put in O(1) average time; Evict least recently used on overflow; Updates refresh recency | Objective: Implement efficient LRU cache with required operations"
+  },
+  {
+    "problem_id": 443,
+    "name": "Median from a Data Stream",
+    "schema": {
+      "core_mathematical_domain": "Online Order Statistics",
+      "problem_setup_entities": [
+        "Streaming numeric inputs",
+        "Lower and upper heaps/ordered containers",
+        "Current median statistic"
+      ],
+      "invariant_constraints": [
+        "Maintain size balance between partitions",
+        "All lower-partition values <= upper-partition values",
+        "Per-update logarithmic time"
+      ],
+      "target_objective": "Support incremental insertion and median query efficiently"
+    },
+    "schema_text": "Domain: Online Order Statistics | Entities: Streaming numeric inputs; Lower and upper heaps/ordered containers; Current median statistic | Constraints: Maintain size balance between partitions; All lower-partition values <= upper-partition values; Per-update logarithmic time | Objective: Support incremental insertion and median query efficiently"
+  },
+  {
+    "problem_id": 444,
+    "name": "Bayesian Methods and Overfitting Prevention",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 445,
+    "name": "Out-of-Sample R-Squared Interpretation",
+    "schema": {
+      "core_mathematical_domain": "Predictive Model Evaluation",
+      "problem_setup_entities": [
+        "Observed outcomes y",
+        "Predicted values y_hat",
+        "Baseline benchmark model"
+      ],
+      "invariant_constraints": [
+        "R-squared defined relative to benchmark variance",
+        "Evaluation may be out-of-sample",
+        "Same loss function across models"
+      ],
+      "target_objective": "Interpret when R-squared is negative and quantify predictive skill versus benchmark"
+    },
+    "schema_text": "Domain: Predictive Model Evaluation | Entities: Observed outcomes y; Predicted values y_hat; Baseline benchmark model | Constraints: R-squared defined relative to benchmark variance; Evaluation may be out-of-sample; Same loss function across models | Objective: Interpret when R-squared is negative and quantify predictive skill versus benchmark"
+  },
+  {
+    "problem_id": 446,
+    "name": "Sources of Bias in Regression Coefficients",
+    "schema": {
+      "core_mathematical_domain": "Estimator Bias in Linear Models",
+      "problem_setup_entities": [
+        "Response y",
+        "Regressors X",
+        "Error term epsilon"
+      ],
+      "invariant_constraints": [
+        "Bias arises when exogeneity fails",
+        "Specification and measurement assumptions matter",
+        "Sampling process can be non-random"
+      ],
+      "target_objective": "Identify conditions that make OLS coefficient estimates biased"
+    },
+    "schema_text": "Domain: Estimator Bias in Linear Models | Entities: Response y; Regressors X; Error term epsilon | Constraints: Bias arises when exogeneity fails; Specification and measurement assumptions matter; Sampling process can be non-random | Objective: Identify conditions that make OLS coefficient estimates biased"
+  },
+  {
+    "problem_id": 447,
+    "name": "Data Analysis Challenge with Interpolation",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 448,
+    "name": "Duplicate Data Points Impact on Regression",
+    "schema": {
+      "core_mathematical_domain": "OLS Invariance under Replication",
+      "problem_setup_entities": [
+        "Dataset of (X, y)",
+        "Replicated observations",
+        "OLS estimates and standard errors"
+      ],
+      "invariant_constraints": [
+        "Each original row duplicated equally",
+        "Design matrix rank unchanged",
+        "Loss scales uniformly"
+      ],
+      "target_objective": "Determine effect of uniform data duplication on coefficients, fit metrics, and inference"
+    },
+    "schema_text": "Domain: OLS Invariance under Replication | Entities: Dataset of (X, y); Replicated observations; OLS estimates and standard errors | Constraints: Each original row duplicated equally; Design matrix rank unchanged; Loss scales uniformly | Objective: Determine effect of uniform data duplication on coefficients, fit metrics, and inference"
+  },
+  {
+    "problem_id": 449,
+    "name": "Bash Script for Phone Number Extraction",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 450,
+    "name": "Alternative Data Analysis for Retail Performance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 451,
+    "name": "Sample Size for Detecting a Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Randomness Extraction from Biased Source",
+      "problem_setup_entities": [
+        "Biased Bernoulli toss stream",
+        "Paired toss outcomes",
+        "Derived fair Bernoulli output"
+      ],
+      "invariant_constraints": [
+        "Unknown but fixed bias not 0 or 1",
+        "Use only unbiased outcome patterns",
+        "Independence of tosses"
+      ],
+      "target_objective": "Construct fair coin flips from biased coin and quantify efficiency"
+    },
+    "schema_text": "Domain: Randomness Extraction from Biased Source | Entities: Biased Bernoulli toss stream; Paired toss outcomes; Derived fair Bernoulli output | Constraints: Unknown but fixed bias not 0 or 1; Use only unbiased outcome patterns; Independence of tosses | Objective: Construct fair coin flips from biased coin and quantify efficiency"
+  },
+  {
+    "problem_id": 452,
+    "name": "Profitable Taxi Route Prediction Model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 453,
+    "name": "Symmetry in Simple Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Simple Linear Regression Geometry",
+      "problem_setup_entities": [
+        "Random variables X and Y",
+        "Two regressions: Y on X and X on Y",
+        "Correlation coefficient"
+      ],
+      "invariant_constraints": [
+        "Finite nonzero variances",
+        "Least-squares estimation",
+        "Same sample used for both regressions"
+      ],
+      "target_objective": "Characterize relationship between the two slope coefficients via correlation and variance ratios"
+    },
+    "schema_text": "Domain: Simple Linear Regression Geometry | Entities: Random variables X and Y; Two regressions: Y on X and X on Y; Correlation coefficient | Constraints: Finite nonzero variances; Least-squares estimation; Same sample used for both regressions | Objective: Characterize relationship between the two slope coefficients via correlation and variance ratios"
+  },
+  {
+    "problem_id": 454,
+    "name": "Difference of Geometric Brownian Motions",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 455,
+    "name": "Distinct Outcomes in Dice Rolls",
+    "schema": {
+      "core_mathematical_domain": "Occupancy/Combinatorial Probability",
+      "problem_setup_entities": [
+        "Six die rolls",
+        "Face categories 1..6",
+        "Distinct-face count"
+      ],
+      "invariant_constraints": [
+        "Independent fair rolls",
+        "Finite sample space 6^6",
+        "Distinctness criterion exactly defined"
+      ],
+      "target_objective": "Compute probability of exactly k distinct outcomes (or all distinct)"
+    },
+    "schema_text": "Domain: Occupancy/Combinatorial Probability | Entities: Six die rolls; Face categories 1..6; Distinct-face count | Constraints: Independent fair rolls; Finite sample space 6^6; Distinctness criterion exactly defined | Objective: Compute probability of exactly k distinct outcomes (or all distinct)"
+  },
+  {
+    "problem_id": 456,
+    "name": "Hash Map with Linear Probing",
+    "schema": {
+      "core_mathematical_domain": "Hash Table Algorithms",
+      "problem_setup_entities": [
+        "Hash function",
+        "Array of buckets/slots",
+        "Collision resolution rule"
+      ],
+      "invariant_constraints": [
+        "Load factor controls expected complexity",
+        "Collision handling via probing/chaining",
+        "Rehashing preserves key-value mappings"
+      ],
+      "target_objective": "Explain/implement hash map operations and complexity trade-offs"
+    },
+    "schema_text": "Domain: Hash Table Algorithms | Entities: Hash function; Array of buckets/slots; Collision resolution rule | Constraints: Load factor controls expected complexity; Collision handling via probing/chaining; Rehashing preserves key-value mappings | Objective: Explain/implement hash map operations and complexity trade-offs"
+  },
+  {
+    "problem_id": 457,
+    "name": "External Sorting",
+    "schema": {
+      "core_mathematical_domain": "External Memory Algorithms",
+      "problem_setup_entities": [
+        "Massive dataset",
+        "Limited RAM buffer",
+        "Disk runs and merge passes"
+      ],
+      "invariant_constraints": [
+        "I/O dominates runtime",
+        "Memory budget fixed",
+        "Sequential disk access preferred"
+      ],
+      "target_objective": "Sort data with minimal I/O via external merge sort"
+    },
+    "schema_text": "Domain: External Memory Algorithms | Entities: Massive dataset; Limited RAM buffer; Disk runs and merge passes | Constraints: I/O dominates runtime; Memory budget fixed; Sequential disk access preferred | Objective: Sort data with minimal I/O via external merge sort"
+  },
+  {
+    "problem_id": 458,
+    "name": "Daily Median of Streaming Stock Prices",
+    "schema": {
+      "core_mathematical_domain": "Applied Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Problem-specific variables",
+        "Known assumptions",
+        "Unknown quantity to compute"
+      ],
+      "invariant_constraints": [
+        "Mathematical consistency",
+        "Given constraints must hold",
+        "Result should be interpretable"
+      ],
+      "target_objective": "Derive or design method to solve stated quantitative objective"
+    },
+    "schema_text": "Domain: Applied Quantitative Reasoning | Entities: Problem-specific variables; Known assumptions; Unknown quantity to compute | Constraints: Mathematical consistency; Given constraints must hold; Result should be interpretable | Objective: Derive or design method to solve stated quantitative objective"
+  },
+  {
+    "problem_id": 459,
+    "name": "Impact of Adding Derived Features to Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 460,
+    "name": "O(1) Push and Random Pop Data Structure",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 461,
+    "name": "Fixed-Size Container for First N Elements",
+    "schema": {
+      "core_mathematical_domain": "Core Computer Science Data Structures",
+      "problem_setup_entities": [
+        "Abstract data type",
+        "Operations API",
+        "Complexity requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants per structure",
+        "Time-space complexity targets",
+        "Concurrency or ordering constraints where relevant"
+      ],
+      "target_objective": "Design/explain data structure behavior and implementation choices"
+    },
+    "schema_text": "Domain: Core Computer Science Data Structures | Entities: Abstract data type; Operations API; Complexity requirements | Constraints: Correctness invariants per structure; Time-space complexity targets; Concurrency or ordering constraints where relevant | Objective: Design/explain data structure behavior and implementation choices"
+  },
+  {
+    "problem_id": 462,
+    "name": "Comparing Rolls of Different Sided Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability Comparison",
+      "problem_setup_entities": [
+        "Die A outcomes",
+        "Die B outcomes",
+        "Event A>B or B>A"
+      ],
+      "invariant_constraints": [
+        "Independent uniform rolls on different supports",
+        "Finite equiprobable outcome pairs",
+        "Tie-handling explicit"
+      ],
+      "target_objective": "Compute probability that one die roll exceeds the other"
+    },
+    "schema_text": "Domain: Discrete Probability Comparison | Entities: Die A outcomes; Die B outcomes; Event A>B or B>A | Constraints: Independent uniform rolls on different supports; Finite equiprobable outcome pairs; Tie-handling explicit | Objective: Compute probability that one die roll exceeds the other"
+  },
+  {
+    "problem_id": 463,
+    "name": "Data Analysis Pipeline",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 464,
+    "name": "Linear Regression Concepts",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 465,
+    "name": "Two Pointers",
+    "schema": {
+      "core_mathematical_domain": "Two-Pointer / Linear Scan Algorithms",
+      "problem_setup_entities": [
+        "One or more ordered arrays",
+        "Pointer indices",
+        "Matching/target condition"
+      ],
+      "invariant_constraints": [
+        "Pointers move monotonically",
+        "Each element processed bounded times",
+        "Correct handling of duplicates/boundaries"
+      ],
+      "target_objective": "Find required pairs/intersections in linear or near-linear time"
+    },
+    "schema_text": "Domain: Two-Pointer / Linear Scan Algorithms | Entities: One or more ordered arrays; Pointer indices; Matching/target condition | Constraints: Pointers move monotonically; Each element processed bounded times; Correct handling of duplicates/boundaries | Objective: Find required pairs/intersections in linear or near-linear time"
+  },
+  {
+    "problem_id": 466,
+    "name": "Optimal Estimate from Two Measurements",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 467,
+    "name": "Conditional Probability of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Order Statistics",
+      "problem_setup_entities": [
+        "iid Uniform(0,1) samples",
+        "Maximum order statistic",
+        "Distribution/CDF of maximum"
+      ],
+      "invariant_constraints": [
+        "Independence and identical distribution",
+        "Support bounded on [0,1]",
+        "Use order-statistic identities"
+      ],
+      "target_objective": "Compute expected maximum (generalizable to n samples)"
+    },
+    "schema_text": "Domain: Order Statistics | Entities: iid Uniform(0,1) samples; Maximum order statistic; Distribution/CDF of maximum | Constraints: Independence and identical distribution; Support bounded on [0,1]; Use order-statistic identities | Objective: Compute expected maximum (generalizable to n samples)"
+  },
+  {
+    "problem_id": 468,
+    "name": "Option Pricing on a Dice Product",
+    "schema": {
+      "core_mathematical_domain": "Discrete Derivative Pricing by Expected Value",
+      "problem_setup_entities": [
+        "Underlying S as product of dice outcomes",
+        "Option payoff function g(S)",
+        "Risk-neutral or physical probability measure"
+      ],
+      "invariant_constraints": [
+        "Dice outcomes independent and discrete",
+        "Payoff computed at maturity only",
+        "Expectation over finite outcome grid"
+      ],
+      "target_objective": "Price option as Expected Value of discounted payoff"
+    },
+    "schema_text": "Domain: Discrete Derivative Pricing by Expected Value | Entities: Underlying S as product of dice outcomes; Option payoff function g(S); Risk-neutral or physical probability measure | Constraints: Dice outcomes independent and discrete; Payoff computed at maturity only; Expectation over finite outcome grid | Objective: Price option as Expected Value of discounted payoff"
+  },
+  {
+    "problem_id": 469,
+    "name": "Game Design to Minimize Loss",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 470,
+    "name": "Betting Game Strategy",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy under Uncertainty",
+      "problem_setup_entities": [
+        "Players and strategy space",
+        "Random/private signals",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rational best-response/equilibrium concept",
+        "Information structure fixed",
+        "Objective is expected payoff maximization"
+      ],
+      "target_objective": "Derive optimal strategy or equilibrium behavior"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy under Uncertainty | Entities: Players and strategy space; Random/private signals; Payoff function | Constraints: Rational best-response/equilibrium concept; Information structure fixed; Objective is expected payoff maximization | Objective: Derive optimal strategy or equilibrium behavior"
+  },
+  {
+    "problem_id": 471,
+    "name": "Effect of Duplicating Data on Regression",
+    "schema": {
+      "core_mathematical_domain": "OLS Invariance under Replication",
+      "problem_setup_entities": [
+        "Dataset of (X, y)",
+        "Replicated observations",
+        "OLS estimates and standard errors"
+      ],
+      "invariant_constraints": [
+        "Each original row duplicated equally",
+        "Design matrix rank unchanged",
+        "Loss scales uniformly"
+      ],
+      "target_objective": "Determine effect of uniform data duplication on coefficients, fit metrics, and inference"
+    },
+    "schema_text": "Domain: OLS Invariance under Replication | Entities: Dataset of (X, y); Replicated observations; OLS estimates and standard errors | Constraints: Each original row duplicated equally; Design matrix rank unchanged; Loss scales uniformly | Objective: Determine effect of uniform data duplication on coefficients, fit metrics, and inference"
+  },
+  {
+    "problem_id": 472,
+    "name": "OLS Slopes of Y~X vs X~Y",
+    "schema": {
+      "core_mathematical_domain": "Simple Linear Regression Geometry",
+      "problem_setup_entities": [
+        "Random variables X and Y",
+        "Two regressions: Y on X and X on Y",
+        "Correlation coefficient"
+      ],
+      "invariant_constraints": [
+        "Finite nonzero variances",
+        "Least-squares estimation",
+        "Same sample used for both regressions"
+      ],
+      "target_objective": "Characterize relationship between the two slope coefficients via correlation and variance ratios"
+    },
+    "schema_text": "Domain: Simple Linear Regression Geometry | Entities: Random variables X and Y; Two regressions: Y on X and X on Y; Correlation coefficient | Constraints: Finite nonzero variances; Least-squares estimation; Same sample used for both regressions | Objective: Characterize relationship between the two slope coefficients via correlation and variance ratios"
+  },
+  {
+    "problem_id": 473,
+    "name": "Pirate Game and Coupon Collector's Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 474,
+    "name": "Optimal Fibonacci Sequence",
+    "schema": {
+      "core_mathematical_domain": "Recurrence and Dynamic Programming",
+      "problem_setup_entities": [
+        "Index n",
+        "Recurrence F(n)=F(n-1)+F(n-2)",
+        "State storage strategy"
+      ],
+      "invariant_constraints": [
+        "Base cases fixed",
+        "Deterministic recurrence",
+        "Trade-off among recursion, iteration, matrix methods"
+      ],
+      "target_objective": "Compute n-th Fibonacci with optimal time/space characteristics"
+    },
+    "schema_text": "Domain: Recurrence and Dynamic Programming | Entities: Index n; Recurrence F(n)=F(n-1)+F(n-2); State storage strategy | Constraints: Base cases fixed; Deterministic recurrence; Trade-off among recursion, iteration, matrix methods | Objective: Compute n-th Fibonacci with optimal time/space characteristics"
+  },
+  {
+    "problem_id": 475,
+    "name": "Design Tic-Tac-Toe",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 476,
+    "name": "Range of Equicorrelation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Modeling",
+      "problem_setup_entities": [
+        "Random variables/events",
+        "Underlying distributional assumptions",
+        "Derived statistic or event of interest"
+      ],
+      "invariant_constraints": [
+        "Valid probability axioms",
+        "Independence/conditioning as specified",
+        "Finite expectation where required"
+      ],
+      "target_objective": "Compute target probability, expectation, or dependence measure"
+    },
+    "schema_text": "Domain: Probability and Stochastic Modeling | Entities: Random variables/events; Underlying distributional assumptions; Derived statistic or event of interest | Constraints: Valid probability axioms; Independence/conditioning as specified; Finite expectation where required | Objective: Compute target probability, expectation, or dependence measure"
+  },
+  {
+    "problem_id": 477,
+    "name": "\"Guess 2/3 of the Average\" Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy under Uncertainty",
+      "problem_setup_entities": [
+        "Players and strategy space",
+        "Random/private signals",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rational best-response/equilibrium concept",
+        "Information structure fixed",
+        "Objective is expected payoff maximization"
+      ],
+      "target_objective": "Derive optimal strategy or equilibrium behavior"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy under Uncertainty | Entities: Players and strategy space; Random/private signals; Payoff function | Constraints: Rational best-response/equilibrium concept; Information structure fixed; Objective is expected payoff maximization | Objective: Derive optimal strategy or equilibrium behavior"
+  },
+  {
+    "problem_id": 478,
+    "name": "Max Drawdown",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Risk Measurement",
+      "problem_setup_entities": [
+        "Asset price series",
+        "Running peak value",
+        "Current and maximum drawdown"
+      ],
+      "invariant_constraints": [
+        "Drawdown defined as decline from prior peak",
+        "Time order preserved",
+        "Loss reported as absolute or percentage"
+      ],
+      "target_objective": "Calculate maximum historical peak-to-trough loss"
+    },
+    "schema_text": "Domain: Portfolio Risk Measurement | Entities: Asset price series; Running peak value; Current and maximum drawdown | Constraints: Drawdown defined as decline from prior peak; Time order preserved; Loss reported as absolute or percentage | Objective: Calculate maximum historical peak-to-trough loss"
+  },
+  {
+    "problem_id": 479,
+    "name": "Optimization of Quadratic Form",
+    "schema": {
+      "core_mathematical_domain": "Matrix Optimization and Spectral Theory",
+      "problem_setup_entities": [
+        "Matrix A",
+        "Vector x",
+        "Quadratic form x^T A x"
+      ],
+      "invariant_constraints": [
+        "Constraint on x (typically ||x||=1) required for bounded maximum",
+        "Symmetric part determines value",
+        "Eigenvalues characterize extrema"
+      ],
+      "target_objective": "Maximize quadratic form and identify optimizer via eigenstructure"
+    },
+    "schema_text": "Domain: Matrix Optimization and Spectral Theory | Entities: Matrix A; Vector x; Quadratic form x^T A x | Constraints: Constraint on x (typically ||x||=1) required for bounded maximum; Symmetric part determines value; Eigenvalues characterize extrema | Objective: Maximize quadratic form and identify optimizer via eigenstructure"
+  },
+  {
+    "problem_id": 480,
+    "name": "Uniform Sampling from a Solid Disk",
+    "schema": {
+      "core_mathematical_domain": "Geometric Random Sampling",
+      "problem_setup_entities": [
+        "Unit disk",
+        "Radius and angle random variables",
+        "Cartesian point transform"
+      ],
+      "invariant_constraints": [
+        "Target density uniform over area",
+        "Radial distribution must be proportional to r",
+        "Independent angle over [0,2pi)"
+      ],
+      "target_objective": "Generate unbiased uniform samples from disk interior"
+    },
+    "schema_text": "Domain: Geometric Random Sampling | Entities: Unit disk; Radius and angle random variables; Cartesian point transform | Constraints: Target density uniform over area; Radial distribution must be proportional to r; Independent angle over [0,2pi) | Objective: Generate unbiased uniform samples from disk interior"
+  },
+  {
+    "problem_id": 481,
+    "name": "Optimal Step Function Fitting",
+    "schema": {
+      "core_mathematical_domain": "Segmented Regression / DP",
+      "problem_setup_entities": [
+        "Ordered data points (x_i,y_i)",
+        "k step segments",
+        "Segment loss function"
+      ],
+      "invariant_constraints": [
+        "At most k constant levels",
+        "Partition respects x-order",
+        "Objective additive over segments"
+      ],
+      "target_objective": "Fit optimal k-step approximation minimizing total error"
+    },
+    "schema_text": "Domain: Segmented Regression / DP | Entities: Ordered data points (x_i,y_i); k step segments; Segment loss function | Constraints: At most k constant levels; Partition respects x-order; Objective additive over segments | Objective: Fit optimal k-step approximation minimizing total error"
+  },
+  {
+    "problem_id": 482,
+    "name": "Expectation of Maximum of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Order Statistics",
+      "problem_setup_entities": [
+        "iid Uniform(0,1) samples",
+        "Maximum order statistic",
+        "Distribution/CDF of maximum"
+      ],
+      "invariant_constraints": [
+        "Independence and identical distribution",
+        "Support bounded on [0,1]",
+        "Use order-statistic identities"
+      ],
+      "target_objective": "Compute expected maximum (generalizable to n samples)"
+    },
+    "schema_text": "Domain: Order Statistics | Entities: iid Uniform(0,1) samples; Maximum order statistic; Distribution/CDF of maximum | Constraints: Independence and identical distribution; Support bounded on [0,1]; Use order-statistic identities | Objective: Compute expected maximum (generalizable to n samples)"
+  },
+  {
+    "problem_id": 483,
+    "name": "Maximum Drawdown in a Sliding Window",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Risk Metric Algorithms",
+      "problem_setup_entities": [
+        "Price time series",
+        "Window size k",
+        "Peak-to-trough losses per window"
+      ],
+      "invariant_constraints": [
+        "Windows are contiguous and fixed length",
+        "Drawdown measured from local peak to subsequent trough",
+        "Single-pass or efficient updates preferred"
+      ],
+      "target_objective": "Compute maximum drawdown for each rolling window efficiently"
+    },
+    "schema_text": "Domain: Time-Series Risk Metric Algorithms | Entities: Price time series; Window size k; Peak-to-trough losses per window | Constraints: Windows are contiguous and fixed length; Drawdown measured from local peak to subsequent trough; Single-pass or efficient updates preferred | Objective: Compute maximum drawdown for each rolling window efficiently"
+  },
+  {
+    "problem_id": 484,
+    "name": "Numerical Function Minimization",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Analysis",
+      "problem_setup_entities": [
+        "Input structure",
+        "State representation",
+        "Update/transition rules"
+      ],
+      "invariant_constraints": [
+        "Correctness invariants",
+        "Complexity bounds",
+        "Edge-case handling"
+      ],
+      "target_objective": "Produce efficient algorithm meeting problem specification"
+    },
+    "schema_text": "Domain: Algorithm Design and Analysis | Entities: Input structure; State representation; Update/transition rules | Constraints: Correctness invariants; Complexity bounds; Edge-case handling | Objective: Produce efficient algorithm meeting problem specification"
+  },
+  {
+    "problem_id": 485,
+    "name": "Sum and Independence of Gaussian Variables",
+    "schema": {
+      "core_mathematical_domain": "Applied Quantitative Reasoning",
+      "problem_setup_entities": [
+        "Problem-specific variables",
+        "Known assumptions",
+        "Unknown quantity to compute"
+      ],
+      "invariant_constraints": [
+        "Mathematical consistency",
+        "Given constraints must hold",
+        "Result should be interpretable"
+      ],
+      "target_objective": "Derive or design method to solve stated quantitative objective"
+    },
+    "schema_text": "Domain: Applied Quantitative Reasoning | Entities: Problem-specific variables; Known assumptions; Unknown quantity to compute | Constraints: Mathematical consistency; Given constraints must hold; Result should be interpretable | Objective: Derive or design method to solve stated quantitative objective"
+  },
+  {
+    "problem_id": 486,
+    "name": "Negative R-squared",
+    "schema": {
+      "core_mathematical_domain": "Predictive Model Evaluation",
+      "problem_setup_entities": [
+        "Observed outcomes y",
+        "Predicted values y_hat",
+        "Baseline benchmark model"
+      ],
+      "invariant_constraints": [
+        "R-squared defined relative to benchmark variance",
+        "Evaluation may be out-of-sample",
+        "Same loss function across models"
+      ],
+      "target_objective": "Interpret when R-squared is negative and quantify predictive skill versus benchmark"
+    },
+    "schema_text": "Domain: Predictive Model Evaluation | Entities: Observed outcomes y; Predicted values y_hat; Baseline benchmark model | Constraints: R-squared defined relative to benchmark variance; Evaluation may be out-of-sample; Same loss function across models | Objective: Interpret when R-squared is negative and quantify predictive skill versus benchmark"
+  },
+  {
+    "problem_id": 487,
+    "name": "Find Geometric Median",
+    "schema": {
+      "core_mathematical_domain": "Continuous Optimization in Euclidean Space",
+      "problem_setup_entities": [
+        "Set of 2D points",
+        "Candidate point m",
+        "Sum of Euclidean distances objective"
+      ],
+      "invariant_constraints": [
+        "Objective convex but non-differentiable at data points",
+        "No closed form in general",
+        "Iterative algorithm with convergence criterion"
+      ],
+      "target_objective": "Find point minimizing total distance to all observations"
+    },
+    "schema_text": "Domain: Continuous Optimization in Euclidean Space | Entities: Set of 2D points; Candidate point m; Sum of Euclidean distances objective | Constraints: Objective convex but non-differentiable at data points; No closed form in general; Iterative algorithm with convergence criterion | Objective: Find point minimizing total distance to all observations"
+  },
+  {
+    "problem_id": 488,
+    "name": "Annualizing Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Risk-Adjusted Return Scaling",
+      "problem_setup_entities": [
+        "Return process",
+        "Mean excess return",
+        "Return volatility and sampling horizon"
+      ],
+      "invariant_constraints": [
+        "Assumes iid/weakly dependent returns for sqrt-time scaling",
+        "Consistent return frequency",
+        "Model aggregation constraints across strategies"
+      ],
+      "target_objective": "Derive combined/annualized Sharpe ratio and discuss deviations from theoretical scaling"
+    },
+    "schema_text": "Domain: Risk-Adjusted Return Scaling | Entities: Return process; Mean excess return; Return volatility and sampling horizon | Constraints: Assumes iid/weakly dependent returns for sqrt-time scaling; Consistent return frequency; Model aggregation constraints across strategies | Objective: Derive combined/annualized Sharpe ratio and discuss deviations from theoretical scaling"
+  },
+  {
+    "problem_id": 489,
+    "name": "Recursive Least Squares",
+    "schema": {
+      "core_mathematical_domain": "Online Linear Regression Estimation",
+      "problem_setup_entities": [
+        "Streaming observations (x_t, y_t)",
+        "Coefficient vector beta_t",
+        "Covariance/information matrix"
+      ],
+      "invariant_constraints": [
+        "Sequential update per new observation",
+        "Linear model structure maintained",
+        "Numerical stability of matrix updates"
+      ],
+      "target_objective": "Update parameter estimates incrementally to minimize cumulative squared error"
+    },
+    "schema_text": "Domain: Online Linear Regression Estimation | Entities: Streaming observations (x_t, y_t); Coefficient vector beta_t; Covariance/information matrix | Constraints: Sequential update per new observation; Linear model structure maintained; Numerical stability of matrix updates | Objective: Update parameter estimates incrementally to minimize cumulative squared error"
+  },
+  {
+    "problem_id": 490,
+    "name": "LFU Cache",
+    "schema": {
+      "core_mathematical_domain": "Frequency-Based Cache Design",
+      "problem_setup_entities": [
+        "Key-value entries",
+        "Access-frequency counters",
+        "Buckets ordered by frequency and recency"
+      ],
+      "invariant_constraints": [
+        "get/put near O(1)",
+        "Evict least frequently used with tie-breaker",
+        "Capacity-limited storage"
+      ],
+      "target_objective": "Implement LFU cache supporting updates and evictions correctly"
+    },
+    "schema_text": "Domain: Frequency-Based Cache Design | Entities: Key-value entries; Access-frequency counters; Buckets ordered by frequency and recency | Constraints: get/put near O(1); Evict least frequently used with tie-breaker; Capacity-limited storage | Objective: Implement LFU cache supporting updates and evictions correctly"
+  },
+  {
+    "problem_id": 491,
+    "name": "Square Root of a Float",
+    "schema": {
+      "core_mathematical_domain": "Numerical Root Finding",
+      "problem_setup_entities": [
+        "Function g(z)=z^2-x",
+        "Initial guess",
+        "Tolerance epsilon"
+      ],
+      "invariant_constraints": [
+        "x nonnegative for real root",
+        "Iterative update rule converges under conditions",
+        "Stop when error < tolerance"
+      ],
+      "target_objective": "Compute square root of float to specified accuracy"
+    },
+    "schema_text": "Domain: Numerical Root Finding | Entities: Function g(z)=z^2-x; Initial guess; Tolerance epsilon | Constraints: x nonnegative for real root; Iterative update rule converges under conditions; Stop when error < tolerance | Objective: Compute square root of float to specified accuracy"
+  },
+  {
+    "problem_id": 492,
+    "name": "Rolling Rank in a Window",
+    "schema": {
+      "core_mathematical_domain": "Sliding Window Order Statistics",
+      "problem_setup_entities": [
+        "Numeric stream",
+        "Window size K",
+        "Rank of newest element"
+      ],
+      "invariant_constraints": [
+        "Window advances one step at a time",
+        "Rank computed within current window only",
+        "Need efficient insert/delete/order queries"
+      ],
+      "target_objective": "Output rolling rank sequence with sub-quadratic complexity"
+    },
+    "schema_text": "Domain: Sliding Window Order Statistics | Entities: Numeric stream; Window size K; Rank of newest element | Constraints: Window advances one step at a time; Rank computed within current window only; Need efficient insert/delete/order queries | Objective: Output rolling rank sequence with sub-quadratic complexity"
+  },
+  {
+    "problem_id": 493,
+    "name": "The Umbrella Problem (Markov Chain)",
+    "schema": {
+      "core_mathematical_domain": "Finite Markov Chain Analysis",
+      "problem_setup_entities": [
+        "Locations (home/office)",
+        "Umbrella count state",
+        "Rain indicator with probability p"
+      ],
+      "invariant_constraints": [
+        "State transitions conserve total umbrellas",
+        "Behavior conditioned on rain and available umbrella",
+        "Stationary commute structure"
+      ],
+      "target_objective": "Compute long-run probability of getting wet or related steady-state metrics"
+    },
+    "schema_text": "Domain: Finite Markov Chain Analysis | Entities: Locations (home/office); Umbrella count state; Rain indicator with probability p | Constraints: State transitions conserve total umbrellas; Behavior conditioned on rain and available umbrella; Stationary commute structure | Objective: Compute long-run probability of getting wet or related steady-state metrics"
+  },
+  {
+    "problem_id": 494,
+    "name": "Edit Distance",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming on Strings",
+      "problem_setup_entities": [
+        "Word A and Word B",
+        "Edit operations insert/delete/substitute",
+        "DP table of prefix costs"
+      ],
+      "invariant_constraints": [
+        "Each operation has unit cost",
+        "Transform source to target exactly",
+        "Optimal substructure across prefixes"
+      ],
+      "target_objective": "Compute minimum number of edits (Levenshtein distance)"
+    },
+    "schema_text": "Domain: Dynamic Programming on Strings | Entities: Word A and Word B; Edit operations insert/delete/substitute; DP table of prefix costs | Constraints: Each operation has unit cost; Transform source to target exactly; Optimal substructure across prefixes | Objective: Compute minimum number of edits (Levenshtein distance)"
+  },
+  {
+    "problem_id": 495,
+    "name": "Uniform Sampling from a Sphere's Surface",
+    "schema": {
+      "core_mathematical_domain": "Geometric Random Sampling on Manifolds",
+      "problem_setup_entities": [
+        "Unit sphere S^2",
+        "3D random vector",
+        "Normalization or spherical-coordinate transform"
+      ],
+      "invariant_constraints": [
+        "Uniform surface measure required",
+        "Avoid polar concentration bias",
+        "Samples independent across draws"
+      ],
+      "target_objective": "Produce uniformly distributed points on sphere surface"
+    },
+    "schema_text": "Domain: Geometric Random Sampling on Manifolds | Entities: Unit sphere S^2; 3D random vector; Normalization or spherical-coordinate transform | Constraints: Uniform surface measure required; Avoid polar concentration bias; Samples independent across draws | Objective: Produce uniformly distributed points on sphere surface"
+  },
+  {
+    "problem_id": 496,
+    "name": "List of LeetCode Coding Problems",
+    "schema": {
+      "core_mathematical_domain": "Sorting Algorithms and Complexity",
+      "problem_setup_entities": [
+        "Input collection",
+        "Comparison/key function",
+        "Auxiliary memory model"
+      ],
+      "invariant_constraints": [
+        "Correct total ordering",
+        "Complexity analyzed by n and memory constraints",
+        "Stability/in-place properties may matter"
+      ],
+      "target_objective": "Design or choose efficient sorting approach with justified complexity"
+    },
+    "schema_text": "Domain: Sorting Algorithms and Complexity | Entities: Input collection; Comparison/key function; Auxiliary memory model | Constraints: Correct total ordering; Complexity analyzed by n and memory constraints; Stability/in-place properties may matter | Objective: Design or choose efficient sorting approach with justified complexity"
+  },
+  {
+    "problem_id": 497,
+    "name": "Random Walk Problems",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Process Hitting Times",
+      "problem_setup_entities": [
+        "Random walk state space",
+        "Boundary/exit set",
+        "Transition kernel"
+      ],
+      "invariant_constraints": [
+        "Markov property",
+        "Absorbing boundaries define stopping time",
+        "Step distribution fixed"
+      ],
+      "target_objective": "Compute expected exit/hitting time or related probabilities"
+    },
+    "schema_text": "Domain: Stochastic Process Hitting Times | Entities: Random walk state space; Boundary/exit set; Transition kernel | Constraints: Markov property; Absorbing boundaries define stopping time; Step distribution fixed | Objective: Compute expected exit/hitting time or related probabilities"
+  },
+  {
+    "problem_id": 498,
+    "name": "Advanced Regression Topics",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Theory and Diagnostics",
+      "problem_setup_entities": [
+        "Response variable",
+        "Feature matrix",
+        "Residuals and fitted values"
+      ],
+      "invariant_constraints": [
+        "Linearity/exogeneity assumptions",
+        "Finite variance and identifiability",
+        "Potential multicollinearity or regularization constraints"
+      ],
+      "target_objective": "Analyze estimator properties, diagnostics, and model-selection implications"
+    },
+    "schema_text": "Domain: Linear Regression Theory and Diagnostics | Entities: Response variable; Feature matrix; Residuals and fitted values | Constraints: Linearity/exogeneity assumptions; Finite variance and identifiability; Potential multicollinearity or regularization constraints | Objective: Analyze estimator properties, diagnostics, and model-selection implications"
+  },
+  {
+    "problem_id": 499,
+    "name": "Bayesian Modeling of Rare Events",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference for Rare Events",
+      "problem_setup_entities": [
+        "Rare-event probability theta",
+        "Prior distribution (e.g., Beta)",
+        "Observed count data"
+      ],
+      "invariant_constraints": [
+        "Likelihood often Binomial/Poisson with sparse positives",
+        "Prior regularizes low-count regime",
+        "Posterior predictive used for uncertainty"
+      ],
+      "target_objective": "Estimate rare-event probability with calibrated uncertainty"
+    },
+    "schema_text": "Domain: Bayesian Inference for Rare Events | Entities: Rare-event probability theta; Prior distribution (e.g., Beta); Observed count data | Constraints: Likelihood often Binomial/Poisson with sparse positives; Prior regularizes low-count regime; Posterior predictive used for uncertainty | Objective: Estimate rare-event probability with calibrated uncertainty"
+  },
+  {
+    "problem_id": 500,
+    "name": "Discuss Execution Risk in Pairs Trading",
+    "schema": {
+      "core_mathematical_domain": "Statistical Arbitrage Risk Analysis",
+      "problem_setup_entities": [
+        "Paired assets",
+        "Signal, execution prices, and slippage",
+        "Estimated correlation/cointegration statistics"
+      ],
+      "invariant_constraints": [
+        "Execution latency and market impact present",
+        "High-frequency data may be asynchronous/noisy",
+        "Strategy depends on stable dependence structure"
+      ],
+      "target_objective": "Assess execution and estimation risks affecting realized pairs-trading performance"
+    },
+    "schema_text": "Domain: Statistical Arbitrage Risk Analysis | Entities: Paired assets; Signal, execution prices, and slippage; Estimated correlation/cointegration statistics | Constraints: Execution latency and market impact present; High-frequency data may be asynchronous/noisy; Strategy depends on stable dependence structure | Objective: Assess execution and estimation risks affecting realized pairs-trading performance"
+  },
+  {
+    "problem_id": 501,
+    "name": "Ranking Guessing Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Strategy under Uncertainty",
+      "problem_setup_entities": [
+        "Players and strategy space",
+        "Random/private signals",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rational best-response/equilibrium concept",
+        "Information structure fixed",
+        "Objective is expected payoff maximization"
+      ],
+      "target_objective": "Derive optimal strategy or equilibrium behavior"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Strategy under Uncertainty | Entities: Players and strategy space; Random/private signals; Payoff function | Constraints: Rational best-response/equilibrium concept; Information structure fixed; Objective is expected payoff maximization | Objective: Derive optimal strategy or equilibrium behavior"
+  },
+  {
+    "problem_id": 502,
+    "name": "Biased Coin for a Fair Game",
+    "schema": {
+      "core_mathematical_domain": "Randomness Extraction from Biased Source",
+      "problem_setup_entities": [
+        "Biased Bernoulli toss stream",
+        "Paired toss outcomes",
+        "Derived fair Bernoulli output"
+      ],
+      "invariant_constraints": [
+        "Unknown but fixed bias not 0 or 1",
+        "Use only unbiased outcome patterns",
+        "Independence of tosses"
+      ],
+      "target_objective": "Construct fair coin flips from biased coin and quantify efficiency"
+    },
+    "schema_text": "Domain: Randomness Extraction from Biased Source | Entities: Biased Bernoulli toss stream; Paired toss outcomes; Derived fair Bernoulli output | Constraints: Unknown but fixed bias not 0 or 1; Use only unbiased outcome patterns; Independence of tosses | Objective: Construct fair coin flips from biased coin and quantify efficiency"
+  },
+  {
+    "problem_id": 503,
+    "name": "Pancake Sorting Variation",
+    "schema": {
+      "core_mathematical_domain": "Constrained Sorting Algorithms",
+      "problem_setup_entities": [
+        "Permutation of pancake sizes",
+        "Allowed flip operation",
+        "Sequence of operations"
+      ],
+      "invariant_constraints": [
+        "Only prefix/specified reversible operations allowed",
+        "Goal is sorted order",
+        "Operation count to be bounded"
+      ],
+      "target_objective": "Construct valid sequence that sorts stack under given operation rules"
+    },
+    "schema_text": "Domain: Constrained Sorting Algorithms | Entities: Permutation of pancake sizes; Allowed flip operation; Sequence of operations | Constraints: Only prefix/specified reversible operations allowed; Goal is sorted order; Operation count to be bounded | Objective: Construct valid sequence that sorts stack under given operation rules"
+  }
+]
