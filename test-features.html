@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>Feature Debug</title>
@@ -24,7 +24,7 @@
   </style>
 </head>
 <body>
-  <h2>🔧 Feature Debug Page</h2>
+  <h2>ðŸ”§ Feature Debug Page</h2>
 
   <div class="section">
     <h3>1. Auth & Firestore</h3>
@@ -165,7 +165,7 @@
           log('  solved=' + solved + ', attempted=' + attempted, 'ok');
           log('  first 20: ' + pKeys.slice(0,20).map(k => k+'='+p[k]).join(', '), 'info');
         } else {
-          log('  NO PROGRESS DATA — this is why profile shows zeros!', 'err');
+          log('  NO PROGRESS DATA â€” this is why profile shows zeros!', 'err');
         }
         log('favorites: ' + JSON.stringify(data.favorites || []), 'ok');
         log('collections: ' + (data.collections || []).length + ' lists', 'ok');
@@ -229,8 +229,8 @@
       }, 2500);
     }
 
-    function demoToast() { showTestToast('✅ Test toast message'); }
-    function demoXPToast() { showTestToast('✅ Solved! +25 XP', 'xp'); }
+    function demoToast() { showTestToast('âœ… Test toast message'); }
+    function demoXPToast() { showTestToast('âœ… Solved! +25 XP', 'xp'); }
 
     function demoSolved() {
       var btn = document.getElementById('demo-solved');
@@ -244,7 +244,7 @@
       log('Animation class added: ' + btn.className, 'ok');
       log('Floater computed: ' + getComputedStyle(floater).animation, 'info');
       setTimeout(() => { floater.remove(); btn.classList.remove('pab__btn--anim-green'); }, 1000);
-      showTestToast('✅ Solved! +25 XP', 'xp');
+      showTestToast('âœ… Solved! +25 XP', 'xp');
     }
 
     function demoAttempted() {
@@ -253,7 +253,7 @@
       btn.classList.add('pab__btn--anim-yellow');
       log('Attempted animation class: ' + btn.className, 'ok');
       setTimeout(() => btn.classList.remove('pab__btn--anim-yellow'), 500);
-      showTestToast('🟡 Marked as attempted');
+      showTestToast('ðŸŸ¡ Marked as attempted');
     }
 
     function demoHeart() {
@@ -263,7 +263,7 @@
       var svg = btn.querySelector('svg');
       if (btn.classList.contains('pab__icon-btn--liked')) {
         svg.setAttribute('fill', 'currentColor');
-        showTestToast('❤️ Added to favorites');
+        showTestToast('â¤ï¸ Added to favorites');
       } else {
         svg.setAttribute('fill', 'none');
         showTestToast('Removed from favorites');
@@ -297,7 +297,7 @@
         var user = Auth.getUser();
         var doc = Auth.getUserDoc();
         log('  getUserDoc(): ' + (doc ? 'exists' : 'NULL'), doc ? 'ok' : 'err');
-        if (!doc) { log('  Cannot create — no userDoc!', 'err'); return; }
+        if (!doc) { log('  Cannot create â€” no userDoc!', 'err'); return; }
 
         if (!doc.collections) doc.collections = [];
         var newCol = { id: 'test-' + Date.now(), name: 'Debug List ' + Date.now(), problemIds: [], createdAt: new Date().toISOString() };
@@ -321,3 +321,5 @@
   </script>
 </body>
 </html>
+
+

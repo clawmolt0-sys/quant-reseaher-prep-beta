@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>Firestore Debug</title>
@@ -188,7 +188,7 @@
         const t0 = performance.now();
 
         // Add a timeout to detect hangs
-        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('WRITE TIMED OUT after 10s — Firestore may be in offline mode')), 10000));
+        const timeout = new Promise((_, rej) => setTimeout(() => rej(new Error('WRITE TIMED OUT after 10s â€” Firestore may be in offline mode')), 10000));
         const write = docRef.update({ ['progress.' + testId]: 'solved' });
         await Promise.race([write, timeout]);
 
@@ -290,3 +290,5 @@
   </script>
 </body>
 </html>
+
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>Auth Debug</title>
@@ -89,7 +89,7 @@
         log('No pending redirect result', 'info');
       }
     }).catch(function(e) {
-      log('getRedirectResult error: ' + e.code + ' — ' + e.message, 'err');
+      log('getRedirectResult error: ' + e.code + ' â€” ' + e.message, 'err');
     });
 
     log('Browser: ' + (/Chrome/.test(navigator.userAgent) ? 'Chrome' : /Edg/.test(navigator.userAgent) ? 'Edge' : navigator.userAgent.split(' ').pop()));
@@ -107,7 +107,7 @@
         log('POPUP SUCCESS: ' + result.user.displayName + ' (' + result.user.email + ')', 'ok');
         log('UID: ' + result.user.uid, 'ok');
       } catch(e) {
-        log('POPUP ERROR: ' + e.code + ' — ' + e.message, 'err');
+        log('POPUP ERROR: ' + e.code + ' â€” ' + e.message, 'err');
         if (e.code === 'auth/popup-closed-by-user') {
           log('Popup was closed. IMPORTANT: Wait for Google sign-in to complete in the popup!', 'warn');
           log('If the popup was blank/white, it may be a browser extension blocking it.', 'warn');
@@ -127,7 +127,7 @@
       saveLog('Navigating to Google... check logs when you return.', 'info');
       var provider = new firebase.auth.GoogleAuthProvider();
       auth.signInWithRedirect(provider).catch(function(e) {
-        log('signInWithRedirect error: ' + e.code + ' — ' + e.message, 'err');
+        log('signInWithRedirect error: ' + e.code + ' â€” ' + e.message, 'err');
       });
     }
 
@@ -161,7 +161,7 @@
           log('  collections: ' + cols.length + ' lists', 'ok');
           log('  streak: current=' + ((data.streak||{}).current||0) + ', longest=' + ((data.streak||{}).longest||0), 'ok');
         } else {
-          log('READ: no doc yet — will be created on first sign-in via main site', 'warn');
+          log('READ: no doc yet â€” will be created on first sign-in via main site', 'warn');
         }
         await db.collection('users').doc(auth.currentUser.uid).set({ _test: Date.now() }, { merge: true });
         await db.collection('users').doc(auth.currentUser.uid).update({ _test: firebase.firestore.FieldValue.delete() });
@@ -173,3 +173,5 @@
   </script>
 </body>
 </html>
+
+
