@@ -1,0 +1,1660 @@
+[
+  {
+    "problem_id": 604,
+    "name": "Conditional Expectation of Multivariate Normal",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter x",
+        "parameter y",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter x, parameter y, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 605,
+    "name": "Machine Learning: PCA vs. Autoencoder",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 606,
+    "name": "Machine Learning: Regularization Concepts",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 607,
+    "name": "Limit of Fibonacci Ratio",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter n | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 608,
+    "name": "K-th Most Frequent Number",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "integer parameters",
+        "parameter k"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, integer parameters, parameter k | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 609,
+    "name": "C++ unordered_map Default Value Behavior",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "operation",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: operation, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 610,
+    "name": "Numbers with Distinct Digits",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "integer parameters",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Variables satisfy stated integrality and sign constraints"
+      ],
+      "target_objective": "Count the number of feasible configurations satisfying the constraints"
+    },
+    "schema_text": "Domain: Number Theory | Entities: integer parameters, parameter n | Constraints: Variables satisfy stated integrality and sign constraints | Objective: Count the number of feasible configurations satisfying the constraints"
+  },
+  {
+    "problem_id": 611,
+    "name": "Probability: The Secretary Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 612,
+    "name": "Effect of Noise on Predictors in OLS",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter x",
+        "parameter y",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter x, parameter y, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 613,
+    "name": "Quickselect",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "array",
+        "parameter k"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: array, parameter k | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 614,
+    "name": "Stationarity and Residual Autocorrelation",
+    "schema": {
+      "core_mathematical_domain": "Number Theory",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Number Theory | Entities: time horizon, parameter a, parameter b | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 615,
+    "name": "Kelly Criterion Purpose Betting Investment Sizing.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 616,
+    "name": "Python Fundamentals",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "array",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: array, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 617,
+    "name": "Bayesian Detector Accuracy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 618,
+    "name": "C++: Initializing Reference Members",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 619,
+    "name": "Reverse Words in a String",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "string",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: string, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 620,
+    "name": "One-Step Binomial Option Pricing",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: time horizon, parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 621,
+    "name": "Linear Algebra: Positive Definite Matrix",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 622,
+    "name": "OLS with Non-linear Data",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter n",
+        "parameter x",
+        "parameter y",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter n, parameter x, parameter y, parameter a, parameter b | Constraints: Random events are independent where specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 623,
+    "name": "Conditional Bernoulli Sums",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 624,
+    "name": "Implement Quicksort",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 625,
+    "name": "Coding: Count of Target in Sorted Array",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "integer parameters",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Count the number of feasible configurations satisfying the constraints"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, integer parameters, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Count the number of feasible configurations satisfying the constraints"
+  },
+  {
+    "problem_id": 626,
+    "name": "Generalized Linear Models (GLM)",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 627,
+    "name": "Univalued Binary Tree",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory and Combinatorics",
+      "problem_setup_entities": [
+        "graph",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Graph Theory and Combinatorics | Entities: graph, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 628,
+    "name": "Master Theorem",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "state",
+        "parameter n",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: state, parameter n, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 629,
+    "name": "Puzzle: Balance Scale and Weights",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "integer parameters",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: integer parameters, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 630,
+    "name": "Puzzle: Flipping Cups Invariant",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "operation",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: operation, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 631,
+    "name": "Expectation of Minimum of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified",
+        "Outcomes are uniformly distributed where specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter a, parameter b | Constraints: Random events are independent where specified, Outcomes are uniformly distributed where specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 632,
+    "name": "Puzzle: Non-standard Dice Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "probability distribution",
+        "integer parameters",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Variables satisfy stated integrality and sign constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: probability distribution, integer parameters, parameter a | Constraints: Variables satisfy stated integrality and sign constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 633,
+    "name": "Random Partitioning Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "time horizon",
+        "parameter n",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, time horizon, parameter n, parameter k, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 634,
+    "name": "Database Outer Join",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "array",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: array, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 635,
+    "name": "Dice Roll Comparison",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 636,
+    "name": "Conditional Expectation Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 637,
+    "name": "Online Outlier Detection",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 638,
+    "name": "Comparison of Estimators",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "probability distribution",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Maximize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: probability distribution, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Maximize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 639,
+    "name": "AI: Tic-Tac-Toe AI",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 640,
+    "name": "K-Means Clustering",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter k"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter k | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 641,
+    "name": "C++: Compiler-Generated Class Methods",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 642,
+    "name": "Riccati Differential Equation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 643,
+    "name": "Expectation of Ratio of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter x",
+        "parameter y"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed where specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter x, parameter y | Constraints: Outcomes are uniformly distributed where specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 644,
+    "name": "Stationary Distribution of a Markov Chain",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "probability distribution",
+        "state",
+        "transition rule",
+        "parameter n",
+        "parameter a",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: probability distribution, state, transition rule, parameter n, parameter a, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 645,
+    "name": "Random Binary Tree Node Independently Decides",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, parameter a | Constraints: Random events are independent where specified | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 646,
+    "name": "Order Probabilities and Expectations for I.I.D. Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "probability distribution",
+        "parameter a",
+        "parameter b",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, probability distribution, parameter a, parameter b, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 647,
+    "name": "Effect of Duplicating Data on Regression Statistics",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter x",
+        "parameter y",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter x, parameter y, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 648,
+    "name": "Bayesian Inference with a Bag of Coins",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter n",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter n, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 649,
+    "name": "Reverse Polish to Infix Notation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 650,
+    "name": "Optimal Task Scheduling",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "parameter n",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: parameter n, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 651,
+    "name": "Largest Zero Submatrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Maximize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Maximize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 652,
+    "name": "Stochastic Processes and Sampling",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 653,
+    "name": "Linear Regression: R-squared Properties",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer",
+        "Variables satisfy stated integrality and sign constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a | Constraints: Arithmetic may be taken modulo a specified integer, Variables satisfy stated integrality and sign constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 654,
+    "name": "Estimation with Constraints",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "constraints",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: constraints, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 655,
+    "name": "Probability: Russian Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 656,
+    "name": "C++: Virtual Destructors",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 657,
+    "name": "Probability: Random Walk on a Cayley Tree",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "time horizon",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, time horizon, parameter k, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 658,
+    "name": "C++: Pointer and Const Correctness",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "problem inputs",
+        "decision variables"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: problem inputs, decision variables | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 659,
+    "name": "Market Microstructure: Order Book Dynamics",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "operation"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: operation | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 660,
+    "name": "Linear Regression: R-squared with Multiple Predictors",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter y"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter y | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 661,
+    "name": "Brownian Motion Hitting a Boundary",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter x",
+        "parameter y",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter x, parameter y, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 662,
+    "name": "Python: Numpy Array vs. List",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 663,
+    "name": "Search in a Sorted Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "parameter n",
+        "parameter m",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: parameter n, parameter m, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 664,
+    "name": "Simulation: Uniform Points in a Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed where specified"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a | Constraints: Outcomes are uniformly distributed where specified | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 665,
+    "name": "Simulation: Generating Arbitrary Probabilities",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter a, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 666,
+    "name": "Simulation: Generating Two Uniforms from One",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "probability distribution",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified",
+        "Outcomes are uniformly distributed where specified"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, probability distribution, parameter a | Constraints: Random events are independent where specified, Outcomes are uniformly distributed where specified | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 667,
+    "name": "Correlation vs. Independence",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified"
+      ],
+      "target_objective": "Count the number of feasible configurations satisfying the constraints"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter a | Constraints: Random events are independent where specified | Objective: Count the number of feasible configurations satisfying the constraints"
+  },
+  {
+    "problem_id": 668,
+    "name": "Sorting a Nearly Sorted Array",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Upper-bound constraints apply to selected quantities"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, parameter k, parameter a | Constraints: Upper-bound constraints apply to selected quantities | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 669,
+    "name": "Statistics: Hypothesis Testing for Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter n",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: time horizon, parameter n, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 670,
+    "name": "Time Series: Direction of Time",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 671,
+    "name": "Expected Height of a Random Tree",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Random events are independent where specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, parameter a | Constraints: Random events are independent where specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 672,
+    "name": "Reservation System Overlap",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 673,
+    "name": "C++: Advanced Language Features",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 674,
+    "name": "Probability: Branching Process Extinction",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: time horizon, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 675,
+    "name": "Probability: Expected Arc Length on a Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed where specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter a | Constraints: Outcomes are uniformly distributed where specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 676,
+    "name": "3-Sum Problem",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 677,
+    "name": "Simulation: Unbiased Coin from a Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter a, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 678,
+    "name": "Quantitative Finance: Arbitrage in Betting",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 679,
+    "name": "C++: Vector Reallocation",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 680,
+    "name": "Probability: Coupon Collector's Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "parameter n",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: parameter n, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 681,
+    "name": "Algorithm: Polynomial Coefficient Recovery",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "integer parameters",
+        "parameter x",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "Variables satisfy stated integrality and sign constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: integer parameters, parameter x, parameter p | Constraints: Variables satisfy stated integrality and sign constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 682,
+    "name": "Data Structures: Collision-Free Hash Table",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 683,
+    "name": "Markov Chains: Coin Flipping Robot",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "probability distribution",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: probability distribution, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 684,
+    "name": "Nested Intervals, Asymptotic Counting, and Matrix Algebra",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "integer parameters",
+        "parameter n",
+        "parameter k",
+        "parameter x",
+        "parameter y",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Variables satisfy stated integrality and sign constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, integer parameters, parameter n, parameter k, parameter x, parameter y, parameter a | Constraints: Variables satisfy stated integrality and sign constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 685,
+    "name": "String Manipulation, Matrix Traversal, and System Design",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "string",
+        "operation",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: string, operation, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 686,
+    "name": "Correlation Matrix, Geometric Probability, and Array Partitioning",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "array",
+        "random variable",
+        "time horizon",
+        "parameter n",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: array, random variable, time horizon, parameter n, parameter k, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 687,
+    "name": "Jump Trading Intern Phone Screen Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "parameter n",
+        "parameter a",
+        "parameter b",
+        "parameter p"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, parameter n, parameter a, parameter b, parameter p | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 688,
+    "name": "Jump Trading Final Round Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, time horizon, parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 689,
+    "name": "Math, Data, and Coding Round Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "constraints",
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: constraints, time horizon, parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 690,
+    "name": "Poker, ML Debugging, and Math Problems",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 691,
+    "name": "Knapsack-style Stock Investment",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "parameter n",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Maximize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: parameter n, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Maximize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 692,
+    "name": "Expression Generation and Data Structures II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics",
+      "problem_setup_entities": [
+        "array",
+        "operation",
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics | Entities: array, operation, time horizon, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 693,
+    "name": "Variance of a Limit Point and Generalized Fibonacci",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter k",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter k, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 694,
+    "name": "Game Theory and Array Partitioning DP",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "array",
+        "random variable",
+        "integer parameters",
+        "parameter n",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: array, random variable, integer parameters, parameter n, parameter k, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 695,
+    "name": "Calculus, Linear Algebra, and Fibonacci Implementation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "random variable",
+        "parameter n",
+        "parameter k",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the probability of the target event"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: random variable, parameter n, parameter k, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the probability of the target event"
+  },
+  {
+    "problem_id": 696,
+    "name": "Linear Algebra: Rotation Operator",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter a",
+        "parameter b"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: time horizon, parameter a, parameter b | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 697,
+    "name": "String/Word Formation and Interval Merging",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "string",
+        "operation",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Upper-bound constraints apply to selected quantities"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, string, operation, parameter a | Constraints: Upper-bound constraints apply to selected quantities | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 698,
+    "name": "LeetCode, Linked Lists, and String Parsing",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory and Combinatorics",
+      "problem_setup_entities": [
+        "array",
+        "string",
+        "graph",
+        "parameter k",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Graph Theory and Combinatorics | Entities: array, string, graph, parameter k, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 699,
+    "name": "Optimal Stopping, LeetCode, and Brain Teaser",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "graph",
+        "random variable",
+        "parameter n",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: graph, random variable, parameter n, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 700,
+    "name": "Machine Learning System Design",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Determine the required target quantity from the given setup"
+    },
+    "schema_text": "Domain: Geometry | Entities: parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Determine the required target quantity from the given setup"
+  },
+  {
+    "problem_id": 701,
+    "name": "System Design and Algorithm Problems",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "array",
+        "string",
+        "graph",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "Arithmetic may be taken modulo a specified integer"
+      ],
+      "target_objective": "Minimize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Optimization | Entities: array, string, graph, parameter a | Constraints: Arithmetic may be taken modulo a specified integer | Objective: Minimize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 702,
+    "name": "LeetCode Variants and Classics",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics and Dynamic Programming",
+      "problem_setup_entities": [
+        "array",
+        "string",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Maximize the target objective under the stated constraints"
+    },
+    "schema_text": "Domain: Discrete Mathematics and Dynamic Programming | Entities: array, string, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Maximize the target objective under the stated constraints"
+  },
+  {
+    "problem_id": 703,
+    "name": "Game Theory: Guessing Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "time horizon",
+        "parameter a"
+      ],
+      "invariant_constraints": [
+        "All variables and operations must satisfy the explicit problem constraints"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: time horizon, parameter a | Constraints: All variables and operations must satisfy the explicit problem constraints | Objective: Compute the Expected Value of the target random quantity"
+  }
+]

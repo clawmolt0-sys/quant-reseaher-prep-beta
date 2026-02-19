@@ -1,0 +1,1532 @@
+[
+  {
+    "problem_id": 504,
+    "name": "Probability of No HH",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Coin flips are i.i.d. with P(H)=0.5"
+      ],
+      "target_objective": "Compute the probability of not seeing the pattern \"HH\" in N tosses of a fair coin?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes, Random variables and events | Constraints: Coin flips are i.i.d. with P(H)=0.5 | Objective: Compute the probability of not seeing the pattern \"HH\" in N tosses of a fair coin?"
+  },
+  {
+    "problem_id": 505,
+    "name": "Online Mean and Standard Deviation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream"
+      ],
+      "invariant_constraints": [
+        "Single-pass update with bounded memory"
+      ],
+      "target_objective": "Design an algorithm to compute the mean and standard deviation of a data stream in a single pass (online manner)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream | Constraints: Single-pass update with bounded memory | Objective: Design an algorithm to compute the mean and standard deviation of a data stream in a single pass (online manner)"
+  },
+  {
+    "problem_id": 506,
+    "name": "Bayesian Inference with a Bad Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You have 1000 coins, one of which is a \"bad coin\" that always lands heads"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: You have 1000 coins, one of which is a \"bad coin\" that always lands heads"
+  },
+  {
+    "problem_id": 507,
+    "name": "Sort by Encounter Order",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Sort a list of items such that identical items are grouped together, but the groups appear in the order of their first appearance in the original list"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Sort a list of items such that identical items are grouped together, but the groups appear in the order of their first appearance in the original list"
+  },
+  {
+    "problem_id": 508,
+    "name": "Point in Triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "The coordinates of a triangle's three vertices and the coordinates of a point P, determine if P is inside the triangle"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: The coordinates of a triangle's three vertices and the coordinates of a point P, determine if P is inside the triangle"
+  },
+  {
+    "problem_id": 509,
+    "name": "Trie for Prefix Search",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Urn composition",
+        "Trie nodes"
+      ],
+      "invariant_constraints": [
+        "Prefix matching must be exact"
+      ],
+      "target_objective": "A list of words, design a data structure (e.g., a Trie) to efficiently return all words that start with a given prefix"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Urn composition, Trie nodes | Constraints: Prefix matching must be exact | Objective: A list of words, design a data structure (e.g., a Trie) to efficiently return all words that start with a given prefix"
+  },
+  {
+    "problem_id": 510,
+    "name": "Biased Sampling",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "To estimate the average number of residents per building in a city, you sample 100 people on the street and ask how many people live in their building"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: To estimate the average number of residents per building in a city, you sample 100 people on the street and ask how many people live in their building"
+  },
+  {
+    "problem_id": 511,
+    "name": "Expectation of a Function of a Random Variable",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A random variable $S$, its expectation $E[S]$, and the values of European call and put options $E[\\max(S-K, 0)]$ and $E[\\max(K-S, 0)]$ for any strike $K$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A random variable $S$, its expectation $E[S]$, and the values of European call and put options $E[\\max(S-K, 0)]$ and $E[\\max(K-S, 0)]$ for any strike $K$"
+  },
+  {
+    "problem_id": 512,
+    "name": "Median Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Predictors and response"
+      ],
+      "invariant_constraints": [
+        "Linear model and least-squares assumptions"
+      ],
+      "target_objective": "Compute median regression (e.g., Least Absolute Deviations)?"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Predictors and response | Constraints: Linear model and least-squares assumptions | Objective: Compute median regression (e.g., Least Absolute Deviations)?"
+  },
+  {
+    "problem_id": 513,
+    "name": "Vector Projection",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Two n-dimensional vectors $p$ and $\\beta$, find the vector closest to $p$ that is also orthogonal to $\\beta$"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: Two n-dimensional vectors $p$ and $\\beta$, find the vector closest to $p$ that is also orthogonal to $\\beta$"
+  },
+  {
+    "problem_id": 514,
+    "name": "Queue with Get-Max in O(1)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Queue"
+      ],
+      "invariant_constraints": [
+        "Constant-time or constant-space requirement"
+      ],
+      "target_objective": "Implement a queue data structure that supports the standard `enqueue` and `dequeue` operations, as well as a `get_max` operation, all in O(1) amortized time"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Queue | Constraints: Constant-time or constant-space requirement | Objective: Implement a queue data structure that supports the standard `enqueue` and `dequeue` operations, as well as a `get_max` operation, all in O(1) amortized time"
+  },
+  {
+    "problem_id": 515,
+    "name": "Correlation of a Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Random variables $H, X, Y$, and known correlations $\\text{corr}(H, X)$ and $\\text{corr}(H, Y)$, what can you say about $\\text{corr}(H, X+Y)$?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Random variables $H, X, Y$, and known correlations $\\text{corr}(H, X)$ and $\\text{corr}(H, Y)$, what can you say about $\\text{corr}(H, X+Y)$?"
+  },
+  {
+    "problem_id": 516,
+    "name": "Dice Game Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die roll outcomes"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Two games are available: 1"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die roll outcomes | Constraints: Use the assumptions explicitly stated in the problem | Objective: Two games are available: 1"
+  },
+  {
+    "problem_id": 517,
+    "name": "Expected Adjacent Different Color Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Cards / deck states"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You have a shuffled deck of $n$ white cards and $n$ black cards"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Cards / deck states | Constraints: Use the assumptions explicitly stated in the problem | Objective: You have a shuffled deck of $n$ white cards and $n$ black cards"
+  },
+  {
+    "problem_id": 518,
+    "name": "Expected Number of Rolls of an 8-sided",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Cards / deck states",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "(a) Roll a 10-sided die and a 20-sided die"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Cards / deck states, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: (a) Roll a 10-sided die and a 20-sided die"
+  },
+  {
+    "problem_id": 519,
+    "name": "Loss Functions and Estimators",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "(a) Find $\\arg\\min_y \\sum_i(x_i - y)^2$"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: (a) Find $\\arg\\min_y \\sum_i(x_i - y)^2$"
+  },
+  {
+    "problem_id": 520,
+    "name": "Machine Learning General Questions",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "(a) How does PCA work?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Feature vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: (a) How does PCA work?"
+  },
+  {
+    "problem_id": 521,
+    "name": "C++ Class Design: Coordinates and Hashing",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Design a C++ class for a point in a 2D plane"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Design a C++ class for a point in a 2D plane"
+  },
+  {
+    "problem_id": 522,
+    "name": "Maximum Points in an Angle (Geometric Algorithm)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A set of points in a 2D plane and an angle $\\alpha$, find the rotation of the angle (centered at the origin) that allows it to contain the maximum number of points"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A set of points in a 2D plane and an angle $\\alpha$, find the rotation of the angle (centered at the origin) that allows it to contain the maximum number of points"
+  },
+  {
+    "problem_id": 523,
+    "name": "Combinatorics: Stars and Bars",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Discrete Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Solve a combinatorial problem using the \"stars and bars\" method"
+    },
+    "schema_text": "Domain: Combinatorics and Discrete Mathematics | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Solve a combinatorial problem using the \"stars and bars\" method"
+  },
+  {
+    "problem_id": 524,
+    "name": "PCA Variance with an Additional Feature",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You perform Principal Component Analysis (PCA) on a dataset"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Feature vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: You perform Principal Component Analysis (PCA) on a dataset"
+  },
+  {
+    "problem_id": 525,
+    "name": "Magic Square",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Write a function to determine if a given $N \\times N$ matrix is a magic square"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix | Constraints: Use the assumptions explicitly stated in the problem | Objective: Write a function to determine if a given $N \\times N$ matrix is a magic square"
+  },
+  {
+    "problem_id": 526,
+    "name": "Generate Permutations and Combinations",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Linear model and least-squares assumptions"
+      ],
+      "target_objective": "Without using built-in library functions like `itertools.permutations`, write functions to: (a) Generate all permutations of a given list of unique elements"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Problem-specific variables and parameters | Constraints: Linear model and least-squares assumptions | Objective: Without using built-in library functions like `itertools.permutations`, write functions to: (a) Generate all permutations of a given list of unique elements"
+  },
+  {
+    "problem_id": 527,
+    "name": "Find Primes up to N",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Implement an efficient algorithm, such as the Sieve of Eratosthenes, to find all prime numbers up to a given integer $n$"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Implement an efficient algorithm, such as the Sieve of Eratosthenes, to find all prime numbers up to a given integer $n$"
+  },
+  {
+    "problem_id": 528,
+    "name": "Two Envelopes Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Explain the Two Envelopes Paradox"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Explain the Two Envelopes Paradox"
+  },
+  {
+    "problem_id": 529,
+    "name": "N Points in a Semicircle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "If you pick $n$ points uniformly at random on the circumference of a circle, what is the probability that they all lie within some semicircle?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables and events | Constraints: Uniform distribution assumptions apply | Objective: If you pick $n$ points uniformly at random on the circumference of a circle, what is the probability that they all lie within some semicircle?"
+  },
+  {
+    "problem_id": 530,
+    "name": "Case Study: Experiment Design for Policy Impact",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Policy treatment and control groups",
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A new policy has been implemented (e.g., a new feature on a website)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Policy treatment and control groups, Feature vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: A new policy has been implemented (e.g., a new feature on a website)"
+  },
+  {
+    "problem_id": 531,
+    "name": "Fair Sided Dice Rolled, Probability Outcomes",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die roll outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "If four fair six-sided dice are rolled, what is the probability that the outcomes are strictly increasing?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die roll outcomes, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: If four fair six-sided dice are rolled, what is the probability that the outcomes are strictly increasing?"
+  },
+  {
+    "problem_id": 532,
+    "name": "Dimensionality Reduction Concepts",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A high-dimensional $N \\times P$ data matrix (where $P \\gg N$), how would you approach dimensionality reduction?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix | Constraints: Use the assumptions explicitly stated in the problem | Objective: A high-dimensional $N \\times P$ data matrix (where $P \\gg N$), how would you approach dimensionality reduction?"
+  },
+  {
+    "problem_id": 533,
+    "name": "Conditional Probability of Arrivals",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Three people fly from city A, two from B, and one from C"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: Three people fly from city A, two from B, and one from C"
+  },
+  {
+    "problem_id": 534,
+    "name": "Machine Learning Concepts",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Explain the following concepts: (a) The difference between Gradient Boosting and Random Forests"
+    },
+    "schema_text": "Domain: Machine Learning | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Explain the following concepts: (a) The difference between Gradient Boosting and Random Forests"
+  },
+  {
+    "problem_id": 535,
+    "name": "Case Study: Feature Selection with Many Features",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You are building a model with 10 features"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Feature vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: You are building a model with 10 features"
+  },
+  {
+    "problem_id": 536,
+    "name": "Ridge Regression for Time Series",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Predictors and response",
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where stated",
+        "L2-regularization penalty is applied"
+      ],
+      "target_objective": "Using Ridge regression for a time-series prediction task"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Predictors and response, Feature vectors | Constraints: Independence assumptions hold where stated, L2-regularization penalty is applied | Objective: Using Ridge regression for a time-series prediction task"
+  },
+  {
+    "problem_id": 537,
+    "name": "Maximum Product Cutting",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A rope of length $n$, find the maximum product you can get by cutting the rope into integer-length pieces"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A rope of length $n$, find the maximum product you can get by cutting the rope into integer-length pieces"
+  },
+  {
+    "problem_id": 538,
+    "name": "HTH vs HTT Game (Probability)",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Coin flips are i.i.d. with P(H)=0.5"
+      ],
+      "target_objective": "Alice and Bob toss a fair coin repeatedly"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes, Random variables and events | Constraints: Coin flips are i.i.d. with P(H)=0.5 | Objective: Alice and Bob toss a fair coin repeatedly"
+  },
+  {
+    "problem_id": 539,
+    "name": "Distributed OLS Computation",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Linear model and least-squares assumptions"
+      ],
+      "target_objective": "Compute the closed-form solution for OLS?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix | Constraints: Linear model and least-squares assumptions | Objective: Compute the closed-form solution for OLS?"
+  },
+  {
+    "problem_id": 540,
+    "name": "Regularization and Prediction Horizon",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A neural network is trained to predict a car's position 1 second ahead and 10 seconds ahead"
+    },
+    "schema_text": "Domain: Machine Learning | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A neural network is trained to predict a car's position 1 second ahead and 10 seconds ahead"
+  },
+  {
+    "problem_id": 541,
+    "name": "System Design and Multithreading Questions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Trie nodes",
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "(a) You are given a binary matrix where a \"duck\" shape is represented by 1s"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Trie nodes, Matrix | Constraints: Use the assumptions explicitly stated in the problem | Objective: (a) You are given a binary matrix where a \"duck\" shape is represented by 1s"
+  },
+  {
+    "problem_id": 542,
+    "name": "Game Theory: Tic-Tac-Toe Expected Value",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You play a game where 3 pieces are placed randomly on a 3x3 tic-tac-toe board"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: You play a game where 3 pieces are placed randomly on a 3x3 tic-tac-toe board"
+  },
+  {
+    "problem_id": 543,
+    "name": "Optimal Strategy for a Card Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Cards / deck states"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You are presented with three face-down cards with unknown integer values $n, n+1, n+2$"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Cards / deck states | Constraints: Use the assumptions explicitly stated in the problem | Objective: You are presented with three face-down cards with unknown integer values $n, n+1, n+2$"
+  },
+  {
+    "problem_id": 544,
+    "name": "Numerically Stable Online Statistics",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Design a class or algorithm to compute the mean and standard deviation of a data stream in a single pass"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream | Constraints: Use the assumptions explicitly stated in the problem | Objective: Design a class or algorithm to compute the mean and standard deviation of a data stream in a single pass"
+  },
+  {
+    "problem_id": 545,
+    "name": "Number Smooth Prime Factors Called Hamming",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A number is \"3-smooth\" if its only prime factors are 2, 3, and 5 (these are also called Hamming numbers or ugly numbers)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A number is \"3-smooth\" if its only prime factors are 2, 3, and 5 (these are also called Hamming numbers or ugly numbers)"
+  },
+  {
+    "problem_id": 546,
+    "name": "Rope Linking Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You have $N$ ropes, each of length 1"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: You have $N$ ropes, each of length 1"
+  },
+  {
+    "problem_id": 547,
+    "name": "Card Game Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Cards / deck states",
+        "Urn composition",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "From a shuffled 52-card deck, you turn over cards one by one"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Cards / deck states, Urn composition, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: From a shuffled 52-card deck, you turn over cards one by one"
+  },
+  {
+    "problem_id": 548,
+    "name": "Two Players Guessing Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Alice and Bob want to win a game where they must both correctly guess the outcome of a future coin flip"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Coin toss outcomes, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: Alice and Bob want to win a game where they must both correctly guess the outcome of a future coin flip"
+  },
+  {
+    "problem_id": 549,
+    "name": "MLE of Uniform Distribution Parameter",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "$n$ i.i.d"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Problem-specific variables and parameters | Constraints: Uniform distribution assumptions apply | Objective: $n$ i.i.d"
+  },
+  {
+    "problem_id": 550,
+    "name": "24 Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Four numbers, determine if you can obtain the value 24 using the operations +, -, *, / and parentheses"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Four numbers, determine if you can obtain the value 24 using the operations +, -, *, / and parentheses"
+  },
+  {
+    "problem_id": 551,
+    "name": "Large Integer Sum with Constant Space",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream"
+      ],
+      "invariant_constraints": [
+        "Constant-time or constant-space requirement"
+      ],
+      "target_objective": "Two large integers, represented as streams of digits of equal length"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream | Constraints: Constant-time or constant-space requirement | Objective: Two large integers, represented as streams of digits of equal length"
+  },
+  {
+    "problem_id": 552,
+    "name": "Generate Balanced Parentheses",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "$n$ pairs of parentheses, write a function to generate all combinations of well-formed parentheses"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: $n$ pairs of parentheses, write a function to generate all combinations of well-formed parentheses"
+  },
+  {
+    "problem_id": 553,
+    "name": "Covariance Bounds",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix",
+        "Covariance / correlation parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Corr(A, B) = 0.5 and Corr(B, C) = 0.5, what is the possible range for Corr(A, C)?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix, Covariance / correlation parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Corr(A, B) = 0.5 and Corr(B, C) = 0.5, what is the possible range for Corr(A, C)?"
+  },
+  {
+    "problem_id": 554,
+    "name": "Average Stock Holding Time",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A log of buy and sell transactions for a single stock for one day"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A log of buy and sell transactions for a single stock for one day"
+  },
+  {
+    "problem_id": 555,
+    "name": "Optimal Stopping: Red vs Black Card Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Cards / deck states",
+        "Urn composition"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You play a game with a standard 52-card deck"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Cards / deck states, Urn composition | Constraints: Use the assumptions explicitly stated in the problem | Objective: You play a game with a standard 52-card deck"
+  },
+  {
+    "problem_id": 556,
+    "name": "PDF of a Sum of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "If $X$ and $Y$ are i.i.d"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables and events | Constraints: Uniform distribution assumptions apply | Objective: If $X$ and $Y$ are i.i.d"
+  },
+  {
+    "problem_id": 557,
+    "name": "Eigenvalues of an Equicorrelated Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Find the eigenvalues of an $n \\times n$ matrix where the diagonal elements are all 1 and all off-diagonal elements are equal to $\\rho$"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix | Constraints: Use the assumptions explicitly stated in the problem | Objective: Find the eigenvalues of an $n \\times n$ matrix where the diagonal elements are all 1 and all off-diagonal elements are equal to $\\rho$"
+  },
+  {
+    "problem_id": 558,
+    "name": "System Design: Trading Platform",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Design a simplified limit order book for a trading platform"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Design a simplified limit order book for a trading platform"
+  },
+  {
+    "problem_id": 559,
+    "name": "World Series Problem (Dynamic Programming)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Two teams play a best-of-seven series (first to win 4 games wins)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: Two teams play a best-of-seven series (first to win 4 games wins)"
+  },
+  {
+    "problem_id": 560,
+    "name": "Distributed Merge Sort",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array / sequence"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Describe how you would implement merge sort if the array is too large to fit on a single machine and is distributed across several machines"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array / sequence | Constraints: Use the assumptions explicitly stated in the problem | Objective: Describe how you would implement merge sort if the array is too large to fit on a single machine and is distributed across several machines"
+  },
+  {
+    "problem_id": 561,
+    "name": "OLS Confidence Intervals",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Predictors and response"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "How do you derive the confidence interval for a coefficient in a simple linear regression model?"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Predictors and response | Constraints: Use the assumptions explicitly stated in the problem | Objective: How do you derive the confidence interval for a coefficient in a simple linear regression model?"
+  },
+  {
+    "problem_id": 562,
+    "name": "Case Study: Mining Credit Card Data",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Cards / deck states"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A massive dataset of credit card transactions, including time, location, merchant, and amount"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Cards / deck states | Constraints: Use the assumptions explicitly stated in the problem | Objective: A massive dataset of credit card transactions, including time, location, merchant, and amount"
+  },
+  {
+    "problem_id": 563,
+    "name": "Regression with Leverage Points",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Predictors and response"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "In a simple linear regression, what is a leverage point?"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Predictors and response | Constraints: Use the assumptions explicitly stated in the problem | Objective: In a simple linear regression, what is a leverage point?"
+  },
+  {
+    "problem_id": 564,
+    "name": "Model Comparison: Logistic vs. Linear vs. SVM",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Vectors",
+        "Predictors and response"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Compare and contrast Logistic Regression, Linear Regression, and Support Vector Machines (SVMs)"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Vectors, Predictors and response | Constraints: Use the assumptions explicitly stated in the problem | Objective: Compare and contrast Logistic Regression, Linear Regression, and Support Vector Machines (SVMs)"
+  },
+  {
+    "problem_id": 565,
+    "name": "Generating Normal from Uniform",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "Describe a method (e.g., the Box-Muller transform) for generating standard normal random variables using a generator for Uniform(0,1) variables"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Uniform distribution assumptions apply | Objective: Describe a method (e.g., the Box-Muller transform) for generating standard normal random variables using a generator for Uniform(0,1) variables"
+  },
+  {
+    "problem_id": 566,
+    "name": "Case Study: MVO from a Linear Algebra Perspective",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Discuss Mean-Variance Optimization (MVO) for portfolios from a linear algebra perspective"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Discuss Mean-Variance Optimization (MVO) for portfolios from a linear algebra perspective"
+  },
+  {
+    "problem_id": 567,
+    "name": "Egg Dropping Puzzle (Dynamic Programming)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You have $k$ eggs and a building with $n$ floors"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: You have $k$ eggs and a building with $n$ floors"
+  },
+  {
+    "problem_id": 568,
+    "name": "Polya's Urn Model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Urn composition",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A basketball player has made $m$ shots out of $n$ attempts so far"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Urn composition, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: A basketball player has made $m$ shots out of $n$ attempts so far"
+  },
+  {
+    "problem_id": 569,
+    "name": "Regression with d > n",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Predictors and response",
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "L2-regularization penalty is applied",
+        "Linear model and least-squares assumptions"
+      ],
+      "target_objective": "What are the problems with performing OLS regression when the number of features $d$ is greater than the number of data points $n$?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Predictors and response, Feature vectors | Constraints: L2-regularization penalty is applied, Linear model and least-squares assumptions | Objective: What are the problems with performing OLS regression when the number of features $d$ is greater than the number of data points $n$?"
+  },
+  {
+    "problem_id": 570,
+    "name": "Generate 1-7 from 1-5 Random Generator",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "A function that generates a random integer from 1 to 5 uniformly, write a function that generates a random integer from 1 to 7 uniformly"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Uniform distribution assumptions apply | Objective: A function that generates a random integer from 1 to 5 uniformly, write a function that generates a random integer from 1 to 7 uniformly"
+  },
+  {
+    "problem_id": 571,
+    "name": "Decode Number String",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "String tokens"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A mapping 'a' -> 1, 'b' -> 2, ..., 'z' -> 26, and a string of digits, count the number of ways it can be decoded"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: String tokens | Constraints: Use the assumptions explicitly stated in the problem | Objective: A mapping 'a' -> 1, 'b' -> 2, ..., 'z' -> 26, and a string of digits, count the number of ways it can be decoded"
+  },
+  {
+    "problem_id": 572,
+    "name": "Cross-Entropy and Jensen's Inequality",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Write down the formula for cross-entropy between two distributions $p(x)$ and $q(x)$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Write down the formula for cross-entropy between two distributions $p(x)$ and $q(x)$"
+  },
+  {
+    "problem_id": 573,
+    "name": "Extremum of $f(x)=x^x$",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Find the minimum value of the function $f(x)=x^x$ on the interval $(0, 1]$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Find the minimum value of the function $f(x)=x^x$ on the interval $(0, 1]$"
+  },
+  {
+    "problem_id": 574,
+    "name": "Biased Coin Comparison Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Two coins, A and B, which may be biased"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: Two coins, A and B, which may be biased"
+  },
+  {
+    "problem_id": 575,
+    "name": "Angle Between y and y-hat in Ridge Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Vectors",
+        "Predictors and response"
+      ],
+      "invariant_constraints": [
+        "L2-regularization penalty is applied"
+      ],
+      "target_objective": "In a linear regression model $y = X\\beta + \\epsilon$, prove or disprove the statement: For any choice of the L2 regularization parameter $\\lambda > 0$, the angle between the observation vector $y$ and the predicted vecto"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Vectors, Predictors and response | Constraints: L2-regularization penalty is applied | Objective: In a linear regression model $y = X\\beta + \\epsilon$, prove or disprove the statement: For any choice of the L2 regularization parameter $\\lambda > 0$, the angle between the observation vector $y$ and the predicted vecto"
+  },
+  {
+    "problem_id": 576,
+    "name": "St. Petersburg Paradox",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes"
+      ],
+      "invariant_constraints": [
+        "Coin flips are i.i.d. with P(H)=0.5"
+      ],
+      "target_objective": "Explain the St"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes | Constraints: Coin flips are i.i.d. with P(H)=0.5 | Objective: Explain the St"
+  },
+  {
+    "problem_id": 577,
+    "name": "Auction Theory Bidding Strategy",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Bidders and valuations"
+      ],
+      "invariant_constraints": [
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "In a first-price sealed-bid auction, an item's value to you is uniformly distributed between $\\$2$ and $\\$2$M"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Bidders and valuations | Constraints: Uniform distribution assumptions apply | Objective: In a first-price sealed-bid auction, an item's value to you is uniformly distributed between $\\$2$ and $\\$2$M"
+  },
+  {
+    "problem_id": 578,
+    "name": "Two Sum Count (Coding Problem)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array / sequence"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "An array of integers and a target value, find the number of unique pairs of elements that sum up to the target"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array / sequence | Constraints: Use the assumptions explicitly stated in the problem | Objective: An array of integers and a target value, find the number of unique pairs of elements that sum up to the target"
+  },
+  {
+    "problem_id": 579,
+    "name": "Online Fraud Detection",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Single-pass update with bounded memory"
+      ],
+      "target_objective": "Describe how you would design an online (real-time) algorithm to detect fraudulent transactions (e.g., for Amazon orders)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Feature vectors | Constraints: Single-pass update with bounded memory | Objective: Describe how you would design an online (real-time) algorithm to detect fraudulent transactions (e.g., for Amazon orders)"
+  },
+  {
+    "problem_id": 580,
+    "name": "Deliver N Numbers as 1",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array / sequence"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Alice has an array of $N$ decimal numbers she wants to send to Bob"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array / sequence | Constraints: Use the assumptions explicitly stated in the problem | Objective: Alice has an array of $N$ decimal numbers she wants to send to Bob"
+  },
+  {
+    "problem_id": 581,
+    "name": "Inverting a High-Dimensional Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix",
+        "Covariance / correlation parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Discuss numerical methods and challenges for inverting a high-dimensional covariance matrix, especially if it is ill-conditioned"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix, Covariance / correlation parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Discuss numerical methods and challenges for inverting a high-dimensional covariance matrix, especially if it is ill-conditioned"
+  },
+  {
+    "problem_id": 582,
+    "name": "Simulating Correlated Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Optimization",
+      "problem_setup_entities": [
+        "Matrix",
+        "Vectors",
+        "Covariance / correlation parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A random number generator for a 1D standard normal distribution, how would you simulate three 3D random variables with a given mean vector and covariance matrix?"
+    },
+    "schema_text": "Domain: Linear Algebra and Optimization | Entities: Matrix, Vectors, Covariance / correlation parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: A random number generator for a 1D standard normal distribution, how would you simulate three 3D random variables with a given mean vector and covariance matrix?"
+  },
+  {
+    "problem_id": 583,
+    "name": "GARCH Model",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Compute a GARCH model?"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Compute a GARCH model?"
+  },
+  {
+    "problem_id": 584,
+    "name": "Variance of a Coordinate on a Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "If you randomly pick a point $(x, y, z)$ from the surface of a sphere with radius $R$ centered at the origin, what is the variance of the $x$-coordinate?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: If you randomly pick a point $(x, y, z)$ from the surface of a sphere with radius $R$ centered at the origin, what is the variance of the $x$-coordinate?"
+  },
+  {
+    "problem_id": 585,
+    "name": "Posterior Probability for Binomial Rates",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin toss outcomes",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Coin flips are i.i.d. with P(H)=0.5",
+        "Uniform distribution assumptions apply"
+      ],
+      "target_objective": "You have two unfair coins with head probabilities $p_1$ and $p_2$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin toss outcomes, Random variables and events | Constraints: Coin flips are i.i.d. with P(H)=0.5, Uniform distribution assumptions apply | Objective: You have two unfair coins with head probabilities $p_1$ and $p_2$"
+  },
+  {
+    "problem_id": 586,
+    "name": "Blind Coin Flipping Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Coin toss outcomes"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "There are $N$ coins on a table, $k$ of which are heads up"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Coin toss outcomes | Constraints: Use the assumptions explicitly stated in the problem | Objective: There are $N$ coins on a table, $k$ of which are heads up"
+  },
+  {
+    "problem_id": 587,
+    "name": "Pairwise vs. Joint Independence",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where stated"
+      ],
+      "target_objective": "Provide a classic example of three random variables that are pairwise independent but not jointly independent"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Independence assumptions hold where stated | Objective: Provide a classic example of three random variables that are pairwise independent but not jointly independent"
+  },
+  {
+    "problem_id": 588,
+    "name": "Integral of a Gaussian",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Compute the value of the integral $\\int_{-\\infty}^{\\infty} e^{-x^2} dx$?"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Compute the value of the integral $\\int_{-\\infty}^{\\infty} e^{-x^2} dx$?"
+  },
+  {
+    "problem_id": 589,
+    "name": "Sum of Powers",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Discuss methods for finding a closed-form expression for the sum of powers, $\\sum_{i=1}^{N} i^k$, for integer $k \\ge 1$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Discuss methods for finding a closed-form expression for the sum of powers, $\\sum_{i=1}^{N} i^k$, for integer $k \\ge 1$"
+  },
+  {
+    "problem_id": 590,
+    "name": "Standard Deviation of a Sum of Correlated Gaussians",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where stated"
+      ],
+      "target_objective": "Let $X, Y \\sim N(0,1)$ be two standard normal random variables"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Independence assumptions hold where stated | Objective: Let $X, Y \\sim N(0,1)$ be two standard normal random variables"
+  },
+  {
+    "problem_id": 591,
+    "name": "Machine Learning: Kernel Methods and Gaussian Processes",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Variables follow Normal assumptions"
+      ],
+      "target_objective": "(a) What are kernel methods in machine learning?"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Problem-specific variables and parameters | Constraints: Variables follow Normal assumptions | Objective: (a) What are kernel methods in machine learning?"
+  },
+  {
+    "problem_id": 592,
+    "name": "Reinforcement Learning: Q-Learning vs. Policy Gradients",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning",
+      "problem_setup_entities": [
+        "Policy treatment and control groups"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "What are the main differences between Q-learning and Policy Gradient methods in reinforcement learning?"
+    },
+    "schema_text": "Domain: Machine Learning | Entities: Policy treatment and control groups | Constraints: Use the assumptions explicitly stated in the problem | Objective: What are the main differences between Q-learning and Policy Gradient methods in reinforcement learning?"
+  },
+  {
+    "problem_id": 593,
+    "name": "Online Sampling from a Stream",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A stream of data of unknown length"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: A stream of data of unknown length"
+  },
+  {
+    "problem_id": 594,
+    "name": "Monte Carlo Estimation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Describe how you would use the Monte Carlo method to estimate the value of (a) $\\pi$ and (b) $e$"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Describe how you would use the Monte Carlo method to estimate the value of (a) $\\pi$ and (b) $e$"
+  },
+  {
+    "problem_id": 595,
+    "name": "Online Covariance and Correlation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream",
+        "Covariance / correlation parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Write a class in a language of your choice that can process a stream of pairs of numbers $(x, y)$"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream, Covariance / correlation parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: Write a class in a language of your choice that can process a stream of pairs of numbers $(x, y)$"
+  },
+  {
+    "problem_id": 596,
+    "name": "Regression: Features vs. Data Points",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Predictors and response",
+        "Feature vectors"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "In a linear regression model, what problems arise as the number of features $p$ approaches the number of data points $n$?"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Predictors and response, Feature vectors | Constraints: Use the assumptions explicitly stated in the problem | Objective: In a linear regression model, what problems arise as the number of features $p$ approaches the number of data points $n$?"
+  },
+  {
+    "problem_id": 597,
+    "name": "Probability That the Gambler S Fortune Reaches",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A gambler starts with an initial fortune of $i$ dollars"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: A gambler starts with an initial fortune of $i$ dollars"
+  },
+  {
+    "problem_id": 598,
+    "name": "Data Structure: N-th Smallest in a Stream",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "Design a data structure that supports two operations: `add(number)` to add a number to the collection, and `query(n)` to find the n-th smallest number currently in the collection"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream | Constraints: Use the assumptions explicitly stated in the problem | Objective: Design a data structure that supports two operations: `add(number)` to add a number to the collection, and `query(n)` to find the n-th smallest number currently in the collection"
+  },
+  {
+    "problem_id": 599,
+    "name": "Backtesting and Transaction Costs",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Optimal Stopping",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "When backtesting a trading strategy, why is it crucial to account for transaction costs?"
+    },
+    "schema_text": "Domain: Game Theory and Optimal Stopping | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: When backtesting a trading strategy, why is it crucial to account for transaction costs?"
+  },
+  {
+    "problem_id": 600,
+    "name": "Best Linear Unbiased Estimator (BLUE)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Estimation",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "You have multiple unbiased estimators for the same parameter"
+    },
+    "schema_text": "Domain: Statistical Inference and Estimation | Entities: Problem-specific variables and parameters | Constraints: Use the assumptions explicitly stated in the problem | Objective: You have multiple unbiased estimators for the same parameter"
+  },
+  {
+    "problem_id": 601,
+    "name": "Median of Two Sorted Arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array / sequence"
+      ],
+      "invariant_constraints": [
+        "Input order/monotonicity constraints are given"
+      ],
+      "target_objective": "Two sorted arrays, `nums1` and `nums2`, of size $m$ and $n$ respectively, find the median of the two sorted arrays"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array / sequence | Constraints: Input order/monotonicity constraints are given | Objective: Two sorted arrays, `nums1` and `nums2`, of size $m$ and $n$ respectively, find the median of the two sorted arrays"
+  },
+  {
+    "problem_id": 602,
+    "name": "Approximate Online Median",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Data stream"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "For a continuous stream of numbers, describe an algorithm to compute an approximate median"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Data stream | Constraints: Use the assumptions explicitly stated in the problem | Objective: For a continuous stream of numbers, describe an algorithm to compute an approximate median"
+  },
+  {
+    "problem_id": 603,
+    "name": "DP on a Grid - Random Walk Probability",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Random walk state",
+        "Random variables and events"
+      ],
+      "invariant_constraints": [
+        "Use the assumptions explicitly stated in the problem"
+      ],
+      "target_objective": "A particle starts at position $(x, y)$ on a grid from $(0,0)$ to $(7,7)$"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Random walk state, Random variables and events | Constraints: Use the assumptions explicitly stated in the problem | Objective: A particle starts at position $(x, y)$ on a grid from $(0,0)$ to $(7,7)$"
+  }
+]

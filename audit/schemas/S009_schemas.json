@@ -1,0 +1,1605 @@
+[
+  {
+    "problem_id": 804,
+    "name": "Probability Random Walker Origin Infinite Cayley",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Walk"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Walk | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 805,
+    "name": "List Manipulation and Kelly Strategy",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Matrix | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 806,
+    "name": "Matrix, Numbers Randomly Filled Matrix.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Matrix | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 807,
+    "name": "Multicollinearity in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Model"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Model | Constraints: Model assumptions for linear estimation | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 808,
+    "name": "Disadvantage of Push Back in a Vector",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 809,
+    "name": "Coupon Collection Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coupon",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coupon, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 810,
+    "name": "Determining Coefficients of a Polynomial",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Coefficient",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Coefficient, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 811,
+    "name": "Sorting with Limited Memory",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input Data Structure, Random Mechanism | Constraints: Independence assumptions apply where specified | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 812,
+    "name": "Hash Table without Collisions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 813,
+    "name": "Coin Flipping Robot and Markov Chain",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Coin",
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Coin, Matrix | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 814,
+    "name": "Disk Space Analysis",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Window",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Window, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 815,
+    "name": "Visiting Cities",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 816,
+    "name": "Correlation Between Two Dependent Variables",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Coefficient",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Random Variable, Coefficient, Variables X, Y | Constraints: Independence assumptions apply where specified | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 817,
+    "name": "Stick Cutting Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Point",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Point, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 818,
+    "name": "Kelly Criterion Related Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Game",
+        "Wealth"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Game, Wealth | Constraints: Independence assumptions apply where specified | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 819,
+    "name": "Subarray Continuous Maximum Sum",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 820,
+    "name": "Random Sampling from 3D Unit Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Sphere",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Sphere, Point | Constraints: Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 821,
+    "name": "Maximizing Reward in Dice Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die",
+        "Dice",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die, Dice, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 822,
+    "name": "Expected Value of the Smallest Die Roll",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 823,
+    "name": "People Standing in a Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Circle"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Circle | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 824,
+    "name": "Drawing Balls Until Two Remain",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Ball"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Ball | Constraints: Sampling without replacement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 825,
+    "name": "Range of Covariance",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Matrix",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Random Variable, Matrix, Point | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 826,
+    "name": "Sum of Gaussian Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable, Variables X, Y | Constraints: Independence assumptions apply where specified | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 827,
+    "name": "Minimizing the Variance of a Linear Combination",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Optimize objective function under stated constraints"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Random Variable, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Optimize objective function under stated constraints"
+  },
+  {
+    "problem_id": 828,
+    "name": "CDF of a Random Variable Generated from a Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Circle",
+        "Point",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable, Circle, Point, Variables X, Y | Constraints: Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 829,
+    "name": "Decomposing an Integer",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 830,
+    "name": "Integer Part of Cube Root",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 831,
+    "name": "Correlation Range with Four Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 832,
+    "name": "Error Range in a Linear Model",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Model",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Model, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 833,
+    "name": "Comparison of Coefficients in Linear Models",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Coefficient",
+        "Model",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Coefficient, Model, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 834,
+    "name": "/LC 121: Best Time to Buy and Sell Stock I",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Stock",
+        "Price"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Stock, Price | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 835,
+    "name": "/LC 122: Best Time to Buy and Sell Stock II",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Stock",
+        "Price"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Stock, Price | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 836,
+    "name": "Distribution of a Basketball Player's Shots",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Ball",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Ball, Sample Size / Horizon n | Constraints: Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 837,
+    "name": "Dice Strategy and Expected Value",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die",
+        "Dice",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die, Dice, Point | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 838,
+    "name": "Optimal Strategy for Re-rolling a Die",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die",
+        "Dice"
+      ],
+      "invariant_constraints": [
+        "Limited number of actions/rerolls"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die, Dice | Constraints: Limited number of actions/rerolls | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 839,
+    "name": "(Coding): Shortest Path with Limited Bad Edges",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Graph",
+        "Node",
+        "Edge"
+      ],
+      "invariant_constraints": [
+        "Graph connectivity/path feasibility constraints"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Graph, Node, Edge | Constraints: Graph connectivity/path feasibility constraints | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 840,
+    "name": "(Coding): Search Key in Sorted Matrix",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Matrix",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Input order/sortedness constraints must be used"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Matrix, Sample Size / Horizon n | Constraints: Input order/sortedness constraints must be used | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 841,
+    "name": "Coin Flip Sequence and Rewards",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin, Point | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 842,
+    "name": "Optimal Award Sequence Replacement",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 843,
+    "name": "Strategy for Re-Flipping Coins",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin"
+      ],
+      "invariant_constraints": [
+        "Limited number of actions/rerolls"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin | Constraints: Limited number of actions/rerolls | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 844,
+    "name": "Estimate Fair Price Interval",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Price",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Price, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 845,
+    "name": "Market Making and Fair Price Guessing",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Price",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Price, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 846,
+    "name": "Calculating the Fair Price",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Price",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Price, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 847,
+    "name": "Confidence Interval Based on Calculations",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Price",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Price, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 848,
+    "name": "Monte Carlo Simulation to Estimate Pi",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 849,
+    "name": "Generating Probability Event with a Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 850,
+    "name": "Fibonacci Sequence with $O(\\log N)$ Complexity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 851,
+    "name": "Standard Deviation of Sum of Normal Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Variables X, Y",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Variables X, Y, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 852,
+    "name": "Assumptions of Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression | Constraints: Model assumptions for linear estimation | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 853,
+    "name": "Negative $R^2$ in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression | Constraints: Model assumptions for linear estimation | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 854,
+    "name": "Sequence Uniform Random Variables, Probability Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable | Constraints: Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 855,
+    "name": "Problem - Streaming Mean and Standard Deviation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Stream",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Online/streaming updates with limited memory"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Stream, Point | Constraints: Online/streaming updates with limited memory | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 856,
+    "name": "Machine Learning Algorithms Follow-Up",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Model"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Model | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 857,
+    "name": "Monte Carlo Simulation and Probability Statistics Follow-Up",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 858,
+    "name": "Finding the Median of a Point Set in 2D Plane (LeetCode 1515)",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die",
+        "Process",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die, Process, Point | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 859,
+    "name": "Annualizing the Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 860,
+    "name": "Least Squares Solution in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Model"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Optimize objective function under stated constraints"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Model | Constraints: Model assumptions for linear estimation | Objective: Optimize objective function under stated constraints"
+  },
+  {
+    "problem_id": 861,
+    "name": "Rolling Window Rank",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Window"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Window | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 862,
+    "name": "Ridge Regression and Changing Features",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Feature"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Feature | Constraints: Problem-specific mathematical constraints from statement | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 863,
+    "name": "Expected Rolls with a Fair Six-Sided Die",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 864,
+    "name": "Tennis Game, Games Games. Probability Overall",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 865,
+    "name": "Kernel Methods and Gaussian Processes",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Process"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Process | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 866,
+    "name": "Professor Umbrellas Commutes Home Office. Time",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Umbrella",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Umbrella, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 867,
+    "name": "Rademacher Complexity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Independence assumptions apply where specified | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 868,
+    "name": "Uniform Sampling from the Surface of a Unit Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Sphere",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Sphere, Point | Constraints: Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 869,
+    "name": "Relation Between Q-Learning and Policy Gradient Methods",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Die"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Die | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 870,
+    "name": "Variant of Trapping Rain Water",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 871,
+    "name": "Relationship Between $R^2$ and Features in a Model",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Feature",
+        "Point",
+        "Model",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Feature, Point, Model, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 872,
+    "name": "PDF of Sum of Uniform Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Variables X, Y",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified",
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable, Variables X, Y, Sample Size / Horizon n | Constraints: Independence assumptions apply where specified, Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 873,
+    "name": "Z-Score Calculation for Stock Data",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Stock"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Stock | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 874,
+    "name": "Prime Factor Generation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 875,
+    "name": "Linear Regression Questions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Optimize objective function under stated constraints"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Variables X, Y | Constraints: Model assumptions for linear estimation | Objective: Optimize objective function under stated constraints"
+  },
+  {
+    "problem_id": 876,
+    "name": "Optimization and Regression Questions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Model",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Model, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 877,
+    "name": "Probability of Reaching Before",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Walk"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Walk | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 878,
+    "name": "Implement a Class with Save and Query Functions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 879,
+    "name": "Dealer Selection for Trading Swaps",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 880,
+    "name": "Estimator Properties and Minimum Variance Weighted Average",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Optimization",
+      "problem_setup_entities": [
+        "Estimator"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Optimize objective function under stated constraints"
+    },
+    "schema_text": "Domain: Applied Mathematics and Optimization | Entities: Estimator | Constraints: Problem-specific mathematical constraints from statement | Objective: Optimize objective function under stated constraints"
+  },
+  {
+    "problem_id": 881,
+    "name": "Expected Number of Flips for Consecutive Heads",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 882,
+    "name": "LeetCode 239 and Coding Questions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Stock",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Input order/sortedness constraints must be used"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Stock, Sample Size / Horizon n | Constraints: Input order/sortedness constraints must be used | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 883,
+    "name": "Probability Questions",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Node",
+        "Stream",
+        "Circle",
+        "Ball",
+        "Walk",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Uniform sampling/distribution condition",
+        "Online/streaming updates with limited memory"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Node, Stream, Circle, Ball, Walk, Sample Size / Horizon n | Constraints: Uniform sampling/distribution condition, Online/streaming updates with limited memory | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 884,
+    "name": "/ Data Science Questions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Process",
+        "Point",
+        "Model",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Process, Point, Model, Variables X, Y | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 885,
+    "name": "/ Trading Questions",
+    "schema": {
+      "core_mathematical_domain": "Decision Theory and Quantitative Finance",
+      "problem_setup_entities": [
+        "Stock"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Decision Theory and Quantitative Finance | Entities: Stock | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 886,
+    "name": "Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 887,
+    "name": "Differences Between Ridge and Lasso Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression | Constraints: Problem-specific mathematical constraints from statement | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 888,
+    "name": "American Options Execution",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 889,
+    "name": "Sequence Numbers Numbers Randomly Selected Condition",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 890,
+    "name": "Ranking Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random Variable",
+        "Game",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions apply where specified",
+        "Uniform sampling/distribution condition"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random Variable, Game, Sample Size / Horizon n | Constraints: Independence assumptions apply where specified, Uniform sampling/distribution condition | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 891,
+    "name": "LeetCode 200 - Number of Islands",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 892,
+    "name": "Linear Regression and Variable Correlation",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Model",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Model, Variables X, Y | Constraints: Model assumptions for linear estimation | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 893,
+    "name": "Probability Getting Tails Flipping Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Coin",
+        "Stock",
+        "Regression",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Derive/compute the probability law or target probability quantity"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Coin, Stock, Regression, Variables X, Y | Constraints: Model assumptions for linear estimation | Objective: Derive/compute the probability law or target probability quantity"
+  },
+  {
+    "problem_id": 894,
+    "name": "Coding - 24 Game",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 895,
+    "name": "Fair Game with a Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Coin",
+        "Game"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Coin, Game | Constraints: Problem-specific mathematical constraints from statement | Objective: Compute the Expected Value of the target payoff/statistic"
+  },
+  {
+    "problem_id": 896,
+    "name": "Sorting and Pancake Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 897,
+    "name": "Monte Carlo Methods",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 898,
+    "name": "Handling Large Matrices in OLS",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Matrix",
+        "Variables X, Y"
+      ],
+      "invariant_constraints": [
+        "Model assumptions for linear estimation"
+      ],
+      "target_objective": "Optimize objective function under stated constraints"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Matrix, Variables X, Y | Constraints: Model assumptions for linear estimation | Objective: Optimize objective function under stated constraints"
+  },
+  {
+    "problem_id": 899,
+    "name": "Encryption and Decryption Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array",
+        "Process",
+        "Point"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Solve for the requested quantitative metric or construction"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array, Process, Point | Constraints: Problem-specific mathematical constraints from statement | Objective: Solve for the requested quantitative metric or construction"
+  },
+  {
+    "problem_id": 900,
+    "name": "Strategy for Maximizing Real Estate Profit",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Input Data Structure",
+        "Random Mechanism"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Find the optimal strategy/policy maximizing expected utility or reward"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Input Data Structure, Random Mechanism | Constraints: Problem-specific mathematical constraints from statement | Objective: Find the optimal strategy/policy maximizing expected utility or reward"
+  },
+  {
+    "problem_id": 901,
+    "name": "Regression with Normal Variables",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Regression",
+        "Coefficient",
+        "Variables X, Y",
+        "Sample Size / Horizon n"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Estimate model parameters and interpret statistical properties"
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Regression, Coefficient, Variables X, Y, Sample Size / Horizon n | Constraints: Problem-specific mathematical constraints from statement | Objective: Estimate model parameters and interpret statistical properties"
+  },
+  {
+    "problem_id": 902,
+    "name": "Sorting an Array by Appearance Order",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array"
+      ],
+      "invariant_constraints": [
+        "Problem-specific mathematical constraints from statement"
+      ],
+      "target_objective": "Design a correct and efficient algorithm for the required output"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array | Constraints: Problem-specific mathematical constraints from statement | Objective: Design a correct and efficient algorithm for the required output"
+  },
+  {
+    "problem_id": 903,
+    "name": "Expected Value and Variance of a Data Stream",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Stream"
+      ],
+      "invariant_constraints": [
+        "Online/streaming updates with limited memory"
+      ],
+      "target_objective": "Compute the Expected Value of the target payoff/statistic"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Stream | Constraints: Online/streaming updates with limited memory | Objective: Compute the Expected Value of the target payoff/statistic"
+  }
+]

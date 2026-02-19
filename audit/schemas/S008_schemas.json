@@ -1,0 +1,1740 @@
+[
+  {
+    "problem_id": 704,
+    "name": "Combinatorics Problem in Math Round",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Finite set of configurations",
+        "Counting constraints"
+      ],
+      "invariant_constraints": [
+        "Count each admissible configuration exactly once"
+      ],
+      "target_objective": "Compute the requested count or probability via combinatorial enumeration."
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Finite set of configurations, Counting constraints | Constraints: Count each admissible configuration exactly once | Objective: Compute the requested count or probability via combinatorial enumeration."
+  },
+  {
+    "problem_id": 705,
+    "name": "Bayesian Statistics",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing (Binomial Model)",
+      "problem_setup_entities": [
+        "True guess probability",
+        "Number of trials",
+        "Number of correct guesses"
+      ],
+      "invariant_constraints": [
+        "Guesses modeled as binomial under null of random guessing",
+        "Use one-sided or two-sided test as specified"
+      ],
+      "target_objective": "Assess whether observed accuracy significantly exceeds chance."
+    },
+    "schema_text": "Domain: Hypothesis Testing (Binomial Model) | Entities: True guess probability, Number of trials, Number of correct guesses | Constraints: Guesses modeled as binomial under null of random guessing, Use one-sided or two-sided test as specified | Objective: Assess whether observed accuracy significantly exceeds chance."
+  },
+  {
+    "problem_id": 706,
+    "name": "Ordinary Least Squares",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 707,
+    "name": "Basic Game Theory",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  },
+  {
+    "problem_id": 708,
+    "name": "Nested Intervals: Standard Deviation",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Recursive Process",
+      "problem_setup_entities": [
+        "Nested random intervals",
+        "Limit point"
+      ],
+      "invariant_constraints": [
+        "Each step selects a sub-interval of half length uniformly within current interval"
+      ],
+      "target_objective": "Compute the standard deviation of the limiting point."
+    },
+    "schema_text": "Domain: Stochastic Recursive Process | Entities: Nested random intervals, Limit point | Constraints: Each step selects a sub-interval of half length uniformly within current interval | Objective: Compute the standard deviation of the limiting point."
+  },
+  {
+    "problem_id": 709,
+    "name": "Maximum Subarray from 0/1 String",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 710,
+    "name": "LeetCode 46: Permutations",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 711,
+    "name": "LeetCode 2: Add Two Numbers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 712,
+    "name": "Hypothesis Testing on M\\&M Taste Prediction",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 713,
+    "name": "Coin Flip Probability",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 714,
+    "name": "Word Guessing Game with Trie Data Structure",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 715,
+    "name": "Expected Number of Runs in a Card Deck",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Expected Value",
+      "problem_setup_entities": [
+        "Random permutation of colored cards/people",
+        "Run/adjacency indicators"
+      ],
+      "invariant_constraints": [
+        "Arrangement is uniformly random",
+        "Indicators mark color/group changes or matches"
+      ],
+      "target_objective": "Compute Expected Value of number of runs/adjacent same-group pairs."
+    },
+    "schema_text": "Domain: Combinatorial Expected Value | Entities: Random permutation of colored cards/people, Run/adjacency indicators | Constraints: Arrangement is uniformly random, Indicators mark color/group changes or matches | Objective: Compute Expected Value of number of runs/adjacent same-group pairs."
+  },
+  {
+    "problem_id": 716,
+    "name": "Expectation in Infinite Geometric Setting",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Combinatorial Probability",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Indicator variables",
+        "Count or sum functional"
+      ],
+      "invariant_constraints": [
+        "Use linearity of expectation and problem-specific symmetry",
+        "Respect sampling without/with replacement as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target statistic."
+    },
+    "schema_text": "Domain: Expected Value and Combinatorial Probability | Entities: Random experiment, Indicator variables, Count or sum functional | Constraints: Use linearity of expectation and problem-specific symmetry, Respect sampling without/with replacement as stated | Objective: Compute the Expected Value of the target statistic."
+  },
+  {
+    "problem_id": 717,
+    "name": "Independent Identically Distributed Standard Normal Variables.",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 718,
+    "name": "Surface Color of a Cube",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Geometric object",
+        "Random point/cut/selection",
+        "Event region"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over specified geometric domain",
+        "Outcomes satisfy geometric feasibility conditions"
+      ],
+      "target_objective": "Compute probability or Expected Value of the geometric event."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Geometric object, Random point/cut/selection, Event region | Constraints: Sampling is uniform over specified geometric domain, Outcomes satisfy geometric feasibility conditions | Objective: Compute probability or Expected Value of the geometric event."
+  },
+  {
+    "problem_id": 719,
+    "name": "Sorting with Limited Displacement",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 720,
+    "name": "Probability That You Will Get More Heads",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 721,
+    "name": "Expected Number of Sequences",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Expected Value",
+      "problem_setup_entities": [
+        "Random permutation of colored cards/people",
+        "Run/adjacency indicators"
+      ],
+      "invariant_constraints": [
+        "Arrangement is uniformly random",
+        "Indicators mark color/group changes or matches"
+      ],
+      "target_objective": "Compute Expected Value of number of runs/adjacent same-group pairs."
+    },
+    "schema_text": "Domain: Combinatorial Expected Value | Entities: Random permutation of colored cards/people, Run/adjacency indicators | Constraints: Arrangement is uniformly random, Indicators mark color/group changes or matches | Objective: Compute Expected Value of number of runs/adjacent same-group pairs."
+  },
+  {
+    "problem_id": 722,
+    "name": "Treasure Box with a Bomb",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  },
+  {
+    "problem_id": 723,
+    "name": "Random Walk on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 724,
+    "name": "Expected Number of People Taller than the First Person",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 725,
+    "name": "Effect of Doubling Dataset on Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 726,
+    "name": "M\\&M Tasting Claim Evaluation",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing (Binomial Model)",
+      "problem_setup_entities": [
+        "True guess probability",
+        "Number of trials",
+        "Number of correct guesses"
+      ],
+      "invariant_constraints": [
+        "Guesses modeled as binomial under null of random guessing",
+        "Use one-sided or two-sided test as specified"
+      ],
+      "target_objective": "Assess whether observed accuracy significantly exceeds chance."
+    },
+    "schema_text": "Domain: Hypothesis Testing (Binomial Model) | Entities: True guess probability, Number of trials, Number of correct guesses | Constraints: Guesses modeled as binomial under null of random guessing, Use one-sided or two-sided test as specified | Objective: Assess whether observed accuracy significantly exceeds chance."
+  },
+  {
+    "problem_id": 727,
+    "name": "Expected Number of Handshakes",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Expected Value",
+      "problem_setup_entities": [
+        "Random permutation of colored cards/people",
+        "Run/adjacency indicators"
+      ],
+      "invariant_constraints": [
+        "Arrangement is uniformly random",
+        "Indicators mark color/group changes or matches"
+      ],
+      "target_objective": "Compute Expected Value of number of runs/adjacent same-group pairs."
+    },
+    "schema_text": "Domain: Combinatorial Expected Value | Entities: Random permutation of colored cards/people, Run/adjacency indicators | Constraints: Arrangement is uniformly random, Indicators mark color/group changes or matches | Objective: Compute Expected Value of number of runs/adjacent same-group pairs."
+  },
+  {
+    "problem_id": 728,
+    "name": "Drawing Balls from Three Boxes",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 729,
+    "name": "Dice Rolls, Number Heads Coin Flips.",
+    "schema": {
+      "core_mathematical_domain": "Normal Approximation via Central Limit Theorem",
+      "problem_setup_entities": [
+        "Sum of iid die rolls",
+        "Binomial head count"
+      ],
+      "invariant_constraints": [
+        "Large-sample normal approximations for both sums/counts",
+        "Assume independence"
+      ],
+      "target_objective": "Approximate probability that one aggregate exceeds the other."
+    },
+    "schema_text": "Domain: Normal Approximation via Central Limit Theorem | Entities: Sum of iid die rolls, Binomial head count | Constraints: Large-sample normal approximations for both sums/counts, Assume independence | Objective: Approximate probability that one aggregate exceeds the other."
+  },
+  {
+    "problem_id": 730,
+    "name": "Generating a Uniform Point in a Circle",
+    "schema": {
+      "core_mathematical_domain": "Random Variable Transformation",
+      "problem_setup_entities": [
+        "Uniform(0,1) sources",
+        "Polar/radial coordinates",
+        "Point in unit disk"
+      ],
+      "invariant_constraints": [
+        "Radius must follow sqrt(U) transform for area-uniformity",
+        "Angle uniform on [0,2π)"
+      ],
+      "target_objective": "Construct a sampler for points uniformly distributed in the unit circle."
+    },
+    "schema_text": "Domain: Random Variable Transformation | Entities: Uniform(0,1) sources, Polar/radial coordinates, Point in unit disk | Constraints: Radius must follow sqrt(U) transform for area-uniformity, Angle uniform on [0,2π) | Objective: Construct a sampler for points uniformly distributed in the unit circle."
+  },
+  {
+    "problem_id": 731,
+    "name": "Stick Cutting and Forming a Triangle",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability (Broken Stick)",
+      "problem_setup_entities": [
+        "Two random cut points",
+        "Three segment lengths"
+      ],
+      "invariant_constraints": [
+        "Cuts are uniform on stick length",
+        "Triangle inequality for all three segments"
+      ],
+      "target_objective": "Compute probability that segments form a triangle."
+    },
+    "schema_text": "Domain: Geometric Probability (Broken Stick) | Entities: Two random cut points, Three segment lengths | Constraints: Cuts are uniform on stick length, Triangle inequality for all three segments | Objective: Compute probability that segments form a triangle."
+  },
+  {
+    "problem_id": 732,
+    "name": "Median of a Large Dataset",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 733,
+    "name": "Identifying the Expert in a Group",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing and Inference",
+      "problem_setup_entities": [
+        "Null hypothesis",
+        "Alternative hypothesis",
+        "Test statistic",
+        "Observed sample"
+      ],
+      "invariant_constraints": [
+        "Specify significance level when needed",
+        "Use appropriate sampling distribution or approximation"
+      ],
+      "target_objective": "Evaluate evidence against the null and quantify uncertainty."
+    },
+    "schema_text": "Domain: Hypothesis Testing and Inference | Entities: Null hypothesis, Alternative hypothesis, Test statistic, Observed sample | Constraints: Specify significance level when needed, Use appropriate sampling distribution or approximation | Objective: Evaluate evidence against the null and quantify uncertainty."
+  },
+  {
+    "problem_id": 734,
+    "name": "Order Management API",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 735,
+    "name": "Memory Management Pool",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 736,
+    "name": "OLS and Regularization Questions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 737,
+    "name": "Open-ended Questions",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 738,
+    "name": "Coding and System Design Challenges",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 739,
+    "name": "Work Motivation and IQ Correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 740,
+    "name": "When to Minimize Distance to Line Instead of Vertical Distance",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 741,
+    "name": "Default Argument in Python Functions",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 742,
+    "name": "Simple OLS and R-Squared vs Beta Significance",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 743,
+    "name": "Significance vs Power",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing and Inference",
+      "problem_setup_entities": [
+        "Null hypothesis",
+        "Alternative hypothesis",
+        "Test statistic",
+        "Observed sample"
+      ],
+      "invariant_constraints": [
+        "Specify significance level when needed",
+        "Use appropriate sampling distribution or approximation"
+      ],
+      "target_objective": "Evaluate evidence against the null and quantify uncertainty."
+    },
+    "schema_text": "Domain: Hypothesis Testing and Inference | Entities: Null hypothesis, Alternative hypothesis, Test statistic, Observed sample | Constraints: Specify significance level when needed, Use appropriate sampling distribution or approximation | Objective: Evaluate evidence against the null and quantify uncertainty."
+  },
+  {
+    "problem_id": 744,
+    "name": "Comparison of X and Y",
+    "schema": {
+      "core_mathematical_domain": "Normal Approximation via Central Limit Theorem",
+      "problem_setup_entities": [
+        "Sum of iid die rolls",
+        "Binomial head count"
+      ],
+      "invariant_constraints": [
+        "Large-sample normal approximations for both sums/counts",
+        "Assume independence"
+      ],
+      "target_objective": "Approximate probability that one aggregate exceeds the other."
+    },
+    "schema_text": "Domain: Normal Approximation via Central Limit Theorem | Entities: Sum of iid die rolls, Binomial head count | Constraints: Large-sample normal approximations for both sums/counts, Assume independence | Objective: Approximate probability that one aggregate exceeds the other."
+  },
+  {
+    "problem_id": 745,
+    "name": "Expected Number of Ascending Selections",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Combinatorial Probability",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Indicator variables",
+        "Count or sum functional"
+      ],
+      "invariant_constraints": [
+        "Use linearity of expectation and problem-specific symmetry",
+        "Respect sampling without/with replacement as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target statistic."
+    },
+    "schema_text": "Domain: Expected Value and Combinatorial Probability | Entities: Random experiment, Indicator variables, Count or sum functional | Constraints: Use linearity of expectation and problem-specific symmetry, Respect sampling without/with replacement as stated | Objective: Compute the Expected Value of the target statistic."
+  },
+  {
+    "problem_id": 746,
+    "name": "Hypothesis Testing with M\\&M Tasting",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing (Binomial Model)",
+      "problem_setup_entities": [
+        "True guess probability",
+        "Number of trials",
+        "Number of correct guesses"
+      ],
+      "invariant_constraints": [
+        "Guesses modeled as binomial under null of random guessing",
+        "Use one-sided or two-sided test as specified"
+      ],
+      "target_objective": "Assess whether observed accuracy significantly exceeds chance."
+    },
+    "schema_text": "Domain: Hypothesis Testing (Binomial Model) | Entities: True guess probability, Number of trials, Number of correct guesses | Constraints: Guesses modeled as binomial under null of random guessing, Use one-sided or two-sided test as specified | Objective: Assess whether observed accuracy significantly exceeds chance."
+  },
+  {
+    "problem_id": 747,
+    "name": "Coin Flipping Questions",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 748,
+    "name": "Word Guessing Game",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 749,
+    "name": "Sum of Dice Faces until First 1 Appears",
+    "schema": {
+      "core_mathematical_domain": "Stopping-Time Expected Value",
+      "problem_setup_entities": [
+        "Sequence of die rolls",
+        "Stopping time",
+        "Accumulated sum or collected faces"
+      ],
+      "invariant_constraints": [
+        "Rolls are iid uniform on die faces",
+        "Stop when condition is first met"
+      ],
+      "target_objective": "Compute Expected Value at stopping time."
+    },
+    "schema_text": "Domain: Stopping-Time Expected Value | Entities: Sequence of die rolls, Stopping time, Accumulated sum or collected faces | Constraints: Rolls are iid uniform on die faces, Stop when condition is first met | Objective: Compute Expected Value at stopping time."
+  },
+  {
+    "problem_id": 750,
+    "name": "Coin Toss Comparison",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 751,
+    "name": "Counting Fancy Numbers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 752,
+    "name": "Reversi (Flip Chess)",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  },
+  {
+    "problem_id": 753,
+    "name": "Tree Traversal and Merging",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 754,
+    "name": "Coin Toss with Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Coin type prior",
+        "Observed sequence of tosses"
+      ],
+      "invariant_constraints": [
+        "One double-headed coin among many fair coins",
+        "Condition on observed all-heads outcome"
+      ],
+      "target_objective": "Compute posterior probability selected coin is double-headed."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Coin type prior, Observed sequence of tosses | Constraints: One double-headed coin among many fair coins, Condition on observed all-heads outcome | Objective: Compute posterior probability selected coin is double-headed."
+  },
+  {
+    "problem_id": 755,
+    "name": "Sum of Two Fibonacci Numbers",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 756,
+    "name": "Data Aggregation in a Pandas DataFrame",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 757,
+    "name": "Counting Squares from Grid Points",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 758,
+    "name": "Expectation of Max and Min of Dice Throws",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Combinatorial Probability",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Indicator variables",
+        "Count or sum functional"
+      ],
+      "invariant_constraints": [
+        "Use linearity of expectation and problem-specific symmetry",
+        "Respect sampling without/with replacement as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target statistic."
+    },
+    "schema_text": "Domain: Expected Value and Combinatorial Probability | Entities: Random experiment, Indicator variables, Count or sum functional | Constraints: Use linearity of expectation and problem-specific symmetry, Respect sampling without/with replacement as stated | Objective: Compute the Expected Value of the target statistic."
+  },
+  {
+    "problem_id": 759,
+    "name": "Maximizing Loss in Logistic Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 760,
+    "name": "Generating Uniform Distribution from a Five-Sided Die",
+    "schema": {
+      "core_mathematical_domain": "Randomness Extraction and Simulation",
+      "problem_setup_entities": [
+        "Source random variable",
+        "Target distribution"
+      ],
+      "invariant_constraints": [
+        "Transformation must preserve target uniformity/unbiasedness",
+        "Use only allowed source randomness"
+      ],
+      "target_objective": "Construct a valid simulation algorithm and justify correctness."
+    },
+    "schema_text": "Domain: Randomness Extraction and Simulation | Entities: Source random variable, Target distribution | Constraints: Transformation must preserve target uniformity/unbiasedness, Use only allowed source randomness | Objective: Construct a valid simulation algorithm and justify correctness."
+  },
+  {
+    "problem_id": 761,
+    "name": "Gradient Clipping",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 762,
+    "name": "Intersection of Chords on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Geometry",
+      "problem_setup_entities": [
+        "N points on a circle",
+        "Chords",
+        "Chord intersections"
+      ],
+      "invariant_constraints": [
+        "Points are in general position on circle",
+        "Each 4-point subset determines one interior intersection"
+      ],
+      "target_objective": "Compute Expected Value/total number of intersections."
+    },
+    "schema_text": "Domain: Combinatorial Geometry | Entities: N points on a circle, Chords, Chord intersections | Constraints: Points are in general position on circle, Each 4-point subset determines one interior intersection | Objective: Compute Expected Value/total number of intersections."
+  },
+  {
+    "problem_id": 763,
+    "name": "Confidence Interval Calculation",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing and Inference",
+      "problem_setup_entities": [
+        "Null hypothesis",
+        "Alternative hypothesis",
+        "Test statistic",
+        "Observed sample"
+      ],
+      "invariant_constraints": [
+        "Specify significance level when needed",
+        "Use appropriate sampling distribution or approximation"
+      ],
+      "target_objective": "Evaluate evidence against the null and quantify uncertainty."
+    },
+    "schema_text": "Domain: Hypothesis Testing and Inference | Entities: Null hypothesis, Alternative hypothesis, Test statistic, Observed sample | Constraints: Specify significance level when needed, Use appropriate sampling distribution or approximation | Objective: Evaluate evidence against the null and quantify uncertainty."
+  },
+  {
+    "problem_id": 764,
+    "name": "Card Game Simulation",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  },
+  {
+    "problem_id": 765,
+    "name": "Expected Sum of Dice Rolls",
+    "schema": {
+      "core_mathematical_domain": "Stopping-Time Expected Value",
+      "problem_setup_entities": [
+        "Sequence of die rolls",
+        "Stopping time",
+        "Accumulated sum or collected faces"
+      ],
+      "invariant_constraints": [
+        "Rolls are iid uniform on die faces",
+        "Stop when condition is first met"
+      ],
+      "target_objective": "Compute Expected Value at stopping time."
+    },
+    "schema_text": "Domain: Stopping-Time Expected Value | Entities: Sequence of die rolls, Stopping time, Accumulated sum or collected faces | Constraints: Rolls are iid uniform on die faces, Stop when condition is first met | Objective: Compute Expected Value at stopping time."
+  },
+  {
+    "problem_id": 766,
+    "name": "Inverse Coin Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 767,
+    "name": "Coin Drawing with or without Replacement",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Combinatorial Probability",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Indicator variables",
+        "Count or sum functional"
+      ],
+      "invariant_constraints": [
+        "Use linearity of expectation and problem-specific symmetry",
+        "Respect sampling without/with replacement as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target statistic."
+    },
+    "schema_text": "Domain: Expected Value and Combinatorial Probability | Entities: Random experiment, Indicator variables, Count or sum functional | Constraints: Use linearity of expectation and problem-specific symmetry, Respect sampling without/with replacement as stated | Objective: Compute the Expected Value of the target statistic."
+  },
+  {
+    "problem_id": 768,
+    "name": "Basketball Throws and Success Rate",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 769,
+    "name": "Can I Win (LeetCode 464)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 770,
+    "name": "Palindrome Pairs (LeetCode 336)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 771,
+    "name": "Word Break II (LeetCode 140)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 772,
+    "name": "Expected Ratio of Independent Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Expectation of Functions of Independent Variables",
+      "problem_setup_entities": [
+        "Independent Uniform(1,3) variables X and Y",
+        "Ratio X/Y"
+      ],
+      "invariant_constraints": [
+        "Use independence to factor integrals when possible"
+      ],
+      "target_objective": "Compute Expected Value E[X/Y]."
+    },
+    "schema_text": "Domain: Expectation of Functions of Independent Variables | Entities: Independent Uniform(1,3) variables X and Y, Ratio X/Y | Constraints: Use independence to factor integrals when possible | Objective: Compute Expected Value E[X/Y]."
+  },
+  {
+    "problem_id": 773,
+    "name": "Fraction of Time Spent in State 1",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 774,
+    "name": "Probability of a Symmetric Binary Tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 775,
+    "name": "Drawing Infinitely Samples Continuous Distribution. Probabil",
+    "schema": {
+      "core_mathematical_domain": "Order Statistics and Symmetry",
+      "problem_setup_entities": [
+        "iid continuous samples",
+        "Local minimum event among neighboring samples"
+      ],
+      "invariant_constraints": [
+        "Continuity implies almost sure distinct values",
+        "All relative orderings equally likely"
+      ],
+      "target_objective": "Compute probability that the middle sample is the minimum of three."
+    },
+    "schema_text": "Domain: Order Statistics and Symmetry | Entities: iid continuous samples, Local minimum event among neighboring samples | Constraints: Continuity implies almost sure distinct values, All relative orderings equally likely | Objective: Compute probability that the middle sample is the minimum of three."
+  },
+  {
+    "problem_id": 776,
+    "name": "Effects of Duplicating Dataset on Regression Statistics",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 777,
+    "name": "Correlation and Linear Regression with Different Samples",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 778,
+    "name": "Changes in $R^2$ with Additional Variables",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 779,
+    "name": "Correlation in Split Samples",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 780,
+    "name": "Regression Coefficient Signs",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 781,
+    "name": "Bacteria Population Model",
+    "schema": {
+      "core_mathematical_domain": "Branching Process",
+      "problem_setup_entities": [
+        "Population state",
+        "Offspring/survival outcomes"
+      ],
+      "invariant_constraints": [
+        "Transition probabilities are fixed each period"
+      ],
+      "target_objective": "Analyze extinction probability or expected population behavior."
+    },
+    "schema_text": "Domain: Branching Process | Entities: Population state, Offspring/survival outcomes | Constraints: Transition probabilities are fixed each period | Objective: Analyze extinction probability or expected population behavior."
+  },
+  {
+    "problem_id": 782,
+    "name": "Search in a Sorted Matrix II",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 783,
+    "name": "Definition and Range of $R^2$ in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 784,
+    "name": "Correlation and Independence",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 785,
+    "name": "Estimating Triangle Side Lengths with Measurement Error",
+    "schema": {
+      "core_mathematical_domain": "Constrained Least Squares Estimation",
+      "problem_setup_entities": [
+        "Noisy side-length measurements",
+        "True triangle side lengths",
+        "Known perimeter constraint"
+      ],
+      "invariant_constraints": [
+        "Estimated sides sum to known perimeter",
+        "Minimize squared measurement error under linear constraint"
+      ],
+      "target_objective": "Find constrained estimator for side lengths."
+    },
+    "schema_text": "Domain: Constrained Least Squares Estimation | Entities: Noisy side-length measurements, True triangle side lengths, Known perimeter constraint | Constraints: Estimated sides sum to known perimeter, Minimize squared measurement error under linear constraint | Objective: Find constrained estimator for side lengths."
+  },
+  {
+    "problem_id": 786,
+    "name": "Sorting a k-Sorted Array",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 787,
+    "name": "Backtest a Strategy with a High Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Sharpe Ratio and Backtest Significance",
+      "problem_setup_entities": [
+        "Annual Sharpe ratio estimate",
+        "Backtest length in days",
+        "Observed cumulative return sign"
+      ],
+      "invariant_constraints": [
+        "Assume iid returns and Sharpe scaling with sqrt(time)",
+        "Use normal approximation for test statistic"
+      ],
+      "target_objective": "Find minimum sample length for negative backtest return to be statistically plausible/rare."
+    },
+    "schema_text": "Domain: Sharpe Ratio and Backtest Significance | Entities: Annual Sharpe ratio estimate, Backtest length in days, Observed cumulative return sign | Constraints: Assume iid returns and Sharpe scaling with sqrt(time), Use normal approximation for test statistic | Objective: Find minimum sample length for negative backtest return to be statistically plausible/rare."
+  },
+  {
+    "problem_id": 788,
+    "name": "Find Triplet with Sum Zero in an Unsorted Array",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 789,
+    "name": "Simulating an Unbiased Coin with a Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Randomness Extraction and Simulation",
+      "problem_setup_entities": [
+        "Source random variable",
+        "Target distribution"
+      ],
+      "invariant_constraints": [
+        "Transformation must preserve target uniformity/unbiasedness",
+        "Use only allowed source randomness"
+      ],
+      "target_objective": "Construct a valid simulation algorithm and justify correctness."
+    },
+    "schema_text": "Domain: Randomness Extraction and Simulation | Entities: Source random variable, Target distribution | Constraints: Transformation must preserve target uniformity/unbiasedness, Use only allowed source randomness | Objective: Construct a valid simulation algorithm and justify correctness."
+  },
+  {
+    "problem_id": 790,
+    "name": "Betting Game with Arbitrage Opportunities",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  },
+  {
+    "problem_id": 791,
+    "name": "Range of $R^2$ for Multiple Regressions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 792,
+    "name": "Brownian Motion in 2D Plane",
+    "schema": {
+      "core_mathematical_domain": "Brownian Motion Hitting Probability",
+      "problem_setup_entities": [
+        "2D Brownian path",
+        "Starting point (1,1)",
+        "Absorbing boundary at y-axis"
+      ],
+      "invariant_constraints": [
+        "Stop at first hit of x=0 boundary"
+      ],
+      "target_objective": "Compute probability that hitting point has positive y-coordinate."
+    },
+    "schema_text": "Domain: Brownian Motion Hitting Probability | Entities: 2D Brownian path, Starting point (1,1), Absorbing boundary at y-axis | Constraints: Stop at first hit of x=0 boundary | Objective: Compute probability that hitting point has positive y-coordinate."
+  },
+  {
+    "problem_id": 793,
+    "name": "Difference Between Numpy Arrays and Python Lists",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 794,
+    "name": "Generate Uniformly Distributed Points in a Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Random Variable Transformation",
+      "problem_setup_entities": [
+        "Uniform(0,1) sources",
+        "Polar/radial coordinates",
+        "Point in unit disk"
+      ],
+      "invariant_constraints": [
+        "Radius must follow sqrt(U) transform for area-uniformity",
+        "Angle uniform on [0,2π)"
+      ],
+      "target_objective": "Construct a sampler for points uniformly distributed in the unit circle."
+    },
+    "schema_text": "Domain: Random Variable Transformation | Entities: Uniform(0,1) sources, Polar/radial coordinates, Point in unit disk | Constraints: Radius must follow sqrt(U) transform for area-uniformity, Angle uniform on [0,2π) | Objective: Construct a sampler for points uniformly distributed in the unit circle."
+  },
+  {
+    "problem_id": 795,
+    "name": "Generate Two Random Numbers from One Uniform Number",
+    "schema": {
+      "core_mathematical_domain": "Randomness Extraction and Simulation",
+      "problem_setup_entities": [
+        "Source random variable",
+        "Target distribution"
+      ],
+      "invariant_constraints": [
+        "Transformation must preserve target uniformity/unbiasedness",
+        "Use only allowed source randomness"
+      ],
+      "target_objective": "Construct a valid simulation algorithm and justify correctness."
+    },
+    "schema_text": "Domain: Randomness Extraction and Simulation | Entities: Source random variable, Target distribution | Constraints: Transformation must preserve target uniformity/unbiasedness, Use only allowed source randomness | Objective: Construct a valid simulation algorithm and justify correctness."
+  },
+  {
+    "problem_id": 796,
+    "name": "Additional Probability Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables"
+      ],
+      "invariant_constraints": [
+        "Assume stated randomness model and independence where specified"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables | Constraints: Assume stated randomness model and independence where specified | Objective: Compute the requested probability or Expected Value."
+  },
+  {
+    "problem_id": 797,
+    "name": "Stock Trading LeetCode Problems",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 798,
+    "name": "Python and C++ Keywords",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 799,
+    "name": "Min-Cost Circulation and Monty Hall Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 800,
+    "name": "Independence and Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 801,
+    "name": "Regression and List Sorting",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression and Statistical Inference",
+      "problem_setup_entities": [
+        "Response variable",
+        "Predictor variables",
+        "Sample observations"
+      ],
+      "invariant_constraints": [
+        "Use linear model assumptions as stated",
+        "Compare in-sample statistics under transformations when asked"
+      ],
+      "target_objective": "Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+    },
+    "schema_text": "Domain: Linear Regression and Statistical Inference | Entities: Response variable, Predictor variables, Sample observations | Constraints: Use linear model assumptions as stated, Compare in-sample statistics under transformations when asked | Objective: Determine coefficient behavior, fit statistics, or inferential quantities under the described setup."
+  },
+  {
+    "problem_id": 802,
+    "name": "Where and are I",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure"
+      ],
+      "invariant_constraints": [
+        "Satisfy correctness for all valid inputs",
+        "Optimize time and space complexity as required"
+      ],
+      "target_objective": "Design/implement an efficient algorithm and explain complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure | Constraints: Satisfy correctness for all valid inputs, Optimize time and space complexity as required | Objective: Design/implement an efficient algorithm and explain complexity."
+  },
+  {
+    "problem_id": 803,
+    "name": "Geometry and Probability in a Revolver Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Strategic Probability",
+      "problem_setup_entities": [
+        "Players",
+        "Action space",
+        "Payoffs or win events",
+        "State transitions"
+      ],
+      "invariant_constraints": [
+        "Sequential decisions follow game rules",
+        "Use rational strategy or conditional probability as appropriate"
+      ],
+      "target_objective": "Find optimal strategy or winning probability/expected payoff."
+    },
+    "schema_text": "Domain: Game Theory and Strategic Probability | Entities: Players, Action space, Payoffs or win events, State transitions | Constraints: Sequential decisions follow game rules, Use rational strategy or conditional probability as appropriate | Objective: Find optimal strategy or winning probability/expected payoff."
+  }
+]

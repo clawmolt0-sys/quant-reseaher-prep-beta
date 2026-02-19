@@ -1,0 +1,1724 @@
+[
+  {
+    "problem_id": 904,
+    "name": "Number of Islands (LeetCode 200)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 905,
+    "name": "Accurate Earnings Forecasting from Analysts",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 906,
+    "name": "Data Analysis with High Dimensionality",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 907,
+    "name": "PCA vs. Auto Encoder",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Dimensionality Reduction",
+      "problem_setup_entities": [
+        "Data covariance matrix",
+        "Eigenvalues and eigenvectors",
+        "Principal components"
+      ],
+      "invariant_constraints": [
+        "Components are orthogonal",
+        "Variance explained is determined by eigenvalue spectrum"
+      ],
+      "target_objective": "Characterize principal components and explained variance under the given data transformation"
+    },
+    "schema_text": "Domain: Linear Algebra and Dimensionality Reduction | Entities: Data covariance matrix, Eigenvalues and eigenvectors, Principal components | Constraints: Components are orthogonal, Variance explained is determined by eigenvalue spectrum | Objective: Characterize principal components and explained variance under the given data transformation"
+  },
+  {
+    "problem_id": 908,
+    "name": "Issues with $L_0$ Regularization",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 909,
+    "name": "Feature Selection in $L_1$ vs. $L_2$ Regularization",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 910,
+    "name": "Light Switch Problem",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 911,
+    "name": "Network Architecture Question",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 912,
+    "name": "LeetCode 200 with Modified Definition of Islands",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 913,
+    "name": "Implement Queue with $O(1)$ Operations",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 914,
+    "name": "K-th Most Frequent Number in a List",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 915,
+    "name": "Recursive and DP Fibonacci Implementation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 916,
+    "name": "C++ Unordered Map Behavior",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 917,
+    "name": "Distinct Digits Problem",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 918,
+    "name": "Secretary Problem with Relative Rank Optimization",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 919,
+    "name": "Probability Seeing Consecutive Heads Coin Tosses",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 920,
+    "name": "Buy and Sell Stocks Timing",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 921,
+    "name": "Regression Coefficients Range",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 922,
+    "name": "Maximum Drawdown",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Risk Metrics)",
+      "problem_setup_entities": [
+        "Portfolio value path",
+        "Running peak",
+        "Drawdown process"
+      ],
+      "invariant_constraints": [
+        "Path is evaluated over ordered time indices"
+      ],
+      "target_objective": "Compute or interpret maximum drawdown over the sample horizon"
+    },
+    "schema_text": "Domain: Quantitative Finance (Risk Metrics) | Entities: Portfolio value path, Running peak, Drawdown process | Constraints: Path is evaluated over ordered time indices | Objective: Compute or interpret maximum drawdown over the sample horizon"
+  },
+  {
+    "problem_id": 923,
+    "name": "Probability That You Have the Bad Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 924,
+    "name": "Sorting by Encounter Order",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 925,
+    "name": "Tuple vs. List",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 926,
+    "name": "Generators in Python",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 927,
+    "name": "Maximum Product of Three Numbers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 928,
+    "name": "Polynomial Computation Complexity",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 929,
+    "name": "Trading Signals to Actual Trades",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance and Time Series",
+      "problem_setup_entities": [
+        "Price time series",
+        "Trading signals/positions",
+        "Portfolio or PnL process"
+      ],
+      "invariant_constraints": [
+        "Execution and timing assumptions follow the prompt",
+        "Market data fields are treated as given"
+      ],
+      "target_objective": "Design or analyze trading decisions, risk metrics, or data infrastructure for research/backtesting"
+    },
+    "schema_text": "Domain: Quantitative Finance and Time Series | Entities: Price time series, Trading signals/positions, Portfolio or PnL process | Constraints: Execution and timing assumptions follow the prompt, Market data fields are treated as given | Objective: Design or analyze trading decisions, risk metrics, or data infrastructure for research/backtesting"
+  },
+  {
+    "problem_id": 930,
+    "name": "CV Questions (Citadel)",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 931,
+    "name": "Expected Tosses for Three Heads in a Row",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 932,
+    "name": "Lion and Meat Problem",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 933,
+    "name": "Strategy with a Fair 6-Sided Die",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 934,
+    "name": "Bugs on a 1-Meter Bar",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 935,
+    "name": "Super Egg Drop Problem",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 936,
+    "name": "Fibonacci Sequence Analysis",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 937,
+    "name": "Monte Carlo Simulation of Pi",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Random number generator",
+        "Estimator statistic",
+        "Simulation trials"
+      ],
+      "invariant_constraints": [
+        "Samples are i.i.d. under the target distribution unless specified otherwise"
+      ],
+      "target_objective": "Estimate target quantity and discuss estimator variance/accuracy"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Random number generator, Estimator statistic, Simulation trials | Constraints: Samples are i.i.d. under the target distribution unless specified otherwise | Objective: Estimate target quantity and discuss estimator variance/accuracy"
+  },
+  {
+    "problem_id": 938,
+    "name": "Linear Regression Analysis",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 939,
+    "name": "Chocolate Game Strategy",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 940,
+    "name": "Distribution of Z from X and Y",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 941,
+    "name": "Break Stick Pieces, Further Break Longer",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 942,
+    "name": "Interest Justification",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 943,
+    "name": "Rearrange Sequence to Avoid Adjacent Repeats",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 944,
+    "name": "Optimal Trading Strategy for Apple Stock Prices",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance and Time Series",
+      "problem_setup_entities": [
+        "Price time series",
+        "Trading signals/positions",
+        "Portfolio or PnL process"
+      ],
+      "invariant_constraints": [
+        "Execution and timing assumptions follow the prompt",
+        "Market data fields are treated as given"
+      ],
+      "target_objective": "Design or analyze trading decisions, risk metrics, or data infrastructure for research/backtesting"
+    },
+    "schema_text": "Domain: Quantitative Finance and Time Series | Entities: Price time series, Trading signals/positions, Portfolio or PnL process | Constraints: Execution and timing assumptions follow the prompt, Market data fields are treated as given | Objective: Design or analyze trading decisions, risk metrics, or data infrastructure for research/backtesting"
+  },
+  {
+    "problem_id": 945,
+    "name": "Derivation of OLS Coefficient Optimal Solution",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 946,
+    "name": "Inline Median Computation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 947,
+    "name": "Starting Coordinates Plane, Steps, Step Equal",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 948,
+    "name": "Dice Games in a Casino",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 949,
+    "name": "Expected Adjacent Pairs of Different Colors",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Random number generator",
+        "Estimator statistic",
+        "Simulation trials"
+      ],
+      "invariant_constraints": [
+        "Samples are i.i.d. under the target distribution unless specified otherwise"
+      ],
+      "target_objective": "Estimate target quantity and discuss estimator variance/accuracy"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Random number generator, Estimator statistic, Simulation trials | Constraints: Samples are i.i.d. under the target distribution unless specified otherwise | Objective: Estimate target quantity and discuss estimator variance/accuracy"
+  },
+  {
+    "problem_id": 950,
+    "name": "Simulate Sampling from a Uniform Disk",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Random number generator",
+        "Estimator statistic",
+        "Simulation trials"
+      ],
+      "invariant_constraints": [
+        "Samples are i.i.d. under the target distribution unless specified otherwise"
+      ],
+      "target_objective": "Estimate target quantity and discuss estimator variance/accuracy"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Random number generator, Estimator statistic, Simulation trials | Constraints: Samples are i.i.d. under the target distribution unless specified otherwise | Objective: Estimate target quantity and discuss estimator variance/accuracy"
+  },
+  {
+    "problem_id": 951,
+    "name": "Sequence Independently Identically Distributed Probabil",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 952,
+    "name": "Minimization Problem with Squared Differences",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Statistics",
+      "problem_setup_entities": [
+        "Decision variable",
+        "Observed values",
+        "Squared-loss objective"
+      ],
+      "invariant_constraints": [
+        "Loss function is convex quadratic"
+      ],
+      "target_objective": "Find minimizer of squared-error objective and interpret solution"
+    },
+    "schema_text": "Domain: Optimization and Statistics | Entities: Decision variable, Observed values, Squared-loss objective | Constraints: Loss function is convex quadratic | Objective: Find minimizer of squared-error objective and interpret solution"
+  },
+  {
+    "problem_id": 953,
+    "name": "Handling Colinear Features in Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 954,
+    "name": "Class for Points in 2D Space",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 955,
+    "name": "Maximum Points in a Given Angle",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 956,
+    "name": "Stars and Bars Problem",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Indistinguishable items",
+        "Bins/partitions",
+        "Integer compositions"
+      ],
+      "invariant_constraints": [
+        "Counting under non-negativity/integer constraints"
+      ],
+      "target_objective": "Count feasible allocations using combinatorial formulas"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Indistinguishable items, Bins/partitions, Integer compositions | Constraints: Counting under non-negativity/integer constraints | Objective: Count feasible allocations using combinatorial formulas"
+  },
+  {
+    "problem_id": 957,
+    "name": "Dice Rolling Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 958,
+    "name": "Impact of Doubling Data Points in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 959,
+    "name": "Handling Delayed Data in Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 960,
+    "name": "Eigenvalues of a 3x3 Matrix Filled with Ones",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix entries",
+        "Eigenvalues",
+        "Eigenvectors"
+      ],
+      "invariant_constraints": [
+        "Matrix structure is fixed as described"
+      ],
+      "target_objective": "Compute spectral properties or validate matrix conditions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix entries, Eigenvalues, Eigenvectors | Constraints: Matrix structure is fixed as described | Objective: Compute spectral properties or validate matrix conditions"
+  },
+  {
+    "problem_id": 961,
+    "name": "Precision and Recall",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 962,
+    "name": "Common Regression Issues",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 963,
+    "name": "Dynamic Programming and DFS Problems",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 964,
+    "name": "Project-Specific Questions",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 965,
+    "name": "Solving Multiple Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 966,
+    "name": "Poor Model Performance on Testing Data",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 967,
+    "name": "Poor Performance Despite Cross-Validation",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 968,
+    "name": "Differences Between L1 and L2 Regularization",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 969,
+    "name": "Poor Model Performance Overall",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 970,
+    "name": "Dealing with Large Independent Noise",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 971,
+    "name": "Advantages of Median Regression",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 972,
+    "name": "Why Use OLS Instead of Median Regression?",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 973,
+    "name": "Non-Linearity in Data",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 974,
+    "name": "Explanation of Random Forest",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Data-generating assumptions are as stated",
+        "Optimization criterion is fixed by the model definition"
+      ],
+      "target_objective": "Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature matrix, Target variable, Model parameters | Constraints: Data-generating assumptions are as stated, Optimization criterion is fixed by the model definition | Objective: Analyze model behavior, parameter estimation, or predictive performance under stated assumptions"
+  },
+  {
+    "problem_id": 975,
+    "name": "PCA Explanation",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Dimensionality Reduction",
+      "problem_setup_entities": [
+        "Data covariance matrix",
+        "Eigenvalues and eigenvectors",
+        "Principal components"
+      ],
+      "invariant_constraints": [
+        "Components are orthogonal",
+        "Variance explained is determined by eigenvalue spectrum"
+      ],
+      "target_objective": "Characterize principal components and explained variance under the given data transformation"
+    },
+    "schema_text": "Domain: Linear Algebra and Dimensionality Reduction | Entities: Data covariance matrix, Eigenvalues and eigenvectors, Principal components | Constraints: Components are orthogonal, Variance explained is determined by eigenvalue spectrum | Objective: Characterize principal components and explained variance under the given data transformation"
+  },
+  {
+    "problem_id": 976,
+    "name": "Effect of Adding a Feature on PCA Variance",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix entries",
+        "Eigenvalues",
+        "Eigenvectors"
+      ],
+      "invariant_constraints": [
+        "Matrix structure is fixed as described"
+      ],
+      "target_objective": "Compute spectral properties or validate matrix conditions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix entries, Eigenvalues, Eigenvectors | Constraints: Matrix structure is fixed as described | Objective: Compute spectral properties or validate matrix conditions"
+  },
+  {
+    "problem_id": 977,
+    "name": "- LeetCode 121 Stock Price",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 978,
+    "name": "Basic Assumptions of Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "Design matrix X",
+        "Response vector y",
+        "Regression coefficients"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Objective minimizes sum of squared residuals unless otherwise stated"
+      ],
+      "target_objective": "Estimate, derive, or interpret linear regression coefficients and related properties"
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: Design matrix X, Response vector y, Regression coefficients | Constraints: Model form is linear in coefficients, Objective minimizes sum of squared residuals unless otherwise stated | Objective: Estimate, derive, or interpret linear regression coefficients and related properties"
+  },
+  {
+    "problem_id": 979,
+    "name": "Random Walk Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 980,
+    "name": "How Monte Carlo Works and Variance Reduction",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Random number generator",
+        "Estimator statistic",
+        "Simulation trials"
+      ],
+      "invariant_constraints": [
+        "Samples are i.i.d. under the target distribution unless specified otherwise"
+      ],
+      "target_objective": "Estimate target quantity and discuss estimator variance/accuracy"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Random number generator, Estimator statistic, Simulation trials | Constraints: Samples are i.i.d. under the target distribution unless specified otherwise | Objective: Estimate target quantity and discuss estimator variance/accuracy"
+  },
+  {
+    "problem_id": 981,
+    "name": "Time Series Forecasting - Detrending and Moving Averages",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Trend component",
+        "Residual/noise component"
+      ],
+      "invariant_constraints": [
+        "Decomposition assumptions follow the chosen smoothing/modeling approach"
+      ],
+      "target_objective": "Preprocess and model series for improved forecasting performance"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Trend component, Residual/noise component | Constraints: Decomposition assumptions follow the chosen smoothing/modeling approach | Objective: Preprocess and model series for improved forecasting performance"
+  },
+  {
+    "problem_id": 982,
+    "name": "Generating Random Numbers with Uniform Replacement",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 983,
+    "name": "Find the Median of Two Sorted Arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 984,
+    "name": "Commuting with Umbrellas and Getting Wet Probability",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Random number generator",
+        "Estimator statistic",
+        "Simulation trials"
+      ],
+      "invariant_constraints": [
+        "Samples are i.i.d. under the target distribution unless specified otherwise"
+      ],
+      "target_objective": "Estimate target quantity and discuss estimator variance/accuracy"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Random number generator, Estimator statistic, Simulation trials | Constraints: Samples are i.i.d. under the target distribution unless specified otherwise | Objective: Estimate target quantity and discuss estimator variance/accuracy"
+  },
+  {
+    "problem_id": 985,
+    "name": "Restriction on Correlation of Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix entries",
+        "Eigenvalues",
+        "Eigenvectors"
+      ],
+      "invariant_constraints": [
+        "Matrix structure is fixed as described"
+      ],
+      "target_objective": "Compute spectral properties or validate matrix conditions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix entries, Eigenvalues, Eigenvectors | Constraints: Matrix structure is fixed as described | Objective: Compute spectral properties or validate matrix conditions"
+  },
+  {
+    "problem_id": 986,
+    "name": "Magic Square Matrix Validation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 987,
+    "name": "Newton's Method for Square Root Calculation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 988,
+    "name": "Maximum Rope Cutting",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 989,
+    "name": "Coin Toss Game - Probability of Winning",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 990,
+    "name": "Closed-Form for OLS Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix entries",
+        "Eigenvalues",
+        "Eigenvectors"
+      ],
+      "invariant_constraints": [
+        "Matrix structure is fixed as described"
+      ],
+      "target_objective": "Compute spectral properties or validate matrix conditions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix entries, Eigenvalues, Eigenvectors | Constraints: Matrix structure is fixed as described | Objective: Compute spectral properties or validate matrix conditions"
+  },
+  {
+    "problem_id": 991,
+    "name": "Regularization in Autonomous Driving Neural Networks",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Given numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Random variables and model parameters defined in the prompt | Constraints: Given numerical parameters are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 992,
+    "name": "Flipping Elements Inside a Duck Shape in a Matrix",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 993,
+    "name": "Fibonacci Function Optimization",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 994,
+    "name": "Minimum Values in a Data Stream with a Sliding Window",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 995,
+    "name": "System Design for Storing Market Data",
+    "schema": {
+      "core_mathematical_domain": "Distributed Systems for Quant Data",
+      "problem_setup_entities": [
+        "Exchange feed handlers",
+        "Time-series storage layers",
+        "Online and batch query services"
+      ],
+      "invariant_constraints": [
+        "System must support low-latency ingest and scalable historical retrieval",
+        "Consistency/partitioning choices must satisfy workload requirements"
+      ],
+      "target_objective": "Design an end-to-end architecture for reliable real-time and historical market data access"
+    },
+    "schema_text": "Domain: Distributed Systems for Quant Data | Entities: Exchange feed handlers, Time-series storage layers, Online and batch query services | Constraints: System must support low-latency ingest and scalable historical retrieval, Consistency/partitioning choices must satisfy workload requirements | Objective: Design an end-to-end architecture for reliable real-time and historical market data access"
+  },
+  {
+    "problem_id": 997,
+    "name": "Expected Value of Tic-Tac-Toe Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 998,
+    "name": "Optimal Strategy with Three Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 999,
+    "name": "Card Betting Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 1000,
+    "name": "Seating Arrangement Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 1001,
+    "name": "Coin Toss Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 1002,
+    "name": "Coin Toss Winning Probabilities",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 1003,
+    "name": "Envelope Strategy Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 1004,
+    "name": "Conditional Probability of a Smoker's Death",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Events and conditional events",
+        "Base rates and conditional rates"
+      ],
+      "invariant_constraints": [
+        "Provided probabilities are internally consistent"
+      ],
+      "target_objective": "Compute the required conditional probability using Bayes-style decomposition"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Events and conditional events, Base rates and conditional rates | Constraints: Provided probabilities are internally consistent | Objective: Compute the required conditional probability using Bayes-style decomposition"
+  }
+]
