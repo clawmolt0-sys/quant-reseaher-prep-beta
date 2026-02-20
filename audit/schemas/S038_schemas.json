@@ -1,0 +1,1902 @@
+[
+  {
+    "problem_id": 3707,
+    "name": "Macro Desk Models Tomorrow Sign Yield",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3708,
+    "name": "Probability That the Process Stops Because",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3709,
+    "name": "Let N Poisson T Be the Number Of Client RFQs In 0, T",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3710,
+    "name": "Limit of E U K",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3711,
+    "name": "Market-make One-tick-spread Product. Time Lifted, Immediate",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3712,
+    "name": "Let X1, . . . , Xn be i.i.d. with E[X] = 0, Var(X) = 1, and E[X4] = . Define Sn",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3713,
+    "name": "Bond Cash Flows Price",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3714,
+    "name": "Node Rate Dv01 Vector 14,000, 3,000,",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3715,
+    "name": "European Eurusd Spot Strike Maturity Domestic",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3716,
+    "name": "Forward Starting Bond Agreed Today Time",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3717,
+    "name": "Observe Volatility Smile Options Commodity Forward",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3718,
+    "name": "Daily Changes Yield Curve Nodes Sample",
+    "schema": {
+      "core_mathematical_domain": "Derivatives and Fixed-Income Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/FX/forward state variables",
+        "Contract payoff and maturity structure",
+        "Discounting/volatility inputs"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral valuation identities",
+        "Arbitrage-free term-structure or smile constraints",
+        "Instrument-specific boundary conditions"
+      ],
+      "target_objective": "Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+    },
+    "schema_text": "Domain: Derivatives and Fixed-Income Modeling | Entities: Underlying rate/FX/forward state variables, Contract payoff and maturity structure, Discounting/volatility inputs | Constraints: Risk-neutral valuation identities, Arbitrage-free term-structure or smile constraints, Instrument-specific boundary conditions | Objective: Price or hedge the instrument and extract implied risk measures/densities under model assumptions."
+  },
+  {
+    "problem_id": 3719,
+    "name": "Proving Ridge Shrinks Coefficients Toward Zero and Explain",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Regularization",
+      "problem_setup_entities": [
+        "Design matrix/features and response",
+        "Loss function with regularization/decision cost",
+        "Model parameters and hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Convexity/identifiability conditions",
+        "Penalty-induced shrinkage constraints",
+        "Out-of-sample risk evaluation criterion"
+      ],
+      "target_objective": "Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Regularization | Entities: Design matrix/features and response, Loss function with regularization/decision cost, Model parameters and hyperparameters | Constraints: Convexity/identifiability conditions, Penalty-induced shrinkage constraints, Out-of-sample risk evaluation criterion | Objective: Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+  },
+  {
+    "problem_id": 3720,
+    "name": "Table Date, Symbol, Price Daily Closes",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3721,
+    "name": "List Tasks Start Times Times Interval",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3722,
+    "name": "Directed Graph Nodes Edges Queries Form",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory and Network Algorithms",
+      "problem_setup_entities": [
+        "Graph vertices and edges",
+        "Query or optimization target on paths/cycles",
+        "Preprocessed indices or transformed edge weights"
+      ],
+      "invariant_constraints": [
+        "Graph-type assumptions (DAG/sparse/simple)",
+        "Path/cycle feasibility constraints",
+        "Complexity requirements for preprocessing and queries"
+      ],
+      "target_objective": "Compute the required graph property efficiently and prove correctness via structural graph arguments."
+    },
+    "schema_text": "Domain: Graph Theory and Network Algorithms | Entities: Graph vertices and edges, Query or optimization target on paths/cycles, Preprocessed indices or transformed edge weights | Constraints: Graph-type assumptions (DAG/sparse/simple), Path/cycle feasibility constraints, Complexity requirements for preprocessing and queries | Objective: Compute the required graph property efficiently and prove correctness via structural graph arguments."
+  },
+  {
+    "problem_id": 3723,
+    "name": "Let X, Y iid N (0, 1)",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3724,
+    "name": "Proving for Any Fixed Even N 2",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3725,
+    "name": "Flip Coins Fair Land Heads Independently",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3726,
+    "name": "Contains Fair Coins Double-headed Coin. Pick",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3727,
+    "name": "Hypothesis testing / adverse selection framing",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3728,
+    "name": "Seven People Distinct Ages Uniformly Random",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3729,
+    "name": "Observe Daily Returns Assumed I.i.d. Derive",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3730,
+    "name": "Single-period market making with informed flow",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3731,
+    "name": "Inventory/quote skew",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3732,
+    "name": "Boolean parenthesization",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3733,
+    "name": "Impartial word game",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3734,
+    "name": "Hotter/colder guessing",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3735,
+    "name": "Reversi/Othello simulator",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3736,
+    "name": "General rooted forests",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3737,
+    "name": "Base-4 \"fancy\" integers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3738,
+    "name": "War-like card game",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3739,
+    "name": "Logistic regression adversarial direction",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Regularization",
+      "problem_setup_entities": [
+        "Design matrix/features and response",
+        "Loss function with regularization/decision cost",
+        "Model parameters and hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Convexity/identifiability conditions",
+        "Penalty-induced shrinkage constraints",
+        "Out-of-sample risk evaluation criterion"
+      ],
+      "target_objective": "Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Regularization | Entities: Design matrix/features and response, Loss function with regularization/decision cost, Model parameters and hyperparameters | Constraints: Convexity/identifiability conditions, Penalty-induced shrinkage constraints, Out-of-sample risk evaluation criterion | Objective: Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+  },
+  {
+    "problem_id": 3740,
+    "name": "Die extrema",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3741,
+    "name": "Glosten¡Milgrom one-shot maker",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3742,
+    "name": "Kelly with proportional frictions",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3743,
+    "name": "Quote distance vs. fill intensity",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3744,
+    "name": "Posterior after order-flow tape",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3745,
+    "name": "Order statistics for exponential clocks",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3746,
+    "name": "Delta-hedged quote",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3747,
+    "name": "Ridge shrinkage and OOS error",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Regularization",
+      "problem_setup_entities": [
+        "Design matrix/features and response",
+        "Loss function with regularization/decision cost",
+        "Model parameters and hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Convexity/identifiability conditions",
+        "Penalty-induced shrinkage constraints",
+        "Out-of-sample risk evaluation criterion"
+      ],
+      "target_objective": "Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Regularization | Entities: Design matrix/features and response, Loss function with regularization/decision cost, Model parameters and hyperparameters | Constraints: Convexity/identifiability conditions, Penalty-induced shrinkage constraints, Out-of-sample risk evaluation criterion | Objective: Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+  },
+  {
+    "problem_id": 3748,
+    "name": "Unit-root diagnostics",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3749,
+    "name": "GJR-GARCH leverage",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3750,
+    "name": "Pairs trading via Engle¡Granger",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3751,
+    "name": "Sharpe inference, i.i.d.",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3752,
+    "name": "BH procedure for many alphas",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3753,
+    "name": "Kth in two sorted arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3754,
+    "name": "Online moments",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms and Online Estimation",
+      "problem_setup_entities": [
+        "Data stream and update rule",
+        "Compact summary/statistics state",
+        "Accuracy parameter and memory budget"
+      ],
+      "invariant_constraints": [
+        "Single-pass processing",
+        "Provable approximation/error bounds",
+        "Bounded per-update time and storage"
+      ],
+      "target_objective": "Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+    },
+    "schema_text": "Domain: Streaming Algorithms and Online Estimation | Entities: Data stream and update rule, Compact summary/statistics state, Accuracy parameter and memory budget | Constraints: Single-pass processing, Provable approximation/error bounds, Bounded per-update time and storage | Objective: Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+  },
+  {
+    "problem_id": 3755,
+    "name": "Mean-shift detection",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Statistics and Optimization",
+      "problem_setup_entities": [
+        "Random variables and model parameters",
+        "Decision/control variables",
+        "Observed data and constraints"
+      ],
+      "invariant_constraints": [
+        "Model assumptions stated in problem",
+        "Feasibility and boundary constraints",
+        "Consistency of estimator/objective definition"
+      ],
+      "target_objective": "Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+    },
+    "schema_text": "Domain: Mathematical Statistics and Optimization | Entities: Random variables and model parameters, Decision/control variables, Observed data and constraints | Constraints: Model assumptions stated in problem, Feasibility and boundary constraints, Consistency of estimator/objective definition | Objective: Derive the requested statistic, estimator, or optimal policy in closed form when possible."
+  },
+  {
+    "problem_id": 3756,
+    "name": "Bayesian tape inference, normal fundamental",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3757,
+    "name": "Order-flow imbalance via Skellam",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3758,
+    "name": "Fractional Kelly under variance target",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3759,
+    "name": "Make-or-take threshold",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3760,
+    "name": "Quote-refresh against selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3761,
+    "name": "Kalman filter, steady state",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3762,
+    "name": "Realized variance with microstructure noise",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3763,
+    "name": "Two-strategy Sharpe comparison",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3764,
+    "name": "Block bootstrap for dependent data",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3765,
+    "name": "Currency arbitrage detection",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory and Network Algorithms",
+      "problem_setup_entities": [
+        "Graph vertices and edges",
+        "Query or optimization target on paths/cycles",
+        "Preprocessed indices or transformed edge weights"
+      ],
+      "invariant_constraints": [
+        "Graph-type assumptions (DAG/sparse/simple)",
+        "Path/cycle feasibility constraints",
+        "Complexity requirements for preprocessing and queries"
+      ],
+      "target_objective": "Compute the required graph property efficiently and prove correctness via structural graph arguments."
+    },
+    "schema_text": "Domain: Graph Theory and Network Algorithms | Entities: Graph vertices and edges, Query or optimization target on paths/cycles, Preprocessed indices or transformed edge weights | Constraints: Graph-type assumptions (DAG/sparse/simple), Path/cycle feasibility constraints, Complexity requirements for preprocessing and queries | Objective: Compute the required graph property efficiently and prove correctness via structural graph arguments."
+  },
+  {
+    "problem_id": 3766,
+    "name": "K disjoint maximum-sum subarrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3767,
+    "name": "Quantile summary in a stream",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms and Online Estimation",
+      "problem_setup_entities": [
+        "Data stream and update rule",
+        "Compact summary/statistics state",
+        "Accuracy parameter and memory budget"
+      ],
+      "invariant_constraints": [
+        "Single-pass processing",
+        "Provable approximation/error bounds",
+        "Bounded per-update time and storage"
+      ],
+      "target_objective": "Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+    },
+    "schema_text": "Domain: Streaming Algorithms and Online Estimation | Entities: Data stream and update rule, Compact summary/statistics state, Accuracy parameter and memory budget | Constraints: Single-pass processing, Provable approximation/error bounds, Bounded per-update time and storage | Objective: Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+  },
+  {
+    "problem_id": 3768,
+    "name": "Minimum window covering multiset",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3769,
+    "name": "Weighted interval scheduling",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3770,
+    "name": "Beta-Binomial updating",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3771,
+    "name": "Brownian hitting probabilities",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3772,
+    "name": "Sequential Bayes / SPRT for a heavy coin",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3773,
+    "name": "Gaussian half-space probability",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3774,
+    "name": "Broken stick--acute triangle probability",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3775,
+    "name": "Waiting time to patterns",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3776,
+    "name": "One-period Kyle model",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3777,
+    "name": "CARA market maker with inventory",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3778,
+    "name": "Linear Hawkes order flow",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3779,
+    "name": "Almgren¡Chriss discrete execution",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3780,
+    "name": "EWMA volatility and half-life",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3781,
+    "name": "Diebold¡Mariano (DM",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3782,
+    "name": "Logistic decision threshold under asymmetric costs",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Regularization",
+      "problem_setup_entities": [
+        "Design matrix/features and response",
+        "Loss function with regularization/decision cost",
+        "Model parameters and hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Convexity/identifiability conditions",
+        "Penalty-induced shrinkage constraints",
+        "Out-of-sample risk evaluation criterion"
+      ],
+      "target_objective": "Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Regularization | Entities: Design matrix/features and response, Loss function with regularization/decision cost, Model parameters and hyperparameters | Constraints: Convexity/identifiability conditions, Penalty-induced shrinkage constraints, Out-of-sample risk evaluation criterion | Objective: Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+  },
+  {
+    "problem_id": 3783,
+    "name": "Two-fund separation and tangency",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3784,
+    "name": "Top-K frequent items in a stream",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms and Online Estimation",
+      "problem_setup_entities": [
+        "Data stream and update rule",
+        "Compact summary/statistics state",
+        "Accuracy parameter and memory budget"
+      ],
+      "invariant_constraints": [
+        "Single-pass processing",
+        "Provable approximation/error bounds",
+        "Bounded per-update time and storage"
+      ],
+      "target_objective": "Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+    },
+    "schema_text": "Domain: Streaming Algorithms and Online Estimation | Entities: Data stream and update rule, Compact summary/statistics state, Accuracy parameter and memory budget | Constraints: Single-pass processing, Provable approximation/error bounds, Bounded per-update time and storage | Objective: Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+  },
+  {
+    "problem_id": 3785,
+    "name": "Triangle counting in sparse graphs",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory and Network Algorithms",
+      "problem_setup_entities": [
+        "Graph vertices and edges",
+        "Query or optimization target on paths/cycles",
+        "Preprocessed indices or transformed edge weights"
+      ],
+      "invariant_constraints": [
+        "Graph-type assumptions (DAG/sparse/simple)",
+        "Path/cycle feasibility constraints",
+        "Complexity requirements for preprocessing and queries"
+      ],
+      "target_objective": "Compute the required graph property efficiently and prove correctness via structural graph arguments."
+    },
+    "schema_text": "Domain: Graph Theory and Network Algorithms | Entities: Graph vertices and edges, Query or optimization target on paths/cycles, Preprocessed indices or transformed edge weights | Constraints: Graph-type assumptions (DAG/sparse/simple), Path/cycle feasibility constraints, Complexity requirements for preprocessing and queries | Objective: Compute the required graph property efficiently and prove correctness via structural graph arguments."
+  },
+  {
+    "problem_id": 3786,
+    "name": "Static RMQ",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3787,
+    "name": "LRU cache",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3788,
+    "name": "Max rectangle in a histogram",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3789,
+    "name": "Two-venue adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3790,
+    "name": "Posterior from signed order tape with different base rates",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  },
+  {
+    "problem_id": 3791,
+    "name": "OU mid and inventory-optimal skew",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3792,
+    "name": "Kelly with drawdown cap",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3793,
+    "name": "Sequential Bayes VOI",
+    "schema": {
+      "core_mathematical_domain": "Probability, Bayesian Inference, and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/processes and prior distributions",
+        "Stopping times/events or sufficient statistics",
+        "Conditional/posterior probabilities or moments"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov/normality assumptions as stated",
+        "Support and boundary conditions",
+        "Law of total probability/conditioning consistency"
+      ],
+      "target_objective": "Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+    },
+    "schema_text": "Domain: Probability, Bayesian Inference, and Stochastic Processes | Entities: Random variables/processes and prior distributions, Stopping times/events or sufficient statistics, Conditional/posterior probabilities or moments | Constraints: Independence/Markov/normality assumptions as stated, Support and boundary conditions, Law of total probability/conditioning consistency | Objective: Compute closed-form probabilities, expectations, posteriors, or optimal sequential decisions."
+  },
+  {
+    "problem_id": 3794,
+    "name": "Jump-robust volatility",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3795,
+    "name": "Realized kernel with noise",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3796,
+    "name": "OU parameter inference",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3797,
+    "name": "Variance ratio test",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3798,
+    "name": "Fama¡MacBeth",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3799,
+    "name": "Elastic net with orthonormal design",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Regularization",
+      "problem_setup_entities": [
+        "Design matrix/features and response",
+        "Loss function with regularization/decision cost",
+        "Model parameters and hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Convexity/identifiability conditions",
+        "Penalty-induced shrinkage constraints",
+        "Out-of-sample risk evaluation criterion"
+      ],
+      "target_objective": "Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Regularization | Entities: Design matrix/features and response, Loss function with regularization/decision cost, Model parameters and hyperparameters | Constraints: Convexity/identifiability conditions, Penalty-induced shrinkage constraints, Out-of-sample risk evaluation criterion | Objective: Derive the estimator/decision rule and characterize shrinkage, thresholds, or generalization performance."
+  },
+  {
+    "problem_id": 3800,
+    "name": "Forecast combination",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization and Performance Measurement",
+      "problem_setup_entities": [
+        "Expected return and covariance inputs",
+        "Leverage/weight decision variables",
+        "Risk-free benchmark or utility objective"
+      ],
+      "invariant_constraints": [
+        "Budget/leverage and feasibility constraints",
+        "Risk or drawdown constraints",
+        "Moment assumptions for inference"
+      ],
+      "target_objective": "Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+    },
+    "schema_text": "Domain: Portfolio Optimization and Performance Measurement | Entities: Expected return and covariance inputs, Leverage/weight decision variables, Risk-free benchmark or utility objective | Constraints: Budget/leverage and feasibility constraints, Risk or drawdown constraints, Moment assumptions for inference | Objective: Optimize allocation/leverage and derive performance metrics or hypothesis tests for strategy quality."
+  },
+  {
+    "problem_id": 3801,
+    "name": "Block bootstrap CI for a quantile",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Finance",
+      "problem_setup_entities": [
+        "Observed return/price time series",
+        "Parametric or semiparametric model specification",
+        "Estimator/test statistic and sampling scheme"
+      ],
+      "invariant_constraints": [
+        "Stationarity/ergodicity or integration assumptions",
+        "Dependence-robust inference conditions",
+        "Finite-sample vs asymptotic approximation choices"
+      ],
+      "target_objective": "Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Finance | Entities: Observed return/price time series, Parametric or semiparametric model specification, Estimator/test statistic and sampling scheme | Constraints: Stationarity/ergodicity or integration assumptions, Dependence-robust inference conditions, Finite-sample vs asymptotic approximation choices | Objective: Estimate parameters or test hypotheses and report valid inference under the time-series assumptions."
+  },
+  {
+    "problem_id": 3802,
+    "name": "2D peak finding",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3803,
+    "name": "K maximum-sum disjoint rectangles",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/string/graph structure",
+        "State representation and transitions",
+        "Complexity budget (time and space)"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required asymptotic bounds",
+        "Deterministic handling of edge cases"
+      ],
+      "target_objective": "Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/string/graph structure, State representation and transitions, Complexity budget (time and space) | Constraints: Correctness for all valid inputs, Required asymptotic bounds, Deterministic handling of edge cases | Objective: Design and justify an algorithm/data structure meeting the stated complexity guarantees."
+  },
+  {
+    "problem_id": 3804,
+    "name": "Streaming heavy hitters with error guarantees",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms and Online Estimation",
+      "problem_setup_entities": [
+        "Data stream and update rule",
+        "Compact summary/statistics state",
+        "Accuracy parameter and memory budget"
+      ],
+      "invariant_constraints": [
+        "Single-pass processing",
+        "Provable approximation/error bounds",
+        "Bounded per-update time and storage"
+      ],
+      "target_objective": "Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+    },
+    "schema_text": "Domain: Streaming Algorithms and Online Estimation | Entities: Data stream and update rule, Compact summary/statistics state, Accuracy parameter and memory budget | Constraints: Single-pass processing, Provable approximation/error bounds, Bounded per-update time and storage | Objective: Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+  },
+  {
+    "problem_id": 3805,
+    "name": "Online covariance and rolling correlation",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms and Online Estimation",
+      "problem_setup_entities": [
+        "Data stream and update rule",
+        "Compact summary/statistics state",
+        "Accuracy parameter and memory budget"
+      ],
+      "invariant_constraints": [
+        "Single-pass processing",
+        "Provable approximation/error bounds",
+        "Bounded per-update time and storage"
+      ],
+      "target_objective": "Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+    },
+    "schema_text": "Domain: Streaming Algorithms and Online Estimation | Entities: Data stream and update rule, Compact summary/statistics state, Accuracy parameter and memory budget | Constraints: Single-pass processing, Provable approximation/error bounds, Bounded per-update time and storage | Objective: Construct an online estimator/summary with explicit guarantees on error, memory, and runtime."
+  },
+  {
+    "problem_id": 3806,
+    "name": "Three-point Glosten¡Milgrom quotes",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Execution",
+      "problem_setup_entities": [
+        "Latent fundamental or mid-price process",
+        "Order arrival/fill model",
+        "Quotes/inventory/control variables"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage/Bayesian consistency",
+        "Inventory or risk penalties",
+        "Poisson/Hawkes/diffusion model assumptions"
+      ],
+      "target_objective": "Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Execution | Entities: Latent fundamental or mid-price process, Order arrival/fill model, Quotes/inventory/control variables | Constraints: No-arbitrage/Bayesian consistency, Inventory or risk penalties, Poisson/Hawkes/diffusion model assumptions | Objective: Derive optimal quotes/execution policy and associated posterior, PnL, or impact relations."
+  }
+]

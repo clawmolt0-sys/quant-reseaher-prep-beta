@@ -1,0 +1,1640 @@
+[
+  {
+    "problem_id": 3807,
+    "name": "Posterior with trade and silence",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "mid-price m",
+        "order arrivals / fills",
+        "time horizon T",
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities",
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: asset value / fundamental value V, mid-price m, order arrivals / fills, time horizon T, prior/posterior belief | Constraints: Order/event arrivals follow Poisson intensities, Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3808,
+    "name": "Inventory-constrained quoting",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "inventory q",
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Price process is a martingale over the decision horizon",
+        "Decisions and payoffs are evaluated on a finite horizon",
+        "Inventory/position or feasibility constraints apply"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: mid-price m, bid and ask quotes (b, a), inventory q, time horizon T | Constraints: Price process is a martingale over the decision horizon, Decisions and payoffs are evaluated on a finite horizon, Inventory/position or feasibility constraints apply | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3809,
+    "name": "Kelly with parameter uncertainty",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "prior/posterior belief",
+        "strategy/control variable",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Unknown probability parameter has Beta prior/posterior conjugacy",
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: prior/posterior belief, strategy/control variable, objective function (Expected Value / utility) | Constraints: Unknown probability parameter has Beta prior/posterior conjugacy, Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3810,
+    "name": "Adverse selection vs. maker rebate",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills",
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Decisions and payoffs are evaluated on a finite horizon",
+        "Execution payoffs include fees/rebates/transaction costs"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: asset value / fundamental value V, mid-price m, bid and ask quotes (b, a), order arrivals / fills, time horizon T | Constraints: Decisions and payoffs are evaluated on a finite horizon, Execution payoffs include fees/rebates/transaction costs | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3811,
+    "name": "Gaussian wedge",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: return distribution | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3812,
+    "name": "Order statistics of uniforms",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities",
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a), order arrivals / fills, objective function (Expected Value / utility) | Constraints: Order/event arrivals follow Poisson intensities, Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3813,
+    "name": "Kalman smoothing",
+    "schema": {
+      "core_mathematical_domain": "Time-series econometrics",
+      "problem_setup_entities": [
+        "mid-price m",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Time-series econometrics | Entities: mid-price m, return distribution | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3814,
+    "name": "EVT tail index",
+    "schema": {
+      "core_mathematical_domain": "Statistical estimation and hypothesis testing",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Statistical estimation and hypothesis testing | Entities: state variables, decision variable, stochastic process | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3815,
+    "name": "Upper tail dependence",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3816,
+    "name": "GLR change-point",
+    "schema": {
+      "core_mathematical_domain": "Statistical estimation and hypothesis testing",
+      "problem_setup_entities": [
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Statistical estimation and hypothesis testing | Entities: time horizon T | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3817,
+    "name": "Multiple-testing control for many alphas",
+    "schema": {
+      "core_mathematical_domain": "Statistical estimation and hypothesis testing",
+      "problem_setup_entities": [
+        "mid-price m",
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Statistical estimation and hypothesis testing | Entities: mid-price m, strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3818,
+    "name": "White's Reality Check",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "mid-price m"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: mid-price m | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3819,
+    "name": "Online ridge via Sherman\u00a1Morrison",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3820,
+    "name": "Streaming quantiles: t-digest",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Execution payoffs include fees/rebates/transaction costs"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: objective function (Expected Value / utility) | Constraints: Execution payoffs include fees/rebates/transaction costs | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3821,
+    "name": "K-way merge of sorted streams",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3822,
+    "name": "Convex hull of points",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "order arrivals / fills",
+        "inventory q"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: order arrivals / fills, inventory q | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3823,
+    "name": "Max subarray with one deletion",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3824,
+    "name": "Sequential A/B with spending function",
+    "schema": {
+      "core_mathematical_domain": "Statistical estimation and hypothesis testing",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification",
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Statistical estimation and hypothesis testing | Entities: return distribution | Constraints: Latent variables or returns follow a Gaussian specification, Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3825,
+    "name": "Company Sells Boxes Containing Random Integer",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3826,
+    "name": "Betting Game, Choose Number Opponent Chooses",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3827,
+    "name": "Biased Coin Opponent Choose Distinct Length-3",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3828,
+    "name": "There are n stones",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3829,
+    "name": "Markov Chain States 1,...,n. State Transition",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: asset value / fundamental value V, objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3830,
+    "name": "Expected Payoff Using Dynamic Programming",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3831,
+    "name": "Two players have initial wealth W1, W2",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3832,
+    "name": "Deck Black Cards. Draw Cards Without",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable, objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3833,
+    "name": "Observe Poisson Process Rate Estimate Observing",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "order arrivals / fills",
+        "time horizon T",
+        "strategy/control variable",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: order arrivals / fills, time horizon T, strategy/control variable, objective function (Expected Value / utility) | Constraints: Order/event arrivals follow Poisson intensities | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3834,
+    "name": "There are k servers",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "order arrivals / fills",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: order arrivals / fills, objective function (Expected Value / utility) | Constraints: Order/event arrivals follow Poisson intensities | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3835,
+    "name": "Stream Numbers. Maintain Random Sample Size",
+    "schema": {
+      "core_mathematical_domain": "Portfolio optimization and risk",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Portfolio optimization and risk | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3836,
+    "name": "Prediction Market, Traders Private Signals Binary",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3837,
+    "name": "Data Stream Key, Value Pairs. Estimate",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3838,
+    "name": "Two stocks have correlated returns",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "return distribution",
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: return distribution, strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3839,
+    "name": "Time Series Returns. Test Volatility Constant.",
+    "schema": {
+      "core_mathematical_domain": "Portfolio optimization and risk",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Portfolio optimization and risk | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3840,
+    "name": "Option Pricing Model, Underlying Follows Geometric",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3841,
+    "name": "VaR Value at Risk",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3842,
+    "name": "Estimate Correlation Matrix Assets. Years Daily",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3843,
+    "name": "Design a algorithm to simulate Brownian motion",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3844,
+    "name": "Inferring informed fraction from the tape",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "bid and ask quotes (b, a)",
+        "prior/posterior belief",
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Unknown probability parameter has Beta prior/posterior conjugacy"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: asset value / fundamental value V, bid and ask quotes (b, a), prior/posterior belief, strategy/control variable | Constraints: Unknown probability parameter has Beta prior/posterior conjugacy | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3845,
+    "name": "Staleness sniping risk with jumps",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: mid-price m, bid and ask quotes (b, a), order arrivals / fills | Constraints: Order/event arrivals follow Poisson intensities | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3846,
+    "name": "Posterior after mixed-direction tape with base-rate imbalance",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: prior/posterior belief | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3847,
+    "name": "Inventory as a birth\u00a1death chain",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills",
+        "inventory q",
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities",
+        "Sampling/arrival assumptions include independence or i.i.d. structure",
+        "Decisions and payoffs are evaluated on a finite horizon",
+        "Inventory/position or feasibility constraints apply"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: mid-price m, bid and ask quotes (b, a), order arrivals / fills, inventory q, time horizon T | Constraints: Order/event arrivals follow Poisson intensities, Sampling/arrival assumptions include independence or i.i.d. structure, Decisions and payoffs are evaluated on a finite horizon, Inventory/position or feasibility constraints apply | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3848,
+    "name": "Risk-adjusted spread choice",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills",
+        "time horizon T",
+        "return distribution",
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Price process is a martingale over the decision horizon",
+        "Decisions and payoffs are evaluated on a finite horizon"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: mid-price m, bid and ask quotes (b, a), order arrivals / fills, time horizon T, return distribution, strategy/control variable | Constraints: Price process is a martingale over the decision horizon, Decisions and payoffs are evaluated on a finite horizon | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3849,
+    "name": "Make-or-take with drift forecasts",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "mid-price m",
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills",
+        "time horizon T",
+        "return distribution",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Decisions and payoffs are evaluated on a finite horizon",
+        "Execution payoffs include fees/rebates/transaction costs"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: mid-price m, bid and ask quotes (b, a), order arrivals / fills, time horizon T, return distribution, objective function (Expected Value / utility) | Constraints: Decisions and payoffs are evaluated on a finite horizon, Execution payoffs include fees/rebates/transaction costs | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3850,
+    "name": "Two-period Kyle with noise variance shift",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "order arrivals / fills",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: asset value / fundamental value V, order arrivals / fills, return distribution | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3851,
+    "name": "VWAP slippage distribution",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "return distribution",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: return distribution, objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3852,
+    "name": "Bayesian quote under uncertainty in prior",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "bid and ask quotes (b, a)",
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: asset value / fundamental value V, bid and ask quotes (b, a), prior/posterior belief | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3853,
+    "name": "Two fair six-sided dice are rolled",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3854,
+    "name": "Group People, Pair People Shakes Hands",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3855,
+    "name": "Factory Produces Widgets Widget Defective Probability",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: objective function (Expected Value / utility) | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3856,
+    "name": "Fair Six-sided Dice Rolled Told Conditional",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3857,
+    "name": "Expected Payout",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3858,
+    "name": "Urn A contains 3 red balls and 5 black balls",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3859,
+    "name": "Probability That the Sum of the Two",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3860,
+    "name": "Cards Drawn Uniformly Random Without Replacement",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3861,
+    "name": "Probability That All 5 Flips Show",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3862,
+    "name": "Game Works Follows Flip Fair Coins.",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Execution payoffs include fees/rebates/transaction costs"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: objective function (Expected Value / utility) | Constraints: Execution payoffs include fees/rebates/transaction costs | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3863,
+    "name": "Contains Coins Fair, Double Headed Always",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: prior/posterior belief | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3864,
+    "name": "Start Consecutive Bets Independent Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: objective function (Expected Value / utility) | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3865,
+    "name": "An Accident Occurred, Compute P U A",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: prior/posterior belief | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3866,
+    "name": "Probability That You End up With No",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3867,
+    "name": "Fair Coin Flipped Repeatedly. Pattern Appears",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3868,
+    "name": "Race Horses, Finish Orders Equally Likely.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "order arrivals / fills"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: order arrivals / fills | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3869,
+    "name": "Two players flip a fair coin repeatedly",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3870,
+    "name": "Three fair six-sided dice are rolled",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3871,
+    "name": "Person Friends Invite Exactly Them Party.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3872,
+    "name": "Bracelets Exactly Beads Green Beads, Arranged",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3873,
+    "name": "Distinct Palindromic Permutations Formed Multiset Letters",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3874,
+    "name": "Small College Offers Exactly Majors Computer",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3875,
+    "name": "Company Drilling Oil. Probability 0.35 Succeeds",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3876,
+    "name": "Plan Hold Party Sunny Weekend. Independently,",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3877,
+    "name": "Chessboard, Choose Distinct Squares Uniformly Random.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3878,
+    "name": "Shuffled Standard Card Deck, Draw Cards",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3879,
+    "name": "Probability That the Last Red Ball",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3880,
+    "name": "Shuffled Standard Card Deck, Reveal Cards",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3881,
+    "name": "Conveyor Belt Contains Candy Types Chocolate",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "asset value / fundamental value V"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: asset value / fundamental value V | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3882,
+    "name": "Expected Number of Hours Until There",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "return distribution",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: return distribution, objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3883,
+    "name": "Rapid mental math, no calculator.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3884,
+    "name": "Rapid estimation, no calculator.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3885,
+    "name": "Rapid mental math.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a), return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3886,
+    "name": "Customer Market Orders Hitting Quote Arrive",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)",
+        "order arrivals / fills"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: bid and ask quotes (b, a), order arrivals / fills | Constraints: Order/event arrivals follow Poisson intensities | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3887,
+    "name": "Daily Tracking Error Relative Modeled 0.40",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: return distribution | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3888,
+    "name": "Jointly Normal Means Standard Deviations Correlation",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: strategy/control variable | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3889,
+    "name": "Posterior Distribution V S Mean",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "asset value / fundamental value V",
+        "prior/posterior belief",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: asset value / fundamental value V, prior/posterior belief, return distribution | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3890,
+    "name": "Constituents Classified Illiquid. Randomly Choose Distinct",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3891,
+    "name": "I.i.d. Uniform Derive Closed Forms Maxi",
+    "schema": {
+      "core_mathematical_domain": "Portfolio optimization and risk",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+    },
+    "schema_text": "Domain: Portfolio optimization and risk | Entities: state variables, decision variable, stochastic process | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Optimize portfolio/control to maximize expected utility or return subject to risk constraints."
+  },
+  {
+    "problem_id": 3892,
+    "name": "Liquidity Alternates Regimes Good Discrete Minute",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3893,
+    "name": "Repeatedly Independent Bets Probability 0.52 Lose",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: state variables, decision variable, stochastic process | Constraints: Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3894,
+    "name": "Roll Fair Six-sided Repeatedly. Stop Time",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: time horizon T | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3895,
+    "name": "Implied Probabilities, the Bookmaker Overround",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3896,
+    "name": "N Poisson be the Number of Informed Trades in a Minute",
+    "schema": {
+      "core_mathematical_domain": "Stochastic processes and stopping times",
+      "problem_setup_entities": [
+        "order arrivals / fills"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities",
+        "Latent variables or returns follow a Gaussian specification",
+        "Sampling/arrival assumptions include independence or i.i.d. structure"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Stochastic processes and stopping times | Entities: order arrivals / fills | Constraints: Order/event arrivals follow Poisson intensities, Latent variables or returns follow a Gaussian specification, Sampling/arrival assumptions include independence or i.i.d. structure | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3897,
+    "name": "ETF arbitrage.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3898,
+    "name": "Make-a-market with adverse selection.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  },
+  {
+    "problem_id": 3899,
+    "name": "Bet sizing / growth.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "strategy/control variable",
+        "objective function (Expected Value / utility)"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Maximize expected logarithmic wealth growth under parameter uncertainty."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: strategy/control variable, objective function (Expected Value / utility) | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Maximize expected logarithmic wealth growth under parameter uncertainty."
+  },
+  {
+    "problem_id": 3900,
+    "name": "Coding; arrays; O(n",
+    "schema": {
+      "core_mathematical_domain": "Statistical estimation and hypothesis testing",
+      "problem_setup_entities": [
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Statistical estimation and hypothesis testing | Entities: return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3901,
+    "name": "Coding; time series; O(n",
+    "schema": {
+      "core_mathematical_domain": "Option pricing and derivatives",
+      "problem_setup_entities": [
+        "mid-price m",
+        "time horizon T"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+    },
+    "schema_text": "Domain: Option pricing and derivatives | Entities: mid-price m, time horizon T | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Compute fair value (Expected Value under the model measure) and/or optimal hedge parameters."
+  },
+  {
+    "problem_id": 3902,
+    "name": "Coding; statistics; O(n log n",
+    "schema": {
+      "core_mathematical_domain": "Quantitative modeling",
+      "problem_setup_entities": [
+        "state variables",
+        "decision variable",
+        "stochastic process"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Quantitative modeling | Entities: state variables, decision variable, stochastic process | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3903,
+    "name": "Coding; optimization / DP.",
+    "schema": {
+      "core_mathematical_domain": "Optimization under constraints",
+      "problem_setup_entities": [
+        "inventory q",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Model-imposed probabilistic assumptions define the state dynamics"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Optimization under constraints | Entities: inventory q, return distribution | Constraints: Model-imposed probabilistic assumptions define the state dynamics | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3904,
+    "name": "Posterior Distribution",
+    "schema": {
+      "core_mathematical_domain": "Bayesian inference and filtering",
+      "problem_setup_entities": [
+        "prior/posterior belief"
+      ],
+      "invariant_constraints": [
+        "Unknown probability parameter has Beta prior/posterior conjugacy"
+      ],
+      "target_objective": "Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+    },
+    "schema_text": "Domain: Bayesian inference and filtering | Entities: prior/posterior belief | Constraints: Unknown probability parameter has Beta prior/posterior conjugacy | Objective: Compute the posterior belief and corresponding Bayesian estimator (typically posterior Expected Value or Bayesian mid-price)."
+  },
+  {
+    "problem_id": 3905,
+    "name": "Limit Order Gets Filled Least Market",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "order arrivals / fills"
+      ],
+      "invariant_constraints": [
+        "Order/event arrivals follow Poisson intensities"
+      ],
+      "target_objective": "Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: order arrivals / fills | Constraints: Order/event arrivals follow Poisson intensities | Objective: Derive the optimal decision rule that maximizes Expected Value (or minimizes expected loss) under stated stochastic assumptions."
+  },
+  {
+    "problem_id": 3906,
+    "name": "ETF One-minute Volatility ETF",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure and optimal execution",
+      "problem_setup_entities": [
+        "bid and ask quotes (b, a)",
+        "return distribution"
+      ],
+      "invariant_constraints": [
+        "Latent variables or returns follow a Gaussian specification"
+      ],
+      "target_objective": "Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+    },
+    "schema_text": "Domain: Market microstructure and optimal execution | Entities: bid and ask quotes (b, a), return distribution | Constraints: Latent variables or returns follow a Gaussian specification | Objective: Choose quoting/execution action that maximizes expected trading PnL net of adverse selection and costs."
+  }
+]

@@ -1,0 +1,1748 @@
+[
+  {
+    "problem_id": 4007,
+    "name": "Value or Values of G",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4008,
+    "name": "Single Elimination Tournament Teams Semifinals",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Processes",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "State or information structure",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rules of play and admissible strategies are fixed"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+    },
+    "schema_text": "Domain: Game Theory and Decision Processes | Entities: Players and action sets, State or information structure, Payoff function | Constraints: Rules of play and admissible strategies are fixed | Objective: Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+  },
+  {
+    "problem_id": 4009,
+    "name": "Data Analysis Interview, Interviewer Challenges Assumption",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4010,
+    "name": "Consider A Univariate AR 1 Model for Demeaned Daily Returns",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4011,
+    "name": "Residuals Fitted Time Series Model Daily",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4012,
+    "name": "Develop Probabilistic Classifier Whether Trading Opportunity",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4013,
+    "name": "Gambler Plays Modified Gambler Ruin Game",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Processes",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "State or information structure",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rules of play and admissible strategies are fixed"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+    },
+    "schema_text": "Domain: Game Theory and Decision Processes | Entities: Players and action sets, State or information structure, Payoff function | Constraints: Rules of play and admissible strategies are fixed | Objective: Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+  },
+  {
+    "problem_id": 4014,
+    "name": "Vertical Call Spread Long One European Call W",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4015,
+    "name": "Observe Daily Returns Equity Index Future",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4016,
+    "name": "Simplified Currency Market Consists Currencies",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4017,
+    "name": "Large Panel Intraday Trade Data Multiple",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4018,
+    "name": "I.i.d. Discrete Random Variables Taking Values",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4019,
+    "name": "Daily Returns Cross Section Stocks Days,",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4020,
+    "name": "Time Series Daily Prices Single Asset",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4021,
+    "name": "Combinatorial Game Reminiscent Brainteasers, Players Alternately",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4022,
+    "name": "That, List Currencies Observed Exchange",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4023,
+    "name": "Comparing Forecasting Models Intraday Volatility Asset",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4024,
+    "name": "Cards Drawn Uniformly Random Without Replacement",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4025,
+    "name": "Optiver Style Betting Game, Allocate Fractions",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4026,
+    "name": "Tournament Market Teams Single Elimination Bracket",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4027,
+    "name": "Market Making Fermi Game, Interviewer Chooses",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Decision variables",
+        "Objective function",
+        "Feasible set constraints"
+      ],
+      "invariant_constraints": [
+        "Optimization constraints are fixed by the prompt"
+      ],
+      "target_objective": "Find or characterize an optimal solution under the stated objective"
+    },
+    "schema_text": "Domain: Optimization | Entities: Decision variables, Objective function, Feasible set constraints | Constraints: Optimization constraints are fixed by the prompt | Objective: Find or characterize an optimal solution under the stated objective"
+  },
+  {
+    "problem_id": 4028,
+    "name": "Company City Runs Large Number Identical",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4029,
+    "name": "Piles Stones Containing Stones, Positive Integers.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4030,
+    "name": "Candidate Quant Number Theory Flavored Brainteaser",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4031,
+    "name": "Galton Watson Branching Process Individual Independently",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4032,
+    "name": "Time Series Model Daily Residuals Test",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4033,
+    "name": "Evaluating Mean Reversion Signal Based Model",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4034,
+    "name": "Comparing Volatility Forecasting Models Minute Returns",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4035,
+    "name": "Quant Researcher Builds Logistic Regression Model",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4036,
+    "name": "Long Time Series Daily Returns Single",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4037,
+    "name": "Observe High Frequency Stream Trades Stock,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4038,
+    "name": "Market Contains Currencies Directed Exchange Rates",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4039,
+    "name": "N Array of N Signed Integers A1, . . . , An",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4040,
+    "name": "Common Puzzle Considers Game Players Alternately",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4041,
+    "name": "Maintaining Real Time Risk Dashboard Single",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4042,
+    "name": "Cross Section Stocks Candidate Risk Factors",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4043,
+    "name": "Repeatedly Toss Biased Coin Unknown Head",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4044,
+    "name": "Draw Distinct Cards Uniformly Random Standard",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix or vector objects",
+        "Linear transformations",
+        "Spectral or rank-related quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensional and algebraic constraints are as stated"
+      ],
+      "target_objective": "Derive matrix properties, solve linear systems, or compute decompositions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix or vector objects, Linear transformations, Spectral or rank-related quantities | Constraints: Dimensional and algebraic constraints are as stated | Objective: Derive matrix properties, solve linear systems, or compute decompositions"
+  },
+  {
+    "problem_id": 4045,
+    "name": "Consider A Score Difference Market for A Basketball Game",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4046,
+    "name": "I.i.d. Standard Normal Random Variables. Max1in",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4047,
+    "name": "Stock Log-price Daily Modeled Random Walk",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4048,
+    "name": "Univariate Time Series Demeaned Daily Returns",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4049,
+    "name": "Risk Manager Claims Daily Returns Index",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature representation",
+        "Prediction target",
+        "Model and evaluation metric"
+      ],
+      "invariant_constraints": [
+        "Training/evaluation protocol follows the stated setup"
+      ],
+      "target_objective": "Analyze model performance, calibration, or generalization under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature representation, Prediction target, Model and evaluation metric | Constraints: Training/evaluation protocol follows the stated setup | Objective: Analyze model performance, calibration, or generalization under stated assumptions"
+  },
+  {
+    "problem_id": 4050,
+    "name": "Maintain Intraday Volatility Forecasting Model Where,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4051,
+    "name": "Universe Stocks Daily Factor Model",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance and Market Microstructure",
+      "problem_setup_entities": [
+        "Market state variables",
+        "Trading rule or position",
+        "PnL or risk metric"
+      ],
+      "invariant_constraints": [
+        "Execution/timing assumptions follow the prompt"
+      ],
+      "target_objective": "Design or analyze trading decisions, valuation, or resulting PnL/risk"
+    },
+    "schema_text": "Domain: Quantitative Finance and Market Microstructure | Entities: Market state variables, Trading rule or position, PnL or risk metric | Constraints: Execution/timing assumptions follow the prompt | Objective: Design or analyze trading decisions, valuation, or resulting PnL/risk"
+  },
+  {
+    "problem_id": 4052,
+    "name": "Stream of Integers X1, X2, . . . , Xn Represe",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4053,
+    "name": "Gregorian Date 1900, Week Monday, Tuesday,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4054,
+    "name": "Monitor Market Currencies Observed Exchange Rates",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4055,
+    "name": "N and K, Determines Whether the First or Seco",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4056,
+    "name": "Observe Panel Trade Data Single Stock",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4057,
+    "name": "Sequence Daily Values Strategy, Denotes Cumulative",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Processes",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "State or information structure",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rules of play and admissible strategies are fixed"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+    },
+    "schema_text": "Domain: Game Theory and Decision Processes | Entities: Players and action sets, State or information structure, Payoff function | Constraints: Rules of play and admissible strategies are fixed | Objective: Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+  },
+  {
+    "problem_id": 4058,
+    "name": "Expected Number of Draws Until Stopping",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix or vector objects",
+        "Linear transformations",
+        "Spectral or rank-related quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensional and algebraic constraints are as stated"
+      ],
+      "target_objective": "Derive matrix properties, solve linear systems, or compute decompositions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix or vector objects, Linear transformations, Spectral or rank-related quantities | Constraints: Dimensional and algebraic constraints are as stated | Objective: Derive matrix properties, solve linear systems, or compute decompositions"
+  },
+  {
+    "problem_id": 4059,
+    "name": "Designing Simulation Based Test Trading Signal",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4060,
+    "name": "Hiring Manager Asks Propose Efficient Algorithm",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4061,
+    "name": "Daily Returns Strategies Days Compare Perform",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4062,
+    "name": "Logistic Regression Model Predict Whether Next",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4063,
+    "name": "Observe I.i.d. Sample Daily Returns Wish",
+    "schema": {
+      "core_mathematical_domain": "Statistics",
+      "problem_setup_entities": [
+        "Sample data",
+        "Population parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions are as stated"
+      ],
+      "target_objective": "Compute estimators, confidence quantities, or hypothesis-test implications"
+    },
+    "schema_text": "Domain: Statistics | Entities: Sample data, Population parameters, Estimator or test statistic | Constraints: Sampling assumptions are as stated | Objective: Compute estimators, confidence quantities, or hypothesis-test implications"
+  },
+  {
+    "problem_id": 4064,
+    "name": "Betting Game Fair Sided Dice, Bookmaker",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4065,
+    "name": "Play Shot Optiver Style Game Single",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4066,
+    "name": "Card Betting Game Several Trading Interviews,",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrix or vector objects",
+        "Linear transformations",
+        "Spectral or rank-related quantities"
+      ],
+      "invariant_constraints": [
+        "Dimensional and algebraic constraints are as stated"
+      ],
+      "target_objective": "Derive matrix properties, solve linear systems, or compute decompositions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrix or vector objects, Linear transformations, Spectral or rank-related quantities | Constraints: Dimensional and algebraic constraints are as stated | Objective: Derive matrix properties, solve linear systems, or compute decompositions"
+  },
+  {
+    "problem_id": 4067,
+    "name": "Single Elimination Tournament Puzzle, Teams Play",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4068,
+    "name": "Line Scheduled Depart Exactly Minutes, Independently",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4069,
+    "name": "Consider A two Pile Stone Game you Start With Piles Of Sizes A, B N2",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4070,
+    "name": "Number Theory Flavored Brainteaser, Start Even",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4071,
+    "name": "Galton Watson Branching Process Offspring Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4072,
+    "name": "Basketball Game Modeled Puzzle, Team Team",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4073,
+    "name": "Demeaned Daily Returns Futures Contract Model",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4074,
+    "name": "Daily Log-returns Rt for a Futures Contract Are Modeled",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4075,
+    "name": "Residuals Fitted Model Test Whether White",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4076,
+    "name": "Trader Even Moments Standard Normal Usin",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4077,
+    "name": "Researcher Builds Logistic Regression Model Predicts",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4078,
+    "name": "Observe I.i.d. Daily Returns Test Heavy",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4079,
+    "name": "High Frequency Trade Data Single Stock",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4080,
+    "name": "Market Currencies Observed Exchange Rates Units",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4081,
+    "name": "Observe Cumulative Time Series Trading Strategy,",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4082,
+    "name": "Integer Array Contain Positive Negative Values",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4083,
+    "name": "Impartial Counting Game Brainteaser, Players Alternately",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4084,
+    "name": "Interviewer Presents Coins Coin Head Probability",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4085,
+    "name": "Repeatedly Roll Fair 20-sided Whose Faces",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4086,
+    "name": "I.i.d. Representing Daily Returns Asset. Test",
+    "schema": {
+      "core_mathematical_domain": "Statistics",
+      "problem_setup_entities": [
+        "Sample data",
+        "Population parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions are as stated"
+      ],
+      "target_objective": "Compute estimators, confidence quantities, or hypothesis-test implications"
+    },
+    "schema_text": "Domain: Statistics | Entities: Sample data, Population parameters, Estimator or test statistic | Constraints: Sampling assumptions are as stated | Objective: Compute estimators, confidence quantities, or hypothesis-test implications"
+  },
+  {
+    "problem_id": 4087,
+    "name": "Mean Reversion Signal Modeled Process Daily",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4088,
+    "name": "Researcher Models Intraday Volatility Gjr-garch Process",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Lag structure",
+        "Model parameters"
+      ],
+      "invariant_constraints": [
+        "Temporal ordering is fixed",
+        "Stationarity/noise assumptions follow the prompt"
+      ],
+      "target_objective": "Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Observed time series, Lag structure, Model parameters | Constraints: Temporal ordering is fixed, Stationarity/noise assumptions follow the prompt | Objective: Estimate, forecast, or analyze time-series dynamics and associated error metrics"
+  },
+  {
+    "problem_id": 4089,
+    "name": "Observe Daily Returns Candidate Trading Strategy",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4090,
+    "name": "Large Dataset Intraday Trades Stock",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4091,
+    "name": "Algorithm That, Array Integers Targ",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4092,
+    "name": "Large Panel Daily Stock Returns Matrix",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4093,
+    "name": "Quant Researcher Comparing Predictive Models Next",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance and Market Microstructure",
+      "problem_setup_entities": [
+        "Market state variables",
+        "Trading rule or position",
+        "PnL or risk metric"
+      ],
+      "invariant_constraints": [
+        "Execution/timing assumptions follow the prompt"
+      ],
+      "target_objective": "Design or analyze trading decisions, valuation, or resulting PnL/risk"
+    },
+    "schema_text": "Domain: Quantitative Finance and Market Microstructure | Entities: Market state variables, Trading rule or position, PnL or risk metric | Constraints: Execution/timing assumptions follow the prompt | Objective: Design or analyze trading decisions, valuation, or resulting PnL/risk"
+  },
+  {
+    "problem_id": 4094,
+    "name": "Analyzing Simple Barrier Option Black Scholes",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4095,
+    "name": "Monte Carlo Backtest Kelly Style Betting",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Decision variables",
+        "Objective function",
+        "Feasible set constraints"
+      ],
+      "invariant_constraints": [
+        "Optimization constraints are fixed by the prompt"
+      ],
+      "target_objective": "Find or characterize an optimal solution under the stated objective"
+    },
+    "schema_text": "Domain: Optimization | Entities: Decision variables, Objective function, Feasible set constraints | Constraints: Optimization constraints are fixed by the prompt | Objective: Find or characterize an optimal solution under the stated objective"
+  },
+  {
+    "problem_id": 4096,
+    "name": "Players Alternately Integer Running Total, Starting",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4097,
+    "name": "Monitor Trading Strategy Cumulative Time. Maximum",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Filtration/time index"
+      ],
+      "invariant_constraints": [
+        "Process evolution follows stated Markov or adaptation assumptions"
+      ],
+      "target_objective": "Compute transition behavior, hitting probabilities, or Expected Value over time"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Filtration/time index | Constraints: Process evolution follows stated Markov or adaptation assumptions | Objective: Compute transition behavior, hitting probabilities, or Expected Value over time"
+  },
+  {
+    "problem_id": 4098,
+    "name": "Design Logistic Regression Model Predict Whether",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4099,
+    "name": "Daily Returns Strategies Days Ra,t Rb,t",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Processes",
+      "problem_setup_entities": [
+        "Players and action sets",
+        "State or information structure",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "Rules of play and admissible strategies are fixed"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+    },
+    "schema_text": "Domain: Game Theory and Decision Processes | Entities: Players and action sets, State or information structure, Payoff function | Constraints: Rules of play and admissible strategies are fixed | Objective: Find optimal strategy, equilibrium behavior, or Expected Value of outcomes"
+  },
+  {
+    "problem_id": 4100,
+    "name": "Optiver Style Market Making Fermi Game",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "Feature representation",
+        "Prediction target",
+        "Model and evaluation metric"
+      ],
+      "invariant_constraints": [
+        "Training/evaluation protocol follows the stated setup"
+      ],
+      "target_objective": "Analyze model performance, calibration, or generalization under stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: Feature representation, Prediction target, Model and evaluation metric | Constraints: Training/evaluation protocol follows the stated setup | Objective: Analyze model performance, calibration, or generalization under stated assumptions"
+  },
+  {
+    "problem_id": 4101,
+    "name": "Multi Trading Game, Invest Independent Shot",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4102,
+    "name": "Candidate Told Kelly Sizing Great Asymptotically,",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4103,
+    "name": "Tournament Betting Game Teams Single Elimination",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or optimal decision rule"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or optimal decision rule"
+  },
+  {
+    "problem_id": 4104,
+    "name": "System Departures Scheduled Exactly Minutes, Independently",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4105,
+    "name": "Puzzle Piles Apples Containing Apples, Respectively.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4106,
+    "name": "Quant Brainteaser Defines Process Even Positive",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  }
+]

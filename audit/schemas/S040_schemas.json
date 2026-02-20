@@ -1,0 +1,1633 @@
+[
+  {
+    "problem_id": 3907,
+    "name": "Time Seconds Until Quote Modeled Exponential",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3908,
+    "name": "Bayes-optimal Decision Rule",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3909,
+    "name": "Fair Deck Cards Shuffled. Reveal Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is without replacement; Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3910,
+    "name": "Approximate P-value for Testing H0",
+    "schema": {
+      "core_mathematical_domain": "Statistics",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Statistics | Entities: Normal random variables, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3911,
+    "name": "Random Walk Wt Starting at W0 0 With Incremen",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random walk states",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Probability | Entities: Random walk states, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3912,
+    "name": "Market making / ETF arbitrage.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Market microstructure | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3913,
+    "name": "Market making with inventory.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Market microstructure | Entities: Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3914,
+    "name": "Betting strategy / vig.",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3915,
+    "name": "Coding; order book arithmetic; O(n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3916,
+    "name": "Coding; rolling statistics; O(n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3917,
+    "name": "Coding; counting; O(n log n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3918,
+    "name": "Probability; Poisson thinning.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3919,
+    "name": "Probability; hypergeometric.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3920,
+    "name": "Probability; Bayesian updating.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3921,
+    "name": "Probability; order statistics.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3922,
+    "name": "Probability; negative binomial / stopping time.",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Die outcomes, Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3923,
+    "name": "Probability; normal option payoff.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3924,
+    "name": "Probability; correlation and hedging.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested moment(s), including variance if asked"
+    },
+    "schema_text": "Domain: Random variables | Entities: Urn/balls, Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested moment(s), including variance if asked"
+  },
+  {
+    "problem_id": 3925,
+    "name": "Probability; coupon collector variant.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3926,
+    "name": "Bet sizing / risk.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3927,
+    "name": "Coding; sliding window median; O(n log W",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3928,
+    "name": "Coding; optimization; O(n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Die outcomes, Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3929,
+    "name": "Coding; rounding / tracking error.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Optimization | Entities: Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3930,
+    "name": "Buys Sells Hitting Quotes Independent Poisson",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3931,
+    "name": "Bayes / adverse selection.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Market microstructure | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3932,
+    "name": "Hypergeometric.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Probability model parameters | Constraints: Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3933,
+    "name": "Truncated normal.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3934,
+    "name": "Election / polling logic.",
+    "schema": {
+      "core_mathematical_domain": "Statistics",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Statistics | Entities: Normal random variables, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3935,
+    "name": "Time series / AR(1",
+    "schema": {
+      "core_mathematical_domain": "Time series",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Time series | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3936,
+    "name": "Make-a-market / EV game.",
+    "schema": {
+      "core_mathematical_domain": "Linear algebra",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Linear algebra | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is uniform over the specified space; Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3937,
+    "name": "Quoting under fill vs. selection.",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Market microstructure | Entities: Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3938,
+    "name": "Coding; regression / statistics; O(n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3939,
+    "name": "Coding; basket rounding; O(m log m",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3940,
+    "name": "Coding; sliding window VWAP; O(n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3941,
+    "name": "Probability; conditional dependence.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Urn/balls, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3942,
+    "name": "Probability; Bayesian updating with trade direction.",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3943,
+    "name": "Probability; mixture distribution.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3944,
+    "name": "Probability; cards, conditioning.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Sampling is without replacement",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is uniform over the specified space; Sampling is without replacement; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3945,
+    "name": "Probability; Gamma¡Poisson.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3946,
+    "name": "Statistics; hypothesis test.",
+    "schema": {
+      "core_mathematical_domain": "Statistics",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Statistics | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3947,
+    "name": "Make-a-market / EV.",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3948,
+    "name": "Bet sizing / risk constraint.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3949,
+    "name": "Coding; dynamic NAV; O((m + Q",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3950,
+    "name": "Coding; counting subarrays; O(n log n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3951,
+    "name": "Coding; rank correlation; O(n log n",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3952,
+    "name": "Coding; arbitrage detection; O(V E",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3953,
+    "name": "Probability; continuous / conditioning.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3954,
+    "name": "Probability; Poisson superposition.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3955,
+    "name": "Probability; normal approximation.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Random variables | Entities: Normal random variables, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3956,
+    "name": "Probability; Markov chain / steady state.",
+    "schema": {
+      "core_mathematical_domain": "Linear algebra",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Linear algebra | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3957,
+    "name": "Probability; stopping time.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Sampling is without replacement",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Random variables | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is uniform over the specified space; Sampling is without replacement; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3958,
+    "name": "Probability; distribution mix.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Random variables | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3959,
+    "name": "Probability; sports series.",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3960,
+    "name": "Probability; estimation / MLE.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3961,
+    "name": "Market making / make-a-market.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3962,
+    "name": "Betting strategy / sizing.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3963,
+    "name": "Coding; streaming stats; O(1",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested moment(s), including variance if asked"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested moment(s), including variance if asked"
+  },
+  {
+    "problem_id": 3964,
+    "name": "Coding; event processing; O(n",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3965,
+    "name": "Betting Game, Repeatedly Toss Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Coin flips",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Coin flips, Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3966,
+    "name": "Draw Distinct Cards Uniformly Random Without",
+    "schema": {
+      "core_mathematical_domain": "Linear algebra",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Sampling is without replacement",
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Linear algebra | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is uniform over the specified space; Sampling is without replacement; Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3967,
+    "name": "Cards Market Cards Drawn Uniformly Random",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Cards/deck",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is uniform over the specified space",
+        "Sampling is without replacement",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Cards/deck, Probability model parameters | Constraints: Sampling is uniform over the specified space; Sampling is without replacement; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3968,
+    "name": "Calibration Style Game, Rounds Numerical Unknown",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Normal random variables, Probability model parameters | Constraints: Random variables are independent as stated; Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3969,
+    "name": "Buses Route Scheduled Arrive Exactly Minutes.",
+    "schema": {
+      "core_mathematical_domain": "Random variables",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Random variables | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3970,
+    "name": "Piles Stones Containing Stones Respectively, Positive",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Determine the optimal strategy/policy that maximizes the stated objective"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Determine the optimal strategy/policy that maximizes the stated objective"
+  },
+  {
+    "problem_id": 3971,
+    "name": "Proving the Extinction Probability Q P N Zn 0 is the Small",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3972,
+    "name": "Expected Total Reward Conditional",
+    "schema": {
+      "core_mathematical_domain": "Expectation",
+      "problem_setup_entities": [
+        "Random walk states",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Expectation | Entities: Random walk states, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3973,
+    "name": "Exact Option Price Under",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Option Greeks",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Die outcomes, Option Greeks, Probability model parameters | Constraints: Random variables are independent as stated; Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3974,
+    "name": "Teams Play Single Elimination Tournament Semifinals",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Urn/balls, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3975,
+    "name": "Stock Price Single Trading Moves Ordered",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3976,
+    "name": "Minimal Period",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Markov states",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "State transitions follow the given Markov dynamics",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Prove the stated identity/result under the provided assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Markov states, Probability model parameters | Constraints: State transitions follow the given Markov dynamics; Use only conditions explicitly given in the problem statement | Objective: Prove the stated identity/result under the provided assumptions"
+  },
+  {
+    "problem_id": 3977,
+    "name": "Iterative Process Positive Real Numbers Defined",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3978,
+    "name": "Let X N (0, 1)",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3979,
+    "name": "Build Simple Black Scholes Monte Carlo",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Option Greeks",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Option Greeks, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3980,
+    "name": "Evaluating Proposed Trading Signal Predicts Next",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3981,
+    "name": "Design Algorithm That, Date Specified Day,",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3982,
+    "name": "Outcomes Optiver Style Betting Game",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3983,
+    "name": "Player Counting Game, Players Alternately Announce",
+    "schema": {
+      "core_mathematical_domain": "Game theory",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Determine the optimal strategy/policy that maximizes the stated objective"
+    },
+    "schema_text": "Domain: Game theory | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Determine the optimal strategy/policy that maximizes the stated objective"
+  },
+  {
+    "problem_id": 3984,
+    "name": "Offered Mutually Exclusive Bets Flips Fair",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Coin flips",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Optimization | Entities: Coin flips, Probability model parameters | Constraints: Random variables are independent as stated; Underlying coin/die is fair unless otherwise stated; Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3985,
+    "name": "Two Independent Fair Six-sided Dice Rolled Simultaneously",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Stopping/selection decisions are irrevocable",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Optimization | Entities: Die outcomes, Urn/balls, Probability model parameters | Constraints: Random variables are independent as stated; Underlying coin/die is fair unless otherwise stated; Stopping/selection decisions are irrevocable; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3986,
+    "name": "Bookmaker Quotes Odds Independent Events Occurring",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3987,
+    "name": "Teams Play Single Elimination Tournament Semifinals,",
+    "schema": {
+      "core_mathematical_domain": "Game theory",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Game theory | Entities: Urn/balls, Probability model parameters | Constraints: Random variables are independent as stated; Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3988,
+    "name": "Market Making Game, Quote Closed Interval",
+    "schema": {
+      "core_mathematical_domain": "Market microstructure",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Market microstructure | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3989,
+    "name": "Gambler Starts Integer Wealth Repeatedly Plays",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3990,
+    "name": "Stock Price Evolves Qualitative States Trading",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Sampling is uniform over the specified space",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Random variables are independent as stated; Sampling is uniform over the specified space; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3991,
+    "name": "Roll Independent Fair Sided Dice Perform",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Option Greeks",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Coding | Entities: Die outcomes, Option Greeks, Probability model parameters | Constraints: Random variables are independent as stated; Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3992,
+    "name": "Basketball Teams Play Game Equal-length Halves.",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Urn/balls, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3993,
+    "name": "Let Z N 0, 1 Be A Standard Normal Random Variable",
+    "schema": {
+      "core_mathematical_domain": "Brain teaser",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Brain teaser | Entities: Normal random variables, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3994,
+    "name": "Galton Watson Branching Process Individual Generation",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Die outcomes, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3995,
+    "name": "Daily Log Returns Rt for A Futures Contract Follow A GARCH 1,1 Model",
+    "schema": {
+      "core_mathematical_domain": "Time series",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Time series | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3996,
+    "name": "Developed Binary Trading Signal Daily Data",
+    "schema": {
+      "core_mathematical_domain": "Machine learning",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested Expected Value quantity"
+    },
+    "schema_text": "Domain: Machine learning | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested Expected Value quantity"
+  },
+  {
+    "problem_id": 3997,
+    "name": "European Call Butterfly Constructed European Call",
+    "schema": {
+      "core_mathematical_domain": "Options pricing",
+      "problem_setup_entities": [
+        "Option Greeks",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Options pricing | Entities: Option Greeks, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 3998,
+    "name": "Simple Market Making Model Single Stock",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Compute the requested probability under the specified stochastic setup"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Compute the requested probability under the specified stochastic setup"
+  },
+  {
+    "problem_id": 3999,
+    "name": "Design Algorithm That, Gregorian Date Specified",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 4000,
+    "name": "Players Play Game Alternately Integer Running",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Determine the optimal strategy/policy that maximizes the stated objective"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Determine the optimal strategy/policy that maximizes the stated objective"
+  },
+  {
+    "problem_id": 4001,
+    "name": "Given an array of n integers a1,",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 4002,
+    "name": "Observe High Frequency Stream Trade Data",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 4003,
+    "name": "Dice Cancellation Random Variable Price Call",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Normal random variables",
+        "Option Greeks",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables are independent as stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Prove the stated identity/result under the provided assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Die outcomes, Normal random variables, Option Greeks, Probability model parameters | Constraints: Random variables are independent as stated; Use only conditions explicitly given in the problem statement | Objective: Prove the stated identity/result under the provided assumptions"
+  },
+  {
+    "problem_id": 4004,
+    "name": "Comparing Forecasting Models Daily Asset Returns",
+    "schema": {
+      "core_mathematical_domain": "Coding",
+      "problem_setup_entities": [
+        "Urn/balls",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Coding | Entities: Urn/balls, Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 4005,
+    "name": "Betting Terminal Lists Mutually Exclusive Outcomes",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Die outcomes",
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Underlying coin/die is fair unless otherwise stated",
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Optimization | Entities: Die outcomes, Probability model parameters | Constraints: Underlying coin/die is fair unless otherwise stated; Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  },
+  {
+    "problem_id": 4006,
+    "name": "Three horses A, B, C race once",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Probability model parameters"
+      ],
+      "invariant_constraints": [
+        "Use only conditions explicitly given in the problem statement"
+      ],
+      "target_objective": "Derive the requested quantitative result from the provided model assumptions"
+    },
+    "schema_text": "Domain: Probability | Entities: Probability model parameters | Constraints: Use only conditions explicitly given in the problem statement | Objective: Derive the requested quantitative result from the provided model assumptions"
+  }
+]

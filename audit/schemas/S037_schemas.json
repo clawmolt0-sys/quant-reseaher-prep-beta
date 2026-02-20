@@ -1,0 +1,1902 @@
+[
+  {
+    "problem_id": 3607,
+    "name": "& Data -- Pandas/Numpy",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3608,
+    "name": "& Algorithms -- Monte Carlo",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3609,
+    "name": "& Algorithms -- Arrays/Optimization",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3610,
+    "name": "& Algorithms -- Streaming / Heaps",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3611,
+    "name": "Macro Strategist Classifies Tomorrow Yield Move",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3612,
+    "name": "Optimal Stopping Rule",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3613,
+    "name": "Independent Exponential Clocks Model Client Hedge",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3614,
+    "name": "Fair Coin Tossed Until Either Pattern",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3615,
+    "name": "Told Positive Random Variable Satisfies Tightest",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3616,
+    "name": "Bootstrapping Discount Curve Annual Compounding. Observe",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3617,
+    "name": "Fixed Rate Bond Annual Coupons Face",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3618,
+    "name": "Hold Portfolio Exposures Parallel Curve Shift",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3619,
+    "name": "Spot Rate Quoted Continuously-compounded Rate Implie",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3620,
+    "name": "European Option Zero Coupon Bond Option",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3621,
+    "name": "Maturity Premium Paying Continuously Rate Until",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3622,
+    "name": "Commodity Forward Price Maturity Modeled Cost",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3623,
+    "name": "Mortgage Backed Security Instrument Monthly Cash",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3624,
+    "name": "Sample Covariance and Its Eigenpairs",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3625,
+    "name": "Estimate Correlation Matrix Daily Observations Assets",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3626,
+    "name": "Two time series xt and yt (e",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3627,
+    "name": "Backtest Strategy Producing Daily Returns Sample",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3628,
+    "name": "Receive Stream Returns Instruments Days Mini",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3629,
+    "name": "Matrix Demeaned Returns Vector Factor Loadings",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3630,
+    "name": "Array Length Contain Negative Positive Numbers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3631,
+    "name": "Symmetric Matrix Supposed Covariance Matrix Numeri",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3632,
+    "name": "Hidden State Indicates Whether Today Rates",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Hidden-State Modeling",
+      "problem_setup_entities": [
+        "Latent state variable",
+        "Observable signals/data",
+        "Prior and likelihood components"
+      ],
+      "invariant_constraints": [
+        "Probabilities sum to one",
+        "Conditional independence/Markov assumptions when specified",
+        "Valid prior-to-posterior update rules"
+      ],
+      "target_objective": "Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+    },
+    "schema_text": "Domain: Bayesian Inference and Hidden-State Modeling | Entities: Latent state variable, Observable signals/data, Prior and likelihood components | Constraints: Probabilities sum to one, Conditional independence/Markov assumptions when specified, Valid prior-to-posterior update rules | Objective: Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+  },
+  {
+    "problem_id": 3633,
+    "name": "Trader Plays Coupon Collector Variant. Day,",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3634,
+    "name": "Pair, Orders Arrive Poisson Process Rate",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3635,
+    "name": "Repeatedly Roll Fair Sided Until Time",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3636,
+    "name": "Bond Desk Runs Information Gate Probability",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3637,
+    "name": "Otherwise Winsorized Hard Cutoff Comp",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3638,
+    "name": "Observe Annual-compounding Discount Factors 0.975 0.945.",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3639,
+    "name": "Bond Cash Flows Times Annual Price",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3640,
+    "name": "Portfolio Rate Dv01 Vector Across Maturities",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3641,
+    "name": "Market, 1.25 Gbp, Continuously Compounded,",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3642,
+    "name": "Payer Swaption Gives Right Time Enter",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3643,
+    "name": "Callable Bond Straight Bond Minus Embedded",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3644,
+    "name": "Commodity Storage Model Implies F0,t Storage",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3645,
+    "name": "Correlation Matrix Estimate Apply Shrinkage",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3646,
+    "name": "Model Daily Returns Garch Rt2-1 T2-1.",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3647,
+    "name": "Time Series Regression Spurious",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3648,
+    "name": "Dataframe Daily Returns Columns Date, Symbol,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3649,
+    "name": "Massive Returns Matrix 200,000 5,000,",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3650,
+    "name": "Given an array a1,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3651,
+    "name": "Intervals Representing Time Windows Different Market",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3652,
+    "name": "Binary Latent Variable Indicates Whether Tomorrow",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Hidden-State Modeling",
+      "problem_setup_entities": [
+        "Latent state variable",
+        "Observable signals/data",
+        "Prior and likelihood components"
+      ],
+      "invariant_constraints": [
+        "Probabilities sum to one",
+        "Conditional independence/Markov assumptions when specified",
+        "Valid prior-to-posterior update rules"
+      ],
+      "target_objective": "Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+    },
+    "schema_text": "Domain: Bayesian Inference and Hidden-State Modeling | Entities: Latent state variable, Observable signals/data, Prior and likelihood components | Constraints: Probabilities sum to one, Conditional independence/Markov assumptions when specified, Valid prior-to-posterior update rules | Objective: Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+  },
+  {
+    "problem_id": 3653,
+    "name": "Fair Coin Flipped Until Either Pattern",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3654,
+    "name": "Independent Poisson Processes Model Client Rfqs",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3655,
+    "name": "Repeatedly Draw Card Standard Card Deck",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3656,
+    "name": "Unconditional Expected P L Per",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3657,
+    "name": "X be a Nonnegative Random Variable With E X and Var X 2",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3658,
+    "name": "Bootstrapping Annual Compounding Discount Factors Swaps.",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3659,
+    "name": "Year Annual Bond Face 100, Coupon",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3660,
+    "name": "Portfolio Dv01 60,000 Convexity 9,000,000 Parallel",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3661,
+    "name": "Spot Domestic Rate Foreign Rate Continuously",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3662,
+    "name": "Caplet Pays Time Forward Rate Black",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3663,
+    "name": "European Option Zero Coupon Bond Payoff",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3664,
+    "name": "Callable Bond Viewed Straight Bond Minus",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3665,
+    "name": "Let Rn N Be A Covariance Matrix With Eigendecomposition QQ",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3666,
+    "name": "Sample Covariance Computed Observations Assets Larger",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3667,
+    "name": "Model Series Arma Rt-1 T-1, State",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3668,
+    "name": "Daily Returns Symbols Long Format Columns",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3669,
+    "name": "Rolling Realized Volatility Symbol Table Date,",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed return/time-series data",
+        "Model parameters and state variables",
+        "Estimation or validation window"
+      ],
+      "invariant_constraints": [
+        "Model identifiability and stationarity assumptions",
+        "Finite-sample estimation constraints",
+        "Consistent loss/likelihood evaluation protocol"
+      ],
+      "target_objective": "Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Econometrics | Entities: Observed return/time-series data, Model parameters and state variables, Estimation or validation window | Constraints: Model identifiability and stationarity assumptions, Finite-sample estimation constraints, Consistent loss/likelihood evaluation protocol | Objective: Estimate model parameters and compute the requested forecast, statistic, or performance metric."
+  },
+  {
+    "problem_id": 3670,
+    "name": "Design An O N Time Algorithm To Compute, for An Array A1,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3671,
+    "name": "Length of the Longest Substring",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3672,
+    "name": "Binary Latent Regime Affects Sign Tomorrow",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Hidden-State Modeling",
+      "problem_setup_entities": [
+        "Latent state variable",
+        "Observable signals/data",
+        "Prior and likelihood components"
+      ],
+      "invariant_constraints": [
+        "Probabilities sum to one",
+        "Conditional independence/Markov assumptions when specified",
+        "Valid prior-to-posterior update rules"
+      ],
+      "target_objective": "Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+    },
+    "schema_text": "Domain: Bayesian Inference and Hidden-State Modeling | Entities: Latent state variable, Observable signals/data, Prior and likelihood components | Constraints: Probabilities sum to one, Conditional independence/Markov assumptions when specified, Valid prior-to-posterior update rules | Objective: Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+  },
+  {
+    "problem_id": 3673,
+    "name": "Fair Rolled Repeatedly. Stop Time Running",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3674,
+    "name": "Let X Poisson()",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3675,
+    "name": "Shuffle Standard Card Deck Reveal Cards",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3676,
+    "name": "You Can Choose -dependent S but You Face a Fi",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3677,
+    "name": "Smallest Constant C Such",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3678,
+    "name": "Observe Annual-compounding Swap Rates Annual Fixed",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3679,
+    "name": "Bond Priced Continuously Compounded Yield Curve",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3680,
+    "name": "Portfolio Parallel Dv01 40,000 Expect Yield",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3681,
+    "name": "Spot Domestic Rate Foreign Rate Continuously",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3682,
+    "name": "Two Swaptions Have the Same F, K, , T but Dif",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing and Interest-Rate Modeling",
+      "problem_setup_entities": [
+        "Underlying rate/forward process",
+        "Contract payoff definition",
+        "Volatility and term parameters",
+        "Discount curve / numeraire"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure relations",
+        "Measure-consistent valuation framework",
+        "Contract boundary and exercise constraints"
+      ],
+      "target_objective": "Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+    },
+    "schema_text": "Domain: Derivatives Pricing and Interest-Rate Modeling | Entities: Underlying rate/forward process, Contract payoff definition, Volatility and term parameters, Discount curve / numeraire | Constraints: No-arbitrage term-structure relations, Measure-consistent valuation framework, Contract boundary and exercise constraints | Objective: Price the derivative and/or compute sensitivity or convexity adjustment in closed form or with justified approximation."
+  },
+  {
+    "problem_id": 3683,
+    "name": "Convexity Adjustment Arises Converting Futures Rate",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3684,
+    "name": "Covariance Matrix Constrained Minimum Variance Portfolio",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3685,
+    "name": "Rates Covariance Matrix Eigenvector Approximately Consta",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3686,
+    "name": "Estimate Linear Factor Model Assets Factors,",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3687,
+    "name": "Large Table Tick Data Columns Symbol,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3688,
+    "name": "Compute, Array Length Number Subarrays Whose",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3689,
+    "name": "List Integers Length Longest Subsequence Necessari",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3690,
+    "name": "Weighted Directed Graph Nodes Representing Possible",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3691,
+    "name": "N Observation X 1, Derive P Z J X 1 for Each",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Hidden-State Modeling",
+      "problem_setup_entities": [
+        "Latent state variable",
+        "Observable signals/data",
+        "Prior and likelihood components"
+      ],
+      "invariant_constraints": [
+        "Probabilities sum to one",
+        "Conditional independence/Markov assumptions when specified",
+        "Valid prior-to-posterior update rules"
+      ],
+      "target_objective": "Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+    },
+    "schema_text": "Domain: Bayesian Inference and Hidden-State Modeling | Entities: Latent state variable, Observable signals/data, Prior and likelihood components | Constraints: Probabilities sum to one, Conditional independence/Markov assumptions when specified, Valid prior-to-posterior update rules | Objective: Compute posterior probabilities and optimal decision/classification based on Expected Value or loss minimization."
+  },
+  {
+    "problem_id": 3692,
+    "name": "Offered Optimal Stopping Fair Coin. Flip",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3693,
+    "name": "Order Flow Model, Sell Arrivals Independent",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3694,
+    "name": "Draw Random Permutation Record Position Value",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables/process and stopping rule",
+        "Distributional parameters",
+        "Conditioning events or patterns"
+      ],
+      "invariant_constraints": [
+        "Valid probability law and independence/dependence assumptions",
+        "Stopping-time/event definitions",
+        "Finite expectation/probability normalization conditions"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+    },
+    "schema_text": "Domain: Applied Probability and Stochastic Processes | Entities: Random variables/process and stopping rule, Distributional parameters, Conditioning events or patterns | Constraints: Valid probability law and independence/dependence assumptions, Stopping-time/event definitions, Finite expectation/probability normalization conditions | Objective: Compute the requested probability or Expected Value, often via conditioning, recursion, or Markov reasoning."
+  },
+  {
+    "problem_id": 3695,
+    "name": "Market Maker Quotes Half Spread Ticks",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow and execution arrivals",
+        "Quote/control policy",
+        "Inventory or risk state"
+      ],
+      "invariant_constraints": [
+        "Execution/intensity model assumptions",
+        "Inventory and risk limits",
+        "Bayesian consistency between signal and fills when specified"
+      ],
+      "target_objective": "Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow and execution arrivals, Quote/control policy, Inventory or risk state | Constraints: Execution/intensity model assumptions, Inventory and risk limits, Bayesian consistency between signal and fills when specified | Objective: Optimize quoting, inventory control, or stopping policy to maximize Expected Value under execution risk."
+  },
+  {
+    "problem_id": 3696,
+    "name": "1-year Forward Rates F3,4",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3697,
+    "name": "7-year Bond Pays Annual Coupons. Told",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3698,
+    "name": "Rate Dv01s Nodes 10,000, 6,000, 8,000",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3699,
+    "name": "Spot Domestic Rate Foreign Rate Maturity",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3700,
+    "name": "Convex Combination Yield Curves Discount Factor",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics and Term Structure Modeling",
+      "problem_setup_entities": [
+        "Cash-flow schedule or instrument set",
+        "Discount factors / spot-forward rates",
+        "Compounding convention and maturities"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage discounting identities",
+        "Curve monotonicity/positivity where required",
+        "Instrument pricing consistency across maturities"
+      ],
+      "target_objective": "Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics and Term Structure Modeling | Entities: Cash-flow schedule or instrument set, Discount factors / spot-forward rates, Compounding convention and maturities | Constraints: No-arbitrage discounting identities, Curve monotonicity/positivity where required, Instrument pricing consistency across maturities | Objective: Bootstrap/derive the yield curve and compute instrument value or risk (DV01/convexity) consistently."
+  },
+  {
+    "problem_id": 3701,
+    "name": "Commodity Option Priced Black Model Forward",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3702,
+    "name": "Covariance Matrix Ridge Regularized Mean Variance",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3703,
+    "name": "Eigenvectors Symmetric Matrix 50,000,",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Portfolio Risk Modeling",
+      "problem_setup_entities": [
+        "Return/covariance matrix",
+        "Eigenvalues and eigenvectors or factor loadings",
+        "Portfolio weights and constraints"
+      ],
+      "invariant_constraints": [
+        "Symmetric positive-semidefinite structure",
+        "Normalization/orthogonality constraints",
+        "Budget or regularization constraints on weights"
+      ],
+      "target_objective": "Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+    },
+    "schema_text": "Domain: Linear Algebra and Portfolio Risk Modeling | Entities: Return/covariance matrix, Eigenvalues and eigenvectors or factor loadings, Portfolio weights and constraints | Constraints: Symmetric positive-semidefinite structure, Normalization/orthogonality constraints, Budget or regularization constraints on weights | Objective: Estimate/stabilize the risk model and derive portfolio or spectral quantities required for optimization."
+  },
+  {
+    "problem_id": 3704,
+    "name": "Stream Trades Timestamp, Price, Quantity Single",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3705,
+    "name": "Maximum Number of Points",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  },
+  {
+    "problem_id": 3706,
+    "name": "Directed Acyclic Graph Nodes Edges Representing",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence/graph/table",
+        "State structure (window, heap, hash, DP, or graph)",
+        "Complexity budget"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs",
+        "Required time/space complexity bounds",
+        "Ordering/indexing constraints from the input format"
+      ],
+      "target_objective": "Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence/graph/table, State structure (window, heap, hash, DP, or graph), Complexity budget | Constraints: Correctness for all valid inputs, Required time/space complexity bounds, Ordering/indexing constraints from the input format | Objective: Design and analyze an algorithm that computes the target statistic or structure within required complexity."
+  }
+]
