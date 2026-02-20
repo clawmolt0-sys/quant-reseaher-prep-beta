@@ -1,0 +1,1719 @@
+[
+  {
+    "problem_id": 2107,
+    "name": "Uniformly Decreasing Chain",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "coin flips",
+        "scores",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: coin flips, scores, random points, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2108,
+    "name": "Transpositions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "permutation",
+        "scores",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: permutation, scores, random points, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2109,
+    "name": "Differencing I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random sequence",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random sequence, random points, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2110,
+    "name": "Vote Count I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random sequence",
+        "votes",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random sequence, votes, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2111,
+    "name": "Vote Count II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random sequence",
+        "votes",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random sequence, votes, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2112,
+    "name": "Multiballs I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "balls",
+        "urn composition",
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Sampling is without replacement.",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: balls, urn composition, random sequence, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Sampling is without replacement.; Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2113,
+    "name": "Same Sequence I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips",
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips, random sequence, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2114,
+    "name": "Same Sequence III",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, random sequence, parameter n | Constraints: Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2115,
+    "name": "All Values Represented",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2116,
+    "name": "Quadratic Solutions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2117,
+    "name": "Bertrand's Paradox I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2118,
+    "name": "Best So Far!",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "permutation",
+        "subset selection",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: permutation, subset selection, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2119,
+    "name": "Subby Choice I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2120,
+    "name": "Include The Element!",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Sampling is without replacement. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2121,
+    "name": "Different Intersection I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2122,
+    "name": "Modular Pairs",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2123,
+    "name": "Conditional Values",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "subset selection",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, subset selection, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2124,
+    "name": "Tuple Birthdays",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, random points, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2125,
+    "name": "Ice Cream Orders",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2126,
+    "name": "NASCAR Results",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "scores",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: scores, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2127,
+    "name": "Modified Full House I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards",
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards, subset selection, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2128,
+    "name": "Special Term",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2129,
+    "name": "Binomial Coefficient Difference",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2130,
+    "name": "Diego's Exam",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "random sequence",
+        "scores",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, random sequence, scores, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2131,
+    "name": "Uniformly Random Permutation Formed, Fixed",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "permutation",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: permutation, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2132,
+    "name": "Powerball Winner I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "balls",
+        "lottery draw",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: balls, lottery draw, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2133,
+    "name": "Powerball Winner II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "balls",
+        "lottery draw",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: balls, lottery draw, parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2134,
+    "name": "Disease Prevalence I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "population size",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: population size, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2135,
+    "name": "Bertrand's Box",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "boxes",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: boxes, parameter n | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2136,
+    "name": "Multisocks",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2137,
+    "name": "Sample Space Reduction",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2138,
+    "name": "Discrete-Time Memorylessness",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "subset selection",
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, subset selection, random sequence, parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2139,
+    "name": "Most Likely Poisson",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "counting process",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: counting process, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2140,
+    "name": "Lucky Lottery",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards",
+        "balls",
+        "urn composition",
+        "lottery draw",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards, balls, urn composition, lottery draw, parameter n | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2141,
+    "name": "Flight Duration I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "arrival times",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: arrival times, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2142,
+    "name": "Flight Duration II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "scores",
+        "arrival times",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: scores, arrival times, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2143,
+    "name": "Continuous-Time Memorylessness",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: subset selection, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2144,
+    "name": "Flight Duration III",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "arrival times",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: arrival times, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2145,
+    "name": "Normal Moments I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated normal distribution assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random points, parameter n | Constraints: Random variables follow the stated normal distribution assumptions. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2146,
+    "name": "Carousel Box I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "balls",
+        "boxes",
+        "circular arrangement",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is with replacement.",
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: balls, boxes, circular arrangement, parameter n | Constraints: Sampling is with replacement.; Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2147,
+    "name": "Carousel Box II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "balls",
+        "boxes",
+        "circular arrangement",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is with replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: balls, boxes, circular arrangement, parameter n | Constraints: Sampling is with replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2148,
+    "name": "MrBeast's Coin Challenge",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "coin flips",
+        "coded message length",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated normal distribution assumptions."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: coin flips, coded message length, random variable(s), parameter n | Constraints: Random variables follow the stated normal distribution assumptions. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2149,
+    "name": "Heads Before Tails",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2150,
+    "name": "Limited Hitter I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2151,
+    "name": "Both Show",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2152,
+    "name": "Absolute Brownian Conditions",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths).",
+        "Random variables follow the stated normal distribution assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: Brownian motion, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths).; Random variables follow the stated normal distribution assumptions. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2153,
+    "name": "Coin Flipper I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2154,
+    "name": "Coin Flipper II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2155,
+    "name": "Proportional Bets I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2156,
+    "name": "Rank and Suit Diff",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "cards",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: cards, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2157,
+    "name": "Dart Covariance",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "dice rolls",
+        "dart throws",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Random variables follow the stated normal distribution assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: dice rolls, dart throws, random points, parameter n | Constraints: Trials are independent where specified.; Random variables follow the stated normal distribution assumptions. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2158,
+    "name": "Correlated Indicators",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random points, random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2159,
+    "name": "Dying Population",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "population size",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, population size, random points, random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2160,
+    "name": "Linearly Normal I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Random variables follow the stated normal distribution assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random points, parameter n | Constraints: Trials are independent where specified.; Random variables follow the stated normal distribution assumptions. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2161,
+    "name": "Zeta Zonk I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2162,
+    "name": "Zeta Zonk II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2163,
+    "name": "Zeta Zonk III",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2164,
+    "name": "Zeta Zonk IV",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2165,
+    "name": "Zeta Zonk V",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "urn composition",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: urn composition, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2166,
+    "name": "Zeta Zonk VI",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2167,
+    "name": "Zeta Zonk VII",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "urn composition",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: urn composition, parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2168,
+    "name": "Zeta Zonk VIII",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2169,
+    "name": "Zeta Zonk IX",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Derive the distributional form of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Derive the distributional form of the target random variable."
+  },
+  {
+    "problem_id": 2170,
+    "name": "Void Suits",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards",
+        "scores",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards, scores, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2171,
+    "name": "Big Up Chip",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "boxes",
+        "chip stack",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: boxes, chip stack, parameter n | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2172,
+    "name": "All and None",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, random sequence, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2173,
+    "name": "One Then Two",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2174,
+    "name": "Nearest Diagonal I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "geometric points",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: geometric points, random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2175,
+    "name": "Convolution Convergence I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random sequence",
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random sequence, random points, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2176,
+    "name": "Variable Gambler",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "urn composition",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: urn composition, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2177,
+    "name": "Arc Up I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2178,
+    "name": "Lotto I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "lottery draw",
+        "counting process",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: lottery draw, counting process, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2179,
+    "name": "Lotto II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "lottery draw",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: lottery draw, random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2180,
+    "name": "Die Duo I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2181,
+    "name": "Container Circle I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "geometric container",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: geometric container, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2182,
+    "name": "Container Circle II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "scores",
+        "geometric container",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: scores, geometric container, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2183,
+    "name": "Container Square I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "geometric container",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: geometric container, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2184,
+    "name": "Container Square II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "scores",
+        "geometric container",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: scores, geometric container, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2185,
+    "name": "Mean Point",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random points, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2186,
+    "name": "Non-Transitive Dice I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2187,
+    "name": "Game Off I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2188,
+    "name": "Game Off II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2189,
+    "name": "Game Off III",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random sequence",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random sequence, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2190,
+    "name": "Love Island Lighting I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2191,
+    "name": "Low Variance Measure",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "random points",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: random points, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2192,
+    "name": "Mixed Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Statistics",
+      "problem_setup_entities": [
+        "coin flips",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the requested variance/covariance quantity."
+    },
+    "schema_text": "Domain: Probability Theory and Statistics | Entities: coin flips, random variable(s), parameter n | Constraints: Trials are independent where specified. | Objective: Compute the requested variance/covariance quantity."
+  },
+  {
+    "problem_id": 2193,
+    "name": "Summed Dice I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "scores",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, scores, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2194,
+    "name": "Gamma Coding I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "scores",
+        "coded message length",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: scores, coded message length, random points, parameter n | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2195,
+    "name": "Music Enjoyer",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "users",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: users, parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2196,
+    "name": "Product Of 5",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "permutation",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, permutation, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2197,
+    "name": "Selection Inside",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: subset selection, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2198,
+    "name": "Removed Portion",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards",
+        "subset selection",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards, subset selection, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2199,
+    "name": "Transposition Trier I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "urn composition",
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: urn composition, random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2200,
+    "name": "Transposition Trier II",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains / Stopping Times)",
+      "problem_setup_entities": [
+        "urn composition",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains / Stopping Times) | Entities: urn composition, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2201,
+    "name": "Updated First Round",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Trials are independent where specified.",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variable(s), parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Trials are independent where specified.; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2202,
+    "name": "Autocorrelation of BM",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Trials are independent where specified.",
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: Brownian motion, random points, parameter n | Constraints: Trials are independent where specified.; Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2203,
+    "name": "Brownian Martingale I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "stochastic process",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths)."
+      ],
+      "target_objective": "Determine the optimizing value or most likely outcome under the model."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: Brownian motion, stochastic process, parameter n | Constraints: Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths). | Objective: Determine the optimizing value or most likely outcome under the model."
+  },
+  {
+    "problem_id": 2204,
+    "name": "Ito Variance I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: Brownian motion, parameter n | Constraints: Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2205,
+    "name": "Ito Variance II",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "stochastic process",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: Brownian motion, stochastic process, parameter n | Constraints: Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths). | Objective: Compute the Expected Value of the defined random variable."
+  },
+  {
+    "problem_id": 2206,
+    "name": "Brownian Hitting I",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Continuous-Time)",
+      "problem_setup_entities": [
+        "coin flips",
+        "Brownian motion",
+        "stochastic process",
+        "random points",
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time).",
+        "Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Stochastic Processes (Continuous-Time) | Entities: coin flips, Brownian motion, stochastic process, random points, parameter n | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time).; Process follows standard Brownian motion assumptions (independent stationary increments, continuous paths). | Objective: Compute the probability of the target event under the stated experiment."
+  }
+]

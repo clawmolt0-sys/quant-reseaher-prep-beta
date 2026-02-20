@@ -1,0 +1,1702 @@
+[
+  {
+    "problem_id": 2307,
+    "name": "Hours and Minutes IV",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Measurement",
+      "problem_setup_entities": [
+        "Geometric objects and dimensions",
+        "Spatial or angular relationships",
+        "Derived geometric quantities"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry assumptions and given dimensions are fixed"
+      ],
+      "target_objective": "Compute the required geometric measure (angle, length, area, or volume)"
+    },
+    "schema_text": "Domain: Geometry and Measurement | Entities: Geometric objects and dimensions, Spatial or angular relationships, Derived geometric quantities | Constraints: Euclidean geometry assumptions and given dimensions are fixed | Objective: Compute the required geometric measure (angle, length, area, or volume)"
+  },
+  {
+    "problem_id": 2308,
+    "name": "Cube Sides",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Measurement",
+      "problem_setup_entities": [
+        "Geometric objects and dimensions",
+        "Spatial or angular relationships",
+        "Derived geometric quantities"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry assumptions and given dimensions are fixed"
+      ],
+      "target_objective": "Compute the required geometric measure (angle, length, area, or volume)"
+    },
+    "schema_text": "Domain: Geometry and Measurement | Entities: Geometric objects and dimensions, Spatial or angular relationships, Derived geometric quantities | Constraints: Euclidean geometry assumptions and given dimensions are fixed | Objective: Compute the required geometric measure (angle, length, area, or volume)"
+  },
+  {
+    "problem_id": 2309,
+    "name": "Proportional Candles",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2310,
+    "name": "Niagara Falls",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2311,
+    "name": "Mislabeled Bins",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Logical Reasoning",
+      "problem_setup_entities": [
+        "Agents, actions, and information states",
+        "Deterministic logical constraints",
+        "Outcome conditions"
+      ],
+      "invariant_constraints": [
+        "All stated truth/label/game constraints hold simultaneously"
+      ],
+      "target_objective": "Derive the logically valid strategy or deduced outcome"
+    },
+    "schema_text": "Domain: Game Theory and Logical Reasoning | Entities: Agents, actions, and information states, Deterministic logical constraints, Outcome conditions | Constraints: All stated truth/label/game constraints hold simultaneously | Objective: Derive the logically valid strategy or deduced outcome"
+  },
+  {
+    "problem_id": 2312,
+    "name": "RGBY Drag Race",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2313,
+    "name": "New Property",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2314,
+    "name": "Marathon Runner",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2315,
+    "name": "Data Structures Guessing Game",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2316,
+    "name": "Weighted Balls",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2317,
+    "name": "High-Yield Savings Account",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2318,
+    "name": "Volatile Stock",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2319,
+    "name": "Drizzy's Chocolate",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2320,
+    "name": "Indecisive Stock",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2321,
+    "name": "Petri Dish Bacteria I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2322,
+    "name": "Petri Dish Bacteria II",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2323,
+    "name": "Halloween Candy",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Logical Reasoning",
+      "problem_setup_entities": [
+        "Agents, actions, and information states",
+        "Deterministic logical constraints",
+        "Outcome conditions"
+      ],
+      "invariant_constraints": [
+        "All stated truth/label/game constraints hold simultaneously"
+      ],
+      "target_objective": "Derive the logically valid strategy or deduced outcome"
+    },
+    "schema_text": "Domain: Game Theory and Logical Reasoning | Entities: Agents, actions, and information states, Deterministic logical constraints, Outcome conditions | Constraints: All stated truth/label/game constraints hold simultaneously | Objective: Derive the logically valid strategy or deduced outcome"
+  },
+  {
+    "problem_id": 2324,
+    "name": "Maine Lobster",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2325,
+    "name": "Drying Fruit",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2326,
+    "name": "Alternating Sum",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2327,
+    "name": "Vowels and Consonants",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2328,
+    "name": "Light Bulb Switch",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2329,
+    "name": "Parent Age",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2330,
+    "name": "Recursive Root",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2331,
+    "name": "Missing Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2332,
+    "name": "Burger Flipper",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2333,
+    "name": "Sock Drawer",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2334,
+    "name": "Special Digits",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2335,
+    "name": "Leg at the Function",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2336,
+    "name": "Round Table",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2337,
+    "name": "Tricky Exponent",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2338,
+    "name": "Rewrite Sum",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2339,
+    "name": "Extra Rounds",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2340,
+    "name": "8 Revolver",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2341,
+    "name": "Networking Handshake",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2342,
+    "name": "Horse Racing Position",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2343,
+    "name": "Ruler Length",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2344,
+    "name": "Old Journal",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2345,
+    "name": "VIP Room",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2346,
+    "name": "Lots of Change I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2347,
+    "name": "Mystery Die",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2348,
+    "name": "Powerful Root II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2349,
+    "name": "Sine Summation I",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2350,
+    "name": "Square Divisor",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2351,
+    "name": "Isprime() I",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2352,
+    "name": "isprime() II",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2353,
+    "name": "isprime() III",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2354,
+    "name": "Summing Up",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2355,
+    "name": "Exact Price",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2356,
+    "name": "Average Speed I",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2357,
+    "name": "Average Speed II",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2358,
+    "name": "Turtle Travels",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2359,
+    "name": "Filling Rates",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2360,
+    "name": "Product Combinations I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2361,
+    "name": "2D Collisions I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2362,
+    "name": "Power Washers",
+    "schema": {
+      "core_mathematical_domain": "Rates and Kinematics",
+      "problem_setup_entities": [
+        "Moving entities or flow processes",
+        "Rates/speeds and elapsed time",
+        "Relative motion relationships"
+      ],
+      "invariant_constraints": [
+        "Rates are constant unless explicitly varied in the prompt"
+      ],
+      "target_objective": "Solve for the requested time, distance, or meeting/overlap condition"
+    },
+    "schema_text": "Domain: Rates and Kinematics | Entities: Moving entities or flow processes, Rates/speeds and elapsed time, Relative motion relationships | Constraints: Rates are constant unless explicitly varied in the prompt | Objective: Solve for the requested time, distance, or meeting/overlap condition"
+  },
+  {
+    "problem_id": 2363,
+    "name": "Weight Combinations I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2364,
+    "name": "Weighted Geometric Sum",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2365,
+    "name": "Snake Catchers",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2366,
+    "name": "Landlord Tip",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2367,
+    "name": "Duplicate Birth Month",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2368,
+    "name": "Exponent Sum",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2369,
+    "name": "Weight Combinations II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2370,
+    "name": "Minecraft Split",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2371,
+    "name": "Grid Squares",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2372,
+    "name": "Deconstructed Cube",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Measurement",
+      "problem_setup_entities": [
+        "Geometric objects and dimensions",
+        "Spatial or angular relationships",
+        "Derived geometric quantities"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry assumptions and given dimensions are fixed"
+      ],
+      "target_objective": "Compute the required geometric measure (angle, length, area, or volume)"
+    },
+    "schema_text": "Domain: Geometry and Measurement | Entities: Geometric objects and dimensions, Spatial or angular relationships, Derived geometric quantities | Constraints: Euclidean geometry assumptions and given dimensions are fixed | Objective: Compute the required geometric measure (angle, length, area, or volume)"
+  },
+  {
+    "problem_id": 2373,
+    "name": "Multiplied Digits I",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Logical Reasoning",
+      "problem_setup_entities": [
+        "Agents, actions, and information states",
+        "Deterministic logical constraints",
+        "Outcome conditions"
+      ],
+      "invariant_constraints": [
+        "All stated truth/label/game constraints hold simultaneously"
+      ],
+      "target_objective": "Derive the logically valid strategy or deduced outcome"
+    },
+    "schema_text": "Domain: Game Theory and Logical Reasoning | Entities: Agents, actions, and information states, Deterministic logical constraints, Outcome conditions | Constraints: All stated truth/label/game constraints hold simultaneously | Objective: Derive the logically valid strategy or deduced outcome"
+  },
+  {
+    "problem_id": 2374,
+    "name": "Multiplied Digits II",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Logical Reasoning",
+      "problem_setup_entities": [
+        "Agents, actions, and information states",
+        "Deterministic logical constraints",
+        "Outcome conditions"
+      ],
+      "invariant_constraints": [
+        "All stated truth/label/game constraints hold simultaneously"
+      ],
+      "target_objective": "Derive the logically valid strategy or deduced outcome"
+    },
+    "schema_text": "Domain: Game Theory and Logical Reasoning | Entities: Agents, actions, and information states, Deterministic logical constraints, Outcome conditions | Constraints: All stated truth/label/game constraints hold simultaneously | Objective: Derive the logically valid strategy or deduced outcome"
+  },
+  {
+    "problem_id": 2375,
+    "name": "Exponential Digits I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2376,
+    "name": "Counting Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2377,
+    "name": "Cube Traversal",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Measurement",
+      "problem_setup_entities": [
+        "Geometric objects and dimensions",
+        "Spatial or angular relationships",
+        "Derived geometric quantities"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry assumptions and given dimensions are fixed"
+      ],
+      "target_objective": "Compute the required geometric measure (angle, length, area, or volume)"
+    },
+    "schema_text": "Domain: Geometry and Measurement | Entities: Geometric objects and dimensions, Spatial or angular relationships, Derived geometric quantities | Constraints: Euclidean geometry assumptions and given dimensions are fixed | Objective: Compute the required geometric measure (angle, length, area, or volume)"
+  },
+  {
+    "problem_id": 2378,
+    "name": "Card Turnover",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2379,
+    "name": "Added Digits I",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2380,
+    "name": "Odd Divisor",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2381,
+    "name": "Cube Projection",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Measurement",
+      "problem_setup_entities": [
+        "Geometric objects and dimensions",
+        "Spatial or angular relationships",
+        "Derived geometric quantities"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry assumptions and given dimensions are fixed"
+      ],
+      "target_objective": "Compute the required geometric measure (angle, length, area, or volume)"
+    },
+    "schema_text": "Domain: Geometry and Measurement | Entities: Geometric objects and dimensions, Spatial or angular relationships, Derived geometric quantities | Constraints: Euclidean geometry assumptions and given dimensions are fixed | Objective: Compute the required geometric measure (angle, length, area, or volume)"
+  },
+  {
+    "problem_id": 2382,
+    "name": "Bladee Concert",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2383,
+    "name": "Chess Game I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2384,
+    "name": "Larger Number",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics and Logical Reasoning",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics and Logical Reasoning | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2385,
+    "name": "Walk the Plank",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2386,
+    "name": "Binomial Swap I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2387,
+    "name": "Factorial Zeroes",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Quantities and variables defined in the prompt",
+        "Deterministic or stochastic relationships",
+        "Target unknown quantity"
+      ],
+      "invariant_constraints": [
+        "Given numerical and logical conditions are treated as fixed inputs"
+      ],
+      "target_objective": "Derive or compute the required quantity"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Quantities and variables defined in the prompt, Deterministic or stochastic relationships, Target unknown quantity | Constraints: Given numerical and logical conditions are treated as fixed inputs | Objective: Derive or compute the required quantity"
+  },
+  {
+    "problem_id": 2388,
+    "name": "Boy Ratio",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2389,
+    "name": "Counting Factorial Zeros",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2390,
+    "name": "January 1, 2078",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Logical Reasoning",
+      "problem_setup_entities": [
+        "Agents, actions, and information states",
+        "Deterministic logical constraints",
+        "Outcome conditions"
+      ],
+      "invariant_constraints": [
+        "All stated truth/label/game constraints hold simultaneously"
+      ],
+      "target_objective": "Derive the logically valid strategy or deduced outcome"
+    },
+    "schema_text": "Domain: Game Theory and Logical Reasoning | Entities: Agents, actions, and information states, Deterministic logical constraints, Outcome conditions | Constraints: All stated truth/label/game constraints hold simultaneously | Objective: Derive the logically valid strategy or deduced outcome"
+  },
+  {
+    "problem_id": 2391,
+    "name": "Pirate Ship Cannons",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2392,
+    "name": "RPS Competition",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 2393,
+    "name": "Exactly More Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2394,
+    "name": "Split Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2395,
+    "name": "Grid Intersection",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2396,
+    "name": "Exponential and Uniform",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2397,
+    "name": "Rayleigh Root",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2398,
+    "name": "Trippy Zeta",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2399,
+    "name": "Uniform Central",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2400,
+    "name": "Strange Coin I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2401,
+    "name": "Evenly Double",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2402,
+    "name": "Strange Coin II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2403,
+    "name": "Last Value Two",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2404,
+    "name": "Kevin's Kids I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2405,
+    "name": "Kevin's Kids IV",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  },
+  {
+    "problem_id": 2406,
+    "name": "Wallet Bid I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random experiment",
+        "Sample space outcomes",
+        "Relevant random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying randomness follows the stated distributional assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, or an optimal stopping/decision quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random experiment, Sample space outcomes, Relevant random variables | Constraints: Underlying randomness follows the stated distributional assumptions | Objective: Compute probability, Expected Value, or an optimal stopping/decision quantity"
+  }
+]

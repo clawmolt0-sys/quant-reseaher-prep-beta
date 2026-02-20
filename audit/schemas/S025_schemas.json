@@ -1,0 +1,1770 @@
+[
+  {
+    "problem_id": 2407,
+    "name": "Wallet Bid II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2408,
+    "name": "Sides Before One",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2409,
+    "name": "Probability Function",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "success probability parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter, success probability parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2410,
+    "name": "House Prices II",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2411,
+    "name": "Increasing Regularization Parameter",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2412,
+    "name": "Ridge Bias-Variance",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: matrix entries or covariance matrices, sample size or count parameter | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2413,
+    "name": "Estimator Equality I",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter",
+        "normal random variables"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter, normal random variables | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2414,
+    "name": "Lasso Feature Transform",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2415,
+    "name": "Lasso Constraint Formulation",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2416,
+    "name": "Adjusted R2 and AIC I",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2417,
+    "name": "Required OLS Assumptions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2418,
+    "name": "Levene's Limitations I",
+    "schema": {
+      "core_mathematical_domain": "Probability Inequalities / Moments",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability Inequalities / Moments | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2419,
+    "name": "Common Point II",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2420,
+    "name": "Quantity Minimizer",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2421,
+    "name": "Dog Weight I",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2422,
+    "name": "Dog Weight II",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2423,
+    "name": "More Data?",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2424,
+    "name": "Detecting Multicollinearity",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2425,
+    "name": "Detecting Heteroscedasticity",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2426,
+    "name": "R-Squared Drawbacks",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2427,
+    "name": "One R-Squared",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2428,
+    "name": "Zero R-Squared",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2429,
+    "name": "Motivation of Adjusted R-Squared",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2430,
+    "name": "Limitations of One-Hot Encoding",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2431,
+    "name": "Known Weights I",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2432,
+    "name": "Lasso Equals OLS",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, random experiment outcomes, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2433,
+    "name": "McDonald's Weight I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2434,
+    "name": "Beverage Flavors",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2435,
+    "name": "Confidence Intervals I",
+    "schema": {
+      "core_mathematical_domain": "Frequentist Inference",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Frequentist Inference | Entities: matrix entries or covariance matrices, sample size or count parameter | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2436,
+    "name": "Mean Differences",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2437,
+    "name": "Prediction vs. Confidence I",
+    "schema": {
+      "core_mathematical_domain": "Frequentist Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Frequentist Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2438,
+    "name": "No Power",
+    "schema": {
+      "core_mathematical_domain": "Probability Inequalities / Moments",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability Inequalities / Moments | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2439,
+    "name": "FT Tests I",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2440,
+    "name": "FT Tests II",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2441,
+    "name": "Rejection Meaning",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2442,
+    "name": "Effects of Multicollinearity",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2443,
+    "name": "Multicollinearity Consequences",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2444,
+    "name": "Alternate Sample Variance I",
+    "schema": {
+      "core_mathematical_domain": "Probability Inequalities / Moments",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability Inequalities / Moments | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2445,
+    "name": "Bernoulli MLE",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2446,
+    "name": "Exponential MLE",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2447,
+    "name": "Pareto MLE",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2448,
+    "name": "Normal MLE I",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter",
+        "normal random variables"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter, normal random variables | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2449,
+    "name": "Exponential Fisher Information",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2450,
+    "name": "Beta Fisher Information I",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2451,
+    "name": "Beta Fisher Information II",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2452,
+    "name": "Adjusted R2 and AIC II",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor matrix/features",
+        "regression coefficients",
+        "residual errors",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Model form is linear in coefficients",
+        "Estimation via OLS or regularized least squares as stated"
+      ],
+      "target_objective": "Identify correct property, assumption, diagnostic, or estimator behavior"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor matrix/features, regression coefficients, residual errors, sample size or count parameter | Constraints: Model form is linear in coefficients, Estimation via OLS or regularized least squares as stated | Objective: Identify correct property, assumption, diagnostic, or estimator behavior"
+  },
+  {
+    "problem_id": 2453,
+    "name": "Bounding Zero",
+    "schema": {
+      "core_mathematical_domain": "Probability Inequalities / Moments",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "success probability parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability Inequalities / Moments | Entities: random variables or model parameters, sample size or count parameter, success probability parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2454,
+    "name": "Indicator Variance",
+    "schema": {
+      "core_mathematical_domain": "Probability Inequalities / Moments",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability Inequalities / Moments | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2455,
+    "name": "Rat Poison I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2456,
+    "name": "Rat Poison II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2457,
+    "name": "Rat Poison III",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2458,
+    "name": "Testing Eggs I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2459,
+    "name": "Testing Eggs II",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2460,
+    "name": "Doubly Even Heads I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2461,
+    "name": "Belle Delphine's Bath Water",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2462,
+    "name": "Cubic Ant V",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2463,
+    "name": "Distinct and Gamey",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2464,
+    "name": "Last Die Limit",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "success probability parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, success probability parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2465,
+    "name": "Triangular Selection",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter, uniformly distributed variables | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2466,
+    "name": "Rizz Party Deck",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2467,
+    "name": "Circularly Together",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter, uniformly distributed variables | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2468,
+    "name": "MGF Moment I",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions / Moments",
+      "problem_setup_entities": [
+        "moment generating function",
+        "random variable moments",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "MGF exists on stated neighborhood around zero"
+      ],
+      "target_objective": "Derive closed-form moments from MGF"
+    },
+    "schema_text": "Domain: Probability Distributions / Moments | Entities: moment generating function, random variable moments, sample size or count parameter | Constraints: MGF exists on stated neighborhood around zero | Objective: Derive closed-form moments from MGF"
+  },
+  {
+    "problem_id": 2469,
+    "name": "Winner Lottery However, Winner. Number People",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "Poisson count variable"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, Poisson count variable | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2470,
+    "name": "Zero Square",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: matrix entries or covariance matrices, sample size or count parameter | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2471,
+    "name": "Shooters Shoot",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2472,
+    "name": "First Odd",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2473,
+    "name": "Choccy Break",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2474,
+    "name": "Multiplicatively Decreasing I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2475,
+    "name": "Deterministic Poker",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2476,
+    "name": "Shuffling In BIG 2024",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2477,
+    "name": "Pareto Fisher Information",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2478,
+    "name": "Freedom Day",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Finance / Random Growth Process",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Stochastic Finance / Random Growth Process | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2479,
+    "name": "Non-Identically Uniform",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2480,
+    "name": "Partial Die Equality",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2481,
+    "name": "Choose Your Order",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2482,
+    "name": "Queen, King, Ace I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2483,
+    "name": "Number of Bernoulli",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family"
+      ],
+      "target_objective": "Maximize likelihood or compute Fisher Information"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, sample size or count parameter, uniformly distributed variables | Constraints: Likelihood is built from stated parametric family | Objective: Maximize likelihood or compute Fisher Information"
+  },
+  {
+    "problem_id": 2484,
+    "name": "More Kings I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2485,
+    "name": "Tokyo Trains I",
+    "schema": {
+      "core_mathematical_domain": "Parametric Inference",
+      "problem_setup_entities": [
+        "IID sample",
+        "distribution parameter",
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Likelihood is built from stated parametric family",
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Parametric Inference | Entities: IID sample, distribution parameter, random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Likelihood is built from stated parametric family, Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2486,
+    "name": "Rise and Fall",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Finance / Random Growth Process",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Stochastic Finance / Random Growth Process | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2487,
+    "name": "Radial Measure",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2488,
+    "name": "Center Square",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2489,
+    "name": "Sticky Ants",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2490,
+    "name": "Coin Occurrences",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2491,
+    "name": "Additive Dice I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2492,
+    "name": "Kai Cenat's Investment",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2493,
+    "name": "Last Correlation",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: matrix entries or covariance matrices, sample size or count parameter | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2494,
+    "name": "Connected Square",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2495,
+    "name": "Circular Mismatch I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2496,
+    "name": "Andrew Tate's Elevator I",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: matrix entries or covariance matrices, sample size or count parameter, uniformly distributed variables | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2497,
+    "name": "Repeatedly Smaller Uniforms I",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter, uniformly distributed variables | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2498,
+    "name": "Keep or Play I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2499,
+    "name": "First Head Consecutively",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2500,
+    "name": "Biased Poker Tournament I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, uniformly distributed variables | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2501,
+    "name": "EMIN Uniform",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter",
+        "uniformly distributed variables"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter, uniformly distributed variables | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2502,
+    "name": "Suppose You Have A Perfectly Round Disk",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "random variables or model parameters",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Use only the assumptions explicitly given in the problem"
+      ],
+      "target_objective": "Compute requested quantity"
+    },
+    "schema_text": "Domain: Probability | Entities: random variables or model parameters, sample size or count parameter | Constraints: Use only the assumptions explicitly given in the problem | Objective: Compute requested quantity"
+  },
+  {
+    "problem_id": 2503,
+    "name": "You Have Two Covariance Matrices a and B",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "matrix entries or covariance matrices",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility)"
+      ],
+      "target_objective": "Determine structural possibility, bound, or exact matrix-related value"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: matrix entries or covariance matrices, sample size or count parameter | Constraints: Respect algebraic constraints (symmetry, PSD, nilpotency, or correlation feasibility) | Objective: Determine structural possibility, bound, or exact matrix-related value"
+  },
+  {
+    "problem_id": 2504,
+    "name": "Suppose You Have 100 Gb Of Data",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / External Memory",
+      "problem_setup_entities": [
+        "dataset larger than RAM",
+        "disk storage",
+        "in-memory buffer",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Memory limit is binding; data cannot be fully loaded at once"
+      ],
+      "target_objective": "Design I/O-efficient sorting procedure"
+    },
+    "schema_text": "Domain: Algorithms / External Memory | Entities: dataset larger than RAM, disk storage, in-memory buffer, sample size or count parameter | Constraints: Memory limit is binding; data cannot be fully loaded at once | Objective: Design I/O-efficient sorting procedure"
+  },
+  {
+    "problem_id": 2505,
+    "name": "Marbles, Blue, Red. Distribute Them Drawers,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  },
+  {
+    "problem_id": 2506,
+    "name": "Expected number of flips until a realization occurs",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "success probability parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, success probability parameter | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, Expected Value, stopping-time expectation, or optimal strategy"
+  }
+]

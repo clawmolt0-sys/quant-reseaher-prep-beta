@@ -1,0 +1,1544 @@
+[
+  {
+    "problem_id": 2007,
+    "name": "Poker Pair",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Card/deck sample space"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability that a randomly drawn $5$ card poker hand from a standard deck is a pair"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Card/deck sample space | Constraints: Exact combinatorial event conditions | Objective: Find the probability that a randomly drawn $5$ card poker hand from a standard deck is a pair"
+  },
+  {
+    "problem_id": 2008,
+    "name": "Arithmetic Arrangement",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "How many valid arithmetic expressions using only $*$ and $+$ are there that include the values $123456789$ exactly once in some order"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Exact combinatorial event conditions | Objective: How many valid arithmetic expressions using only $*$ and $+$ are there that include the values $123456789$ exactly once in some order"
+  },
+  {
+    "problem_id": 2009,
+    "name": "Office Hours",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability that the meeting occurs"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random arrival or ordering of people | Constraints: Uniform randomization, Stopping/threshold rule is binding | Objective: Find the probability that the meeting occurs"
+  },
+  {
+    "problem_id": 2010,
+    "name": "Marble Transfer I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that the marble drawn is blue when $r_1 = 4, b_1 = 3, r_2 = 5,$ and $b_2 = 3$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition | Constraints: Uniform randomization | Objective: Find the probability that the marble drawn is blue when $r_1 = 4, b_1 = 3, r_2 = 5,$ and $b_2 = 3$"
+  },
+  {
+    "problem_id": 2011,
+    "name": "Currency Collector",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Draws are without replacement",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the expected amount of money that you grabbed with $r = 9, c_i = i, k = 9,$ and $n_i = 10-i$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Sampling without replacement | Constraints: Uniform randomization, Draws are without replacement, Exact combinatorial event conditions | Objective: Find the expected amount of money that you grabbed with $r = 9, c_i = i, k = 9,$ and $n_i = 10-i$"
+  },
+  {
+    "problem_id": 2012,
+    "name": "Double 5",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Decision Theory",
+      "problem_setup_entities": [
+        "Dice outcomes",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Non-consecutive occurrence allowed",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability that Albert stops rolling due to seeing a $4$ and a $6$"
+    },
+    "schema_text": "Domain: Optimal Stopping and Decision Theory | Entities: Dice outcomes, Stopping condition | Constraints: Fair/equiprobable primitive outcomes, Non-consecutive occurrence allowed, Stopping/threshold rule is binding | Objective: Find the probability that Albert stops rolling due to seeing a $4$ and a $6$"
+  },
+  {
+    "problem_id": 2013,
+    "name": "Murder Mystery",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "what is the probability that the killer actually had a red car with $r=  13/20$ and $a = 3/5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: what is the probability that the killer actually had a red car with $r=  13/20$ and $a = 3/5$"
+  },
+  {
+    "problem_id": 2014,
+    "name": "Three of a Kind",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Card/deck sample space"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "find the probability that a random $5$ card hand drawn from a standard deck of cards is a three-of-a-kind"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Card/deck sample space | Constraints: Exact combinatorial event conditions | Objective: find the probability that a random $5$ card hand drawn from a standard deck of cards is a three-of-a-kind"
+  },
+  {
+    "problem_id": 2015,
+    "name": "Binary Strings",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the number of binary strings of length $n$ that either begin with $1$ or end with $00$"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the number of binary strings of length $n$ that either begin with $1$ or end with $00$"
+  },
+  {
+    "problem_id": 2016,
+    "name": "Poisson PGF",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the PGF $p_X(z)$ of $X \\sim \\poisson{\\lambda}$ with $\\lambda = 2$ and report the value of $p_X(1/2)$ to the nearest thousandth"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the PGF $p_X(z)$ of $X \\sim \\poisson{\\lambda}$ with $\\lambda = 2$ and report the value of $p_X(1/2)$ to the nearest thousandth"
+  },
+  {
+    "problem_id": 2017,
+    "name": "Binomial PGF",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the PGF $p_X(z)$ of $X \\sim \\text{Bin}(n, p)$ with $n = 5, p = 1/2$, and report the value of $p_X(1/2)$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition | Constraints: Operate under stated sample-space rules | Objective: Find the PGF $p_X(z)$ of $X \\sim \\text{Bin}(n, p)$ with $n = 5, p = 1/2$, and report the value of $p_X(1/2)$"
+  },
+  {
+    "problem_id": 2018,
+    "name": "Quick Blue",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition",
+        "Sampling without replacement",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability that it takes more than $5$ draws to draw out the last blue marble"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition, Sampling without replacement, Stopping condition | Constraints: Draws are without replacement, Stopping/threshold rule is binding | Objective: Find the probability that it takes more than $5$ draws to draw out the last blue marble"
+  },
+  {
+    "problem_id": 2019,
+    "name": "Multicoin I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that player $1$ wins when $n = 5$ and $p = 1/3$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials, Random arrival or ordering of people | Constraints: Operate under stated sample-space rules | Objective: Find the probability that player $1$ wins when $n = 5$ and $p = 1/3$"
+  },
+  {
+    "problem_id": 2020,
+    "name": "Multicoin II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials",
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that player $k$ wins"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials, Random arrival or ordering of people | Constraints: Operate under stated sample-space rules | Objective: Find the probability that player $k$ wins"
+  },
+  {
+    "problem_id": 2021,
+    "name": "Big 6",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "Find the probability that the sum is $18$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: Find the probability that the sum is $18$"
+  },
+  {
+    "problem_id": 2022,
+    "name": "Sumdard Deviation",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Card/deck sample space"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the standard deviation of the sum when $k = 4$ and $n = 7$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Card/deck sample space | Constraints: Operate under stated sample-space rules | Objective: Find the standard deviation of the sum when $k = 4$ and $n = 7$"
+  },
+  {
+    "problem_id": 2023,
+    "name": "Conditional RNG I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find $E[V]$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find $E[V]$"
+  },
+  {
+    "problem_id": 2024,
+    "name": "One Correlation I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find $\\text{Corr}(X+Y, X-Y)$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find $\\text{Corr}(X+Y, X-Y)$"
+  },
+  {
+    "problem_id": 2025,
+    "name": "Valid Upper Bound",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "find an upper bound on $\\mathbb{P}[|X-Y| \\geq \\sigma]$ when $\\sigma^2 = 4$ and $\\rho = 3/4$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: find an upper bound on $\\mathbb{P}[|X-Y| \\geq \\sigma]$ when $\\sigma^2 = 4$ and $\\rho = 3/4$"
+  },
+  {
+    "problem_id": 2026,
+    "name": "Product Limit",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "Compute the requested quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Random variables from statement | Constraints: Independence where stated | Objective: Compute the requested quantity"
+  },
+  {
+    "problem_id": 2027,
+    "name": "Equal Unequal Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "find the probability that they all show the same value"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: find the probability that they all show the same value"
+  },
+  {
+    "problem_id": 2028,
+    "name": "Bad Dealer",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Card/deck sample space"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "give up and flip over the first card at the top of the deck from the remaining $50-$card deck"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Card/deck sample space | Constraints: Operate under stated sample-space rules | Objective: give up and flip over the first card at the top of the deck from the remaining $50-$card deck"
+  },
+  {
+    "problem_id": 2029,
+    "name": "Fair and Unfair Die",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "Find the probability that the sum of their upfaces is even when $p_i = \\dfrac{i}{21}$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: Find the probability that the sum of their upfaces is even when $p_i = \\dfrac{i}{21}$"
+  },
+  {
+    "problem_id": 2030,
+    "name": "Floor Equality",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that $\\lfloor X+Y \\rfloor = \\lfloor X \\rfloor + \\lfloor Y \\rfloor$ when $n = 100$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the probability that $\\lfloor X+Y \\rfloor = \\lfloor X \\rfloor + \\lfloor Y \\rfloor$ when $n = 100$"
+  },
+  {
+    "problem_id": 2031,
+    "name": "Tricky Die",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Decision Theory",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the value of $x$ that minimizes the probability of obtaining a sum of $7$ when rolling the die twice"
+    },
+    "schema_text": "Domain: Optimal Stopping and Decision Theory | Entities: Dice outcomes | Constraints: Operate under stated sample-space rules | Objective: Find the value of $x$ that minimizes the probability of obtaining a sum of $7$ when rolling the die twice"
+  },
+  {
+    "problem_id": 2032,
+    "name": "Conditional Bivariate",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Given that $M = \\mu$ and $S = \\sigma$, $(X,Y) \\sim \\text{BVN}(\\mu,\\mu,\\sigma^2,\\sigma^2,\\rho)$, where $|\\rho| \\leq 1$ is fixed"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Given that $M = \\mu$ and $S = \\sigma$, $(X,Y) \\sim \\text{BVN}(\\mu,\\mu,\\sigma^2,\\sigma^2,\\rho)$, where $|\\rho| \\leq 1$ is fixed"
+  },
+  {
+    "problem_id": 2033,
+    "name": "Sniper",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "how many distinct orders can the sniper break all the targets"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Exact combinatorial event conditions | Objective: how many distinct orders can the sniper break all the targets"
+  },
+  {
+    "problem_id": 2034,
+    "name": "Uniform Variance",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find $\\text{Var}(X)$ when $a = 0$ and $b = 1$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find $\\text{Var}(X)$ when $a = 0$ and $b = 1$"
+  },
+  {
+    "problem_id": 2035,
+    "name": "Cookie Cruncher",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "find the probability that Dan finishes eating the cookie in the next minute"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: find the probability that Dan finishes eating the cookie in the next minute"
+  },
+  {
+    "problem_id": 2036,
+    "name": "Non-Decreasing Numbers",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "How many non-decreasing $n$ digit strings exist when $n = 8$"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: How many non-decreasing $n$ digit strings exist when $n = 8$"
+  },
+  {
+    "problem_id": 2037,
+    "name": "Colorful Run I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Urn/bin color composition",
+        "Sampling without replacement",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the expected amount of runs in your sequence when $n = 100$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Urn/bin color composition, Sampling without replacement, Stopping condition | Constraints: Draws are without replacement, Stopping/threshold rule is binding | Objective: Find the expected amount of runs in your sequence when $n = 100$"
+  },
+  {
+    "problem_id": 2038,
+    "name": "Multiplicative Exponential",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find $P(Y > kX)$ when $\\lambda = 3$ and $k = 5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find $P(Y > kX)$ when $\\lambda = 3$ and $k = 5$"
+  },
+  {
+    "problem_id": 2039,
+    "name": "Less Than Exponential",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "Find $\\mathbb{P}[X < Y]$ when $\\lambda_1 = 4$ and $\\lambda_2 = 6$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Independence where stated | Objective: Find $\\mathbb{P}[X < Y]$ when $\\lambda_1 = 4$ and $\\lambda_2 = 6$"
+  },
+  {
+    "problem_id": 2040,
+    "name": "Sum Diff Normal",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "Find $\\mathbb{P}[X + Y - 2Z \\geq 0]$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Independence where stated | Objective: Find $\\mathbb{P}[X + Y - 2Z \\geq 0]$"
+  },
+  {
+    "problem_id": 2041,
+    "name": "Die Diff",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "Compute $E[|X-Y|]$ when $n = 10$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: Compute $E[|X-Y|]$ when $n = 10$"
+  },
+  {
+    "problem_id": 2042,
+    "name": "Larger Value",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition",
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability that the larger of the two values is $1$ larger than the smaller of the two values when $n = 20$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition, Sampling without replacement | Constraints: Draws are without replacement, Exact combinatorial event conditions | Objective: Find the probability that the larger of the two values is $1$ larger than the smaller of the two values when $n = 20$"
+  },
+  {
+    "problem_id": 2043,
+    "name": "Sammythewhale I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Combinatorial configurations"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that Ben recreates the original phrase after rearrangement"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Combinatorial configurations | Constraints: Operate under stated sample-space rules | Objective: Find the probability that Ben recreates the original phrase after rearrangement"
+  },
+  {
+    "problem_id": 2044,
+    "name": "Hat Matcher I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find $p(5)$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization, Exact combinatorial event conditions | Objective: Find $p(5)$"
+  },
+  {
+    "problem_id": 2045,
+    "name": "Hat Matcher II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find $\\displaystyle \\lim_{n \\rightarrow \\infty }p(n)$ to the nearest thousandth"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization, Exact combinatorial event conditions | Objective: Find $\\displaystyle \\lim_{n \\rightarrow \\infty }p(n)$ to the nearest thousandth"
+  },
+  {
+    "problem_id": 2046,
+    "name": "Largest Selector",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition",
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Draws are without replacement"
+      ],
+      "target_objective": "Compute the probability that the largest selected number is $1 \\leq m \\neq n$ when $n = 10, r = 3,$ and $m=7$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition, Sampling without replacement | Constraints: Uniform randomization, Draws are without replacement | Objective: Compute the probability that the largest selected number is $1 \\leq m \\neq n$ when $n = 10, r = 3,$ and $m=7$"
+  },
+  {
+    "problem_id": 2047,
+    "name": "Prime Subset",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Independence where stated"
+      ],
+      "target_objective": "Find the number of pairs of subsets $A, B \\subseteq \\Omega$ such that the events $\\{\\omega \\in A\\}$ and $\\{\\omega \\in B\\}$ are independent events"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Uniform randomization, Independence where stated | Objective: Find the number of pairs of subsets $A, B \\subseteq \\Omega$ such that the events $\\{\\omega \\in A\\}$ and $\\{\\omega \\in B\\}$ are independent events"
+  },
+  {
+    "problem_id": 2048,
+    "name": "Random Exam",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "given question"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random arrival or ordering of people | Constraints: Uniform randomization, Exact combinatorial event conditions | Objective: given question"
+  },
+  {
+    "problem_id": 2049,
+    "name": "Opposite Parity Heads I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Given that the first and last flip are of opposite parity, compute the expected number of heads obtained when $p = 3/4$ and $n = 10$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Coin flips / Bernoulli trials | Constraints: Operate under stated sample-space rules | Objective: Given that the first and last flip are of opposite parity, compute the expected number of heads obtained when $p = 3/4$ and $n = 10$"
+  },
+  {
+    "problem_id": 2050,
+    "name": "Opposite Parity Heads II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute the requested quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Coin flips / Bernoulli trials | Constraints: Operate under stated sample-space rules | Objective: Compute the requested quantity"
+  },
+  {
+    "problem_id": 2051,
+    "name": "Prime Picker",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "What is the fair value of this game"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization, Fair/equiprobable primitive outcomes | Objective: What is the fair value of this game"
+  },
+  {
+    "problem_id": 2052,
+    "name": "Factorial Poisson",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute $\\mathbb{E}[X"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute $\\mathbb{E}[X"
+  },
+  {
+    "problem_id": 2053,
+    "name": "Miami Hurricanes",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that the sign reads MIAMI again"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the probability that the sign reads MIAMI again"
+  },
+  {
+    "problem_id": 2054,
+    "name": "Ordered Uniforms I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute $E[M_n]$ when $n = 9, a = 5,$ and $b = 15$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute $E[M_n]$ when $n = 9, a = 5,$ and $b = 15$"
+  },
+  {
+    "problem_id": 2055,
+    "name": "Ordered Uniforms II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute $E[O_i]$ when $n = 9, i = 4, a = 5,$ and $b = 15$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute $E[O_i]$ when $n = 9, i = 4, a = 5,$ and $b = 15$"
+  },
+  {
+    "problem_id": 2056,
+    "name": "Auctioneer I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "How many bidders should Esubi recruit to maximize her expected profit when $a = 200, b = 1800,$ and $p = 4$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Random arrival or ordering of people | Constraints: Operate under stated sample-space rules | Objective: How many bidders should Esubi recruit to maximize her expected profit when $a = 200, b = 1800,$ and $p = 4$"
+  },
+  {
+    "problem_id": 2057,
+    "name": "Auctioneer II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "How many bidders should Esubi recruit to maximize her expected profit when $a = 200, b = 1800, i = 4$ and $p = 4$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Random arrival or ordering of people | Constraints: Stopping/threshold rule is binding | Objective: How many bidders should Esubi recruit to maximize her expected profit when $a = 200, b = 1800, i = 4$ and $p = 4$"
+  },
+  {
+    "problem_id": 2058,
+    "name": "Rainbow Ordering",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Combinatorial configurations"
+      ],
+      "invariant_constraints": [
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability that $ROYGBIV$ and generated permutation are equal up to rotation"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Combinatorial configurations | Constraints: Stopping/threshold rule is binding | Objective: Find the probability that $ROYGBIV$ and generated permutation are equal up to rotation"
+  },
+  {
+    "problem_id": 2059,
+    "name": "Equiside",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that all $n$ flips show the same side when $p = 1/3$ and $n = 5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials | Constraints: Operate under stated sample-space rules | Objective: Find the probability that all $n$ flips show the same side when $p = 1/3$ and $n = 5$"
+  },
+  {
+    "problem_id": 2060,
+    "name": "Prime Roll",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability that exactly $0 \\leq k \\leq n$ prime integers are rolled when $k = 4$ and $n = 8$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes, Exact combinatorial event conditions | Objective: Find the probability that exactly $0 \\leq k \\leq n$ prime integers are rolled when $k = 4$ and $n = 8$"
+  },
+  {
+    "problem_id": 2061,
+    "name": "Acceptance-Rejection Sampling",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Geometric random points"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the value of $h$ that minimizes the expected number of draws that need to be performed to obtain a valid sample for $X \\sim \\bet{4}{2}$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Geometric random points | Constraints: Uniform randomization | Objective: Find the value of $h$ that minimizes the expected number of draws that need to be performed to obtain a valid sample for $X \\sim \\bet{4}{2}$"
+  },
+  {
+    "problem_id": 2062,
+    "name": "Sequential Ace",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Card/deck sample space",
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement"
+      ],
+      "target_objective": "Find the expected number of cards Scott needs to turn over to observe the third ace"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Card/deck sample space, Sampling without replacement | Constraints: Draws are without replacement | Objective: Find the expected number of cards Scott needs to turn over to observe the third ace"
+  },
+  {
+    "problem_id": 2063,
+    "name": "Socky Drawer",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability that the third day Miguel takes out socks is the first day he obtains a matching pair when $n = 6$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Sampling without replacement | Constraints: Draws are without replacement, Exact combinatorial event conditions | Objective: Find the probability that the third day Miguel takes out socks is the first day he obtains a matching pair when $n = 6$"
+  },
+  {
+    "problem_id": 2064,
+    "name": "Point Walker",
+    "schema": {
+      "core_mathematical_domain": "Markov Chains and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that the walker hits position $0$ before position $n > k$"
+    },
+    "schema_text": "Domain: Markov Chains and Stochastic Processes | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find the probability that the walker hits position $0$ before position $n > k$"
+  },
+  {
+    "problem_id": 2065,
+    "name": "Driving the Boat",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "find the probability that a boat passes by in the next $m$ minutes, where $m \\mid 60$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: find the probability that a boat passes by in the next $m$ minutes, where $m \\mid 60$"
+  },
+  {
+    "problem_id": 2066,
+    "name": "Point Picker I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that Andy and Barry select the same subset when $r = 4$ and $n = 8$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find the probability that Andy and Barry select the same subset when $r = 4$ and $n = 8$"
+  },
+  {
+    "problem_id": 2067,
+    "name": "Too Much Match I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Dice outcomes",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "find the maximum value of $q$ such that the game has non-negative expected payout when $p = 120$ and $n = 7$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Dice outcomes, Stopping condition | Constraints: Fair/equiprobable primitive outcomes, Stopping/threshold rule is binding | Objective: find the maximum value of $q$ such that the game has non-negative expected payout when $p = 120$ and $n = 7$"
+  },
+  {
+    "problem_id": 2068,
+    "name": "Too Much Match II",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Dice outcomes",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "find the maximum value of $q$ such that the game has non-negative expected payout when $p = 100, n = 10, |A| = 25,$ and $|B| = 50$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Dice outcomes, Stopping condition | Constraints: Fair/equiprobable primitive outcomes, Stopping/threshold rule is binding | Objective: find the maximum value of $q$ such that the game has non-negative expected payout when $p = 100, n = 10, |A| = 25,$ and $|B| = 50$"
+  },
+  {
+    "problem_id": 2069,
+    "name": "Correlation Shift I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find $\\corr{U}{V}$ when $a = b = 2, c = d = 3,$ and $\\rho = 0"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find $\\corr{U}{V}$ when $a = b = 2, c = d = 3,$ and $\\rho = 0"
+  },
+  {
+    "problem_id": 2070,
+    "name": "Correlation Shift II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find $\\text{Corr}(U, V)$ when $a = b = -2, c = d = 3,$ and $\\rho = 0"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find $\\text{Corr}(U, V)$ when $a = b = -2, c = d = 3,$ and $\\rho = 0"
+  },
+  {
+    "problem_id": 2071,
+    "name": "Soccer Shop",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "Compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Independence where stated | Objective: Compute the requested quantity"
+  },
+  {
+    "problem_id": 2072,
+    "name": "Big Gamer",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "What is the minimum number of matches that Dan must play to have a probability of at least $0 < q < 1$ of winning at least one match"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Stopping condition | Constraints: Stopping/threshold rule is binding | Objective: What is the minimum number of matches that Dan must play to have a probability of at least $0 < q < 1$ of winning at least one match"
+  },
+  {
+    "problem_id": 2073,
+    "name": "Gamma Function",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute the requested quantity"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute the requested quantity"
+  },
+  {
+    "problem_id": 2074,
+    "name": "Couple Pairs I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the expected number of couples that are paired up together when $n = 8$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Random variables from statement | Constraints: Uniform randomization, Stopping/threshold rule is binding | Objective: Find the expected number of couples that are paired up together when $n = 8$"
+  },
+  {
+    "problem_id": 2075,
+    "name": "Polygonal Placement",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that there are no sides with more than $1$ star on them when $k = 3$ and $n = 5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Uniform randomization | Objective: Find the probability that there are no sides with more than $1$ star on them when $k = 3$ and $n = 5$"
+  },
+  {
+    "problem_id": 2076,
+    "name": "Urn Distributor",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Urn/bin color composition"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "How many distinct ways can Adam distribute them into $5$ distinct urns such that each urn has exactly $3$ balls"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Urn/bin color composition | Constraints: Exact combinatorial event conditions | Objective: How many distinct ways can Adam distribute them into $5$ distinct urns such that each urn has exactly $3$ balls"
+  },
+  {
+    "problem_id": 2077,
+    "name": "Absolute Value Normal I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute $E[|X|]$ when $\\sigma^2 = 2\\pi$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute $E[|X|]$ when $\\sigma^2 = 2\\pi$"
+  },
+  {
+    "problem_id": 2078,
+    "name": "Mean Absolute Normal",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "Compute $E[X_n]$ when $n = 8$ and $\\sigma_i^2 = i$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Independence where stated | Objective: Compute $E[X_n]$ when $n = 8$ and $\\sigma_i^2 = i$"
+  },
+  {
+    "problem_id": 2079,
+    "name": "Performance?",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Given that the student got an A on the exam, find the probability they showed up on-time when $p = 0"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random arrival or ordering of people | Constraints: Operate under stated sample-space rules | Objective: Given that the student got an A on the exam, find the probability they showed up on-time when $p = 0"
+  },
+  {
+    "problem_id": 2080,
+    "name": "Balls Dropped!",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Urn/bin color composition"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Compute $E[M]$ when $n = 10$ and $r = 8$ to the nearest thousandth"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Urn/bin color composition | Constraints: Uniform randomization, Exact combinatorial event conditions | Objective: Compute $E[M]$ when $n = 10$ and $r = 8$ to the nearest thousandth"
+  },
+  {
+    "problem_id": 2081,
+    "name": "Circly Couple",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the expected number of couples that sit adjacent to each other when $n = 10$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find the expected number of couples that sit adjacent to each other when $n = 10$"
+  },
+  {
+    "problem_id": 2082,
+    "name": "Prize Finder I",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Urn/bin color composition",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "find the prize"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Urn/bin color composition, Stopping condition | Constraints: Uniform randomization, Stopping/threshold rule is binding | Objective: find the prize"
+  },
+  {
+    "problem_id": 2083,
+    "name": "Triangular Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Geometric random points"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute the probability that a triangle whose sides are of lengths $X,Y,$ and $Z$ can be formed"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Geometric random points | Constraints: Operate under stated sample-space rules | Objective: Compute the probability that a triangle whose sides are of lengths $X,Y,$ and $Z$ can be formed"
+  },
+  {
+    "problem_id": 2084,
+    "name": "Subtract 1 I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "Find the probability that the result is even when $n = 12$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: Find the probability that the result is even when $n = 12$"
+  },
+  {
+    "problem_id": 2085,
+    "name": "Subtract 1 II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes"
+      ],
+      "target_objective": "Find the probability that the result is even when $n = 11$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes | Constraints: Fair/equiprobable primitive outcomes | Objective: Find the probability that the result is even when $n = 11$"
+  },
+  {
+    "problem_id": 2086,
+    "name": "Prime Sum I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that the sum all of $k$ integers is even when $n = 10$ and $k = 4$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find the probability that the sum all of $k$ integers is even when $n = 10$ and $k = 4$"
+  },
+  {
+    "problem_id": 2087,
+    "name": "Prime Sum II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that the sum all of $k$ integers is even when $n = 10$ and $k = 5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: Find the probability that the sum all of $k$ integers is even when $n = 10$ and $k = 5$"
+  },
+  {
+    "problem_id": 2088,
+    "name": "Below Diagonal",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Decision Theory",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the probability that the bug ends up crashing into the square on a vertical side"
+    },
+    "schema_text": "Domain: Optimal Stopping and Decision Theory | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the probability that the bug ends up crashing into the square on a vertical side"
+  },
+  {
+    "problem_id": 2089,
+    "name": "Set Combo I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "How many subsets of $[n] = \\{1,2,\\dots, n\\}$ contain exactly one of the elements in $\\{1,2,\\dots, k\\}$ when $n = 8$ and $k = 3$"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Exact combinatorial event conditions | Objective: How many subsets of $[n] = \\{1,2,\\dots, n\\}$ contain exactly one of the elements in $\\{1,2,\\dots, k\\}$ when $n = 8$ and $k = 3$"
+  },
+  {
+    "problem_id": 2090,
+    "name": "Set Combo II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "How many subsets of $[n] = \\{1,2,\\dots, n\\}$ contain exactly one of the elements in $\\{1,2,\\dots, k\\}$ and only contains odd integers when $n = 8$ and $k = 3$"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Exact combinatorial event conditions | Objective: How many subsets of $[n] = \\{1,2,\\dots, n\\}$ contain exactly one of the elements in $\\{1,2,\\dots, k\\}$ and only contains odd integers when $n = 8$ and $k = 3$"
+  },
+  {
+    "problem_id": 2091,
+    "name": "Equal Ends",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability that Amber is the winner when $n = 10$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes, Stopping condition | Constraints: Fair/equiprobable primitive outcomes, Stopping/threshold rule is binding | Objective: Find the probability that Amber is the winner when $n = 10$"
+  },
+  {
+    "problem_id": 2092,
+    "name": "Monty Hall I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "given the option to switch your door"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Uniform randomization | Objective: given the option to switch your door"
+  },
+  {
+    "problem_id": 2093,
+    "name": "Consecutive Heads I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability of obtaining exactly $3$ heads consecutively"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials | Constraints: Fair/equiprobable primitive outcomes, Exact combinatorial event conditions | Objective: Find the probability of obtaining exactly $3$ heads consecutively"
+  },
+  {
+    "problem_id": 2094,
+    "name": "Consecutive Heads II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability of obtaining at least $3$ heads consecutively"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials | Constraints: Fair/equiprobable primitive outcomes, Stopping/threshold rule is binding | Objective: Find the probability of obtaining at least $3$ heads consecutively"
+  },
+  {
+    "problem_id": 2095,
+    "name": "Consecutive Heads III",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability of obtaining exactly $3$ heads consecutively"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Coin flips / Bernoulli trials | Constraints: Fair/equiprobable primitive outcomes, Exact combinatorial event conditions | Objective: Find the probability of obtaining exactly $3$ heads consecutively"
+  },
+  {
+    "problem_id": 2096,
+    "name": "Room Divider",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Exact combinatorial event conditions"
+      ],
+      "target_objective": "Find the probability that each group consists of one special person when $n = 10, r = 3, n_1 = 2, n_2 = 3,$ and $n_3 = 5$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random arrival or ordering of people | Constraints: Exact combinatorial event conditions | Objective: Find the probability that each group consists of one special person when $n = 10, r = 3, n_1 = 2, n_2 = 3,$ and $n_3 = 5$"
+  },
+  {
+    "problem_id": 2097,
+    "name": "Maxima Range",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "compute $P(b < M_n \\leq c)$ when $n = 4, a = 5,$ and $(b,c] = (2,4]$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: compute $P(b < M_n \\leq c)$ when $n = 4, a = 5,$ and $(b,c] = (2,4]$"
+  },
+  {
+    "problem_id": 2098,
+    "name": "Missing Subset",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Sampling with replacement"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Compute the probability that none of the $r$ integers drawn are in $S$ when $n = 10, |S| = 4,$ and $r = 4$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Sampling with replacement | Constraints: Uniform randomization | Objective: Compute the probability that none of the $r$ integers drawn are in $S$ when $n = 10, |S| = 4,$ and $r = 4$"
+  },
+  {
+    "problem_id": 2099,
+    "name": "Primary Ten",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Card/deck sample space",
+        "Sampling without replacement"
+      ],
+      "invariant_constraints": [
+        "Draws are without replacement"
+      ],
+      "target_objective": "Find the probability that no face cards come before the ten of spades"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Card/deck sample space, Sampling without replacement | Constraints: Draws are without replacement | Objective: Find the probability that no face cards come before the ten of spades"
+  },
+  {
+    "problem_id": 2100,
+    "name": "Some Rain I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Independence where stated"
+      ],
+      "target_objective": "find the probability it does not rain this weekend when $p_1 = 0"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Independence where stated | Objective: find the probability it does not rain this weekend when $p_1 = 0"
+  },
+  {
+    "problem_id": 2101,
+    "name": "Exponential Gamma Variance",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Compute $\\text{Var}(e^X)$ when $a = 4$ and $b = 1/4$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Compute $\\text{Var}(e^X)$ when $a = 4$ and $b = 1/4$"
+  },
+  {
+    "problem_id": 2102,
+    "name": "Forehead",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Coin flips / Bernoulli trials"
+      ],
+      "invariant_constraints": [
+        "Non-consecutive occurrence allowed"
+      ],
+      "target_objective": "Find the expected number of flips that need to be performed on a coin that has probability $0 < p < 1$ of heads per flip to obtain $k$ heads (not necessarily consecutively) when $k = 4$ and $p = 1/3$"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Coin flips / Bernoulli trials | Constraints: Non-consecutive occurrence allowed | Objective: Find the expected number of flips that need to be performed on a coin that has probability $0 < p < 1$ of heads per flip to obtain $k$ heads (not necessarily consecutively) when $k = 4$ and $p = 1/3$"
+  },
+  {
+    "problem_id": 2103,
+    "name": "Car Stopper",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distributional Analysis",
+      "problem_setup_entities": [
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Given that you are stopped by stoplight $i$, you are stopped for $L_i$ minutes"
+    },
+    "schema_text": "Domain: Expected Value and Distributional Analysis | Entities: Stopping condition | Constraints: Operate under stated sample-space rules | Objective: Given that you are stopped by stoplight $i$, you are stopped for $L_i$ minutes"
+  },
+  {
+    "problem_id": 2104,
+    "name": "Prior Die Sum II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Dice outcomes",
+        "Stopping condition"
+      ],
+      "invariant_constraints": [
+        "Fair/equiprobable primitive outcomes",
+        "Stopping/threshold rule is binding"
+      ],
+      "target_objective": "Find the probability Jeffrey rolls a sum of $4$"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Dice outcomes, Stopping condition | Constraints: Fair/equiprobable primitive outcomes, Stopping/threshold rule is binding | Objective: Find the probability Jeffrey rolls a sum of $4$"
+  },
+  {
+    "problem_id": 2105,
+    "name": "Come to Besiktas",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "Random arrival or ordering of people"
+      ],
+      "invariant_constraints": [
+        "Uniform randomization"
+      ],
+      "target_objective": "Find the probability that Quaresma correctly obtains $331455$ as his address again"
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: Random arrival or ordering of people | Constraints: Uniform randomization | Objective: Find the probability that Quaresma correctly obtains $331455$ as his address again"
+  },
+  {
+    "problem_id": 2106,
+    "name": "Bold Element",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "Random variables from statement"
+      ],
+      "invariant_constraints": [
+        "Operate under stated sample-space rules"
+      ],
+      "target_objective": "Find the total number of such sets $S$ that Erica can construct when $n = 5$"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: Random variables from statement | Constraints: Operate under stated sample-space rules | Objective: Find the total number of such sets $S$ that Erica can construct when $n = 5$"
+  }
+]

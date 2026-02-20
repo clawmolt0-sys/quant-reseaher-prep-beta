@@ -1,0 +1,1573 @@
+[
+  {
+    "problem_id": 2207,
+    "name": "Brownian Hitting II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "Brownian motion"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time.",
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: Brownian motion | Constraints: Process is evaluated at a stopping/hitting time.; Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2208,
+    "name": "Powered Brownian",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Martingales)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "stochastic process",
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "Process has Brownian motion properties (continuous paths, Gaussian increments).",
+        "Selected elements are distinct as specified."
+      ],
+      "target_objective": "Determine whether the process is a martingale (or count parameter values for which it is)."
+    },
+    "schema_text": "Domain: Stochastic Processes (Martingales) | Entities: Brownian motion, stochastic process, integer variable n | Constraints: Process has Brownian motion properties (continuous paths, Gaussian increments).; Selected elements are distinct as specified. | Objective: Determine whether the process is a martingale (or count parameter values for which it is)."
+  },
+  {
+    "problem_id": 2209,
+    "name": "Variance of BM Sum",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Moments)",
+      "problem_setup_entities": [
+        "Brownian motion"
+      ],
+      "invariant_constraints": [
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the variance of the target random variable/process functional."
+    },
+    "schema_text": "Domain: Probability Theory (Moments) | Entities: Brownian motion | Constraints: Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the variance of the target random variable/process functional."
+  },
+  {
+    "problem_id": 2210,
+    "name": "Covariate Brownians",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: Brownian motion, independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions.; Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2211,
+    "name": "Vasicek Model",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "stochastic differential equation"
+      ],
+      "invariant_constraints": [
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: Brownian motion, stochastic differential equation | Constraints: Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2212,
+    "name": "Variable Starting Brownian",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "Brownian motion"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time.",
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: Brownian motion | Constraints: Process is evaluated at a stopping/hitting time.; Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2213,
+    "name": "Arithmetic Progression I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "integer variable n",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment.",
+        "Selected elements are distinct as specified."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: integer variable n, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment.; Selected elements are distinct as specified. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2214,
+    "name": "Arithmetic Progression II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "integer variable n",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment.",
+        "Selected elements are distinct as specified."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: integer variable n, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment.; Selected elements are distinct as specified. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2215,
+    "name": "Scotty Bugatti",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2216,
+    "name": "Boy-Girl Line",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "arrangement positions",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: arrangement positions, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2217,
+    "name": "Shakey Hands",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2218,
+    "name": "Tourney Switch",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls",
+        "match outcomes"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls, match outcomes | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2219,
+    "name": "Palindromey I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "string/sequence characters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: string/sequence characters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2220,
+    "name": "Palindromey II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "string/sequence characters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: string/sequence characters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2221,
+    "name": "Palindromey III",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "string/sequence characters",
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: string/sequence characters, integer variable n | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2222,
+    "name": "Uniform Probability I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2223,
+    "name": "Uniforms Contained",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2224,
+    "name": "Kitten Box",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: random variables, problem parameters | Constraints: Process is evaluated at a stopping/hitting time. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2225,
+    "name": "Random Triangle Area",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2226,
+    "name": "It's Black and White",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2227,
+    "name": "Strictly Increasing Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: dice rolls | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2228,
+    "name": "Product of 6",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2229,
+    "name": "8-Sided Dice",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2230,
+    "name": "Lewis' Anagram",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2231,
+    "name": "Random Rectangular Area",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2232,
+    "name": "Eating Pizza",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2233,
+    "name": "Uniform Crossover",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2234,
+    "name": "Different Ball Colors",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2235,
+    "name": "Team Split",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2236,
+    "name": "LeBron's Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "dice rolls",
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: dice rolls, urn/balls | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2237,
+    "name": "Standard Normal Covariance",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Moments)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the variance of the target random variable/process functional."
+    },
+    "schema_text": "Domain: Probability Theory (Moments) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the variance of the target random variable/process functional."
+  },
+  {
+    "problem_id": 2238,
+    "name": "Convex Quadrilateral",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2239,
+    "name": "Even Card Condition",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "cards/deck"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: cards/deck | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2240,
+    "name": "Uniform Product Density",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "urn/balls",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: urn/balls, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2241,
+    "name": "Breaking Even",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: coin flips | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2242,
+    "name": "Bestie Card",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "cards/deck",
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: cards/deck, integer variable n | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2243,
+    "name": "Firsts and Lasts",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: coin flips | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2244,
+    "name": "Corner Cat",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2245,
+    "name": "Ordered Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards/deck"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards/deck | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2246,
+    "name": "Distinct Gloves",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: random variables, problem parameters | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2247,
+    "name": "Defective Cat Plushie",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2248,
+    "name": "Uniform Angle Overlap",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2249,
+    "name": "Maxiunif",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2250,
+    "name": "Miniunif",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2251,
+    "name": "Maximin Uniform",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2252,
+    "name": "Over N",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment.",
+        "Process is evaluated at a stopping/hitting time."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment.; Process is evaluated at a stopping/hitting time. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2253,
+    "name": "Parity Streaks",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, integer variable n | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2254,
+    "name": "Rollin' Rollin' Rollin'",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2255,
+    "name": "Cutting Wood",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2256,
+    "name": "Choosing a Die",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2257,
+    "name": "Skilled Flipper I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: coin flips | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2258,
+    "name": "Skilled Flipper II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: coin flips | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2259,
+    "name": "Money Shorter",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2260,
+    "name": "Quadratic Normal",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "independent random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: independent random variables | Constraints: Random variables/trials satisfy the stated independence assumptions. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2261,
+    "name": "Runny Runs I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2262,
+    "name": "Rewin I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2263,
+    "name": "Linear Brownian I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "arrangement positions"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time.",
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: Brownian motion, arrangement positions | Constraints: Process is evaluated at a stopping/hitting time.; Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2264,
+    "name": "Geometric Brownian Hit",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "Brownian motion"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time.",
+        "Process has Brownian motion properties (continuous paths, Gaussian increments)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: Brownian motion | Constraints: Process is evaluated at a stopping/hitting time.; Process has Brownian motion properties (continuous paths, Gaussian increments). | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2265,
+    "name": "7 Below I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2266,
+    "name": "Paperless Play I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2267,
+    "name": "Start or Not I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2268,
+    "name": "Start or Not II",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2269,
+    "name": "Stone Pick I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: urn/balls | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2270,
+    "name": "Stone Pick II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: urn/balls | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2271,
+    "name": "No Ones Home",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: dice rolls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2272,
+    "name": "Between Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2273,
+    "name": "Tupac Arb",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2274,
+    "name": "Card Composition",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards/deck"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards/deck | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2275,
+    "name": "Big Envelope",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2276,
+    "name": "Partial Sums I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2277,
+    "name": "Partial Sums II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2278,
+    "name": "Larger Position",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "permutation",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: permutation, uniformly random sample | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2279,
+    "name": "Minimizer Square",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2280,
+    "name": "One Given Increasing",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: integer variable n | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2281,
+    "name": "Most Likely First Ace",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "cards/deck"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: cards/deck | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2282,
+    "name": "Same Balls",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: urn/balls | Constraints: Sampling is without replacement. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2283,
+    "name": "Three From Set",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "Selected elements are distinct as specified."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: integer variable n | Constraints: Selected elements are distinct as specified. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2284,
+    "name": "Minimum Match",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: dice rolls | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2285,
+    "name": "Big Containment",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2286,
+    "name": "Stripe Stick I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "independent random variables",
+        "uniformly random sample"
+      ],
+      "invariant_constraints": [
+        "Random variables/trials satisfy the stated independence assumptions.",
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: independent random variables, uniformly random sample | Constraints: Random variables/trials satisfy the stated independence assumptions.; Outcomes are uniformly distributed under the experiment. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2287,
+    "name": "Under Oath I",
+    "schema": {
+      "core_mathematical_domain": "Discrete/Continuous Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event."
+    },
+    "schema_text": "Domain: Discrete/Continuous Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the probability of the target event."
+  },
+  {
+    "problem_id": 2288,
+    "name": "Sum First I",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the Expected Value of the defined random variable or stopping time."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, urn/balls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the Expected Value of the defined random variable or stopping time."
+  },
+  {
+    "problem_id": 2289,
+    "name": "Sum First II",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Moments)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "urn/balls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed under the experiment."
+      ],
+      "target_objective": "Compute the variance of the target random variable/process functional."
+    },
+    "schema_text": "Domain: Probability Theory (Moments) | Entities: dice rolls, urn/balls | Constraints: Outcomes are uniformly distributed under the experiment. | Objective: Compute the variance of the target random variable/process functional."
+  },
+  {
+    "problem_id": 2290,
+    "name": "Large Maxima",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Distributions)",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Determine the distribution (or density) of the target random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Distributions) | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Determine the distribution (or density) of the target random variable."
+  },
+  {
+    "problem_id": 2291,
+    "name": "Tallest to Smallest",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "arrangement positions"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: arrangement positions | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2292,
+    "name": "Million Product",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2293,
+    "name": "Sequence Building",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2294,
+    "name": "Multi 66 I",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2295,
+    "name": "Multi 66 II",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2296,
+    "name": "Highway 66 Fly I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "Process is evaluated at a stopping/hitting time."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: Process is evaluated at a stopping/hitting time. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2297,
+    "name": "Partial Sum",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: integer variable n | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2298,
+    "name": "RPS Count",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2299,
+    "name": "Double Lily Pad",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2300,
+    "name": "Decimal to Fraction I",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "arrangement positions",
+        "integer variable n"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: arrangement positions, integer variable n | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2301,
+    "name": "Fibonacci Ratio I",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2302,
+    "name": "Different Marbles I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2303,
+    "name": "Magical Savanna I",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2304,
+    "name": "Magical Savanna II",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Count the number of configurations satisfying the stated property."
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Count the number of configurations satisfying the stated property."
+  },
+  {
+    "problem_id": 2305,
+    "name": "Hours and Minutes II",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  },
+  {
+    "problem_id": 2306,
+    "name": "Hours and Minutes III",
+    "schema": {
+      "core_mathematical_domain": "Mathematical Probability",
+      "problem_setup_entities": [
+        "random variables",
+        "problem parameters"
+      ],
+      "invariant_constraints": [
+        "All variables satisfy the conditions stated in the problem setup."
+      ],
+      "target_objective": "Compute the requested quantitative value under the stated stochastic model."
+    },
+    "schema_text": "Domain: Mathematical Probability | Entities: random variables, problem parameters | Constraints: All variables satisfy the conditions stated in the problem setup. | Objective: Compute the requested quantitative value under the stated stochastic model."
+  }
+]
