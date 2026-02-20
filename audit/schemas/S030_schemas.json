@@ -1,0 +1,1902 @@
+[
+  {
+    "problem_id": 2907,
+    "name": "Forward Backward RTS Smoother In A Local Level Model",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2908,
+    "name": "Online rolling correlation (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2909,
+    "name": "Weighted reservoir sampling (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2910,
+    "name": "Deterministic linear-time selection (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2911,
+    "name": "Fenwick tree / BIT (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2912,
+    "name": "Trade-by-trade realized P&L engine (coding/data)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2913,
+    "name": "Tick Size Zero Profit Quotes Binary GM With Noise",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2914,
+    "name": "Venue selection with maker rebates and selection risk",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2915,
+    "name": "Posterior after a trade sequence",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2916,
+    "name": "Negative-hypergeometric stopping time",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2917,
+    "name": "Secretary problem (optimal stopping)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2918,
+    "name": "Bayesian coin: posterior tail probability",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2919,
+    "name": "Sequential probability ratio test (SPRT)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2920,
+    "name": "Ornstein\u00a1Uhlenbeck MLE from discrete samples",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2921,
+    "name": "GJR GARCH 1,1 Stationarity and Unconditional Variance",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2922,
+    "name": "Student-t VaR and ES",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2923,
+    "name": "Two-stage least squares (2SLS)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2924,
+    "name": "Logistic regression with 2 regularization",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2925,
+    "name": "LOOCV for ridge regression in O(n)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2926,
+    "name": "Chi-square CI for variance and sizing",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2927,
+    "name": "N M M Matrix of Positive FX Rates",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2928,
+    "name": "LRU cache (coding / data structure)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2929,
+    "name": "Implied volatility solver (coding / numerics)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2930,
+    "name": "K-way merge (coding / heaps)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2931,
+    "name": "Longest increasing subsequence (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2932,
+    "name": "Exponential MLE with right censoring",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2933,
+    "name": "Three-point value & conditional zero-profit quotes",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2934,
+    "name": "One-step Avellaneda\u00a1Stoikov with exponential arrivals",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2935,
+    "name": "Tick rounding cost of market making",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2936,
+    "name": "Latency risk with mid-price jumps",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2937,
+    "name": "Partially informed sequence update",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2938,
+    "name": "Value of information before quoting",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2939,
+    "name": "AR(2) forecasting and Yule\u00a1Walker",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2940,
+    "name": "Two-state volatility HMM (Hamilton filter)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2941,
+    "name": "EWMA half-life and relation to ARIMA",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2942,
+    "name": "Normal VaR/ES under GARCH(1,1)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2943,
+    "name": "Two-sample Kolmogorov\u00a1Smirnov test",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2944,
+    "name": "Poisson GLM with exposure (log link)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2945,
+    "name": "Normal\u00a1Normal Bayesian updating (known variance)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2946,
+    "name": "Minimum window substring (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2947,
+    "name": "Maximum Area Rectangle in O",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2948,
+    "name": "Disjoint-set union (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2949,
+    "name": "Top-k frequent elements in a stream (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2950,
+    "name": "Sliding-window median (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2951,
+    "name": "Longest duplicate substring (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2952,
+    "name": "Numerically Stable Log Sum Exp and Softmax Coding",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2953,
+    "name": "No Trade Information Bayesian Update In Continuous Time",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2954,
+    "name": "CARA quoting via mean\u00a1variance approximation",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2955,
+    "name": "Queue-priority fill probability with Poisson depletion",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2956,
+    "name": "Tick improvement vs",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2957,
+    "name": "POT\u00a1GPD tail risk",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2958,
+    "name": "Augmented Dickey\u00a1Fuller (ADF) unit-root test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2959,
+    "name": "Johansen cointegration (trace test)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2960,
+    "name": "Spectral density at zero and long-run variance",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2961,
+    "name": "GMM for AR(1) with heteroskedasticity",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2962,
+    "name": "Engle's ARCH LM test",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2963,
+    "name": "Knowledge Gradient one Step Lookahead for two Bernoulli Arms",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2964,
+    "name": "Randomized response (privacy-preserving survey)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2965,
+    "name": "Occupancy threshold (empty bins)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2966,
+    "name": "Top-two spacing for exponentials",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2967,
+    "name": "Brownian first-passage",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2968,
+    "name": "Range Minimum Query RMQ Via Sparse Table Coding",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2969,
+    "name": "Aho\u00a1Corasick multiple-pattern matching (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2970,
+    "name": "Streaming quantiles (Greenwald\u00a1Khanna) (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2971,
+    "name": "Weighted interval scheduling (coding / DP)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2972,
+    "name": "Suffix automaton for distinct substrings (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2973,
+    "name": "Two-step market making with inventory",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2974,
+    "name": "Poisson trade imbalance as information",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2975,
+    "name": "Kelly with drawdown cap via Lagrange multipliers",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2976,
+    "name": "Forecast combination with correlated errors",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Feature/instrument/forecast vectors",
+        "Loss or likelihood objective",
+        "Regularization/weight constraints"
+      ],
+      "invariant_constraints": [
+        "Estimator defined by first-order conditions or closed form",
+        "Matrix rank/positive-definiteness assumptions where needed",
+        "Use consistent weighting/error structure"
+      ],
+      "target_objective": "Derive optimal coefficients/weights and associated inference or validation formulae."
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Feature/instrument/forecast vectors, Loss or likelihood objective, Regularization/weight constraints | Constraints: Estimator defined by first-order conditions or closed form, Matrix rank/positive-definiteness assumptions where needed, Use consistent weighting/error structure | Objective: Derive optimal coefficients/weights and associated inference or validation formulae."
+  },
+  {
+    "problem_id": 2977,
+    "name": "HAR-RV volatility forecasting",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2978,
+    "name": "Binary response with heteroskedastic probit",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2979,
+    "name": "Change in Sharpe with serial correlation",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2980,
+    "name": "Counting inversions (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2981,
+    "name": "KMP pattern search (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2982,
+    "name": "Segment tree with lazy propagation (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2983,
+    "name": "Expected Payoff E Heads",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2984,
+    "name": "Weekend rain bounds (dependence reasoning)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2985,
+    "name": "Optimal threshold with paid rerolls",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2986,
+    "name": "Make A two way Market On A Bernoulli Event Adverse Selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2987,
+    "name": "Card Choice With Reservation Value Conditional EV",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2988,
+    "name": "Win Probabilities for All Ordered",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2989,
+    "name": "Streaming equivalence check (data/algorithms)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2990,
+    "name": "Posterior E V S",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2991,
+    "name": "First Price Bidding Against A Random Bidder Expected Value Vs",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2992,
+    "name": "Hypothesis Test for Drift In A Price Process Statistics",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 2993,
+    "name": "AR(1)-GARCH(1,1) one-step volatility (time series)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2994,
+    "name": "Inventory/risk trade-off for a linear maker",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 2995,
+    "name": "Nonparametric backtest protocol (research design)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2996,
+    "name": "Median-of-five vs",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Feature/instrument/forecast vectors",
+        "Loss or likelihood objective",
+        "Regularization/weight constraints"
+      ],
+      "invariant_constraints": [
+        "Estimator defined by first-order conditions or closed form",
+        "Matrix rank/positive-definiteness assumptions where needed",
+        "Use consistent weighting/error structure"
+      ],
+      "target_objective": "Derive optimal coefficients/weights and associated inference or validation formulae."
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Feature/instrument/forecast vectors, Loss or likelihood objective, Regularization/weight constraints | Constraints: Estimator defined by first-order conditions or closed form, Matrix rank/positive-definiteness assumptions where needed, Use consistent weighting/error structure | Objective: Derive optimal coefficients/weights and associated inference or validation formulae."
+  },
+  {
+    "problem_id": 2997,
+    "name": "Streaming order-stat structure (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 2998,
+    "name": "OU half-life estimation (time series)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 2999,
+    "name": "Signals S Rn, Covariance 0",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3000,
+    "name": "Correlation-robust EV bound (info-limited trading)",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 3001,
+    "name": "Rolling Heteroskedastic T Stat Estimation Under GARCH",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3002,
+    "name": "Combinatorial Selection With Coprimality Discrete Optimization",
+    "schema": {
+      "core_mathematical_domain": "Probability, Combinatorics, and Decision Analysis",
+      "problem_setup_entities": [
+        "Discrete/continuous random variables",
+        "Feasible action or selection set",
+        "Payoff/probability functional"
+      ],
+      "invariant_constraints": [
+        "Given distributional assumptions must be preserved",
+        "Dependence/independence constraints as stated",
+        "Budget or feasibility constraints if optimization is involved"
+      ],
+      "target_objective": "Compute exact/ bounded probabilities or optimize Expected Value/utility under the stated rules."
+    },
+    "schema_text": "Domain: Probability, Combinatorics, and Decision Analysis | Entities: Discrete/continuous random variables, Feasible action or selection set, Payoff/probability functional | Constraints: Given distributional assumptions must be preserved, Dependence/independence constraints as stated, Budget or feasibility constraints if optimization is involved | Objective: Compute exact/ bounded probabilities or optimize Expected Value/utility under the stated rules."
+  },
+  {
+    "problem_id": 3003,
+    "name": "Lottery Leverage Kelly Sizing Risk Management",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3004,
+    "name": "Race to four of a kind (conditional finish)",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3005,
+    "name": "Competitive Number Choice With A Handicap Mixed Equilibrium",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3006,
+    "name": "Post A Take It Or Leave It Price With Seller Rebate Adverse Selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  }
+]

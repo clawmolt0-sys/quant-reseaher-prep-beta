@@ -1,0 +1,1703 @@
+[
+  {
+    "problem_id": 2507,
+    "name": "Write Numbers and In A Decimal Notation, Next To Each Other",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2508,
+    "name": "Brainteaser: 30 People Are 15 Couples",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2509,
+    "name": "You, Player A, Player B Are in a Tennis Tournament",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Decision Theory",
+      "problem_setup_entities": [
+        "decision variables",
+        "objective function",
+        "feasibility constraints"
+      ],
+      "invariant_constraints": [
+        "Decisions must satisfy all stated resource/rule constraints"
+      ],
+      "target_objective": "Maximize/minimize the objective or compare candidate strategies"
+    },
+    "schema_text": "Domain: Optimization and Decision Theory | Entities: decision variables, objective function, feasibility constraints | Constraints: Decisions must satisfy all stated resource/rule constraints | Objective: Maximize/minimize the objective or compare candidate strategies"
+  },
+  {
+    "problem_id": 2510,
+    "name": "There Are 100 Doors In A Row",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2511,
+    "name": "Gallons of Gas Are Consumed in US Per We",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2512,
+    "name": "Risk Free Rate Increase, Increase Possibility",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2513,
+    "name": "Determine that number",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2514,
+    "name": "What Is The Influence To R Square",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features/matrix",
+        "model coefficients and residuals"
+      ],
+      "invariant_constraints": [
+        "Model specification and estimation method are fixed as stated"
+      ],
+      "target_objective": "Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features/matrix, model coefficients and residuals | Constraints: Model specification and estimation method are fixed as stated | Objective: Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+  },
+  {
+    "problem_id": 2515,
+    "name": "Race A Car Two Round, First One",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2516,
+    "name": "Different Ball Using a Two-edge",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2517,
+    "name": "Flip Coin Times, Tell Heads Flips.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2518,
+    "name": "How Do You Check If Your Regression",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features/matrix",
+        "model coefficients and residuals"
+      ],
+      "invariant_constraints": [
+        "Model specification and estimation method are fixed as stated"
+      ],
+      "target_objective": "Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features/matrix, model coefficients and residuals | Constraints: Model specification and estimation method are fixed as stated | Objective: Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+  },
+  {
+    "problem_id": 2519,
+    "name": "There Are 25 Horses",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2520,
+    "name": "Probability Digit Uniformly Distributed Integers.",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions and Random Variables",
+      "problem_setup_entities": [
+        "random variable definitions",
+        "support/distribution parameters",
+        "transformations/events of interest"
+      ],
+      "invariant_constraints": [
+        "Random-variable relationships are exactly those specified"
+      ],
+      "target_objective": "Compute distributional property, probability, or Expected Value of a function"
+    },
+    "schema_text": "Domain: Probability Distributions and Random Variables | Entities: random variable definitions, support/distribution parameters, transformations/events of interest | Constraints: Random-variable relationships are exactly those specified | Objective: Compute distributional property, probability, or Expected Value of a function"
+  },
+  {
+    "problem_id": 2521,
+    "name": "I Have 12 Poker Chips, We (Two",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Decision Theory",
+      "problem_setup_entities": [
+        "decision variables",
+        "objective function",
+        "feasibility constraints"
+      ],
+      "invariant_constraints": [
+        "Decisions must satisfy all stated resource/rule constraints"
+      ],
+      "target_objective": "Maximize/minimize the objective or compare candidate strategies"
+    },
+    "schema_text": "Domain: Optimization and Decision Theory | Entities: decision variables, objective function, feasibility constraints | Constraints: Decisions must satisfy all stated resource/rule constraints | Objective: Maximize/minimize the objective or compare candidate strategies"
+  },
+  {
+    "problem_id": 2522,
+    "name": "What Is The Expected Number Of Coin",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2523,
+    "name": "3X3x3 Cube; Paint The Outside",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2524,
+    "name": "Number Fair Coin Flips, Whats Even",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2525,
+    "name": "Two Teams A And B Played Football Twice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2526,
+    "name": "Calculate the Volume of the Intersect",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2527,
+    "name": "Probability of Both Torpedoes Has Hit",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2528,
+    "name": "Height Building Watch Substance",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2529,
+    "name": "Expected Number Of Rolls To See Each",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2530,
+    "name": "Over What Time Horizon Would You Expect",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2531,
+    "name": "People Room Sure Born",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2532,
+    "name": "Sided Dice Rolled, Chance Product Prime",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "discrete objects",
+        "selection/arrangement rules",
+        "counting parameters"
+      ],
+      "invariant_constraints": [
+        "Counting must respect uniqueness/order constraints stated in the problem"
+      ],
+      "target_objective": "Compute exact count or probability via combinatorial reasoning"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: discrete objects, selection/arrangement rules, counting parameters | Constraints: Counting must respect uniqueness/order constraints stated in the problem | Objective: Compute exact count or probability via combinatorial reasoning"
+  },
+  {
+    "problem_id": 2533,
+    "name": "Quantitative Problem",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra / Matrix Theory",
+      "problem_setup_entities": [
+        "vectors/matrices",
+        "algebraic constraints",
+        "dimensions/parameters"
+      ],
+      "invariant_constraints": [
+        "Algebraic properties (rank, symmetry, orthogonality, PSD) hold as stated"
+      ],
+      "target_objective": "Compute requested matrix/vector quantity or prove structural property"
+    },
+    "schema_text": "Domain: Linear Algebra / Matrix Theory | Entities: vectors/matrices, algebraic constraints, dimensions/parameters | Constraints: Algebraic properties (rank, symmetry, orthogonality, PSD) hold as stated | Objective: Compute requested matrix/vector quantity or prove structural property"
+  },
+  {
+    "problem_id": 2534,
+    "name": "Expected Value of the Longest Streak",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2535,
+    "name": "Talk Resume Flip Coins Until Head",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2536,
+    "name": "Telephone Number Display 1,2,3 4,5,6 7,8,9",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2537,
+    "name": "How Can You Play A Game That",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2538,
+    "name": "Sitting On The Side Of The Road",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2539,
+    "name": "Market Equilibrium",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2540,
+    "name": "Probability Positive",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2541,
+    "name": "Different Paths Are There",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2542,
+    "name": "Number Pyramid (Similar To Binary Tree) Find",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2543,
+    "name": "Why Imc",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "state space",
+        "transition mechanism",
+        "time index or stopping rule"
+      ],
+      "invariant_constraints": [
+        "Process evolution follows the stated transition assumptions"
+      ],
+      "target_objective": "Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: state space, transition mechanism, time index or stopping rule | Constraints: Process evolution follows the stated transition assumptions | Objective: Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+  },
+  {
+    "problem_id": 2544,
+    "name": "What Is The Expected Amount Of Times",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2545,
+    "name": "Stick Broken Parts, Choosing Points Randomly",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2546,
+    "name": "How Can You Use A Fair 6-Sided",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2547,
+    "name": "Determine Which Ball is the Heavy Ball",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2548,
+    "name": "Which Perimeter Of Financial Derivatives Are You",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2549,
+    "name": "Various Algorithmic Questions, Specific Piece Code.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2550,
+    "name": "Expectation Roll Dice Cancel",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2551,
+    "name": "Length Array, Number Appears Half Time.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2552,
+    "name": "What Is The Gil In Python",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2553,
+    "name": "Triplets of Numbers Were Even",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2554,
+    "name": "Kind Data Mining Machine Learning Techniques",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "feature representation",
+        "target or reward signal",
+        "model/algorithm parameters"
+      ],
+      "invariant_constraints": [
+        "Learning objective and data assumptions follow the prompt"
+      ],
+      "target_objective": "Evaluate model behavior, optimization effect, or predictive performance"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: feature representation, target or reward signal, model/algorithm parameters | Constraints: Learning objective and data assumptions follow the prompt | Objective: Evaluate model behavior, optimization effect, or predictive performance"
+  },
+  {
+    "problem_id": 2555,
+    "name": "Maximum Pirates Can be There Onboard",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2556,
+    "name": "Fast Exponentiation by Squaring",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2557,
+    "name": "Stick Places. Probability Able Triangle",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2558,
+    "name": "Let S say That I Have A Bunch Red, Yellow, and Blue Marbles In A Bag",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2559,
+    "name": "There Is A Hat Containing 100 One-Dollar",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Decision Theory",
+      "problem_setup_entities": [
+        "decision variables",
+        "objective function",
+        "feasibility constraints"
+      ],
+      "invariant_constraints": [
+        "Decisions must satisfy all stated resource/rule constraints"
+      ],
+      "target_objective": "Maximize/minimize the objective or compare candidate strategies"
+    },
+    "schema_text": "Domain: Optimization and Decision Theory | Entities: decision variables, objective function, feasibility constraints | Constraints: Decisions must satisfy all stated resource/rule constraints | Objective: Maximize/minimize the objective or compare candidate strategies"
+  },
+  {
+    "problem_id": 2560,
+    "name": "Dollars, Probability Winning Dollars Playing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2561,
+    "name": "Would You be Willing to Pay to Play",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2562,
+    "name": "Flip Coins, Half Fair Half Fair.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2563,
+    "name": "What Is The Probability Of Getting Even",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2564,
+    "name": "One Bus Leaves",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2565,
+    "name": "Fermi Problems, Quick Math Estimations Probability",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2566,
+    "name": "Marble Parity Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2567,
+    "name": "Difference American European Options, Time Value.",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing / Risk-Neutral Valuation",
+      "problem_setup_entities": [
+        "underlying price process",
+        "option payoff function",
+        "interest rate/volatility/time-to-maturity parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and model assumptions hold as stated"
+      ],
+      "target_objective": "Compute option value, sensitivity, or comparative static under parameter changes"
+    },
+    "schema_text": "Domain: Derivative Pricing / Risk-Neutral Valuation | Entities: underlying price process, option payoff function, interest rate/volatility/time-to-maturity parameters | Constraints: No-arbitrage and model assumptions hold as stated | Objective: Compute option value, sensitivity, or comparative static under parameter changes"
+  },
+  {
+    "problem_id": 2568,
+    "name": "Followed Up With The Previous Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2569,
+    "name": "Ants Side Equilateral Triangle. Probability Collid",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2570,
+    "name": "Let's Generate U1,U2",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "state space",
+        "transition mechanism",
+        "time index or stopping rule"
+      ],
+      "invariant_constraints": [
+        "Process evolution follows the stated transition assumptions"
+      ],
+      "target_objective": "Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: state space, transition mechanism, time index or stopping rule | Constraints: Process evolution follows the stated transition assumptions | Objective: Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+  },
+  {
+    "problem_id": 2571,
+    "name": "Suppose 30-Day Volatility Was At A Given",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2572,
+    "name": "Value After 10 Flips",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2573,
+    "name": "How Many Throws Of A 6-Sided Dice",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2574,
+    "name": "Assigned Future Expectation Value Arbitrary Sigma",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2575,
+    "name": "Normal Random Variable Mean Variance Multiple",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions and Random Variables",
+      "problem_setup_entities": [
+        "random variable definitions",
+        "support/distribution parameters",
+        "transformations/events of interest"
+      ],
+      "invariant_constraints": [
+        "Random-variable relationships are exactly those specified"
+      ],
+      "target_objective": "Compute distributional property, probability, or Expected Value of a function"
+    },
+    "schema_text": "Domain: Probability Distributions and Random Variables | Entities: random variable definitions, support/distribution parameters, transformations/events of interest | Constraints: Random-variable relationships are exactly those specified | Objective: Compute distributional property, probability, or Expected Value of a function"
+  },
+  {
+    "problem_id": 2576,
+    "name": "Integral of a Given Function",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2577,
+    "name": "What Is Stationarity In A Stochastic Process",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "state space",
+        "transition mechanism",
+        "time index or stopping rule"
+      ],
+      "invariant_constraints": [
+        "Process evolution follows the stated transition assumptions"
+      ],
+      "target_objective": "Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: state space, transition mechanism, time index or stopping rule | Constraints: Process evolution follows the stated transition assumptions | Objective: Compute hitting probability, Expected Value, long-run behavior, or optimal stopping/control quantity"
+  },
+  {
+    "problem_id": 2578,
+    "name": "What Is The Var",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset price process or returns",
+        "trading/allocation decision variables",
+        "constraints on capital or positions"
+      ],
+      "invariant_constraints": [
+        "Market dynamics and frictions are as specified"
+      ],
+      "target_objective": "Compute pricing/risk metric or identify optimal trading/investment decision"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset price process or returns, trading/allocation decision variables, constraints on capital or positions | Constraints: Market dynamics and frictions are as specified | Objective: Compute pricing/risk metric or identify optimal trading/investment decision"
+  },
+  {
+    "problem_id": 2579,
+    "name": "Maximum Likelihood Estimator Linear Regression.",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features/matrix",
+        "model coefficients and residuals"
+      ],
+      "invariant_constraints": [
+        "Model specification and estimation method are fixed as stated"
+      ],
+      "target_objective": "Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features/matrix, model coefficients and residuals | Constraints: Model specification and estimation method are fixed as stated | Objective: Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+  },
+  {
+    "problem_id": 2580,
+    "name": "Please Share Favorite Experience Resume Tell",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2581,
+    "name": "How Many Pounds Of Chocolate Do Americans",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics / Logical Reasoning",
+      "problem_setup_entities": [
+        "finite set of agents/objects",
+        "rule-based interactions or moves"
+      ],
+      "invariant_constraints": [
+        "Only explicitly stated move/interaction rules are allowed"
+      ],
+      "target_objective": "Determine the exact count, feasibility result, or optimal strategy"
+    },
+    "schema_text": "Domain: Discrete Mathematics / Logical Reasoning | Entities: finite set of agents/objects, rule-based interactions or moves | Constraints: Only explicitly stated move/interaction rules are allowed | Objective: Determine the exact count, feasibility result, or optimal strategy"
+  },
+  {
+    "problem_id": 2582,
+    "name": "Estimate Something Like 12^{1/10}",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "sample observations",
+        "population/distribution parameters",
+        "estimator/test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and model family are fixed as stated"
+      ],
+      "target_objective": "Compute estimator/test property or infer unknown parameter"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: sample observations, population/distribution parameters, estimator/test statistic | Constraints: Sampling assumptions and model family are fixed as stated | Objective: Compute estimator/test property or infer unknown parameter"
+  },
+  {
+    "problem_id": 2583,
+    "name": "Programmer Aptitude Test Basic Logic Questions.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2584,
+    "name": "How Would You Create A Data Structure",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2585,
+    "name": "Find the largest path down",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2586,
+    "name": "Why Does The Average Of Independent Random",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions and Random Variables",
+      "problem_setup_entities": [
+        "random variable definitions",
+        "support/distribution parameters",
+        "transformations/events of interest"
+      ],
+      "invariant_constraints": [
+        "Random-variable relationships are exactly those specified"
+      ],
+      "target_objective": "Compute distributional property, probability, or Expected Value of a function"
+    },
+    "schema_text": "Domain: Probability Distributions and Random Variables | Entities: random variable definitions, support/distribution parameters, transformations/events of interest | Constraints: Random-variable relationships are exactly those specified | Objective: Compute distributional property, probability, or Expected Value of a function"
+  },
+  {
+    "problem_id": 2587,
+    "name": "Math Test Expect Straightforward Bayes Theorem,",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2588,
+    "name": "One Of The Questions Was To Find",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics and Counting",
+      "problem_setup_entities": [
+        "discrete objects",
+        "selection/arrangement rules",
+        "counting parameters"
+      ],
+      "invariant_constraints": [
+        "Counting must respect uniqueness/order constraints stated in the problem"
+      ],
+      "target_objective": "Compute exact count or probability via combinatorial reasoning"
+    },
+    "schema_text": "Domain: Combinatorics and Counting | Entities: discrete objects, selection/arrangement rules, counting parameters | Constraints: Counting must respect uniqueness/order constraints stated in the problem | Objective: Compute exact count or probability via combinatorial reasoning"
+  },
+  {
+    "problem_id": 2589,
+    "name": "Pls Give A Confidence Correct Probability Of Your Answers",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2590,
+    "name": "Can You Do A Ordinary Least Squares",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2591,
+    "name": "How Can You Generate Two Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2592,
+    "name": "Variance of Sum of Independent Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2593,
+    "name": "Estimate Parameters, When to Use It",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features/matrix",
+        "model coefficients and residuals"
+      ],
+      "invariant_constraints": [
+        "Model specification and estimation method are fixed as stated"
+      ],
+      "target_objective": "Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features/matrix, model coefficients and residuals | Constraints: Model specification and estimation method are fixed as stated | Objective: Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+  },
+  {
+    "problem_id": 2594,
+    "name": "Random Points Surface Unit Sphere. Picked",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2595,
+    "name": "Academic Program Irrelevant Questions",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2596,
+    "name": "What Is The Ratio Of An Area",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2597,
+    "name": "Machine Learning Models Autocorrelation Train, Test",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Machine Learning",
+      "problem_setup_entities": [
+        "feature representation",
+        "target or reward signal",
+        "model/algorithm parameters"
+      ],
+      "invariant_constraints": [
+        "Learning objective and data assumptions follow the prompt"
+      ],
+      "target_objective": "Evaluate model behavior, optimization effect, or predictive performance"
+    },
+    "schema_text": "Domain: Statistics and Machine Learning | Entities: feature representation, target or reward signal, model/algorithm parameters | Constraints: Learning objective and data assumptions follow the prompt | Objective: Evaluate model behavior, optimization effect, or predictive performance"
+  },
+  {
+    "problem_id": 2598,
+    "name": "Describe Knowledge Of Kelly Criterion And Portfolio Appli...",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure",
+      "problem_setup_entities": [
+        "order flow or queue state",
+        "bid/ask prices and spreads",
+        "execution/trading rule"
+      ],
+      "invariant_constraints": [
+        "Matching/execution rules and information structure are as stated"
+      ],
+      "target_objective": "Analyze price impact, execution quality, or optimal microstructure strategy"
+    },
+    "schema_text": "Domain: Market Microstructure | Entities: order flow or queue state, bid/ask prices and spreads, execution/trading rule | Constraints: Matching/execution rules and information structure are as stated | Objective: Analyze price impact, execution quality, or optimal microstructure strategy"
+  },
+  {
+    "problem_id": 2599,
+    "name": "What Is The Formula Of Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset price process or returns",
+        "trading/allocation decision variables",
+        "constraints on capital or positions"
+      ],
+      "invariant_constraints": [
+        "Market dynamics and frictions are as specified"
+      ],
+      "target_objective": "Compute pricing/risk metric or identify optimal trading/investment decision"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset price process or returns, trading/allocation decision variables, constraints on capital or positions | Constraints: Market dynamics and frictions are as specified | Objective: Compute pricing/risk metric or identify optimal trading/investment decision"
+  },
+  {
+    "problem_id": 2600,
+    "name": "Proposed Under The Pretence Of A Gacha",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 2601,
+    "name": "How Do You Model A Mortgage Portfolio",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset price process or returns",
+        "trading/allocation decision variables",
+        "constraints on capital or positions"
+      ],
+      "invariant_constraints": [
+        "Market dynamics and frictions are as specified"
+      ],
+      "target_objective": "Compute pricing/risk metric or identify optimal trading/investment decision"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset price process or returns, trading/allocation decision variables, constraints on capital or positions | Constraints: Market dynamics and frictions are as specified | Objective: Compute pricing/risk metric or identify optimal trading/investment decision"
+  },
+  {
+    "problem_id": 2602,
+    "name": "Google Python Questions Look Them, E.g.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2603,
+    "name": "Person Volatility Clustering Definition, Difference Arch",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  },
+  {
+    "problem_id": 2604,
+    "name": "Whats Is Sharpe Ratio,Can You Explain Max",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset price process or returns",
+        "trading/allocation decision variables",
+        "constraints on capital or positions"
+      ],
+      "invariant_constraints": [
+        "Market dynamics and frictions are as specified"
+      ],
+      "target_objective": "Compute pricing/risk metric or identify optimal trading/investment decision"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset price process or returns, trading/allocation decision variables, constraints on capital or positions | Constraints: Market dynamics and frictions are as specified | Objective: Compute pricing/risk metric or identify optimal trading/investment decision"
+  },
+  {
+    "problem_id": 2605,
+    "name": "Explain Variance To A Client Who Know",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 2606,
+    "name": "Find a Missing Number in a List of Integers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "algorithm state variables",
+        "output value or structure"
+      ],
+      "invariant_constraints": [
+        "Correctness must hold for all valid inputs under stated constraints",
+        "Time/space constraints apply as stated"
+      ],
+      "target_objective": "Design or analyze an algorithm and compute the required output/complexity"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: input data structure, algorithm state variables, output value or structure | Constraints: Correctness must hold for all valid inputs under stated constraints, Time/space constraints apply as stated | Objective: Design or analyze an algorithm and compute the required output/complexity"
+  }
+]

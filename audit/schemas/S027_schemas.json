@@ -1,0 +1,1807 @@
+[
+  {
+    "problem_id": 2607,
+    "name": "Explain Greeks And What Do They Look",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2608,
+    "name": "Stock Daily Move.",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2609,
+    "name": "What Kinds Of Signal Do You Use",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure / Arbitrage Optimization",
+      "problem_setup_entities": [
+        "venues or markets",
+        "price discrepancies",
+        "execution/latency constraints",
+        "inventory/capital limits"
+      ],
+      "invariant_constraints": [
+        "Trades must satisfy market mechanics and timing constraints"
+      ],
+      "target_objective": "Design strategy maximizing risk-adjusted arbitrage profit"
+    },
+    "schema_text": "Domain: Market Microstructure / Arbitrage Optimization | Entities: venues or markets, price discrepancies, execution/latency constraints, inventory/capital limits | Constraints: Trades must satisfy market mechanics and timing constraints | Objective: Design strategy maximizing risk-adjusted arbitrage profit"
+  },
+  {
+    "problem_id": 2610,
+    "name": "Would The Delta Of An Etf Be",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2611,
+    "name": "Robot Moves Certain Probability Left Right",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2612,
+    "name": "Playing Beer Pong Arrangement Cups, Time",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2613,
+    "name": "Interpolate Temperatures Series Values.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2614,
+    "name": "Difference Struct Test",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2615,
+    "name": "What Is The Minimum And Maximum Number",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2616,
+    "name": "What Is A Filtration",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Explain theorem assumptions and implications, or apply normal approximation"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Explain theorem assumptions and implications, or apply normal approximation"
+  },
+  {
+    "problem_id": 2617,
+    "name": "Walk Me Through B&S Model (Assumptions, Main",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2618,
+    "name": "Value of the Input Node",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2619,
+    "name": "Compute C and D as C = 1/a and D = -b/a",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2620,
+    "name": "Certain Point Rectangular Another Point.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2621,
+    "name": "There Is A Circle And Coins",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2622,
+    "name": "Ping Pong Game, There Is 10-10, I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2623,
+    "name": "2 Players Play A Game",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2624,
+    "name": "Price Movement",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2625,
+    "name": "Play Game Game Ends. Split Propose",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2626,
+    "name": "Events A, B, C, if a is Independent of B",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2627,
+    "name": "1 Normal Distribution 2 Linked List 3",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2628,
+    "name": "Chance Rains Saturday Chance Rains Sunday,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2629,
+    "name": "Opponent Number Uniformly, Higher Number Wins",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2630,
+    "name": "Expected payoff of this game",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2631,
+    "name": "Dice Games, Certain Payouts Associated Certain",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2632,
+    "name": "Q: Expected Value Of Betting Game, Slight",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2633,
+    "name": "Conditional Probability Questions E",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2634,
+    "name": "People Room Random Hat. Probability",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2635,
+    "name": "(Asking If A Distribution Is Positively",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2636,
+    "name": "Calculate and 15 Minutes Sequencing Exam",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2637,
+    "name": "Lots Of Mental Math Coding: Can\u2019T",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2638,
+    "name": "Expected number of coin flips to get two consecutive heads",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2639,
+    "name": "Algorithm Algorithm Dataset",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2640,
+    "name": "Computer Science Question",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2641,
+    "name": "One Cp Question Was, \"You Are Given",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2642,
+    "name": "Calculate Really Fast and Try Not to Make Mistakes",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2643,
+    "name": "What's The Fastest Way To Sort An Array",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2644,
+    "name": "Got Two Questions",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2645,
+    "name": "Random Data Science Questions With No Connection",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2646,
+    "name": "Comp Basics, Data Structure, Algorithm, Threading,",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "matrix or vector space object",
+        "structural constraints (e.g., symmetry/diagonal pattern)",
+        "eigenvalue/eigenvector quantities"
+      ],
+      "invariant_constraints": [
+        "Matrix identities and dimension compatibility hold"
+      ],
+      "target_objective": "Derive spectral properties or related algebraic quantities"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: matrix or vector space object, structural constraints (e.g., symmetry/diagonal pattern), eigenvalue/eigenvector quantities | Constraints: Matrix identities and dimension compatibility hold | Objective: Derive spectral properties or related algebraic quantities"
+  },
+  {
+    "problem_id": 2647,
+    "name": "What Data Would You Want To Solve",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2648,
+    "name": "Estimate the Price Impact",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure / Arbitrage Optimization",
+      "problem_setup_entities": [
+        "venues or markets",
+        "price discrepancies",
+        "execution/latency constraints",
+        "inventory/capital limits"
+      ],
+      "invariant_constraints": [
+        "Trades must satisfy market mechanics and timing constraints"
+      ],
+      "target_objective": "Design strategy maximizing risk-adjusted arbitrage profit"
+    },
+    "schema_text": "Domain: Market Microstructure / Arbitrage Optimization | Entities: venues or markets, price discrepancies, execution/latency constraints, inventory/capital limits | Constraints: Trades must satisfy market mechanics and timing constraints | Objective: Design strategy maximizing risk-adjusted arbitrage profit"
+  },
+  {
+    "problem_id": 2649,
+    "name": "Arrangements, Optimal Placement Strategi",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2650,
+    "name": "Why Nedbank",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "random variables/distributions",
+        "population/sample parameters",
+        "conditioning information"
+      ],
+      "invariant_constraints": [
+        "Use only stated distributional and independence assumptions"
+      ],
+      "target_objective": "Compute requested probability/Expected Value/variance or explain statistical concept"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: random variables/distributions, population/sample parameters, conditioning information | Constraints: Use only stated distributional and independence assumptions | Objective: Compute requested probability/Expected Value/variance or explain statistical concept"
+  },
+  {
+    "problem_id": 2651,
+    "name": "Current Trading Schema Team Constructed Models",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2652,
+    "name": "Value of a Normal Random Variable",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "random variables/distributions",
+        "population/sample parameters",
+        "conditioning information"
+      ],
+      "invariant_constraints": [
+        "Use only stated distributional and independence assumptions"
+      ],
+      "target_objective": "Compute requested probability/Expected Value/variance or explain statistical concept"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: random variables/distributions, population/sample parameters, conditioning information | Constraints: Use only stated distributional and independence assumptions | Objective: Compute requested probability/Expected Value/variance or explain statistical concept"
+  },
+  {
+    "problem_id": 2653,
+    "name": "Q: How Many Minutes After 5 Do",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2654,
+    "name": "Conditional Probability Family Children, Already Boy,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2655,
+    "name": "Choose Hyperparameters Machine Learning Model",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2656,
+    "name": "Choose 2 Elements From Set Of 1",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2657,
+    "name": "Tell Me A Time How You Meet",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2658,
+    "name": "Quant Trading Didn Exist, Career Profession",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2659,
+    "name": "Problem About Rolling Dices For Many",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2660,
+    "name": "Virtual Central Limit Theorem Technical Person.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Communicate statistical concept accurately with intuitive explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Communicate statistical concept accurately with intuitive explanation"
+  },
+  {
+    "problem_id": 2661,
+    "name": "There's You And A Taxman",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2662,
+    "name": "Efficient Delete Identical Rows Grid Entry",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2663,
+    "name": "Uniform 0,60",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "random variables/distributions",
+        "population/sample parameters",
+        "conditioning information"
+      ],
+      "invariant_constraints": [
+        "Use only stated distributional and independence assumptions"
+      ],
+      "target_objective": "Compute requested probability/Expected Value/variance or explain statistical concept"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: random variables/distributions, population/sample parameters, conditioning information | Constraints: Use only stated distributional and independence assumptions | Objective: Compute requested probability/Expected Value/variance or explain statistical concept"
+  },
+  {
+    "problem_id": 2664,
+    "name": "Matrix With 0S On Diagonal, 1S Everywhere Else",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "matrix or vector space object",
+        "structural constraints (e.g., symmetry/diagonal pattern)",
+        "eigenvalue/eigenvector quantities"
+      ],
+      "invariant_constraints": [
+        "Matrix identities and dimension compatibility hold"
+      ],
+      "target_objective": "Derive spectral properties or related algebraic quantities"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: matrix or vector space object, structural constraints (e.g., symmetry/diagonal pattern), eigenvalue/eigenvector quantities | Constraints: Matrix identities and dimension compatibility hold | Objective: Derive spectral properties or related algebraic quantities"
+  },
+  {
+    "problem_id": 2665,
+    "name": "Tell Me About Your Resume (Especially Stat",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2666,
+    "name": "Bayesian Stats Questions, Bayes Rule Prediction",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2667,
+    "name": "1000 Coins, Fair Remaining Heads Sides.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2668,
+    "name": "What Is Porbabiliy That 3 Dice Throws",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2669,
+    "name": "What's The Probability That The 10Th Number",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2670,
+    "name": "White 000,red 101,blue 110, Purple 100,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2671,
+    "name": "Order Book Data Structure, Optimize Fast,",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure / Arbitrage Optimization",
+      "problem_setup_entities": [
+        "venues or markets",
+        "price discrepancies",
+        "execution/latency constraints",
+        "inventory/capital limits"
+      ],
+      "invariant_constraints": [
+        "Trades must satisfy market mechanics and timing constraints"
+      ],
+      "target_objective": "Design strategy maximizing risk-adjusted arbitrage profit"
+    },
+    "schema_text": "Domain: Market Microstructure / Arbitrage Optimization | Entities: venues or markets, price discrepancies, execution/latency constraints, inventory/capital limits | Constraints: Trades must satisfy market mechanics and timing constraints | Objective: Design strategy maximizing risk-adjusted arbitrage profit"
+  },
+  {
+    "problem_id": 2672,
+    "name": "What Is The Probability Of Getting Hht",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2673,
+    "name": "Throw Three Marbles At A Tic-Tac-Toe Board",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2674,
+    "name": "Theorem Preferred Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2675,
+    "name": "Questions Were Easy (Easy Leetcode Level)",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2676,
+    "name": "Parameters Garch Estimate Them",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics / Volatility Modeling",
+      "problem_setup_entities": [
+        "return time series",
+        "conditional variance process",
+        "GARCH parameters (omega, alpha, beta)"
+      ],
+      "invariant_constraints": [
+        "Conditional variance is positive",
+        "Stationarity constraints hold when required"
+      ],
+      "target_objective": "Interpret and estimate volatility model parameters"
+    },
+    "schema_text": "Domain: Time Series Econometrics / Volatility Modeling | Entities: return time series, conditional variance process, GARCH parameters (omega, alpha, beta) | Constraints: Conditional variance is positive, Stationarity constraints hold when required | Objective: Interpret and estimate volatility model parameters"
+  },
+  {
+    "problem_id": 2677,
+    "name": "What Is The Difference Between A Numpy",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2678,
+    "name": "Find the Broken Code File",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2679,
+    "name": "Find All Over the Internet",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2680,
+    "name": "How Much Would You Pay To Play",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2681,
+    "name": "Probability Heads Tails Unbiased Coins.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2682,
+    "name": "What Machine Learning Technique Do You Know",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2683,
+    "name": "What Is The Probability If You Chose",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2684,
+    "name": "Expected Number of Times to Roll",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2685,
+    "name": "Linear Regression Assumptions, Problems Attention",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2686,
+    "name": "Suppose You Are Pricing A Call Option",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2687,
+    "name": "What Is Your Sr And How Much",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2688,
+    "name": "Time Complexity Algorithm Described.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2689,
+    "name": "Expected number of rolls to get 3 heads in a row",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2690,
+    "name": "Rolls on Average to Reach 10",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2691,
+    "name": "Throw Dice Until The Sum Over 100",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2692,
+    "name": "Multiple Choice, Estimate, Seconds.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning",
+      "problem_setup_entities": [
+        "problem-specific variables",
+        "given constraints",
+        "objective metric"
+      ],
+      "invariant_constraints": [
+        "Respect all explicit assumptions in prompt"
+      ],
+      "target_objective": "Provide rigorous quantitative solution or explanation"
+    },
+    "schema_text": "Domain: Quantitative Reasoning | Entities: problem-specific variables, given constraints, objective metric | Constraints: Respect all explicit assumptions in prompt | Objective: Provide rigorous quantitative solution or explanation"
+  },
+  {
+    "problem_id": 2693,
+    "name": "Friend Machine Outputs Random Integers Inclusive.",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2694,
+    "name": "& Statistics Questions And You Need",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2695,
+    "name": "Expected number of tosses to get TH? How about HTH",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2696,
+    "name": "Details About Projects, How Did You Deal",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 2697,
+    "name": "Find the Second-largest Element in a List",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  },
+  {
+    "problem_id": 2698,
+    "name": "Explain How Does Random Forest Work",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2699,
+    "name": "Case Study Optimizing Investments Client. Best",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2700,
+    "name": "What's Your Favourite Project",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2701,
+    "name": "Expectation Distance Origin Uniformly Drawn",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2702,
+    "name": "\u2022 How Would You Combine Time Series",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure / Arbitrage Optimization",
+      "problem_setup_entities": [
+        "venues or markets",
+        "price discrepancies",
+        "execution/latency constraints",
+        "inventory/capital limits"
+      ],
+      "invariant_constraints": [
+        "Trades must satisfy market mechanics and timing constraints"
+      ],
+      "target_objective": "Design strategy maximizing risk-adjusted arbitrage profit"
+    },
+    "schema_text": "Domain: Market Microstructure / Arbitrage Optimization | Entities: venues or markets, price discrepancies, execution/latency constraints, inventory/capital limits | Constraints: Trades must satisfy market mechanics and timing constraints | Objective: Design strategy maximizing risk-adjusted arbitrage profit"
+  },
+  {
+    "problem_id": 2703,
+    "name": "Prepare Small Presentation Initiate Working",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features",
+        "model parameters",
+        "error term"
+      ],
+      "invariant_constraints": [
+        "Model is linear in parameters unless otherwise stated",
+        "Inference uses stated distributional assumptions"
+      ],
+      "target_objective": "Estimate parameters, transform coefficients, or evaluate model assumptions"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features, model parameters, error term | Constraints: Model is linear in parameters unless otherwise stated, Inference uses stated distributional assumptions | Objective: Estimate parameters, transform coefficients, or evaluate model assumptions"
+  },
+  {
+    "problem_id": 2704,
+    "name": "Questions About Machine Learning Theory And Technical Bac...",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 2705,
+    "name": "Value of the Hang Seng Index or CSI",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 2706,
+    "name": "Some Classical Brainteasers, Programming Questions Includ...",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Data Structures",
+      "problem_setup_entities": [
+        "input data structure",
+        "allowed operations",
+        "size parameter n"
+      ],
+      "invariant_constraints": [
+        "Correctness under all valid inputs",
+        "Complexity measured in time and/or space"
+      ],
+      "target_objective": "Design or analyze an algorithm with optimal complexity"
+    },
+    "schema_text": "Domain: Algorithms / Data Structures | Entities: input data structure, allowed operations, size parameter n | Constraints: Correctness under all valid inputs, Complexity measured in time and/or space | Objective: Design or analyze an algorithm with optimal complexity"
+  }
+]

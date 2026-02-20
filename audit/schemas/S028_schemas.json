@@ -1,0 +1,1523 @@
+[
+  {
+    "problem_id": 2707,
+    "name": "What Is My Ph",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2708,
+    "name": "Value Change",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor variables",
+        "hypothesis tests"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: response variable, predictor variables, hypothesis tests | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2709,
+    "name": "Roll A Dice And Get The Surface",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "dice rolls",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: dice rolls, payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2710,
+    "name": "Expected number of sharks left",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "sharks"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: sharks | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2711,
+    "name": "Estimate How Long Until Another Bus Arrives",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2712,
+    "name": "How Would You Describe A Machine Learning",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2713,
+    "name": "B Won, What S the Probability of a Win on Fir",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips | Constraints: Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2714,
+    "name": "Expected value of the game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2715,
+    "name": "What Are Some Names Of Machine Learning",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2716,
+    "name": "Chocolate Chip Sticks Minth Sticks, Possibilities",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2717,
+    "name": "Estimate Expected Value Throw Throw Times",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "dice rolls",
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: dice rolls, order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2718,
+    "name": "- Difference Between Inner And Outer Join",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "payout random variable",
+        "relational tables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Construct a correct SQL query satisfying the schema constraints."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: payout random variable, relational tables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Construct a correct SQL query satisfying the schema constraints."
+  },
+  {
+    "problem_id": 2719,
+    "name": "When We Perform Ols For A Linear",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor variables"
+      ],
+      "invariant_constraints": [
+        "Classical linear-model assumptions may be violated."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: response variable, predictor variables | Constraints: Classical linear-model assumptions may be violated. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2720,
+    "name": "Probability of the Coin You Are Fliping",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2721,
+    "name": "What Is Your Motivation",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2722,
+    "name": "Mostly Project Based Questions, However Really",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2723,
+    "name": "Price Models",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2724,
+    "name": "Roll Dice, Expected Number Throws Order.",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2725,
+    "name": "Describe Algorithm Approximate Zero Continuous Function.",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "decision variables",
+        "constraints set"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Find an optimal feasible solution or describe a robust solution method."
+    },
+    "schema_text": "Domain: Optimization | Entities: decision variables, constraints set | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Find an optimal feasible solution or describe a robust solution method."
+  },
+  {
+    "problem_id": 2726,
+    "name": "Find on Quantguide",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "random experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: random experiment outcomes | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2727,
+    "name": "Expected number of draws to get a pair",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "socks"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: socks | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2728,
+    "name": "Expected Value of Dice Rolling Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls, payout random variable | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2729,
+    "name": "Suppose You Have A Coin, And You",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2730,
+    "name": "Flip A Coin Whats The Probability I",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "coin flips"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: coin flips | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2731,
+    "name": "Compare Games Related To Throwing Dice, Simulate",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2732,
+    "name": "Find weights of each one",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2733,
+    "name": "Value of the Roll",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "dice rolls",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: dice rolls, payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2734,
+    "name": "Egg Question",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Optimization",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Minimize worst-case number of trials needed to identify the target state."
+    },
+    "schema_text": "Domain: Combinatorial Optimization | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Minimize worst-case number of trials needed to identify the target state."
+  },
+  {
+    "problem_id": 2735,
+    "name": "Difference Systemic Non-systemic Risk",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2736,
+    "name": "Price Series of Stock",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "price time series"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: price time series | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2737,
+    "name": "Implement Some Standard Combinatorics Functions (E",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Number Theory",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Count the number of valid configurations satisfying the stated rules."
+    },
+    "schema_text": "Domain: Combinatorics / Number Theory | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Count the number of valid configurations satisfying the stated rules."
+  },
+  {
+    "problem_id": 2738,
+    "name": "They Gave You An Initial Market Share",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "transition matrix",
+        "state distribution"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: random experiment outcomes, transition matrix, state distribution | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2739,
+    "name": "How Interest Rate Impact Zero Coupon",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2740,
+    "name": "Can You Tell Me A Few Sorting Algorithms",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Discrete Mathematics",
+      "problem_setup_entities": [
+        "input array"
+      ],
+      "invariant_constraints": [
+        "Algorithmic complexity is evaluated."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: Algorithms / Discrete Mathematics | Entities: input array | Constraints: Algorithmic complexity is evaluated. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2741,
+    "name": "Normally Distributed Independant Random Variables 100,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "Gaussian random variables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: Gaussian random variables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2742,
+    "name": "What Is Capm",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "payout random variable",
+        "asset returns",
+        "portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: payout random variable, asset returns, portfolio weights | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2743,
+    "name": "Assumptions",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "Gaussian random variables"
+      ],
+      "invariant_constraints": [
+        "Classical linear-model assumptions may be violated."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: Gaussian random variables | Constraints: Classical linear-model assumptions may be violated. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2744,
+    "name": "Earnings Trading Stocks Specific Algorithm.",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2745,
+    "name": "Use C To Write A Recursion Function",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Discrete Mathematics",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: Algorithms / Discrete Mathematics | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2746,
+    "name": "What Are The First Three Digits After",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Number Theory",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Count the number of valid configurations satisfying the stated rules."
+    },
+    "schema_text": "Domain: Combinatorics / Number Theory | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Count the number of valid configurations satisfying the stated rules."
+  },
+  {
+    "problem_id": 2747,
+    "name": "Why Is Portfolio Variance An Important Metric",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset returns",
+        "portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset returns, portfolio weights | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2748,
+    "name": "What Is The Difference Between Compiling Language",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2749,
+    "name": "Value of a Logarithm 2",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2750,
+    "name": "How Many Pizzas Are Sold Every Year",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2751,
+    "name": "Current Trading Strategies",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "asset returns",
+        "portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: asset returns, portfolio weights | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2752,
+    "name": "How Many Xxx Are There In This World",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2753,
+    "name": "Write A Querry Based On The Schema",
+    "schema": {
+      "core_mathematical_domain": "Algorithms / Discrete Mathematics",
+      "problem_setup_entities": [
+        "relational tables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Construct a correct SQL query satisfying the schema constraints."
+    },
+    "schema_text": "Domain: Algorithms / Discrete Mathematics | Entities: relational tables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Construct a correct SQL query satisfying the schema constraints."
+  },
+  {
+    "problem_id": 2754,
+    "name": "Sharks Lined Row, Left Time Pass",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "sharks",
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: sharks, order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2755,
+    "name": "Questions, Option Correct Least Questions, Option",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "underlying asset price",
+        "option payoff"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: underlying asset price, option payoff | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2756,
+    "name": "Tell Me About Past Projects Challenges Faced",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2757,
+    "name": "One Behavoral, 2 Coding, And Then Explain",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  },
+  {
+    "problem_id": 2758,
+    "name": "What Is The Difference Between A Hedge",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2759,
+    "name": "What Machine Learning Models You Know",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2760,
+    "name": "Rolling Fair Dice, Probability Getting Number,",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism).",
+        "Process stops at the first occurrence of the target event (stopping time)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism).; Process stops at the first occurrence of the target event (stopping time). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2761,
+    "name": "Here Is A List Of Trades/Order Book",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2762,
+    "name": "Duration Convexity Years Treasury Bond",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "bond cash flows",
+        "yield/discount curve"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: bond cash flows, yield/discount curve | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2763,
+    "name": "Expected Area Formed Triangle Choosing Random",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "geometric random points"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: geometric random points | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2764,
+    "name": "What's Your Favorite Subject In College",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2765,
+    "name": "Brainteaser Expected Maximum Utility Game Involving",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "cards",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: cards, payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2766,
+    "name": "Start Game Pick Number 100, Real",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2767,
+    "name": "Risk Neutral Distribution Someone Quant",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2768,
+    "name": "Jointly Gaussian Correlation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "Gaussian random variables",
+        "relational tables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Construct a correct SQL query satisfying the schema constraints."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: Gaussian random variables, relational tables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Construct a correct SQL query satisfying the schema constraints."
+  },
+  {
+    "problem_id": 2769,
+    "name": "Some Betting Game Asking Me How Much",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2770,
+    "name": "Money Able Option Roll Dice Again",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "dice rolls",
+        "payout random variable",
+        "underlying asset price",
+        "option payoff"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: dice rolls, payout random variable, underlying asset price, option payoff | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2771,
+    "name": "At Least One Die Shows a 3",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2772,
+    "name": "Probability Getting Strictly Increasing Order Rolling",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2773,
+    "name": "How Many Ways Are There To Color",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2774,
+    "name": "Dice Game. Variations Game, Compare Expected",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2775,
+    "name": "Estimate With Confidence 2",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: random experiment outcomes, order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2776,
+    "name": "Occurrence You Get",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "coin flips",
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: coin flips, order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2777,
+    "name": "Probability of you win",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2778,
+    "name": "How Many Wheels Are There In Your",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2779,
+    "name": "One Out of the Eight",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Optimization",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Minimize worst-case number of trials needed to identify the target state."
+    },
+    "schema_text": "Domain: Combinatorial Optimization | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Minimize worst-case number of trials needed to identify the target state."
+  },
+  {
+    "problem_id": 2780,
+    "name": "Average Distance Center Randomly Sample Point",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "geometric random points"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: geometric random points | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2781,
+    "name": "Number Total Positive Factors. Total Number",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Number Theory",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Count the number of valid configurations satisfying the stated rules."
+    },
+    "schema_text": "Domain: Combinatorics / Number Theory | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Count the number of valid configurations satisfying the stated rules."
+  },
+  {
+    "problem_id": 2782,
+    "name": "Linear Regression Exchange Kind Results",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor variables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: response variable, predictor variables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2783,
+    "name": "Ways Place Digits Sequence Digit Either",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2784,
+    "name": "100 Light Bulbs",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2785,
+    "name": "Estimate Pi Using the Random Module",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2786,
+    "name": "Value Bonferroni Correction Program Count Streaks",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "coin flips",
+        "hypothesis tests"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: coin flips, hypothesis tests | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2787,
+    "name": "Explain Lasso, Ridge Regression As A Penalty Code Merge Sort",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor variables",
+        "input array"
+      ],
+      "invariant_constraints": [
+        "Algorithmic complexity is evaluated."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: response variable, predictor variables, input array | Constraints: Algorithmic complexity is evaluated. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2788,
+    "name": "Find the volume of the enclosed region",
+    "schema": {
+      "core_mathematical_domain": "Geometry",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the exact geometric measure requested by the construction."
+    },
+    "schema_text": "Domain: Geometry | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the exact geometric measure requested by the construction."
+  },
+  {
+    "problem_id": 2789,
+    "name": "Stick Broken Points, Probability Parts Form",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "geometric random points"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: geometric random points | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2790,
+    "name": "Markers Around Players Cards",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "cards"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: cards | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2791,
+    "name": "Game Involves Moving Blocks Around, Blocks",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "random experiment outcomes"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: random experiment outcomes | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2792,
+    "name": "- Whats Is The Variance Of X",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "payout random variable",
+        "response variable",
+        "predictor variables"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: payout random variable, response variable, predictor variables | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2793,
+    "name": "Hr : Where Do You See Yourself",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2794,
+    "name": "Change Thing Yourself, Choose.",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2795,
+    "name": "Price of Apartments",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2796,
+    "name": "Probability That All Faces Have Appeared",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability | Entities: dice rolls | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the probability of the target event under the stated experiment."
+  },
+  {
+    "problem_id": 2797,
+    "name": "Minimum Point for the Function",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "decision variables",
+        "constraints set"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Find an optimal feasible solution or describe a robust solution method."
+    },
+    "schema_text": "Domain: Optimization | Entities: decision variables, constraints set | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Find an optimal feasible solution or describe a robust solution method."
+  },
+  {
+    "problem_id": 2798,
+    "name": "Expected value of the larger number shown",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "dice rolls"
+      ],
+      "invariant_constraints": [
+        "Outcomes are uniformly distributed (fair mechanism)."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: dice rolls | Constraints: Outcomes are uniformly distributed (fair mechanism). | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2799,
+    "name": "1) Explain How Swap Is Priced 2)",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "fixed leg",
+        "floating leg",
+        "underlying asset price",
+        "option payoff"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: fixed leg, floating leg, underlying asset price, option payoff | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2800,
+    "name": "Optimization Unfeasible, Constraints,",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "decision variables",
+        "constraints set"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Find an optimal feasible solution or describe a robust solution method."
+    },
+    "schema_text": "Domain: Optimization | Entities: decision variables, constraints set | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Find an optimal feasible solution or describe a robust solution method."
+  },
+  {
+    "problem_id": 2801,
+    "name": "Price a Bond. Explain the Binomial Method",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "bond cash flows",
+        "yield/discount curve"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Derive pricing, risk, or portfolio metric implied by the market model."
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: bond cash flows, yield/discount curve | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Derive pricing, risk, or portfolio metric implied by the market model."
+  },
+  {
+    "problem_id": 2802,
+    "name": "¿Qué Asignaturas Te Has Gustado Más/Menos",
+    "schema": {
+      "core_mathematical_domain": "Behavioral / Conceptual Interview",
+      "problem_setup_entities": [
+        "candidate experience",
+        "conceptual knowledge"
+      ],
+      "invariant_constraints": [
+        "Response should be coherent and aligned with role expectations."
+      ],
+      "target_objective": "Provide a clear qualitative explanation addressing the interview prompt."
+    },
+    "schema_text": "Domain: Behavioral / Conceptual Interview | Entities: candidate experience, conceptual knowledge | Constraints: Response should be coherent and aligned with role expectations. | Objective: Provide a clear qualitative explanation addressing the interview prompt."
+  },
+  {
+    "problem_id": 2803,
+    "name": "Value Question",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: random experiment outcomes, order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 2804,
+    "name": "How Do You Pick Hypermareters For Xgboost",
+    "schema": {
+      "core_mathematical_domain": "Statistics / Machine Learning",
+      "problem_setup_entities": [
+        "coin flips",
+        "model hyperparameters"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+    },
+    "schema_text": "Domain: Statistics / Machine Learning | Entities: coin flips, model hyperparameters | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Explain model behavior, assumptions, or estimation procedure for the statistical learning setup."
+  },
+  {
+    "problem_id": 2805,
+    "name": "Later Interviews Enter Game Flip Coin,",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value)",
+      "problem_setup_entities": [
+        "coin flips",
+        "payout random variable"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Compute the Expected Value of the defined payout or stopping-time random variable."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value) | Entities: coin flips, payout random variable | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Compute the Expected Value of the defined payout or stopping-time random variable."
+  },
+  {
+    "problem_id": 2806,
+    "name": "There Are 3 Gaz Stations With Limited",
+    "schema": {
+      "core_mathematical_domain": "General Quantitative Reasoning",
+      "problem_setup_entities": [],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Identify or compute the requested quantitative quantity."
+    },
+    "schema_text": "Domain: General Quantitative Reasoning | Entities:  | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Identify or compute the requested quantitative quantity."
+  }
+]

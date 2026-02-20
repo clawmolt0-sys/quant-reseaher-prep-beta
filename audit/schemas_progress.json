@@ -24,8 +24,13 @@
     "S022",
     "S023",
     "S024",
-    "S025"
+    "S025",
+    "S026",
+    "S027",
+    "S028",
+    "S029",
+    "S030"
   ],
-  "completed_records": 2500,
+  "completed_records": 3000,
   "target_records": 4924
 }
