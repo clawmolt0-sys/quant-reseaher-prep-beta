@@ -1,0 +1,1535 @@
+[
+  {
+    "problem_id": 1,
+    "name": "Sum of Gaussians: Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 2,
+    "name": "Card Shuffling: Expected Position of Ace of Spades",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Uniform random permutation of 52-card deck",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random",
+        "Deck is complete and uniformly shuffled"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Uniform random permutation of 52-card deck, Uniform(0,1) random variables | Constraints: Selection is uniformly random, Deck is complete and uniformly shuffled | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 3,
+    "name": "Bond Convexity",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics",
+      "problem_setup_entities": [
+        "Bond price, yield, duration, convexity"
+      ],
+      "invariant_constraints": [
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Estimate percentage bond price change using duration and convexity approximations"
+    },
+    "schema_text": "Domain: Fixed Income Mathematics | Entities: Bond price, yield, duration, convexity | Constraints: Stated numerical parameters are treated as fixed inputs | Objective: Estimate percentage bond price change using duration and convexity approximations"
+  },
+  {
+    "problem_id": 4,
+    "name": "Unbiased Coin from Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified",
+        "Bias parameter is fixed but unknown"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified, Bias parameter is fixed but unknown | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 5,
+    "name": "Conditional Probability: Smoker Health",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Random variables and model parameters defined in the prompt | Constraints: Stated numerical parameters are treated as fixed inputs | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 6,
+    "name": "Coin Flips Until Two Consecutive Heads",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 7,
+    "name": "Sum of Uniforms Exceeds 1",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: U_1, U_2, U_1, U_2"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables, Explicit variables from the statement: U_1, U_2, U_1, U_2 | Constraints: Variables are i.i.d. as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 8,
+    "name": "Blue Balls in Three Boxes",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Mixture over boxes/urns",
+        "Colored balls in urns",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Mixture over boxes/urns, Colored balls in urns, Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 9,
+    "name": "Dice Sum vs Coin Heads: Which is More Likely?",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process",
+        "Fair six-sided dice"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process, Fair six-sided dice | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 10,
+    "name": "Joint Normal Conditional Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Jointly normal pair (X, Y)",
+        "Explicit variables from the statement: E"
+      ],
+      "invariant_constraints": [
+        "Joint normality assumption holds"
+      ],
+      "target_objective": "Derive the requested closed-form expression"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Normal random variables, Jointly normal pair (X, Y), Explicit variables from the statement: E | Constraints: Joint normality assumption holds | Objective: Derive the requested closed-form expression"
+  },
+  {
+    "problem_id": 11,
+    "name": "Stock Price State Transition Model",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Discrete stock-price state process",
+        "Explicit variables from the statement: L, M, H, L"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Discrete stock-price state process, Explicit variables from the statement: L, M, H, L | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 12,
+    "name": "P(Y > 3X) for Independent Normals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 13,
+    "name": "Even Number of Heads in N Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 14,
+    "name": "Two People Meeting in a Time Window",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 15,
+    "name": "Probability of Getting More Heads Than Tails",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 16,
+    "name": "Balls in Two Boxes Optimization",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Mixture over boxes/urns",
+        "Colored balls in urns",
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Mixture over boxes/urns, Colored balls in urns, Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 17,
+    "name": "Coin Toss Doubling Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process",
+        "Explicit variables from the statement: W"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process, Explicit variables from the statement: W | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 18,
+    "name": "Circular Seating Probability",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 19,
+    "name": "Adjacent Seating Arrangement",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 20,
+    "name": "Expected Distance Between Points on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Independence assumptions hold as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 21,
+    "name": "Fair Value of Uncertain Land",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified",
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Underlying random mechanism is fair/uniform as specified, Stated numerical parameters are treated as fixed inputs | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 22,
+    "name": "Markov Chain Stationary Distribution",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Markov chain states and transition probabilities"
+      ],
+      "invariant_constraints": [
+        "State transitions follow the given transition probabilities"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Markov chain states and transition probabilities | Constraints: State transitions follow the given transition probabilities | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 23,
+    "name": "Generating Arbitrary Probabilities from a Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 24,
+    "name": "Biased Coin to Fair Coin (Von Neumann)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process",
+        "Biased coin with unknown probability",
+        "Explicit variables from the statement: H"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process, Biased coin with unknown probability, Explicit variables from the statement: H | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 25,
+    "name": "Even/Odd Heads: Testing Coin Fairness",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 26,
+    "name": "Seating Expectation with Adjacency",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 27,
+    "name": "Russian Roulette Survival",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 28,
+    "name": "Probability That no Two Consecutive Tosses",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 29,
+    "name": "Central Limit Theorem Application",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 30,
+    "name": "P(X + 3Y > 0 | X > 0)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Normal Distribution)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Normal Distribution) | Entities: Random variables and model parameters defined in the prompt | Constraints: Variables are i.i.d. as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 31,
+    "name": "Geometric Probability: Random Point in Parabola",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: E, E"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables, Explicit variables from the statement: E, E | Constraints: Selection is uniformly random | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 32,
+    "name": "Normal Distribution: Fourth Moment",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: E"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Explicit variables from the statement: E | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 33,
+    "name": "Government Office Exponential Arrivals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Poisson random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Poisson random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 34,
+    "name": "CDF of Distance from Origin in Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: R"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables, Explicit variables from the statement: R | Constraints: Selection is uniformly random | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 35,
+    "name": "Breaking a Stick into a Triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 36,
+    "name": "Biased Coin to Fair Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Fair coin toss process",
+        "Biased coin with unknown probability",
+        "Explicit variables from the statement: H"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Fair coin toss process, Biased coin with unknown probability, Explicit variables from the statement: H | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 37,
+    "name": "Uniform Disk Sampling",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: R, U, U, R"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables, Explicit variables from the statement: R, U, U, R | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 38,
+    "name": "Stick Breaking Triangle Probability",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: L"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables, Explicit variables from the statement: L | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 39,
+    "name": "Gambler's Ruin",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Fair coin toss process"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Fair coin toss process | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 40,
+    "name": "Poker Hand Probability via DP",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 41,
+    "name": "Conditional Expectation Tower Property",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: G, H, E, E"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Explicit variables from the statement: G, H, E, E | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 42,
+    "name": "Vertices Chosen Uniformly Random Vertices Cube.",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 43,
+    "name": "Optimal Stopping for U[0,1] Draws",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: U"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Explicit variables from the statement: U | Constraints: Variables are i.i.d. as specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 44,
+    "name": "Two Envelope Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Conditional Probability)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Conditional Probability) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 45,
+    "name": "Conditional Probability of Uniform Order Statistics",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: U_1, U_2, U_3, E"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables, Explicit variables from the statement: U_1, U_2, U_3, E | Constraints: Variables are i.i.d. as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 46,
+    "name": "Acute Triangle from Random Points on Circle",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 47,
+    "name": "Umbrella Markov Chain",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 48,
+    "name": "E[max(X, 3Y)] for Independent Normals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Explicit variables from the statement: E"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Normal random variables, Explicit variables from the statement: E | Constraints: Independence assumptions hold as stated | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 49,
+    "name": "Secretary Problem (I.I.D. Ranking Game)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Variables are i.i.d. as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 50,
+    "name": "Three Frogs on an Equilateral Triangle",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Markov Chains)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Stochastic Processes (Markov Chains) | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 51,
+    "name": "Drawing Balls Until Two Colors Remain",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Colored balls in urns"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Colored balls in urns | Constraints: Sampling is without replacement | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 52,
+    "name": "Candidates Sequentially Job. Interview, Immediately Accept",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 53,
+    "name": "Sampling Uniformly from a 3D Unit Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: S, R"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables, Explicit variables from the statement: S, R | Constraints: Selection is uniformly random | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 54,
+    "name": "Branching Process Extinction Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 55,
+    "name": "People in a Circle: Who Can See?",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 56,
+    "name": "Triangle Containing the Center",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 57,
+    "name": "Frechet-Hoeffding Bounds for Joint CDF",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: F_X, F_Y"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Explicit variables from the statement: F_X, F_Y | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 58,
+    "name": "Theta-Gamma Relationship",
+    "schema": {
+      "core_mathematical_domain": "Black Scholes Greeks",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: L, S, S, S"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Black Scholes Greeks | Entities: Explicit variables from the statement: L, S, S, S | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 59,
+    "name": "Expected Value of Max of Two Dice",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Fair six-sided dice",
+        "Explicit variables from the statement: E, X_1, X_2"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Fair six-sided dice, Explicit variables from the statement: E, X_1, X_2 | Constraints: Independence assumptions hold as stated, Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 60,
+    "name": "Expected Runs in a Card Deck",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Uniform random permutation of 52-card deck"
+      ],
+      "invariant_constraints": [
+        "Deck is complete and uniformly shuffled"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Uniform random permutation of 52-card deck | Constraints: Deck is complete and uniformly shuffled | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 61,
+    "name": "Nested Uniforms: E[U1 * U2]",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: U_1, U_2, U_1, U_1"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Uniform(0,1) random variables, Explicit variables from the statement: U_1, U_2, U_1, U_1 | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 62,
+    "name": "Dice Game: Expected Adjacent Different Colors in Cards",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Uniform random permutation of 52-card deck"
+      ],
+      "invariant_constraints": [
+        "Deck is complete and uniformly shuffled"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Uniform random permutation of 52-card deck | Constraints: Deck is complete and uniformly shuffled | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 63,
+    "name": "Expected Handshakes in a Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 64,
+    "name": "Expected Draws to First Ace",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform random permutation of 52-card deck"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement",
+        "Deck is complete and uniformly shuffled"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform random permutation of 52-card deck | Constraints: Sampling is without replacement, Deck is complete and uniformly shuffled | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 65,
+    "name": "Expected Sum Until 1 Appears (Die Rolling)",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Random variables and model parameters defined in the prompt | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 66,
+    "name": "Ten-Sided Die Payoff Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 67,
+    "name": "Coupon Collector Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 68,
+    "name": "Expected Meeting: Walking Until Seeing Someone Taller",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 69,
+    "name": "Expected Number of Fixed Points in a Permutation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 70,
+    "name": "Dice Game: When to Stop",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stopping Times)",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stopping Times) | Entities: Random variables and model parameters defined in the prompt | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 71,
+    "name": "Expected Arc Length on a Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables | Constraints: Independence assumptions hold as stated | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 72,
+    "name": "Random Walk on Circle Intersections",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 73,
+    "name": "Asymmetric Random Walk Absorption Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 74,
+    "name": "Random Walk Trading Strategy",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Discrete stock-price state process",
+        "Explicit variables from the statement: S_0"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Discrete stock-price state process, Explicit variables from the statement: S_0 | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 75,
+    "name": "Random Walk on Cayley Tree",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Uniform(0,1) random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 76,
+    "name": "Expected Chord Length Through a Disk",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 77,
+    "name": "Expected Chord Intersections",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the Expected Value of the target random quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the Expected Value of the target random quantity"
+  },
+  {
+    "problem_id": 78,
+    "name": "Positive Integer Triple Counting",
+    "schema": {
+      "core_mathematical_domain": "Brain Teasers",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Brain Teasers | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 79,
+    "name": "Birthday Problem",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Uniform(0,1) random variables | Constraints: Stated numerical parameters are treated as fixed inputs | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 80,
+    "name": "Five Points on a Hemisphere",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: Uniform(0,1) random variables | Constraints: Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 81,
+    "name": "Correlation Does Not Imply Independence",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 82,
+    "name": "Bayesian Coin: Fair vs Double-Headed",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: H, H"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: H, H | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 83,
+    "name": "M&M Hypothesis Testing",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: M, M"
+      ],
+      "invariant_constraints": [
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: M, M | Constraints: Stated numerical parameters are treated as fixed inputs | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 84,
+    "name": "Analyst Forecast Combination",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 85,
+    "name": "Correlation of Sum and Difference",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: S"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: S | Constraints: Variables are i.i.d. as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 86,
+    "name": "OLS Estimator Derivation",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: I"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Derive the requested closed-form expression"
+    },
+    "schema_text": "Domain: Linear Regression | Entities: Explicit variables from the statement: I | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Derive the requested closed-form expression"
+  },
+  {
+    "problem_id": 87,
+    "name": "Regression with Duplicated Data",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: R"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: R | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 88,
+    "name": "Bayesian Coin Inference",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified",
+        "Selection is uniformly random"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Regression | Entities: Uniform(0,1) random variables | Constraints: Underlying random mechanism is fair/uniform as specified, Selection is uniformly random | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 89,
+    "name": "MLE for Uniform Distribution",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Uniform(0,1) random variables",
+        "Explicit variables from the statement: X_1"
+      ],
+      "invariant_constraints": [
+        "Variables are i.i.d. as specified"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Uniform(0,1) random variables, Explicit variables from the statement: X_1 | Constraints: Variables are i.i.d. as specified | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 90,
+    "name": "F-test for Nested Regression Models",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: F"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Derive the requested closed-form expression"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: F | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Derive the requested closed-form expression"
+  },
+  {
+    "problem_id": 91,
+    "name": "OLS vs Ridge vs Lasso Regression",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Discrete stock-price state process"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Derive the requested closed-form expression"
+    },
+    "schema_text": "Domain: Regression | Entities: Discrete stock-price state process | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Derive the requested closed-form expression"
+  },
+  {
+    "problem_id": 92,
+    "name": "R-Squared Properties Under Transformation",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: R, R"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: R, R | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 93,
+    "name": "Simulating Correlated Normals via Cholesky",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Normal random variables"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Normal random variables | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 94,
+    "name": "Special Coin Given All Heads (Bayesian)",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: H, H"
+      ],
+      "invariant_constraints": [
+        "Underlying random mechanism is fair/uniform as specified"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: H, H | Constraints: Underlying random mechanism is fair/uniform as specified | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 95,
+    "name": "Mixture of Normals: Moments",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Explicit variables from the statement: E"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the required probability under the stated model"
+    },
+    "schema_text": "Domain: Regression | Entities: Explicit variables from the statement: E | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the required probability under the stated model"
+  },
+  {
+    "problem_id": 96,
+    "name": "Linear Regression Assumptions and Violations",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 97,
+    "name": "Asset Correlation Range from Partial Information",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 98,
+    "name": "Linear MMSE Estimation",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Normal random variables",
+        "Explicit variables from the statement: E"
+      ],
+      "invariant_constraints": [
+        "Use exactly the assumptions and parameter values stated in the problem"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Normal random variables, Explicit variables from the statement: E | Constraints: Use exactly the assumptions and parameter values stated in the problem | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  },
+  {
+    "problem_id": 99,
+    "name": "Bayesian Inference for Rare Events",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Stated numerical parameters are treated as fixed inputs"
+      ],
+      "target_objective": "Derive the distribution of the target random variable"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Stated numerical parameters are treated as fixed inputs | Objective: Derive the distribution of the target random variable"
+  },
+  {
+    "problem_id": 100,
+    "name": "Optimal Estimate from Two Scales (MLE)",
+    "schema": {
+      "core_mathematical_domain": "Regression",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the explicitly requested quantity using the stated assumptions"
+    },
+    "schema_text": "Domain: Regression | Entities: Random variables and model parameters defined in the prompt | Constraints: Independence assumptions hold as stated | Objective: Compute the explicitly requested quantity using the stated assumptions"
+  }
+]
