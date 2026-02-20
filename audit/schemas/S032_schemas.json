@@ -1,0 +1,1902 @@
+[
+  {
+    "problem_id": 3107,
+    "name": "Realized kernel under microstructure noise",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3108,
+    "name": "Rt Xt-1 Ut With Xt Xt-1 Vt, 1, Cov Ut, Vt Uv",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3109,
+    "name": "HAR-RV forecast and evaluation",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3110,
+    "name": "OU spread with measurement error (state space)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3111,
+    "name": "Linear factor model via GMM",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3112,
+    "name": "Extreme tails via Hill estimator",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3113,
+    "name": "K-way merge of sorted trade streams (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3114,
+    "name": "Rolling correlation in O(1) per update (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3115,
+    "name": "Minimum Length Subarray With Sum K for Integers Coding",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3116,
+    "name": "Weighted Assignment for Crossing Minimization Coding Optimization",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3117,
+    "name": "Online Mean Variance Forgetting Coding Stat",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3118,
+    "name": "Bloom filter sizing and optimal hashes",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3119,
+    "name": "T Digest Style Streaming Quantiles Design Analysis",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3120,
+    "name": "Extreme-value trading threshold",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3121,
+    "name": "First-price auction equilibrium and reserves",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3122,
+    "name": "Proper log score and Kelly connection",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3123,
+    "name": "Market-making with CARA utility",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value and order-flow model",
+        "Quotes/execution decisions with inventory or position state",
+        "Payoff/P&L with adverse selection and execution uncertainty"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage, zero-profit, or utility-maximization condition",
+        "Execution probabilities and fills depend on quote placement/market state",
+        "Inventory, tick-size, and latency constraints when specified"
+      ],
+      "target_objective": "Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value and order-flow model, Quotes/execution decisions with inventory or position state, Payoff/P&L with adverse selection and execution uncertainty | Constraints: No-arbitrage, zero-profit, or utility-maximization condition, Execution probabilities and fills depend on quote placement/market state, Inventory, tick-size, and latency constraints when specified | Objective: Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+  },
+  {
+    "problem_id": 3124,
+    "name": "Break-even M for Each Case",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3125,
+    "name": "Calendar-spread no-arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value and order-flow model",
+        "Quotes/execution decisions with inventory or position state",
+        "Payoff/P&L with adverse selection and execution uncertainty"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage, zero-profit, or utility-maximization condition",
+        "Execution probabilities and fills depend on quote placement/market state",
+        "Inventory, tick-size, and latency constraints when specified"
+      ],
+      "target_objective": "Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value and order-flow model, Quotes/execution decisions with inventory or position state, Payoff/P&L with adverse selection and execution uncertainty | Constraints: No-arbitrage, zero-profit, or utility-maximization condition, Execution probabilities and fills depend on quote placement/market state, Inventory, tick-size, and latency constraints when specified | Objective: Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+  },
+  {
+    "problem_id": 3126,
+    "name": "P≤lya urn and majority event",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3127,
+    "name": "Optional stopping sanity-check (martingale)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3128,
+    "name": "Posterior Bayes factor for a normal mean",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3129,
+    "name": "Hansen's SPA test for best model",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3130,
+    "name": "Estimating the Hurst exponent via DFA",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3131,
+    "name": "Huber regression and IRLS",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3132,
+    "name": "Overlapping returns and Sharpe inference",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3133,
+    "name": "Hidden Markov AR(1) via EM",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3134,
+    "name": "Misra¡Gries heavy hitters (stream)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3135,
+    "name": "KMV distinct counting",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3136,
+    "name": "Longest substring with at most K distinct symbols",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3137,
+    "name": "Trade-to-quote join (as-of match)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3138,
+    "name": "Minimum Number of Rooms So",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3139,
+    "name": "Minimal S Ensuring Nonnegative Expected",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3140,
+    "name": "Market making, EV & adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value and order-flow model",
+        "Quotes/execution decisions with inventory or position state",
+        "Payoff/P&L with adverse selection and execution uncertainty"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage, zero-profit, or utility-maximization condition",
+        "Execution probabilities and fills depend on quote placement/market state",
+        "Inventory, tick-size, and latency constraints when specified"
+      ],
+      "target_objective": "Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value and order-flow model, Quotes/execution decisions with inventory or position state, Payoff/P&L with adverse selection and execution uncertainty | Constraints: No-arbitrage, zero-profit, or utility-maximization condition, Execution probabilities and fills depend on quote placement/market state, Inventory, tick-size, and latency constraints when specified | Objective: Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+  },
+  {
+    "problem_id": 3141,
+    "name": "Bayesian updating",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3142,
+    "name": "Linear MMSE / conditional Gaussian",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3143,
+    "name": "Regression: duplicate the dataset",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3144,
+    "name": "Upper bound on combined R2",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3145,
+    "name": "Errors-in-variables bias",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3146,
+    "name": "Sharpe with autocorrelation & aggregation",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3147,
+    "name": "Volatility modeling",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return or price process over time",
+        "Dynamic model parameters and state variables",
+        "Forecast horizon and risk/performance metric"
+      ],
+      "invariant_constraints": [
+        "Model stationarity/positivity/stability conditions",
+        "Recursive dynamics and filtration-consistent updates",
+        "Risk and forecast quantities must be model-consistent"
+      ],
+      "target_objective": "Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return or price process over time, Dynamic model parameters and state variables, Forecast horizon and risk/performance metric | Constraints: Model stationarity/positivity/stability conditions, Recursive dynamics and filtration-consistent updates, Risk and forecast quantities must be model-consistent | Objective: Compute forecasts, risk measures, or model-implied quantities needed for inference or decision-making."
+  },
+  {
+    "problem_id": 3148,
+    "name": "As-of join / time-series alignment",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3149,
+    "name": "Linear interpolation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3150,
+    "name": "Interval merging",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3151,
+    "name": "Currency path without repeats",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3152,
+    "name": "Second largest with few comparisons",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3153,
+    "name": "Coupon collector",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3154,
+    "name": "Runs of heads",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3155,
+    "name": "Gaussian conditioning on a sum",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3156,
+    "name": "Conditional probability with normals",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3157,
+    "name": "Covariance of order statistics of two",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3158,
+    "name": "Simulating equicorrelated normals",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3159,
+    "name": "Two-sample test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3160,
+    "name": "Revenue optimization",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3161,
+    "name": "Birthday threshold",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3162,
+    "name": "Tournament survival",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3163,
+    "name": "Hats & parity",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3164,
+    "name": "OLS on an alternating signal",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3165,
+    "name": "Zigzag selection length",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3166,
+    "name": "Two random cuts -- short piece probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3167,
+    "name": "Two random cuts -- longest piece expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3168,
+    "name": "Optimal stopping with absorbing \"squares\"",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3169,
+    "name": "Factor-neutral mean¡variance with ridge",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3170,
+    "name": "Batch OLS betas at scale",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3171,
+    "name": "\"Ceil\" as-of join",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3172,
+    "name": "Linked list swap",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3173,
+    "name": "R2 under scaling",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3174,
+    "name": "Variance of ^ under scaling",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3175,
+    "name": "Effect on t-statistic",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3176,
+    "name": "Streaming conditional median",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3177,
+    "name": "Signal screening with serial correlation",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3178,
+    "name": "Equicorrelation PSD & eigenstructure",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3179,
+    "name": "Two-interval execution with linear impact",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value and order-flow model",
+        "Quotes/execution decisions with inventory or position state",
+        "Payoff/P&L with adverse selection and execution uncertainty"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage, zero-profit, or utility-maximization condition",
+        "Execution probabilities and fills depend on quote placement/market state",
+        "Inventory, tick-size, and latency constraints when specified"
+      ],
+      "target_objective": "Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value and order-flow model, Quotes/execution decisions with inventory or position state, Payoff/P&L with adverse selection and execution uncertainty | Constraints: No-arbitrage, zero-profit, or utility-maximization condition, Execution probabilities and fills depend on quote placement/market state, Inventory, tick-size, and latency constraints when specified | Objective: Solve for optimal quoting/execution/pricing policy and its expected value or risk implications."
+  },
+  {
+    "problem_id": 3180,
+    "name": "Brownian bridge conditioning",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3181,
+    "name": "Mixture of normals",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3182,
+    "name": "Nested uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3183,
+    "name": "Dice sums & roots of unity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3184,
+    "name": "No-adjacent seating",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3185,
+    "name": "Distribution of (XY",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3186,
+    "name": "Weekend rain with dependence bounds",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3187,
+    "name": "Order statistics of Gaussians",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3188,
+    "name": "Correlation constraints",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3189,
+    "name": "Normality, uncorrelatedness, independence",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3190,
+    "name": "Circular mean of times",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3191,
+    "name": "Severe multicollinearity",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3192,
+    "name": "Ridge via augmented OLS",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Regression",
+      "problem_setup_entities": [
+        "Design matrix/features and response variables",
+        "Linear operators/covariance structure and estimators",
+        "Regularization or scaling/identifiability conditions"
+      ],
+      "invariant_constraints": [
+        "Matrix rank, PSD, and dimensional consistency conditions",
+        "Estimator properties follow projection/normal-equation identities",
+        "Inference metrics use correct variance and sampling assumptions"
+      ],
+      "target_objective": "Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Regression | Entities: Design matrix/features and response variables, Linear operators/covariance structure and estimators, Regularization or scaling/identifiability conditions | Constraints: Matrix rank, PSD, and dimensional consistency conditions, Estimator properties follow projection/normal-equation identities, Inference metrics use correct variance and sampling assumptions | Objective: Derive estimator behavior, transformation invariances, or closed-form regression/linear-algebra quantities."
+  },
+  {
+    "problem_id": 3193,
+    "name": "Merge two sorted arrays in-place",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3194,
+    "name": "Bridges in an undirected graph",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3195,
+    "name": "Digit-by-digit arithmetic",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3196,
+    "name": "Counting friend circles",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3197,
+    "name": "Common elements of two arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data stream/arrays/records",
+        "Stateful data structure or algorithmic state",
+        "Query/update/output requirements"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs and edge cases",
+        "Time complexity and space complexity targets",
+        "Deterministic and reproducible update/query behavior"
+      ],
+      "target_objective": "Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data stream/arrays/records, Stateful data structure or algorithmic state, Query/update/output requirements | Constraints: Correctness for all valid inputs and edge cases, Time complexity and space complexity targets, Deterministic and reproducible update/query behavior | Objective: Design and/or implement an algorithm that satisfies the required correctness and asymptotic performance bounds."
+  },
+  {
+    "problem_id": 3198,
+    "name": "Modeling bike demand",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed samples or time-indexed observations",
+        "Probabilistic model with parameters/latent variables",
+        "Estimator/test/filtering rule"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions and dependence structure must be respected",
+        "Likelihood, moments, or Bayesian update equations define identification",
+        "Uncertainty quantification uses valid asymptotic or exact results"
+      ],
+      "target_objective": "Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed samples or time-indexed observations, Probabilistic model with parameters/latent variables, Estimator/test/filtering rule | Constraints: Distributional assumptions and dependence structure must be respected, Likelihood, moments, or Bayesian update equations define identification, Uncertainty quantification uses valid asymptotic or exact results | Objective: Derive or compute the requested estimator, posterior quantity, test statistic, or predictive distribution."
+  },
+  {
+    "problem_id": 3199,
+    "name": "Negative hypergeometric",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3200,
+    "name": "Unbounded EV, risk-aware pricing",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Game Theory",
+      "problem_setup_entities": [
+        "Decision variables and feasible action set",
+        "Objective/payoff function under uncertainty",
+        "Constraints including resource, incentive, or equilibrium conditions"
+      ],
+      "invariant_constraints": [
+        "Feasibility and constraint satisfaction for all candidate solutions",
+        "Optimality/equilibrium conditions (KKT, best response, or fixed point)",
+        "Comparative statics and boundary cases handled consistently"
+      ],
+      "target_objective": "Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+    },
+    "schema_text": "Domain: Optimization and Game Theory | Entities: Decision variables and feasible action set, Objective/payoff function under uncertainty, Constraints including resource, incentive, or equilibrium conditions | Constraints: Feasibility and constraint satisfaction for all candidate solutions, Optimality/equilibrium conditions (KKT, best response, or fixed point), Comparative statics and boundary cases handled consistently | Objective: Determine the optimal decision rule, equilibrium strategy, or reserve/threshold maximizing the stated objective."
+  },
+  {
+    "problem_id": 3201,
+    "name": "Umbrella problem",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3202,
+    "name": "Meeting window with uniform arrivals",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3203,
+    "name": "Five points on a sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3204,
+    "name": "Nearest-neighbor reciprocity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3205,
+    "name": "Frogs on a triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  },
+  {
+    "problem_id": 3206,
+    "name": "Die sums just-before-threshold",
+    "schema": {
+      "core_mathematical_domain": "Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Random experiment with specified sample space",
+        "Events, stopping rules, or combinatorial configurations",
+        "Target random variable/probability/expectation"
+      ],
+      "invariant_constraints": [
+        "Use valid counting arguments, symmetry, or conditional probability laws",
+        "Respect independence/dependence assumptions exactly as stated",
+        "Ensure probabilities normalize and expectations are finite when required"
+      ],
+      "target_objective": "Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+    },
+    "schema_text": "Domain: Probability and Combinatorics | Entities: Random experiment with specified sample space, Events, stopping rules, or combinatorial configurations, Target random variable/probability/expectation | Constraints: Use valid counting arguments, symmetry, or conditional probability laws, Respect independence/dependence assumptions exactly as stated, Ensure probabilities normalize and expectations are finite when required | Objective: Compute the requested probability, expected value, distributional property, or optimal stopping threshold."
+  }
+]

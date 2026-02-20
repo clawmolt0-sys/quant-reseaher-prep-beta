@@ -1,0 +1,1636 @@
+[
+  {
+    "problem_id": 3007,
+    "name": "Batch coupon collector (coverage with groups)",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Sampling without replacement",
+        "Uniform sampling assumptions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Sampling without replacement; Uniform sampling assumptions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3008,
+    "name": "Two Coin Revenue Inversion Likelihood Under A Linear Constraint",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Gaussian random variables; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3009,
+    "name": "Penney's game with bias (length-3 patterns)",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Sequential Decision",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Optimal Stopping and Sequential Decision | Entities: Bernoulli outcomes / coin flips; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3010,
+    "name": "Target Sum Die Game With Per Roll Cost Optimal Stopping",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Sequential Decision",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Optimal Stopping and Sequential Decision | Entities: Discrete die outcomes; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3011,
+    "name": "Union Bounds Duration Information Dependence Constrained",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3012,
+    "name": "Monotone Signaling Breaking Glass One-way Communication",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3013,
+    "name": "Interactive Signaling Break Repair Capacity Lower",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3014,
+    "name": "Poisson Change Point Detection Likelihood and Test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Poisson arrivals/counts",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Poisson arrivals/counts; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3015,
+    "name": "Serial correlation test (Ljung¡Box for returns)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Return/P&L process; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3016,
+    "name": "Jump-robust volatility and a jump test",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3017,
+    "name": "Bayesian Update for Coin Fairness Credible Interval",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Gaussian random variables; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3018,
+    "name": "Attenuation Factor. Ii if U2",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3019,
+    "name": "Reservoir Sampling Unknown-length Stream Unbiasedness Proof",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Sampling without replacement",
+        "Uniform sampling assumptions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Return/P&L process; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Sampling without replacement; Uniform sampling assumptions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3020,
+    "name": "Longest Contiguous Subarray",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Discrete die outcomes; Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3021,
+    "name": "Dynamic Weighted Sampling With Updates Fenwick Segment Tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Graph nodes and edges",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Return/P&L process; Graph nodes and edges; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3022,
+    "name": "Maximum Drawdown and the Start",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Return/P&L process; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3023,
+    "name": "Rolling Quantiles With two Heaps Percentile Tracker",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: State variables and transition dynamics; Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3024,
+    "name": "Minimum Total Time and Prove",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3025,
+    "name": "How many 4's",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Return/P&L process; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3026,
+    "name": "Fermi-to-formula: plastic-bag usage",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Poisson arrivals/counts",
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Poisson arrivals/counts; Gaussian random variables; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3027,
+    "name": "Short-sale P&L with fees, dividends, and recalls",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Poisson arrivals/counts",
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Poisson arrivals/counts; Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3028,
+    "name": "Inventory-aware skew for a binary market",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3029,
+    "name": "Make a market with intensity-vs-spread",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Gaussian random variables",
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Gaussian random variables; State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3030,
+    "name": "Kyle (1985) one-period microstructure",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3031,
+    "name": "Posterior P1 P E S",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3032,
+    "name": "N C Maximizing Expected Profit",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Sequential Decision",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Optimal Stopping and Sequential Decision | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3033,
+    "name": "Proper scoring for binary forecasting",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3034,
+    "name": "Posterior predictive for a Poisson count",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Poisson arrivals/counts",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Poisson arrivals/counts; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3035,
+    "name": "Kalman filter for a random walk with noise",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3036,
+    "name": "AR(1) with unknown mean",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3037,
+    "name": "Multiple testing and FDR control",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3038,
+    "name": "Ridge Lasso Predictive Signals. Standardized Features",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3039,
+    "name": "FIFO realized P&L aggregator (coding)",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Return/P&L process; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3040,
+    "name": "Longest Subarray Whose Sum K",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Discrete die outcomes; Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3041,
+    "name": "Dynamic order statistics (online percentile)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3042,
+    "name": "Complementary-pair game (sum-to-20 puzzle)",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3043,
+    "name": "Two-round binary market with adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3044,
+    "name": "Inventory-aware skew with Poisson order flow",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Poisson arrivals/counts",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Poisson arrivals/counts; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3045,
+    "name": "Quote Binary Compound Event Partial Correlation",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Return/P&L process; Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3046,
+    "name": "Make/take decision from a noisy classifier",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3047,
+    "name": "Optimal stopping with a capped-sum die",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Sequential Decision",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Optimal Stopping and Sequential Decision | Entities: Discrete die outcomes; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3048,
+    "name": "Kelly with linear frictions",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3049,
+    "name": "Hitting vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Discrete die outcomes; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3050,
+    "name": "Posterior Normal Mean Unknown Variance T-model",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Gaussian random variables; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3051,
+    "name": "Power and sample size for Sharpe detection",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3052,
+    "name": "Hidden Markov regime filter",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3053,
+    "name": "Engle¡Granger cointegration test and hedge ratio",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3054,
+    "name": "Realized variance vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3055,
+    "name": "Newey¡West HAC estimator in AR(1) noise",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3056,
+    "name": "Kalman filter steady state for local level",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3057,
+    "name": "VWAP in one pass (coding)",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3058,
+    "name": "Maintain top-of-book with inserts/cancels (coding)",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Graph nodes and edges",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Graph nodes and edges; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3059,
+    "name": "Arbitrage detection in currency graphs",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Graph nodes and edges",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: State variables and transition dynamics; Graph nodes and edges; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3060,
+    "name": "Median of two sorted arrays (time bound)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3061,
+    "name": "Weighted reservoir sampling (stream)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Sampling without replacement",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Sampling without replacement; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3062,
+    "name": "Longest Contiguous Subarray With Max",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3063,
+    "name": "Posterior Observing Aggressive Binary Market Unit",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Return/P&L process; Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3064,
+    "name": "Spread Choice Linear Trade Arrival Adverse",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3065,
+    "name": "Secretary problem with interview costs",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping and Sequential Decision",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Optimal Stopping and Sequential Decision | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3066,
+    "name": "Streaming Approximate Quantiles Greenwald Khanna",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Return/P&L process; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3067,
+    "name": "Diebold¡Mariano forecast comparison",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "State variables and transition dynamics",
+        "Return/P&L process",
+        "Array/window indices"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Discrete die outcomes; State variables and transition dynamics; Return/P&L process; Array/window indices | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3068,
+    "name": "Sequential probability ratio test (known variance)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3069,
+    "name": "Trading Noisy Classifier Ppv, Npv, Event",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3070,
+    "name": "Jump¡diffusion estimation at high frequency",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3071,
+    "name": "White's Reality Check for multiple strategies",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3072,
+    "name": "Fractional Kelly under a drawdown constraint",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Gaussian random variables",
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Gaussian random variables; State variables and transition dynamics; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3073,
+    "name": "Static arbitrage in call surfaces",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3074,
+    "name": "Barrier hitting via reflection principle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3075,
+    "name": "Beta¡Binomial sizing for conversion uplift",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Gaussian random variables; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3076,
+    "name": "ARMA(1,1) identification and ACF",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3077,
+    "name": "Closed-form lasso under orthonormal design",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Gaussian random variables",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Gaussian random variables; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3078,
+    "name": "Median-of-medians selection (BFPRT)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3079,
+    "name": "K Pairs With Smallest Sums From Two Sorted Arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "State variables and transition dynamics",
+        "Array/window indices",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Bernoulli outcomes / coin flips; State variables and transition dynamics; Array/window indices; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3080,
+    "name": "Recursive Least Squares RLS for Online Regression",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3081,
+    "name": "Distinct Elements In A Stream FM HyperLogLog Sketch",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3082,
+    "name": "Two-venue market routing with adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3083,
+    "name": "Competitive number choice (baseline version)",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3084,
+    "name": "Kelly With Unknown Edge Posterior Optimal Fraction",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3085,
+    "name": "Inventory-risk skew with quadratic penalty",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3086,
+    "name": "Bayesian pricing of a threshold digital",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3087,
+    "name": "EVT for exceedances (GPD)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3088,
+    "name": "Yule¡Walker for AR(p)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3089,
+    "name": "Kpss Complementary Unit Root Tests. Test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3090,
+    "name": "Sharpe comparison for two strategies",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3091,
+    "name": "GARCH-in-mean with risk premium",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3092,
+    "name": "Kalman RTS smoother (local level)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3093,
+    "name": "Hidden Markov model MLE",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3094,
+    "name": "Max load in balls-into-bins",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Uniform sampling assumptions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Uniform sampling assumptions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3095,
+    "name": "Two Arm Beta Bernoulli Exploration one Shot Lookahead",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Bernoulli outcomes / coin flips",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Bernoulli outcomes / coin flips; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3096,
+    "name": "Difference In Means With Heteroskedasticity Welch",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Independence/i.i.d. conditions hold where specified",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Return/P&L process; Model parameters and observables | Constraints: Independence/i.i.d. conditions hold where specified; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3097,
+    "name": "Streaming mode approximation (data sketch)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3098,
+    "name": "Hopcroft¡Karp for order matching (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Graph nodes and edges",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Graph nodes and edges; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3099,
+    "name": "K-th Smallest in a Sorted Matrix (coding)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "State variables and transition dynamics",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Complexity constraints (time/space) must be satisfied",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: State variables and transition dynamics; Model parameters and observables | Constraints: Complexity constraints (time/space) must be satisfied; Use only assumptions explicitly stated in the prompt | Objective: Produce a correct algorithmic procedure meeting stated complexity and output guarantees."
+  },
+  {
+    "problem_id": 3100,
+    "name": "MAP Decision With Asymmetric Costs Binary Classification",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3101,
+    "name": "Cross-asset hedged market making (one-shot)",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3102,
+    "name": "Bayesian Learning From Trade Signs Mixture Of Informed Noise",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3103,
+    "name": "Minimal Spread S for Zero",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Discrete die outcomes",
+        "Return/P&L process",
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Discrete die outcomes; Return/P&L process; Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Determine the optimal pricing/trading decision rule maximizing expected objective under the model."
+  },
+  {
+    "problem_id": 3104,
+    "name": "Inventory-aware skew with asymmetric order flow",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Compute the requested probability, expectation, or stopping metric under the given model."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Compute the requested probability, expectation, or stopping metric under the given model."
+  },
+  {
+    "problem_id": 3105,
+    "name": "Value of a binary classifier before trading",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Trading Decision Theory",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Binary outcome/payoff structure",
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Market Microstructure and Trading Decision Theory | Entities: Model parameters and observables | Constraints: Binary outcome/payoff structure; Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  },
+  {
+    "problem_id": 3106,
+    "name": "Self-exciting order flow (Hawkes MLE)",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Time-Series Modeling",
+      "problem_setup_entities": [
+        "Model parameters and observables"
+      ],
+      "invariant_constraints": [
+        "Use only assumptions explicitly stated in the prompt"
+      ],
+      "target_objective": "Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+    },
+    "schema_text": "Domain: Statistical Inference and Time-Series Modeling | Entities: Model parameters and observables | Constraints: Use only assumptions explicitly stated in the prompt | Objective: Derive the requested estimator/test/probabilistic expression in a mathematically valid form."
+  }
+]

@@ -1,0 +1,1975 @@
+[
+  {
+    "problem_id": 3507,
+    "name": "Eigenvalue shrinkage (Ledoit¡Wolf",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrix Methods",
+      "problem_setup_entities": [
+        "Data matrix / covariance matrix",
+        "Eigenvalues and eigenvectors",
+        "Sample size and dimension"
+      ],
+      "invariant_constraints": [
+        "Symmetry/positive-semidefinite structure where relevant",
+        "Normalization constraints for eigenvectors",
+        "Rank/cointegration conditions"
+      ],
+      "target_objective": "Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Matrix Methods | Entities: Data matrix / covariance matrix, Eigenvalues and eigenvectors, Sample size and dimension | Constraints: Symmetry/positive-semidefinite structure where relevant, Normalization constraints for eigenvectors, Rank/cointegration conditions | Objective: Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+  },
+  {
+    "problem_id": 3508,
+    "name": "Heavy-hitters in a stream",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Return all frequent items above the threshold with one-pass memory-bounded guarantees."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Return all frequent items above the threshold with one-pass memory-bounded guarantees."
+  },
+  {
+    "problem_id": 3509,
+    "name": "Optimal stopping with finite horizon",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3510,
+    "name": "Kelly with transaction costs",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3511,
+    "name": "Brownian bridge extremum",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Diffusion Processes",
+      "problem_setup_entities": [
+        "Continuous-time process",
+        "Brownian motion",
+        "Drift and volatility parameters",
+        "Time horizon"
+      ],
+      "invariant_constraints": [
+        "Itô diffusion dynamics",
+        "Adapted filtration",
+        "Measure-consistent martingale condition when risk-neutral"
+      ],
+      "target_objective": "Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+    },
+    "schema_text": "Domain: Stochastic Calculus and Diffusion Processes | Entities: Continuous-time process, Brownian motion, Drift and volatility parameters, Time horizon | Constraints: Itô diffusion dynamics, Adapted filtration, Measure-consistent martingale condition when risk-neutral | Objective: Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+  },
+  {
+    "problem_id": 3512,
+    "name": "Expected shortfall for Gaussian P&L",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3513,
+    "name": "ETF creation/redemption arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3514,
+    "name": "Static Kyle model",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3515,
+    "name": "Gamma¡Poisson updating",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3516,
+    "name": "American put bounds & early exercise",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3517,
+    "name": "Barrier in/out parity",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3518,
+    "name": "Girsanov check for GBM",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Diffusion Processes",
+      "problem_setup_entities": [
+        "Continuous-time process",
+        "Brownian motion",
+        "Drift and volatility parameters",
+        "Time horizon"
+      ],
+      "invariant_constraints": [
+        "Itô diffusion dynamics",
+        "Adapted filtration",
+        "Measure-consistent martingale condition when risk-neutral"
+      ],
+      "target_objective": "Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+    },
+    "schema_text": "Domain: Stochastic Calculus and Diffusion Processes | Entities: Continuous-time process, Brownian motion, Drift and volatility parameters, Time horizon | Constraints: Itô diffusion dynamics, Adapted filtration, Measure-consistent martingale condition when risk-neutral | Objective: Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+  },
+  {
+    "problem_id": 3519,
+    "name": "Hidden Markov chain MLE",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrix Methods",
+      "problem_setup_entities": [
+        "Finite state space",
+        "Transition matrix",
+        "Observed sequence",
+        "Latent states (if hidden)"
+      ],
+      "invariant_constraints": [
+        "Rows of transition matrix sum to 1",
+        "Markov property",
+        "Likelihood based on sequence observations"
+      ],
+      "target_objective": "Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+    },
+    "schema_text": "Domain: Linear Algebra and Matrix Methods | Entities: Finite state space, Transition matrix, Observed sequence, Latent states (if hidden) | Constraints: Rows of transition matrix sum to 1, Markov property, Likelihood based on sequence observations | Objective: Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+  },
+  {
+    "problem_id": 3520,
+    "name": "Digits-per-string rate -- parsing task",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3521,
+    "name": "Sliding-window extrema",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Maintain exact rolling statistics in amortized O(1) time per update."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Maintain exact rolling statistics in amortized O(1) time per update."
+  },
+  {
+    "problem_id": 3522,
+    "name": "Median of two sorted arrays in O(log n",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Find the union median in O(log(min(m,n))) time and O(1) extra space."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Find the union median in O(log(min(m,n))) time and O(1) extra space."
+  },
+  {
+    "problem_id": 3523,
+    "name": "Streaming quantiles with error",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3524,
+    "name": "Discrete gambler's ruin duration",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income and Risk Analytics",
+      "problem_setup_entities": [
+        "Discount factors / yield curve",
+        "Cash-flow schedule",
+        "Risk sensitivities (DV01, duration, convexity)",
+        "Market quotes"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure consistency",
+        "Compounding and day-count conventions as stated",
+        "Linearized risk aggregation for small shocks"
+      ],
+      "target_objective": "Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+    },
+    "schema_text": "Domain: Fixed Income and Risk Analytics | Entities: Discount factors / yield curve, Cash-flow schedule, Risk sensitivities (DV01, duration, convexity), Market quotes | Constraints: No-arbitrage term-structure consistency, Compounding and day-count conventions as stated, Linearized risk aggregation for small shocks | Objective: Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+  },
+  {
+    "problem_id": 3525,
+    "name": "GBM drift estimation",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Diffusion Processes",
+      "problem_setup_entities": [
+        "Continuous-time process",
+        "Brownian motion",
+        "Drift and volatility parameters",
+        "Time horizon"
+      ],
+      "invariant_constraints": [
+        "Itô diffusion dynamics",
+        "Adapted filtration",
+        "Measure-consistent martingale condition when risk-neutral"
+      ],
+      "target_objective": "Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+    },
+    "schema_text": "Domain: Stochastic Calculus and Diffusion Processes | Entities: Continuous-time process, Brownian motion, Drift and volatility parameters, Time horizon | Constraints: Itô diffusion dynamics, Adapted filtration, Measure-consistent martingale condition when risk-neutral | Objective: Compute the requested distributional quantity, stopping quantity, or measure change expression in closed form."
+  },
+  {
+    "problem_id": 3526,
+    "name": "POT/EVT tail modeling",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3527,
+    "name": "Tracking error estimation",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3528,
+    "name": "Variance swap fair strike",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Show that the fair strike equals expected quadratic variation rate under risk-neutral measure."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Show that the fair strike equals expected quadratic variation rate under risk-neutral measure."
+  },
+  {
+    "problem_id": 3529,
+    "name": "Avellaneda¡Stoikov quotes with CARA utility",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3530,
+    "name": "Zero-profit quotes for a uniform value",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3531,
+    "name": "Posterior after two buys at a fixed ask",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3532,
+    "name": "Fill-by-deadline quote optimization",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3533,
+    "name": "Kelly with asymmetric payoffs",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3534,
+    "name": "Roll model: estimating effective spread",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Bayesian Pricing",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Market Microstructure and Bayesian Pricing | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3535,
+    "name": "Johansen cointegration",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3536,
+    "name": "HAR-RV forecasting",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3537,
+    "name": "Local level + trend (Kalman",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3538,
+    "name": "AUC and Mann¡Whitney",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3539,
+    "name": "GMM for AR(1",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3540,
+    "name": "Merton jump¡diffusion pricing",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3541,
+    "name": "Heston characteristic function",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3542,
+    "name": "Deterministic linear-time selection",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3543,
+    "name": "Longest substring without repeats",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3544,
+    "name": "K-way Merge",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3545,
+    "name": "Rolling correlation in one pass",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Maintain exact rolling statistics in amortized O(1) time per update."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Maintain exact rolling statistics in amortized O(1) time per update."
+  },
+  {
+    "problem_id": 3546,
+    "name": "Subarray problems: two classics",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3547,
+    "name": "Adverse selection with noisy signal",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3548,
+    "name": "Two-period inventory-aware skew",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3549,
+    "name": "Transient impact and order splitting",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3550,
+    "name": "No-arbitrage constraints on call grids",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "State and enforce discrete convexity/monotonicity conditions that eliminate static arbitrage."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: State and enforce discrete convexity/monotonicity conditions that eliminate static arbitrage."
+  },
+  {
+    "problem_id": 3551,
+    "name": "RiskMetrics EWMA",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3552,
+    "name": "KPSS test",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3553,
+    "name": "Ljung¡Box portmanteau",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3554,
+    "name": "White test and robust SEs",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3555,
+    "name": "Bayesian regression with g-prior",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3556,
+    "name": "Bloom filter design",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3557,
+    "name": "Dynamic median via order-statistic tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3558,
+    "name": "Sparse table RMQ",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3559,
+    "name": "Viterbi for Gaussian HMM",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Finite state space",
+        "Transition matrix",
+        "Observed sequence",
+        "Latent states (if hidden)"
+      ],
+      "invariant_constraints": [
+        "Rows of transition matrix sum to 1",
+        "Markov property",
+        "Likelihood based on sequence observations"
+      ],
+      "target_objective": "Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Finite state space, Transition matrix, Observed sequence, Latent states (if hidden) | Constraints: Rows of transition matrix sum to 1, Markov property, Likelihood based on sequence observations | Objective: Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+  },
+  {
+    "problem_id": 3560,
+    "name": "MLE for Student-t location-scale",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistical Inference",
+      "problem_setup_entities": [
+        "Random variables / sample observations",
+        "Distributional parameters",
+        "Prior/posterior or likelihood components"
+      ],
+      "invariant_constraints": [
+        "Independence or conditional independence assumptions",
+        "Parameter-domain constraints",
+        "Valid probability normalization"
+      ],
+      "target_objective": "Derive likelihood/posterior equations, estimators, or probability approximations for the target event/statistic."
+    },
+    "schema_text": "Domain: Probability and Statistical Inference | Entities: Random variables / sample observations, Distributional parameters, Prior/posterior or likelihood components | Constraints: Independence or conditional independence assumptions, Parameter-domain constraints, Valid probability normalization | Objective: Derive likelihood/posterior equations, estimators, or probability approximations for the target event/statistic."
+  },
+  {
+    "problem_id": 3561,
+    "name": "Bootstrap-t interval",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3562,
+    "name": "Balls-in-bins",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3563,
+    "name": "Butterfly arbitrage test",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "State and enforce discrete convexity/monotonicity conditions that eliminate static arbitrage."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: State and enforce discrete convexity/monotonicity conditions that eliminate static arbitrage."
+  },
+  {
+    "problem_id": 3564,
+    "name": "Posterior variance after an informed buy",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3565,
+    "name": "First passage with drift; optimal stop vs. take-profit",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3566,
+    "name": "Zero-profit quotes under exponential values",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3567,
+    "name": "Thompson sampling, Beta¡Bernoulli",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3568,
+    "name": "Approximate multi-asset Kelly",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Sequential Decision",
+      "problem_setup_entities": [
+        "Efficient value / latent signal",
+        "Order flow process",
+        "Quoted bid/ask or control variable",
+        "Belief/posterior state"
+      ],
+      "invariant_constraints": [
+        "Bayes consistency between signal and order flow",
+        "Execution/intensity model constraints",
+        "Utility/profit objective under risk constraints"
+      ],
+      "target_objective": "Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+    },
+    "schema_text": "Domain: Market Microstructure and Sequential Decision | Entities: Efficient value / latent signal, Order flow process, Quoted bid/ask or control variable, Belief/posterior state | Constraints: Bayes consistency between signal and order flow, Execution/intensity model constraints, Utility/profit objective under risk constraints | Objective: Optimize quoting or allocation and characterize posterior/zero-profit pricing conditions."
+  },
+  {
+    "problem_id": 3569,
+    "name": "Durbin¡Watson and AR(1",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3570,
+    "name": "EM for Gaussian HMM",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrix Methods",
+      "problem_setup_entities": [
+        "Finite state space",
+        "Transition matrix",
+        "Observed sequence",
+        "Latent states (if hidden)"
+      ],
+      "invariant_constraints": [
+        "Rows of transition matrix sum to 1",
+        "Markov property",
+        "Likelihood based on sequence observations"
+      ],
+      "target_objective": "Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+    },
+    "schema_text": "Domain: Linear Algebra and Matrix Methods | Entities: Finite state space, Transition matrix, Observed sequence, Latent states (if hidden) | Constraints: Rows of transition matrix sum to 1, Markov property, Likelihood based on sequence observations | Objective: Estimate model parameters or most likely hidden path via dynamic programming / maximum likelihood."
+  },
+  {
+    "problem_id": 3571,
+    "name": "Digital from tight call spread",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3572,
+    "name": "Put¡call parity arbitrage with dividends",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3573,
+    "name": "Kadanes with exactly m segments",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3574,
+    "name": "Johnson's algorithm",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3575,
+    "name": "Union¡Find complexity",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3576,
+    "name": "Randomized Quickselect tails",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3577,
+    "name": "Isotonic regression via PAVA",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3578,
+    "name": "Quantile regression",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3579,
+    "name": "Bayesian online change-point for a normal mean",
+    "schema": {
+      "core_mathematical_domain": "Econometrics and Regression",
+      "problem_setup_entities": [
+        "Response variable",
+        "Regressor matrix / instruments",
+        "Parameter vector",
+        "Error process"
+      ],
+      "invariant_constraints": [
+        "Identification via rank conditions",
+        "Orthogonality / moment restrictions",
+        "Appropriate loss or likelihood specification"
+      ],
+      "target_objective": "Derive estimator, optimality/KKT conditions, and associated inference formula."
+    },
+    "schema_text": "Domain: Econometrics and Regression | Entities: Response variable, Regressor matrix / instruments, Parameter vector, Error process | Constraints: Identification via rank conditions, Orthogonality / moment restrictions, Appropriate loss or likelihood specification | Objective: Derive estimator, optimality/KKT conditions, and associated inference formula."
+  },
+  {
+    "problem_id": 3580,
+    "name": "Birthday paradox for hash collisions",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3581,
+    "name": "Stock Price Process Physical Measure Dwt,",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3582,
+    "name": "Dividend Yielding Stock Continuous Dividend Yield",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3583,
+    "name": "Observe European Call Quotes Stock Fixed",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3584,
+    "name": "Stock Spot 100, Maturity Year, Continuously",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3585,
+    "name": "Options Markets, Vanilla Options Often Quoted",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3586,
+    "name": "Futures Options European Written Futures Price",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3587,
+    "name": "Client Wants 100,000 Shares Immediately, Market",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3588,
+    "name": "Execute Order Total Size Fixed Horizon",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistical Inference",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Probability and Statistical Inference | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3589,
+    "name": "Maintaining Dynamic Numbers Supporting Operations Insert",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3590,
+    "name": "N Array a of Length N and an Integer K N, Des",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input sequence / data structure",
+        "Online or offline query operations",
+        "Space and time budget"
+      ],
+      "invariant_constraints": [
+        "Required asymptotic complexity bounds",
+        "Correctness for all valid inputs",
+        "Single-pass or comparison-model assumptions when specified"
+      ],
+      "target_objective": "Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input sequence / data structure, Online or offline query operations, Space and time budget | Constraints: Required asymptotic complexity bounds, Correctness for all valid inputs, Single-pass or comparison-model assumptions when specified | Objective: Design an algorithm meeting the stated complexity guarantees and provide correctness argument."
+  },
+  {
+    "problem_id": 3591,
+    "name": "Sort Array Records Key, Constraints Stability",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3592,
+    "name": "Fibonacci Sequence Fn-1 Fn-2 Design Algorithm",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3593,
+    "name": "& Brain Teasers",
+    "schema": {
+      "core_mathematical_domain": "Applied Probability and Quant Reasoning",
+      "problem_setup_entities": [
+        "Model variables",
+        "Parameters",
+        "Observed data"
+      ],
+      "invariant_constraints": [
+        "Well-defined probabilistic/mathematical assumptions",
+        "Feasible parameter domain"
+      ],
+      "target_objective": "Derive the required analytical result."
+    },
+    "schema_text": "Domain: Applied Probability and Quant Reasoning | Entities: Model variables, Parameters, Observed data | Constraints: Well-defined probabilistic/mathematical assumptions, Feasible parameter domain | Objective: Derive the required analytical result."
+  },
+  {
+    "problem_id": 3594,
+    "name": "Financial Math & Markets -- Fixed Income",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income and Risk Analytics",
+      "problem_setup_entities": [
+        "Discount factors / yield curve",
+        "Cash-flow schedule",
+        "Risk sensitivities (DV01, duration, convexity)",
+        "Market quotes"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure consistency",
+        "Compounding and day-count conventions as stated",
+        "Linearized risk aggregation for small shocks"
+      ],
+      "target_objective": "Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+    },
+    "schema_text": "Domain: Fixed Income and Risk Analytics | Entities: Discount factors / yield curve, Cash-flow schedule, Risk sensitivities (DV01, duration, convexity), Market quotes | Constraints: No-arbitrage term-structure consistency, Compounding and day-count conventions as stated, Linearized risk aggregation for small shocks | Objective: Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+  },
+  {
+    "problem_id": 3595,
+    "name": "& Algorithms -- Linear Algebra / PCA",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3596,
+    "name": "Financial Math & Markets -- Yield Curves",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3597,
+    "name": "Financial Math & Markets -- Duration/Convexity",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income and Risk Analytics",
+      "problem_setup_entities": [
+        "Discount factors / yield curve",
+        "Cash-flow schedule",
+        "Risk sensitivities (DV01, duration, convexity)",
+        "Market quotes"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure consistency",
+        "Compounding and day-count conventions as stated",
+        "Linearized risk aggregation for small shocks"
+      ],
+      "target_objective": "Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+    },
+    "schema_text": "Domain: Fixed Income and Risk Analytics | Entities: Discount factors / yield curve, Cash-flow schedule, Risk sensitivities (DV01, duration, convexity), Market quotes | Constraints: No-arbitrage term-structure consistency, Compounding and day-count conventions as stated, Linearized risk aggregation for small shocks | Objective: Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+  },
+  {
+    "problem_id": 3598,
+    "name": "Financial Math & Markets -- DV01 / Curve Risk",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3599,
+    "name": "Financial Math & Markets -- FX Forwards",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income and Risk Analytics",
+      "problem_setup_entities": [
+        "Discount factors / yield curve",
+        "Cash-flow schedule",
+        "Risk sensitivities (DV01, duration, convexity)",
+        "Market quotes"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage term-structure consistency",
+        "Compounding and day-count conventions as stated",
+        "Linearized risk aggregation for small shocks"
+      ],
+      "target_objective": "Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+    },
+    "schema_text": "Domain: Fixed Income and Risk Analytics | Entities: Discount factors / yield curve, Cash-flow schedule, Risk sensitivities (DV01, duration, convexity), Market quotes | Constraints: No-arbitrage term-structure consistency, Compounding and day-count conventions as stated, Linearized risk aggregation for small shocks | Objective: Compute pricing, hedge ratios, or curve-consistent risk measures from given market inputs."
+  },
+  {
+    "problem_id": 3600,
+    "name": "Financial Math & Markets -- Rate Options / Black",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3601,
+    "name": "Financial Math & Markets -- Put¡Call Parity with Rates",
+    "schema": {
+      "core_mathematical_domain": "Derivative Pricing and No-Arbitrage",
+      "problem_setup_entities": [
+        "Underlying asset or forward",
+        "Strike and maturity",
+        "Risk-free rate / dividend yield",
+        "Payoff function"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage bounds",
+        "Risk-neutral valuation",
+        "Consistent discounting across maturities"
+      ],
+      "target_objective": "Price the derivative or derive arbitrage constraints / replication identities."
+    },
+    "schema_text": "Domain: Derivative Pricing and No-Arbitrage | Entities: Underlying asset or forward, Strike and maturity, Risk-free rate / dividend yield, Payoff function | Constraints: No-arbitrage bounds, Risk-neutral valuation, Consistent discounting across maturities | Objective: Price the derivative or derive arbitrage constraints / replication identities."
+  },
+  {
+    "problem_id": 3602,
+    "name": "Financial Math & Markets -- Credit / Hazard Rates",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistical Inference",
+      "problem_setup_entities": [
+        "Random variables / sample observations",
+        "Distributional parameters",
+        "Prior/posterior or likelihood components"
+      ],
+      "invariant_constraints": [
+        "Independence or conditional independence assumptions",
+        "Parameter-domain constraints",
+        "Valid probability normalization"
+      ],
+      "target_objective": "Derive likelihood/posterior equations, estimators, or probability approximations for the target event/statistic."
+    },
+    "schema_text": "Domain: Probability and Statistical Inference | Entities: Random variables / sample observations, Distributional parameters, Prior/posterior or likelihood components | Constraints: Independence or conditional independence assumptions, Parameter-domain constraints, Valid probability normalization | Objective: Derive likelihood/posterior equations, estimators, or probability approximations for the target event/statistic."
+  },
+  {
+    "problem_id": 3603,
+    "name": "Linear Algebra / Risk",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrix Methods",
+      "problem_setup_entities": [
+        "Data matrix / covariance matrix",
+        "Eigenvalues and eigenvectors",
+        "Sample size and dimension"
+      ],
+      "invariant_constraints": [
+        "Symmetry/positive-semidefinite structure where relevant",
+        "Normalization constraints for eigenvectors",
+        "Rank/cointegration conditions"
+      ],
+      "target_objective": "Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Matrix Methods | Entities: Data matrix / covariance matrix, Eigenvalues and eigenvectors, Sample size and dimension | Constraints: Symmetry/positive-semidefinite structure where relevant, Normalization constraints for eigenvectors, Rank/cointegration conditions | Objective: Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+  },
+  {
+    "problem_id": 3604,
+    "name": "Linear Algebra / Portfolio Optimization",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrix Methods",
+      "problem_setup_entities": [
+        "Data matrix / covariance matrix",
+        "Eigenvalues and eigenvectors",
+        "Sample size and dimension"
+      ],
+      "invariant_constraints": [
+        "Symmetry/positive-semidefinite structure where relevant",
+        "Normalization constraints for eigenvectors",
+        "Rank/cointegration conditions"
+      ],
+      "target_objective": "Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+    },
+    "schema_text": "Domain: Linear Algebra and Matrix Methods | Entities: Data matrix / covariance matrix, Eigenvalues and eigenvectors, Sample size and dimension | Constraints: Symmetry/positive-semidefinite structure where relevant, Normalization constraints for eigenvectors, Rank/cointegration conditions | Objective: Derive the matrix estimator/decomposition and interpret the principal spectral quantities."
+  },
+  {
+    "problem_id": 3605,
+    "name": "/ Time Series",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  },
+  {
+    "problem_id": 3606,
+    "name": "/ Risk Backtesting",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "Observed time series",
+        "Model parameters",
+        "Residuals / innovations",
+        "Forecast horizon"
+      ],
+      "invariant_constraints": [
+        "Stationarity / invertibility conditions when required",
+        "Moment conditions for estimators/tests",
+        "Finite-sample or asymptotic test statistic definitions"
+      ],
+      "target_objective": "Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: Observed time series, Model parameters, Residuals / innovations, Forecast horizon | Constraints: Stationarity / invertibility conditions when required, Moment conditions for estimators/tests, Finite-sample or asymptotic test statistic definitions | Objective: Derive estimator, forecast, or diagnostic test statistic and its interpretation."
+  }
+]

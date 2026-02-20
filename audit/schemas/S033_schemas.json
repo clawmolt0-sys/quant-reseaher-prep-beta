@@ -1,0 +1,1808 @@
+[
+  {
+    "problem_id": 3207,
+    "name": "Stars and bars & compositions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition and card categories",
+        "Draw order and revealed information state"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement unless explicitly stated otherwise"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-draw process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition and card categories, Draw order and revealed information state | Constraints: Sampling is without replacement unless explicitly stated otherwise | Objective: Compute the requested probability or Expected Value for the card-draw process"
+  },
+  {
+    "problem_id": 3208,
+    "name": "Expected adjacent cat¡dog pairs",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 3209,
+    "name": "Asymmetric random walk hitting time",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3210,
+    "name": "Nearest point to the center",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 3211,
+    "name": "Leading digit of powers",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 3212,
+    "name": "Two boxes until one empties",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3213,
+    "name": "Rademacher determinant",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 3214,
+    "name": "Covariance eigen-structure",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3215,
+    "name": "Reciprocal regressions",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression / Statistical Inference",
+      "problem_setup_entities": [
+        "response variable",
+        "predictor features/matrix",
+        "model coefficients and residuals"
+      ],
+      "invariant_constraints": [
+        "Model specification and estimation method are fixed as stated"
+      ],
+      "target_objective": "Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+    },
+    "schema_text": "Domain: Linear Regression / Statistical Inference | Entities: response variable, predictor features/matrix, model coefficients and residuals | Constraints: Model specification and estimation method are fixed as stated | Objective: Infer coefficient/model behavior, diagnostic implication, or prediction quantity"
+  },
+  {
+    "problem_id": 3216,
+    "name": "Why random features help in RF",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Market Microstructure / Derivatives)",
+      "problem_setup_entities": [
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Trials/observations are independent where specified."
+      ],
+      "target_objective": "Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+    },
+    "schema_text": "Domain: Quantitative Finance (Market Microstructure / Derivatives) | Entities: random outcomes | Constraints: Trials/observations are independent where specified. | Objective: Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+  },
+  {
+    "problem_id": 3217,
+    "name": "One-pass weighted group stats",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3218,
+    "name": "Ramanujan taxi numbers",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3219,
+    "name": "Asymmetric market making with adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3220,
+    "name": "Bayesian RFQ pricing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3221,
+    "name": "Kelly with usage constraints",
+    "schema": {
+      "core_mathematical_domain": "Optimization and Decision Theory",
+      "problem_setup_entities": [
+        "decision variables",
+        "objective function",
+        "feasibility constraints"
+      ],
+      "invariant_constraints": [
+        "Decisions must satisfy all stated resource/rule constraints"
+      ],
+      "target_objective": "Maximize/minimize the objective or compare candidate strategies"
+    },
+    "schema_text": "Domain: Optimization and Decision Theory | Entities: decision variables, objective function, feasibility constraints | Constraints: Decisions must satisfy all stated resource/rule constraints | Objective: Maximize/minimize the objective or compare candidate strategies"
+  },
+  {
+    "problem_id": 3222,
+    "name": "Sequential probability ratio test",
+    "schema": {
+      "core_mathematical_domain": "Estimation / Fermi Problems",
+      "problem_setup_entities": [
+        "order-of-magnitude assumptions"
+      ],
+      "invariant_constraints": [
+        "Apply the stated rules/assumptions of the problem setup."
+      ],
+      "target_objective": "Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+    },
+    "schema_text": "Domain: Estimation / Fermi Problems | Entities: order-of-magnitude assumptions | Constraints: Apply the stated rules/assumptions of the problem setup. | Objective: Produce a defensible back-of-the-envelope estimate, with uncertainty if requested."
+  },
+  {
+    "problem_id": 3223,
+    "name": "Cointegration hedge and test",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3224,
+    "name": "Sharpe with overlapping returns",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3225,
+    "name": "Negative hypergeometric: time to two Aces",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 3226,
+    "name": "Record highs",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 3227,
+    "name": "Pattern waiting time",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3228,
+    "name": "Conditional expectation with Gaussians",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 3229,
+    "name": "Sliding-window median",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3230,
+    "name": "Sliding-window maximum",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3231,
+    "name": "Streaming z-scores",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 3232,
+    "name": "K-way merge for time joins",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 3233,
+    "name": "Minimum-length subarray with sum threshold",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3234,
+    "name": "Median-of-medians selection",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3235,
+    "name": "Range minimum query (RMQ",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3236,
+    "name": "Choice between repeated vs single favorable bets",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3237,
+    "name": "Two-point value market making",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 3238,
+    "name": "Simulating a fair coin from a biased coin",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3239,
+    "name": "Secretary / best-of-n stopping",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3240,
+    "name": "Counting ordered triples",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and model parameters defined in the prompt"
+      ],
+      "invariant_constraints": [
+        "All numerical inputs and structural assumptions are fixed"
+      ],
+      "target_objective": "Derive or compute the requested quantity"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Random variables and model parameters defined in the prompt | Constraints: All numerical inputs and structural assumptions are fixed | Objective: Derive or compute the requested quantity"
+  },
+  {
+    "problem_id": 3241,
+    "name": "Maximizing ones in a nilpotent {0, 1}-matrix",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3242,
+    "name": "Positive/negative parts and option payoffs",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing / Greeks",
+      "problem_setup_entities": [
+        "underlying asset price process",
+        "option payoff definition",
+        "volatility/interest-rate parameters",
+        "Greek sensitivity measure"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage pricing framework",
+        "Model assumptions (e.g., Black-Scholes diffusion) as stated"
+      ],
+      "target_objective": "Quantify option value or sensitivity and explain comparative statics"
+    },
+    "schema_text": "Domain: Derivatives Pricing / Greeks | Entities: underlying asset price process, option payoff definition, volatility/interest-rate parameters, Greek sensitivity measure | Constraints: No-arbitrage pricing framework, Model assumptions (e.g., Black-Scholes diffusion) as stated | Objective: Quantify option value or sensitivity and explain comparative statics"
+  },
+  {
+    "problem_id": 3243,
+    "name": "Beta¡Bernoulli posterior & predictive",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 3244,
+    "name": "Steady-state Kalman filter for AR(1",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3245,
+    "name": "Recovering AR(2",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3246,
+    "name": "Known-break Chow test",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3247,
+    "name": "Logistic regression: gradient, Hessian, convexity",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "regression coefficients",
+        "data stream"
+      ],
+      "invariant_constraints": [
+        "Trials/observations are independent where specified."
+      ],
+      "target_objective": "Derive estimator/test formulas and quantify sampling uncertainty or identification conditions."
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: regression coefficients, data stream | Constraints: Trials/observations are independent where specified. | Objective: Derive estimator/test formulas and quantify sampling uncertainty or identification conditions."
+  },
+  {
+    "problem_id": 3248,
+    "name": "Lasso with orthonormal design",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 3249,
+    "name": "Dirichlet¡multinomial",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 3250,
+    "name": "LIS with reconstruction",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3251,
+    "name": "Counting inversions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3252,
+    "name": "Frequent items, streaming",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3253,
+    "name": "Reservoir sampling of k from a stream",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3254,
+    "name": "K smallest pair sums",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3255,
+    "name": "Subset sum via bitset convolution",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 3256,
+    "name": "Median of two sorted arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3257,
+    "name": "Static market making with Poisson flow",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 3258,
+    "name": "Adverse selection via trade sign",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 3259,
+    "name": "Kelly sizing with estimation error",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 3260,
+    "name": "Hawkes process basics",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3261,
+    "name": "GARCH LM test",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3262,
+    "name": "EVT tail risk via peaks-over-threshold",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "state or score variable",
+        "sample size or count parameter"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated independence/uniformity assumptions",
+        "Transition or game rules remain fixed across trials"
+      ],
+      "target_objective": "Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, state or score variable, sample size or count parameter | Constraints: Outcomes follow stated independence/uniformity assumptions, Transition or game rules remain fixed across trials | Objective: Compute probability, Expected Value, stopping-time expectation, or winning strategy"
+  },
+  {
+    "problem_id": 3263,
+    "name": "Bayesian linear regression, conjugate",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3264,
+    "name": "HAC/Newey¡West",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3265,
+    "name": "White's HC estimators",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3266,
+    "name": "EM for two-component Gaussian mixture",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 3267,
+    "name": "Benjamini¡Hochberg",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition and card categories",
+        "Draw order and revealed information state"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement unless explicitly stated otherwise"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-draw process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition and card categories, Draw order and revealed information state | Constraints: Sampling is without replacement unless explicitly stated otherwise | Objective: Compute the requested probability or Expected Value for the card-draw process"
+  },
+  {
+    "problem_id": 3268,
+    "name": "K-th Smallest Pair Distance",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3269,
+    "name": "Union area of rectangles",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3270,
+    "name": "Space-Saving heavy hitters",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3271,
+    "name": "Approximate quantiles in one pass",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3272,
+    "name": "RLS with forgetting",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 3273,
+    "name": "Min window substring with multiplicities",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3274,
+    "name": "Maximum subarray with at most K segments",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3275,
+    "name": "Time-series CV without leakage",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning / Statistical Learning",
+      "problem_setup_entities": [
+        "feature matrix",
+        "target variable",
+        "model class and hyperparameters",
+        "training/validation split"
+      ],
+      "invariant_constraints": [
+        "Evaluation metric and data-generating assumptions are fixed",
+        "Model selection balances bias-variance and generalization"
+      ],
+      "target_objective": "Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+    },
+    "schema_text": "Domain: Machine Learning / Statistical Learning | Entities: feature matrix, target variable, model class and hyperparameters, training/validation split | Constraints: Evaluation metric and data-generating assumptions are fixed, Model selection balances bias-variance and generalization | Objective: Choose modeling approach, tune hyperparameters, or explain algorithm behavior"
+  },
+  {
+    "problem_id": 3276,
+    "name": "Latency risk on a stale quote",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3277,
+    "name": "Inventory-based skew",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3278,
+    "name": "Monty Hall with a biased host",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3279,
+    "name": "Occupancy threshold -- birthday generalization",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics",
+      "problem_setup_entities": [
+        "Discrete objects to be arranged or selected",
+        "Counting rules or case partition",
+        "Feasible configuration set"
+      ],
+      "invariant_constraints": [
+        "Counting must satisfy the prompt constraints exactly"
+      ],
+      "target_objective": "Count the number of feasible configurations or derive the closed-form count"
+    },
+    "schema_text": "Domain: Combinatorics | Entities: Discrete objects to be arranged or selected, Counting rules or case partition, Feasible configuration set | Constraints: Counting must satisfy the prompt constraints exactly | Objective: Count the number of feasible configurations or derive the closed-form count"
+  },
+  {
+    "problem_id": 3280,
+    "name": "Variance ratio (VR",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3281,
+    "name": "Ljung¡Box test",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3282,
+    "name": "ARMA(1,1",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3283,
+    "name": "HMM with Gaussian emissions",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference and Stochastic Processes",
+      "problem_setup_entities": [
+        "Observed data/sample path",
+        "Parametric probabilistic model",
+        "Unknown parameters or latent state"
+      ],
+      "invariant_constraints": [
+        "Model assumptions (independence/Markov/Gaussian as specified)",
+        "Likelihood or moment conditions define estimation",
+        "Use valid test/update equations"
+      ],
+      "target_objective": "Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+    },
+    "schema_text": "Domain: Statistical Inference and Stochastic Processes | Entities: Observed data/sample path, Parametric probabilistic model, Unknown parameters or latent state | Constraints: Model assumptions (independence/Markov/Gaussian as specified), Likelihood or moment conditions define estimation, Use valid test/update equations | Objective: Derive estimator/filter/test statistic and express the required posterior, forecast, or decision rule."
+  },
+  {
+    "problem_id": 3284,
+    "name": "RTS smoother",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3285,
+    "name": "Asymptotics of Sharpe",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3286,
+    "name": "Sharpe via stationary bootstrap",
+    "schema": {
+      "core_mathematical_domain": "Probability",
+      "problem_setup_entities": [
+        "Random variables and probability space"
+      ],
+      "invariant_constraints": [
+        "Boundary/absorption conditions"
+      ],
+      "target_objective": "Derive the requested quantitative result under the stated probabilistic model."
+    },
+    "schema_text": "Domain: Probability | Entities: Random variables and probability space | Constraints: Boundary/absorption conditions | Objective: Derive the requested quantitative result under the stated probabilistic model."
+  },
+  {
+    "problem_id": 3287,
+    "name": "Order-statistics tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3288,
+    "name": "2D Fenwick tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3289,
+    "name": "Longest repeated substring",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3290,
+    "name": "KMP string search",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3291,
+    "name": "Smallest subarray with exactly K distinct",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3292,
+    "name": "Minimum spanning tree",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3293,
+    "name": "SSSP with nonnegative weights",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3294,
+    "name": "Randomized Quickselect",
+    "schema": {
+      "core_mathematical_domain": "Expected Value and Distribution Analysis",
+      "problem_setup_entities": [
+        "random variable(s)",
+        "distribution parameters",
+        "payoff/count function"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions are exactly as stated"
+      ],
+      "target_objective": "Compute Expected Value, variance, or related summary quantity"
+    },
+    "schema_text": "Domain: Expected Value and Distribution Analysis | Entities: random variable(s), distribution parameters, payoff/count function | Constraints: Distributional assumptions are exactly as stated | Objective: Compute Expected Value, variance, or related summary quantity"
+  },
+  {
+    "problem_id": 3295,
+    "name": "Alias sampling",
+    "schema": {
+      "core_mathematical_domain": "Probability Distributions and Random Variables",
+      "problem_setup_entities": [
+        "random variable definitions",
+        "support/distribution parameters",
+        "transformations/events of interest"
+      ],
+      "invariant_constraints": [
+        "Random-variable relationships are exactly those specified"
+      ],
+      "target_objective": "Compute distributional property, probability, or Expected Value of a function"
+    },
+    "schema_text": "Domain: Probability Distributions and Random Variables | Entities: random variable definitions, support/distribution parameters, transformations/events of interest | Constraints: Random-variable relationships are exactly those specified | Objective: Compute distributional property, probability, or Expected Value of a function"
+  },
+  {
+    "problem_id": 3296,
+    "name": "Adverse selection single-quote",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input stream/array/string",
+        "Stateful data structure",
+        "Update/query operations"
+      ],
+      "invariant_constraints": [
+        "Time complexity constraint",
+        "Space complexity constraint",
+        "Correctness over all valid inputs"
+      ],
+      "target_objective": "Design and/or implement an algorithm that meets the required asymptotic bounds."
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input stream/array/string, Stateful data structure, Update/query operations | Constraints: Time complexity constraint, Space complexity constraint, Correctness over all valid inputs | Objective: Design and/or implement an algorithm that meets the required asymptotic bounds."
+  },
+  {
+    "problem_id": 3297,
+    "name": "Bayesian pricing with signals",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3298,
+    "name": "Inventory-aware quoting",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability / Stochastic Process",
+      "problem_setup_entities": [
+        "random experiment outcomes",
+        "sample size or count parameter",
+        "event definition"
+      ],
+      "invariant_constraints": [
+        "Outcomes follow stated uniformity/independence/bias assumptions"
+      ],
+      "target_objective": "Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+    },
+    "schema_text": "Domain: Discrete Probability / Stochastic Process | Entities: random experiment outcomes, sample size or count parameter, event definition | Constraints: Outcomes follow stated uniformity/independence/bias assumptions | Objective: Compute probability, conditional probability, Expected Value, or optimal decision under uncertainty"
+  },
+  {
+    "problem_id": 3299,
+    "name": "Market-making in an option",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure and Optimal Quoting",
+      "problem_setup_entities": [
+        "Fundamental value prior",
+        "Order-flow model (informed vs noise or arrival intensities)",
+        "Quote/pricing decision variables"
+      ],
+      "invariant_constraints": [
+        "Zero-profit or expected-utility condition",
+        "Execution probabilities depend on quote placement/latency/queue",
+        "Inventory and tick-size constraints when present"
+      ],
+      "target_objective": "Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+    },
+    "schema_text": "Domain: Market Microstructure and Optimal Quoting | Entities: Fundamental value prior, Order-flow model (informed vs noise or arrival intensities), Quote/pricing decision variables | Constraints: Zero-profit or expected-utility condition, Execution probabilities depend on quote placement/latency/queue, Inventory and tick-size constraints when present | Objective: Compute optimal quotes/prices and associated expected P&L/risk under the specified microstructure model."
+  },
+  {
+    "problem_id": 3300,
+    "name": "Jensen and option convexity",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Market Microstructure / Derivatives)",
+      "problem_setup_entities": [
+        "market maker inventory"
+      ],
+      "invariant_constraints": [
+        "Trials/observations are independent where specified."
+      ],
+      "target_objective": "Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+    },
+    "schema_text": "Domain: Quantitative Finance (Market Microstructure / Derivatives) | Entities: market maker inventory | Constraints: Trials/observations are independent where specified. | Objective: Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+  },
+  {
+    "problem_id": 3301,
+    "name": "Brownian motion properties",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Deck composition and card categories",
+        "Draw order and revealed information state"
+      ],
+      "invariant_constraints": [
+        "Sampling is without replacement unless explicitly stated otherwise"
+      ],
+      "target_objective": "Compute the requested probability or Expected Value for the card-draw process"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Deck composition and card categories, Draw order and revealed information state | Constraints: Sampling is without replacement unless explicitly stated otherwise | Objective: Compute the requested probability or Expected Value for the card-draw process"
+  },
+  {
+    "problem_id": 3302,
+    "name": "Duplicated data in OLS",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3303,
+    "name": "GARCH(1,1",
+    "schema": {
+      "core_mathematical_domain": "Time Series and Financial Risk Modeling",
+      "problem_setup_entities": [
+        "Return/time-series process",
+        "Dynamic conditional variance or state equation",
+        "Forecast horizon/risk metric"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or positivity conditions",
+        "Recursive dynamics govern one-step updates",
+        "Use model-implied distribution for risk/forecast quantities"
+      ],
+      "target_objective": "Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+    },
+    "schema_text": "Domain: Time Series and Financial Risk Modeling | Entities: Return/time-series process, Dynamic conditional variance or state equation, Forecast horizon/risk metric | Constraints: Stationarity/invertibility or positivity conditions, Recursive dynamics govern one-step updates, Use model-implied distribution for risk/forecast quantities | Objective: Derive closed-form forecasts, risk measures, or parameter relations implied by the specified model."
+  },
+  {
+    "problem_id": 3304,
+    "name": "Black¡Scholes limit as S0 0+",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Market Microstructure / Derivatives)",
+      "problem_setup_entities": [
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Normal-distribution assumptions apply where specified."
+      ],
+      "target_objective": "Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+    },
+    "schema_text": "Domain: Quantitative Finance (Market Microstructure / Derivatives) | Entities: random outcomes | Constraints: Normal-distribution assumptions apply where specified. | Objective: Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+  },
+  {
+    "problem_id": 3305,
+    "name": "Time-to-expiry monotonicity",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Market Microstructure / Derivatives)",
+      "problem_setup_entities": [
+        "random outcomes"
+      ],
+      "invariant_constraints": [
+        "Normal-distribution assumptions apply where specified."
+      ],
+      "target_objective": "Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+    },
+    "schema_text": "Domain: Quantitative Finance (Market Microstructure / Derivatives) | Entities: random outcomes | Constraints: Normal-distribution assumptions apply where specified. | Objective: Derive pricing/quoting relations and compute expected P&L, posterior beliefs, or optimal controls."
+  },
+  {
+    "problem_id": 3306,
+    "name": "Monte Carlo variance reduction",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "parameter n"
+      ],
+      "invariant_constraints": [
+        "Use stated experiment assumptions and sample-space symmetry."
+      ],
+      "target_objective": "Compute the probability of the target event under the stated experiment."
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: parameter n | Constraints: Use stated experiment assumptions and sample-space symmetry. | Objective: Compute the probability of the target event under the stated experiment."
+  }
+]

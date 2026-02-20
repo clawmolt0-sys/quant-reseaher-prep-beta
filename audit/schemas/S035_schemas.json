@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 3407,
+    "name": "Jump detection via bipower variation",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3408,
+    "name": "Particle filtering for stochastic volatility",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3409,
+    "name": "T-GARCH Likelihood & Moments",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3410,
+    "name": "SARIMA forecasting",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3411,
+    "name": "Multiple structural breaks",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3412,
+    "name": "Gaussian process (GP",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3413,
+    "name": "Durbin¡Wu¡Hausman in factor regressions",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3414,
+    "name": "Coordinate descent for LASSO",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning, Optimization, and Linear Algebra",
+      "problem_setup_entities": [
+        "Design matrix or covariance structure",
+        "Parameter vector/weights and regularization or constraints",
+        "Loss/objective function with optimization variables"
+      ],
+      "invariant_constraints": [
+        "Optimization constraints (budget, positivity, leverage, or penalty) must be satisfied",
+        "Estimator/update equations follow the chosen model assumptions"
+      ],
+      "target_objective": "Compute the estimator, decomposition, or optimal weights that minimize/maximize the stated objective"
+    },
+    "schema_text": "Domain: Statistical Learning, Optimization, and Linear Algebra | Entities: Design matrix or covariance structure, Parameter vector/weights and regularization or constraints, Loss/objective function with optimization variables | Constraints: Optimization constraints (budget, positivity, leverage, or penalty) must be satisfied, Estimator/update equations follow the chosen model assumptions | Objective: Compute the estimator, decomposition, or optimal weights that minimize/maximize the stated objective"
+  },
+  {
+    "problem_id": 3415,
+    "name": "Poisson SPRT",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3416,
+    "name": "Microstructure: Roll estimator",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3417,
+    "name": "Hasbrouck information share",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3418,
+    "name": "Range add / range min",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3419,
+    "name": "Median of k sorted arrays",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3420,
+    "name": "Subarrays divisible by m",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3421,
+    "name": "Envelope LIS (2D",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3422,
+    "name": "Uniform-value adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3423,
+    "name": "Binary event with Beta prior",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3424,
+    "name": "One-sided quote with selection",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3425,
+    "name": "Discrete hedging error and spread",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3426,
+    "name": "Acceptance/rejection as information",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Event/hitting-time/payoff definition",
+        "Model parameters and sampling assumptions"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov or distributional assumptions are as stated",
+        "Stopping-time or conditioning rules are applied consistently"
+      ],
+      "target_objective": "Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+    },
+    "schema_text": "Domain: Probability Theory and Stochastic Processes | Entities: Random variables or stochastic process states, Event/hitting-time/payoff definition, Model parameters and sampling assumptions | Constraints: Independence/Markov or distributional assumptions are as stated, Stopping-time or conditioning rules are applied consistently | Objective: Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+  },
+  {
+    "problem_id": 3427,
+    "name": "Queue value and fixed fees",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3428,
+    "name": "Hill tail-index estimator",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3429,
+    "name": "Block maxima and GEV",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3430,
+    "name": "ARCH effects test",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3431,
+    "name": "GLS with AR(1",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3432,
+    "name": "Long-run variance via kernels",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Event/hitting-time/payoff definition",
+        "Model parameters and sampling assumptions"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov or distributional assumptions are as stated",
+        "Stopping-time or conditioning rules are applied consistently"
+      ],
+      "target_objective": "Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+    },
+    "schema_text": "Domain: Probability Theory and Stochastic Processes | Entities: Random variables or stochastic process states, Event/hitting-time/payoff definition, Model parameters and sampling assumptions | Constraints: Independence/Markov or distributional assumptions are as stated, Stopping-time or conditioning rules are applied consistently | Objective: Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+  },
+  {
+    "problem_id": 3433,
+    "name": "Durbin¡Levinson and PACF",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3434,
+    "name": "DCC(1,1",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3435,
+    "name": "K-th smallest absolute difference",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3436,
+    "name": "Streaming quantiles via GK",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3437,
+    "name": "Longest subarray with sum K",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3438,
+    "name": "Split array to minimize largest sum",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3439,
+    "name": "LFU cache in O(1",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3440,
+    "name": "Risk-neutral dynamics and compounding rate",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3441,
+    "name": "Discounted price as a martingale",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3442,
+    "name": "It⌠ differential",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3443,
+    "name": "Stochastic integral",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3444,
+    "name": "Generating correlated normals",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3445,
+    "name": "Short-rate models and negative rates",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3446,
+    "name": "Market making with adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3447,
+    "name": "Biased random walk race to ▒2",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3448,
+    "name": "Bachelier call",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3449,
+    "name": "Ridge regression bias/variance",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3450,
+    "name": "Reverse regressions",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3451,
+    "name": "PCA dimension choice",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3452,
+    "name": "Maximum drawdown algorithm",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3453,
+    "name": "Efficient linear interpolation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3454,
+    "name": "R2 can be negative",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Event/hitting-time/payoff definition",
+        "Model parameters and sampling assumptions"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov or distributional assumptions are as stated",
+        "Stopping-time or conditioning rules are applied consistently"
+      ],
+      "target_objective": "Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+    },
+    "schema_text": "Domain: Probability Theory and Stochastic Processes | Entities: Random variables or stochastic process states, Event/hitting-time/payoff definition, Model parameters and sampling assumptions | Constraints: Independence/Markov or distributional assumptions are as stated, Stopping-time or conditioning rules are applied consistently | Objective: Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+  },
+  {
+    "problem_id": 3455,
+    "name": "Lasso shrinkage and post-selection OLS",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3456,
+    "name": "Logistic regression: Newton step",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3457,
+    "name": "It⌠ vs. Riemann¡Stieltjes",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3458,
+    "name": "Posterior after a trade & ask setting",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3459,
+    "name": "Inventory-aware quote choice",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3460,
+    "name": "Black¡Scholes gamma sign",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3461,
+    "name": "CIR transition law",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3462,
+    "name": "QR via Householder",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3463,
+    "name": "Power iteration",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3464,
+    "name": "Bucket sort conditions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3465,
+    "name": "LIS in O(n log n",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3466,
+    "name": "Fast Fibonacci",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3467,
+    "name": "Constrained max-subarray",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3468,
+    "name": "MC for arithmetic Asian",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3469,
+    "name": "Inverse transform for piecewise CDF",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3470,
+    "name": "Expected maximum of dice",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3471,
+    "name": "Waiting time to HHH",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3472,
+    "name": "HAC t-stat",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3473,
+    "name": "Stacking vs. multivariate OLS",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3474,
+    "name": "Continuous-time ruin probability",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3475,
+    "name": "Bayesian update from a no-trade event",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3476,
+    "name": "Kelly sizing and estimation risk",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3477,
+    "name": "Binary market-making with asymmetric costs",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3478,
+    "name": "Cointegrated pairs: OU calibration and half-life",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3479,
+    "name": "Sequential test for an edge",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3480,
+    "name": "Block bootstrap for Sharpe",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3481,
+    "name": "Kalman filter for a noisy midprice",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3482,
+    "name": "Two-regime HMM volatility filter",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3483,
+    "name": "T-GARCH VaR",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3484,
+    "name": "Almgren¡Chriss mean¡variance execution",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3485,
+    "name": "Risk-neutral density from options",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3486,
+    "name": "Discrete hedging error",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3487,
+    "name": "Streaming median in O(log n",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3488,
+    "name": "Detecting triangular arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3489,
+    "name": "Online covariance & correlation",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3490,
+    "name": "Sampling distribution of the Sharpe",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3491,
+    "name": "Multiple testing in signal mining",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Event/hitting-time/payoff definition",
+        "Model parameters and sampling assumptions"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov or distributional assumptions are as stated",
+        "Stopping-time or conditioning rules are applied consistently"
+      ],
+      "target_objective": "Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+    },
+    "schema_text": "Domain: Probability Theory and Stochastic Processes | Entities: Random variables or stochastic process states, Event/hitting-time/payoff definition, Model parameters and sampling assumptions | Constraints: Independence/Markov or distributional assumptions are as stated, Stopping-time or conditioning rules are applied consistently | Objective: Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+  },
+  {
+    "problem_id": 3492,
+    "name": "Bayesian A/B for hit rate",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3493,
+    "name": "Secretary problem with unknown N but uniform time",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3494,
+    "name": "Posterior after buy then sell",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3495,
+    "name": "Inventory-aware spread and skew",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference and Market Microstructure",
+      "problem_setup_entities": [
+        "Latent efficient value or event probability",
+        "Observed order-flow/trade event signal",
+        "Quoted prices, inventory state, and execution/payoff function"
+      ],
+      "invariant_constraints": [
+        "Belief updates follow Bayes rule under stated likelihood model",
+        "Quotes/decisions respect inventory and adverse-selection structure"
+      ],
+      "target_objective": "Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+    },
+    "schema_text": "Domain: Bayesian Inference and Market Microstructure | Entities: Latent efficient value or event probability, Observed order-flow/trade event signal, Quoted prices, inventory state, and execution/payoff function | Constraints: Belief updates follow Bayes rule under stated likelihood model, Quotes/decisions respect inventory and adverse-selection structure | Objective: Compute posterior beliefs and derive the optimal quote or decision maximizing Expected Value (or expected utility)"
+  },
+  {
+    "problem_id": 3496,
+    "name": "Order statistics for normals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Event/hitting-time/payoff definition",
+        "Model parameters and sampling assumptions"
+      ],
+      "invariant_constraints": [
+        "Independence/Markov or distributional assumptions are as stated",
+        "Stopping-time or conditioning rules are applied consistently"
+      ],
+      "target_objective": "Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+    },
+    "schema_text": "Domain: Probability Theory and Stochastic Processes | Entities: Random variables or stochastic process states, Event/hitting-time/payoff definition, Model parameters and sampling assumptions | Constraints: Independence/Markov or distributional assumptions are as stated, Stopping-time or conditioning rules are applied consistently | Objective: Compute probability, Expected Value, distributional quantity, or optimal stopping/sequential decision threshold"
+  },
+  {
+    "problem_id": 3497,
+    "name": "Monty Hall with probabilistic reveals",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3498,
+    "name": "ARCH-LM test",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3499,
+    "name": "Dupire local volatility",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3500,
+    "name": "Call¡put Greek parity",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3501,
+    "name": "Two-scale realized volatility",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3502,
+    "name": "Mean¡variance with leverage cap",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3503,
+    "name": "Binary search for maximum average subarray",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/stream and query or update operations",
+        "Auxiliary data structure maintaining summary statistics",
+        "Complexity targets for time and memory"
+      ],
+      "invariant_constraints": [
+        "All operations must preserve data-structure invariants",
+        "Amortized or worst-case complexity bounds must hold"
+      ],
+      "target_objective": "Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/stream and query or update operations, Auxiliary data structure maintaining summary statistics, Complexity targets for time and memory | Constraints: All operations must preserve data-structure invariants, Amortized or worst-case complexity bounds must hold | Objective: Design or analyze an algorithm that returns correct query/update results within required complexity bounds"
+  },
+  {
+    "problem_id": 3504,
+    "name": "CUSUM mean shift detection",
+    "schema": {
+      "core_mathematical_domain": "Time Series Econometrics and Statistical Inference",
+      "problem_setup_entities": [
+        "Observed time series and lagged state variables",
+        "Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching)",
+        "Model parameters and innovation process"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility or regime assumptions as specified",
+        "Estimation and testing use the stated likelihood/moment conditions"
+      ],
+      "target_objective": "Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+    },
+    "schema_text": "Domain: Time Series Econometrics and Statistical Inference | Entities: Observed time series and lagged state variables, Parametric dynamic model (ARIMA/GARCH/state-space/regime-switching), Model parameters and innovation process | Constraints: Stationarity/invertibility or regime assumptions as specified, Estimation and testing use the stated likelihood/moment conditions | Objective: Estimate model parameters and/or construct the required forecast, filter, test statistic, or confidence assessment"
+  },
+  {
+    "problem_id": 3505,
+    "name": "MLE with right-censoring for exponential",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  },
+  {
+    "problem_id": 3506,
+    "name": "Risk parity weights",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset price process under physical or risk-neutral measure",
+        "Contract payoff and maturity structure",
+        "Model parameters (volatility, rates, dividends, impact, or jumps)"
+      ],
+      "invariant_constraints": [
+        "Dynamics satisfy the specified SDE/discrete approximation assumptions",
+        "No-arbitrage and self-financing conditions hold when applicable"
+      ],
+      "target_objective": "Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+    },
+    "schema_text": "Domain: Stochastic Calculus and Derivative Pricing | Entities: Underlying asset price process under physical or risk-neutral measure, Contract payoff and maturity structure, Model parameters (volatility, rates, dividends, impact, or jumps) | Constraints: Dynamics satisfy the specified SDE/discrete approximation assumptions, No-arbitrage and self-financing conditions hold when applicable | Objective: Derive the requested price, Greek, transition law, hedge error, or volatility quantity as an Expected Value/PDE-based expression"
+  }
+]

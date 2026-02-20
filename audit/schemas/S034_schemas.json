@@ -1,0 +1,1532 @@
+[
+  {
+    "problem_id": 3307,
+    "name": "Normal generation from uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where specified",
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution | Constraints: Independence assumptions hold where specified, Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3308,
+    "name": "All-pairs two-sum",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/list",
+        "Target value/threshold"
+      ],
+      "invariant_constraints": [
+        "Index ordering constraint i < j",
+        "Algorithmic complexity target includes O(n) runtime",
+        "Additional space constraints must be satisfied"
+      ],
+      "target_objective": "Construct a correct algorithm that returns the required output within stated time/space bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/list, Target value/threshold | Constraints: Index ordering constraint i < j, Algorithmic complexity target includes O(n) runtime, Additional space constraints must be satisfied | Objective: Construct a correct algorithm that returns the required output within stated time/space bounds"
+  },
+  {
+    "problem_id": 3309,
+    "name": "Group-min join problem",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3310,
+    "name": "Conditional summation in O(1",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3311,
+    "name": "Soft-margin SVM dual & role of C",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3312,
+    "name": "Cross-sectional factor modeling",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3313,
+    "name": "RMBS/CLO tranche waterfall",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Underlying asset/derivative",
+        "Portfolio weights/returns"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Underlying asset/derivative, Portfolio weights/returns | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3314,
+    "name": "Binomial pricing with discrete dividend",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative, Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3315,
+    "name": "Kelly sizing with known edge",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Optimize the stated objective function under given constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Observations are i.i.d. when stated | Objective: Optimize the stated objective function under given constraints"
+  },
+  {
+    "problem_id": 3316,
+    "name": "Optimal spread with order-arrival decay",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Optimize the stated objective function under given constraints"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value parameter(s), Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Optimize the stated objective function under given constraints"
+  },
+  {
+    "problem_id": 3317,
+    "name": "Trading on Gaussian signals",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Underlying asset/derivative | Constraints: Observations are i.i.d. when stated | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3318,
+    "name": "Bayesian coin--posterior and predictive",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3319,
+    "name": "CUSUM for mean shift",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Expected Value parameter(s) | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3320,
+    "name": "Autocorrelation-adjusted Sharpe",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3321,
+    "name": "Barrier digital via Brownian bridge",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Derivative Pricing",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "Underlying asset/derivative",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Stochastic Processes and Derivative Pricing | Entities: Brownian motion, Underlying asset/derivative, Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3322,
+    "name": "Order statistics",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3323,
+    "name": "Put¡call parity with cash dividend",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory and Risk Management",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage condition"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Portfolio Theory and Risk Management | Entities: Given inputs and model parameters | Constraints: No-arbitrage condition | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3324,
+    "name": "Impact-aware execution",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative, Variance/volatility parameter(s) | Constraints: Observations are i.i.d. when stated | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3325,
+    "name": "Rolling median at scale",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3326,
+    "name": "Greedy interval covering",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Algorithmic complexity target includes O(n) runtime"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Algorithmic complexity target includes O(n) runtime | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3327,
+    "name": "Order-statistic selection with duplicates",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input array/list",
+        "Target value/threshold"
+      ],
+      "invariant_constraints": [
+        "Algorithmic complexity target includes O(n) runtime",
+        "Additional space constraints must be satisfied"
+      ],
+      "target_objective": "Construct a correct algorithm that returns the required output within stated time/space bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input array/list, Target value/threshold | Constraints: Algorithmic complexity target includes O(n) runtime, Additional space constraints must be satisfied | Objective: Construct a correct algorithm that returns the required output within stated time/space bounds"
+  },
+  {
+    "problem_id": 3328,
+    "name": "Streaming VWAP and out-of-order ticks",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Algorithmic complexity target includes O(n) runtime"
+      ],
+      "target_objective": "Construct a correct algorithm that returns the required output within stated time/space bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Algorithmic complexity target includes O(n) runtime | Objective: Construct a correct algorithm that returns the required output within stated time/space bounds"
+  },
+  {
+    "problem_id": 3329,
+    "name": "Ridge vs. OLS for signal forecasting",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Optimize the stated objective function under given constraints"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Optimize the stated objective function under given constraints"
+  },
+  {
+    "problem_id": 3330,
+    "name": "Avellaneda¡Stoikov style quoting",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3331,
+    "name": "Two-asset inventory coupling",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3332,
+    "name": "Binary market with informed traders",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3333,
+    "name": "Block trade tender",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where specified"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative | Constraints: Independence assumptions hold where specified | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3334,
+    "name": "Hitting-profit for drifted Brownian",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Derivative Pricing",
+      "problem_setup_entities": [
+        "Brownian motion",
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Stochastic Processes and Derivative Pricing | Entities: Brownian motion, Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3335,
+    "name": "Kalman filter for a random-walk price",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where specified"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative | Constraints: Independence assumptions hold where specified | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3336,
+    "name": "Comparing two Sharpe ratios",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3337,
+    "name": "Cointegration and error correction",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3338,
+    "name": "False discovery control for many signals",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Target value/threshold"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Target value/threshold | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3339,
+    "name": "Censored MLE",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3340,
+    "name": "Currency-arbitrage detector",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Construct a correct algorithm that returns the required output within stated time/space bounds"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Matrix | Constraints: Respect all stated model assumptions and input bounds | Objective: Construct a correct algorithm that returns the required output within stated time/space bounds"
+  },
+  {
+    "problem_id": 3341,
+    "name": "Maximum drawdown in one pass",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory and Risk Management",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Portfolio Theory and Risk Management | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3342,
+    "name": "Kendall's at scale",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3343,
+    "name": "Streaming quantile (95%",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3344,
+    "name": "Weighted reservoir sampling",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3345,
+    "name": "Top-k heavy hitters",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3346,
+    "name": "EWMA mean and variance online",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value parameter(s), Variance/volatility parameter(s) | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3347,
+    "name": "Recursive least squares with forgetting",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3348,
+    "name": "Basel-style portfolio credit VaR",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory and Risk Management",
+      "problem_setup_entities": [
+        "Portfolio weights/returns"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Portfolio Theory and Risk Management | Entities: Portfolio weights/returns | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3349,
+    "name": "Base-rate calibration for a PD model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3350,
+    "name": "VaR backtesting",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3351,
+    "name": "Normal Expected Shortfall",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3352,
+    "name": "CVA for a zero-coupon receivable",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3353,
+    "name": "Bachelier vs. Black volatility",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Underlying asset/derivative",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Underlying asset/derivative, Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3354,
+    "name": "CIR short rate positivity",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3355,
+    "name": "HJM no-arbitrage drift",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage condition"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: No-arbitrage condition | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3356,
+    "name": "Yield-curve PCA",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)",
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Variance/volatility parameter(s), Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3357,
+    "name": "Commodity forwards and convenience yield",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory and Risk Management",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Risk-neutral measure dynamics"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Portfolio Theory and Risk Management | Entities: Underlying asset/derivative | Constraints: Risk-neutral measure dynamics | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3358,
+    "name": "Barrier crossing with drift",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3359,
+    "name": "Realized volatility with microstructure noise",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Derivative Pricing",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Stochastic Processes and Derivative Pricing | Entities: Variance/volatility parameter(s) | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3360,
+    "name": "ADF unit-root test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3361,
+    "name": "AUC as a probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Estimator unbiasedness requirement"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Variance/volatility parameter(s) | Constraints: Estimator unbiasedness requirement | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3362,
+    "name": "Bayes-optimal threshold under Gaussian scores",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3363,
+    "name": "Streaming Expected Shortfall in a window",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory and Risk Management",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Portfolio Theory and Risk Management | Entities: Expected Value parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3364,
+    "name": "Mean¡variance with turnover penalty",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)",
+        "Variance/volatility parameter(s)",
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value parameter(s), Variance/volatility parameter(s), Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3365,
+    "name": "Ledoit¡Wolf shrinkage",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Target value/threshold",
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Target value/threshold, Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3366,
+    "name": "Sharpe uncertainty via stationary bootstrap",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3367,
+    "name": "Bayesian drift estimation in GBM",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3368,
+    "name": "Glosten¡Milgrom binary model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3369,
+    "name": "Two-round market making with learning",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Expected Value parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3370,
+    "name": "Value of a costly signal",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Expected Value parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3371,
+    "name": "Mean¡variance spreads under Poisson flow",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Poisson random variable/process",
+        "Expected Value parameter(s)",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Poisson random variable/process, Expected Value parameter(s), Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3372,
+    "name": "Adverse selection via covariance",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3373,
+    "name": "EVT POT VaR/ES",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3374,
+    "name": "Self-exciting order flow",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3375,
+    "name": "Johansen cointegration and VECM",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3376,
+    "name": "Time-varying beta via Kalman",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3377,
+    "name": "Elastic net for out-of-sample IR",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3378,
+    "name": "Bayes factor with g-prior",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3379,
+    "name": "Regime-switching AR(1",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Matrix"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Matrix | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3380,
+    "name": "Tail dependence in a t-copula",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3381,
+    "name": "Order book simulator",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Target value/threshold",
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Target value/threshold, Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3382,
+    "name": "Subarray sums in a range",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3383,
+    "name": "Dynamic order statistics",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3384,
+    "name": "Online covariance with Welford",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3385,
+    "name": "Inventory-limited dealer via dynamic programming",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3386,
+    "name": "Single-period Kyle model",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where specified"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Underlying asset/derivative | Constraints: Independence assumptions hold where specified | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3387,
+    "name": "Posterior from order flow",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold where specified"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Underlying asset/derivative | Constraints: Independence assumptions hold where specified | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3388,
+    "name": "Breeden¡Litzenberger density",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3389,
+    "name": "Variance swap under GBM",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3390,
+    "name": "GMM for CAPM",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. when stated"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Observations are i.i.d. when stated | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3391,
+    "name": "Unit root with break",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Optimization",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Statistical Learning and Optimization | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3392,
+    "name": "Quasi-MLE for Poisson regression",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Poisson random variable/process",
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Poisson random variable/process, Expected Value parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3393,
+    "name": "Benjamini¡Yekutieli FDR",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3394,
+    "name": "Kalman smoother (RTS",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3395,
+    "name": "HAR-RV",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3396,
+    "name": "Sequential A/B with alpha-spending",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Random variable(s) with Normal distribution",
+        "Expected Value parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Random variable(s) with Normal distribution, Expected Value parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  },
+  {
+    "problem_id": 3397,
+    "name": "Empirical Bayes shrinkage for many Bernoullis",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3398,
+    "name": "Implied correlation from index options",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Covariance/correlation structure"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Covariance/correlation structure | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3399,
+    "name": "Time-tolerant trade¡quote match",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3400,
+    "name": "K-th smallest pair sum",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3401,
+    "name": "Coupon collector with nonuniform probabilities",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3402,
+    "name": "Optimal stopping to guess a biased coin",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3403,
+    "name": "Glosten¡Milgrom with noise imbalance",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Produce the required quantitative solution consistent with the problem setup"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Produce the required quantitative solution consistent with the problem setup"
+  },
+  {
+    "problem_id": 3404,
+    "name": "Sequential order-sign updating",
+    "schema": {
+      "core_mathematical_domain": "Probability and Statistics",
+      "problem_setup_entities": [
+        "Given inputs and model parameters"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested quantitative result"
+    },
+    "schema_text": "Domain: Probability and Statistics | Entities: Given inputs and model parameters | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested quantitative result"
+  },
+  {
+    "problem_id": 3405,
+    "name": "Price formation from imbalanced batch auctions",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Problem Solving",
+      "problem_setup_entities": [
+        "Underlying asset/derivative"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Determine the derivative price under the specified stochastic model"
+    },
+    "schema_text": "Domain: Quantitative Problem Solving | Entities: Underlying asset/derivative | Constraints: Respect all stated model assumptions and input bounds | Objective: Determine the derivative price under the specified stochastic model"
+  },
+  {
+    "problem_id": 3406,
+    "name": "Variance swap under stochastic volatility",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes and Derivative Pricing",
+      "problem_setup_entities": [
+        "Underlying asset/derivative",
+        "Variance/volatility parameter(s)"
+      ],
+      "invariant_constraints": [
+        "Respect all stated model assumptions and input bounds"
+      ],
+      "target_objective": "Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+    },
+    "schema_text": "Domain: Stochastic Processes and Derivative Pricing | Entities: Underlying asset/derivative, Variance/volatility parameter(s) | Constraints: Respect all stated model assumptions and input bounds | Objective: Compute the requested analytical quantity (e.g., distribution, Expected Value, variance, or probability)"
+  }
+]
