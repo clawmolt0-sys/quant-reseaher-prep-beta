@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 4107,
+    "name": "Stock Follows Simplified Intraday State Model",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4108,
+    "name": "Branching Process Modeling Defaults Credit Portfolio",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4109,
+    "name": "Garch Model Demeaned Daily Returns Equity",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4110,
+    "name": "Homoskedastic Gaussian Model Garch Model",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4111,
+    "name": "Candidate Even Moments Standard Normal Random",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters",
+        "Feasible decision/state set",
+        "Objective/performance functional"
+      ],
+      "invariant_constraints": [
+        "Definitions and structural assumptions are fixed by the prompt",
+        "All required feasibility/consistency conditions must hold"
+      ],
+      "target_objective": "Derive the requested quantity or optimal rule using the stated mathematical structure"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Problem-specific variables and parameters, Feasible decision/state set, Objective/performance functional | Constraints: Definitions and structural assumptions are fixed by the prompt, All required feasibility/consistency conditions must hold | Objective: Derive the requested quantity or optimal rule using the stated mathematical structure"
+  },
+  {
+    "problem_id": 4112,
+    "name": "Build Logistic Regression Model Predict Whether",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4113,
+    "name": "Monitor Intraday Trading Strategy Cumulative Maximum",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance and Microstructure",
+      "problem_setup_entities": [
+        "Price/return process",
+        "Order/fill or position state",
+        "Payoff/P&L functional"
+      ],
+      "invariant_constraints": [
+        "Execution/fill mechanism and market dynamics are fixed as stated",
+        "Risk/inventory or capital constraints must be enforced"
+      ],
+      "target_objective": "Optimize trading decision variables by maximizing Expected Value or risk-adjusted objective under the microstructure model"
+    },
+    "schema_text": "Domain: Quantitative Finance and Microstructure | Entities: Price/return process, Order/fill or position state, Payoff/P&L functional | Constraints: Execution/fill mechanism and market dynamics are fixed as stated, Risk/inventory or capital constraints must be enforced | Objective: Optimize trading decision variables by maximizing Expected Value or risk-adjusted objective under the microstructure model"
+  },
+  {
+    "problem_id": 4114,
+    "name": "Large Array of Integers A1, . . . , an Possib",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4115,
+    "name": "Two players alternately add an integer from {1, 2,",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4116,
+    "name": "I.i.d. Sample Daily Returns Test Heavy",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4117,
+    "name": "Roll Fair Six-sided Times. Number Times",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4118,
+    "name": "Proving it is Finite",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4119,
+    "name": "Probability That the Sum of Each Row",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4120,
+    "name": "Roll Fair 20-sided Values Independent Fair",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4121,
+    "name": "Markov chain occupancy.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4122,
+    "name": "Random tree symmetry.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4123,
+    "name": "Choose Points Independently Uniformly Random Unit",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4124,
+    "name": "Planar Brownian hitting.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4125,
+    "name": "Branching/extinction.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4126,
+    "name": "Revolver inference.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4127,
+    "name": "Unbiased from biased.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4128,
+    "name": "Arbitrary Bernoulli from a fair coin.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4129,
+    "name": "One uniform to two uniforms.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4130,
+    "name": "Streaming detection.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4131,
+    "name": "DS: O(1",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4132,
+    "name": "DS: keep first 20 only.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4133,
+    "name": "3SUM.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4134,
+    "name": "Search in sorted matrix.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4135,
+    "name": "Regression with derived predictor.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4136,
+    "name": "Bounds on joint R2.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4137,
+    "name": "Multicollinearity.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4138,
+    "name": "Random walk on a rectangle.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4139,
+    "name": "Bet sizing with odds.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4140,
+    "name": "Generate a uniform point in the unit disk.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4141,
+    "name": "& Logic: conditional expectation + adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4142,
+    "name": "& Financial Math: OLS with correlated signals",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4143,
+    "name": "Snippet 64-bit Platform Sizeof Void Sizeof",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4144,
+    "name": "Wealth Single-step Game Resolves Probability 0.53",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4145,
+    "name": "Midprice Performs Biased Random Walk Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4146,
+    "name": "Let Xt T0 Be A Martingale With X0 0 and Bounded Increments Xt 1 Xt 1",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4147,
+    "name": "Adverse selection posterior.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4148,
+    "name": "Mental-math EV under truncation.",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4149,
+    "name": "Independent Exponential Clocks Observe Clock Rings",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4150,
+    "name": "Queue position model.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4151,
+    "name": "Two-signal gating.",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters",
+        "Feasible decision/state set",
+        "Objective/performance functional"
+      ],
+      "invariant_constraints": [
+        "Definitions and structural assumptions are fixed by the prompt",
+        "All required feasibility/consistency conditions must hold"
+      ],
+      "target_objective": "Derive the requested quantity or optimal rule using the stated mathematical structure"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Problem-specific variables and parameters, Feasible decision/state set, Objective/performance functional | Constraints: Definitions and structural assumptions are fixed by the prompt, All required feasibility/consistency conditions must hold | Objective: Derive the requested quantity or optimal rule using the stated mathematical structure"
+  },
+  {
+    "problem_id": 4152,
+    "name": "OLS with near-collinearity.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4153,
+    "name": "Ridge in closed form.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4154,
+    "name": "Correlation matrix feasibility.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4155,
+    "name": "Overfitting via feature selection.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4156,
+    "name": "Time-series mean reversion test.",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4157,
+    "name": "DP: position-limited trading.",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4158,
+    "name": "Graph: best path with bounded reversals.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4159,
+    "name": "Greedy/heap: streaming top-k with deletions.",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4160,
+    "name": "C++: lifetime, moves, and exceptions.",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4161,
+    "name": "C++: virtual dispatch and object slicing.",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4162,
+    "name": "C++: shared_ptr cycles.",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4163,
+    "name": "/ market-making EV with inventory skew",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4164,
+    "name": "Stopping time / drift detection",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4165,
+    "name": "Conditional expectation / adverse selection from fills",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4166,
+    "name": "Mental-math probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4167,
+    "name": "Order statistics / fast EV",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4168,
+    "name": "Martingale / optional stopping",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4169,
+    "name": "Stats / two-signal OLS + VIF",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4170,
+    "name": "Stats / partial correlation",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4171,
+    "name": "Stats / shrinkage covariance",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4172,
+    "name": "Stats / ridge in a 2D orthonormal design",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4173,
+    "name": "DP / bounded inventory with costs",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4174,
+    "name": "Graph / 0\u00a11 BFS variant",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4175,
+    "name": "DS / streaming P&L with drawdown queries",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4176,
+    "name": "DP / segmentation with penalty",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4177,
+    "name": "C++ / object layout, padding, and EBO",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4178,
+    "name": "C++ / iterator invalidation",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4179,
+    "name": "C++ / move, noexcept, and vector growth",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4180,
+    "name": "C++ / strict aliasing and UB",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4181,
+    "name": "C++ / vtable pointer adjustment in diamond",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4182,
+    "name": "Cache locality / data layout",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4183,
+    "name": "/ stopping time with cancel rule",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4184,
+    "name": "/ martingale hedge puzzle",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4185,
+    "name": "/ mental-math order flow",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4186,
+    "name": "Combinatorics / fast conditional probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4187,
+    "name": "Conditional expectation / mixture with a hidden regime",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4188,
+    "name": "Stopping time / expected time to first profitable fill",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4189,
+    "name": "Stats / omitted variable bias in a toy alpha model",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4190,
+    "name": "Stats / correlation matrix sanity check",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4191,
+    "name": "Stats / selecting among many alphas",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters",
+        "Feasible decision/state set",
+        "Objective/performance functional"
+      ],
+      "invariant_constraints": [
+        "Definitions and structural assumptions are fixed by the prompt",
+        "All required feasibility/consistency conditions must hold"
+      ],
+      "target_objective": "Derive the requested quantity or optimal rule using the stated mathematical structure"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Problem-specific variables and parameters, Feasible decision/state set, Objective/performance functional | Constraints: Definitions and structural assumptions are fixed by the prompt, All required feasibility/consistency conditions must hold | Objective: Derive the requested quantity or optimal rule using the stated mathematical structure"
+  },
+  {
+    "problem_id": 4192,
+    "name": "Stats / time-series leakage",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4193,
+    "name": "Financial math / beta-neutral portfolio variance",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  },
+  {
+    "problem_id": 4194,
+    "name": "DP / execution with inventory penalty",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4195,
+    "name": "Graph / BFS with time dimension",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4196,
+    "name": "Algorithms / monotone stack with a trading twist",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4197,
+    "name": "DS / sliding window quantile",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input structure (array/graph/stream)",
+        "Auxiliary state/data structure",
+        "Output metric or witness solution"
+      ],
+      "invariant_constraints": [
+        "Correctness for all valid inputs is required",
+        "Time/space complexity constraints are part of the problem specification"
+      ],
+      "target_objective": "Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input structure (array/graph/stream), Auxiliary state/data structure, Output metric or witness solution | Constraints: Correctness for all valid inputs is required, Time/space complexity constraints are part of the problem specification | Objective: Design and analyze an algorithm/data structure that satisfies correctness and complexity requirements"
+  },
+  {
+    "problem_id": 4198,
+    "name": "DP / two-position trading with cooldown",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Sequential Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Action/control set",
+        "Stage reward/cost and transition rule"
+      ],
+      "invariant_constraints": [
+        "State-transition feasibility and horizon constraints must hold",
+        "Bellman recursion objective is fixed by the prompt"
+      ],
+      "target_objective": "Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Sequential Optimization | Entities: State variables, Action/control set, Stage reward/cost and transition rule | Constraints: State-transition feasibility and horizon constraints must hold, Bellman recursion objective is fixed by the prompt | Objective: Construct the optimal policy/value function maximizing Expected Value (or minimizing cost) under constraints"
+  },
+  {
+    "problem_id": 4199,
+    "name": "C++ / move semantics + exception safety",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4200,
+    "name": "C++ / undefined behavior and safe bit tricks",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4201,
+    "name": "C++ / lifetime and dangling references",
+    "schema": {
+      "core_mathematical_domain": "Systems Programming and Memory Semantics",
+      "problem_setup_entities": [
+        "Program objects and lifetimes",
+        "Ownership/resource handles",
+        "Container/storage layout"
+      ],
+      "invariant_constraints": [
+        "Language and memory-model rules must be respected",
+        "Undefined behavior is disallowed; exception-safety requirements are explicit"
+      ],
+      "target_objective": "Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+    },
+    "schema_text": "Domain: Systems Programming and Memory Semantics | Entities: Program objects and lifetimes, Ownership/resource handles, Container/storage layout | Constraints: Language and memory-model rules must be respected, Undefined behavior is disallowed; exception-safety requirements are explicit | Objective: Reason about correctness, safety, and performance of the implementation under C++ object and memory semantics"
+  },
+  {
+    "problem_id": 4202,
+    "name": "Micro-interval, Next Move 0.505. Post",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters",
+        "Feasible decision/state set",
+        "Objective/performance functional"
+      ],
+      "invariant_constraints": [
+        "Definitions and structural assumptions are fixed by the prompt",
+        "All required feasibility/consistency conditions must hold"
+      ],
+      "target_objective": "Derive the requested quantity or optimal rule using the stated mathematical structure"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Problem-specific variables and parameters, Feasible decision/state set, Objective/performance functional | Constraints: Definitions and structural assumptions are fixed by the prompt, All required feasibility/consistency conditions must hold | Objective: Derive the requested quantity or optimal rule using the stated mathematical structure"
+  },
+  {
+    "problem_id": 4203,
+    "name": "St be a Biased Random Walk With S0 0 and Increments T -1, 1 I",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4204,
+    "name": "Stream Returns Arrives I.i.d. Cumulative",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Problem-specific variables and parameters",
+        "Feasible decision/state set",
+        "Objective/performance functional"
+      ],
+      "invariant_constraints": [
+        "Definitions and structural assumptions are fixed by the prompt",
+        "All required feasibility/consistency conditions must hold"
+      ],
+      "target_objective": "Derive the requested quantity or optimal rule using the stated mathematical structure"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Problem-specific variables and parameters, Feasible decision/state set, Objective/performance functional | Constraints: Definitions and structural assumptions are fixed by the prompt, All required feasibility/consistency conditions must hold | Objective: Derive the requested quantity or optimal rule using the stated mathematical structure"
+  },
+  {
+    "problem_id": 4205,
+    "name": "Mental-math EV.",
+    "schema": {
+      "core_mathematical_domain": "Probability and Stochastic Processes",
+      "problem_setup_entities": [
+        "Random variables or stochastic process states",
+        "Transition/arrival mechanisms",
+        "Stopping event or payoff functional"
+      ],
+      "invariant_constraints": [
+        "Process law and independence/conditioning structure are fixed",
+        "Filtration/adaptedness and boundary conditions apply as stated"
+      ],
+      "target_objective": "Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+    },
+    "schema_text": "Domain: Probability and Stochastic Processes | Entities: Random variables or stochastic process states, Transition/arrival mechanisms, Stopping event or payoff functional | Constraints: Process law and independence/conditioning structure are fixed, Filtration/adaptedness and boundary conditions apply as stated | Objective: Compute probabilities, Expected Value, or stopping-time-related quantities implied by the process dynamics"
+  },
+  {
+    "problem_id": 4206,
+    "name": "Model Step Returns Mean Zero Covariance",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/process data",
+        "Model parameters and moments",
+        "Estimator or scoring function"
+      ],
+      "invariant_constraints": [
+        "Sampling/model assumptions are fixed by the prompt",
+        "Estimators/objectives follow their canonical definitions"
+      ],
+      "target_objective": "Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+    },
+    "schema_text": "Domain: Statistics and Econometrics | Entities: Observed sample/process data, Model parameters and moments, Estimator or scoring function | Constraints: Sampling/model assumptions are fixed by the prompt, Estimators/objectives follow their canonical definitions | Objective: Derive, estimate, or evaluate statistical quantities and model behavior under the stated assumptions"
+  }
+]

@@ -1,0 +1,1725 @@
+[
+  {
+    "problem_id": 4407,
+    "name": "Simple Random Walk St T0 on the Integers 0, 1",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4408,
+    "name": "Jointly Normal Corr",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4409,
+    "name": "Game In-between Played Standard 52-card Deck",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4410,
+    "name": "Observe Data Model Full",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4411,
+    "name": "Dataset Regression Intercept. Create Dataset",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4412,
+    "name": "The Relationships Y 1x and X 2y Both Hold",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4413,
+    "name": "Means Symmetric Matrix Positive Semidefinite. Corre",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors",
+        "Linear transformations",
+        "Spectral or geometric properties"
+      ],
+      "invariant_constraints": [
+        "Algebraic identities and dimensional constraints are fixed"
+      ],
+      "target_objective": "Derive matrix properties, decompositions, or closed-form linear solutions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors, Linear transformations, Spectral or geometric properties | Constraints: Algebraic identities and dimensional constraints are fixed | Objective: Derive matrix properties, decompositions, or closed-form linear solutions"
+  },
+  {
+    "problem_id": 4414,
+    "name": "Maximum Likelihood Estimate P",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "Sample observations",
+        "Population parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and model family are fixed"
+      ],
+      "target_objective": "Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: Sample observations, Population parameters, Estimator or test statistic | Constraints: Sampling assumptions and model family are fixed | Objective: Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+  },
+  {
+    "problem_id": 4415,
+    "name": "Sorted P-values P 1 P M , Write the BH Reject",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4416,
+    "name": "Ridge Regression Lasso Linear Model Design",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4417,
+    "name": "Arma Process State Conditions Weak Stationarity",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4418,
+    "name": "Fixed Rate Bond Face Value Annual",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Decision variables",
+        "Objective function",
+        "Feasible set constraints"
+      ],
+      "invariant_constraints": [
+        "Constraint set and regularity conditions are fixed"
+      ],
+      "target_objective": "Find optimizer and characterize optimal value/sensitivity"
+    },
+    "schema_text": "Domain: Optimization | Entities: Decision variables, Objective function, Feasible set constraints | Constraints: Constraint set and regularity conditions are fixed | Objective: Find optimizer and characterize optimal value/sensitivity"
+  },
+  {
+    "problem_id": 4419,
+    "name": "Observe Daily Changes Zero Rates Maturities,",
+    "schema": {
+      "core_mathematical_domain": "Machine Learning",
+      "problem_setup_entities": [
+        "Training data",
+        "Model class",
+        "Loss/objective function"
+      ],
+      "invariant_constraints": [
+        "Optimization objective and evaluation protocol are fixed"
+      ],
+      "target_objective": "Fit predictive model and evaluate generalization/performance trade-offs"
+    },
+    "schema_text": "Domain: Machine Learning | Entities: Training data, Model class, Loss/objective function | Constraints: Optimization objective and evaluation protocol are fixed | Objective: Fit predictive model and evaluate generalization/performance trade-offs"
+  },
+  {
+    "problem_id": 4420,
+    "name": "Certain Comet Observed According Poisson Process",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4421,
+    "name": "Roll Independent Fair Sided Dice, Taking",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4422,
+    "name": "Exact Probability of Winning Accounting",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4423,
+    "name": "Prime Divisible",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4424,
+    "name": "Let n 1 be an integer",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Asset returns/prices",
+        "Risk factors or cash flows",
+        "Portfolio or valuation rule"
+      ],
+      "invariant_constraints": [
+        "Market conventions and model assumptions are fixed"
+      ],
+      "target_objective": "Compute valuation, risk, or optimal allocation metric"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Asset returns/prices, Risk factors or cash flows, Portfolio or valuation rule | Constraints: Market conventions and model assumptions are fixed | Objective: Compute valuation, risk, or optimal allocation metric"
+  },
+  {
+    "problem_id": 4425,
+    "name": "Random sampling",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4426,
+    "name": "Independent, Lognormal Deri",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4427,
+    "name": "Monte Carlo",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4428,
+    "name": "Numerical methods",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4429,
+    "name": "Model evaluation",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4430,
+    "name": "Loss functions",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4431,
+    "name": "Data/coding",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4432,
+    "name": "Pairs trading",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4433,
+    "name": "Microstructure",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure",
+      "problem_setup_entities": [
+        "Order flow events",
+        "Limit order book or execution venue",
+        "Execution cost/liquidity metric"
+      ],
+      "invariant_constraints": [
+        "Market protocol and data-generating assumptions are fixed"
+      ],
+      "target_objective": "Quantify execution quality, price impact, or optimal trading response"
+    },
+    "schema_text": "Domain: Market Microstructure | Entities: Order flow events, Limit order book or execution venue, Execution cost/liquidity metric | Constraints: Market protocol and data-generating assumptions are fixed | Objective: Quantify execution quality, price impact, or optimal trading response"
+  },
+  {
+    "problem_id": 4434,
+    "name": "Let X and Y Be Independent N 0, 1 Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4435,
+    "name": "Linear Regression Model Intercept, List Standard",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4436,
+    "name": "Consider the Simple Regression Yi Xi Ui for I 1,",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4437,
+    "name": "I.i.d. Known Testing Versus",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "Sample observations",
+        "Population parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and model family are fixed"
+      ],
+      "target_objective": "Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: Sample observations, Population parameters, Estimator or test statistic | Constraints: Sampling assumptions and model family are fixed | Objective: Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+  },
+  {
+    "problem_id": 4438,
+    "name": "Binary Outcome Features Logistic Regression, Log-",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4439,
+    "name": "Causal inference",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4440,
+    "name": "Portfolio theory",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra",
+      "problem_setup_entities": [
+        "Matrices/vectors",
+        "Linear transformations",
+        "Spectral or geometric properties"
+      ],
+      "invariant_constraints": [
+        "Algebraic identities and dimensional constraints are fixed"
+      ],
+      "target_objective": "Derive matrix properties, decompositions, or closed-form linear solutions"
+    },
+    "schema_text": "Domain: Linear Algebra | Entities: Matrices/vectors, Linear transformations, Spectral or geometric properties | Constraints: Algebraic identities and dimensional constraints are fixed | Objective: Derive matrix properties, decompositions, or closed-form linear solutions"
+  },
+  {
+    "problem_id": 4441,
+    "name": "Futures mechanics",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4442,
+    "name": "Options",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4443,
+    "name": "Robust modeling",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4444,
+    "name": "Missing data",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4445,
+    "name": "/ shuffling",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4446,
+    "name": "Stats",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4447,
+    "name": "Algorithms / data structures",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4448,
+    "name": "Options / numerical methods",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4449,
+    "name": "Derivatives / stochastic calculus",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4450,
+    "name": "Rates",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Asset returns/prices",
+        "Risk factors or cash flows",
+        "Portfolio or valuation rule"
+      ],
+      "invariant_constraints": [
+        "Market conventions and model assumptions are fixed"
+      ],
+      "target_objective": "Compute valuation, risk, or optimal allocation metric"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Asset returns/prices, Risk factors or cash flows, Portfolio or valuation rule | Constraints: Market conventions and model assumptions are fixed | Objective: Compute valuation, risk, or optimal allocation metric"
+  },
+  {
+    "problem_id": 4451,
+    "name": "Greeks / hedging",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4452,
+    "name": "Regression diagnostics",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4453,
+    "name": "Model selection",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4454,
+    "name": "Financial Math & Stochastic Calculus",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4455,
+    "name": "& Machine Learning",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4456,
+    "name": "Algorithms / Numerical Methods -- Monte Carlo",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4457,
+    "name": "Financial Math & No-Arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4458,
+    "name": "Stochastic Calculus",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4459,
+    "name": "Greeks & Financial Intuition",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4460,
+    "name": "Delta/Gamma/Vega Hedging",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4461,
+    "name": "Barrier Options / Reflection Principle",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4462,
+    "name": "Fixed Income / Risk Management",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4463,
+    "name": "Counterparty Credit / CVA",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4464,
+    "name": "Model Risk / Smile Intuition",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4465,
+    "name": "Time Series: GARCH Volatility Forecast",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Time-indexed observations",
+        "Dependence structure",
+        "Forecasting or filtering target"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility assumptions are as stated"
+      ],
+      "target_objective": "Estimate dynamics, forecast future values, or assess serial dependence"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Time-indexed observations, Dependence structure, Forecasting or filtering target | Constraints: Stationarity/invertibility assumptions are as stated | Objective: Estimate dynamics, forecast future values, or assess serial dependence"
+  },
+  {
+    "problem_id": 4466,
+    "name": "Regression Diagnostics / Newey¡West",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4467,
+    "name": "ML for Finance: Regularization under Time Dependence",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4468,
+    "name": "PCA / Yield Curve Factors",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4469,
+    "name": "Under Q, ST Is Lognormal With Log ST N M, V",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4470,
+    "name": "Hypothesis Testing: Sharpe with Dependence",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference",
+      "problem_setup_entities": [
+        "Sample observations",
+        "Population parameters",
+        "Estimator or test statistic"
+      ],
+      "invariant_constraints": [
+        "Sampling assumptions and model family are fixed"
+      ],
+      "target_objective": "Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+    },
+    "schema_text": "Domain: Statistical Inference | Entities: Sample observations, Population parameters, Estimator or test statistic | Constraints: Sampling assumptions and model family are fixed | Objective: Construct estimators/tests and quantify uncertainty via confidence intervals or p-values"
+  },
+  {
+    "problem_id": 4471,
+    "name": "Cointegration / VECM",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure",
+      "problem_setup_entities": [
+        "Order flow events",
+        "Limit order book or execution venue",
+        "Execution cost/liquidity metric"
+      ],
+      "invariant_constraints": [
+        "Market protocol and data-generating assumptions are fixed"
+      ],
+      "target_objective": "Quantify execution quality, price impact, or optimal trading response"
+    },
+    "schema_text": "Domain: Market Microstructure | Entities: Order flow events, Limit order book or execution venue, Execution cost/liquidity metric | Constraints: Market protocol and data-generating assumptions are fixed | Objective: Quantify execution quality, price impact, or optimal trading response"
+  },
+  {
+    "problem_id": 4472,
+    "name": "Numerical Methods: Finite Difference for Black¡Scholes",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4473,
+    "name": "Monte Carlo: Control Variate for Asian Option",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4474,
+    "name": "/ Numerical: Binomial Tree Pricer",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4475,
+    "name": "/ Data: Streaming Risk Metrics",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4476,
+    "name": "Interest Rates / No-Arbitrage",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4477,
+    "name": "Stochastic Calculus / Measure Change",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4478,
+    "name": "SDE Solution / OU Process",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4479,
+    "name": "Option Pricing / PDE vs Expectation",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4480,
+    "name": "Greeks / Discrete Hedging Error",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4481,
+    "name": "Credit / CDS Par Spread",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure",
+      "problem_setup_entities": [
+        "Order flow events",
+        "Limit order book or execution venue",
+        "Execution cost/liquidity metric"
+      ],
+      "invariant_constraints": [
+        "Market protocol and data-generating assumptions are fixed"
+      ],
+      "target_objective": "Quantify execution quality, price impact, or optimal trading response"
+    },
+    "schema_text": "Domain: Market Microstructure | Entities: Order flow events, Limit order book or execution venue, Execution cost/liquidity metric | Constraints: Market protocol and data-generating assumptions are fixed | Objective: Quantify execution quality, price impact, or optimal trading response"
+  },
+  {
+    "problem_id": 4482,
+    "name": "VaR / Expected Shortfall Backtesting",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Time-indexed observations",
+        "Dependence structure",
+        "Forecasting or filtering target"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility assumptions are as stated"
+      ],
+      "target_objective": "Estimate dynamics, forecast future values, or assess serial dependence"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Time-indexed observations, Dependence structure, Forecasting or filtering target | Constraints: Stationarity/invertibility assumptions are as stated | Objective: Estimate dynamics, forecast future values, or assess serial dependence"
+  },
+  {
+    "problem_id": 4483,
+    "name": "Regression / Multicollinearity & Interpretation",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4484,
+    "name": "Time Series / Unit Roots & Differencing",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4485,
+    "name": "ML / Classification Calibration",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Regression)",
+      "problem_setup_entities": [
+        "Feature matrix",
+        "Target variable",
+        "Model coefficients"
+      ],
+      "invariant_constraints": [
+        "Model specification and loss function are fixed by the prompt"
+      ],
+      "target_objective": "Estimate parameters, evaluate fit, or derive predictive implications"
+    },
+    "schema_text": "Domain: Statistics (Regression) | Entities: Feature matrix, Target variable, Model coefficients | Constraints: Model specification and loss function are fixed by the prompt | Objective: Estimate parameters, evaluate fit, or derive predictive implications"
+  },
+  {
+    "problem_id": 4486,
+    "name": "Numerical / Root Finding for Implied Vol",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4487,
+    "name": "Numerical / Monte Carlo Convergence",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4488,
+    "name": "Algorithms / DP: Optimal Execution Toy Model",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4489,
+    "name": "Algorithms / Data: Online Covariance for PCA",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4490,
+    "name": "Derivatives / Local Vol vs Stoch Vol",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4491,
+    "name": "Risk: Stress Testing with Scenario Shocks",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure",
+      "problem_setup_entities": [
+        "Order flow events",
+        "Limit order book or execution venue",
+        "Execution cost/liquidity metric"
+      ],
+      "invariant_constraints": [
+        "Market protocol and data-generating assumptions are fixed"
+      ],
+      "target_objective": "Quantify execution quality, price impact, or optimal trading response"
+    },
+    "schema_text": "Domain: Market Microstructure | Entities: Order flow events, Limit order book or execution venue, Execution cost/liquidity metric | Constraints: Market protocol and data-generating assumptions are fixed | Objective: Quantify execution quality, price impact, or optimal trading response"
+  },
+  {
+    "problem_id": 4492,
+    "name": "/ NumPy: Vectorized Path Simulation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4493,
+    "name": "/ C++: Robust Parsing & Aggregation",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4494,
+    "name": "Algorithms / Graphs: Correlation Network",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4495,
+    "name": "Equity Derivatives / Black¡Scholes Foundations",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4496,
+    "name": "No-Arbitrage / Static Bounds",
+    "schema": {
+      "core_mathematical_domain": "Optimization",
+      "problem_setup_entities": [
+        "Decision variables",
+        "Objective function",
+        "Feasible set constraints"
+      ],
+      "invariant_constraints": [
+        "Constraint set and regularity conditions are fixed"
+      ],
+      "target_objective": "Find optimizer and characterize optimal value/sensitivity"
+    },
+    "schema_text": "Domain: Optimization | Entities: Decision variables, Objective function, Feasible set constraints | Constraints: Constraint set and regularity conditions are fixed | Objective: Find optimizer and characterize optimal value/sensitivity"
+  },
+  {
+    "problem_id": 4497,
+    "name": "Risk-Neutral Density / Breeden¡Litzenberger",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4498,
+    "name": "Stochastic Calculus / Hitting Times",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4499,
+    "name": "Equity Exotics / Barrier Pricing Setup",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4500,
+    "name": "Rates / Vasicek Bond Pricing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Random variables",
+        "Joint or marginal distribution",
+        "Functionals of random variables"
+      ],
+      "invariant_constraints": [
+        "Distributional assumptions in the prompt are fixed"
+      ],
+      "target_objective": "Compute distributional quantities, moments, or Expected Value"
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Random variables, Joint or marginal distribution, Functionals of random variables | Constraints: Distributional assumptions in the prompt are fixed | Objective: Compute distributional quantities, moments, or Expected Value"
+  },
+  {
+    "problem_id": 4501,
+    "name": "Rates / Forward Measures",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process",
+        "Transition dynamics",
+        "Stopping time or path functional"
+      ],
+      "invariant_constraints": [
+        "Adapted dynamics and boundary/initial conditions are fixed"
+      ],
+      "target_objective": "Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, Transition dynamics, Stopping time or path functional | Constraints: Adapted dynamics and boundary/initial conditions are fixed | Objective: Compute hitting probabilities, long-run behavior, or Expected Value of path-dependent quantities"
+  },
+  {
+    "problem_id": 4502,
+    "name": "Credit / Merton Structural Model",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance (Derivatives)",
+      "problem_setup_entities": [
+        "Underlying asset process",
+        "Derivative payoff definition",
+        "Pricing or hedging parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage and market assumptions are as stated"
+      ],
+      "target_objective": "Compute price, hedge sensitivity, or risk metric for the derivative structure"
+    },
+    "schema_text": "Domain: Quantitative Finance (Derivatives) | Entities: Underlying asset process, Derivative payoff definition, Pricing or hedging parameters | Constraints: No-arbitrage and market assumptions are as stated | Objective: Compute price, hedge sensitivity, or risk metric for the derivative structure"
+  },
+  {
+    "problem_id": 4503,
+    "name": "XVA / CVA with Exposure Profile",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Time and space complexity requirements apply as stated",
+        "Input validity conditions follow the prompt"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Time and space complexity requirements apply as stated, Input validity conditions follow the prompt | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4504,
+    "name": "Risk / Delta-Normal VaR with Correlation",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability and Combinatorics",
+      "problem_setup_entities": [
+        "Discrete state space",
+        "Random mechanism or move rule",
+        "Outcome metric"
+      ],
+      "invariant_constraints": [
+        "Puzzle rules and admissible actions are fixed"
+      ],
+      "target_objective": "Compute winning probability, Expected Value, or counting quantity"
+    },
+    "schema_text": "Domain: Discrete Probability and Combinatorics | Entities: Discrete state space, Random mechanism or move rule, Outcome metric | Constraints: Puzzle rules and admissible actions are fixed | Objective: Compute winning probability, Expected Value, or counting quantity"
+  },
+  {
+    "problem_id": 4505,
+    "name": "Time Series / State Space & Kalman Filter",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Time-indexed observations",
+        "Dependence structure",
+        "Forecasting or filtering target"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility assumptions are as stated"
+      ],
+      "target_objective": "Estimate dynamics, forecast future values, or assess serial dependence"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Time-indexed observations, Dependence structure, Forecasting or filtering target | Constraints: Stationarity/invertibility assumptions are as stated | Objective: Estimate dynamics, forecast future values, or assess serial dependence"
+  },
+  {
+    "problem_id": 4506,
+    "name": "Time Series / ARMA Identification",
+    "schema": {
+      "core_mathematical_domain": "Time Series Analysis",
+      "problem_setup_entities": [
+        "Time-indexed observations",
+        "Dependence structure",
+        "Forecasting or filtering target"
+      ],
+      "invariant_constraints": [
+        "Stationarity/invertibility assumptions are as stated"
+      ],
+      "target_objective": "Estimate dynamics, forecast future values, or assess serial dependence"
+    },
+    "schema_text": "Domain: Time Series Analysis | Entities: Time-indexed observations, Dependence structure, Forecasting or filtering target | Constraints: Stationarity/invertibility assumptions are as stated | Objective: Estimate dynamics, forecast future values, or assess serial dependence"
+  }
+]

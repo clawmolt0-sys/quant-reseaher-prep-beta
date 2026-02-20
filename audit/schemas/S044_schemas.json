@@ -1,0 +1,1642 @@
+[
+  {
+    "problem_id": 4307,
+    "name": "Bayesian Kelly sizing",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Statistics",
+      "problem_setup_entities": [
+        "coin tosses",
+        "prior and posterior parameters"
+      ],
+      "invariant_constraints": [
+        "Inference updates beliefs using prior-to-posterior conditioning."
+      ],
+      "target_objective": "Compute posterior quantities and/or an optimal Bayesian decision rule."
+    },
+    "schema_text": "Domain: Bayesian Statistics | Entities: coin tosses, prior and posterior parameters | Constraints: Inference updates beliefs using prior-to-posterior conditioning. | Objective: Compute posterior quantities and/or an optimal Bayesian decision rule."
+  },
+  {
+    "problem_id": 4308,
+    "name": "Markov chain: inventory-aware quoting toy model",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "markov states"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: markov states | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4309,
+    "name": "Secretary problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: candidate sequence | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4310,
+    "name": "IC, breadth, and expected Sharpe",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, cross-sectional signals/scores, portfolio weights/returns, correlation structure | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4311,
+    "name": "Out-of-sample qualification under selection",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams, candidate sequence | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4312,
+    "name": "Correlation filter as a selection rule",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "cross-sectional signals/scores",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams, cross-sectional signals/scores, correlation structure | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4313,
+    "name": "Signal neutralization via projection",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: cross-sectional signals/scores, portfolio weights/returns, coins/balls and balance outcomes | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4314,
+    "name": "Cross-sectional regression alpha and IC",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "information coefficient series",
+        "regression parameters"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams, information coefficient series, regression parameters | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4315,
+    "name": "Robust IC under heavy tails",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "information coefficient series"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: coin tosses, information coefficient series | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4316,
+    "name": "Autocorrelation and effective sample size",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "information coefficient series"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: information coefficient series | Constraints: Observations are time-ordered and may be serially dependent.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4317,
+    "name": "Purged walk-forward for next-day labels",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "portfolio weights/returns",
+        "feature matrix",
+        "decile portfolios",
+        "time-ordered train/test splits"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality).",
+        "Validation must prevent leakage via purging/embargo between train and test windows."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, portfolio weights/returns, feature matrix, decile portfolios, time-ordered train/test splits | Constraints: Random variables follow the stated distributional assumptions.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality).; Validation must prevent leakage via purging/embargo between train and test windows. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4318,
+    "name": "Delay, holding period, and overlap variance",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: cross-sectional signals/scores, portfolio weights/returns, coins/balls and balance outcomes | Constraints: Observations are time-ordered and may be serially dependent.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4319,
+    "name": "Cost-aware optimal holding choice",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: random variables | Constraints: Random variables follow the stated distributional assumptions.; Net performance accounts for trading frictions and turnover. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4320,
+    "name": "Ridge regression and feature scaling",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "feature matrix",
+        "regression parameters"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: feature matrix, regression parameters | Constraints: Model/weights satisfy linear constraints and regularization or risk controls. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4321,
+    "name": "Newey¡West for alpha mean",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: alpha return streams | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4322,
+    "name": "Daily Spearman IC With Ties and NaN",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "missing observations"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Ranking operations must handle ties explicitly.",
+        "Missing observations are handled explicitly without look-ahead bias."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, missing observations | Constraints: Random variables follow the stated distributional assumptions.; Ranking operations must handle ties explicitly.; Missing observations are handled explicitly without look-ahead bias. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4323,
+    "name": "Online EWMA Mean/variance",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4324,
+    "name": "Algorithms: top-k alphas under correlation constraints",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "correlation structure",
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: cross-sectional signals/scores, correlation structure, candidate sequence | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4325,
+    "name": "False Discovery in Alpha Mining",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: alpha return streams | Constraints: Selection and testing are performed under explicit null/alternative assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4326,
+    "name": "Logic: three switches, one bulb",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "regression parameters",
+        "switches and bulb state"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: regression parameters, switches and bulb state | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4327,
+    "name": "Logic: poisoned bottles with binary testing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "die rolls",
+        "bottles and binary tests"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: die rolls, bottles and binary tests | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4328,
+    "name": "+ strategy: adaptive coin identification",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Statistics",
+      "problem_setup_entities": [
+        "coin tosses",
+        "prior and posterior parameters"
+      ],
+      "invariant_constraints": [
+        "Inference updates beliefs using prior-to-posterior conditioning.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute posterior quantities and/or an optimal Bayesian decision rule."
+    },
+    "schema_text": "Domain: Bayesian Statistics | Entities: coin tosses, prior and posterior parameters | Constraints: Inference updates beliefs using prior-to-posterior conditioning.; Net performance accounts for trading frictions and turnover. | Objective: Compute posterior quantities and/or an optimal Bayesian decision rule."
+  },
+  {
+    "problem_id": 4329,
+    "name": "IC with market-neutral constraint",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, portfolio weights/returns, coins/balls and balance outcomes | Constraints: Random variables follow the stated distributional assumptions.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4330,
+    "name": "Selection bias from alpha mining",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: alpha return streams, candidate sequence | Constraints: Selection and testing are performed under explicit null/alternative assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4331,
+    "name": "Overfitting via feature search",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "information coefficient series",
+        "feature matrix",
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: alpha return streams, information coefficient series, feature matrix, candidate sequence | Constraints: Selection and testing are performed under explicit null/alternative assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4332,
+    "name": "Ridge vs. Lasso in cross-sectional prediction",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "portfolio weights/returns",
+        "feature matrix",
+        "regression parameters",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Validation must prevent leakage via purging/embargo between train and test windows."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: information coefficient series, portfolio weights/returns, feature matrix, regression parameters, correlation structure | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Validation must prevent leakage via purging/embargo between train and test windows. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4333,
+    "name": "Neutralization with industry dummies",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: cross-sectional signals/scores | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4334,
+    "name": "Risk model shrinkage",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "covariance/risk matrix"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: covariance/risk matrix | Constraints: Model/weights satisfy linear constraints and regularization or risk controls. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4335,
+    "name": "Regime change detection on IC",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4336,
+    "name": "Optimal winsorization threshold",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "correlation structure",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: cross-sectional signals/scores, portfolio weights/returns, correlation structure, coins/balls and balance outcomes | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4337,
+    "name": "Turnover-control via exponential smoothing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: cross-sectional signals/scores, portfolio weights/returns, coins/balls and balance outcomes | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified.; Net performance accounts for trading frictions and turnover. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4338,
+    "name": "Classic puzzle: 8 coins, one heavier",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: coin tosses, coins/balls and balance outcomes | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4339,
+    "name": "Classic puzzle: two eggs",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "eggs and floors"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: eggs and floors | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4340,
+    "name": "Puzzle: Conditional Stopping",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "die rolls"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: die rolls | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions.; Net performance accounts for trading frictions and turnover. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4341,
+    "name": "Factor-neutral Weights in O(N P2",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4342,
+    "name": "Rolling OLS Slope and T-stat",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "regression parameters"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: regression parameters | Constraints: Selection and testing are performed under explicit null/alternative assumptions. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4343,
+    "name": "Daily Cross-sectional Rank Transform With Ties and NaN",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "missing observations"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Ranking operations must handle ties explicitly.",
+        "Missing observations are handled explicitly without look-ahead bias."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: missing observations | Constraints: Random variables follow the stated distributional assumptions.; Ranking operations must handle ties explicitly.; Missing observations are handled explicitly without look-ahead bias. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4344,
+    "name": "Algorithms: purged walk-forward backtest",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "feature matrix",
+        "time-ordered train/test splits"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data.",
+        "Validation must prevent leakage via purging/embargo between train and test windows."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: feature matrix, time-ordered train/test splits | Constraints: Method must be computationally efficient on streaming or large-scale data.; Validation must prevent leakage via purging/embargo between train and test windows. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4345,
+    "name": "Algorithms: fastest computation of mean IC",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "missing observations"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data.",
+        "Missing observations are handled explicitly without look-ahead bias."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: information coefficient series, missing observations | Constraints: Method must be computationally efficient on streaming or large-scale data.; Missing observations are handled explicitly without look-ahead bias. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4346,
+    "name": "Portfolio-level hypothesis test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "portfolio weights/returns",
+        "block-resampled return paths"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: coin tosses, portfolio weights/returns, block-resampled return paths | Constraints: Selection and testing are performed under explicit null/alternative assumptions. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4347,
+    "name": "IC under heteroskedastic noise",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, portfolio weights/returns, coins/balls and balance outcomes | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4348,
+    "name": "Expected Returns Unknown Diagonal Risk Model",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "covariance/risk matrix"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: covariance/risk matrix | Constraints: Random variables follow the stated distributional assumptions.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4349,
+    "name": "Bias from reusing data in hyperparameter search",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: candidate sequence | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4350,
+    "name": "Alpha Streams Sample Mean",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4351,
+    "name": "Overlap-aware standard error for mean return",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: random variables | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4352,
+    "name": "Cross-sectional decile spread and IC link",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "cross-sectional signals/scores",
+        "correlation structure",
+        "decile portfolios"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, cross-sectional signals/scores, correlation structure, decile portfolios | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4353,
+    "name": "Time-series: detecting mean-reversion vs momentum",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: random variables | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4354,
+    "name": "Cross-sectional Residualization at Scale",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: random variables | Constraints: Model/weights satisfy linear constraints and regularization or risk controls. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4355,
+    "name": "Fast Turnover and Cost Accounting",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Method must be computationally efficient on streaming or large-scale data.; Net performance accounts for trading frictions and turnover. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4356,
+    "name": "Algorithms: top-k by score with stability constraint",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: cross-sectional signals/scores | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4357,
+    "name": "Best-of-two Alpha Deployment",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4358,
+    "name": "Bayesian shrinkage for in r = s +",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Statistics",
+      "problem_setup_entities": [
+        "regression parameters",
+        "prior and posterior parameters"
+      ],
+      "invariant_constraints": [
+        "Inference updates beliefs using prior-to-posterior conditioning.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute posterior quantities and/or an optimal Bayesian decision rule."
+    },
+    "schema_text": "Domain: Bayesian Statistics | Entities: regression parameters, prior and posterior parameters | Constraints: Inference updates beliefs using prior-to-posterior conditioning.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute posterior quantities and/or an optimal Bayesian decision rule."
+  },
+  {
+    "problem_id": 4359,
+    "name": "Logic: two guards, two doors",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "guards and doors"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: guards and doors | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4360,
+    "name": "Logic: counterfeit coin with one weighing",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: coin tosses, coins/balls and balance outcomes | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4361,
+    "name": "Puzzle: Airplane Seating With a Twist",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "passengers and assigned seats"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: passengers and assigned seats | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4362,
+    "name": "Quickest to K Successes",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "coin tosses"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: coin tosses | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4363,
+    "name": "Permutation-based IC P-value",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "information coefficient series"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: information coefficient series | Constraints: Selection and testing are performed under explicit null/alternative assumptions. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4364,
+    "name": "Time-series: volatility clustering and Sharpe inflation",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: random variables | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4365,
+    "name": "Optimization: maximizing net Sharpe with 1 and neutrality",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: random variables | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4366,
+    "name": "IC under cross-sectional correlation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, correlation structure | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4367,
+    "name": "Decile spread with non-Gaussian scores",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "decile portfolios"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: cross-sectional signals/scores, decile portfolios | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4368,
+    "name": "Rank IC vs. Pearson IC under monotone transforms",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "cross-sectional signals/scores",
+        "portfolio weights/returns"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series, cross-sectional signals/scores, portfolio weights/returns | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified.; Net performance accounts for trading frictions and turnover. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4369,
+    "name": "Purged cross-validation with overlapping labels",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "feature matrix",
+        "time-ordered train/test splits"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Validation must prevent leakage via purging/embargo between train and test windows."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: feature matrix, time-ordered train/test splits | Constraints: Observations are time-ordered and may be serially dependent.; Validation must prevent leakage via purging/embargo between train and test windows. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4370,
+    "name": "Newey¡West confidence interval for mean Sharpe numerator",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: random variables | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4371,
+    "name": "Multiple-testing with dependent alphas",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "regression parameters",
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: regression parameters, candidate sequence | Constraints: Selection and testing are performed under explicit null/alternative assumptions. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4372,
+    "name": "Turnover¡performance trade-off via smoothing",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: cross-sectional signals/scores | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified.; Net performance accounts for trading frictions and turnover. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4373,
+    "name": "Delay and slippage model",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Sampling assumptions include independence/i.i.d. structure where specified.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: alpha return streams | Constraints: Observations are time-ordered and may be serially dependent.; Sampling assumptions include independence/i.i.d. structure where specified.; Net performance accounts for trading frictions and turnover. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4374,
+    "name": "Optimization with costs as quadratic penalty",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Net performance accounts for trading frictions and turnover. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4375,
+    "name": "Block Bootstrap Sharpe CI",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "block-resampled return paths"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: block-resampled return paths | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4376,
+    "name": "Fast Cross-sectional Residualization for Many Days",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: random variables | Constraints: Model/weights satisfy linear constraints and regularization or risk controls. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4377,
+    "name": "Online Correlation Matrix With Sparsity",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: alpha return streams, correlation structure | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4378,
+    "name": "Algorithms: maintain top-k with \"diversity\" penalty",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "candidate sequence"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: candidate sequence | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4379,
+    "name": "Expected Time to Pattern With Non-fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "markov states"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: coin tosses, markov states | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4380,
+    "name": "Bayesian regime model for alpha",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Statistics",
+      "problem_setup_entities": [
+        "alpha return streams",
+        "markov states",
+        "prior and posterior parameters"
+      ],
+      "invariant_constraints": [
+        "Inference updates beliefs using prior-to-posterior conditioning."
+      ],
+      "target_objective": "Compute posterior quantities and/or an optimal Bayesian decision rule."
+    },
+    "schema_text": "Domain: Bayesian Statistics | Entities: alpha return streams, markov states, prior and posterior parameters | Constraints: Inference updates beliefs using prior-to-posterior conditioning. | Objective: Compute posterior quantities and/or an optimal Bayesian decision rule."
+  },
+  {
+    "problem_id": 4381,
+    "name": "Logic puzzle: one truthful, one random",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: random variables | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4382,
+    "name": "Weighing puzzle: 9 balls, 2 weighings, heavier or lighter known",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: coins/balls and balance outcomes | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4383,
+    "name": "Bridge puzzle with constraint",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "regression parameters",
+        "bridge crossing participants"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: regression parameters, bridge crossing participants | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4384,
+    "name": "Leak-free Standardization in Walk-forward",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "feature matrix",
+        "time-ordered train/test splits",
+        "missing observations"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Missing observations are handled explicitly without look-ahead bias.",
+        "Validation must prevent leakage via purging/embargo between train and test windows."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: feature matrix, time-ordered train/test splits, missing observations | Constraints: Observations are time-ordered and may be serially dependent.; Missing observations are handled explicitly without look-ahead bias.; Validation must prevent leakage via purging/embargo between train and test windows. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4385,
+    "name": "Fisher transform for IC",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "information coefficient series"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: information coefficient series | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4386,
+    "name": "Rank-based portfolio vs. mean¡variance",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "cross-sectional signals/scores",
+        "portfolio weights/returns",
+        "missing observations",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Ranking operations must handle ties explicitly.",
+        "Missing observations are handled explicitly without look-ahead bias.",
+        "Net performance accounts for trading frictions and turnover."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: cross-sectional signals/scores, portfolio weights/returns, missing observations, coins/balls and balance outcomes | Constraints: Random variables follow the stated distributional assumptions.; Ranking operations must handle ties explicitly.; Missing observations are handled explicitly without look-ahead bias.; Net performance accounts for trading frictions and turnover. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4387,
+    "name": "Bayesian pooling of daily IC",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Statistics",
+      "problem_setup_entities": [
+        "information coefficient series",
+        "prior and posterior parameters"
+      ],
+      "invariant_constraints": [
+        "Inference updates beliefs using prior-to-posterior conditioning.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute posterior quantities and/or an optimal Bayesian decision rule."
+    },
+    "schema_text": "Domain: Bayesian Statistics | Entities: information coefficient series, prior and posterior parameters | Constraints: Inference updates beliefs using prior-to-posterior conditioning.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute posterior quantities and/or an optimal Bayesian decision rule."
+  },
+  {
+    "problem_id": 4388,
+    "name": "Survivorship bias diagnostic",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "alpha return streams"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: alpha return streams | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4389,
+    "name": "Elastic net in cross-sectional prediction",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "feature matrix",
+        "regression parameters"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: feature matrix, regression parameters | Constraints: Model/weights satisfy linear constraints and regularization or risk controls. | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4390,
+    "name": "Neutralization under multiple exposures",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4391,
+    "name": "Time-series: estimating Hurst exponent and pitfalls",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "coin tosses"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: coin tosses | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4392,
+    "name": "Volatility targeting with forecast error",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: random variables | Constraints: Observations are time-ordered and may be serially dependent. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4393,
+    "name": "Adaptive lookback and selection bias",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (Hypothesis Testing / Multiple Testing)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Selection and testing are performed under explicit null/alternative assumptions."
+      ],
+      "target_objective": "Quantify significance or error rates while accounting for selection and dependence."
+    },
+    "schema_text": "Domain: Statistical Inference (Hypothesis Testing / Multiple Testing) | Entities: random variables | Constraints: Selection and testing are performed under explicit null/alternative assumptions. | Objective: Quantify significance or error rates while accounting for selection and dependence."
+  },
+  {
+    "problem_id": 4394,
+    "name": "Rolling Correlation With Missing Values",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics",
+      "problem_setup_entities": [
+        "correlation structure",
+        "missing observations"
+      ],
+      "invariant_constraints": [
+        "Observations are time-ordered and may be serially dependent.",
+        "Missing observations are handled explicitly without look-ahead bias."
+      ],
+      "target_objective": "Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+    },
+    "schema_text": "Domain: Time-Series Econometrics | Entities: correlation structure, missing observations | Constraints: Observations are time-ordered and may be serially dependent.; Missing observations are handled explicitly without look-ahead bias. | Objective: Estimate, test, or forecast a time-series performance parameter with dependence-robust methods."
+  },
+  {
+    "problem_id": 4395,
+    "name": "Decile Spread With Partial Missingness",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "decile portfolios"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Ranking operations must handle ties explicitly."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: decile portfolios | Constraints: Random variables follow the stated distributional assumptions.; Ranking operations must handle ties explicitly. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4396,
+    "name": "Algorithms: enforce minimum holding period",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4397,
+    "name": "Algorithms: best contiguous performance run and significance",
+    "schema": {
+      "core_mathematical_domain": "Algorithm Design and Data Processing",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Method must be computationally efficient on streaming or large-scale data."
+      ],
+      "target_objective": "Design an algorithm that computes the required statistic or selection correctly and efficiently."
+    },
+    "schema_text": "Domain: Algorithm Design and Data Processing | Entities: random variables | Constraints: Method must be computationally efficient on streaming or large-scale data. | Objective: Design an algorithm that computes the required statistic or selection correctly and efficiently."
+  },
+  {
+    "problem_id": 4398,
+    "name": "Optimal Stopping for Maximum of Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: random variables | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4399,
+    "name": "Logic: three cards, two colors, one symbol",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: random variables | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4400,
+    "name": "Weighing: maximize coins with known direction",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: coin tosses, coins/balls and balance outcomes | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4401,
+    "name": "Bridge crossing with an extra constraint",
+    "schema": {
+      "core_mathematical_domain": "Discrete Mathematics (Logic and Combinatorial Puzzles)",
+      "problem_setup_entities": [
+        "regression parameters",
+        "bridge crossing participants"
+      ],
+      "invariant_constraints": [
+        "Problem is solved under deterministic puzzle rules and limited observations/actions."
+      ],
+      "target_objective": "Determine an optimal strategy or definitive conclusion under the stated constraints."
+    },
+    "schema_text": "Domain: Discrete Mathematics (Logic and Combinatorial Puzzles) | Entities: regression parameters, bridge crossing participants | Constraints: Problem is solved under deterministic puzzle rules and limited observations/actions. | Objective: Determine an optimal strategy or definitive conclusion under the stated constraints."
+  },
+  {
+    "problem_id": 4402,
+    "name": "Beta-neutral adjustment",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning and Portfolio Optimization",
+      "problem_setup_entities": [
+        "portfolio weights/returns",
+        "coins/balls and balance outcomes"
+      ],
+      "invariant_constraints": [
+        "Model/weights satisfy linear constraints and regularization or risk controls.",
+        "Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality)."
+      ],
+      "target_objective": "Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+    },
+    "schema_text": "Domain: Statistical Learning and Portfolio Optimization | Entities: portfolio weights/returns, coins/balls and balance outcomes | Constraints: Model/weights satisfy linear constraints and regularization or risk controls.; Portfolio must satisfy neutrality constraints (e.g., dollar, beta, or factor neutrality). | Objective: Derive or compute constrained estimators/portfolio weights that optimize risk-adjusted performance."
+  },
+  {
+    "problem_id": 4403,
+    "name": "Pattern probability: first to occur",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "coin tosses",
+        "markov states"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: coin tosses, markov states | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4404,
+    "name": "Coin Heads Players Alternate Flipping Coin,",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "coin tosses"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: coin tosses | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4405,
+    "name": "Restaurant Prepared Sandwiches, Labeled Exactly Guests.",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: random variables | Constraints: Random variables follow the stated distributional assumptions. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  },
+  {
+    "problem_id": 4406,
+    "name": "I.i.d. Uniform Derive Closed Form Expressions",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Expected Value and Stochastic Processes)",
+      "problem_setup_entities": [
+        "uniform random variables"
+      ],
+      "invariant_constraints": [
+        "Random variables follow the stated distributional assumptions.",
+        "Sampling assumptions include independence/i.i.d. structure where specified."
+      ],
+      "target_objective": "Compute the required probability, Expected Value, or stopping-time characteristic."
+    },
+    "schema_text": "Domain: Probability Theory (Expected Value and Stochastic Processes) | Entities: uniform random variables | Constraints: Random variables follow the stated distributional assumptions.; Sampling assumptions include independence/i.i.d. structure where specified. | Objective: Compute the required probability, Expected Value, or stopping-time characteristic."
+  }
+]

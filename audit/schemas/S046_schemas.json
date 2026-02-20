@@ -1,0 +1,1547 @@
+[
+  {
+    "problem_id": 4507,
+    "name": "Regression / Errors-in-Variables",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions",
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Predictor, response, and disturbance terms | Constraints: Independence assumptions, Zero-mean innovation/noise assumption | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4508,
+    "name": "PCA / Covariance Shrinkage",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Observed sample/paths over time",
+        "Linear-algebra objects (matrices/factors)"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Observed sample/paths over time, Linear-algebra objects (matrices/factors) | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4509,
+    "name": "Numerical / Finite Differences for Greeks",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: Option contract state variables and payoff parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4510,
+    "name": "Numerical / Implied Yield-to-Maturity",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters",
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: Option contract state variables and payoff parameters, Cashflow schedule and discount curve inputs | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4511,
+    "name": "/ Monte Carlo: Correlated Risk Factors",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Observed sample/paths over time",
+        "Linear-algebra objects (matrices/factors)"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions",
+        "Positive-definite matrix condition"
+      ],
+      "target_objective": "Design a simulation procedure and compute requested Monte Carlo quantities"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Observed sample/paths over time, Linear-algebra objects (matrices/factors) | Constraints: Independence assumptions, Positive-definite matrix condition | Objective: Design a simulation procedure and compute requested Monte Carlo quantities"
+  },
+  {
+    "problem_id": 4512,
+    "name": "/ Longstaff¡Schwartz for American Options",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters",
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Boundary/terminal or exercise-time constraints"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Option contract state variables and payoff parameters, Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Boundary/terminal or exercise-time constraints | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4513,
+    "name": "/ Streaming Statistics for Risk",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4514,
+    "name": "Optimization / Constrained Mean¡Variance",
+    "schema": {
+      "core_mathematical_domain": "Convex Optimization & Portfolio Theory",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Long-only/non-negativity constraints",
+        "Budget normalization constraint",
+        "Minimum expected return requirement"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Convex Optimization & Portfolio Theory | Entities: Assets, returns, and portfolio weights | Constraints: Long-only/non-negativity constraints, Budget normalization constraint, Minimum expected return requirement | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4515,
+    "name": "Equity Derivatives / Put¡Call Parity in FX",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Option contract state variables and payoff parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4516,
+    "name": "Stochastic Calculus / It⌠ for Functionals",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus & Derivatives Pricing",
+      "problem_setup_entities": [
+        "Brownian drivers and stochastic state process"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Stochastic Calculus & Derivatives Pricing | Entities: Brownian drivers and stochastic state process | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4517,
+    "name": "Options / Early Exercise Logic",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters",
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Boundary/terminal or exercise-time constraints"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Option contract state variables and payoff parameters, Cashflow schedule and discount curve inputs | Constraints: Boundary/terminal or exercise-time constraints | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4518,
+    "name": "Greeks / Static Replication",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters",
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Option contract state variables and payoff parameters, Cashflow schedule and discount curve inputs | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4519,
+    "name": "Risk-Neutral Valuation / Martingale Property",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus & Derivatives Pricing",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "No-arbitrage / risk-neutral measure condition"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Stochastic Calculus & Derivatives Pricing | Entities: Option contract state variables and payoff parameters | Constraints: No-arbitrage / risk-neutral measure condition | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4520,
+    "name": "Rates / HJM Drift Condition",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus & Derivatives Pricing",
+      "problem_setup_entities": [
+        "Brownian drivers and stochastic state process"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Stochastic Calculus & Derivatives Pricing | Entities: Brownian drivers and stochastic state process | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4521,
+    "name": "Credit / Defaultable Zero-Coupon Bond",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Cashflow schedule and discount curve inputs | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4522,
+    "name": "XVA / Wrong-Way Risk Toy Model",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4523,
+    "name": "Market Risk / Delta¡Gamma Approximation",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Option contract state variables and payoff parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4524,
+    "name": "Backtesting / VaR Clustering",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4525,
+    "name": "Time Series / Cointegration Test Design",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4526,
+    "name": "Time Series / Realized Volatility and Microstructure Noise",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4527,
+    "name": "Regression / HAC vs Clustering",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4528,
+    "name": "ML / Proper Scoring Rules and Probability Forecasts",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4529,
+    "name": "PCA / Factor Hedging",
+    "schema": {
+      "core_mathematical_domain": "Convex Optimization & Portfolio Theory",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Convex Optimization & Portfolio Theory | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4530,
+    "name": "Numerical / Monte Carlo Greek Estimation",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Option contract state variables and payoff parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4531,
+    "name": "Numerical / PDE: American Put via PSOR",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4532,
+    "name": "/ Simulation: Quasi-Monte Carlo",
+    "schema": {
+      "core_mathematical_domain": "Monte Carlo Methods",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Monte Carlo Methods | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4533,
+    "name": "/ Data: Online Quantiles for Risk",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4534,
+    "name": "Zero-profit quotes with uniform fundamentals",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4535,
+    "name": "Size-tiered adverse selection",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4536,
+    "name": "Inventory targeting with logistic fills",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4537,
+    "name": "Maker/taker fees in break-even spread",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4538,
+    "name": "Posterior after two-sided flow",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4539,
+    "name": "Kelly sizing with execution costs and slippage",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Observed sample/paths over time | Constraints: Independence assumptions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4540,
+    "name": "MLE for AR(1) with Student-t innovations",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4541,
+    "name": "Breusch¡Pagan heteroskedasticity test",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4542,
+    "name": "Bayesian single change-point in mean",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample/paths over time | Constraints: Independence assumptions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4543,
+    "name": "Hurst exponent via R/S",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights | Constraints: Zero-mean innovation/noise assumption | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4544,
+    "name": "GEV block maxima for tail risk",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4545,
+    "name": "Two-stage least squares with overidentification",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4546,
+    "name": "T-GARCH QMLE",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4547,
+    "name": "Tyler's M-estimator for scatter",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4548,
+    "name": "Forecast evaluation: Brier vs",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4549,
+    "name": "First missing positive in O(n)",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4550,
+    "name": "Rabin¡Karp for multiple patterns",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4551,
+    "name": "Merging overlapping intervals",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4552,
+    "name": "Neyman allocation under sampling costs",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4553,
+    "name": "Three-state HMM with Gaussian emissions",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Linear-algebra objects (matrices/factors)"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Linear-algebra objects (matrices/factors) | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4554,
+    "name": "Making Markets Single Stock Latent Value",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4555,
+    "name": "Extend Previous Setup Adding Inventory Penalty",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Cashflow schedule and discount curve inputs | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4556,
+    "name": "Customer Arrival Intensity Depends On Spread As S 0e Ks With K 0",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4557,
+    "name": "Midprice Follows Mt Mt 1 T With 1, T N 0, 2",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4558,
+    "name": "Asymmetric Adverse Selection Probability Order Informed",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4559,
+    "name": "Information Purchase Quoting, Cost Observe Noisy",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4560,
+    "name": "Optimal Stopping Value",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Option contract state variables and payoff parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Option contract state variables and payoff parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4561,
+    "name": "Monty Hall Selective Revealing Prize Uniformly",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4562,
+    "name": "Armed Bandit Price Improvement Offers Price",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Cashflow schedule and discount curve inputs | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4563,
+    "name": "Time Series Identification Observe Returns Follow",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Assets, returns, and portfolio weights | Constraints: Zero-mean innovation/noise assumption | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4564,
+    "name": "GARCH 1,1 Calibration Rt Tt, T N 0, 1 , T2 Rt2 1 T2 1",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4565,
+    "name": "Cross Sectional Factor Test Multiple Hypotheses",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Cashflow schedule and discount curve inputs"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Cashflow schedule and discount curve inputs | Constraints: Independence assumptions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4566,
+    "name": "Estimating Out Of Sample Sharpe With Costs Strategy Produces I",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Observed sample/paths over time | Constraints: Independence assumptions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4567,
+    "name": "Bayesian Coin Beta Prior Prior Beta",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Optimize the stated objective function subject to constraints"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Optimize the stated objective function subject to constraints"
+  },
+  {
+    "problem_id": 4568,
+    "name": "Ridge Regression Prediction Centered Design Response",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4569,
+    "name": "Change Point Detection Variance Returns Mean",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights, Observed sample/paths over time | Constraints: Zero-mean innovation/noise assumption | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4570,
+    "name": "Streaming Median Sliding Window Design Data",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4571,
+    "name": "Directed Graph of N Currencies and M Exchange",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4572,
+    "name": "Reservoir Sampling You Observe An Unbounded Stream Of Trades Ti",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4573,
+    "name": "Rolling Drawdown Recovery Time Series Cumulative",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4574,
+    "name": "Merging Sorted Quote Streams Receive Time",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4575,
+    "name": "Binary event market-making with imperfectly informed flow",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4576,
+    "name": "Cross-asset quoting with correlated fundamentals",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4577,
+    "name": "Choosing spread and size under CARA utility",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4578,
+    "name": "Quote revision after a trade print",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4579,
+    "name": "Optimal liquidation with transient linear impact",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4580,
+    "name": "Posted-price revenue optimization",
+    "schema": {
+      "core_mathematical_domain": "Convex Optimization & Portfolio Theory",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Convex Optimization & Portfolio Theory | Entities: Model state variables and parameters | Constraints: Independence assumptions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4581,
+    "name": "Predictive content of order imbalance",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4582,
+    "name": "Kalman filter for a noisy AR(1) signal",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4583,
+    "name": "Two-state HMM for volatility regimes",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4584,
+    "name": "Inhomogeneous Poisson arrivals with seasonality",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4585,
+    "name": "Cointegration test and mean-reversion half-life",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4586,
+    "name": "Tail risk estimation with Hill's estimator",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample/paths over time | Constraints: Independence assumptions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4587,
+    "name": "Stationary bootstrap for Sharpe inference",
+    "schema": {
+      "core_mathematical_domain": "Time Series Modeling",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Time Series Modeling | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4588,
+    "name": "Sequential A/B test via SPRT",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4589,
+    "name": "Robust regression for factor models",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4590,
+    "name": "Online mean, variance, and covariance",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Observed sample/paths over time",
+        "Linear-algebra objects (matrices/factors)"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Numerical Methods | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Observed sample/paths over time, Linear-algebra objects (matrices/factors) | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4591,
+    "name": "Approximate heavy-hitters in a price/ID stream",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4592,
+    "name": "Segment tree for dynamic range sums",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4593,
+    "name": "Weighted reservoir sampling without replacement",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights, Observed sample/paths over time | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4594,
+    "name": "No-trade Bayesian update in Glosten¡Milgrom",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4595,
+    "name": "Optimal X. Ii Suppose V",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Independence assumptions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4596,
+    "name": "Step in vs",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Compute the no-arbitrage derivative value or pricing relation"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Model state variables and parameters | Constraints: Independence assumptions | Objective: Compute the no-arbitrage derivative value or pricing relation"
+  },
+  {
+    "problem_id": 4597,
+    "name": "Combining trade sign and public signal",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4598,
+    "name": "Size choice under a VaR limit",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4599,
+    "name": "Variance-ratio (VR) test for random walk",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights | Constraints: Zero-mean innovation/noise assumption | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4600,
+    "name": "Two-scale realized variance under microstructure noise",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Calculus & Derivatives Pricing",
+      "problem_setup_entities": [
+        "Predictor, response, and disturbance terms",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Stochastic Calculus & Derivatives Pricing | Entities: Predictor, response, and disturbance terms, Observed sample/paths over time | Constraints: Independence assumptions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4601,
+    "name": "Jump-robust volatility via bipower variation",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed data"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed data"
+  },
+  {
+    "problem_id": 4602,
+    "name": "Profit-aware classification threshold",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Model state variables and parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Optimize the stated objective function subject to constraints"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Model state variables and parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Optimize the stated objective function subject to constraints"
+  },
+  {
+    "problem_id": 4603,
+    "name": "LASSO for sparse return prediction",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Assets, returns, and portfolio weights | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4604,
+    "name": "Shrinkage covariance (Ledoit¡Wolf style)",
+    "schema": {
+      "core_mathematical_domain": "Risk Measurement & Tail Risk",
+      "problem_setup_entities": [
+        "Covariance/correlation matrix and spectral structure",
+        "Observed sample/paths over time"
+      ],
+      "invariant_constraints": [
+        "Zero-mean innovation/noise assumption"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Risk Measurement & Tail Risk | Entities: Covariance/correlation matrix and spectral structure, Observed sample/paths over time | Constraints: Zero-mean innovation/noise assumption | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  },
+  {
+    "problem_id": 4605,
+    "name": "PCA of returns",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Assets, returns, and portfolio weights",
+        "Covariance/correlation matrix and spectral structure",
+        "Observed sample/paths over time",
+        "Linear-algebra objects (matrices/factors)"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested analytical expression under stated assumptions"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Assets, returns, and portfolio weights, Covariance/correlation matrix and spectral structure, Observed sample/paths over time, Linear-algebra objects (matrices/factors) | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Derive the requested analytical expression under stated assumptions"
+  },
+  {
+    "problem_id": 4606,
+    "name": "Breusch¡Godfrey test for serial correlation",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Covariance/correlation matrix and spectral structure",
+        "Predictor, response, and disturbance terms"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Covariance/correlation matrix and spectral structure, Predictor, response, and disturbance terms | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, risk, or sensitivity)"
+  }
+]

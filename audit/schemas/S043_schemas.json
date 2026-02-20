@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 4207,
+    "name": "OLS with collinearity.",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "standardized predictors x1, x2",
+        "response r",
+        "correlation structure"
+      ],
+      "invariant_constraints": [
+        "Moments/covariances are given and fixed.",
+        "Population OLS coefficients are computed from second moments."
+      ],
+      "target_objective": "Compute population OLS coefficients and assess instability/sign behavior under multicollinearity."
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: standardized predictors x1, x2, response r, correlation structure | Constraints: Moments/covariances are given and fixed.; Population OLS coefficients are computed from second moments. | Objective: Compute population OLS coefficients and assess instability/sign behavior under multicollinearity."
+  },
+  {
+    "problem_id": 4208,
+    "name": "PSD constraint.",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra (Positive Semidefinite Matrices)",
+      "problem_setup_entities": [
+        "3x3 correlation matrix",
+        "pairwise correlations"
+      ],
+      "invariant_constraints": [
+        "Diagonal entries are 1.",
+        "Valid correlation matrix must be symmetric positive semidefinite."
+      ],
+      "target_objective": "Derive constraints/check feasibility of the matrix as a correlation matrix."
+    },
+    "schema_text": "Domain: Linear Algebra (Positive Semidefinite Matrices) | Entities: 3x3 correlation matrix, pairwise correlations | Constraints: Diagonal entries are 1.; Valid correlation matrix must be symmetric positive semidefinite. | Objective: Derive constraints/check feasibility of the matrix as a correlation matrix."
+  },
+  {
+    "problem_id": 4209,
+    "name": "HAC / autocorrelation.",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics (HAC/Newey-West)",
+      "problem_setup_entities": [
+        "OLS slope estimate",
+        "AR(1) residual process",
+        "sample size n"
+      ],
+      "invariant_constraints": [
+        "Residuals are serially correlated.",
+        "Regressor exogeneity assumptions are specified."
+      ],
+      "target_objective": "Explain standard-error bias under autocorrelation and provide heteroskedasticity-autocorrelation consistent variance."
+    },
+    "schema_text": "Domain: Time-Series Econometrics (HAC/Newey-West) | Entities: OLS slope estimate, AR(1) residual process, sample size n | Constraints: Residuals are serially correlated.; Regressor exogeneity assumptions are specified. | Objective: Explain standard-error bias under autocorrelation and provide heteroskedasticity-autocorrelation consistent variance."
+  },
+  {
+    "problem_id": 4210,
+    "name": "Leakage in cross-validation.",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Validation / Backtesting Methodology",
+      "problem_setup_entities": [
+        "predictive features",
+        "future returns labels",
+        "K-fold splits"
+      ],
+      "invariant_constraints": [
+        "Data are time-ordered with dependence.",
+        "Random shuffling can leak temporal information."
+      ],
+      "target_objective": "Show why random K-fold is invalid and specify leakage-safe time-series cross-validation."
+    },
+    "schema_text": "Domain: Time-Series Validation / Backtesting Methodology | Entities: predictive features, future returns labels, K-fold splits | Constraints: Data are time-ordered with dependence.; Random shuffling can leak temporal information. | Objective: Show why random K-fold is invalid and specify leakage-safe time-series cross-validation."
+  },
+  {
+    "problem_id": 4211,
+    "name": "Regularization trade-off.",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning (Bias-Variance / Regularization)",
+      "problem_setup_entities": [
+        "high-dimensional linear model",
+        "ridge penalty lambda",
+        "sparse true coefficients"
+      ],
+      "invariant_constraints": [
+        "Features are standardized.",
+        "Model complexity and shrinkage trade off bias and variance."
+      ],
+      "target_objective": "Compare OLS vs ridge and characterize when regularization improves out-of-sample risk."
+    },
+    "schema_text": "Domain: Statistical Learning (Bias-Variance / Regularization) | Entities: high-dimensional linear model, ridge penalty lambda, sparse true coefficients | Constraints: Features are standardized.; Model complexity and shrinkage trade off bias and variance. | Objective: Compare OLS vs ridge and characterize when regularization improves out-of-sample risk."
+  },
+  {
+    "problem_id": 4212,
+    "name": "DP / optimal quoting with inventory penalty.",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming (Optimal Control)",
+      "problem_setup_entities": [
+        "time horizon T",
+        "inventory state",
+        "discrete quote skew action"
+      ],
+      "invariant_constraints": [
+        "State transitions depend on action and fills.",
+        "Inventory penalty is applied over horizon."
+      ],
+      "target_objective": "Formulate Bellman recursion and compute optimal quoting policy."
+    },
+    "schema_text": "Domain: Dynamic Programming (Optimal Control) | Entities: time horizon T, inventory state, discrete quote skew action | Constraints: State transitions depend on action and fills.; Inventory penalty is applied over horizon. | Objective: Formulate Bellman recursion and compute optimal quoting policy."
+  },
+  {
+    "problem_id": 4213,
+    "name": "Graph / BFS in a time-expanded state.",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms (BFS on Expanded State)",
+      "problem_setup_entities": [
+        "grid state (i,j)",
+        "allowed moves",
+        "blocked transitions"
+      ],
+      "invariant_constraints": [
+        "Moves are bounded by grid limits.",
+        "Shortest-path objective with unit transition cost."
+      ],
+      "target_objective": "Find minimum-step path via BFS/state-expansion and analyze complexity."
+    },
+    "schema_text": "Domain: Graph Algorithms (BFS on Expanded State) | Entities: grid state (i,j), allowed moves, blocked transitions | Constraints: Moves are bounded by grid limits.; Shortest-path objective with unit transition cost. | Objective: Find minimum-step path via BFS/state-expansion and analyze complexity."
+  },
+  {
+    "problem_id": 4214,
+    "name": "Algorithms / streaming top-k with updates.",
+    "schema": {
+      "core_mathematical_domain": "Data Structures (Online Top-k)",
+      "problem_setup_entities": [
+        "N symbols with mutable scores",
+        "add updates",
+        "top-k sum query"
+      ],
+      "invariant_constraints": [
+        "Updates are incremental.",
+        "Need logarithmic-time maintenance of order statistics."
+      ],
+      "target_objective": "Design a structure supporting O(log N) updates and fast top-k-sum queries."
+    },
+    "schema_text": "Domain: Data Structures (Online Top-k) | Entities: N symbols with mutable scores, add updates, top-k sum query | Constraints: Updates are incremental.; Need logarithmic-time maintenance of order statistics. | Objective: Design a structure supporting O(log N) updates and fast top-k-sum queries."
+  },
+  {
+    "problem_id": 4215,
+    "name": "Algorithms / shortest path with bounded hops.",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms (Shortest Path with Hop Constraint)",
+      "problem_setup_entities": [
+        "directed weighted graph",
+        "source s and target t",
+        "edge budget K"
+      ],
+      "invariant_constraints": [
+        "Edge weights may be negative.",
+        "Path must use at most K edges."
+      ],
+      "target_objective": "Compute minimum path weight in O(Km) using layered/Bellman-Ford-style DP."
+    },
+    "schema_text": "Domain: Graph Algorithms (Shortest Path with Hop Constraint) | Entities: directed weighted graph, source s and target t, edge budget K | Constraints: Edge weights may be negative.; Path must use at most K edges. | Objective: Compute minimum path weight in O(Km) using layered/Bellman-Ford-style DP."
+  },
+  {
+    "problem_id": 4216,
+    "name": "C++ / object layout and padding.",
+    "schema": {
+      "core_mathematical_domain": "C++ Systems (Object Layout / Padding)",
+      "problem_setup_entities": [
+        "class/struct fields",
+        "ABI alignment rules",
+        "64-bit type sizes"
+      ],
+      "invariant_constraints": [
+        "Member alignment and padding follow platform ABI.",
+        "Object size is rounded to alignment."
+      ],
+      "target_objective": "Compute memory layout, offsets, and total object size."
+    },
+    "schema_text": "Domain: C++ Systems (Object Layout / Padding) | Entities: class/struct fields, ABI alignment rules, 64-bit type sizes | Constraints: Member alignment and padding follow platform ABI.; Object size is rounded to alignment. | Objective: Compute memory layout, offsets, and total object size."
+  },
+  {
+    "problem_id": 4217,
+    "name": "C++ / move semantics and vector growth.",
+    "schema": {
+      "core_mathematical_domain": "C++ Systems (Move Semantics / Rule of Five)",
+      "problem_setup_entities": [
+        "resource-owning class",
+        "std::vector growth behavior",
+        "copy/move operations"
+      ],
+      "invariant_constraints": [
+        "Ownership must be unique and exception-safe.",
+        "Moved-from objects remain valid."
+      ],
+      "target_objective": "Specify correct special members and explain performance/correctness under reallocation."
+    },
+    "schema_text": "Domain: C++ Systems (Move Semantics / Rule of Five) | Entities: resource-owning class, std::vector growth behavior, copy/move operations | Constraints: Ownership must be unique and exception-safe.; Moved-from objects remain valid. | Objective: Specify correct special members and explain performance/correctness under reallocation."
+  },
+  {
+    "problem_id": 4218,
+    "name": "C++ / ownership and custom deleters.",
+    "schema": {
+      "core_mathematical_domain": "C++ RAII / Ownership Interop",
+      "problem_setup_entities": [
+        "C API pointer Foo*",
+        "custom destroy function",
+        "std::unique_ptr with deleter"
+      ],
+      "invariant_constraints": [
+        "Resource must be released via foo_destroy, not delete.",
+        "Deleter type requirements affect unique_ptr size/usage."
+      ],
+      "target_objective": "Implement safe ownership wrapper and explain deleter constraints."
+    },
+    "schema_text": "Domain: C++ RAII / Ownership Interop | Entities: C API pointer Foo*, custom destroy function, std::unique_ptr with deleter | Constraints: Resource must be released via foo_destroy, not delete.; Deleter type requirements affect unique_ptr size/usage. | Objective: Implement safe ownership wrapper and explain deleter constraints."
+  },
+  {
+    "problem_id": 4219,
+    "name": "C++ / safe bit reinterpretation.",
+    "schema": {
+      "core_mathematical_domain": "C++ Memory Model (Aliasing / Bit Casting)",
+      "problem_setup_entities": [
+        "double value",
+        "IEEE-754 bit representation",
+        "hash function"
+      ],
+      "invariant_constraints": [
+        "Strict aliasing rules apply.",
+        "Need standards-compliant bit reinterpretation."
+      ],
+      "target_objective": "Determine legality of reinterpret_cast approach and provide safe bit-cast alternative."
+    },
+    "schema_text": "Domain: C++ Memory Model (Aliasing / Bit Casting) | Entities: double value, IEEE-754 bit representation, hash function | Constraints: Strict aliasing rules apply.; Need standards-compliant bit reinterpretation. | Objective: Determine legality of reinterpret_cast approach and provide safe bit-cast alternative."
+  },
+  {
+    "problem_id": 4220,
+    "name": "/ market making with selection + inventory",
+    "schema": {
+      "core_mathematical_domain": "Market Microstructure (Execution Decision)",
+      "problem_setup_entities": [
+        "midprice move V",
+        "action choice (touch vs deeper)",
+        "fill probabilities",
+        "inventory term"
+      ],
+      "invariant_constraints": [
+        "Action is chosen before price move realization.",
+        "Expected P&L depends on adverse selection and fill chance."
+      ],
+      "target_objective": "Compute expected utility/P&L by action and choose optimal posting depth."
+    },
+    "schema_text": "Domain: Market Microstructure (Execution Decision) | Entities: midprice move V, action choice (touch vs deeper), fill probabilities, inventory term | Constraints: Action is chosen before price move realization.; Expected P&L depends on adverse selection and fill chance. | Objective: Compute expected utility/P&L by action and choose optimal posting depth."
+  },
+  {
+    "problem_id": 4221,
+    "name": "/ SPRT with explicit boundaries",
+    "schema": {
+      "core_mathematical_domain": "Sequential Analysis (SPRT)",
+      "problem_setup_entities": [
+        "binary observations",
+        "two hypotheses H+/H-",
+        "posterior stopping boundaries"
+      ],
+      "invariant_constraints": [
+        "Observations are i.i.d. under each hypothesis.",
+        "Stop when posterior crosses fixed thresholds."
+      ],
+      "target_objective": "Express posterior via log-likelihood ratio and characterize stopping boundaries/hitting behavior."
+    },
+    "schema_text": "Domain: Sequential Analysis (SPRT) | Entities: binary observations, two hypotheses H+/H-, posterior stopping boundaries | Constraints: Observations are i.i.d. under each hypothesis.; Stop when posterior crosses fixed thresholds. | Objective: Express posterior via log-likelihood ratio and characterize stopping boundaries/hitting behavior."
+  },
+  {
+    "problem_id": 4222,
+    "name": "/ optimal accept-reject of fills",
+    "schema": {
+      "core_mathematical_domain": "Decision Theory (Threshold Acceptance)",
+      "problem_setup_entities": [
+        "feature X",
+        "conditional mean/variance of payoff",
+        "accept/reject action"
+      ],
+      "invariant_constraints": [
+        "Each opportunity is independent.",
+        "Decision is based on observed feature only."
+      ],
+      "target_objective": "Derive optimal acceptance rule maximizing Expected Value (typically a threshold in X)."
+    },
+    "schema_text": "Domain: Decision Theory (Threshold Acceptance) | Entities: feature X, conditional mean/variance of payoff, accept/reject action | Constraints: Each opportunity is independent.; Decision is based on observed feature only. | Objective: Derive optimal acceptance rule maximizing Expected Value (typically a threshold in X)."
+  },
+  {
+    "problem_id": 4223,
+    "name": "/ betting with drawdown constraint",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Control (Kelly / Drawdown Constraint)",
+      "problem_setup_entities": [
+        "i.i.d. binary returns",
+        "bet fraction f",
+        "wealth process"
+      ],
+      "invariant_constraints": [
+        "Fraction f is fixed over time.",
+        "Pathwise drawdown floor constraint must hold."
+      ],
+      "target_objective": "Choose admissible f to optimize growth/Expected Value subject to drawdown risk limits."
+    },
+    "schema_text": "Domain: Stochastic Control (Kelly / Drawdown Constraint) | Entities: i.i.d. binary returns, bet fraction f, wealth process | Constraints: Fraction f is fixed over time.; Pathwise drawdown floor constraint must hold. | Objective: Choose admissible f to optimize growth/Expected Value subject to drawdown risk limits."
+  },
+  {
+    "problem_id": 4224,
+    "name": "Mental math / quick exact probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Approximation (Binomial to Normal)",
+      "problem_setup_entities": [
+        "Binomial random variable X",
+        "continuity correction",
+        "z-score computation"
+      ],
+      "invariant_constraints": [
+        "n and p are fixed.",
+        "Use normal approximation with continuity correction."
+      ],
+      "target_objective": "Approximate tail probability and show intermediate mean/variance/z calculations."
+    },
+    "schema_text": "Domain: Probability Approximation (Binomial to Normal) | Entities: Binomial random variable X, continuity correction, z-score computation | Constraints: n and p are fixed.; Use normal approximation with continuity correction. | Objective: Approximate tail probability and show intermediate mean/variance/z calculations."
+  },
+  {
+    "problem_id": 4225,
+    "name": "Stats / two-signal OLS sign flip",
+    "schema": {
+      "core_mathematical_domain": "Statistics (Linear Regression)",
+      "problem_setup_entities": [
+        "two correlated predictors",
+        "response variable",
+        "population moments"
+      ],
+      "invariant_constraints": [
+        "Variables are standardized with given correlations.",
+        "OLS coefficients come from covariance inversion."
+      ],
+      "target_objective": "Compute coefficients and explain sign flip/magnitude distortion from near-collinearity."
+    },
+    "schema_text": "Domain: Statistics (Linear Regression) | Entities: two correlated predictors, response variable, population moments | Constraints: Variables are standardized with given correlations.; OLS coefficients come from covariance inversion. | Objective: Compute coefficients and explain sign flip/magnitude distortion from near-collinearity."
+  },
+  {
+    "problem_id": 4226,
+    "name": "Stats / winsorization impact",
+    "schema": {
+      "core_mathematical_domain": "Robust Statistics (Winsorization)",
+      "problem_setup_entities": [
+        "mixture-distributed return R",
+        "winsorized return R(c)",
+        "cutoff c"
+      ],
+      "invariant_constraints": [
+        "Mixture probabilities and component variances are fixed.",
+        "Winsorization truncates magnitude but preserves sign."
+      ],
+      "target_objective": "Derive Expected Value/variance after winsorization and quantify tail-risk reduction."
+    },
+    "schema_text": "Domain: Robust Statistics (Winsorization) | Entities: mixture-distributed return R, winsorized return R(c), cutoff c | Constraints: Mixture probabilities and component variances are fixed.; Winsorization truncates magnitude but preserves sign. | Objective: Derive Expected Value/variance after winsorization and quantify tail-risk reduction."
+  },
+  {
+    "problem_id": 4227,
+    "name": "Stats / equicorrelation inverse and coefficients",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Statistics (Equicorrelation)",
+      "problem_setup_entities": [
+        "equicorrelation covariance matrix",
+        "dimension d",
+        "uniform Cov(x_i,r)"
+      ],
+      "invariant_constraints": [
+        "Off-diagonal correlations are constant.",
+        "Inverse exists under admissible rho range."
+      ],
+      "target_objective": "Compute closed-form inverse-action coefficients and interpret symmetry."
+    },
+    "schema_text": "Domain: Linear Algebra & Statistics (Equicorrelation) | Entities: equicorrelation covariance matrix, dimension d, uniform Cov(x_i,r) | Constraints: Off-diagonal correlations are constant.; Inverse exists under admissible rho range. | Objective: Compute closed-form inverse-action coefficients and interpret symmetry."
+  },
+  {
+    "problem_id": 4228,
+    "name": "Stats / Newey¡West with AR(1",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics (Newey-West)",
+      "problem_setup_entities": [
+        "AR(1) regression residuals",
+        "autocovariance sequence",
+        "HAC estimator"
+      ],
+      "invariant_constraints": [
+        "|phi|<1 and innovations are i.i.d.",
+        "Regressor is uncorrelated with errors."
+      ],
+      "target_objective": "Derive residual autocovariances and write HAC variance/SE expression."
+    },
+    "schema_text": "Domain: Time-Series Econometrics (Newey-West) | Entities: AR(1) regression residuals, autocovariance sequence, HAC estimator | Constraints: |phi|<1 and innovations are i.i.d.; Regressor is uncorrelated with errors. | Objective: Derive residual autocovariances and write HAC variance/SE expression."
+  },
+  {
+    "problem_id": 4229,
+    "name": "Stats / shrinkage covariance objective",
+    "schema": {
+      "core_mathematical_domain": "Covariance Estimation (Shrinkage)",
+      "problem_setup_entities": [
+        "sample covariance S",
+        "shrinkage target I",
+        "spiked true covariance"
+      ],
+      "invariant_constraints": [
+        "Estimator is convex combination Sigma(lambda)=(1-lambda)S+lambda I.",
+        "Finite-sample conditioning is a key concern."
+      ],
+      "target_objective": "Explain conditioning/error trade-off and characterize optimal shrinkage behavior."
+    },
+    "schema_text": "Domain: Covariance Estimation (Shrinkage) | Entities: sample covariance S, shrinkage target I, spiked true covariance | Constraints: Estimator is convex combination Sigma(lambda)=(1-lambda)S+lambda I.; Finite-sample conditioning is a key concern. | Objective: Explain conditioning/error trade-off and characterize optimal shrinkage behavior."
+  },
+  {
+    "problem_id": 4230,
+    "name": "DP / trading with spread + fee",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming (Trading with Costs)",
+      "problem_setup_entities": [
+        "known midprice path",
+        "position state",
+        "spread and transaction fee"
+      ],
+      "invariant_constraints": [
+        "Trades incur fixed/linear costs.",
+        "Inventory/position transitions are constrained over time."
+      ],
+      "target_objective": "Formulate DP to maximize realized trading P&L net of costs."
+    },
+    "schema_text": "Domain: Dynamic Programming (Trading with Costs) | Entities: known midprice path, position state, spread and transaction fee | Constraints: Trades incur fixed/linear costs.; Inventory/position transitions are constrained over time. | Objective: Formulate DP to maximize realized trading P&L net of costs."
+  },
+  {
+    "problem_id": 4231,
+    "name": "DP / choose at most K trades",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming (K-Transaction Trading)",
+      "problem_setup_entities": [
+        "price series",
+        "at most K round trips",
+        "fee c"
+      ],
+      "invariant_constraints": [
+        "Must buy before sell.",
+        "Hold at most one unit at any time."
+      ],
+      "target_objective": "Design O(TK) state DP for maximum profit with transaction costs."
+    },
+    "schema_text": "Domain: Dynamic Programming (K-Transaction Trading) | Entities: price series, at most K round trips, fee c | Constraints: Must buy before sell.; Hold at most one unit at any time. | Objective: Design O(TK) state DP for maximum profit with transaction costs."
+  },
+  {
+    "problem_id": 4232,
+    "name": "Graph / arbitrage via negative cycle",
+    "schema": {
+      "core_mathematical_domain": "Graph Theory (Arbitrage Detection)",
+      "problem_setup_entities": [
+        "currency graph",
+        "exchange rates",
+        "cycle product"
+      ],
+      "invariant_constraints": [
+        "Edge weights are positive rates.",
+        "Arbitrage exists iff transformed cycle has negative total weight."
+      ],
+      "target_objective": "Transform via -log rates and detect negative cycles."
+    },
+    "schema_text": "Domain: Graph Theory (Arbitrage Detection) | Entities: currency graph, exchange rates, cycle product | Constraints: Edge weights are positive rates.; Arbitrage exists iff transformed cycle has negative total weight. | Objective: Transform via -log rates and detect negative cycles."
+  },
+  {
+    "problem_id": 4233,
+    "name": "Graph / shortest path with time parity",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms (BFS with Parity State)",
+      "problem_setup_entities": [
+        "grid with obstacles",
+        "time parity (even/odd)",
+        "restricted move directions"
+      ],
+      "invariant_constraints": [
+        "Allowed direction depends only on time parity.",
+        "Each step has unit cost."
+      ],
+      "target_objective": "Compute minimum-time reachability using BFS on (cell, parity)."
+    },
+    "schema_text": "Domain: Graph Algorithms (BFS with Parity State) | Entities: grid with obstacles, time parity (even/odd), restricted move directions | Constraints: Allowed direction depends only on time parity.; Each step has unit cost. | Objective: Compute minimum-time reachability using BFS on (cell, parity)."
+  },
+  {
+    "problem_id": 4234,
+    "name": "DS / rolling max drawdown and max run-up",
+    "schema": {
+      "core_mathematical_domain": "Streaming Algorithms (Risk Metrics)",
+      "problem_setup_entities": [
+        "streaming returns",
+        "equity curve",
+        "rolling window"
+      ],
+      "invariant_constraints": [
+        "Single-pass/online updates required.",
+        "Need max drawdown and max run-up statistics."
+      ],
+      "target_objective": "Maintain rolling drawdown/run-up efficiently over a stream."
+    },
+    "schema_text": "Domain: Streaming Algorithms (Risk Metrics) | Entities: streaming returns, equity curve, rolling window | Constraints: Single-pass/online updates required.; Need max drawdown and max run-up statistics. | Objective: Maintain rolling drawdown/run-up efficiently over a stream."
+  },
+  {
+    "problem_id": 4235,
+    "name": "C++ / multiple inheritance layout + offsets",
+    "schema": {
+      "core_mathematical_domain": "C++ Systems (Multiple Inheritance Layout)",
+      "problem_setup_entities": [
+        "polymorphic base subobjects",
+        "vptrs",
+        "member offsets"
+      ],
+      "invariant_constraints": [
+        "ABI places one vptr per polymorphic base subobject.",
+        "Alignment/padding rules determine offsets."
+      ],
+      "target_objective": "Compute object memory layout and pointer-adjustment offsets under multiple inheritance."
+    },
+    "schema_text": "Domain: C++ Systems (Multiple Inheritance Layout) | Entities: polymorphic base subobjects, vptrs, member offsets | Constraints: ABI places one vptr per polymorphic base subobject.; Alignment/padding rules determine offsets. | Objective: Compute object memory layout and pointer-adjustment offsets under multiple inheritance."
+  },
+  {
+    "problem_id": 4236,
+    "name": "C++ / alignment + placement new",
+    "schema": {
+      "core_mathematical_domain": "C++ Memory Management (Alignment / Placement New)",
+      "problem_setup_entities": [
+        "fixed-size memory pool",
+        "type T alignment",
+        "placement new"
+      ],
+      "invariant_constraints": [
+        "Returned address must satisfy alignof(T).",
+        "Construction/destruction must be explicitly managed."
+      ],
+      "target_objective": "State correctness requirements and implement aligned allocation strategy."
+    },
+    "schema_text": "Domain: C++ Memory Management (Alignment / Placement New) | Entities: fixed-size memory pool, type T alignment, placement new | Constraints: Returned address must satisfy alignof(T).; Construction/destruction must be explicitly managed. | Objective: State correctness requirements and implement aligned allocation strategy."
+  },
+  {
+    "problem_id": 4237,
+    "name": "C++ / strict aliasing and safe serialization",
+    "schema": {
+      "core_mathematical_domain": "C++ Memory Safety (Strict Aliasing / Serialization)",
+      "problem_setup_entities": [
+        "struct byte representation",
+        "serialization buffer",
+        "load/store routines"
+      ],
+      "invariant_constraints": [
+        "Type punning must obey aliasing/lifetime rules.",
+        "Portable binary serialization requires explicit byte handling."
+      ],
+      "target_objective": "Provide standards-compliant serialization/deserialization approach."
+    },
+    "schema_text": "Domain: C++ Memory Safety (Strict Aliasing / Serialization) | Entities: struct byte representation, serialization buffer, load/store routines | Constraints: Type punning must obey aliasing/lifetime rules.; Portable binary serialization requires explicit byte handling. | Objective: Provide standards-compliant serialization/deserialization approach."
+  },
+  {
+    "problem_id": 4238,
+    "name": "/ stopping time with bounded stakes",
+    "schema": {
+      "core_mathematical_domain": "Probability & Stopping Times",
+      "problem_setup_entities": [
+        "i.i.d. +/-1 process",
+        "stake process",
+        "stopping rule"
+      ],
+      "invariant_constraints": [
+        "Stake sizes are bounded.",
+        "Stopping time adapted to observed filtration."
+      ],
+      "target_objective": "Analyze optimal stopping/Expected Value under bounded-stake constraints."
+    },
+    "schema_text": "Domain: Probability & Stopping Times | Entities: i.i.d. +/-1 process, stake process, stopping rule | Constraints: Stake sizes are bounded.; Stopping time adapted to observed filtration. | Objective: Analyze optimal stopping/Expected Value under bounded-stake constraints."
+  },
+  {
+    "problem_id": 4239,
+    "name": "/ mental-math Bayes",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "binary hidden regime",
+        "prior probability",
+        "observed signal/evidence"
+      ],
+      "invariant_constraints": [
+        "Likelihoods under each regime are specified.",
+        "Posterior updates via Bayes rule."
+      ],
+      "target_objective": "Compute posterior probability and decision quantities mentally/analytically."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: binary hidden regime, prior probability, observed signal/evidence | Constraints: Likelihoods under each regime are specified.; Posterior updates via Bayes rule. | Objective: Compute posterior probability and decision quantities mentally/analytically."
+  },
+  {
+    "problem_id": 4240,
+    "name": "/ hitting time with reflection",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes (Random Walk Hitting Time)",
+      "problem_setup_entities": [
+        "reflected random walk on nonnegative integers",
+        "starting state X0=1",
+        "hitting time to boundary"
+      ],
+      "invariant_constraints": [
+        "At 0 process reflects to 1 deterministically.",
+        "For states >=1 transitions are symmetric +/-1."
+      ],
+      "target_objective": "Compute hitting probability/Expected Value for the target boundary event."
+    },
+    "schema_text": "Domain: Stochastic Processes (Random Walk Hitting Time) | Entities: reflected random walk on nonnegative integers, starting state X0=1, hitting time to boundary | Constraints: At 0 process reflects to 1 deterministically.; For states >=1 transitions are symmetric +/-1. | Objective: Compute hitting probability/Expected Value for the target boundary event."
+  },
+  {
+    "problem_id": 4241,
+    "name": "/ order statistics with exponentials",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Order Statistics)",
+      "problem_setup_entities": [
+        "i.i.d. exponential variables",
+        "k-th order statistic T_(k)",
+        "sample size n"
+      ],
+      "invariant_constraints": [
+        "Exponential spacings are independent with known rates.",
+        "Closed forms use harmonic sums."
+      ],
+      "target_objective": "Derive E[T_(k)] and Var(T_(k)] in closed form and evaluate given n,k."
+    },
+    "schema_text": "Domain: Probability Theory (Order Statistics) | Entities: i.i.d. exponential variables, k-th order statistic T_(k), sample size n | Constraints: Exponential spacings are independent with known rates.; Closed forms use harmonic sums. | Objective: Derive E[T_(k)] and Var(T_(k)] in closed form and evaluate given n,k."
+  },
+  {
+    "problem_id": 4242,
+    "name": "Stats / OLS mechanics with redundant feature",
+    "schema": {
+      "core_mathematical_domain": "Linear Regression Geometry",
+      "problem_setup_entities": [
+        "design matrix with intercept",
+        "redundant feature z=x1-x2",
+        "fitted values and coefficients"
+      ],
+      "invariant_constraints": [
+        "Predictors are centered.",
+        "Added column is linear combination of existing columns."
+      ],
+      "target_objective": "Prove effect on fitted values and characterize non-identifiability of coefficients."
+    },
+    "schema_text": "Domain: Linear Regression Geometry | Entities: design matrix with intercept, redundant feature z=x1-x2, fitted values and coefficients | Constraints: Predictors are centered.; Added column is linear combination of existing columns. | Objective: Prove effect on fitted values and characterize non-identifiability of coefficients."
+  },
+  {
+    "problem_id": 4243,
+    "name": "Stats / covariance eigenvalues and conditioning",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra (Eigenstructure / Conditioning)",
+      "problem_setup_entities": [
+        "equicorrelation matrix",
+        "dimension d",
+        "correlation rho"
+      ],
+      "invariant_constraints": [
+        "Matrix has one common-mode eigenvector and d-1 orthogonal modes.",
+        "Condition number from max/min eigenvalues."
+      ],
+      "target_objective": "Compute eigenvalues/multiplicities and quantify conditioning implications."
+    },
+    "schema_text": "Domain: Linear Algebra (Eigenstructure / Conditioning) | Entities: equicorrelation matrix, dimension d, correlation rho | Constraints: Matrix has one common-mode eigenvector and d-1 orthogonal modes.; Condition number from max/min eigenvalues. | Objective: Compute eigenvalues/multiplicities and quantify conditioning implications."
+  },
+  {
+    "problem_id": 4244,
+    "name": "Stats / multiple testing false discoveries",
+    "schema": {
+      "core_mathematical_domain": "Multiple Testing / Extreme Value Statistics",
+      "problem_setup_entities": [
+        "p independent test statistics",
+        "maximum absolute t-statistic",
+        "selection threshold"
+      ],
+      "invariant_constraints": [
+        "Null statistics are standard normal and independent.",
+        "Selection uses max |T_j| across tests."
+      ],
+      "target_objective": "Approximate expected maximum, exceedance probabilities, and significance thresholds controlling false discoveries."
+    },
+    "schema_text": "Domain: Multiple Testing / Extreme Value Statistics | Entities: p independent test statistics, maximum absolute t-statistic, selection threshold | Constraints: Null statistics are standard normal and independent.; Selection uses max |T_j| across tests. | Objective: Approximate expected maximum, exceedance probabilities, and significance thresholds controlling false discoveries."
+  },
+  {
+    "problem_id": 4245,
+    "name": "Stats / AR(1",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Econometrics (AR Errors & SE Inflation)",
+      "problem_setup_entities": [
+        "OLS with AR(1) residuals",
+        "autocovariance structure",
+        "effective sample size"
+      ],
+      "invariant_constraints": [
+        "Errors are serially correlated with |phi|<1.",
+        "Regressor-error orthogonality assumed."
+      ],
+      "target_objective": "Derive variance inflation versus iid case and corrected standard errors."
+    },
+    "schema_text": "Domain: Time-Series Econometrics (AR Errors & SE Inflation) | Entities: OLS with AR(1) residuals, autocovariance structure, effective sample size | Constraints: Errors are serially correlated with |phi|<1.; Regressor-error orthogonality assumed. | Objective: Derive variance inflation versus iid case and corrected standard errors."
+  },
+  {
+    "problem_id": 4246,
+    "name": "Algorithms / DP: constrained execution schedule",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming (Execution Scheduling)",
+      "problem_setup_entities": [
+        "target quantity Q",
+        "time horizon T",
+        "trade schedule decisions"
+      ],
+      "invariant_constraints": [
+        "Must execute exactly Q shares by horizon.",
+        "Per-step action constraints and costs apply."
+      ],
+      "target_objective": "Construct DP for minimum expected execution cost / optimal schedule."
+    },
+    "schema_text": "Domain: Dynamic Programming (Execution Scheduling) | Entities: target quantity Q, time horizon T, trade schedule decisions | Constraints: Must execute exactly Q shares by horizon.; Per-step action constraints and costs apply. | Objective: Construct DP for minimum expected execution cost / optimal schedule."
+  },
+  {
+    "problem_id": 4247,
+    "name": "Algorithms / graph: shortest path with state-dependent tolls",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms (Shortest Path with Path-Dependent Cost)",
+      "problem_setup_entities": [
+        "directed graph edges",
+        "base edge weights",
+        "state-dependent toll on consecutive edge pattern"
+      ],
+      "invariant_constraints": [
+        "Additional cost depends on previous edge/node state.",
+        "Weights are nonnegative."
+      ],
+      "target_objective": "Lift state space and run shortest-path algorithm on expanded graph."
+    },
+    "schema_text": "Domain: Graph Algorithms (Shortest Path with Path-Dependent Cost) | Entities: directed graph edges, base edge weights, state-dependent toll on consecutive edge pattern | Constraints: Additional cost depends on previous edge/node state.; Weights are nonnegative. | Objective: Lift state space and run shortest-path algorithm on expanded graph."
+  },
+  {
+    "problem_id": 4248,
+    "name": "Algorithms / BFS: minimum steps with parity constraints",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms (BFS with Parity Constraints)",
+      "problem_setup_entities": [
+        "grid with obstacles",
+        "time parity state",
+        "vertical/horizontal move constraints"
+      ],
+      "invariant_constraints": [
+        "Move direction alternates by parity.",
+        "Goal is minimum steps from start to target."
+      ],
+      "target_objective": "Design O(n^2) BFS over augmented states."
+    },
+    "schema_text": "Domain: Graph Algorithms (BFS with Parity Constraints) | Entities: grid with obstacles, time parity state, vertical/horizontal move constraints | Constraints: Move direction alternates by parity.; Goal is minimum steps from start to target. | Objective: Design O(n^2) BFS over augmented states."
+  },
+  {
+    "problem_id": 4249,
+    "name": "Algorithms / data structure: online top-k with deletes",
+    "schema": {
+      "core_mathematical_domain": "Data Structures (Dynamic Top-k with Deletes)",
+      "problem_setup_entities": [
+        "id-key multiset",
+        "insert/erase operations",
+        "top-k sum query"
+      ],
+      "invariant_constraints": [
+        "Keys change via insert/delete events.",
+        "Need logarithmic update and constant-time query."
+      ],
+      "target_objective": "Maintain partition of top-k vs rest to support required complexities."
+    },
+    "schema_text": "Domain: Data Structures (Dynamic Top-k with Deletes) | Entities: id-key multiset, insert/erase operations, top-k sum query | Constraints: Keys change via insert/delete events.; Need logarithmic update and constant-time query. | Objective: Maintain partition of top-k vs rest to support required complexities."
+  },
+  {
+    "problem_id": 4250,
+    "name": "C++ / object layout: padding + virtual",
+    "schema": {
+      "core_mathematical_domain": "C++ Systems (Object Layout with Virtual Dispatch)",
+      "problem_setup_entities": [
+        "vptr",
+        "primitive members",
+        "alignment/padding"
+      ],
+      "invariant_constraints": [
+        "Platform ABI assumptions are fixed.",
+        "Polymorphic object starts with vptr."
+      ],
+      "target_objective": "Compute member offsets and total sizeof with padding."
+    },
+    "schema_text": "Domain: C++ Systems (Object Layout with Virtual Dispatch) | Entities: vptr, primitive members, alignment/padding | Constraints: Platform ABI assumptions are fixed.; Polymorphic object starts with vptr. | Objective: Compute member offsets and total sizeof with padding."
+  },
+  {
+    "problem_id": 4251,
+    "name": "Fair Coin Tossed Repeatedly Independent Outcomes.",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory (Pattern Waiting Time)",
+      "problem_setup_entities": [
+        "independent fair coin tosses",
+        "target pattern HH",
+        "stopping time T"
+      ],
+      "invariant_constraints": [
+        "T is first occurrence time of the pattern.",
+        "Coin tosses are iid Bernoulli(1/2)."
+      ],
+      "target_objective": "Compute Expected Value E[T] for first pattern appearance."
+    },
+    "schema_text": "Domain: Probability Theory (Pattern Waiting Time) | Entities: independent fair coin tosses, target pattern HH, stopping time T | Constraints: T is first occurrence time of the pattern.; Coin tosses are iid Bernoulli(1/2). | Objective: Compute Expected Value E[T] for first pattern appearance."
+  },
+  {
+    "problem_id": 4252,
+    "name": "Binary String S 0, 1 N. for Any Substring B",
+    "schema": {
+      "core_mathematical_domain": "Algorithms on Strings / Number Theory",
+      "problem_setup_entities": [
+        "binary string s",
+        "substring binary values V(b)",
+        "index constraints i<j"
+      ],
+      "invariant_constraints": [
+        "Substring values interpreted in base-2 with leading zeros allowed.",
+        "Need existence of indices satisfying stated value relation."
+      ],
+      "target_objective": "Decide whether required substring/value condition holds and provide construction/check algorithm."
+    },
+    "schema_text": "Domain: Algorithms on Strings / Number Theory | Entities: binary string s, substring binary values V(b), index constraints i<j | Constraints: Substring values interpreted in base-2 with leading zeros allowed.; Need existence of indices satisfying stated value relation. | Objective: Decide whether required substring/value condition holds and provide construction/check algorithm."
+  },
+  {
+    "problem_id": 4253,
+    "name": "Two-envelope / exchange paradox",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Decision Theory (Two-Envelope)",
+      "problem_setup_entities": [
+        "unknown amount X",
+        "pair of envelopes (X,2X)",
+        "switching decision"
+      ],
+      "invariant_constraints": [
+        "Prior over X is unspecified/critical.",
+        "Observation model affects posterior when one envelope is opened."
+      ],
+      "target_objective": "Resolve switching paradox by explicit conditioning and expected-utility calculation."
+    },
+    "schema_text": "Domain: Bayesian Decision Theory (Two-Envelope) | Entities: unknown amount X, pair of envelopes (X,2X), switching decision | Constraints: Prior over X is unspecified/critical.; Observation model affects posterior when one envelope is opened. | Objective: Resolve switching paradox by explicit conditioning and expected-utility calculation."
+  },
+  {
+    "problem_id": 4254,
+    "name": "Risk aversion",
+    "schema": {
+      "core_mathematical_domain": "Microeconomics / Utility Theory",
+      "problem_setup_entities": [
+        "utility function u(w)",
+        "wealth level w",
+        "small zero-mean risk"
+      ],
+      "invariant_constraints": [
+        "u is increasing and twice continuously differentiable.",
+        "Local risk aversion defined via certainty preference."
+      ],
+      "target_objective": "Show equivalence between local risk aversion and concavity (u''(w)<0)."
+    },
+    "schema_text": "Domain: Microeconomics / Utility Theory | Entities: utility function u(w), wealth level w, small zero-mean risk | Constraints: u is increasing and twice continuously differentiable.; Local risk aversion defined via certainty preference. | Objective: Show equivalence between local risk aversion and concavity (u''(w)<0)."
+  },
+  {
+    "problem_id": 4255,
+    "name": "Covering edges on a triangle; extension to tetrahedron",
+    "schema": {
+      "core_mathematical_domain": "Markov Chains (Cover Time)",
+      "problem_setup_entities": [
+        "random walk on triangle vertices",
+        "traversed edges",
+        "cover time tau"
+      ],
+      "invariant_constraints": [
+        "At each step move to one of two other vertices uniformly.",
+        "Edge-coverage process depends on visited transitions."
+      ],
+      "target_objective": "Compute Expected Value/probability for covering all edges; extend reasoning to tetrahedron."
+    },
+    "schema_text": "Domain: Markov Chains (Cover Time) | Entities: random walk on triangle vertices, traversed edges, cover time tau | Constraints: At each step move to one of two other vertices uniformly.; Edge-coverage process depends on visited transitions. | Objective: Compute Expected Value/probability for covering all edges; extend reasoning to tetrahedron."
+  },
+  {
+    "problem_id": 4256,
+    "name": "Fair game with paid reveals",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping (Sequential Search with Cost)",
+      "problem_setup_entities": [
+        "4 boxes with one prize",
+        "opening cost X",
+        "stop/continue decision"
+      ],
+      "invariant_constraints": [
+        "Prize location is uniformly random initially.",
+        "Boxes are opened without replacement."
+      ],
+      "target_objective": "Compute optimal policy and expected net value threshold in terms of cost."
+    },
+    "schema_text": "Domain: Optimal Stopping (Sequential Search with Cost) | Entities: 4 boxes with one prize, opening cost X, stop/continue decision | Constraints: Prize location is uniformly random initially.; Boxes are opened without replacement. | Objective: Compute optimal policy and expected net value threshold in terms of cost."
+  },
+  {
+    "problem_id": 4257,
+    "name": "Minimum Possible Cardinality Integer",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Set Cover on Integers",
+      "problem_setup_entities": [
+        "subset S of positive integers",
+        "target range 1..40",
+        "representation property"
+      ],
+      "invariant_constraints": [
+        "Each target integer must satisfy the stated constructibility condition from S.",
+        "Minimize cardinality of S."
+      ],
+      "target_objective": "Find minimum-size set S and provide proof of optimality."
+    },
+    "schema_text": "Domain: Combinatorics / Set Cover on Integers | Entities: subset S of positive integers, target range 1..40, representation property | Constraints: Each target integer must satisfy the stated constructibility condition from S.; Minimize cardinality of S. | Objective: Find minimum-size set S and provide proof of optimality."
+  },
+  {
+    "problem_id": 4258,
+    "name": "Points Sampled Independently Uniformly Random Circumference",
+    "schema": {
+      "core_mathematical_domain": "Geometric Probability",
+      "problem_setup_entities": [
+        "n i.i.d. uniform points on circle",
+        "semicircle coverage event"
+      ],
+      "invariant_constraints": [
+        "Points are independent and rotationally symmetric.",
+        "Event: all points fit in some closed semicircle."
+      ],
+      "target_objective": "Compute exact probability as a function of n."
+    },
+    "schema_text": "Domain: Geometric Probability | Entities: n i.i.d. uniform points on circle, semicircle coverage event | Constraints: Points are independent and rotationally symmetric.; Event: all points fit in some closed semicircle. | Objective: Compute exact probability as a function of n."
+  },
+  {
+    "problem_id": 4259,
+    "name": "Distinct Times T Are There Such That",
+    "schema": {
+      "core_mathematical_domain": "Kinematics / Number Theory",
+      "problem_setup_entities": [
+        "second and minute hand angles",
+        "24-hour interval",
+        "coincidence/opposition conditions"
+      ],
+      "invariant_constraints": [
+        "Hands move continuously at constant angular velocities.",
+        "Count distinct times satisfying the given angle relation."
+      ],
+      "target_objective": "Determine exact number of solution times in 24 hours."
+    },
+    "schema_text": "Domain: Kinematics / Number Theory | Entities: second and minute hand angles, 24-hour interval, coincidence/opposition conditions | Constraints: Hands move continuously at constant angular velocities.; Count distinct times satisfying the given angle relation. | Objective: Determine exact number of solution times in 24 hours."
+  },
+  {
+    "problem_id": 4260,
+    "name": "Players Alternate Turns Rolling Fair Sided",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability (Alternating Turns)",
+      "problem_setup_entities": [
+        "two-player geometric race",
+        "success event on each roll",
+        "turn order"
+      ],
+      "invariant_constraints": [
+        "Rolls are independent.",
+        "Game ends at first success."
+      ],
+      "target_objective": "Compute first-player win probability and generalize to success probability p."
+    },
+    "schema_text": "Domain: Discrete Probability (Alternating Turns) | Entities: two-player geometric race, success event on each roll, turn order | Constraints: Rolls are independent.; Game ends at first success. | Objective: Compute first-player win probability and generalize to success probability p."
+  },
+  {
+    "problem_id": 4261,
+    "name": "Without Numerical Approximation, Quantity Larger Rigorous",
+    "schema": {
+      "core_mathematical_domain": "Real Analysis / Inequalities",
+      "problem_setup_entities": [
+        "constants e and pi",
+        "exponential expressions"
+      ],
+      "invariant_constraints": [
+        "No numerical approximation allowed.",
+        "Comparison must be proved analytically."
+      ],
+      "target_objective": "Rigorously determine which exponential quantity is larger."
+    },
+    "schema_text": "Domain: Real Analysis / Inequalities | Entities: constants e and pi, exponential expressions | Constraints: No numerical approximation allowed.; Comparison must be proved analytically. | Objective: Rigorously determine which exponential quantity is larger."
+  },
+  {
+    "problem_id": 4262,
+    "name": "N N N Matrix a of Integers. a Path is a Seque",
+    "schema": {
+      "core_mathematical_domain": "Graph Algorithms on Grids",
+      "problem_setup_entities": [
+        "integer matrix A",
+        "4-neighbor paths",
+        "consecutive-increasing constraint"
+      ],
+      "invariant_constraints": [
+        "Adjacent path steps must increase by exactly 1.",
+        "Path moves only to orthogonal neighbors."
+      ],
+      "target_objective": "Compute existence/length/count objective for constrained increasing path efficiently."
+    },
+    "schema_text": "Domain: Graph Algorithms on Grids | Entities: integer matrix A, 4-neighbor paths, consecutive-increasing constraint | Constraints: Adjacent path steps must increase by exactly 1.; Path moves only to orthogonal neighbors. | Objective: Compute existence/length/count objective for constrained increasing path efficiently."
+  },
+  {
+    "problem_id": 4263,
+    "name": "Alpha definition",
+    "schema": {
+      "core_mathematical_domain": "Quant Research Methodology (Alpha Definition)",
+      "problem_setup_entities": [
+        "signal s_i(t)",
+        "future return target",
+        "horizon and portfolio mapping"
+      ],
+      "invariant_constraints": [
+        "Definition must specify timing and implementability.",
+        "Signal quality measured against out-of-sample returns."
+      ],
+      "target_objective": "Provide precise formal definition of alpha and associated evaluation setup."
+    },
+    "schema_text": "Domain: Quant Research Methodology (Alpha Definition) | Entities: signal s_i(t), future return target, horizon and portfolio mapping | Constraints: Definition must specify timing and implementability.; Signal quality measured against out-of-sample returns. | Objective: Provide precise formal definition of alpha and associated evaluation setup."
+  },
+  {
+    "problem_id": 4264,
+    "name": "Strategies Mean Standard Deviation Rare",
+    "schema": {
+      "core_mathematical_domain": "Risk Management (Tail Risk)",
+      "problem_setup_entities": [
+        "two return distributions with same mean/std",
+        "fat-tail loss component",
+        "risk metrics"
+      ],
+      "invariant_constraints": [
+        "First two moments are matched.",
+        "Tail behavior differs materially."
+      ],
+      "target_objective": "Construct parametric examples and compare risk under downside-sensitive criteria."
+    },
+    "schema_text": "Domain: Risk Management (Tail Risk) | Entities: two return distributions with same mean/std, fat-tail loss component, risk metrics | Constraints: First two moments are matched.; Tail behavior differs materially. | Objective: Construct parametric examples and compare risk under downside-sensitive criteria."
+  },
+  {
+    "problem_id": 4265,
+    "name": "Risk factors and neutralization",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra (Factor Neutralization)",
+      "problem_setup_entities": [
+        "raw score vector s(t)",
+        "factor exposure matrix B(t)",
+        "neutralized signal s~(t)"
+      ],
+      "invariant_constraints": [
+        "Neutralized signal must be orthogonal to factor space.",
+        "Cross-sectional linear exposures are removed each date."
+      ],
+      "target_objective": "Derive projection/residual formula for factor-neutral signal."
+    },
+    "schema_text": "Domain: Linear Algebra (Factor Neutralization) | Entities: raw score vector s(t), factor exposure matrix B(t), neutralized signal s~(t) | Constraints: Neutralized signal must be orthogonal to factor space.; Cross-sectional linear exposures are removed each date. | Objective: Derive projection/residual formula for factor-neutral signal."
+  },
+  {
+    "problem_id": 4266,
+    "name": "Time-series rank function",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Statistics (Rolling Rank)",
+      "problem_setup_entities": [
+        "time series values",
+        "window length w",
+        "rank transform"
+      ],
+      "invariant_constraints": [
+        "Rank computed within trailing window.",
+        "Tie-handling and normalization rules are specified."
+      ],
+      "target_objective": "Define and compute rolling rank function efficiently."
+    },
+    "schema_text": "Domain: Time-Series Statistics (Rolling Rank) | Entities: time series values, window length w, rank transform | Constraints: Rank computed within trailing window.; Tie-handling and normalization rules are specified. | Objective: Define and compute rolling rank function efficiently."
+  },
+  {
+    "problem_id": 4267,
+    "name": "Daily Alpha Portfolio Streams Already Costs",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Theory (Combining Alpha Streams)",
+      "problem_setup_entities": [
+        "two strategy return streams",
+        "means, volatilities, correlation",
+        "combination weight"
+      ],
+      "invariant_constraints": [
+        "Inputs are net returns.",
+        "Combined return is linear weight mix."
+      ],
+      "target_objective": "Derive optimal combination (e.g., max Sharpe/min variance) and resulting performance."
+    },
+    "schema_text": "Domain: Portfolio Theory (Combining Alpha Streams) | Entities: two strategy return streams, means, volatilities, correlation, combination weight | Constraints: Inputs are net returns.; Combined return is linear weight mix. | Objective: Derive optimal combination (e.g., max Sharpe/min variance) and resulting performance."
+  },
+  {
+    "problem_id": 4268,
+    "name": "Daily Returns Strategy Returns Auto",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Performance Measurement",
+      "problem_setup_entities": [
+        "daily returns with autocorrelation",
+        "mean mu",
+        "variance sigma^2"
+      ],
+      "invariant_constraints": [
+        "Returns are not iid due to serial dependence.",
+        "Long-horizon variance depends on autocovariances."
+      ],
+      "target_objective": "Adjust Sharpe/standard-error/annualization formulas for autocorrelated returns."
+    },
+    "schema_text": "Domain: Time-Series Performance Measurement | Entities: daily returns with autocorrelation, mean mu, variance sigma^2 | Constraints: Returns are not iid due to serial dependence.; Long-horizon variance depends on autocovariances. | Objective: Adjust Sharpe/standard-error/annualization formulas for autocorrelated returns."
+  },
+  {
+    "problem_id": 4269,
+    "name": "Observe Cross Sectional Alpha Score Vector",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Construction (Dollar-Neutral Weights)",
+      "problem_setup_entities": [
+        "cross-sectional scores s(t)",
+        "daily rebalanced portfolio weights",
+        "asset returns"
+      ],
+      "invariant_constraints": [
+        "Weights satisfy dollar-neutral and gross-exposure normalization constraints.",
+        "Positions are formed from same-day scores without lookahead."
+      ],
+      "target_objective": "Map scores to feasible weights and characterize expected return/risk."
+    },
+    "schema_text": "Domain: Portfolio Construction (Dollar-Neutral Weights) | Entities: cross-sectional scores s(t), daily rebalanced portfolio weights, asset returns | Constraints: Weights satisfy dollar-neutral and gross-exposure normalization constraints.; Positions are formed from same-day scores without lookahead. | Objective: Map scores to feasible weights and characterize expected return/risk."
+  },
+  {
+    "problem_id": 4270,
+    "name": "IC and significance under dependence",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference (IC Significance with Dependence)",
+      "problem_setup_entities": [
+        "daily IC time series",
+        "cross-sectional sample size N",
+        "autocorrelation"
+      ],
+      "invariant_constraints": [
+        "IC observations may be serially dependent.",
+        "Naive iid t-tests are invalid."
+      ],
+      "target_objective": "Estimate significance using dependence-robust standard errors/effective sample size."
+    },
+    "schema_text": "Domain: Statistical Inference (IC Significance with Dependence) | Entities: daily IC time series, cross-sectional sample size N, autocorrelation | Constraints: IC observations may be serially dependent.; Naive iid t-tests are invalid. | Objective: Estimate significance using dependence-robust standard errors/effective sample size."
+  },
+  {
+    "problem_id": 4271,
+    "name": "Form Dollar Neutral Portfolio Scores Setting",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Construction (Score-to-Weight Mapping)",
+      "problem_setup_entities": [
+        "score vector s(t)",
+        "dollar-neutral constraint",
+        "normalization rule"
+      ],
+      "invariant_constraints": [
+        "Weights sum to zero.",
+        "Leverage/gross exposure is controlled."
+      ],
+      "target_objective": "Derive explicit weight formula and portfolio properties."
+    },
+    "schema_text": "Domain: Portfolio Construction (Score-to-Weight Mapping) | Entities: score vector s(t), dollar-neutral constraint, normalization rule | Constraints: Weights sum to zero.; Leverage/gross exposure is controlled. | Objective: Derive explicit weight formula and portfolio properties."
+  },
+  {
+    "problem_id": 4272,
+    "name": "Combining alphas with constraints",
+    "schema": {
+      "core_mathematical_domain": "Constrained Optimization (Alpha Combination)",
+      "problem_setup_entities": [
+        "K alpha return streams",
+        "expected return vector",
+        "risk/covariance model"
+      ],
+      "invariant_constraints": [
+        "Combination subject to linear constraints (e.g., neutrality, leverage).",
+        "Objective is mean-risk trade-off."
+      ],
+      "target_objective": "Solve for optimal alpha weights under constraints."
+    },
+    "schema_text": "Domain: Constrained Optimization (Alpha Combination) | Entities: K alpha return streams, expected return vector, risk/covariance model | Constraints: Combination subject to linear constraints (e.g., neutrality, leverage).; Objective is mean-risk trade-off. | Objective: Solve for optimal alpha weights under constraints."
+  },
+  {
+    "problem_id": 4273,
+    "name": "Overfitting and multiple testing",
+    "schema": {
+      "core_mathematical_domain": "Statistical Learning Theory (Multiple Testing / Overfitting)",
+      "problem_setup_entities": [
+        "M candidate alphas",
+        "backtest t-statistics",
+        "global null model"
+      ],
+      "invariant_constraints": [
+        "Under null each t-stat ~ N(0,1) independently.",
+        "Selection of best alpha induces data-snooping bias."
+      ],
+      "target_objective": "Quantify false-positive risk and provide corrected significance criteria."
+    },
+    "schema_text": "Domain: Statistical Learning Theory (Multiple Testing / Overfitting) | Entities: M candidate alphas, backtest t-statistics, global null model | Constraints: Under null each t-stat ~ N(0,1) independently.; Selection of best alpha induces data-snooping bias. | Objective: Quantify false-positive risk and provide corrected significance criteria."
+  },
+  {
+    "problem_id": 4274,
+    "name": "Leakage and lookahead audit",
+    "schema": {
+      "core_mathematical_domain": "Backtest Validation (Leakage Audit)",
+      "problem_setup_entities": [
+        "feature construction pipeline",
+        "label r(t+1)",
+        "cross-sectional normalization"
+      ],
+      "invariant_constraints": [
+        "Any use of future information is forbidden.",
+        "Temporal alignment must preserve causality."
+      ],
+      "target_objective": "Identify leakage mechanism and propose corrected, leak-free preprocessing."
+    },
+    "schema_text": "Domain: Backtest Validation (Leakage Audit) | Entities: feature construction pipeline, label r(t+1), cross-sectional normalization | Constraints: Any use of future information is forbidden.; Temporal alignment must preserve causality. | Objective: Identify leakage mechanism and propose corrected, leak-free preprocessing."
+  },
+  {
+    "problem_id": 4275,
+    "name": "Delay/decay and holding-period overlap",
+    "schema": {
+      "core_mathematical_domain": "Signal Decay & Execution Delay Modeling",
+      "problem_setup_entities": [
+        "signal s(t)",
+        "execution delay d",
+        "decay function beta(d)"
+      ],
+      "invariant_constraints": [
+        "Predictive slope decays exponentially with delay.",
+        "Holding-period overlap affects return dependence."
+      ],
+      "target_objective": "Quantify performance impact of delay/overlap and derive adjusted evaluation metrics."
+    },
+    "schema_text": "Domain: Signal Decay & Execution Delay Modeling | Entities: signal s(t), execution delay d, decay function beta(d) | Constraints: Predictive slope decays exponentially with delay.; Holding-period overlap affects return dependence. | Objective: Quantify performance impact of delay/overlap and derive adjusted evaluation metrics."
+  },
+  {
+    "problem_id": 4276,
+    "name": "Cross-sectional regression alpha",
+    "schema": {
+      "core_mathematical_domain": "Cross-Sectional Econometrics",
+      "problem_setup_entities": [
+        "daily cross-sectional regression",
+        "signal and controls",
+        "next-period returns"
+      ],
+      "invariant_constraints": [
+        "Regression is run separately each day.",
+        "Alpha quality inferred from coefficient/IC time series."
+      ],
+      "target_objective": "Define estimator and inference for cross-sectional regression alpha."
+    },
+    "schema_text": "Domain: Cross-Sectional Econometrics | Entities: daily cross-sectional regression, signal and controls, next-period returns | Constraints: Regression is run separately each day.; Alpha quality inferred from coefficient/IC time series. | Objective: Define estimator and inference for cross-sectional regression alpha."
+  },
+  {
+    "problem_id": 4277,
+    "name": "Robustness to heavy tails",
+    "schema": {
+      "core_mathematical_domain": "Robust Statistics (Heavy Tails)",
+      "problem_setup_entities": [
+        "heavy-tailed return cross-section",
+        "signal transforms",
+        "robust correlation/regression"
+      ],
+      "invariant_constraints": [
+        "Return distribution has finite/infinite higher moments depending on df.",
+        "Transform choice changes outlier sensitivity."
+      ],
+      "target_objective": "Compare robustness/efficiency of candidate transforms under heavy tails."
+    },
+    "schema_text": "Domain: Robust Statistics (Heavy Tails) | Entities: heavy-tailed return cross-section, signal transforms, robust correlation/regression | Constraints: Return distribution has finite/infinite higher moments depending on df.; Transform choice changes outlier sensitivity. | Objective: Compare robustness/efficiency of candidate transforms under heavy tails."
+  },
+  {
+    "problem_id": 4278,
+    "name": "Factor-neutral portfolio construction",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Optimization (Factor- & Market-Neutral)",
+      "problem_setup_entities": [
+        "expected returns mu",
+        "risk matrix Sigma",
+        "exposure matrix B",
+        "weights w"
+      ],
+      "invariant_constraints": [
+        "Constraints: w'1=0 and B'w=0.",
+        "Sigma is positive definite."
+      ],
+      "target_objective": "Derive closed-form constrained mean-variance optimal weights."
+    },
+    "schema_text": "Domain: Portfolio Optimization (Factor- & Market-Neutral) | Entities: expected returns mu, risk matrix Sigma, exposure matrix B, weights w | Constraints: Constraints: w'1=0 and B'w=0.; Sigma is positive definite. | Objective: Derive closed-form constrained mean-variance optimal weights."
+  },
+  {
+    "problem_id": 4279,
+    "name": "Turnover and cost break-even",
+    "schema": {
+      "core_mathematical_domain": "Transaction Cost Analysis",
+      "problem_setup_entities": [
+        "daily turnover",
+        "gross exposure",
+        "cost model"
+      ],
+      "invariant_constraints": [
+        "Net return equals gross alpha minus turnover-linked costs.",
+        "Break-even occurs when expected alpha equals expected costs."
+      ],
+      "target_objective": "Compute cost break-even threshold and sensitivity to turnover."
+    },
+    "schema_text": "Domain: Transaction Cost Analysis | Entities: daily turnover, gross exposure, cost model | Constraints: Net return equals gross alpha minus turnover-linked costs.; Break-even occurs when expected alpha equals expected costs. | Objective: Compute cost break-even threshold and sensitivity to turnover."
+  },
+  {
+    "problem_id": 4280,
+    "name": "Time-series model selection",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Model Selection",
+      "problem_setup_entities": [
+        "return series",
+        "AR(1) and ARMA(1,1) forecasts",
+        "evaluation criterion"
+      ],
+      "invariant_constraints": [
+        "Models are fit on same training data.",
+        "Complexity penalization/out-of-sample error should guide choice."
+      ],
+      "target_objective": "Compare models using likelihood/information criteria and forecast performance."
+    },
+    "schema_text": "Domain: Time-Series Model Selection | Entities: return series, AR(1) and ARMA(1,1) forecasts, evaluation criterion | Constraints: Models are fit on same training data.; Complexity penalization/out-of-sample error should guide choice. | Objective: Compare models using likelihood/information criteria and forecast performance."
+  },
+  {
+    "problem_id": 4281,
+    "name": "Volatility forecasting and risk scaling",
+    "schema": {
+      "core_mathematical_domain": "Volatility Forecasting & Risk Targeting",
+      "problem_setup_entities": [
+        "raw strategy return X_t",
+        "volatility estimate",
+        "scaled position/return"
+      ],
+      "invariant_constraints": [
+        "Risk target is fixed ex ante.",
+        "Scaling uses forecast volatility."
+      ],
+      "target_objective": "Derive volatility-scaling rule and analyze effect on expected return and risk."
+    },
+    "schema_text": "Domain: Volatility Forecasting & Risk Targeting | Entities: raw strategy return X_t, volatility estimate, scaled position/return | Constraints: Risk target is fixed ex ante.; Scaling uses forecast volatility. | Objective: Derive volatility-scaling rule and analyze effect on expected return and risk."
+  },
+  {
+    "problem_id": 4282,
+    "name": "Classic logic: 12 balls",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Logic (Balance Puzzle)",
+      "problem_setup_entities": [
+        "12 balls with one counterfeit",
+        "balance scale outcomes",
+        "three weighings"
+      ],
+      "invariant_constraints": [
+        "Counterfeit may be heavier or lighter.",
+        "Only three adaptive weighings allowed."
+      ],
+      "target_objective": "Design decision tree that always identifies odd ball and weight direction."
+    },
+    "schema_text": "Domain: Combinatorial Logic (Balance Puzzle) | Entities: 12 balls with one counterfeit, balance scale outcomes, three weighings | Constraints: Counterfeit may be heavier or lighter.; Only three adaptive weighings allowed. | Objective: Design decision tree that always identifies odd ball and weight direction."
+  },
+  {
+    "problem_id": 4283,
+    "name": "Bridge and torch",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Optimization (Bridge and Torch)",
+      "problem_setup_entities": [
+        "crossing times {1,2,7,10}",
+        "torch constraint",
+        "pair crossing actions"
+      ],
+      "invariant_constraints": [
+        "At most two cross at once.",
+        "Return trips require torch."
+      ],
+      "target_objective": "Find minimum total crossing time and optimal crossing schedule."
+    },
+    "schema_text": "Domain: Combinatorial Optimization (Bridge and Torch) | Entities: crossing times {1,2,7,10}, torch constraint, pair crossing actions | Constraints: At most two cross at once.; Return trips require torch. | Objective: Find minimum total crossing time and optimal crossing schedule."
+  },
+  {
+    "problem_id": 4284,
+    "name": "Bayesian updating with a \"model switch\"",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference (Mixture Coin Model)",
+      "problem_setup_entities": [
+        "latent coin type",
+        "prior q",
+        "observed heads count k of n"
+      ],
+      "invariant_constraints": [
+        "Coin is either fair or biased with known p values.",
+        "Posterior computed from binomial likelihood mixture."
+      ],
+      "target_objective": "Compute posterior model probability and predictive/decision implications."
+    },
+    "schema_text": "Domain: Bayesian Inference (Mixture Coin Model) | Entities: latent coin type, prior q, observed heads count k of n | Constraints: Coin is either fair or biased with known p values.; Posterior computed from binomial likelihood mixture. | Objective: Compute posterior model probability and predictive/decision implications."
+  },
+  {
+    "problem_id": 4285,
+    "name": "Stopping rule puzzle",
+    "schema": {
+      "core_mathematical_domain": "Optimal Stopping (Secretary-Type)",
+      "problem_setup_entities": [
+        "sequence of iid observations",
+        "single stopping choice",
+        "horizon n"
+      ],
+      "invariant_constraints": [
+        "Observations revealed sequentially.",
+        "Payoff equals selected value X_t."
+      ],
+      "target_objective": "Formulate dynamic program/threshold rule maximizing expected payoff."
+    },
+    "schema_text": "Domain: Optimal Stopping (Secretary-Type) | Entities: sequence of iid observations, single stopping choice, horizon n | Constraints: Observations revealed sequentially.; Payoff equals selected value X_t. | Objective: Formulate dynamic program/threshold rule maximizing expected payoff."
+  },
+  {
+    "problem_id": 4286,
+    "name": "Rolling IC at Scale",
+    "schema": {
+      "core_mathematical_domain": "Numerical Methods for Quant Research",
+      "problem_setup_entities": [
+        "signal matrix S",
+        "return matrix R",
+        "rolling IC window",
+        "NaN handling"
+      ],
+      "invariant_constraints": [
+        "IC_t is cross-sectional correlation per date.",
+        "Computation must be vectorized and robust to missing data."
+      ],
+      "target_objective": "Implement scalable rolling IC calculation with correct alignment and complexity."
+    },
+    "schema_text": "Domain: Numerical Methods for Quant Research | Entities: signal matrix S, return matrix R, rolling IC window, NaN handling | Constraints: IC_t is cross-sectional correlation per date.; Computation must be vectorized and robust to missing data. | Objective: Implement scalable rolling IC calculation with correct alignment and complexity."
+  },
+  {
+    "problem_id": 4287,
+    "name": "Market-neutral Weight Normalization",
+    "schema": {
+      "core_mathematical_domain": "Portfolio Engineering (Market-Neutral Normalization)",
+      "problem_setup_entities": [
+        "score vector with missing values",
+        "weight vector",
+        "normalization constants"
+      ],
+      "invariant_constraints": [
+        "Weights must sum to zero on tradable names.",
+        "Gross exposure target is fixed."
+      ],
+      "target_objective": "Construct robust market-neutral normalized weights from noisy scores."
+    },
+    "schema_text": "Domain: Portfolio Engineering (Market-Neutral Normalization) | Entities: score vector with missing values, weight vector, normalization constants | Constraints: Weights must sum to zero on tradable names.; Gross exposure target is fixed. | Objective: Construct robust market-neutral normalized weights from noisy scores."
+  },
+  {
+    "problem_id": 4288,
+    "name": "Algorithms: top-k alpha selection with correlation constraint",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial Optimization (Diverse Top-k Selection)",
+      "problem_setup_entities": [
+        "candidate alpha expected returns",
+        "correlation matrix",
+        "subset size k"
+      ],
+      "invariant_constraints": [
+        "Pairwise correlation within selected set must satisfy threshold.",
+        "Objective maximizes sum of selected expected returns."
+      ],
+      "target_objective": "Design algorithm/heuristic for constrained top-k selection and discuss complexity."
+    },
+    "schema_text": "Domain: Combinatorial Optimization (Diverse Top-k Selection) | Entities: candidate alpha expected returns, correlation matrix, subset size k | Constraints: Pairwise correlation within selected set must satisfy threshold.; Objective maximizes sum of selected expected returns. | Objective: Design algorithm/heuristic for constrained top-k selection and discuss complexity."
+  },
+  {
+    "problem_id": 4289,
+    "name": "Walk-forward Backtest Without Leakage",
+    "schema": {
+      "core_mathematical_domain": "Backtesting Methodology (Walk-Forward Validation)",
+      "problem_setup_entities": [
+        "time-ordered features X_t",
+        "labels y_t",
+        "train window L and test window H"
+      ],
+      "invariant_constraints": [
+        "Training uses only past data.",
+        "Evaluation proceeds sequentially without leakage."
+      ],
+      "target_objective": "Implement walk-forward loop and aggregate out-of-sample metrics."
+    },
+    "schema_text": "Domain: Backtesting Methodology (Walk-Forward Validation) | Entities: time-ordered features X_t, labels y_t, train window L and test window H | Constraints: Training uses only past data.; Evaluation proceeds sequentially without leakage. | Objective: Implement walk-forward loop and aggregate out-of-sample metrics."
+  },
+  {
+    "problem_id": 4290,
+    "name": "Spearman IC and hypothesis testing",
+    "schema": {
+      "core_mathematical_domain": "Nonparametric Inference (Spearman IC)",
+      "problem_setup_entities": [
+        "daily cross-sectional scores and returns",
+        "Spearman rank correlation",
+        "time-series of ICs"
+      ],
+      "invariant_constraints": [
+        "Rank-based correlation is used each day.",
+        "Hypothesis test must account for serial dependence."
+      ],
+      "target_objective": "Estimate mean Spearman IC and test significance."
+    },
+    "schema_text": "Domain: Nonparametric Inference (Spearman IC) | Entities: daily cross-sectional scores and returns, Spearman rank correlation, time-series of ICs | Constraints: Rank-based correlation is used each day.; Hypothesis test must account for serial dependence. | Objective: Estimate mean Spearman IC and test significance."
+  },
+  {
+    "problem_id": 4291,
+    "name": "Factor-neutralizing a signal",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra (Weighted Factor Neutralization)",
+      "problem_setup_entities": [
+        "raw signal s(t)",
+        "exposure matrix B(t)",
+        "weighting metric"
+      ],
+      "invariant_constraints": [
+        "Neutralized signal is orthogonal to factor span under chosen metric.",
+        "B has full column rank."
+      ],
+      "target_objective": "Derive weighted projection residual formula for factor-neutral signal."
+    },
+    "schema_text": "Domain: Linear Algebra (Weighted Factor Neutralization) | Entities: raw signal s(t), exposure matrix B(t), weighting metric | Constraints: Neutralized signal is orthogonal to factor span under chosen metric.; B has full column rank. | Objective: Derive weighted projection residual formula for factor-neutral signal."
+  },
+  {
+    "problem_id": 4292,
+    "name": "Defining alpha quality under overlap",
+    "schema": {
+      "core_mathematical_domain": "Performance Attribution under Overlapping Holdings",
+      "problem_setup_entities": [
+        "daily positions",
+        "multi-day holding period",
+        "realized returns"
+      ],
+      "invariant_constraints": [
+        "Consecutive portfolio returns share overlapping positions.",
+        "Return observations are serially correlated by construction."
+      ],
+      "target_objective": "Define alpha quality metrics and inference adjustments under overlap."
+    },
+    "schema_text": "Domain: Performance Attribution under Overlapping Holdings | Entities: daily positions, multi-day holding period, realized returns | Constraints: Consecutive portfolio returns share overlapping positions.; Return observations are serially correlated by construction. | Objective: Define alpha quality metrics and inference adjustments under overlap."
+  },
+  {
+    "problem_id": 4293,
+    "name": "Half-life / signal decay",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Diagnostics (Half-Life)",
+      "problem_setup_entities": [
+        "IC(t) process",
+        "autocorrelation rho(1)",
+        "half-life L"
+      ],
+      "invariant_constraints": [
+        "IC series is stationary.",
+        "Half-life solves rho(L)=1/2 under decay model."
+      ],
+      "target_objective": "Define and compute signal half-life from estimated autocorrelation."
+    },
+    "schema_text": "Domain: Time-Series Diagnostics (Half-Life) | Entities: IC(t) process, autocorrelation rho(1), half-life L | Constraints: IC series is stationary.; Half-life solves rho(L)=1/2 under decay model. | Objective: Define and compute signal half-life from estimated autocorrelation."
+  },
+  {
+    "problem_id": 4294,
+    "name": "Purged walk-forward CV",
+    "schema": {
+      "core_mathematical_domain": "Model Validation (Purged Walk-Forward CV)",
+      "problem_setup_entities": [
+        "panel features and next-day labels",
+        "ridge hyperparameter tuning",
+        "time blocks with embargo"
+      ],
+      "invariant_constraints": [
+        "Training data near test window are purged to prevent leakage.",
+        "Cross-sectional model fit is repeated over time."
+      ],
+      "target_objective": "Design leakage-safe CV protocol for hyperparameter selection."
+    },
+    "schema_text": "Domain: Model Validation (Purged Walk-Forward CV) | Entities: panel features and next-day labels, ridge hyperparameter tuning, time blocks with embargo | Constraints: Training data near test window are purged to prevent leakage.; Cross-sectional model fit is repeated over time. | Objective: Design leakage-safe CV protocol for hyperparameter selection."
+  },
+  {
+    "problem_id": 4295,
+    "name": "Robust cross-sectional regression alpha",
+    "schema": {
+      "core_mathematical_domain": "Robust Regression (Huber Loss)",
+      "problem_setup_entities": [
+        "cross-sectional return model",
+        "Huber threshold delta",
+        "daily estimator"
+      ],
+      "invariant_constraints": [
+        "Loss is quadratic near zero and linear in tails.",
+        "Optimization repeated each date."
+      ],
+      "target_objective": "Formulate robust alpha estimation and compare to OLS under outliers."
+    },
+    "schema_text": "Domain: Robust Regression (Huber Loss) | Entities: cross-sectional return model, Huber threshold delta, daily estimator | Constraints: Loss is quadratic near zero and linear in tails.; Optimization repeated each date. | Objective: Formulate robust alpha estimation and compare to OLS under outliers."
+  },
+  {
+    "problem_id": 4296,
+    "name": "PCA risk model and eigenvalue shrinkage",
+    "schema": {
+      "core_mathematical_domain": "Risk Modeling (PCA + Eigenvalue Shrinkage)",
+      "problem_setup_entities": [
+        "sample covariance matrix",
+        "top-K eigenvectors",
+        "shrunk eigenvalues"
+      ],
+      "invariant_constraints": [
+        "T is comparable to N so sampling noise is material.",
+        "Factor covariance reconstructed from principal components."
+      ],
+      "target_objective": "Write PCA risk model and explain eigenvalue shrinkage for improved stability."
+    },
+    "schema_text": "Domain: Risk Modeling (PCA + Eigenvalue Shrinkage) | Entities: sample covariance matrix, top-K eigenvectors, shrunk eigenvalues | Constraints: T is comparable to N so sampling noise is material.; Factor covariance reconstructed from principal components. | Objective: Write PCA risk model and explain eigenvalue shrinkage for improved stability."
+  },
+  {
+    "problem_id": 4297,
+    "name": "Net alpha after costs and slippage",
+    "schema": {
+      "core_mathematical_domain": "Performance Measurement (Net Alpha after Costs)",
+      "problem_setup_entities": [
+        "portfolio weights and returns",
+        "transaction costs",
+        "slippage model"
+      ],
+      "invariant_constraints": [
+        "Net return subtracts both explicit and implicit trading costs.",
+        "Costs depend on turnover/market impact."
+      ],
+      "target_objective": "Derive net alpha formula and break down contribution of costs."
+    },
+    "schema_text": "Domain: Performance Measurement (Net Alpha after Costs) | Entities: portfolio weights and returns, transaction costs, slippage model | Constraints: Net return subtracts both explicit and implicit trading costs.; Costs depend on turnover/market impact. | Objective: Derive net alpha formula and break down contribution of costs."
+  },
+  {
+    "problem_id": 4298,
+    "name": "Detecting regime shift",
+    "schema": {
+      "core_mathematical_domain": "Change-Point Detection (Regime Shift)",
+      "problem_setup_entities": [
+        "alpha return stream A_t",
+        "pre/post means mu0, mu1",
+        "unknown change time tau"
+      ],
+      "invariant_constraints": [
+        "Variance is constant and known up to sigma^2.",
+        "Alternative has lower post-change mean."
+      ],
+      "target_objective": "Write likelihood-ratio/CUSUM statistic and detection rule for mean shift."
+    },
+    "schema_text": "Domain: Change-Point Detection (Regime Shift) | Entities: alpha return stream A_t, pre/post means mu0, mu1, unknown change time tau | Constraints: Variance is constant and known up to sigma^2.; Alternative has lower post-change mean. | Objective: Write likelihood-ratio/CUSUM statistic and detection rule for mean shift."
+  },
+  {
+    "problem_id": 4299,
+    "name": "Rolling Z-score With Missing Data",
+    "schema": {
+      "core_mathematical_domain": "Time-Series Data Engineering (Rolling Z-Score)",
+      "problem_setup_entities": [
+        "matrix X with NaNs",
+        "rolling window stats",
+        "per-asset normalization"
+      ],
+      "invariant_constraints": [
+        "Missing values must be excluded from window moments.",
+        "Computation should be vectorized and stable."
+      ],
+      "target_objective": "Compute rolling z-scores robustly with missing data handling."
+    },
+    "schema_text": "Domain: Time-Series Data Engineering (Rolling Z-Score) | Entities: matrix X with NaNs, rolling window stats, per-asset normalization | Constraints: Missing values must be excluded from window moments.; Computation should be vectorized and stable. | Objective: Compute rolling z-scores robustly with missing data handling."
+  },
+  {
+    "problem_id": 4300,
+    "name": "Streaming Covariance and Correlation",
+    "schema": {
+      "core_mathematical_domain": "Online Statistics (Streaming Covariance/Correlation)",
+      "problem_setup_entities": [
+        "streaming pairs (x_t,y_t)",
+        "running means/variances",
+        "online covariance"
+      ],
+      "invariant_constraints": [
+        "Single-pass update with O(1) memory.",
+        "Numerical stability is required."
+      ],
+      "target_objective": "Implement recursive estimators for covariance and correlation at each step."
+    },
+    "schema_text": "Domain: Online Statistics (Streaming Covariance/Correlation) | Entities: streaming pairs (x_t,y_t), running means/variances, online covariance | Constraints: Single-pass update with O(1) memory.; Numerical stability is required. | Objective: Implement recursive estimators for covariance and correlation at each step."
+  },
+  {
+    "problem_id": 4301,
+    "name": "rolling rank in a window",
+    "schema": {
+      "core_mathematical_domain": "Algorithms (Rolling Rank in Sliding Window)",
+      "problem_setup_entities": [
+        "array a[1..T]",
+        "window size w",
+        "normalized rank with ties"
+      ],
+      "invariant_constraints": [
+        "Rank is computed within trailing window.",
+        "Average-rank tie convention applies."
+      ],
+      "target_objective": "Design efficient sliding-window algorithm for rolling normalized rank."
+    },
+    "schema_text": "Domain: Algorithms (Rolling Rank in Sliding Window) | Entities: array a[1..T], window size w, normalized rank with ties | Constraints: Rank is computed within trailing window.; Average-rank tie convention applies. | Objective: Design efficient sliding-window algorithm for rolling normalized rank."
+  },
+  {
+    "problem_id": 4302,
+    "name": "Maximum Drawdown With Recovery",
+    "schema": {
+      "core_mathematical_domain": "Risk Analytics (Drawdown and Recovery)",
+      "problem_setup_entities": [
+        "equity curve E_t",
+        "running peak/trough",
+        "recovery time"
+      ],
+      "invariant_constraints": [
+        "Drawdown is measured relative to historical peaks.",
+        "Recovery occurs when equity exceeds prior peak."
+      ],
+      "target_objective": "Compute maximum drawdown and associated recovery metrics."
+    },
+    "schema_text": "Domain: Risk Analytics (Drawdown and Recovery) | Entities: equity curve E_t, running peak/trough, recovery time | Constraints: Drawdown is measured relative to historical peaks.; Recovery occurs when equity exceeds prior peak. | Objective: Compute maximum drawdown and associated recovery metrics."
+  },
+  {
+    "problem_id": 4303,
+    "name": "Algorithms: selecting diversified alphas by submodular objective",
+    "schema": {
+      "core_mathematical_domain": "Submodular Optimization (Diversified Alpha Selection)",
+      "problem_setup_entities": [
+        "candidate alpha means",
+        "pairwise similarity scores",
+        "subset size k"
+      ],
+      "invariant_constraints": [
+        "Objective rewards return and penalizes redundancy.",
+        "Set function is monotone submodular or approximately so."
+      ],
+      "target_objective": "Select k alphas using greedy approximation and justify guarantee."
+    },
+    "schema_text": "Domain: Submodular Optimization (Diversified Alpha Selection) | Entities: candidate alpha means, pairwise similarity scores, subset size k | Constraints: Objective rewards return and penalizes redundancy.; Set function is monotone submodular or approximately so. | Objective: Select k alphas using greedy approximation and justify guarantee."
+  },
+  {
+    "problem_id": 4304,
+    "name": "Logic: hats and certainty",
+    "schema": {
+      "core_mathematical_domain": "Epistemic Logic / Deductive Reasoning",
+      "problem_setup_entities": [
+        "three prisoners",
+        "visible hat colors",
+        "public knowledge constraints"
+      ],
+      "invariant_constraints": [
+        "Each prisoner reasons about others' reasoning.",
+        "At least one hat of a specified color exists."
+      ],
+      "target_objective": "Determine who can infer their hat color and when."
+    },
+    "schema_text": "Domain: Epistemic Logic / Deductive Reasoning | Entities: three prisoners, visible hat colors, public knowledge constraints | Constraints: Each prisoner reasons about others' reasoning.; At least one hat of a specified color exists. | Objective: Determine who can infer their hat color and when."
+  },
+  {
+    "problem_id": 4305,
+    "name": "Classic: 100 prisoners and drawers",
+    "schema": {
+      "core_mathematical_domain": "Probability & Strategy (100 Prisoners)",
+      "problem_setup_entities": [
+        "random permutation in drawers",
+        "prisoner search strategy",
+        "50-drawer limit"
+      ],
+      "invariant_constraints": [
+        "Each prisoner may open at most 50 drawers.",
+        "Team survives only if all find own number."
+      ],
+      "target_objective": "Analyze optimal cycle-following strategy and success probability."
+    },
+    "schema_text": "Domain: Probability & Strategy (100 Prisoners) | Entities: random permutation in drawers, prisoner search strategy, 50-drawer limit | Constraints: Each prisoner may open at most 50 drawers.; Team survives only if all find own number. | Objective: Analyze optimal cycle-following strategy and success probability."
+  },
+  {
+    "problem_id": 4306,
+    "name": "Monty Hall with biased host",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Probability (Monty Hall with Biased Host)",
+      "problem_setup_entities": [
+        "initial door choice",
+        "host reveal policy bias",
+        "switch/stay action"
+      ],
+      "invariant_constraints": [
+        "Host always reveals a goat but choice among goats may be biased.",
+        "Posterior depends on host policy conditional on car location."
+      ],
+      "target_objective": "Compute posterior winning probabilities and optimal switch decision under bias."
+    },
+    "schema_text": "Domain: Bayesian Probability (Monty Hall with Biased Host) | Entities: initial door choice, host reveal policy bias, switch/stay action | Constraints: Host always reveals a goat but choice among goats may be biased.; Posterior depends on host policy conditional on car location. | Objective: Compute posterior winning probabilities and optimal switch decision under bias."
+  }
+]
