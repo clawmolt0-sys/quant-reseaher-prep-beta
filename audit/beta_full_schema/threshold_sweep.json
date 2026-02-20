@@ -1,0 +1,152 @@
+{
+  "flagged_pair_count": 78,
+  "results": [
+    {
+      "threshold": 0.8,
+      "predicted_pairs": 2491,
+      "hits": 37,
+      "precision_proxy": 0.014853472501003613,
+      "recall_proxy": 0.47435897435897434
+    },
+    {
+      "threshold": 0.81,
+      "predicted_pairs": 2098,
+      "hits": 35,
+      "precision_proxy": 0.016682554814108675,
+      "recall_proxy": 0.44871794871794873
+    },
+    {
+      "threshold": 0.82,
+      "predicted_pairs": 1723,
+      "hits": 33,
+      "precision_proxy": 0.019152640742890307,
+      "recall_proxy": 0.4230769230769231
+    },
+    {
+      "threshold": 0.83,
+      "predicted_pairs": 1421,
+      "hits": 31,
+      "precision_proxy": 0.021815622800844477,
+      "recall_proxy": 0.3974358974358974
+    },
+    {
+      "threshold": 0.84,
+      "predicted_pairs": 1135,
+      "hits": 30,
+      "precision_proxy": 0.02643171806167401,
+      "recall_proxy": 0.38461538461538464
+    },
+    {
+      "threshold": 0.85,
+      "predicted_pairs": 901,
+      "hits": 25,
+      "precision_proxy": 0.02774694783573807,
+      "recall_proxy": 0.32051282051282054
+    },
+    {
+      "threshold": 0.86,
+      "predicted_pairs": 715,
+      "hits": 23,
+      "precision_proxy": 0.032167832167832165,
+      "recall_proxy": 0.2948717948717949
+    },
+    {
+      "threshold": 0.87,
+      "predicted_pairs": 559,
+      "hits": 20,
+      "precision_proxy": 0.03577817531305903,
+      "recall_proxy": 0.2564102564102564
+    },
+    {
+      "threshold": 0.88,
+      "predicted_pairs": 420,
+      "hits": 17,
+      "precision_proxy": 0.04047619047619048,
+      "recall_proxy": 0.21794871794871795
+    },
+    {
+      "threshold": 0.89,
+      "predicted_pairs": 320,
+      "hits": 16,
+      "precision_proxy": 0.05,
+      "recall_proxy": 0.20512820512820512
+    },
+    {
+      "threshold": 0.9,
+      "predicted_pairs": 219,
+      "hits": 10,
+      "precision_proxy": 0.045662100456621,
+      "recall_proxy": 0.1282051282051282
+    },
+    {
+      "threshold": 0.91,
+      "predicted_pairs": 167,
+      "hits": 8,
+      "precision_proxy": 0.04790419161676647,
+      "recall_proxy": 0.10256410256410256
+    },
+    {
+      "threshold": 0.92,
+      "predicted_pairs": 124,
+      "hits": 5,
+      "precision_proxy": 0.04032258064516129,
+      "recall_proxy": 0.0641025641025641
+    },
+    {
+      "threshold": 0.93,
+      "predicted_pairs": 90,
+      "hits": 5,
+      "precision_proxy": 0.05555555555555555,
+      "recall_proxy": 0.0641025641025641
+    },
+    {
+      "threshold": 0.94,
+      "predicted_pairs": 58,
+      "hits": 4,
+      "precision_proxy": 0.06896551724137931,
+      "recall_proxy": 0.05128205128205128
+    },
+    {
+      "threshold": 0.95,
+      "predicted_pairs": 36,
+      "hits": 1,
+      "precision_proxy": 0.027777777777777776,
+      "recall_proxy": 0.01282051282051282
+    },
+    {
+      "threshold": 0.96,
+      "predicted_pairs": 25,
+      "hits": 1,
+      "precision_proxy": 0.04,
+      "recall_proxy": 0.01282051282051282
+    },
+    {
+      "threshold": 0.97,
+      "predicted_pairs": 17,
+      "hits": 1,
+      "precision_proxy": 0.058823529411764705,
+      "recall_proxy": 0.01282051282051282
+    },
+    {
+      "threshold": 0.98,
+      "predicted_pairs": 13,
+      "hits": 1,
+      "precision_proxy": 0.07692307692307693,
+      "recall_proxy": 0.01282051282051282
+    },
+    {
+      "threshold": 0.99,
+      "predicted_pairs": 6,
+      "hits": 0,
+      "precision_proxy": 0.0,
+      "recall_proxy": 0.0
+    }
+  ],
+  "selected": {
+    "threshold": 0.8,
+    "predicted_pairs": 2491,
+    "hits": 37,
+    "precision_proxy": 0.014853472501003613,
+    "recall_proxy": 0.47435897435897434
+  }
+}

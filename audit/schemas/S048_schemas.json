@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 4707,
+    "name": "/ OLS - A series of questions related to linear regression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4708,
+    "name": "Dynamic Programming - An optimization interview question",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4709,
+    "name": "Sequences - Membership testing in linear recurrences",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4710,
+    "name": "Sorting - Fundamental algorithm design",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4711,
+    "name": "Graph Algorithms",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4712,
+    "name": "Dynamic Programming",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Recurrence or transition rule",
+        "Objective value over feasible decisions"
+      ],
+      "invariant_constraints": [
+        "Optimal substructure and boundary conditions follow the formulation",
+        "Feasibility constraints on transitions must be satisfied"
+      ],
+      "target_objective": "Compute an optimal value or policy under the stated recurrence and constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Optimization | Entities: State variables, Recurrence or transition rule, Objective value over feasible decisions | Constraints: Optimal substructure and boundary conditions follow the formulation, Feasibility constraints on transitions must be satisfied | Objective: Compute an optimal value or policy under the stated recurrence and constraints"
+  },
+  {
+    "problem_id": 4713,
+    "name": "Algorithms - A coding question with a tricky edge case",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4714,
+    "name": "Sorting",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4715,
+    "name": "Game Logic / DP - A multi-part coding question from a final round",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4716,
+    "name": "Conditional Probability - A foundational question in multivariate statistics",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4717,
+    "name": "Random Matrix Theory",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4718,
+    "name": "Graph Algorithms - Handling negative weights",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4719,
+    "name": "Combinatorics - An initial warm-up brain teaser in a longer interview",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4720,
+    "name": "Markov Chains",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State space",
+        "Transition dynamics or intensity",
+        "Time index/horizon"
+      ],
+      "invariant_constraints": [
+        "Process assumptions (Markov, Poisson, Brownian) are as specified",
+        "Probabilities/intensities satisfy normalization/nonnegativity"
+      ],
+      "target_objective": "Compute probabilities, distributions, or expectations over the process evolution"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State space, Transition dynamics or intensity, Time index/horizon | Constraints: Process assumptions (Markov, Poisson, Brownian) are as specified, Probabilities/intensities satisfy normalization/nonnegativity | Objective: Compute probabilities, distributions, or expectations over the process evolution"
+  },
+  {
+    "problem_id": 4721,
+    "name": "Combinatorics",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4722,
+    "name": "- Test of knowledge on properties of correlation matrices",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrices",
+      "problem_setup_entities": [
+        "Matrix/vector objects",
+        "Spectral quantities (eigenvalues/eigenvectors)",
+        "Algebraic constraints from the prompt"
+      ],
+      "invariant_constraints": [
+        "Dimension compatibility must hold",
+        "Matrix properties (symmetry/PSD/invertibility) follow stated assumptions"
+      ],
+      "target_objective": "Derive or verify matrix relationships and compute implied quantities"
+    },
+    "schema_text": "Domain: Linear Algebra and Matrices | Entities: Matrix/vector objects, Spectral quantities (eigenvalues/eigenvectors), Algebraic constraints from the prompt | Constraints: Dimension compatibility must hold, Matrix properties (symmetry/PSD/invertibility) follow stated assumptions | Objective: Derive or verify matrix relationships and compute implied quantities"
+  },
+  {
+    "problem_id": 4723,
+    "name": "Logic/Optimization Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Recurrence or transition rule",
+        "Objective value over feasible decisions"
+      ],
+      "invariant_constraints": [
+        "Optimal substructure and boundary conditions follow the formulation",
+        "Feasibility constraints on transitions must be satisfied"
+      ],
+      "target_objective": "Compute an optimal value or policy under the stated recurrence and constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Optimization | Entities: State variables, Recurrence or transition rule, Objective value over feasible decisions | Constraints: Optimal substructure and boundary conditions follow the formulation, Feasibility constraints on transitions must be satisfied | Objective: Compute an optimal value or policy under the stated recurrence and constraints"
+  },
+  {
+    "problem_id": 4724,
+    "name": "Game Theory - A game theory problem from a quant researcher interview",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Making",
+      "problem_setup_entities": [
+        "Players/agents",
+        "Action sets and information structure",
+        "Payoff or utility functions"
+      ],
+      "invariant_constraints": [
+        "Strategies must be feasible under game rules",
+        "Equilibrium/optimality notion is fixed by the prompt"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+    },
+    "schema_text": "Domain: Game Theory and Decision Making | Entities: Players/agents, Action sets and information structure, Payoff or utility functions | Constraints: Strategies must be feasible under game rules, Equilibrium/optimality notion is fixed by the prompt | Objective: Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+  },
+  {
+    "problem_id": 4725,
+    "name": "Stochastic Processes",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State space",
+        "Transition dynamics or intensity",
+        "Time index/horizon"
+      ],
+      "invariant_constraints": [
+        "Process assumptions (Markov, Poisson, Brownian) are as specified",
+        "Probabilities/intensities satisfy normalization/nonnegativity"
+      ],
+      "target_objective": "Compute probabilities, distributions, or expectations over the process evolution"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State space, Transition dynamics or intensity, Time index/horizon | Constraints: Process assumptions (Markov, Poisson, Brownian) are as specified, Probabilities/intensities satisfy normalization/nonnegativity | Objective: Compute probabilities, distributions, or expectations over the process evolution"
+  },
+  {
+    "problem_id": 4726,
+    "name": "Algebra",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4727,
+    "name": "Utility Theory / Risk",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4728,
+    "name": "Machine Learning - A factory uses three machine types: A, B, and C",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4729,
+    "name": "Statistics / OLS",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4730,
+    "name": "Game Theory / Logic - A fruit vendor has a basket with 30 apples and 30 oranges",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Making",
+      "problem_setup_entities": [
+        "Players/agents",
+        "Action sets and information structure",
+        "Payoff or utility functions"
+      ],
+      "invariant_constraints": [
+        "Strategies must be feasible under game rules",
+        "Equilibrium/optimality notion is fixed by the prompt"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+    },
+    "schema_text": "Domain: Game Theory and Decision Making | Entities: Players/agents, Action sets and information structure, Payoff or utility functions | Constraints: Strategies must be feasible under game rules, Equilibrium/optimality notion is fixed by the prompt | Objective: Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+  },
+  {
+    "problem_id": 4731,
+    "name": "Two-Stage Dice Roll",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4732,
+    "name": "Combinatorics / Logic - There are 225 mystical trees, all initially dormant",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4733,
+    "name": "Number Theory",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4734,
+    "name": "Geometry",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4735,
+    "name": "Bayesian Probability - Three identical chips A, B, C are tested in pairs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4736,
+    "name": "Bayesian Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4737,
+    "name": "Conditional Probability - A team's season record is 4 wins and 5 losses",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4738,
+    "name": "Number Sequences",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4739,
+    "name": "System Design - A general but common high-level design question",
+    "schema": {
+      "core_mathematical_domain": "System Design and Software Engineering",
+      "problem_setup_entities": [
+        "System components",
+        "Interfaces/data flow",
+        "Concurrency/state management mechanisms"
+      ],
+      "invariant_constraints": [
+        "Correctness and thread-safety requirements must hold",
+        "Latency, throughput, and reliability targets follow prompt constraints"
+      ],
+      "target_objective": "Design or evaluate an architecture satisfying functional and performance constraints"
+    },
+    "schema_text": "Domain: System Design and Software Engineering | Entities: System components, Interfaces/data flow, Concurrency/state management mechanisms | Constraints: Correctness and thread-safety requirements must hold, Latency, throughput, and reliability targets follow prompt constraints | Objective: Design or evaluate an architecture satisfying functional and performance constraints"
+  },
+  {
+    "problem_id": 4740,
+    "name": "System Design - A C++ specific design question focusing on concurrency",
+    "schema": {
+      "core_mathematical_domain": "System Design and Software Engineering",
+      "problem_setup_entities": [
+        "System components",
+        "Interfaces/data flow",
+        "Concurrency/state management mechanisms"
+      ],
+      "invariant_constraints": [
+        "Correctness and thread-safety requirements must hold",
+        "Latency, throughput, and reliability targets follow prompt constraints"
+      ],
+      "target_objective": "Design or evaluate an architecture satisfying functional and performance constraints"
+    },
+    "schema_text": "Domain: System Design and Software Engineering | Entities: System components, Interfaces/data flow, Concurrency/state management mechanisms | Constraints: Correctness and thread-safety requirements must hold, Latency, throughput, and reliability targets follow prompt constraints | Objective: Design or evaluate an architecture satisfying functional and performance constraints"
+  },
+  {
+    "problem_id": 4741,
+    "name": "System Design - Design an OMS, focusing on thread safety",
+    "schema": {
+      "core_mathematical_domain": "System Design and Software Engineering",
+      "problem_setup_entities": [
+        "System components",
+        "Interfaces/data flow",
+        "Concurrency/state management mechanisms"
+      ],
+      "invariant_constraints": [
+        "Correctness and thread-safety requirements must hold",
+        "Latency, throughput, and reliability targets follow prompt constraints"
+      ],
+      "target_objective": "Design or evaluate an architecture satisfying functional and performance constraints"
+    },
+    "schema_text": "Domain: System Design and Software Engineering | Entities: System components, Interfaces/data flow, Concurrency/state management mechanisms | Constraints: Correctness and thread-safety requirements must hold, Latency, throughput, and reliability targets follow prompt constraints | Objective: Design or evaluate an architecture satisfying functional and performance constraints"
+  },
+  {
+    "problem_id": 4742,
+    "name": "C++ Knowledge",
+    "schema": {
+      "core_mathematical_domain": "System Design and Software Engineering",
+      "problem_setup_entities": [
+        "System components",
+        "Interfaces/data flow",
+        "Concurrency/state management mechanisms"
+      ],
+      "invariant_constraints": [
+        "Correctness and thread-safety requirements must hold",
+        "Latency, throughput, and reliability targets follow prompt constraints"
+      ],
+      "target_objective": "Design or evaluate an architecture satisfying functional and performance constraints"
+    },
+    "schema_text": "Domain: System Design and Software Engineering | Entities: System components, Interfaces/data flow, Concurrency/state management mechanisms | Constraints: Correctness and thread-safety requirements must hold, Latency, throughput, and reliability targets follow prompt constraints | Objective: Design or evaluate an architecture satisfying functional and performance constraints"
+  },
+  {
+    "problem_id": 4743,
+    "name": "Game Theory / Logic - A basket contains 30 apples and 30 oranges",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Making",
+      "problem_setup_entities": [
+        "Players/agents",
+        "Action sets and information structure",
+        "Payoff or utility functions"
+      ],
+      "invariant_constraints": [
+        "Strategies must be feasible under game rules",
+        "Equilibrium/optimality notion is fixed by the prompt"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+    },
+    "schema_text": "Domain: Game Theory and Decision Making | Entities: Players/agents, Action sets and information structure, Payoff or utility functions | Constraints: Strategies must be feasible under game rules, Equilibrium/optimality notion is fixed by the prompt | Objective: Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+  },
+  {
+    "problem_id": 4744,
+    "name": "Conditional Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4745,
+    "name": "Combinatorics / Logic - 225 trees are initially dormant",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4746,
+    "name": "Bayesian Probability - 3% of a population has a disease",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4747,
+    "name": "Conditional Probability - A team's record is 4W-5L",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4748,
+    "name": "Poisson Process",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State space",
+        "Transition dynamics or intensity",
+        "Time index/horizon"
+      ],
+      "invariant_constraints": [
+        "Process assumptions (Markov, Poisson, Brownian) are as specified",
+        "Probabilities/intensities satisfy normalization/nonnegativity"
+      ],
+      "target_objective": "Compute probabilities, distributions, or expectations over the process evolution"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State space, Transition dynamics or intensity, Time index/horizon | Constraints: Process assumptions (Markov, Poisson, Brownian) are as specified, Probabilities/intensities satisfy normalization/nonnegativity | Objective: Compute probabilities, distributions, or expectations over the process evolution"
+  },
+  {
+    "problem_id": 4749,
+    "name": "Logic Puzzle - Start with 96 A, 152 B, 141 C molecules",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4750,
+    "name": "Logic Puzzle",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4751,
+    "name": "Heaps / Data Streams",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4752,
+    "name": "Strings",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4753,
+    "name": "Dynamic Programming / Greedy",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Recurrence or transition rule",
+        "Objective value over feasible decisions"
+      ],
+      "invariant_constraints": [
+        "Optimal substructure and boundary conditions follow the formulation",
+        "Feasibility constraints on transitions must be satisfied"
+      ],
+      "target_objective": "Compute an optimal value or policy under the stated recurrence and constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Optimization | Entities: State variables, Recurrence or transition rule, Objective value over feasible decisions | Constraints: Optimal substructure and boundary conditions follow the formulation, Feasibility constraints on transitions must be satisfied | Objective: Compute an optimal value or policy under the stated recurrence and constraints"
+  },
+  {
+    "problem_id": 4754,
+    "name": "Graphs / Strings",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4755,
+    "name": "Geometry / Divide and Conquer",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4756,
+    "name": "Sliding Window",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4757,
+    "name": "Data Structures",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4758,
+    "name": "Stacks",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4759,
+    "name": "Graphs / BFS",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4760,
+    "name": "Binary Search",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4761,
+    "name": "Eigenvalues Eigenvectors Special Matrix",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4762,
+    "name": "Correlation Range of Random Variables",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4763,
+    "name": "Trading Rounds. Guess Fair Price Based",
+    "schema": {
+      "core_mathematical_domain": "Game Theory and Decision Making",
+      "problem_setup_entities": [
+        "Players/agents",
+        "Action sets and information structure",
+        "Payoff or utility functions"
+      ],
+      "invariant_constraints": [
+        "Strategies must be feasible under game rules",
+        "Equilibrium/optimality notion is fixed by the prompt"
+      ],
+      "target_objective": "Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+    },
+    "schema_text": "Domain: Game Theory and Decision Making | Entities: Players/agents, Action sets and information structure, Payoff or utility functions | Constraints: Strategies must be feasible under game rules, Equilibrium/optimality notion is fixed by the prompt | Objective: Find optimal strategy, equilibrium outcome, or decision rule under stated payoffs"
+  },
+  {
+    "problem_id": 4764,
+    "name": "Appropriate Calculation Method.",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4765,
+    "name": "Coding Problem - Maximum Drawdown",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4766,
+    "name": "Resume and Project Follow-Up Questions",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4767,
+    "name": "Annualizing the Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4768,
+    "name": "Nearest Vector Perpendicular to Another",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrices",
+      "problem_setup_entities": [
+        "Matrix/vector objects",
+        "Spectral quantities (eigenvalues/eigenvectors)",
+        "Algebraic constraints from the prompt"
+      ],
+      "invariant_constraints": [
+        "Dimension compatibility must hold",
+        "Matrix properties (symmetry/PSD/invertibility) follow stated assumptions"
+      ],
+      "target_objective": "Derive or verify matrix relationships and compute implied quantities"
+    },
+    "schema_text": "Domain: Linear Algebra and Matrices | Entities: Matrix/vector objects, Spectral quantities (eigenvalues/eigenvectors), Algebraic constraints from the prompt | Constraints: Dimension compatibility must hold, Matrix properties (symmetry/PSD/invertibility) follow stated assumptions | Objective: Derive or verify matrix relationships and compute implied quantities"
+  },
+  {
+    "problem_id": 4769,
+    "name": "Resume Discussion and Transaction Cost Consideration",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4770,
+    "name": "Probability Triangle Containing Origin",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4771,
+    "name": "Large Matrix Computation in OLS",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4772,
+    "name": "Array Encryption Problem",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4773,
+    "name": "Predict Covariance Matrix",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4774,
+    "name": "Feature Selection in L1 vs",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4775,
+    "name": "kth Most Frequent Number",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4776,
+    "name": "Correlation of Combined Vectors",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrices",
+      "problem_setup_entities": [
+        "Matrix/vector objects",
+        "Spectral quantities (eigenvalues/eigenvectors)",
+        "Algebraic constraints from the prompt"
+      ],
+      "invariant_constraints": [
+        "Dimension compatibility must hold",
+        "Matrix properties (symmetry/PSD/invertibility) follow stated assumptions"
+      ],
+      "target_objective": "Derive or verify matrix relationships and compute implied quantities"
+    },
+    "schema_text": "Domain: Linear Algebra and Matrices | Entities: Matrix/vector objects, Spectral quantities (eigenvalues/eigenvectors), Algebraic constraints from the prompt | Constraints: Dimension compatibility must hold, Matrix properties (symmetry/PSD/invertibility) follow stated assumptions | Objective: Derive or verify matrix relationships and compute implied quantities"
+  },
+  {
+    "problem_id": 4777,
+    "name": "Biased Sampling for Average Residents per Building",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4778,
+    "name": "Minimization Absolute Differences",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4779,
+    "name": "Derive OLS Beta Expression",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4780,
+    "name": "Project-Specific Questions",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4781,
+    "name": "Behavioral Questions on Transitioning from Tech to Finance",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4782,
+    "name": "Stick Breaking for a Triangle",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4783,
+    "name": "Probability With Normal Variables",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4784,
+    "name": "Model Comparison: Logistic vs",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4785,
+    "name": "Pairwise vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4786,
+    "name": "Reinforcement Learning: Q-Learning vs",
+    "schema": {
+      "core_mathematical_domain": "Dynamic Programming and Optimization",
+      "problem_setup_entities": [
+        "State variables",
+        "Recurrence or transition rule",
+        "Objective value over feasible decisions"
+      ],
+      "invariant_constraints": [
+        "Optimal substructure and boundary conditions follow the formulation",
+        "Feasibility constraints on transitions must be satisfied"
+      ],
+      "target_objective": "Compute an optimal value or policy under the stated recurrence and constraints"
+    },
+    "schema_text": "Domain: Dynamic Programming and Optimization | Entities: State variables, Recurrence or transition rule, Objective value over feasible decisions | Constraints: Optimal substructure and boundary conditions follow the formulation, Feasibility constraints on transitions must be satisfied | Objective: Compute an optimal value or policy under the stated recurrence and constraints"
+  },
+  {
+    "problem_id": 4787,
+    "name": "Regression: Features vs",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4788,
+    "name": "Machine Learning: PCA vs",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4789,
+    "name": "Unordered Default Construction",
+    "schema": {
+      "core_mathematical_domain": "System Design and Software Engineering",
+      "problem_setup_entities": [
+        "System components",
+        "Interfaces/data flow",
+        "Concurrency/state management mechanisms"
+      ],
+      "invariant_constraints": [
+        "Correctness and thread-safety requirements must hold",
+        "Latency, throughput, and reliability targets follow prompt constraints"
+      ],
+      "target_objective": "Design or evaluate an architecture satisfying functional and performance constraints"
+    },
+    "schema_text": "Domain: System Design and Software Engineering | Entities: System components, Interfaces/data flow, Concurrency/state management mechanisms | Constraints: Correctness and thread-safety requirements must hold, Latency, throughput, and reliability targets follow prompt constraints | Objective: Design or evaluate an architecture satisfying functional and performance constraints"
+  },
+  {
+    "problem_id": 4790,
+    "name": "Sampling: Uniformly within a 3D Sphere",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4791,
+    "name": "Expected Tosses for a Sequence",
+    "schema": {
+      "core_mathematical_domain": "Number Theory and Combinatorics",
+      "problem_setup_entities": [
+        "Integers or discrete objects",
+        "Counting structure/cases",
+        "Arithmetic or combinatorial relations"
+      ],
+      "invariant_constraints": [
+        "Discrete feasibility constraints follow definitions",
+        "Counting/probability arguments must be exhaustive and non-overlapping"
+      ],
+      "target_objective": "Compute exact count, existence, or discrete probability under the stated rules"
+    },
+    "schema_text": "Domain: Number Theory and Combinatorics | Entities: Integers or discrete objects, Counting structure/cases, Arithmetic or combinatorial relations | Constraints: Discrete feasibility constraints follow definitions, Counting/probability arguments must be exhaustive and non-overlapping | Objective: Compute exact count, existence, or discrete probability under the stated rules"
+  },
+  {
+    "problem_id": 4792,
+    "name": "P (X > kY ) for Normals",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4793,
+    "name": "M&M Tasting and Hypothesis Testing",
+    "schema": {
+      "core_mathematical_domain": "Statistics and Regression",
+      "problem_setup_entities": [
+        "Observed samples or feature matrix",
+        "Model parameters",
+        "Error/noise terms"
+      ],
+      "invariant_constraints": [
+        "Model assumptions are as stated",
+        "Estimator definition and identification conditions are fixed"
+      ],
+      "target_objective": "Derive, estimate, or interpret model quantities and statistical properties"
+    },
+    "schema_text": "Domain: Statistics and Regression | Entities: Observed samples or feature matrix, Model parameters, Error/noise terms | Constraints: Model assumptions are as stated, Estimator definition and identification conditions are fixed | Objective: Derive, estimate, or interpret model quantities and statistical properties"
+  },
+  {
+    "problem_id": 4794,
+    "name": "Meeting Taller People",
+    "schema": {
+      "core_mathematical_domain": "Applied Mathematics",
+      "problem_setup_entities": [
+        "Mathematical objects defined in the prompt",
+        "Decision or latent variables",
+        "Requested output quantity"
+      ],
+      "invariant_constraints": [
+        "All explicit assumptions in the prompt must hold",
+        "Solution must satisfy domain and feasibility conditions"
+      ],
+      "target_objective": "Derive the requested quantity or construct a valid method under stated assumptions"
+    },
+    "schema_text": "Domain: Applied Mathematics | Entities: Mathematical objects defined in the prompt, Decision or latent variables, Requested output quantity | Constraints: All explicit assumptions in the prompt must hold, Solution must satisfy domain and feasibility conditions | Objective: Derive the requested quantity or construct a valid method under stated assumptions"
+  },
+  {
+    "problem_id": 4795,
+    "name": "Counting Rectangles from Grid Points",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4796,
+    "name": "Comparison Between Dice and Coins",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4797,
+    "name": "Expected Number of Chord Intersections on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Geometry and Spatial Reasoning",
+      "problem_setup_entities": [
+        "Geometric objects (points/lines/shapes)",
+        "Spatial measurements or coordinates",
+        "Randomization over geometric configurations if present"
+      ],
+      "invariant_constraints": [
+        "Euclidean geometry relations apply",
+        "Boundary/containment constraints follow the setup"
+      ],
+      "target_objective": "Compute geometric probability, measure, or optimize a spatial quantity"
+    },
+    "schema_text": "Domain: Geometry and Spatial Reasoning | Entities: Geometric objects (points/lines/shapes), Spatial measurements or coordinates, Randomization over geometric configurations if present | Constraints: Euclidean geometry relations apply, Boundary/containment constraints follow the setup | Objective: Compute geometric probability, measure, or optimize a spatial quantity"
+  },
+  {
+    "problem_id": 4798,
+    "name": "Probability of Even vs",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4799,
+    "name": "Comparison of Two IID Samples",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4800,
+    "name": "Expected Index of First Smaller Element",
+    "schema": {
+      "core_mathematical_domain": "Probability and Expected Value",
+      "problem_setup_entities": [
+        "Random variables",
+        "Sample space and event definitions",
+        "Probability law parameters"
+      ],
+      "invariant_constraints": [
+        "Total probability mass equals 1",
+        "Conditional independence/dependence assumptions are as stated"
+      ],
+      "target_objective": "Compute requested probability or Expected Value from the defined stochastic experiment"
+    },
+    "schema_text": "Domain: Probability and Expected Value | Entities: Random variables, Sample space and event definitions, Probability law parameters | Constraints: Total probability mass equals 1, Conditional independence/dependence assumptions are as stated | Objective: Compute requested probability or Expected Value from the defined stochastic experiment"
+  },
+  {
+    "problem_id": 4801,
+    "name": "Search in a Sorted Matrix II",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra and Matrices",
+      "problem_setup_entities": [
+        "Matrix/vector objects",
+        "Spectral quantities (eigenvalues/eigenvectors)",
+        "Algebraic constraints from the prompt"
+      ],
+      "invariant_constraints": [
+        "Dimension compatibility must hold",
+        "Matrix properties (symmetry/PSD/invertibility) follow stated assumptions"
+      ],
+      "target_objective": "Derive or verify matrix relationships and compute implied quantities"
+    },
+    "schema_text": "Domain: Linear Algebra and Matrices | Entities: Matrix/vector objects, Spectral quantities (eigenvalues/eigenvectors), Algebraic constraints from the prompt | Constraints: Dimension compatibility must hold, Matrix properties (symmetry/PSD/invertibility) follow stated assumptions | Objective: Derive or verify matrix relationships and compute implied quantities"
+  },
+  {
+    "problem_id": 4802,
+    "name": "Brownian Motion in 2D Plane",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State space",
+        "Transition dynamics or intensity",
+        "Time index/horizon"
+      ],
+      "invariant_constraints": [
+        "Process assumptions (Markov, Poisson, Brownian) are as specified",
+        "Probabilities/intensities satisfy normalization/nonnegativity"
+      ],
+      "target_objective": "Compute probabilities, distributions, or expectations over the process evolution"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State space, Transition dynamics or intensity, Time index/horizon | Constraints: Process assumptions (Markov, Poisson, Brownian) are as specified, Probabilities/intensities satisfy normalization/nonnegativity | Objective: Compute probabilities, distributions, or expectations over the process evolution"
+  },
+  {
+    "problem_id": 4803,
+    "name": "Generate Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4804,
+    "name": "Dice and Sorting Algorithms",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4805,
+    "name": "Sorting with Limited Memory",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  },
+  {
+    "problem_id": 4806,
+    "name": "Array Element Represents Price Stock",
+    "schema": {
+      "core_mathematical_domain": "Algorithms and Data Structures",
+      "problem_setup_entities": [
+        "Input data structure",
+        "Algorithm state",
+        "Output structure or metric"
+      ],
+      "invariant_constraints": [
+        "Input validity conditions follow the prompt",
+        "Time and space complexity requirements apply as stated"
+      ],
+      "target_objective": "Construct a correct algorithm and characterize complexity/performance"
+    },
+    "schema_text": "Domain: Algorithms and Data Structures | Entities: Input data structure, Algorithm state, Output structure or metric | Constraints: Input validity conditions follow the prompt, Time and space complexity requirements apply as stated | Objective: Construct a correct algorithm and characterize complexity/performance"
+  }
+]

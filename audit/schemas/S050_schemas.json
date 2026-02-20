@@ -1,0 +1,266 @@
+[
+  {
+    "problem_id": 4907,
+    "name": "Streaming merge with missing keys",
+    "schema": {
+      "core_mathematical_domain": "Streaming algorithms and stateful join processing",
+      "problem_setup_entities": ["Two event streams", "Composite key (t, loc)", "Temperature and humidity payloads", "Late/out-of-order events", "Watermark"],
+      "invariant_constraints": ["Join is keyed by (t, loc)", "Either stream may miss a key", "Events may arrive out of order", "State eviction must respect watermark/window semantics"],
+      "target_objective": "Design a data structure and algorithm that outputs best-available joined records with correct late-data handling and characterize time/space complexity."
+    },
+    "schema_text": "Domain: Streaming algorithms and stateful join processing | Entities: Two event streams; Composite key (t, loc); Temperature and humidity payloads; Late/out-of-order events; Watermark | Constraints: Join is keyed by (t, loc); Either stream may miss a key; Events may arrive out of order; State eviction must respect watermark/window semantics | Objective: Design a data structure and algorithm that outputs best-available joined records with correct late-data handling and characterize time/space complexity."
+  },
+  {
+    "problem_id": 4908,
+    "name": "Annual Daily Uncertainty. Years Calendar Simple",
+    "schema": {
+      "core_mathematical_domain": "Statistical inference for return aggregation and time-series uncertainty",
+      "problem_setup_entities": ["N annual simple returns", "Sample mean of annual returns", "Sample variance of annual returns", "Daily mean return", "Confidence interval"],
+      "invariant_constraints": ["Annual and daily returns linked by aggregation identities", "Three dependence/volatility regimes: i.i.d., serial correlation with long-run variance, stochastic volatility", "Assumptions must be stated explicitly"],
+      "target_objective": "Derive a 95% confidence interval for the daily mean return under each regime using the appropriate uncertainty scaling."
+    },
+    "schema_text": "Domain: Statistical inference for return aggregation and time-series uncertainty | Entities: N annual simple returns; Sample mean of annual returns; Sample variance of annual returns; Daily mean return; Confidence interval | Constraints: Annual and daily returns linked by aggregation identities; Three dependence/volatility regimes: i.i.d., serial correlation with long-run variance, stochastic volatility; Assumptions must be stated explicitly | Objective: Derive a 95% confidence interval for the daily mean return under each regime using the appropriate uncertainty scaling."
+  },
+  {
+    "problem_id": 4909,
+    "name": "Weighted Lasso regression",
+    "schema": {
+      "core_mathematical_domain": "Convex optimization in penalized linear regression",
+      "problem_setup_entities": ["Response vector y", "Design matrix X", "Positive sample weights w_i", "L1 penalty parameter", "KKT conditions"],
+      "invariant_constraints": ["All weights are strictly positive", "Weighted least-squares loss plus L1 penalty", "Equivalent transformed-data formulation must preserve optimizer"],
+      "target_objective": "Formulate weighted Lasso, prove equivalence to unweighted Lasso under data re-scaling, derive KKT conditions, and explain impact on the regularization path."
+    },
+    "schema_text": "Domain: Convex optimization in penalized linear regression | Entities: Response vector y; Design matrix X; Positive sample weights w_i; L1 penalty parameter; KKT conditions | Constraints: All weights are strictly positive; Weighted least-squares loss plus L1 penalty; Equivalent transformed-data formulation must preserve optimizer | Objective: Formulate weighted Lasso, prove equivalence to unweighted Lasso under data re-scaling, derive KKT conditions, and explain impact on the regularization path."
+  },
+  {
+    "problem_id": 4910,
+    "name": "Two-step vs",
+    "schema": {
+      "core_mathematical_domain": "Linear regression geometry and Frisch-Waugh-Lovell decomposition",
+      "problem_setup_entities": ["Response y", "Regressors X1 and X2", "Joint OLS coefficients", "Sequential residualization coefficients"],
+      "invariant_constraints": ["Regressors are zero-mean", "Baseline case assumes X1 and X2 are uncorrelated", "Comparison includes relaxed-assumption case"],
+      "target_objective": "Establish conditions under which joint and two-step OLS coefficient estimates coincide (or ratios coincide) and characterize when they diverge."
+    },
+    "schema_text": "Domain: Linear regression geometry and Frisch-Waugh-Lovell decomposition | Entities: Response y; Regressors X1 and X2; Joint OLS coefficients; Sequential residualization coefficients | Constraints: Regressors are zero-mean; Baseline case assumes X1 and X2 are uncorrelated; Comparison includes relaxed-assumption case | Objective: Establish conditions under which joint and two-step OLS coefficient estimates coincide (or ratios coincide) and characterize when they diverge."
+  },
+  {
+    "problem_id": 4911,
+    "name": "Covariance of min and max",
+    "schema": {
+      "core_mathematical_domain": "Order statistics and covariance computation",
+      "problem_setup_entities": ["Independent Uniform(0,1) variables X and Y", "U = min(X,Y)", "V = max(X,Y)", "Cov(U,V)"],
+      "invariant_constraints": ["X and Y are i.i.d. Uniform(0,1)", "Identity U + V = X + Y holds", "Result should be confirmed by two distinct methods"],
+      "target_objective": "Compute Cov(min(X,Y), max(X,Y)) and verify the value 1/36 via direct integration and symmetry/identity arguments."
+    },
+    "schema_text": "Domain: Order statistics and covariance computation | Entities: Independent Uniform(0,1) variables X and Y; U = min(X,Y); V = max(X,Y); Cov(U,V) | Constraints: X and Y are i.i.d. Uniform(0,1); Identity U + V = X + Y holds; Result should be confirmed by two distinct methods | Objective: Compute Cov(min(X,Y), max(X,Y)) and verify the value 1/36 via direct integration and symmetry/identity arguments."
+  },
+  {
+    "problem_id": 4912,
+    "name": "Range of correlation in equicorrelated variables",
+    "schema": {
+      "core_mathematical_domain": "Correlation matrix feasibility and positive semidefiniteness",
+      "problem_setup_entities": ["N random variables", "Common pairwise correlation rho", "Equicorrelation matrix"],
+      "invariant_constraints": ["All diagonal entries are 1", "All off-diagonal entries equal rho", "Matrix must be positive semidefinite"],
+      "target_objective": "Determine the admissible range of rho as a function of N."
+    },
+    "schema_text": "Domain: Correlation matrix feasibility and positive semidefiniteness | Entities: N random variables; Common pairwise correlation rho; Equicorrelation matrix | Constraints: All diagonal entries are 1; All off-diagonal entries equal rho; Matrix must be positive semidefinite | Objective: Determine the admissible range of rho as a function of N."
+  },
+  {
+    "problem_id": 4913,
+    "name": "Bayesian inference for Bernoulli parameter",
+    "schema": {
+      "core_mathematical_domain": "Bayesian updating for Bernoulli-Beta model",
+      "problem_setup_entities": ["Bernoulli observation X", "Unknown success probability theta", "Uniform(0,1) prior", "Posterior distribution"],
+      "invariant_constraints": ["Single observed outcome X=1", "Prior is Beta(1,1)", "Posterior obtained via Bayes rule and conjugacy"],
+      "target_objective": "Derive P(theta | X=1), i.e., the posterior distribution of the Bernoulli parameter after one success."
+    },
+    "schema_text": "Domain: Bayesian updating for Bernoulli-Beta model | Entities: Bernoulli observation X; Unknown success probability theta; Uniform(0,1) prior; Posterior distribution | Constraints: Single observed outcome X=1; Prior is Beta(1,1); Posterior obtained via Bayes rule and conjugacy | Objective: Derive P(theta | X=1), i.e., the posterior distribution of the Bernoulli parameter after one success."
+  },
+  {
+    "problem_id": 4914,
+    "name": "Correlation bounds",
+    "schema": {
+      "core_mathematical_domain": "Correlation bounds from positive semidefinite covariance structure",
+      "problem_setup_entities": ["Variables X, Y, Z", "Known correlations rho_XY=0.9 and rho_YZ=0.8", "Unknown rho_XZ"],
+      "invariant_constraints": ["Correlation matrix of (X,Y,Z) must be positive semidefinite", "Correlations are bounded in [-1,1]"],
+      "target_objective": "Compute the feasible interval for rho_XZ given the two known pairwise correlations."
+    },
+    "schema_text": "Domain: Correlation bounds from positive semidefinite covariance structure | Entities: Variables X, Y, Z; Known correlations rho_XY=0.9 and rho_YZ=0.8; Unknown rho_XZ | Constraints: Correlation matrix of (X,Y,Z) must be positive semidefinite; Correlations are bounded in [-1,1] | Objective: Compute the feasible interval for rho_XZ given the two known pairwise correlations."
+  },
+  {
+    "problem_id": 4915,
+    "name": "Simulating from a multivariate normal distribution",
+    "schema": {
+      "core_mathematical_domain": "Multivariate normal simulation via linear transformation",
+      "problem_setup_entities": ["n-dimensional Gaussian vector", "Mean vector 0", "Covariance with 1 diagonal and 0.5 off-diagonal", "Standard normal generator"],
+      "invariant_constraints": ["Target covariance matrix is equicorrelated", "Simulation requires a matrix square-root factor", "Generated samples must match target covariance"],
+      "target_objective": "Construct an algorithm to simulate the n jointly normal variables from independent standard normals."
+    },
+    "schema_text": "Domain: Multivariate normal simulation via linear transformation | Entities: n-dimensional Gaussian vector; Mean vector 0; Covariance with 1 diagonal and 0.5 off-diagonal; Standard normal generator | Constraints: Target covariance matrix is equicorrelated; Simulation requires a matrix square-root factor; Generated samples must match target covariance | Objective: Construct an algorithm to simulate the n jointly normal variables from independent standard normals."
+  },
+  {
+    "problem_id": 4916,
+    "name": "Machine learning: Lasso vs",
+    "schema": {
+      "core_mathematical_domain": "Regularization behavior under multicollinearity",
+      "problem_setup_entities": ["Linear model with correlated predictors", "Lasso (L1)", "Ridge (L2)", "Coefficient stability and selection"],
+      "invariant_constraints": ["Predictors exhibit substantial correlation", "Comparison is based on penalty geometry and estimator behavior"],
+      "target_objective": "Determine which method is better suited for correlated variables and justify the choice theoretically."
+    },
+    "schema_text": "Domain: Regularization behavior under multicollinearity | Entities: Linear model with correlated predictors; Lasso (L1); Ridge (L2); Coefficient stability and selection | Constraints: Predictors exhibit substantial correlation; Comparison is based on penalty geometry and estimator behavior | Objective: Determine which method is better suited for correlated variables and justify the choice theoretically."
+  },
+  {
+    "problem_id": 4917,
+    "name": "Petersburg Paradox Variant. Play Game Random",
+    "schema": {
+      "core_mathematical_domain": "Decision theory under heavy-tailed payoff distributions",
+      "problem_setup_entities": ["Random variable X ~ Uniform(0,1)", "Payoff 1/X", "Entry price", "Expected Value and utility considerations"],
+      "invariant_constraints": ["Payoff has infinite Expected Value under risk-neutral expectation", "Practical willingness-to-pay depends on risk preferences or constraints"],
+      "target_objective": "Assess fair participation price and explain principled resolutions to the infinite-Expected-Value paradox."
+    },
+    "schema_text": "Domain: Decision theory under heavy-tailed payoff distributions | Entities: Random variable X ~ Uniform(0,1); Payoff 1/X; Entry price; Expected Value and utility considerations | Constraints: Payoff has infinite Expected Value under risk-neutral expectation; Practical willingness-to-pay depends on risk preferences or constraints | Objective: Assess fair participation price and explain principled resolutions to the infinite-Expected-Value paradox."
+  },
+  {
+    "problem_id": 4918,
+    "name": "Assumptions and issues in Linear Regression",
+    "schema": {
+      "core_mathematical_domain": "Classical linear regression assumptions and inference robustness",
+      "problem_setup_entities": ["Linear regression model", "OLS coefficient estimator", "Multicollinearity", "Heteroskedasticity", "Residual distribution"],
+      "invariant_constraints": ["Classical assumptions include linearity, exogeneity, finite moments, and full rank", "Multicollinearity affects variance not unbiasedness under exogeneity", "Heteroskedasticity affects standard errors and efficiency", "Non-normal residuals impact finite-sample inference"],
+      "target_objective": "State core OLS assumptions and analyze how multicollinearity, heteroskedasticity, and t-distributed residuals alter estimation and inference."
+    },
+    "schema_text": "Domain: Classical linear regression assumptions and inference robustness | Entities: Linear regression model; OLS coefficient estimator; Multicollinearity; Heteroskedasticity; Residual distribution | Constraints: Classical assumptions include linearity, exogeneity, finite moments, and full rank; Multicollinearity affects variance not unbiasedness under exogeneity; Heteroskedasticity affects standard errors and efficiency; Non-normal residuals impact finite-sample inference | Objective: State core OLS assumptions and analyze how multicollinearity, heteroskedasticity, and t-distributed residuals alter estimation and inference."
+  },
+  {
+    "problem_id": 4919,
+    "name": "Linear interpolation",
+    "schema": {
+      "core_mathematical_domain": "Numerical interpolation and search optimization",
+      "problem_setup_entities": ["Sorted knot pairs (x_i, y_i)", "Query point x", "Piecewise linear segment", "Search procedure over x_i"],
+      "invariant_constraints": ["x_i are sorted", "Interpolation uses enclosing adjacent knots", "Multiple queries motivate sublinear lookup (e.g., binary search)"],
+      "target_objective": "Implement efficient linear interpolation f(x) with correct segment selection and analyze runtime complexity."
+    },
+    "schema_text": "Domain: Numerical interpolation and search optimization | Entities: Sorted knot pairs (x_i, y_i); Query point x; Piecewise linear segment; Search procedure over x_i | Constraints: x_i are sorted; Interpolation uses enclosing adjacent knots; Multiple queries motivate sublinear lookup (e.g., binary search) | Objective: Implement efficient linear interpolation f(x) with correct segment selection and analyze runtime complexity."
+  },
+  {
+    "problem_id": 4920,
+    "name": "Statistics: Simulating multivariate normal via spectral decomposition",
+    "schema": {
+      "core_mathematical_domain": "Multivariate normal simulation via eigenvalue decomposition",
+      "problem_setup_entities": ["Target covariance matrix Sigma", "Eigenvectors and eigenvalues of Sigma", "Independent standard normal vector z", "Transformed sample x"],
+      "invariant_constraints": ["Sigma must be symmetric positive semidefinite", "Use spectral decomposition Sigma = Q Lambda Q^T", "Transformation must produce covariance Sigma"],
+      "target_objective": "Describe a non-Cholesky sampling method for multivariate normal vectors using spectral decomposition."
+    },
+    "schema_text": "Domain: Multivariate normal simulation via eigenvalue decomposition | Entities: Target covariance matrix Sigma; Eigenvectors and eigenvalues of Sigma; Independent standard normal vector z; Transformed sample x | Constraints: Sigma must be symmetric positive semidefinite; Use spectral decomposition Sigma = Q Lambda Q^T; Transformation must produce covariance Sigma | Objective: Describe a non-Cholesky sampling method for multivariate normal vectors using spectral decomposition."
+  },
+  {
+    "problem_id": 4921,
+    "name": "Statistics: Confidence interval for binomial p with zero successes",
+    "schema": {
+      "core_mathematical_domain": "Interval estimation for binomial proportion at boundary cases",
+      "problem_setup_entities": ["Binomial sample size N", "Observed successes k=0", "Unknown success probability p", "Frequentist confidence interval", "Bayesian credible interval"],
+      "invariant_constraints": ["No observed successes places estimate at boundary", "Frequentist and Bayesian intervals use different coverage interpretations", "Prior choice influences Bayesian interval"],
+      "target_objective": "Derive and compare interval estimates for p when zero successes are observed."
+    },
+    "schema_text": "Domain: Interval estimation for binomial proportion at boundary cases | Entities: Binomial sample size N; Observed successes k=0; Unknown success probability p; Frequentist confidence interval; Bayesian credible interval | Constraints: No observed successes places estimate at boundary; Frequentist and Bayesian intervals use different coverage interpretations; Prior choice influences Bayesian interval | Objective: Derive and compare interval estimates for p when zero successes are observed."
+  },
+  {
+    "problem_id": 4922,
+    "name": "Statistics: Estimation with equicorrelated normal samples",
+    "schema": {
+      "core_mathematical_domain": "Inference with correlated Gaussian observations",
+      "problem_setup_entities": ["n-dimensional normal sample", "Mean parameter mu", "Unit marginal variance", "Common correlation r", "Hypothesis test for mu"],
+      "invariant_constraints": ["Observations are not independent", "Correlation matrix is equicorrelated", "Valid r must satisfy positive semidefiniteness"],
+      "target_objective": "Construct estimator and test statistic for mu under equicorrelation and identify admissible values of r."
+    },
+    "schema_text": "Domain: Inference with correlated Gaussian observations | Entities: n-dimensional normal sample; Mean parameter mu; Unit marginal variance; Common correlation r; Hypothesis test for mu | Constraints: Observations are not independent; Correlation matrix is equicorrelated; Valid r must satisfy positive semidefiniteness | Objective: Construct estimator and test statistic for mu under equicorrelation and identify admissible values of r."
+  },
+  {
+    "problem_id": 4923,
+    "name": "Coding: Efficiently computing a linear recurrence",
+    "schema": {
+      "core_mathematical_domain": "Algorithmic optimization for linear recurrences",
+      "problem_setup_entities": ["Recurrence f(n)=2f(n-1)+f(n-2)", "Naive recursion", "Memoization/dynamic programming", "Constant-space iterative method", "Large-integer arithmetic cost"],
+      "invariant_constraints": ["Same recurrence relation across implementations", "Complexity depends on both operation count and operand bit-length for large n"],
+      "target_objective": "Compare recursive, memoized, and constant-space algorithms for computing f(n), including time/space complexity with big-integer effects."
+    },
+    "schema_text": "Domain: Algorithmic optimization for linear recurrences | Entities: Recurrence f(n)=2f(n-1)+f(n-2); Naive recursion; Memoization/dynamic programming; Constant-space iterative method; Large-integer arithmetic cost | Constraints: Same recurrence relation across implementations; Complexity depends on both operation count and operand bit-length for large n | Objective: Compare recursive, memoized, and constant-space algorithms for computing f(n), including time/space complexity with big-integer effects."
+  },
+  {
+    "problem_id": 4924,
+    "name": "OLS model comparison",
+    "schema": {
+      "core_mathematical_domain": "Bias-variance tradeoff in nested linear regression models",
+      "problem_setup_entities": ["Full model with x1 and x2", "Reduced model with x1 only", "Coefficient of interest beta1", "Bias, variance, and MSE"],
+      "invariant_constraints": ["Reduced model omits x2", "Omitted-variable bias depends on correlation between x1 and x2 and effect of x2", "Full model usually has higher variance for beta1"],
+      "target_objective": "Compare beta1 estimators across full vs reduced models via bias, variance, and MSE, and identify conditions where reduced model is preferred."
+    },
+    "schema_text": "Domain: Bias-variance tradeoff in nested linear regression models | Entities: Full model with x1 and x2; Reduced model with x1 only; Coefficient of interest beta1; Bias, variance, and MSE | Constraints: Reduced model omits x2; Omitted-variable bias depends on correlation between x1 and x2 and effect of x2; Full model usually has higher variance for beta1 | Objective: Compare beta1 estimators across full vs reduced models via bias, variance, and MSE, and identify conditions where reduced model is preferred."
+  },
+  {
+    "problem_id": 4925,
+    "name": "Bayesian hierarchical model: Correlation of counts",
+    "schema": {
+      "core_mathematical_domain": "Hierarchical binomial models and induced dependence",
+      "problem_setup_entities": ["Latent coin bias p", "N100 heads in 100 tosses", "N10 heads in first 10 tosses", "Conditional binomial sampling"],
+      "invariant_constraints": ["Given p, tosses are conditionally independent Bernoulli", "Shared latent p induces marginal correlation between counts", "N10 is nested within N100"],
+      "target_objective": "Compute correlation between N100 and N10 under a random-effects coin-bias model."
+    },
+    "schema_text": "Domain: Hierarchical binomial models and induced dependence | Entities: Latent coin bias p; N100 heads in 100 tosses; N10 heads in first 10 tosses; Conditional binomial sampling | Constraints: Given p, tosses are conditionally independent Bernoulli; Shared latent p induces marginal correlation between counts; N10 is nested within N100 | Objective: Compute correlation between N100 and N10 under a random-effects coin-bias model."
+  },
+  {
+    "problem_id": 4926,
+    "name": "Case study: Airbnb pricing model",
+    "schema": {
+      "core_mathematical_domain": "Applied predictive modeling for dynamic pricing",
+      "problem_setup_entities": ["Listing-level features", "Market demand and seasonality signals", "Target price/outcome", "Training/validation framework"],
+      "invariant_constraints": ["Model must handle heterogeneous properties and temporal effects", "Feature engineering and evaluation strategy are central", "Potential deployment requires robustness and interpretability"],
+      "target_objective": "Design an end-to-end modeling approach for Airbnb price prediction, from features to model selection and validation."
+    },
+    "schema_text": "Domain: Applied predictive modeling for dynamic pricing | Entities: Listing-level features; Market demand and seasonality signals; Target price/outcome; Training/validation framework | Constraints: Model must handle heterogeneous properties and temporal effects; Feature engineering and evaluation strategy are central; Potential deployment requires robustness and interpretability | Objective: Design an end-to-end modeling approach for Airbnb price prediction, from features to model selection and validation."
+  },
+  {
+    "problem_id": 4927,
+    "name": "OLS: Suppressor variables",
+    "schema": {
+      "core_mathematical_domain": "Multiple regression interpretation with suppressor effects",
+      "problem_setup_entities": ["Response y", "Predictors x1 and x2", "Simple-regression t-statistic for x1", "Multiple-regression t-statistics"],
+      "invariant_constraints": ["x1 may be correlated with x2", "Including x2 can reduce residual variance or unmask partial effect of x1", "Significance can change across nested models"],
+      "target_objective": "Explain how a suppressor/confounding structure can make x1 insignificant alone but significant when controlling for x2, with an example."
+    },
+    "schema_text": "Domain: Multiple regression interpretation with suppressor effects | Entities: Response y; Predictors x1 and x2; Simple-regression t-statistic for x1; Multiple-regression t-statistics | Constraints: x1 may be correlated with x2; Including x2 can reduce residual variance or unmask partial effect of x1; Significance can change across nested models | Objective: Explain how a suppressor/confounding structure can make x1 insignificant alone but significant when controlling for x2, with an example."
+  },
+  {
+    "problem_id": 4928,
+    "name": "Case study: Citi Bike prediction",
+    "schema": {
+      "core_mathematical_domain": "Spatiotemporal forecasting and supervised learning pipeline design",
+      "problem_setup_entities": ["Bike availability at station/time", "Temporal features", "Spatial/contextual demand features", "Standardization and feature selection", "Forecasting model"],
+      "invariant_constraints": ["Prediction target is future bike count/availability at a location", "Data exhibit temporal and spatial dependence", "Pipeline must include preprocessing and model evaluation"],
+      "target_objective": "Propose a complete modeling approach for forecasting bike availability at a future time and location."
+    },
+    "schema_text": "Domain: Spatiotemporal forecasting and supervised learning pipeline design | Entities: Bike availability at station/time; Temporal features; Spatial/contextual demand features; Standardization and feature selection; Forecasting model | Constraints: Prediction target is future bike count/availability at a location; Data exhibit temporal and spatial dependence; Pipeline must include preprocessing and model evaluation | Objective: Propose a complete modeling approach for forecasting bike availability at a future time and location."
+  },
+  {
+    "problem_id": 4929,
+    "name": "Algorithm The Assignment Problem",
+    "schema": {
+      "core_mathematical_domain": "Combinatorial optimization and minimum-cost assignment",
+      "problem_setup_entities": ["2n workers", "n Task-1 slots and n Task-2 slots", "Worker-specific costs w_i1 and w_i2", "Feasible assignment"],
+      "invariant_constraints": ["Each worker assigned to exactly one task type", "Exactly n workers must be assigned to each task type", "Objective is sum of assigned costs"],
+      "target_objective": "Find the assignment minimizing total completion time under cardinality constraints."
+    },
+    "schema_text": "Domain: Combinatorial optimization and minimum-cost assignment | Entities: 2n workers; n Task-1 slots and n Task-2 slots; Worker-specific costs w_i1 and w_i2; Feasible assignment | Constraints: Each worker assigned to exactly one task type; Exactly n workers must be assigned to each task type; Objective is sum of assigned costs | Objective: Find the assignment minimizing total completion time under cardinality constraints."
+  },
+  {
+    "problem_id": 4930,
+    "name": "Data analysis: Linear interpolation",
+    "schema": {
+      "core_mathematical_domain": "Numerical interpolation with edge-case handling",
+      "problem_setup_entities": ["Sorted data pairs (x_i, y_i)", "Query x", "Piecewise linear interpolation rule", "Repeated x_i edge case"],
+      "invariant_constraints": ["Interpolation must respect sorted x_i ordering", "Repeated x_i values create non-unique local slope and need explicit policy", "Function should be robust at boundaries"],
+      "target_objective": "Implement linear interpolation over tabulated points with correct handling of duplicate x-values and boundary conditions."
+    },
+    "schema_text": "Domain: Numerical interpolation with edge-case handling | Entities: Sorted data pairs (x_i, y_i); Query x; Piecewise linear interpolation rule; Repeated x_i edge case | Constraints: Interpolation must respect sorted x_i ordering; Repeated x_i values create non-unique local slope and need explicit policy; Function should be robust at boundaries | Objective: Implement linear interpolation over tabulated points with correct handling of duplicate x-values and boundary conditions."
+  }
+]

@@ -1,0 +1,1529 @@
+[
+  {
+    "problem_id": 4807,
+    "name": "Math, Data, and Coding Round Problems 1",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4808,
+    "name": "Knapsack Style Stock Investment Stocks Current",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated feasibility and boundary constraints | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4809,
+    "name": "Variance of a Limit Point and Generalized Fibonacci 1",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4810,
+    "name": "Game Theory Guessing Game Two Players Guess Numbers",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Discrete random outcomes and state variables, Random variables and distributional parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4811,
+    "name": "Combinatorics A combinatorics problem was asked during a math round",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4812,
+    "name": "Bayesian Statistics Bayesian Probability Math Round.",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4813,
+    "name": "Ordinary Least Squares Series Questions Related",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4814,
+    "name": "Basic Game Theory Basic Game Theory",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4815,
+    "name": "Nested Intervals Standard Deviation Let Interval I0 0, 1",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Random variables and distributional parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4816,
+    "name": "Maximum Subarray String String Represents Represent",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated feasibility and boundary constraints | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4817,
+    "name": "LeetCode 46: Permutations Implement the solution for LeetCode 46 (Permutations)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4818,
+    "name": "LeetCode 2: Add Two Numbers Implement the solution for LeetCode 2 (Add Two Numbers)",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4819,
+    "name": "Market Making Game Interval Bidding Game",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4820,
+    "name": "General Betting Game Structure Core Game",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated feasibility and boundary constraints | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4821,
+    "name": "Betting Game Types Games Based Simple",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4822,
+    "name": "Bet, You Must Immediately",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated feasibility and boundary constraints | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4823,
+    "name": "Betting Game Strategy Position Sizing Kelly",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated feasibility and boundary constraints | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4824,
+    "name": "Betting Game Practical Advice",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4825,
+    "name": "Paradox Inspection Paradox Scheduled Arrive Minutes",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Sequential decision/stopping-time structure is respected"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Discrete random outcomes and state variables | Constraints: Sequential decision/stopping-time structure is respected | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4826,
+    "name": "Loop Termination Positive Integers Initial Conditions",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4827,
+    "name": "Two Piles of Apples/Stones",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4828,
+    "name": "Stock State Transition A stock has three states in a day",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times",
+        "Payoff variables, prices, and decision controls",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: State process, transition dynamics, and stopping times, Payoff variables, prices, and decision controls, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4829,
+    "name": "Numpy Array Game You start with an array `a = np",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated feasibility and boundary constraints | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4830,
+    "name": "Structure Sent Applying One-week Deadline. Contains",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4831,
+    "name": "Interviews Generally Behavioral Test Motivation Cultural",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4832,
+    "name": "Home Assignment Candidate Reported Third Technical",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4833,
+    "name": "Candidate Experience Notes",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4834,
+    "name": "Conditional Probability of a Heavy Smoker's Death",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4835,
+    "name": "Expectation Ratio Uniforms",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4836,
+    "name": "Stationary Distribution of a Markov Chain",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, transition dynamics, and stopping times, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4837,
+    "name": "Order Probabilities and Expectations for I",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Independence assumptions hold as stated | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4838,
+    "name": "Bayesian Inference with a Bag of Coins",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables, Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4839,
+    "name": "Linear Regression: R-squared Properties",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators",
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators, Matrix/vector objects and structural constraints | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4840,
+    "name": "Russian Roulette",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4841,
+    "name": "Random Walk on a Cayley Tree",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, transition dynamics, and stopping times | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4842,
+    "name": "Simulation: Generating Arbitrary Probabilities",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4843,
+    "name": "Correlation vs",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4844,
+    "name": "Hypothesis Testing for Sharpe Ratio",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4845,
+    "name": "Probability: Branching Process Extinction",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4846,
+    "name": "Expected Arc Length on a Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4847,
+    "name": "Simulation: Unbiased Coin from a Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4848,
+    "name": "Quantitative Finance: Arbitrage in Betting",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4849,
+    "name": "Coupon Collector's Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4850,
+    "name": "Polynomial Coefficient Recovery",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Random variables and distributional parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4851,
+    "name": "Short intro and CV screening",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4852,
+    "name": "Random Variables Jointly Normal Mean",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4853,
+    "name": "Numbers Chosen I.i.d. Uniformly Subject Pattern",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Independence assumptions hold as stated, Specified distributional/process assumptions hold | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4854,
+    "name": "Short Intro, Behavioral Questions, and Motivations Why Quant",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4855,
+    "name": "Random Variables Jointly Normally Distributed Mean",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold",
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold, Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4856,
+    "name": "Open-ended: How do you model something in research",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4857,
+    "name": "There are n i",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Sequential decision/stopping-time structure is respected"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints | Constraints: Independence assumptions hold as stated, Sequential decision/stopping-time structure is respected | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4858,
+    "name": "How to use a biased coin (with p 0",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4859,
+    "name": "Matrix Entries Maximum Number Ones",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4860,
+    "name": "X, Y, Z be Positive Integers With X Y Z N and X Y Z",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4861,
+    "name": "Formula Twice Continuously Differe",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4862,
+    "name": "There are N teams, each pair plays once",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4863,
+    "name": "N People Arrive Uniformly Between 9",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Payoff variables, prices, and decision controls, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4864,
+    "name": "Draw N 3 i",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Derive and prove the requested closed-form quantitative result"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Independence assumptions hold as stated | Objective: Derive and prove the requested closed-form quantitative result"
+  },
+  {
+    "problem_id": 4865,
+    "name": "Frogs Start Vertices Equilateral Triangle. Minute,",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Sequential decision/stopping-time structure is respected"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables | Constraints: Independence assumptions hold as stated, Sequential decision/stopping-time structure is respected | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4866,
+    "name": "Matrix I.i.d. Entries",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints | Constraints: Independence assumptions hold as stated | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4867,
+    "name": "Median of D",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4868,
+    "name": "Random Positive Integer, Probability Begins Digit",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4869,
+    "name": "A government office has two officers",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times",
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: State process, transition dynamics, and stopping times, Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4870,
+    "name": "N People Are to Sit in N Seats",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4871,
+    "name": "Standard Brownian Motion",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, transition dynamics, and stopping times | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4872,
+    "name": "Flip Fair Coin Heads, Tails.",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables, Random variables and distributional parameters | Constraints: Independence assumptions hold as stated, Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4873,
+    "name": "Pdf of Xn. 2 Find",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4874,
+    "name": "(1) For OLS, if two variables have correlation 0",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4875,
+    "name": "Bike Sharing Citi Bike System Design.",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4876,
+    "name": "Twitter (X) signals for stock return prediction",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Discrete random outcomes and state variables, Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4877,
+    "name": "NYC taxi supply¡demand modeling",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4878,
+    "name": "Rates Options Putting 3m10y Straddle, Describe",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4879,
+    "name": "Volatility prediction",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4880,
+    "name": "Let x1, x2, y be random variables",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4881,
+    "name": "Errors In Variables True Model Y X , But you Observe Z X With X,",
+    "schema": {
+      "core_mathematical_domain": "Statistical Inference & Econometrics",
+      "problem_setup_entities": [
+        "Observed sample data, parameters, and estimators"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed or modeled data"
+    },
+    "schema_text": "Domain: Statistical Inference & Econometrics | Entities: Observed sample data, parameters, and estimators | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Estimate model parameters/statistics from observed or modeled data"
+  },
+  {
+    "problem_id": 4882,
+    "name": "X, Y N (0, 1) i",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Independence assumptions hold as stated | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4883,
+    "name": "X, Y U [0, 1] i",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Independence assumptions hold as stated | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4884,
+    "name": "Corr Corr Range Corr Characterize Echet",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4885,
+    "name": "Umbrella Commute Homeoffice Trip Rains Independently",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Specified distributional/process assumptions hold",
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, transition dynamics, and stopping times, Random variables and distributional parameters | Constraints: Independence assumptions hold as stated, Specified distributional/process assumptions hold, Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4886,
+    "name": "Smallest Ramanujan Taxi Number Numbers Representable",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4887,
+    "name": "And, Conditional",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4888,
+    "name": "Ranking game",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Sequential decision/stopping-time structure is respected"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints | Constraints: Independence assumptions hold as stated, Sequential decision/stopping-time structure is respected | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4889,
+    "name": "Matrix Maximum Number Ones Characterize Extremal",
+    "schema": {
+      "core_mathematical_domain": "Linear Algebra & Matrix Methods",
+      "problem_setup_entities": [
+        "Matrix/vector objects and structural constraints"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Linear Algebra & Matrix Methods | Entities: Matrix/vector objects and structural constraints | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4890,
+    "name": "Positive integers x y z with x + y + z = N",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4891,
+    "name": "Express Twice Differentiable Integral Representatio",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Finance",
+      "problem_setup_entities": [
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Characterize the underlying quantitative relationships with mathematical justification"
+    },
+    "schema_text": "Domain: Quantitative Finance | Entities: Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Characterize the underlying quantitative relationships with mathematical justification"
+  },
+  {
+    "problem_id": 4892,
+    "name": "League combinatorics",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4893,
+    "name": "Configurations Follow-up Each Bin Must C",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Estimate model parameters/statistics from observed or modeled data"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated feasibility and boundary constraints | Objective: Estimate model parameters/statistics from observed or modeled data"
+  },
+  {
+    "problem_id": 4894,
+    "name": "Arrival Desks Inter Arrival Times Desk",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times",
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: State process, transition dynamics, and stopping times, Payoff variables, prices, and decision controls | Constraints: Independence assumptions hold as stated, Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4895,
+    "name": "People Choose Seats Among Seats, Person",
+    "schema": {
+      "core_mathematical_domain": "Discrete Probability & Combinatorics",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Discrete Probability & Combinatorics | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4896,
+    "name": "I.i.d. Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Independence assumptions hold as stated | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4897,
+    "name": "Weekend rain: P (Sat rain) = 0",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Independence assumptions hold as stated, Problem-stated feasibility and boundary constraints | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4898,
+    "name": "Choose a subset of {1,",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Derive and prove the requested closed-form quantitative result"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Problem-stated feasibility and boundary constraints | Objective: Derive and prove the requested closed-form quantitative result"
+  },
+  {
+    "problem_id": 4899,
+    "name": "1000 Fair Coins 500 Gold Heads 1",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4900,
+    "name": "Gambling Option A 100 Sided Die Each Roll Pays its Face",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Payoff variables, prices, and decision controls"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables, Payoff variables, prices, and decision controls | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4901,
+    "name": "Players Roll Fair Dice Yielding Distinct",
+    "schema": {
+      "core_mathematical_domain": "Optimization & Game Theory",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Problem-stated modeling assumptions and feasibility conditions"
+      ],
+      "target_objective": "Determine the optimal strategy/policy maximizing Expected Value or success probability"
+    },
+    "schema_text": "Domain: Optimization & Game Theory | Entities: Discrete random outcomes and state variables | Constraints: Problem-stated modeling assumptions and feasibility conditions | Objective: Determine the optimal strategy/policy maximizing Expected Value or success probability"
+  },
+  {
+    "problem_id": 4902,
+    "name": "Good-neighbor points on [0, 1]: draw N 3 i",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated",
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Derive and prove the requested closed-form quantitative result"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Random variables and distributional parameters | Constraints: Independence assumptions hold as stated, Specified distributional/process assumptions hold | Objective: Derive and prove the requested closed-form quantitative result"
+  },
+  {
+    "problem_id": 4903,
+    "name": "Random matrices: A is n ╫ n with i",
+    "schema": {
+      "core_mathematical_domain": "Algorithms & Data Structures",
+      "problem_setup_entities": [
+        "Problem-defined variables, parameters, and feasible actions"
+      ],
+      "invariant_constraints": [
+        "Independence assumptions hold as stated"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Algorithms & Data Structures | Entities: Problem-defined variables, parameters, and feasible actions | Constraints: Independence assumptions hold as stated | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4904,
+    "name": "Two urns A and B each contain n balls",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables"
+      ],
+      "invariant_constraints": [
+        "Sequential decision/stopping-time structure is respected"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables | Constraints: Sequential decision/stopping-time structure is respected | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  },
+  {
+    "problem_id": 4905,
+    "name": "Asymmetric Random Walk Starting Absorbing Boundary",
+    "schema": {
+      "core_mathematical_domain": "Stochastic Processes",
+      "problem_setup_entities": [
+        "State process, transition dynamics, and stopping times"
+      ],
+      "invariant_constraints": [
+        "Problem-stated feasibility and boundary constraints"
+      ],
+      "target_objective": "Design an algorithm and compute the requested quantitative output"
+    },
+    "schema_text": "Domain: Stochastic Processes | Entities: State process, transition dynamics, and stopping times | Constraints: Problem-stated feasibility and boundary constraints | Objective: Design an algorithm and compute the requested quantitative output"
+  },
+  {
+    "problem_id": 4906,
+    "name": "Median of D",
+    "schema": {
+      "core_mathematical_domain": "Probability & Random Variables",
+      "problem_setup_entities": [
+        "Discrete random outcomes and state variables",
+        "Random variables and distributional parameters"
+      ],
+      "invariant_constraints": [
+        "Specified distributional/process assumptions hold"
+      ],
+      "target_objective": "Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+    },
+    "schema_text": "Domain: Probability & Random Variables | Entities: Discrete random outcomes and state variables, Random variables and distributional parameters | Constraints: Specified distributional/process assumptions hold | Objective: Compute the requested quantitative metric (Expected Value, probability, variance, or distribution)"
+  }
+]
