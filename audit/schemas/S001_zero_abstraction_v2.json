@@ -1,0 +1,1802 @@
+[
+  {
+    "problem_id": 1,
+    "name": "Sum of Gaussians: Distribution",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 1",
+        "Question title: Sum of Gaussians: Distribution",
+        "Statement math tokens (constants: 2, 2; notation: \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 1, Question title: Sum of Gaussians: Distribution, Statement math tokens (constants: 2, 2; notation: \\sim) | Constraints: Use literal numeric values from statement: 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 2,
+    "name": "Card Shuffling: Expected Position of Ace of Spades",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 2",
+        "Question title: Card Shuffling: Expected Position of Ace of Spades",
+        "Statement math tokens (constants: 52, 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 52, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 2, Question title: Card Shuffling: Expected Position of Ace of Spades, Statement math tokens (constants: 52, 1) | Constraints: Use literal numeric values from statement: 52, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 3,
+    "name": "Bond Convexity",
+    "schema": {
+      "core_mathematical_domain": "Fixed Income Mathematics",
+      "problem_setup_entities": [
+        "Problem ID = 3",
+        "Question title: Bond Convexity",
+        "Statement math tokens (constants: 8, 80, 200; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 8, 80, 200",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Fixed Income Mathematics | Entities: Problem ID = 3, Question title: Bond Convexity, Statement math tokens (constants: 8, 80, 200; notation: =) | Constraints: Use literal numeric values from statement: 8, 80, 200, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 4,
+    "name": "Unbiased Coin from Biased Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 4",
+        "Question title: Unbiased Coin from Biased Coin",
+        "Statement math tokens (constants: 0, 1, 1, 2)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 4, Question title: Unbiased Coin from Biased Coin, Statement math tokens (constants: 0, 1, 1, 2) | Constraints: Use literal numeric values from statement: 0, 1, 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 5,
+    "name": "Conditional Probability: Smoker Health",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 5",
+        "Question title: Conditional Probability: Smoker Health",
+        "Statement math tokens (constants: 30, 40, 10)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 30, 40, 10",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 5, Question title: Conditional Probability: Smoker Health, Statement math tokens (constants: 30, 40, 10) | Constraints: Use literal numeric values from statement: 30, 40, 10, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 6,
+    "name": "Coin Flips Until Two Consecutive Heads",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 6",
+        "Question title: Coin Flips Until Two Consecutive Heads",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 6, Question title: Coin Flips Until Two Consecutive Heads, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 7,
+    "name": "Sum of Uniforms Exceeds 1",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 7",
+        "Question title: Sum of Uniforms Exceeds 1",
+        "Statement math tokens (constants: 0, 1, 1; notation: E[, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 7, Question title: Sum of Uniforms Exceeds 1, Statement math tokens (constants: 0, 1, 1; notation: E[, =) | Constraints: Use literal numeric values from statement: 0, 1, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 8,
+    "name": "Blue Balls in Three Boxes",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 8",
+        "Question title: Blue Balls in Three Boxes",
+        "Statement math tokens (constants: 3, 2, 4, 1, 2, 3)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 3, 2, 4, 1, 2, 3",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 8, Question title: Blue Balls in Three Boxes, Statement math tokens (constants: 3, 2, 4, 1, 2, 3) | Constraints: Use literal numeric values from statement: 3, 2, 4, 1, 2, 3, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 9,
+    "name": "Dice Sum vs Coin Heads: Which is More Likely?",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 9",
+        "Question title: Dice Sum vs Coin Heads: Which is More Likely?",
+        "Statement math tokens (constants: 7, 3)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 7, 3",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 9, Question title: Dice Sum vs Coin Heads: Which is More Likely?, Statement math tokens (constants: 7, 3) | Constraints: Use literal numeric values from statement: 7, 3, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 10,
+    "name": "Joint Normal Conditional Expectation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 10",
+        "Question title: Joint Normal Conditional Expectation",
+        "Statement math tokens (constants: 2, 2; notation: E[, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 10, Question title: Joint Normal Conditional Expectation, Statement math tokens (constants: 2, 2; notation: E[, =) | Constraints: Use literal numeric values from statement: 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 11,
+    "name": "Stock Price State Transition Model",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing",
+      "problem_setup_entities": [
+        "Problem ID = 11",
+        "Question title: Stock Price State Transition Model",
+        "Statement math tokens (constants: 0.8, 0.2, 0.3, 0.4, 0.3, 0.5)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0.8, 0.2, 0.3, 0.4, 0.3, 0.5",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Derivatives Pricing | Entities: Problem ID = 11, Question title: Stock Price State Transition Model, Statement math tokens (constants: 0.8, 0.2, 0.3, 0.4, 0.3, 0.5) | Constraints: Use literal numeric values from statement: 0.8, 0.2, 0.3, 0.4, 0.3, 0.5, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 12,
+    "name": "P(Y > 3X) for Independent Normals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 12",
+        "Question title: P(Y > 3X) for Independent Normals",
+        "Statement math tokens (constants: 2, 1, 10, 4; notation: P(, \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 1, 10, 4",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 12, Question title: P(Y > 3X) for Independent Normals, Statement math tokens (constants: 2, 1, 10, 4; notation: P(, \\sim) | Constraints: Use literal numeric values from statement: 2, 1, 10, 4, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 13,
+    "name": "Even Number of Heads in N Coin Flips",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 13",
+        "Question title: Even Number of Heads in N Coin Flips",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 13, Question title: Even Number of Heads in N Coin Flips, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 14,
+    "name": "Two People Meeting in a Time Window",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 14",
+        "Question title: Two People Meeting in a Time Window",
+        "Statement math tokens (constants: 12, 00, 1, 00, 15)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 12, 00, 1, 00, 15",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 14, Question title: Two People Meeting in a Time Window, Statement math tokens (constants: 12, 00, 1, 00, 15) | Constraints: Use literal numeric values from statement: 12, 00, 1, 00, 15, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 15,
+    "name": "Probability of Getting More Heads Than Tails",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 15",
+        "Question title: Probability of Getting More Heads Than Tails",
+        "Statement math tokens (constants: 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 15, Question title: Probability of Getting More Heads Than Tails, Statement math tokens (constants: 1) | Constraints: Use literal numeric values from statement: 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 16,
+    "name": "Balls in Two Boxes Optimization",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 16",
+        "Question title: Balls in Two Boxes Optimization",
+        "Statement math tokens (constants: 100, 100, 200, 1; notation: P()"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 100, 100, 200, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 16, Question title: Balls in Two Boxes Optimization, Statement math tokens (constants: 100, 100, 200, 1; notation: P() | Constraints: Use literal numeric values from statement: 100, 100, 200, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 17,
+    "name": "Coin Toss Doubling Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 17",
+        "Question title: Coin Toss Doubling Game",
+        "Statement math tokens (constants: 1; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 17, Question title: Coin Toss Doubling Game, Statement math tokens (constants: 1; notation: =) | Constraints: Use literal numeric values from statement: 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 18,
+    "name": "Circular Seating Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 18",
+        "Question title: Circular Seating Probability",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 18, Question title: Circular Seating Probability, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 19,
+    "name": "Adjacent Seating Arrangement",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 19",
+        "Question title: Adjacent Seating Arrangement",
+        "Statement math tokens (constants: 10)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 10",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 19, Question title: Adjacent Seating Arrangement, Statement math tokens (constants: 10) | Constraints: Use literal numeric values from statement: 10, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 20,
+    "name": "Expected Distance Between Points on a Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 20",
+        "Question title: Expected Distance Between Points on a Circle",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 20, Question title: Expected Distance Between Points on a Circle, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 21,
+    "name": "Fair Value of Uncertain Land",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 21",
+        "Question title: Fair Value of Uncertain Land",
+        "Statement math tokens (constants: 60, 40)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 60, 40",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 21, Question title: Fair Value of Uncertain Land, Statement math tokens (constants: 60, 40) | Constraints: Use literal numeric values from statement: 60, 40, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 22,
+    "name": "Markov Chain Stationary Distribution",
+    "schema": {
+      "core_mathematical_domain": "Markov Chains",
+      "problem_setup_entities": [
+        "Problem ID = 22",
+        "Question title: Markov Chain Stationary Distribution",
+        "Statement math tokens (constants: 1, 2, 3, 0, 1, 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 2, 3, 0, 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Markov Chains | Entities: Problem ID = 22, Question title: Markov Chain Stationary Distribution, Statement math tokens (constants: 1, 2, 3, 0, 1, 2; notation: =) | Constraints: Use literal numeric values from statement: 1, 2, 3, 0, 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 23,
+    "name": "Generating Arbitrary Probabilities from a Fair Coin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 23",
+        "Question title: Generating Arbitrary Probabilities from a Fair Coin",
+        "Statement math tokens (constants: 1, 3, 1; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 3, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 23, Question title: Generating Arbitrary Probabilities from a Fair Coin, Statement math tokens (constants: 1, 3, 1; notation: =) | Constraints: Use literal numeric values from statement: 1, 3, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 24,
+    "name": "Biased Coin to Fair Coin (Von Neumann)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 24",
+        "Question title: Biased Coin to Fair Coin (Von Neumann)",
+        "Statement math tokens (constants: 0, 1, 1, 2; notation: P(, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 24, Question title: Biased Coin to Fair Coin (Von Neumann), Statement math tokens (constants: 0, 1, 1, 2; notation: P(, =) | Constraints: Use literal numeric values from statement: 0, 1, 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 25,
+    "name": "Even/Odd Heads: Testing Coin Fairness",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 25",
+        "Question title: Even/Odd Heads: Testing Coin Fairness",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 25, Question title: Even/Odd Heads: Testing Coin Fairness, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 26,
+    "name": "Seating Expectation with Adjacency",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 26",
+        "Question title: Seating Expectation with Adjacency",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 26, Question title: Seating Expectation with Adjacency, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 27,
+    "name": "Russian Roulette Survival",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 27",
+        "Question title: Russian Roulette Survival",
+        "Statement math tokens (constants: 1, 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 27, Question title: Russian Roulette Survival, Statement math tokens (constants: 1, 1) | Constraints: Use literal numeric values from statement: 1, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 28,
+    "name": "Probability That no Two Consecutive Tosses",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 28",
+        "Question title: Probability That no Two Consecutive Tosses",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 28, Question title: Probability That no Two Consecutive Tosses, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 29,
+    "name": "Central Limit Theorem Application",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 29",
+        "Question title: Central Limit Theorem Application",
+        "Statement math tokens (constants: 1, 0.49, 1, 0.51, 10, 000)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 0.49, 1, 0.51, 10, 000",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 29, Question title: Central Limit Theorem Application, Statement math tokens (constants: 1, 0.49, 1, 0.51, 10, 000) | Constraints: Use literal numeric values from statement: 1, 0.49, 1, 0.51, 10, 000, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 30,
+    "name": "P(X + 3Y > 0 | X > 0)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 30",
+        "Question title: P(X + 3Y > 0 | X > 0)",
+        "Statement math tokens (constants: 0, 1, 0, 0; notation: P()"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 0, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 30, Question title: P(X + 3Y > 0 | X > 0), Statement math tokens (constants: 0, 1, 0, 0; notation: P() | Constraints: Use literal numeric values from statement: 0, 1, 0, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 31,
+    "name": "Geometric Probability: Random Point in Parabola",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 31",
+        "Question title: Geometric Probability: Random Point in Parabola",
+        "Statement math tokens (constants: 0, 1, 2, 1, 1; notation: E[)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 2, 1, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 31, Question title: Geometric Probability: Random Point in Parabola, Statement math tokens (constants: 0, 1, 2, 1, 1; notation: E[) | Constraints: Use literal numeric values from statement: 0, 1, 2, 1, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 32,
+    "name": "Normal Distribution: Fourth Moment",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 32",
+        "Question title: Normal Distribution: Fourth Moment",
+        "Statement math tokens (constants: 0, 2, 4; notation: E[, \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 2, 4",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 32, Question title: Normal Distribution: Fourth Moment, Statement math tokens (constants: 0, 2, 4; notation: E[, \\sim) | Constraints: Use literal numeric values from statement: 0, 2, 4, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 33,
+    "name": "Government Office Exponential Arrivals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 33",
+        "Question title: Government Office Exponential Arrivals",
+        "Statement math tokens (constants: 2, 9, 3, 10; notation: P(, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 9, 3, 10",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 33, Question title: Government Office Exponential Arrivals, Statement math tokens (constants: 2, 9, 3, 10; notation: P(, =) | Constraints: Use literal numeric values from statement: 2, 9, 3, 10, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 34,
+    "name": "CDF of Distance from Origin in Unit Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 34",
+        "Question title: CDF of Distance from Origin in Unit Circle",
+        "Statement math tokens (constants: 2, 2, 1, 2, 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2, 1, 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 34, Question title: CDF of Distance from Origin in Unit Circle, Statement math tokens (constants: 2, 2, 1, 2, 2; notation: =) | Constraints: Use literal numeric values from statement: 2, 2, 1, 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 35,
+    "name": "Breaking a Stick into a Triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 35",
+        "Question title: Breaking a Stick into a Triangle",
+        "Statement math tokens (constants: 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 35, Question title: Breaking a Stick into a Triangle, Statement math tokens (constants: 1) | Constraints: Use literal numeric values from statement: 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 36,
+    "name": "Biased Coin to Fair Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 36",
+        "Question title: Biased Coin to Fair Game",
+        "Statement math tokens (constants: 1, 2; notation: P(, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 36, Question title: Biased Coin to Fair Game, Statement math tokens (constants: 1, 2; notation: P(, =) | Constraints: Use literal numeric values from statement: 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 37,
+    "name": "Uniform Disk Sampling",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 37",
+        "Question title: Uniform Disk Sampling",
+        "Statement math tokens (constants: 2, 2, 1, 0, 1, 0; notation: \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2, 1, 0, 1, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 37, Question title: Uniform Disk Sampling, Statement math tokens (constants: 2, 2, 1, 0, 1, 0; notation: \\sim) | Constraints: Use literal numeric values from statement: 2, 2, 1, 0, 1, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 38,
+    "name": "Stick Breaking Triangle Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 38",
+        "Question title: Stick Breaking Triangle Probability",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 38, Question title: Stick Breaking Triangle Probability, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 39,
+    "name": "Gambler's Ruin",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 39",
+        "Question title: Gambler's Ruin",
+        "Statement math tokens (constants: 1, 0)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 39, Question title: Gambler's Ruin, Statement math tokens (constants: 1, 0) | Constraints: Use literal numeric values from statement: 1, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 40,
+    "name": "Poker Hand Probability via DP",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 40",
+        "Question title: Poker Hand Probability via DP",
+        "Statement math tokens (constants: 3, 5, 7)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 3, 5, 7",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 40, Question title: Poker Hand Probability via DP, Statement math tokens (constants: 3, 5, 7) | Constraints: Use literal numeric values from statement: 3, 5, 7, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 41,
+    "name": "Conditional Expectation Tower Property",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 41",
+        "Question title: Conditional Expectation Tower Property",
+        "Statement math tokens (notation: E[, =)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 41, Question title: Conditional Expectation Tower Property, Statement math tokens (notation: E[, =) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 42,
+    "name": "Vertices Chosen Uniformly Random Vertices Cube.",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 42",
+        "Question title: Vertices Chosen Uniformly Random Vertices Cube.",
+        "Statement math tokens (constants: 8)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 8",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 42, Question title: Vertices Chosen Uniformly Random Vertices Cube., Statement math tokens (constants: 8) | Constraints: Use literal numeric values from statement: 8, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 43,
+    "name": "Optimal Stopping for U[0,1] Draws",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 43",
+        "Question title: Optimal Stopping for U[0,1] Draws",
+        "Statement math tokens (constants: 0, 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 43, Question title: Optimal Stopping for U[0,1] Draws, Statement math tokens (constants: 0, 1) | Constraints: Use literal numeric values from statement: 0, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 44,
+    "name": "Two Envelope Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 44",
+        "Question title: Two Envelope Problem",
+        "Statement math tokens (constants: 100)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 100",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 44, Question title: Two Envelope Problem, Statement math tokens (constants: 100) | Constraints: Use literal numeric values from statement: 100, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 45,
+    "name": "Conditional Probability of Uniform Order Statistics",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 45",
+        "Question title: Conditional Probability of Uniform Order Statistics",
+        "Statement math tokens (constants: 0, 1, 3, 1, 2; notation: E[, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 3, 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 45, Question title: Conditional Probability of Uniform Order Statistics, Statement math tokens (constants: 0, 1, 3, 1, 2; notation: E[, =) | Constraints: Use literal numeric values from statement: 0, 1, 3, 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 46,
+    "name": "Acute Triangle from Random Points on Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 46",
+        "Question title: Acute Triangle from Random Points on Circle",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 46, Question title: Acute Triangle from Random Points on Circle, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 47,
+    "name": "Umbrella Markov Chain",
+    "schema": {
+      "core_mathematical_domain": "Markov Chains",
+      "problem_setup_entities": [
+        "Problem ID = 47",
+        "Question title: Umbrella Markov Chain",
+        "Statement math tokens (constants: 2, 0.3; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 0.3",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Markov Chains | Entities: Problem ID = 47, Question title: Umbrella Markov Chain, Statement math tokens (constants: 2, 0.3; notation: =) | Constraints: Use literal numeric values from statement: 2, 0.3, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 48,
+    "name": "E[max(X, 3Y)] for Independent Normals",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 48",
+        "Question title: E[max(X, 3Y)] for Independent Normals",
+        "Statement math tokens (notation: E[)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 48, Question title: E[max(X, 3Y)] for Independent Normals, Statement math tokens (notation: E[) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 49,
+    "name": "Secretary Problem (I.I.D. Ranking Game)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 49",
+        "Question title: Secretary Problem (I.I.D. Ranking Game)",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 49, Question title: Secretary Problem (I.I.D. Ranking Game), Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 50,
+    "name": "Three Frogs on an Equilateral Triangle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 50",
+        "Question title: Three Frogs on an Equilateral Triangle",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 50, Question title: Three Frogs on an Equilateral Triangle, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 51,
+    "name": "Drawing Balls Until Two Colors Remain",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 51",
+        "Question title: Drawing Balls Until Two Colors Remain",
+        "Statement math tokens (constants: 5, 3, 2, 2)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 5, 3, 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 51, Question title: Drawing Balls Until Two Colors Remain, Statement math tokens (constants: 5, 3, 2, 2) | Constraints: Use literal numeric values from statement: 5, 3, 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 52,
+    "name": "Candidates Sequentially Job. Interview, Immediately Accept",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 52",
+        "Question title: Candidates Sequentially Job. Interview, Immediately Accept",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 52, Question title: Candidates Sequentially Job. Interview, Immediately Accept, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 53,
+    "name": "Sampling Uniformly from a 3D Unit Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 53",
+        "Question title: Sampling Uniformly from a 3D Unit Sphere",
+        "Statement math tokens (constants: 2, 3)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 3",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 53, Question title: Sampling Uniformly from a 3D Unit Sphere, Statement math tokens (constants: 2, 3) | Constraints: Use literal numeric values from statement: 2, 3, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 54,
+    "name": "Branching Process Extinction Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 54",
+        "Question title: Branching Process Extinction Probability",
+        "Statement math tokens (constants: 1, 4, 1, 2, 1, 4; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 4, 1, 2, 1, 4",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 54, Question title: Branching Process Extinction Probability, Statement math tokens (constants: 1, 4, 1, 2, 1, 4; notation: =) | Constraints: Use literal numeric values from statement: 1, 4, 1, 2, 1, 4, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 55,
+    "name": "People in a Circle: Who Can See?",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 55",
+        "Question title: People in a Circle: Who Can See?",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 55, Question title: People in a Circle: Who Can See?, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 56,
+    "name": "Triangle Containing the Center",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 56",
+        "Question title: Triangle Containing the Center",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 56, Question title: Triangle Containing the Center, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 57,
+    "name": "Frechet-Hoeffding Bounds for Joint CDF",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 57",
+        "Question title: Frechet-Hoeffding Bounds for Joint CDF",
+        "Statement math tokens (notation: P()"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 57, Question title: Frechet-Hoeffding Bounds for Joint CDF, Statement math tokens (notation: P() | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 58,
+    "name": "Theta-Gamma Relationship",
+    "schema": {
+      "core_mathematical_domain": "Derivatives Pricing",
+      "problem_setup_entities": [
+        "Problem ID = 58",
+        "Question title: Theta-Gamma Relationship",
+        "Statement math tokens (constants: 1, 2, 2, 2, 2)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 2, 2, 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Derivatives Pricing | Entities: Problem ID = 58, Question title: Theta-Gamma Relationship, Statement math tokens (constants: 1, 2, 2, 2, 2) | Constraints: Use literal numeric values from statement: 1, 2, 2, 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 59,
+    "name": "Expected Value of Max of Two Dice",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 59",
+        "Question title: Expected Value of Max of Two Dice",
+        "Statement math tokens (notation: E[)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 59, Question title: Expected Value of Max of Two Dice, Statement math tokens (notation: E[) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 60,
+    "name": "Expected Runs in a Card Deck",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 60",
+        "Question title: Expected Runs in a Card Deck",
+        "Statement math tokens (constants: 52, 26, 26)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 52, 26, 26",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 60, Question title: Expected Runs in a Card Deck, Statement math tokens (constants: 52, 26, 26) | Constraints: Use literal numeric values from statement: 52, 26, 26, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 61,
+    "name": "Nested Uniforms: E[U1 * U2]",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 61",
+        "Question title: Nested Uniforms: E[U1 * U2]",
+        "Statement math tokens (constants: 0, 1, 0; notation: E[, \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 1, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 61, Question title: Nested Uniforms: E[U1 * U2], Statement math tokens (constants: 0, 1, 0; notation: E[, \\sim) | Constraints: Use literal numeric values from statement: 0, 1, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 62,
+    "name": "Dice Game: Expected Adjacent Different Colors in Cards",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 62",
+        "Question title: Dice Game: Expected Adjacent Different Colors in Cards",
+        "Statement math tokens (constants: 52, 26, 26)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 52, 26, 26",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 62, Question title: Dice Game: Expected Adjacent Different Colors in Cards, Statement math tokens (constants: 52, 26, 26) | Constraints: Use literal numeric values from statement: 52, 26, 26, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 63,
+    "name": "Expected Handshakes in a Circle",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 63",
+        "Question title: Expected Handshakes in a Circle",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 63, Question title: Expected Handshakes in a Circle, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 64,
+    "name": "Expected Draws to First Ace",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 64",
+        "Question title: Expected Draws to First Ace",
+        "Statement math tokens (constants: 52)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 52",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 64, Question title: Expected Draws to First Ace, Statement math tokens (constants: 52) | Constraints: Use literal numeric values from statement: 52, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 65,
+    "name": "Expected Sum Until 1 Appears (Die Rolling)",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 65",
+        "Question title: Expected Sum Until 1 Appears (Die Rolling)",
+        "Statement math tokens (constants: 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 65, Question title: Expected Sum Until 1 Appears (Die Rolling), Statement math tokens (constants: 1) | Constraints: Use literal numeric values from statement: 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 66,
+    "name": "Ten-Sided Die Payoff Game",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 66",
+        "Question title: Ten-Sided Die Payoff Game",
+        "Statement math tokens (constants: 10, 1, 10)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 10, 1, 10",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 66, Question title: Ten-Sided Die Payoff Game, Statement math tokens (constants: 10, 1, 10) | Constraints: Use literal numeric values from statement: 10, 1, 10, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 67,
+    "name": "Coupon Collector Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 67",
+        "Question title: Coupon Collector Problem",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 67, Question title: Coupon Collector Problem, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 68,
+    "name": "Expected Meeting: Walking Until Seeing Someone Taller",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 68",
+        "Question title: Expected Meeting: Walking Until Seeing Someone Taller",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 68, Question title: Expected Meeting: Walking Until Seeing Someone Taller, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 69,
+    "name": "Expected Number of Fixed Points in a Permutation",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 69",
+        "Question title: Expected Number of Fixed Points in a Permutation",
+        "Statement math tokens (constants: 1, 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 69, Question title: Expected Number of Fixed Points in a Permutation, Statement math tokens (constants: 1, 2; notation: =) | Constraints: Use literal numeric values from statement: 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 70,
+    "name": "Dice Game: When to Stop",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 70",
+        "Question title: Dice Game: When to Stop",
+        "Statement math tokens (constants: 3)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 3",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 70, Question title: Dice Game: When to Stop, Statement math tokens (constants: 3) | Constraints: Use literal numeric values from statement: 3, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 71,
+    "name": "Expected Arc Length on a Sphere",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 71",
+        "Question title: Expected Arc Length on a Sphere",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 71, Question title: Expected Arc Length on a Sphere, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 72,
+    "name": "Random Walk on Circle Intersections",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 72",
+        "Question title: Random Walk on Circle Intersections",
+        "Statement math tokens (constants: 1, 0, 0, 1, 0, 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 0, 0, 1, 0, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 72, Question title: Random Walk on Circle Intersections, Statement math tokens (constants: 1, 0, 0, 1, 0, 1) | Constraints: Use literal numeric values from statement: 1, 0, 0, 1, 0, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 73,
+    "name": "Asymmetric Random Walk Absorption Probability",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 73",
+        "Question title: Asymmetric Random Walk Absorption Probability",
+        "Statement math tokens (constants: 1, 0; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 73, Question title: Asymmetric Random Walk Absorption Probability, Statement math tokens (constants: 1, 0; notation: =) | Constraints: Use literal numeric values from statement: 1, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 74,
+    "name": "Random Walk Trading Strategy",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 74",
+        "Question title: Random Walk Trading Strategy",
+        "Statement math tokens (constants: 100, 1, 1, 0, 110, 90; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 100, 1, 1, 0, 110, 90",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 74, Question title: Random Walk Trading Strategy, Statement math tokens (constants: 100, 1, 1, 0, 110, 90; notation: =) | Constraints: Use literal numeric values from statement: 100, 1, 1, 0, 110, 90, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 75,
+    "name": "Random Walk on Cayley Tree",
+    "schema": {
+      "core_mathematical_domain": "Combinatorics / Probability",
+      "problem_setup_entities": [
+        "Problem ID = 75",
+        "Question title: Random Walk on Cayley Tree",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Combinatorics / Probability | Entities: Problem ID = 75, Question title: Random Walk on Cayley Tree, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 76,
+    "name": "Expected Chord Length Through a Disk",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 76",
+        "Question title: Expected Chord Length Through a Disk",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 76, Question title: Expected Chord Length Through a Disk, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 77,
+    "name": "Expected Chord Intersections",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 77",
+        "Question title: Expected Chord Intersections",
+        "Statement math tokens (constants: 2)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 77, Question title: Expected Chord Intersections, Statement math tokens (constants: 2) | Constraints: Use literal numeric values from statement: 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 78,
+    "name": "Positive Integer Triple Counting",
+    "schema": {
+      "core_mathematical_domain": "Quantitative Reasoning / Applied Probability",
+      "problem_setup_entities": [
+        "Problem ID = 78",
+        "Question title: Positive Integer Triple Counting",
+        "Statement math tokens (constants: 20; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 20",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Quantitative Reasoning / Applied Probability | Entities: Problem ID = 78, Question title: Positive Integer Triple Counting, Statement math tokens (constants: 20; notation: =) | Constraints: Use literal numeric values from statement: 20, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 79,
+    "name": "Birthday Problem",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 79",
+        "Question title: Birthday Problem",
+        "Statement math tokens (constants: 50, 365)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 50, 365",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 79, Question title: Birthday Problem, Statement math tokens (constants: 50, 365) | Constraints: Use literal numeric values from statement: 50, 365, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 80,
+    "name": "Five Points on a Hemisphere",
+    "schema": {
+      "core_mathematical_domain": "Probability Theory",
+      "problem_setup_entities": [
+        "Problem ID = 80",
+        "Question title: Five Points on a Hemisphere",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Probability Theory | Entities: Problem ID = 80, Question title: Five Points on a Hemisphere, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 81,
+    "name": "Correlation Does Not Imply Independence",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 81",
+        "Question title: Correlation Does Not Imply Independence",
+        "Statement math tokens (constants: 0; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 81, Question title: Correlation Does Not Imply Independence, Statement math tokens (constants: 0; notation: =) | Constraints: Use literal numeric values from statement: 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 82,
+    "name": "Bayesian Coin: Fair vs Double-Headed",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Problem ID = 82",
+        "Question title: Bayesian Coin: Fair vs Double-Headed",
+        "Statement math tokens (constants: 0.5, 1, 0.5; notation: P(, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0.5, 1, 0.5",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Problem ID = 82, Question title: Bayesian Coin: Fair vs Double-Headed, Statement math tokens (constants: 0.5, 1, 0.5; notation: P(, =) | Constraints: Use literal numeric values from statement: 0.5, 1, 0.5, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 83,
+    "name": "M&M Hypothesis Testing",
+    "schema": {
+      "core_mathematical_domain": "Hypothesis Testing",
+      "problem_setup_entities": [
+        "Problem ID = 83",
+        "Question title: M&M Hypothesis Testing",
+        "Statement math tokens (constants: 20, 100, 28, 5, 20)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 20, 100, 28, 5, 20",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Hypothesis Testing | Entities: Problem ID = 83, Question title: M&M Hypothesis Testing, Statement math tokens (constants: 20, 100, 28, 5, 20) | Constraints: Use literal numeric values from statement: 20, 100, 28, 5, 20, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 84,
+    "name": "Analyst Forecast Combination",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 84",
+        "Question title: Analyst Forecast Combination",
+        "Statement math tokens (constants: 2, 2, 1; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 84, Question title: Analyst Forecast Combination, Statement math tokens (constants: 2, 2, 1; notation: =) | Constraints: Use literal numeric values from statement: 2, 2, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 85,
+    "name": "Correlation of Sum and Difference",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 85",
+        "Question title: Correlation of Sum and Difference",
+        "Statement math tokens (constants: 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 85, Question title: Correlation of Sum and Difference, Statement math tokens (constants: 2; notation: =) | Constraints: Use literal numeric values from statement: 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 86,
+    "name": "OLS Estimator Derivation",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 86",
+        "Question title: OLS Estimator Derivation",
+        "Statement math tokens (constants: 0, 2; notation: \\sim, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 86, Question title: OLS Estimator Derivation, Statement math tokens (constants: 0, 2; notation: \\sim, =) | Constraints: Use literal numeric values from statement: 0, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 87,
+    "name": "Regression with Duplicated Data",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 87",
+        "Question title: Regression with Duplicated Data",
+        "Statement math tokens (constants: 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 87, Question title: Regression with Duplicated Data, Statement math tokens (constants: 2; notation: =) | Constraints: Use literal numeric values from statement: 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 88,
+    "name": "Bayesian Coin Inference",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Problem ID = 88",
+        "Question title: Bayesian Coin Inference",
+        "Statement math tokens (constants: 0.5, 0.7, 5, 4, 1; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0.5, 0.7, 5, 4, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Problem ID = 88, Question title: Bayesian Coin Inference, Statement math tokens (constants: 0.5, 0.7, 5, 4, 1; notation: =) | Constraints: Use literal numeric values from statement: 0.5, 0.7, 5, 4, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 89,
+    "name": "MLE for Uniform Distribution",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 89",
+        "Question title: MLE for Uniform Distribution",
+        "Statement math tokens (constants: 0, 0)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 0",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 89, Question title: MLE for Uniform Distribution, Statement math tokens (constants: 0, 0) | Constraints: Use literal numeric values from statement: 0, 0, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 90,
+    "name": "F-test for Nested Regression Models",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 90",
+        "Question title: F-test for Nested Regression Models",
+        "Statement math tokens (constants: 1, 1)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 90, Question title: F-test for Nested Regression Models, Statement math tokens (constants: 1, 1) | Constraints: Use literal numeric values from statement: 1, 1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 91,
+    "name": "OLS vs Ridge vs Lasso Regression",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Problem ID = 91",
+        "Question title: OLS vs Ridge vs Lasso Regression",
+        "Statement math tokens (constants: 200, 500; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 200, 500",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Problem ID = 91, Question title: OLS vs Ridge vs Lasso Regression, Statement math tokens (constants: 200, 500; notation: =) | Constraints: Use literal numeric values from statement: 200, 500, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 92,
+    "name": "R-Squared Properties Under Transformation",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 92",
+        "Question title: R-Squared Properties Under Transformation",
+        "Statement math tokens (constants: 0, 2, 2; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0, 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 92, Question title: R-Squared Properties Under Transformation, Statement math tokens (constants: 0, 2, 2; notation: =) | Constraints: Use literal numeric values from statement: 0, 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 93,
+    "name": "Simulating Correlated Normals via Cholesky",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 93",
+        "Question title: Simulating Correlated Normals via Cholesky",
+        "Random variable model with n>=1 trial(s)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 93, Question title: Simulating Correlated Normals via Cholesky, Random variable model with n>=1 trial(s) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 94,
+    "name": "Special Coin Given All Heads (Bayesian)",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Problem ID = 94",
+        "Question title: Special Coin Given All Heads (Bayesian)",
+        "Statement math tokens (constants: 100, 99, 0.5, 1, 1, 10; notation: P(, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 100, 99, 0.5, 1, 1, 10",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Problem ID = 94, Question title: Special Coin Given All Heads (Bayesian), Statement math tokens (constants: 100, 99, 0.5, 1, 1, 10; notation: P(, =) | Constraints: Use literal numeric values from statement: 100, 99, 0.5, 1, 1, 10, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 95,
+    "name": "Mixture of Normals: Moments",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 95",
+        "Question title: Mixture of Normals: Moments",
+        "Statement math tokens (constants: 2, 1, 2; notation: E[, \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 1, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 95, Question title: Mixture of Normals: Moments, Statement math tokens (constants: 2, 1, 2; notation: E[, \\sim) | Constraints: Use literal numeric values from statement: 2, 1, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 96,
+    "name": "Linear Regression Assumptions and Violations",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 96",
+        "Question title: Linear Regression Assumptions and Violations",
+        "Statement math tokens (notation: =)"
+      ],
+      "invariant_constraints": [
+        "No explicit constants provided; use symbolic formulation with n>=1",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 96, Question title: Linear Regression Assumptions and Violations, Statement math tokens (notation: =) | Constraints: No explicit constants provided; use symbolic formulation with n>=1, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 97,
+    "name": "Asset Correlation Range from Partial Information",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 97",
+        "Question title: Asset Correlation Range from Partial Information",
+        "Statement math tokens (constants: 0.5, 0.7; notation: =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 0.5, 0.7",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 97, Question title: Asset Correlation Range from Partial Information, Statement math tokens (constants: 0.5, 0.7; notation: =) | Constraints: Use literal numeric values from statement: 0.5, 0.7, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 98,
+    "name": "Linear MMSE Estimation",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 98",
+        "Question title: Linear MMSE Estimation",
+        "Statement math tokens (constants: 2; notation: E[, =)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 98, Question title: Linear MMSE Estimation, Statement math tokens (constants: 2; notation: E[, =) | Constraints: Use literal numeric values from statement: 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 99,
+    "name": "Bayesian Inference for Rare Events",
+    "schema": {
+      "core_mathematical_domain": "Bayesian Inference",
+      "problem_setup_entities": [
+        "Problem ID = 99",
+        "Question title: Bayesian Inference for Rare Events",
+        "Statement math tokens (constants: 1, 99, 1, 200, 5; notation: \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 1, 99, 1, 200, 5",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Bayesian Inference | Entities: Problem ID = 99, Question title: Bayesian Inference for Rare Events, Statement math tokens (constants: 1, 99, 1, 200, 5; notation: \\sim) | Constraints: Use literal numeric values from statement: 1, 99, 1, 200, 5, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  },
+  {
+    "problem_id": 100,
+    "name": "Optimal Estimate from Two Scales (MLE)",
+    "schema": {
+      "core_mathematical_domain": "Regression / Statistical Estimation",
+      "problem_setup_entities": [
+        "Problem ID = 100",
+        "Question title: Optimal Estimate from Two Scales (MLE)",
+        "Statement math tokens (constants: 2, 2; notation: \\sim)"
+      ],
+      "invariant_constraints": [
+        "Use literal numeric values from statement: 2, 2",
+        "Operate under assumptions written in the statement text only"
+      ],
+      "target_objective": "Compute the exact requested output from the prompt; report final expression/value with = notation."
+    },
+    "schema_text": "Domain: Regression / Statistical Estimation | Entities: Problem ID = 100, Question title: Optimal Estimate from Two Scales (MLE), Statement math tokens (constants: 2, 2; notation: \\sim) | Constraints: Use literal numeric values from statement: 2, 2, Operate under assumptions written in the statement text only | Objective: Compute the exact requested output from the prompt; report final expression/value with = notation."
+  }
+]
